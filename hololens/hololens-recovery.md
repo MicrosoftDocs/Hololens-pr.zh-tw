@@ -14,17 +14,14 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 5da7f954454b5713823c5aa94742f9c9c0033ca2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2c7fa9b8c86900c89bbced1a10f3e9e2bc69bcd0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827792"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857761"
 ---
-# 重新設定和復原 HoloLens 2
+# 重新啟動、重設或復原 HoloLens
 
 ## 正在對裝置充電
 
@@ -60,7 +57,7 @@ ms.locfileid: "10827792"
 
 4. 將裝置連線到主機電腦，然後開啟 [裝置管理員] (針對 Windows 10，請按下 **Windows 鍵**，再按下 **x** 鍵，然後按一下 [裝置管理員]) ，並確定裝置列舉方式如下圖所示：
 
-![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### 硬重設程序
 
