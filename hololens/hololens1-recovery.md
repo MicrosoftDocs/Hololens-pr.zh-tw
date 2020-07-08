@@ -16,14 +16,14 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 837a019f110a58c490618d3d5c47e83e58231d18
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 36192315e234db16c7747457e69d6d6281c31bfe
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827789"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857731"
 ---
-# 重新啟動、重設或復原 HoloLens 第 1 代
+# 重新開機、重設或復原 HoloLens （第1代）
 
 如果您遇到 HoloLens 問題，您可以嘗試嘗試重新啟動、重設或甚至是使用裝置復原功能來重新快閃刷新。
 
