@@ -1,5 +1,5 @@
 ---
-title: 針對 HoloLens 啟用 Bitlocker 加密 (HoloLens)
+title: HoloLens BitLocker 加密
 description: 啟用 Bitlocker 裝置加密，以保護儲存在 HoloLens 上的檔案
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -11,16 +11,13 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-appliesto:
-- HoloLens (1st gen)
-ms.openlocfilehash: 29b9ce346456019dad8e9bc6fd02b104ed4a821d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: a18d9e890b34f28ffcd8be7546dcdbe08e9934a6
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827810"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857811"
 ---
-# 針對 HoloLens 啟用加密
+# HoloLens BitLocker 加密
 
 HoloLens （第1代）與 HoloLens 2 都支援使用 BitLocker 進行裝置加密，不過，在 HoloLens 2 上將永遠啟用 BitLocker。
 

@@ -1,29 +1,25 @@
 ---
-title: 疑難排解 HoloLens 問題
+title: 疑難排解
 description: 常見 HoloLens 問題的解決方案。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
 ms.prod: hololens
 ms.topic: article
-ms.custom:
-- CI 111456
-- CSSTroubleshooting
-audience: ITPro
+audience: HoloLens
 ms.localizationpriority: medium
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 4897d02f4b789c77204d57c0a7750e3c3803d7bb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.custom:
+- CI 111456
+- CSSTroubleshooting
+ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828240"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857741"
 ---
-# 疑難排解 HoloLens 問題
+# 疑難排解
 
 本文說明如何解決幾個常見的 HoloLens 問題。
 

@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828438"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857997"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -99,7 +98,8 @@ ms.locfileid: "10828438"
 |行事曆 |windowscommunicationsapps \ _8wekyb3d8bbwe \！ windowslive。 |
 |相機 <sup> 1、2</sup> |HoloCamera \ _cw5n1h2txyewy \！HoloCamera |
 |Cortana <sup> 3</sup> |549981C3F5F10 _8wekyb3d8bbwe \！適用 |
-|裝置選擇器 |HoloDevicesFlow \ _cw5n1h2txyewy \！HoloDevicesFlow |
+|HoloLens 上的裝置選擇器（第1代） |HoloDevicesFlow \ _cw5n1h2txyewy \！HoloDevicesFlow |
+|HoloLens 2 上的裝置選擇器 |DevicesFlowHost \ _cw5n1h2txyewy \！DevicesFlowHost |
 |Dynamics 365 Guides |Dynamics365 _8wekyb3d8bbwe \！MicrosoftGuides |
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist _8wekyb3d8bbwe \！RemoteAssist |
 |意見反應 &nbsp; 中樞 |WindowsFeedbackHub _8wekyb3d8bbwe \！適用 |
@@ -119,7 +119,7 @@ ms.locfileid: "10828438"
 > - 您也應該啟用可與圖片互動或取得圖片的 app （例如相片、郵件或 OneDrive）。  
 >  
 > <sup>3 </sup> 即使您未啟用 Cortana 作為 kiosk app，也會啟用內建語音命令。 不過，與停用功能相關的命令不會產生任何效果。  
-> <sup>4 </sup> 您無法直接啟用 Miracast。 若要將 Miracast 啟用為展臺應用程式，請啟用相機 app 和裝置選擇器應用程式。
+> <sup>4 </sup> 您無法直接啟用 Miracast。 若要啟用 Miracast 作為 kiosk app，請啟用相機 app 和裝置選擇器應用程式。
 
 ### 規劃使用者和裝置群組
 
@@ -358,7 +358,7 @@ Kiosk 配置設定檔包括 [**使用者登入類型**] 設定。 **使用者登
 
 #### <a id="start-layout-for-hololens"></a>HoloLens 的預留位置開始時間版面配置
 
-如果您使用[預配套件](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)來設定多應用程式資訊站，程式需要開始版面配置。 在商務用 Windows 全息版中不支援開始進行版面配置自訂。 因此，您必須使用預留位置 [開始] 版面配置。
+如果您使用[預配套件](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)來設定多應用程式資訊站，程式需要開始版面配置。 在商務用 Windows 全息版中不支援開始進行版面配置自訂。 因此，您必須使用預留位置 [開始] 版面配置。
 
 > [!NOTE]  
 > 因為單一 app 展臺會在使用者登入時啟動展臺應用程式，所以它不會使用 [開始] 功能表，也不需要開始進行版面配置。
