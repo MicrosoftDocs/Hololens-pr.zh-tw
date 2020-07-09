@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b686801651710e6e8c4dcaaaa39e1c0dc4a76b4
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: e41dc6c9d12ee57bb306ebca7e2eeac0b3478014
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828399"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857721"
 ---
 # HoloLens 2 硬體
 
@@ -138,7 +138,9 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 ### 安全
 
-[產品安全性](https://support.microsoft.com/en-us/help/4023454/safety-information)視力保護：HoloLens 2 已經過測試，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影響保護需求。
+* [產品安全](https://support.microsoft.com/en-us/help/4023454/safety-information)
+* [產品安全警告與指示](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
+* 視力安全：HoloLens 2 已經過測試，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影響保護需求。
 
 ### 法規資訊
 [HoloLens 法規](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)
