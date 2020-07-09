@@ -1,5 +1,5 @@
 ---
-title: 連線到網路
+title: 將 HoloLens 連線到網路
 description: 有關如何使用 HoloLens 連線至網際網路，以及如何識別裝置 IP 位址的指示。
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
@@ -10,17 +10,14 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 0bc5a5f7f3eaf3d811da055a7bda664fd3f0daff
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828417"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857791"
 ---
-# 連線到網路
+# 將 HoloLens 連線到網路
 
 若要在 HoloLens 上執行大部分作業，您必須連線到網路。 本指南將協助您：
 
@@ -56,7 +53,7 @@ HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 
 
 您也可以在 [開始]**** 功能表中檢查 Wi-Fi 狀態，確認您已連線到 Wi-Fi 網路：
 
-1. 開啟 [開始]**** 功能表。
+1. 開啟 **[開始]** 功能表。
 1. 查看 [開始]**** 功能表左上角的 Wi-Fi 狀態。 會顯示 Wi-Fi 的狀態和已連線網路的 SSID。
 
 ## 疑難排解您與 Wi-Fi 的連線
@@ -83,7 +80,7 @@ HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 
 
 ### 使用 [設定] 應用程式
 
-1. 開啟 [開始]**** 功能表。
+1. 開啟 **[開始]** 功能表。
 1. 從 [開始]**** 或從 [開始]**** 功能表右側的 [所有應用程式]**** 清單中，選取 [設定]**** 應用程式。 [設定]**** 應用程式會自動放置在您面前。
 1. 選取 [網路和網際網路]****。
 1. 向下捲動至可用 Wi-Fi 網路清單下方，然後選取 [硬體內容]****。

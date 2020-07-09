@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858007"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860603"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -28,7 +29,7 @@ ms.locfileid: "10858007"
 
 Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為**開發人員通道**，**慢速**環將變成**Beta 通道**，而 [**放開預覽**] 鈴聲將成為**發行預覽頻道**。 對應如下：
 
-![Windows 測試人員通道 explination](images/WindowsInsiderChannels.png)
+![Windows 測試人員頻道說明](images/WindowsInsiderChannels.png)
 
 如需詳細資訊： [Windows 博客專案](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -58,7 +59,6 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 1. 依照指示操作以選擇您的裝置。
 
 
-
 ## 提供意見反應與報告問題
 
 請在您的 HoloLens 上使用「[意見反應中樞」 app](hololens-feedback.md) ，以提供意見反應與報告問題。 使用意見反應中樞可確保所有必要的診斷資訊都包含在內，以協助我們的工程師快速調試並解決問題。  使用中文和日文版的 HoloLens 時，必須以相同的方式報告問題。
@@ -73,9 +73,10 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 ## Windows 測試人員版本資訊
 
-如果您正在尋找先前在此處列出的功能，而您沒有看到這種情況，它已成為非測試人員組建，請務必閱讀[版本](hololens-release-notes.md)資訊，以查看所有功能。 請務必[更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。  
+從我們的[Windows 全息](hololens-release-notes.md)版開始，您可以使用2020更新版本的所有版本預覽功能。 請務必[更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。
 
-我們會在我們發行給 Windows 測試人員組建的新功能時，再次更新此頁面。 
+我們將在我們發行給 Windows 測試人員組建時再次更新此頁面，並提供新功能。
+
 
 ### 自動目視位置支援
 
@@ -101,6 +102,6 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 若要使用 [航班式簽署 ffu] 進行測試，您必須先將裝置解除鎖定，然後才能閃爍 [航班已簽署] ffu。
 1. 在 PC 上
     1. 從以下來源下載 ffu 至您的電腦：[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. 從 Microsoft 網上商店安裝弧形（高級恢復隨附版）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. 從 Microsoft 網上商店安裝弧形（高級恢復隨附版）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. 在 HoloLens-航班解鎖：開啟**設定**  >  **更新 & 安全性**  >  **Windows**測試人員計畫，然後註冊、重新開機裝置
-1. 快閃 FFU-現在您可以使用 ARC 來閃現已簽署的航班 FFU 
+1. 快閃 FFU-現在您可以使用 ARC 來閃現已簽署的航班 FFU

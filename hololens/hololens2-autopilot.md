@@ -1,5 +1,5 @@
 ---
-title: 適用於 HoloLens 2 的 Windows Autopilot 評估指南
+title: 適用於 HoloLens 2 的 Windows Autopilot
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -13,16 +13,14 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-appliesto:
-- HoloLens 2
-ms.openlocfilehash: 3d98e67e79ae10b606c529adbda95dbb61b8fd15
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9f7306e1e2f190634df7b25833e22b27089d19de
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828497"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857781"
 ---
-# 適用於 HoloLens 2 的 Windows Autopilot 評估指南
+# 適用於 HoloLens 2 的 Windows Autopilot
 
 當您針對 Windows Autopilot 計畫設定 HoloLens 2 裝置時，您的使用者可以遵循簡易的程序，從雲端佈建裝置。
 

@@ -10,15 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: d2bec32e118ee1c9307b56fad99b7e8859e2a94d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827809"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857851"
 ---
 # HoloLens 的環境考量
 
@@ -120,7 +117,7 @@ HoloLens 可以快速適應這些變化，但前提是裝置可以清楚地看�
 
 如果其他人要使用您的 HoloLens，他們應首先執行校正應用程式，以便正確為他們設定裝置。
 
-## 也請參閱
+## 請參閱
 
 - [空間對應設計](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
 - [全像投影](https://docs.microsoft.com/windows/mixed-reality/hologram)
