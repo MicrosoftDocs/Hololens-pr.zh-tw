@@ -10,41 +10,44 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830127"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865562"
 ---
 # 在商業環境中部署 HoloLens
 
 您可以在商業設定中，以縮放比例部署和設定 HoloLens。 本文提供在商業環境中部署 HoloLens 裝置的相關指示。 本指南假設您基本熟悉 HoloLens。 請依照[快速入門手冊](hololens1-setup.md)，第一次設定 HoloLens。
 
-本檔也假設您的 HoloLens 已由安全小組評估為可在商業網路上使用的安全小組。 您可以[在此](hololens-faq-security.md)找到常見的安全性問題
+本檔也假設您的 HoloLens 已由安全小組評估為可在商業網路上使用的安全小組。  
+> [!Tip]
+> 深入瞭解[HoloLens 安全性](security-overview.md)。
+> 針對 HoloLens (1 Gen) 安全性請參閱[此常見問題](hololens1-faq-security.md)。
 
 ## 部署步驟概述
 
 1. [判斷您需要的功能](hololens-requirements.md#step-1-determine-what-you-need)
 1. [判斷您需要的授權](hololens-licenses-requirements.md)
 1. [針對 HoloLens 設定您的網路](hololens-commercial-infrastructure.md)。
-    1. 本節包含需要在防火牆上允許的頻寬需求、URL 和埠;Azure AD 指南;行動裝置管理（MDM）指導方針;app 部署/管理指導方針;與證書指導方針。
-1. 可選[使用預配套件設定 HoloLens](hololens-provisioning.md)
+    1. 本節包含需要在防火牆上允許的頻寬需求、URL 和埠;Azure AD 指南;行動裝置管理 (MDM) 指南;app 部署/管理指導方針;與證書指導方針。
+1.  (選擇性) [使用預配套件來設定 HoloLens](hololens-provisioning.md)
 1. [註冊裝置](hololens-enroll-mdm.md)
 1. [設定 HoloLens 的通道步調更新](hololens-updates.md)
-1. [針對 HoloLens 啟用 Bitlocker 裝置加密](hololens-encryption.md)
+1. [針對 HoloLens 啟用 Bitlocker 裝置加密](security-encryption-data-protection.md)
 
 ## 步驟 1. 判斷您需要的專案
 
-在您的環境中部署 HoloLens 之前，請務必先判斷需要哪些功能、應用程式及身分識別類型。 另外，請務必確保您的安全小組已在公司的網路上使用 HoloLens。 如需其他安全性資訊，請參閱[經常詢問安全性問題](hololens-faq-security.md)。
+在您的環境中部署 HoloLens 之前，請務必先判斷需要哪些功能、應用程式及身分識別類型。 另外，請務必確保您的安全小組已在公司的網路上使用 HoloLens。 如需其他安全性資訊，請參閱[HoloLens2 安全性](security-overview.md)。
 
 ### 身分識別類型
 
 決定將用來登入裝置的身分識別類型。
 
-1. **本機帳戶：** 這個帳戶是裝置的本地帳戶（例如 windows 電腦上的本機系統管理員帳戶）。 這將只允許1位使用者登入裝置。
-2. **MSA：** 這是個人帳戶（例如 outlook、hotmail、gmail、yahoo 等）。這將只允許1位使用者登入裝置。
-3. **Azure Active Directory （AZURE AD）帳戶：** 這是在 Azure AD 中建立的帳戶。 這可讓您的公司能夠管理 HoloLens 裝置。 這可讓多個使用者登入 HoloLens 1 Gen 商業套件/HoloLens 2 裝置。
+1. **本機帳戶：** 這個帳戶是在 windows PC 上的本機系統管理員帳戶) 的裝置 (。 這將只允許1位使用者登入裝置。
+2. **MSA：** 這是個人帳戶 (例如 outlook、hotmail、gmail、yahoo 等。 ) 這將只允許1位使用者登入裝置。
+3. **Azure Active Directory (AZURE AD) 帳戶：** 這是在 Azure AD 中建立的帳戶。 這可讓您的公司能夠管理 HoloLens 裝置。 這可讓多個使用者登入 HoloLens 1 Gen 商業套件/HoloLens 2 裝置。
 
 如需有關身分識別類型的詳細資訊，請造訪我們的[HoloLens 身分識別](hololens-identity.md)文章。
 
@@ -71,7 +74,7 @@ Kiosk 模式是一種限制使用者有權存取之 app 的方式。 這表示�
 
 **如何設定 Kiosk 模式：**
 
-您可以透過兩種主要方式（[配套件](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)與[MDM](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)）來部署 HoloLens 的 kiosk 模式。 這些選項稍後會在檔中討論;不過，您可以使用上方的連結來跳至此檔中的個別章節。
+有兩種主要方式 ([置備套件](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)與[MDM](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)) 為 HoloLens 部署 kiosk 模式。 這些選項稍後會在檔中討論;不過，您可以使用上方的連結來跳至此檔中的個別章節。
 
 ### 應用程式和 App 特定案例
 
@@ -99,10 +102,10 @@ Kiosk 模式是一種限制使用者有權存取之 app 的方式。 這表示�
 
 ### 判斷您是否需要建立預配套件
 
-有兩種方法可以設定 HoloLens 裝置（配套件與 MDMs）。 我們建議使用您的 MDM 來設定您的 HoloLens 裝置。 不過，在某些情況下，使用預配套件是比較好的選擇：
+有兩種方法可以設定 HoloLens 裝置 (置備套件與 MDMs) 。 我們建議使用您的 MDM 來設定您的 HoloLens 裝置。 不過，在某些情況下，使用預配套件是比較好的選擇：
 
-1. 您想要設定 HoloLens 以略過盒外體驗（OOBE）
-1. 在複雜的網路中部署憑證時遇到問題。 您可以在大部分時間使用 MDM 部署憑證（即使在複雜的環境中也一樣）。 不過，某些情況需要透過預配套件來部署證書。
+1. 您想要將 HoloLens 設定為略過盒外體驗 (OOBE) 
+1. 在複雜的網路中部署憑證時遇到問題。 即使在複雜的環境) 中，您還是可以使用 MDM (部署憑證。 不過，某些情況需要透過預配套件來部署證書。
 
 有些 HoloLens 設定可套用在佈建套件中︰
 
