@@ -38,12 +38,27 @@
 ## 規劃 HoloLens 2 企業部署
 ### [在商業環境中部署 HoloLens](hololens-requirements.md)
 ### [常見的基礎結構部署案例](common-scenarios.md)
+## 安全性
+### [安全性概觀](security-overview.md)
+### [Architecture](security-architecture.md)
+### [狀態分離與隔離](security-state-separation-isolation.md)
+### [無管理員作業系統 ](security-adminless-os.md)
+### [減少使用密碼](security-limiting-password-use.md)
+### [硬體支援的安全性與執行階段證明](security-hardware-backed-integrity.md)
+### [加密與資料保護](security-encryption-data-protection.md)
+### [網路安全性](security-network-security.md)
+### [無線和 Wi-Fi](security-wireless-wifi.md)
+### [安全性工程 ](security-engineering.md)
+### HoloLens 第一代的安全性
+#### [HoloLens (第一代) 安全性的常見問題集](hololens1-faq-security.md)
+#### [HoloLens (第一代) BitLocker 加密](hololens1-encryption.md)
 ## [授權需求](hololens-licenses-requirements.md)
 ## 環境
 ### [HoloLens 的環境考量](hololens-environment-considerations.md)
 ### [使用 HoloLens 來對應物理空間](hololens-spaces.md)
 ## [商業功能](hololens-commercial-features.md)
 ## [解除鎖定 Windows Holographic for Business 功能](hololens1-upgrade-enterprise.md)
+
 # 設定
 ## 身份識別
 ### [管理 HoloLens 的使用者身分識別和登入](hololens-identity.md)
@@ -53,9 +68,8 @@
 ### [將 HoloLens 連線到網路](hololens-network.md)
 ### [管理 HoloLens 的連線端點](hololens-offline.md)
 ### [連線至藍牙與 USB-C 裝置](hololens-connect-devices.md)
-## 安全性
-### [安全性常見問答集](hololens-faq-security.md)
-### [HoloLens BitLocker 加密](hololens-encryption.md)
+
+
 ## 原則
 ### [使用佈建套件設定 HoloLens](hololens-provisioning.md)
 ### [設定 HoloLens (第 1 代) 的 kiosk](hololens-kiosk.md)
