@@ -15,18 +15,37 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 25a1bc21638090cc5d22bc4482299f3931641dea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828252"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881233"
 ---
 # HoloLens 2 版本資訊
 
-為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們繼續發行功能、錯誤和安全性更新。 在此頁面中，您可以瞭解每月 HoloLens 的新功能。 如果您想要下載最新的 HoloLens 2 FFU，以透過 [[高級恢復隨附](hololens-recovery.md#clean-reflash-the-device)] 快閃您的裝置，您可以從[這裡](https://aka.ms/hololens2download)下載。 這會保持在最新狀態，且會與最新的一般可用組建相符。 
+為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們繼續發行功能、錯誤和安全性更新。 在此頁面中，您可以瞭解每月 HoloLens 的新功能。 如果您想要下載最新的 HoloLens 2 FFU，以透過 [[高級恢復隨附](hololens-recovery.md#clean-reflash-the-device)] 快閃您的裝置，您可以從[這裡](https://aka.ms/hololens2download)下載。 此動作會保持為最新狀態，並會匹配最新的可用組建。 
 
 您可以在[此](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)找到 HoloLens 模擬器版本資訊。
+
+## Windows 全息版 2004-2020 年7月更新
+- 組建19041.1109
+
+更新中的改進與修正：
+
+- 開發人員可以選擇啟用或停用裝置入口網站，以要求安全連線。
+- 應用程式在作業系統更新後啟動的可靠性改善。
+- 將預設的收件匣亮度變更為100%。
+- 已解決 HoloLens 2 上 Windows Device Portal 的 HTTPS 轉移問題。
+
+## Windows 全息版 1903-2020 年7月更新
+- 組建18362.1071
+
+更新中的改進與修正：
+
+- 修正可能導致全息影像在失去及/或追蹤追蹤時，在 Unity 應用程式中消失的問題。
+- 已修正導致專屬 Hololens app 在特定裝置上使用 Hololens 模擬程式與硬體加速時，會造成專屬 Hololens 應用程式損毀的問題。
+- 已解決 HoloLens 2 上 Windows Device Portal 的 HTTPS 轉移問題。
 
 ## Windows 全息版 2004-2020 年6月更新
 - 組建19041.1106
@@ -75,7 +94,7 @@ ms.locfileid: "10828252"
 
 我們很高興宣佈 HoloLens 2、 **Windows 全息、版本 2004**的2020主要軟體更新。 此版本包含一種令人興奮的新功能，例如支援 Windows Autopilot、應用程式深模式、USB 乙太網上 5G/LTE 熱點的支援等等。 若要更新為最新版本，請開啟 [ **設定] 應用程式**，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          描述                                                                                              |
+|             功能                              |          說明                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 進行預設定及無縫設定生產的新裝置                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全金鑰以針對共用裝置啟用快速及安全的驗證            |
