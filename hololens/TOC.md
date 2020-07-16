@@ -42,7 +42,7 @@
 ### [安全性概觀](security-overview.md)
 ### [Architecture](security-architecture.md)
 ### [狀態分離與隔離](security-state-separation-isolation.md)
-### [無管理員作業系統 ](security-adminless-os.md)
+### [無系統管理員作業系統 ](security-adminless-os.md)
 ### [減少使用密碼](security-limiting-password-use.md)
 ### [硬體支援的安全性與執行階段證明](security-hardware-backed-integrity.md)
 ### [加密與資料保護](security-encryption-data-protection.md)
