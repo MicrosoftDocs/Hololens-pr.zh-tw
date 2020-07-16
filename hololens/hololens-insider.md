@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860603"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882425"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -51,11 +51,13 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 若要確認您的 HoloLens 正在執行生產組建：
 
 1. 移至 [**設定] > [系統 >**]，然後找出組建編號。
-1. [請參閱生產組建編號的版本資訊。](hololens-release-notes.md)
+
+1. [請參閱生產組建編號的版本](hololens-release-notes.md)資訊。
 
 若要退出宣告測試人員組建：
 
 1. 在運行生產組建的 HoloLens 中，移至 [**設定] > 更新 & 安全性 > Windows**測試人員計畫，然後選取 [停止測試人員**組建**]。
+
 1. 依照指示操作以選擇您的裝置。
 
 
@@ -73,10 +75,15 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 ## Windows 測試人員版本資訊
 
-從我們的[Windows 全息](hololens-release-notes.md)版開始，您可以使用2020更新版本的所有版本預覽功能。 請務必[更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。
+如果您要尋找的功能已不在此處列出，現在就能正式使用了。 請查看[版本](hololens-release-notes.md)資訊，瞭解哪些組建具有您令人興奮的功能。 請務必[更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。
 
-我們將在我們發行給 Windows 測試人員組建時再次更新此頁面，並提供新功能。
+我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
 
+| 功能                               | 描述                                                                                   | 可在測試人員組建中使用 |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 自動目視位置支援             | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
+| 全域指派的存取                | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
+| 在多應用程式亭中自動啟動應用程式 | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
 
 ### 自動目視位置支援
 
@@ -96,12 +103,29 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 針對需要目視眼睛資料或非常精確的全息圖位置的體驗，我們建議 uncalibrated 使用者從目視追蹤校準提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [**系統 > 校準] > 目視校準 > 執行目視校準**。
 
 **已知問題**
-1.  我們正在調查在大量記憶體載入不足的情況下，目視追蹤器驅動程式主機進程可能會當機的問題。 目視追蹤驅動程式主機進程應該會自動復原。
+ - 我們正在調查在大量記憶體載入不足的情況下，目視追蹤器驅動程式主機進程可能會當機的問題。 目視追蹤驅動程式主機進程應該會自動復原。
+
+### 全域指派的存取-Kiosk 模式
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在[此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
+
+### 在多應用程式亭模式中自動啟動應用程式 
+僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
+
+應用程式會在使用者登入時自動啟動。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU 下載和快閃路線
 若要使用 [航班式簽署 ffu] 進行測試，您必須先將裝置解除鎖定，然後才能閃爍 [航班已簽署] ffu。
-1. 在 PC 上
-    1. 從以下來源下載 ffu 至您的電腦：[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. 在 PC 上：
+
+    1. 從下載 ffu 到您的電腦 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
+    
     1. 從 Microsoft 網上商店安裝弧形（高級恢復隨附版）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. 在 HoloLens-航班解鎖：開啟**設定**  >  **更新 & 安全性**  >  **Windows**測試人員計畫，然後註冊、重新開機裝置
-1. 快閃 FFU-現在您可以使用 ARC 來閃現已簽署的航班 FFU
+    
+1. 在 HoloLens-航班解鎖：開啟**設定**  >  **更新 & 安全性**  >  **Windows**測試人員計畫，然後註冊、重新開機裝置。
+
+1. 快閃 FFU-現在您可以使用 ARC 來閃現已簽署的航班 FFU。

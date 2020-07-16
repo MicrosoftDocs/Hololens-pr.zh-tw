@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828426"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881326"
 ---
 # HoloLens 的已知問題
 
@@ -47,6 +47,14 @@ ms.locfileid: "10828426"
 - 混合現實捕獲中的即時預覽功能可能會顯示幾秒的延遲時間。
 - 在 [虛擬輸入] 頁面上，[虛擬手勢] 區段底下的手勢和滾動控制項無法正常運作。 使用它們將不會有任何效果。 相同頁面上的虛擬鍵盤運作正常。
 - 在 [設定] 中啟用開發人員模式之後，可能需要幾秒鐘的時間，才能開啟 Device Portal。
+
+### OneDrive 相機上傳
+
+針對 HoloLens 的 OneDrive app 不支援公司或學校帳戶的自動相機上傳。
+
+僅供參考
+- 如果您的企業可行，在消費者 Microsoft 帳戶上支援自動相機上傳。 除了您的公司或學校帳戶之外，您還可以登入您的 Microsoft 帳戶（OneDrive app 支援雙重登入）。 從 OneDrive 中的 Microsoft 帳戶設定檔，您可以啟用自動、背景相機滾動上傳。
+- 如果您無法安全地使用消費者 Microsoft 帳戶來自動上傳您的相片，您可以手動將相片從 OneDrive app 上傳到您的公司或學校帳戶。 若要這樣做，請確認您已在 OneDrive app 中登入您的公司或學校帳戶。 選取 **+** 按鈕，然後選擇 [**上傳**]。 流覽至 [**圖片] > [相機捲筒**]，找出您要上傳的相片或影片。 選取您要上傳的相片或影片，然後選取 [**開啟**] 按鈕。
 
 ## HoloLens 2 裝置的已知問題
 
