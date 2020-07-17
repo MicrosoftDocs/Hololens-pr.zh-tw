@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827826"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882983"
 ---
 # 商業功能
 
@@ -75,11 +75,11 @@ HoloLens (第 1 代) 隨附兩個授權選項，即開發人員授權和商業�
 
 ## 啟用商業功能
 
-貴組織的 IT 系統管理員可以設定商業功能，例如商務用 Microsoft Store、kiosk 模式，以及企業 Wi-Fi 存取。 [Microsoft HoloLens](index.md) 文件提供從商務用 Microsoft Store 註冊裝置和安裝應用程式的逐步指示。
+貴組織的 IT 系統管理員可以設定商業功能，例如商務用 Microsoft Store、kiosk 模式，以及企業 Wi-Fi 存取。 [Microsoft HoloLens](index.yml) 文件提供從商務用 Microsoft Store 註冊裝置和安裝應用程式的逐步指示。
 
 ## 也請參閱
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [Kiosk 模式](hololens-kiosk.md)
 - [HoloLens 裝置中支援的 CSP](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [商務用 Microsoft Store 和企業營運應用程式](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
