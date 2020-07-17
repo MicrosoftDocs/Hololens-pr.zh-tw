@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881243"
+ms.locfileid: "10881336"
 ---
 # 連線至藍牙與 USB-C 裝置
 
@@ -80,6 +80,8 @@ HoloLens 2 支援下列 USB-C 裝置類型：
 
 > [!NOTE]
 > 部份具有 USB-C 連線的行動裝置，本身就會以乙太網配接器的形式顯示在 HoloLens 上，因此可在 [網際網路共用] 設定中使用，以 Windows 全像攝影版（版本 2004）開始。 不支援需要單獨驅動程式，和/或安裝有用於設定之應用程式的 USB LTE 數據機。
+
+針對客戶意見反應，我們已為 [行動數據連線能力] 啟用部分支援，並透過 USB-C 直接連結到 HoloLens。  網路共享的連線能力只適用於支援一般的 Microsoft [ RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驅動程式執行，且不需要安裝任何其他驅動程式或應用程式。  當連線時，這些裝置會自動在 HoloLens 2 網路設定 UI 中顯示為一個新的乙太網連線。 請洽詢您的裝置製造商，以詳細瞭解是否支援一般通用的 Microsoft RNDIS 驅動程式。
 
 ## 連線到 Miracast
 
