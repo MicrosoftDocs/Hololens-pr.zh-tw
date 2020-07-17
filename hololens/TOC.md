@@ -97,5 +97,6 @@
 # HoloLens 版本資訊
 ## [HoloLens 2 版本資訊](hololens-release-notes.md)
 ## [適用於 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
+### [全域受指派的存取權 - Kiosk](hololens-global-assigned-access-kiosk.md)
 ## [HoloLens (第 1 代) 版本資訊](hololens1-release-notes.md)
 # [提供意見反應給我們](hololens-feedback.md)
