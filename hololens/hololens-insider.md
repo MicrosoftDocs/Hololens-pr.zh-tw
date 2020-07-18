@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 6/29/2020
+ms.date: 7/17/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
+ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882425"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "10883366"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -82,8 +82,10 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 | 功能                               | 描述                                                                                   | 可在測試人員組建中使用 |
 |---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | 自動目視位置支援             | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
-| 全域指派的存取                | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
+| 全域指定存取                | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
 | 在多應用程式亭中自動啟動應用程式 | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
+| Hololens 2 的新電源原則     | 新支援的 power timeout 設定原則。                                          | 19041.1349 +                 |
+| 憑證檢視器                    | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
 
 ### 自動目視位置支援
 
@@ -117,6 +119,33 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+### Hololens 2 的新電源原則
+這些新新增的原則可讓系統管理員控制電源狀態，例如空閒超時。 若要深入瞭解每個個別原則，請按一下該原則的連結。
+
+|     原則檔連結                |     附註                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  在 Windows 配置設計工具中使用的範例值，亦即100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     在 Windows 配置設計工具中使用的範例值，亦即100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置設計工具中使用的範例值，亦即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### 憑證檢視器
+
+在 Windows 測試人員組建19041.1346 中，我們會在 HoloLens 2 設定應用程式中新增憑證檢視器。 此功能提供一種簡單且便於使用的方式來驗證您裝置上的憑證。 若要快速尋找特定憑證，您可以使用 [名稱]、[儲存] 或 [到期日] 等選項來排序。 使用者也可以直接搜尋證書。 使用新的憑證檢視器，系統管理員和使用者現在可以改良審核、診斷和驗證工具，以確保裝置保持安全且合規性。  若要查看個別憑證的詳細資訊，請選取憑證，然後按一下 [資訊]。
+
+> [!NOTE]
+> 我們在後續的 Windows 測試人員版本中處理的非美國語言當地語系化有已知的限制。
+
+-   **審計：** 能夠驗證正確地部署憑證或確認已適當地移除證書。 
+-   **診斷：** 發生問題時，請確認裝置上是否有適當的憑證，以節省時間並協助進行疑難排解。 
+-   **驗證：** 驗證憑證是否已提供預期用途，且運作正常，可以節省大量的時間，特別是在以較大的比例部署憑證之前的商業環境中。
+
+若要查看憑證，請移至 [**設定] > 更新 & 安全性 > 憑證**。
+
+![[設定] 應用程式中的憑證檢視器](images/hololens-certificate-viewer.png)
 
 ## FFU 下載和快閃路線
 若要使用 [航班式簽署 ffu] 進行測試，您必須先將裝置解除鎖定，然後才能閃爍 [航班已簽署] ffu。
