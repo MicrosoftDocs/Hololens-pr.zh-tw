@@ -1,0 +1,78 @@
+### YamlMime:Landing
+title: Microsoft HoloLens
+summary: Microsoft HoloLens 是第一台運行 Windows 10 的全獨立全息電腦。 現在，隨著 HoloLens 2 的推出，每一台 HoloLens 裝置都提供了商用管理功能，而 Microsoft 的雲端和人工智慧服務的可靠性、安全性和可伸縮性增強了這些功能。
+metadata:
+  title: Microsoft HoloLens
+  description: Microsoft HoloLens 的登陸頁面。
+  ms.prod: hololens
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: todmccoy
+  ms.author: v-todmc
+  ms.date: 5/22/2020
+  ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
+  ms.openlocfilehash: 9f2dd2fc798fb66de080e54718aaebb131b3e145
+  ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 07/17/2020
+  ms.locfileid: "10883004"
+landingContent:
+- title: 部屬與管理
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 在商業環境中部署 HoloLens
+      url: hololens-requirements.md
+    - text: '應用程式管理: 概觀'
+      url: app-deploy-overview.md
+    - text: 設定 HoloLens (第 1 代) 的 kiosk
+      url: hololens-kiosk.md
+    - text: 管理 HoloLens 更新
+      url: hololens-updates.md
+- title: Dynamics 365
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Microsoft 動力 365 混合實境文件
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    - text: 在 HoloLens 上使用遠端協助
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
+    - text: 在 HoloLens 上使用指南
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: 遠端協助學習模組
+      url: https://docs.microsoft.com/en-us/learn/browse/?products=dynamics-remote-assist
+- title: 相關資源
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 混合實境開發人員文件
+      url: https://developer.microsoft.com/windows/mixed-reality/development
+    - text: HoloLens 價格與選項
+      url: https://www.microsoft.com/hololens/buy
+- title: 疑難排解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 重新啟動、重設或復原 HoloLens 2
+      url: hololens-recovery.md
+    - text: 疑難排解 HoloLens 問題
+      url: hololens-troubleshooting.md
+- title: 支援
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: HoloLens 2 版本資訊
+      url: https://docs.microsoft.com/hololens/hololens-release-notes
+    - text: 連絡客戶支援
+      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
+- title: 混合實境
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 開始使用混合實境
+      url: https://docs.microsoft.com/windows/mixed-reality/
+    - text: 開始設計與設計雛形
+      url: https://docs.microsoft.com/windows/mixed-reality/design
+    - text: 瞭解工具和結構
+      url: https://docs.microsoft.com/windows/mixed-reality/development
