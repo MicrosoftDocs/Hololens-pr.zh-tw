@@ -47,7 +47,6 @@
 ### [硬體支援的安全性與執行階段證明](security-hardware-backed-integrity.md)
 ### [加密與資料保護](security-encryption-data-protection.md)
 ### [網路安全性](security-network-security.md)
-### [無線和 Wi-Fi](security-wireless-wifi.md)
 ### [安全性工程 ](security-engineering.md)
 ### HoloLens 第一代的安全性
 #### [HoloLens (第一代) 安全性的常見問題集](hololens1-faq-security.md)
