@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857791"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883147"
 ---
 # 將 HoloLens 連線到網路
 
@@ -32,24 +32,14 @@ ms.locfileid: "10857791"
 
 ## 在安裝後連線到 Wi-Fi
 
-1. 選取 **[開始]** > **[設定]**。
-   - *僅限 HoloLens (第 1 代)*：使用注視來調整 [設定] 應用程式的位置，然後空中點選來放置它，或說「放置」。
-1. 選取 **[網路和網際網路]** > **[Wi-Fi]**。 如果沒有看到您的網路，請向下捲動清單。
+1. 執行 [啟動手勢]**** 然後選取 [設定]****。 [設定] 應用程式會自動放置在您面前。
+1. 選取 **[網路和網際網路]** > **[Wi-Fi]**。 確定已開啟 Wi-Fi。 如果沒有看到您的網路，請向下捲動清單。
 1. 選取網路，然後選取 **[連線]**。
 1. 如果系統提示您輸入網路密碼，請輸入密碼，然後選取 **[下一步]**。
-
-## 在 HoloLens (第 1 代) 上連線至 Wi-Fi
 
 HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 Wi-Fi 網路與將 Windows 10 Desktop 或行動裝置連線到 Wi-Fi 網路很類似。
 
 ![HoloLens Wi-Fi 設定](./images/wifi-hololens-600px.jpg)
-
-1. 開啟 **[開始]** 功能表。
-1. 從 [開始]**** 或從 [開始]**** 功能表右側的 [所有應用程式]**** 清單中，選取 [設定] 應用程式。 [設定] 應用程式會自動放置在您面前。
-1. 選取 [網路和網際網路]****。
-1. 確定已開啟 Wi-Fi。
-1. 從清單中選取 Wi-Fi 網路。
-1. 如有需要，請輸入 Wi-Fi 網路密碼。
 
 您也可以在 [開始]**** 功能表中檢查 Wi-Fi 狀態，確認您已連線到 Wi-Fi 網路：
 
@@ -61,6 +51,19 @@ HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 
 如果您遇到連線到 Wi-Fi 的問題，請參閱[我無法連線至 Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi)。
 
 當您登入該裝置上的企業或組織帳戶時，可能也會套用「行動裝置管理 (MDM)」原則 (如果該原則是由您的 IT 系統管理員設定)。
+
+## VPN
+VPN 連線可協助提供更安全的連線，並能存取公司的網路和網際網路。 HoloLens 2 支援內建的 VPN 用戶端和通用 Windows 平台 (UWP) VPN 外掛程式。 
+
+支援的內建 VPN 通訊協定：
+- IKEv2
+- L2TP
+- PPTP
+
+如果使用憑證來驗證內建 VPN 用戶端，則需要將所需的用戶端憑證新增至 [使用者憑證存放區]。 若要找出第三方 VPN 外掛程式是否支援 HoloLens 2，請移至 Microsoft Store 尋找 VPN 應用程式，並查看是否已將 HoloLens 列為支援的裝置，以及在 [系統需求] 頁面中，應用程式支援 ARM 或 ARM64 架構。 HoloLens 僅支援適用於第三方 VPN 的通用 Windows 平台應用程式。
+
+VPN 預設不會啟用，但是您可以開啟 [設定]**** 應用程式，並瀏覽至 [網路與網際網路] -> [VPN]****，以手動啟用。 您可以透過 MDM 的 [設定/允許 VPN][](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) 來管理 VPN，並透過 [Vpnv2-csp 原則][](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) 來設定 VPN。
+深入了解如何使用[這些指南](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)[設定 VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)。  
 
 ## 在 HoloLens (第 1 代) 上停用 Wi-Fi
 
@@ -80,7 +83,7 @@ HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 
 
 ### 使用 [設定] 應用程式
 
-1. 開啟 **[開始]** 功能表。
+1. 開啟 [開始]**** 功能表。
 1. 從 [開始]**** 或從 [開始]**** 功能表右側的 [所有應用程式]**** 清單中，選取 [設定]**** 應用程式。 [設定]**** 應用程式會自動放置在您面前。
 1. 選取 [網路和網際網路]****。
 1. 向下捲動至可用 Wi-Fi 網路清單下方，然後選取 [硬體內容]****。
@@ -89,9 +92,9 @@ HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 
 
    IP 位址會顯示在 [IPv4 位址]**** 的旁邊。
 
-### 使用 Cortana
+### 使用語音命令
 
-說「嗨 Cortana，我的 IP 位址是什麼？」 Cortana 就會顯示並讀出您的 IP 位址。
+視您的裝置組建而定，您可以使用內建的語音命令或 Cortana 來顯示您的 IP 位址。 在 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 之後的組建中，說出「我的 IP 位址是什麼？」 位址隨即顯示。 針對較舊的組建或 HoloLens (第 1 代)，請說出「嗨 Cortana，我的 IP 位址是什麼？」 Cortana 就會顯示並讀出您的 IP 位址。
 
 ### 使用 Windows 裝置入口網站
 
