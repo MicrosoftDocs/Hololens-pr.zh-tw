@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6ce55630c6ec20b83ca24006acedbe5f949997
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
+ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828222"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888552"
 ---
 # HoloLens 2 清潔常見問題集
 
@@ -74,7 +74,7 @@ ms.locfileid: "10828222"
 
 ## 我可以使用 ultraviolet （UV） light 淨化裝置嗎？
 
-UV-C germicidal irradiation 尚未在 HoloLens 2 上測試。
+UVC irradiance 使用 UVC LED，在265nm 度層級（介於 0.5-0.6 mW/cm 2 之間）運作，而且不會產生 <sup> </sup> ozone，可以用來淨化 HoloLens2。 請依照製造商有關處理與披露時間的規格。
 
 > [!CAUTION]  
 > 高層次的 UV A 和 UV B 曝露可能會降低裝置的顯示品質，並損壞面板塗層。 針對 UV A 和 UV B 輻射的過度曝光，具有下列效果，且會依曝光的持續時間與強度：
@@ -82,7 +82,7 @@ UV-C germicidal irradiation 尚未在 HoloLens 2 上測試。
 > 1. Brow 墊和裝置閉包會變成脫色。
 > 1. 在面板和感應器視窗上的防反射（AR）塗層中，會出現瑕疵。
 > 1. 在面板的基本材料和感應器視窗中都會出現瑕疵。
-> 1. SRG 效能會降低。
+> 1. 顯示效能會降低。
 
 ## 是否可將後面板替換？
 
