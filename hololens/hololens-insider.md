@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
-ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
+ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "10883366"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894060"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -31,47 +31,7 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 ![Windows 測試人員頻道說明](images/WindowsInsiderChannels.png)
 
-如需詳細資訊： [Windows 博客專案](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
-
-## 開始接收測試人員組建
-
-在 HoloLens 2 裝置上，移至 [**設定**  ->  **更新] & 安全性**  ->  **Windows**測試人員計畫，然後選取 [**開始**使用]。 連結您用來註冊為「Windows 測試人員」的帳戶。
-
-接著，選取 [Windows 作用中**的開發**]，選擇您要接收**開發人員通道**或**Beta 通道**組建，並查看程式條款。
-
-選取 [**確認]-> [立即重新開機**] 完成。 重新開機裝置之後，請移至 [**設定]-> 更新 & 安全性-> 檢查更新**以取得最新的組建。
-
-## 停止接收測試人員組建
-
-如果您不想再收到 Windows 全息版的測試人員組建，您可以在 HoloLens 執行生產組建時退出宣告，或者，您可以[使用 [](hololens-recovery.md)高級恢復] 隨附的功能，將您的裝置復原至非測試人員版本的 Windows 全息版。
-
-> [!CAUTION]
-> 在手動重新安裝新的預覽組建之後，從測試人員預覽版中取消登錄的已知問題，將會出現藍屏。 之後，他們必須手動復原其裝置。 如需有關您是否會受到影響的完整詳細資料，請查看此[已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)的詳細資訊。
-
-若要確認您的 HoloLens 正在執行生產組建：
-
-1. 移至 [**設定] > [系統 >**]，然後找出組建編號。
-
-1. [請參閱生產組建編號的版本](hololens-release-notes.md)資訊。
-
-若要退出宣告測試人員組建：
-
-1. 在運行生產組建的 HoloLens 中，移至 [**設定] > 更新 & 安全性 > Windows**測試人員計畫，然後選取 [停止測試人員**組建**]。
-
-1. 依照指示操作以選擇您的裝置。
-
-
-## 提供意見反應與報告問題
-
-請在您的 HoloLens 上使用「[意見反應中樞」 app](hololens-feedback.md) ，以提供意見反應與報告問題。 使用意見反應中樞可確保所有必要的診斷資訊都包含在內，以協助我們的工程師快速調試並解決問題。  使用中文和日文版的 HoloLens 時，必須以相同的方式報告問題。
-
-> [!NOTE]
-> 請務必接受詢問您是否希望意見反應中樞存取您的 [檔] 資料夾的提示（在出現提示時，選取 **[是]** ）。
-
-## 開發人員注意事項
-
-歡迎與鼓勵您使用 HoloLens 測試人員組建來開發應用程式。  請參閱[HoloLens 開發人員檔](https://developer.microsoft.com/windows/mixed-reality/development)以開始使用。 這些相同的指示可與 HoloLens 測試人員組建搭配使用。  您可以使用與您已在 HoloLens 開發中使用的相同 Unity 與 Visual Studio 組建。
-
+如需詳細資訊，請參閱 Windows 博客上的 Windows 測試人員[頻道簡介](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)。
 
 ## Windows 測試人員版本資訊
 
@@ -79,13 +39,16 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
 
-| 功能                               | 描述                                                                                   | 可在測試人員組建中使用 |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| 自動目視位置支援             | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
-| 全域指定存取                | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
-| 在多應用程式亭中自動啟動應用程式 | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
-| Hololens 2 的新電源原則     | 新支援的 power timeout 設定原則。                                          | 19041.1349 +                 |
-| 憑證檢視器                    | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
+| 功能                                         | 描述                                                                                   | 可在測試人員組建中使用 |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 自動目視位置支援                       | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
+| 全域指定存取                          | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
+| 在多應用程式亭中自動啟動應用程式           | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
+| Hololens 2 的新電源原則               | 新支援的 power timeout 設定原則。                                          | 19041.1349 +                 |
+| 憑證檢視器                              | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
+| HoloLens 2 的新裝置限制原則  | 新啟用 HoloLens 2 的裝置管理原則。                              | 19041.1349 +                 |
+| 已啟用 HoloLens 2 的設定頁面可見度 | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                          | 19041.1349 +                 |
+| HoloLens 原則                               | 混合式現實裝置的新原則。                                                       | 19041.1349 +                 |
 
 ### 自動目視位置支援
 
@@ -147,6 +110,38 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 ![[設定] 應用程式中的憑證檢視器](images/hololens-certificate-viewer.png)
 
+### HoloLens 2 的新裝置限制原則
+新啟用的原則，可讓您更多 HoloLens 2 裝置的管理選項。 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### 已啟用 HoloLens 2 的設定頁面可見度
+我們現在已啟用原則，可讓 IT 系統管理員避免顯示或無法存取 [系統設定] app 中的特定頁面，或針對除指定以外的所有頁面執行此動作。 若要瞭解如何完全自訂這項功能，請按一下下方的連結。
+ 
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+ 
+![在 [設定] 應用程式中修改之使用時間的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
+
+### HoloLens 原則
+已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製，以及在收集診斷時進行設定。  
+
+|     新的 HoloLens 原則                   |     描述                                                                            |     附註                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     [允許停用亮度] 按鈕，因此按下不會變更亮度。    |     1是，0否（預設值）                                                |
+|     MixedReality\VolumeButtonDisabled     |     [允許停用音量] 按鈕，因此按下不會變更音量。            |     1是，0否（預設值）                                                |
+|     MixedReality\MicrophoneDisabled       |     停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                   |     1是，0否（預設值）                                                |
+|     MixedReality\FallbackDiagnostics      |     控制可收集診斷記錄的行為。                            |     0停用，已為裝置擁有者啟用1，完全啟用2（預設） |
+|     MixedReality\HeadTrackingMode         |     保留供日後使用。                                                               |                                                                          |
+
+## 開始接收測試人員組建
+
+在 HoloLens 2 裝置上，移至 [**設定**  >  **更新] & 安全性**  >  **Windows**測試人員計畫，然後選取 [**開始**使用]。 連結您用來註冊為「Windows 測試人員」的帳戶。
+
+接著，選取 [Windows 作用中**的開發**]，選擇您要接收**開發人員通道**或**Beta 通道**組建，並查看程式條款。
+
+選取 [**確認] > [立即重新開機**] 完成。 重新開機裝置之後，請移至 [**設定] > 更新 & 安全性 > 檢查更新**，以取得最新的組建。
+
 ## FFU 下載和快閃路線
 若要使用 [航班式簽署 ffu] 進行測試，您必須先將裝置解除鎖定，然後才能閃爍 [航班已簽署] ffu。
 1. 在 PC 上：
@@ -158,3 +153,33 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 1. 在 HoloLens-航班解鎖：開啟**設定**  >  **更新 & 安全性**  >  **Windows**測試人員計畫，然後註冊、重新開機裝置。
 
 1. 快閃 FFU-現在您可以使用 ARC 來閃現已簽署的航班 FFU。
+
+## 提供意見反應與報告問題
+
+請在您的 HoloLens 上使用「[意見反應中樞」 app](hololens-feedback.md) ，以提供意見反應與報告問題。 使用意見反應中樞可確保所有必要的診斷資訊都包含在內，以協助我們的工程師快速調試並解決問題。  使用中文和日文版的 HoloLens 時，必須以相同的方式報告問題。
+
+> [!NOTE]
+> 請務必接受詢問您是否希望意見反應中樞存取您的 [檔] 資料夾的提示（在出現提示時，選取 **[是]** ）。
+
+## 開發人員注意事項
+
+歡迎與鼓勵您使用 HoloLens 測試人員組建來開發應用程式。  請參閱[HoloLens 開發人員檔](https://developer.microsoft.com/windows/mixed-reality/development)以開始使用。 這些相同的指示可與 HoloLens 測試人員組建搭配使用。  您可以使用與您已在 HoloLens 開發中使用的相同 Unity 與 Visual Studio 組建。
+
+## 停止接收測試人員組建
+
+如果您不想再收到 Windows 全息版的測試人員組建，您可以在 HoloLens 執行生產組建時退出宣告，或者，您可以[使用 [](hololens-recovery.md)高級恢復] 隨附的功能，將您的裝置復原至非測試人員版本的 Windows 全息版。
+
+> [!CAUTION]
+> 在手動重新安裝新的預覽組建之後，從測試人員預覽版中取消登錄的已知問題，將會出現藍屏。 之後，他們必須手動復原其裝置。 如需有關您是否會受到影響的完整詳細資料，請查看此[已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)的詳細資訊。
+
+若要確認您的 HoloLens 正在執行生產組建：
+
+1. 移至 [**設定] > [系統 >**]，然後找出組建編號。
+
+1. [請參閱生產組建編號的版本](hololens-release-notes.md)資訊。
+
+若要退出宣告測試人員組建：
+
+1. 在運行生產組建的 HoloLens 中，移至 [**設定] > 更新 & 安全性 > Windows**測試人員計畫，然後選取 [停止測試人員**組建**]。
+
+1. 依照指示操作以選擇您的裝置。
