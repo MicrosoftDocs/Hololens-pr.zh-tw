@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
+ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894060"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894602"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -39,8 +39,8 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
 
-| 功能                                         | 描述                                                                                   | 可在測試人員組建中使用 |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                     功能                     |                                          描述                                          | 可在測試人員組建中使用 |
+|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | 自動目視位置支援                       | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
 | 全域指定存取                          | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
 | 在多應用程式亭中自動啟動應用程式           | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
@@ -49,6 +49,7 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 | HoloLens 2 的新裝置限制原則  | 新啟用 HoloLens 2 的裝置管理原則。                              | 19041.1349 +                 |
 | 已啟用 HoloLens 2 的設定頁面可見度 | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                          | 19041.1349 +                 |
 | HoloLens 原則                               | 混合式現實裝置的新原則。                                                       | 19041.1349 +                 |
+| 更新原則                                 | 新啟用的原則，可讓您控制更新。                                           | 19041.1352 +                 |
 
 ### 自動目視位置支援
 
@@ -133,6 +134,12 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 |     MixedReality\MicrophoneDisabled       |     停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                   |     1是，0否（預設值）                                                |
 |     MixedReality\FallbackDiagnostics      |     控制可收集診斷記錄的行為。                            |     0停用，已為裝置擁有者啟用1，完全啟用2（預設） |
 |     MixedReality\HeadTrackingMode         |     保留供日後使用。                                                               |                                                                          |
+### 新啟用的 HoloLens 更新原則
+您現在可以在 HoloLens 2 裝置上啟用這些更新原則：
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ## 開始接收測試人員組建
 
