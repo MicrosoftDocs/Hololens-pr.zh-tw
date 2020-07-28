@@ -1,5 +1,5 @@
 ---
-title: 適用於 HoloLens 2 的 Windows Autopilot
+title: 適用於 HoloLens 2 的 Windows Autopilot (個人預覽版)
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -13,20 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 9f7306e1e2f190634df7b25833e22b27089d19de
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 8f62c09fd569e6c5dbeb961ae023c6f3cefff879
+ms.sourcegitcommit: 72be5b64e90dde339323012997440dfaca182027
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857781"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10895787"
 ---
 # 適用於 HoloLens 2 的 Windows Autopilot
 
 當您針對 Windows Autopilot 計畫設定 HoloLens 2 裝置時，您的使用者可以遵循簡易的程序，從雲端佈建裝置。
 
-此 Autopilot 計畫支援 Autopilot 自我部署模式，可將 HoloLens 2 裝置佈建為您的租用戶下的共用裝置。 自我部署模式會在佈建期間運用裝置預先安裝的 OEM 映像和驅動程式。 使用者不需讓裝置採用並完成全新體驗 (OOBE) 就能佈建該裝置。  
-
-![Autopilot 自我部署程序會使用網路連線，「無周邊」模式中設定共用裝置。](./images/hololens-ap-intro.png)
+此 Autopilot 計畫支援 Autopilot 自我部署模式，可將 HoloLens 2 裝置佈建為您的租用戶下的共用裝置。 自我部署模式會在佈建期間運用裝置預先安裝的 OEM 映像和驅動程式。 使用者不需讓裝置採用並完成全新體驗 (OOBE) 就能佈建該裝置。 若要深入瞭解 Windows 10 版 Windows Autopilot，請按一下 [此處](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)。
 
 當使用者開始 Autopilot 自我部署程序時，程序會完成下列步驟：
 
@@ -38,51 +36,46 @@ ms.locfileid: "10857781"
 1. 佈建裝置。
 1. 向使用者呈現登入畫面。
 
-## 適用於 HoloLens 2 的 Windows Autopilot：開始使用
+## 適用於 HoloLens 2 的 Windows Autopilot 個人預覽版
 
-下列步驟概述為適用於 HoloLens 2 的 Windows Autopilot 設定環境的程序。 本節的其餘部分提供這些步驟的詳細資料。
+請依照下列步驟來設定您的環境，以進行個人預覽版：
 
-1. 確認您符合適用於 HoloLens 的 Windows Autopilot 的需求。
-1. 註冊適用於 HoloLens 2 的 Windows Autopilot 計畫。
-1. 驗證您的租用戶已啟用 (已註冊參與計畫)。
-1. 在 Windows Autopilot 中登錄裝置。
-1. 建立裝置群組。
-1. 建立部署設定檔。
-1. 驗證 ESP 組態。
-1. 設定 HoloLens 裝置的自訂組態設定檔 (已知問題)。
+1. 確認您符合適用於 HoloLens 2 的 Windows Autopilot 之需求
+1. 註冊適用於 HoloLens 2 的 Windows Autopilot 之個人預覽版計畫
+1. 驗證您的租用戶已啟用 (已註冊參與計畫)
+1. 在 Windows Autopilot 中註冊裝置
+1. 建立裝置群組
+1. 建立部署設定檔
+1. 驗證 ESP 組態
+1. 設定 HoloLens 裝置的自訂組態設定檔 (已知問題)
 1. 驗證 HoloLens 裝置的設定檔狀態。
 
-### 1. 確認您符合適用於 HoloLens 的 Windows Autopilot 的需求
-如需如何參與計畫的最新資訊，請參閱 [Windows 測試人員版本資訊](hololens-insider.md#windows-insider-release-notes)。
 
-檢閱 Windows Autopilot 需求文章的下列各節：
+### 1. 確認您符合適用於 HoloLens 2 的 Windows Autopilot 之需求
+
+**檢閱 Windows Autopilot 需求文章的下列各節：**
 
 - [網路需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)  
 - [授權需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#licensing-requirements)  
 - [設定需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#configuration-requirements)
-> [!IMPORTANT]  
-> 不同於其他 Windows Autopilot 計畫，適用於 HoloLens 2 的 Windows Autopilot 有特定的作業系統需求。
 
-檢閱＜Windows Autopilot 自我部署模式＞文章的「[需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)」一節。 您的環境必須符合這些需求，以及標準 Windows Autopilot 需求。
-
-> [!NOTE]  
-> 您不需要檢閱本文的「逐步步驟」和「驗證」小節。 本文稍後的程序提供 HoloLens 特定的對應步驟。
+**檢閱＜Windows Autopilot 自我部署模式＞文章的「[需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)」一節。** 您的環境必須符合這些需求，以及標準 Windows Autopilot 需求。 您不需要檢閱本文的「逐步步驟」和「驗證」小節。 本文稍後的程序提供 HoloLens 特定的對應步驟。 如需有關如何登錄裝置和設定設定檔的詳細資訊，請參閱本文中的 [4. 在 Windows Autopilot 中登錄裝置](#4-register-devices-in-windows-autopilot)和 [6. 建立部署設定檔](#6-create-a-deployment-profile)。 以下各節提供 HoloLens 的特定步驟。
 
 > [!IMPORTANT]  
-> 如需有關如何登錄裝置和設定設定檔的詳細資訊，請參閱本文中的 [4. 在 Windows Autopilot 中登錄裝置](#4-register-devices-in-windows-autopilot)和 [6. 建立部署設定檔](#6-create-a-deployment-profile)。 以下各節提供 HoloLens 的特定步驟。
+> 不同於其他 Windows Autopilot 計畫，適用於 HoloLens 2 的 Windows Autopilot 有特定的作業系統需求。 Autopilot 依賴於在 HoloLens 裝置上預先安裝 Windows 全像攝影版版本 2004 (組建 19041.1103 或更新版本)。 2020 年 8 月下旬之前交付的裝置已預先安裝 Windows 全像攝影版版本 1903。 請與您的經銷商連絡，以瞭解何時能將可運行 Autopilot 的裝置交付給您。 如果您想要加入個人預覽版，請參閱下方的指示和需求。
 
-在您開始 OOBE 和佈建程序之前，請確認 HoloLens 裝置符合下列需求：
+**如果您想試用 Autopilot 預覽版，在您開始 OOBE 和佈建程序之前，請確認 HoloLens 裝置符合下列需求：**
 
-- 裝置尚不是 Azure AD 的成員，且未在 Intune (或另一個 MDM 系統) 中註冊。 Autopilot 自我部署程序會完成這些步驟。 若要確認所有與裝置相關的資訊都已清理，請檢查 Azure AD 和 Intune 中的 [裝置]**** 頁面。
-- 每一個裝置都可以連線至網際網路。 您可以將「USB C 轉乙太網」介面卡用於有線網路連線，或使用「USB C 轉 Wifi」介面卡進行無線網路的連線。 
-- 每個裝置都可以使用 USB-C 纜線連線至電腦，且電腦皆已安裝[適用於 Windows 的進階復原小幫手（Advanced Recovery Companion (ARC)）](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)
-- 每台裝置皆有最近期的 Windows 更新內容： Windows 10、版本為 19041.1002.200107-0909 或是再更新的版本。
+- 您必須使用 [[進階修復小幫手] (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)，手動安裝最新的作業系統 (Windows 全像攝影版版本 2004 組建 19041.1103 或更新版本)。 您可以在[這裡](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)找到相關指示。 
+- 您的裝置必須在 Windows Autopilot 中註冊 如需註冊裝置的相關資訊，請參閱 [4. 在 Windows Autopilot 中註冊裝置](#4-register-devices-in-windows-autopilot)。 
+- 在目前版本中，裝置必須先連線到網際網路，才能開啟 HoloLens 並啟動 Autopilot 佈建程式。 您可以使用「USB-C 轉乙太網路」介面卡將裝置連線到乙太網路，進行有線網路的連線，或使用「USB-C 轉 WiFi」介面卡進行無線網路的連線。 
+- 裝置尚不是 Azure AD 的成員，且未在 Intune (或另一個 MDM 系統) 中註冊。 Autopilot 自我部署程序會完成這些步驟。 若要確認所有與裝置相關的資訊都已清理，請檢查 Azure AD 和 Intune 入口網站中的 **[裝置]** 頁面。
+- 若要設定及管理 Autopilot 自我部署模式設定檔，請確定您有權存取 [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com)。
 
-若要設定及管理 Autopilot 自我部署模式設定檔，請確定您有權存取 [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com)。
 
 ### 2. 註冊適用於 HoloLens 2 的 Windows Autopilot 計畫
 
-若要參與計畫，您必須使用已為 HoloLens 啟用的租用戶。 若要這麼做，請移至[適用於 HoloLens 的 Windows Autopilot 私人預覽要求](https://aka.ms/APHoloLensTAP)，或使用下列 QR 代碼來提交要求。  
+**若要參與此計畫，您必須將租用戶註冊到個人預覽版計畫，以取得適用於 Autopilot 的 HoloLens 特定 Intune UI 控制項。** 若要這麼做，請移至[適用於 HoloLens 的 Windows Autopilot 私人預覽要求](https://aka.ms/APHoloLensTAP)，或使用下列 QR 代碼來提交要求。  
 
 ![Autopilot QR 代碼](./images/hololens-ap-qrcode.png)  
 
@@ -105,9 +98,16 @@ ms.locfileid: "10857781"
 
 ### 4. 在 Windows Autopilot 中登錄裝置
 
-若要在 Windows Autopilot 計畫中登錄 HoloLens 裝置，您必須取得該裝置的硬體雜湊 (又稱為硬體識別碼)。 在 OOBE 程序期間或之後裝置擁有者啟動診斷記錄收集程序 (如下列程序所述) 時，裝置就能在 CSV 檔案中記錄其硬體雜湊。 一般來說，裝置擁有者會是第一個登入裝置的使用者。
+在準備階段中，您可以透過兩種主要方式將裝置註冊到 Windows Autopilot： 
+
+1. **當您下訂單時，請與經銷商或轉銷商連絡，以註冊您的裝置**，或
+2. **取得硬體雜湊值 (又稱為硬體識別碼)，並手動註冊裝置。** 
+
+如需註冊裝置的詳細資訊，請參閱[新增裝置至 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices)文件。  
 
 **擷取裝置硬體雜湊**
+
+在 OOBE 程序期間或之後裝置擁有者啟動診斷記錄收集程序 (如下列程序所述) 時，裝置就能在 CSV 檔案中記錄其硬體雜湊。 一般來說，裝置擁有者會是第一個登入裝置的使用者。
 
 1. 啟動 HoloLens 2 裝置。
 1. 在裝置上，同時按下電源和音量向下鍵，然後鬆開。 裝置會收集診斷記錄和硬體雜湊，並將它們儲存在一組 .zip 檔案中。
@@ -198,22 +198,21 @@ ms.locfileid: "10857781"
 
 ## 適用於 HoloLens 2 的 Windows Autopilot 使用者體驗
 
-您的 HoloLens 使用者可以依照這些步驟來佈建 HoloLens 裝置。  
+完成上述指示之後，您的 HoloLens 2 使用者將會完成下列體驗，以佈建其 HoloLens 裝置：  
 
-1. 使用 USB-C 纜線將 HoloLens 裝置連線到已安裝 Advanced Recovery Companion (ARC) 且已下載適當 Windows 更新的電腦。
-1. 使用 ARC 將適當的 Windows 版本 flash 至裝置上。
-1. 將裝置連線到網路，然後將裝置重新開機。  
+1. 如前所述，在目前版本中，裝置必須先連線到網際網路，才能開啟 HoloLens 並啟動 Autopilot 佈建程式。 您可以使用「USB-C 轉乙太網路」介面卡將裝置連線到乙太網路，進行有線網路的連線，或使用「USB-C 轉 WiFi」介面卡進行無線網路的連線。
+   
    > [!IMPORTANT]  
    > 您必須先將裝置連線到網路，全新體驗 (OOBE) 才會開始。 在第一個 OOBE 畫面上，裝置會判斷它是否要佈建為 Autopilot 裝置。 如果裝置無法連線到網路，或您選擇不要將裝置佈建為 Autopilot 裝置，之後就無法變更為 Autopilot 佈建。 若要將裝置改為佈建為 Autopilot 裝置，則必須重新開始此程序。
 
-   裝置應該會自動開始 OOBE。 不要與 OOBE 互動。 請放鬆一下！ 讓 HoloLens 2 偵測網路連線，並讓它自動完成 OOBE。 裝置可能會在 OOBE 期間重新啟動。 OOBE 畫面應類似以下。
+1. 裝置應該會自動開始 OOBE。 不要與 OOBE 互動。 請放鬆一下！ 讓 HoloLens 2 偵測網路連線，並讓它自動完成 OOBE。 裝置可能會在 OOBE 期間重新啟動。 OOBE 畫面應類似以下。
    
    ![OOBE 步驟 1](./images/hololens-ap-uex-1.png)
    ![OOBE 步驟 2](./images/hololens-ap-uex-2.png)
    ![OOBE 步驟 3](./images/hololens-ap-uex-3.png)
    ![OOBE 步驟4](./images/hololens-ap-uex-4.png)
 
-在 OOBE 結束時，您可以使用您的使用者名稱和密碼登入該裝置。
+1. 在 OOBE 結束時，您可以使用您的使用者名稱和密碼登入該裝置。
 
   ![OOBE 步驟 5](./images/hololens-ap-uex-5.png)
 
