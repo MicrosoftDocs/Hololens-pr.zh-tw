@@ -1,5 +1,5 @@
 ---
-title: 從 HoloLens 裝置收集及使用診斷資訊
+title: 透過 HoloLens 裝置收集與使用診斷資訊
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -18,14 +18,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828402"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899166"
 ---
-# 從 HoloLens 裝置收集及使用診斷資訊
+# 透過 HoloLens 裝置收集與使用診斷資訊
 
 HoloLens 使用者與系統管理員可以從四種不同的方法中選擇，從 HoloLens 收集診斷資訊：
 
@@ -43,6 +43,7 @@ HoloLens 使用者與系統管理員可以從四種不同的方法中選擇，�
 |[意見反應中樞](#feedback-hub) |網路和網際網路連線<br /><br />意見反應中心應用程式<br /><br />將檔案上傳到 Microsoft 雲端的許可權 |Microsoft 雲端<br /><br />HoloLens 裝置（選用） |使用者要求協助、同意使用條款及上傳資料<br /><br />Microsoft 員工會以與使用條款相符的方式來查看資料 |雲端中的資料會針對 [新一代隱私權（NGP）] 定義的期間保留。 然後，系統會自動刪除該資料。<br /><br />裝置上的資料可隨時由擁有**裝置擁有**者或系統**管理員**許可權的使用者刪除。 |
 |[[設定] 疑難排解](#settings-troubleshooter) |設定 App |HoloLens 裝置<br /><br />已連接的電腦（選用） |使用者會儲存資料，而且只有使用者才存取資料（除非使用者特別與其他使用者共用資料）。 |資料會保留，直到使用者刪除為止。 |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |網路連線<br /><br />支援 DiagnosticLog CSP 的 MDM 環境 |系統管理員設定儲存位置 |在受管理的環境中，使用者隱含地同意資料的管理員存取權。<br /><br />系統管理員設定存取角色和許可權。 | 系統管理員配置保留原則。 |
+|[離線診斷](#offline-diagnostics) |裝置配置：<ul><li>已電源開啟並已連線至電腦</li><li>[電源] 和 [音量] 按鈕正常運作</li></ul> |HoloLens 裝置<br /><br />已連接的電腦 |使用者會儲存資料，而且只有使用者才存取資料（除非使用者特別與其他使用者共用資料）。 |資料會保留，直到使用者刪除為止。 | 
 
 
 -   最終使用者負責與其他人共用記錄。 這些檔案在與客戶服務和支援人員聯繫時主要很有用。  
@@ -116,4 +117,22 @@ IT 系統管理員使用 DiagnosticLog CSP 來設定資料儲存、保留及存�
 - 診斷資訊的保留期間。
 - 控制診斷資訊存取權的許可權。
 
+## 離線診斷
+在裝置無法透過意見反應中樞或設定疑難排解工具收集診斷的情況下，您可以手動收集診斷。 需要這麼做的一種情況是裝置無法連線到 Wi-fi。 診斷程式會從裝置收集損毀轉儲與記錄，以協助 Microsoft 支援工程師隔離問題。
+
+當裝置透過 USB 纜線連線到電腦之後，在檔案資源管理器中顯示時，就能正常運作。 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+請依照下列步驟來收集診斷資訊：
+1.  將裝置與 USB 纜線連接至您的電腦。
+2.  在您電腦上的檔案資源管理器中，流覽至「**這台電腦 \<hololens-device> \Internal 儲存空間**」。
+3.  如果未顯示**內部儲存**資料夾，表示裝置正在等待使用者登入。 您可以登入或關閉裝置，只要按住電源按鈕10秒。
+4.  按下，然後立即放開 [**電源 + 音量**] 按鈕。
+5.  稍等一分鐘，讓裝置準備 zip 檔案。
+6.  重新整理檔資源管理器，然後流覽至 [ **\ 檔**] 資料夾。
+7.  複製診斷程式 ZIP 檔案，並與 Microsoft 支援小組共用。
+
+請注意，某些診斷 ZIP 檔案可能包含個人可識別的資訊。
 
