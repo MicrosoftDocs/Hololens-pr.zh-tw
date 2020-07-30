@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861158"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899176"
 ---
 # 重新開機、重設或復原 HoloLens （第1代）
 
@@ -91,7 +91,7 @@ HoloLens 重新啟動最安全的方法是使用 Cortana。 這通常是 HoloLen
 
 如果重設裝置，您所有**全部的個人資料、應用程式和設定都會被清除，包含 TPM 重設。 重設只會安裝最新版的 Windows Holographic，而您必須重做所有初始化步驟 (校準、連線至 Wi-Fi、建立使用者帳戶、下載應用程式等等)。
 
-1. 啟動 [設定] 應用程式，然後選擇 [更新]**** > [重設]****。
+1. 啟動 [設定] 應用程式，然後選取 [更新]****  >  [復原]****。
 1. 選擇 [重設裝置]**** 選項，然後閱讀確認訊息。
 1. 如果您同意重設裝置，裝置將會重新啟動，並顯示一組旋轉的齒輪，並顯示進度列。
 1. 完成此程序約需 30 分鐘的時間。

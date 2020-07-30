@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
-ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
+ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894602"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902309"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -39,17 +39,19 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
 
-|                     功能                     |                                          描述                                          | 可在測試人員組建中使用 |
-|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| 自動目視位置支援                       | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
-| 全域指定存取                          | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1346 +                 |
-| 在多應用程式亭中自動啟動應用程式           | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
-| Hololens 2 的新電源原則               | 新支援的 power timeout 設定原則。                                          | 19041.1349 +                 |
-| 憑證檢視器                              | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
-| HoloLens 2 的新裝置限制原則  | 新啟用 HoloLens 2 的裝置管理原則。                              | 19041.1349 +                 |
-| 已啟用 HoloLens 2 的設定頁面可見度 | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                          | 19041.1349 +                 |
-| HoloLens 原則                               | 混合式現實裝置的新原則。                                                       | 19041.1349 +                 |
-| 更新原則                                 | 新啟用的原則，可讓您控制更新。                                           | 19041.1352 +                 |
+| 功能                                              | 描述                                                                                   | 可在測試人員組建中使用 |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 自動目視位置支援                            | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
+| 憑證檢視器                                   | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
+| HoloLens 原則                                    | 混合式現實裝置的新原則。                                                       | 19041.1349 +                 |
+| 為離線資訊站快取 AAD 群組成員資格         | 針對 Kiosk 模式允許使用 AAD 群組成員資格快取多少天的原則。     | 19041.1356 +                 |
+| HoloLens 2 的新裝置限制原則       | 新啟用 HoloLens 2 的裝置管理原則。                              | 19041.1349 +                 |
+| HoloLens 2 的新電源原則                    | 新支援的 power timeout 設定原則。                                          | 19041.1349 +                 |
+| 更新原則                                      | 新啟用的原則，可讓您控制更新。                                           | 19041.1352 +                 |
+| 已啟用 HoloLens 2 的設定頁面可見度      | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                          | 19041.1349 +                 |
+| 全域指定存取                               | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1356 +                 |
+| 在多應用程式亭中自動啟動應用程式                | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
+| 管理失敗處理的 Kiosk 模式行為變更 | 現在已處理 Kiosk 模式失敗的變更。                                             | 19041.1356 +                 |
 
 ### 自動目視位置支援
 
@@ -71,31 +73,6 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 **已知問題**
  - 我們正在調查在大量記憶體載入不足的情況下，目視追蹤器驅動程式主機進程可能會當機的問題。 目視追蹤驅動程式主機進程應該會自動復原。
 
-### 全域指派的存取-Kiosk 模式
-這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在[此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
-
-### 在多應用程式亭模式中自動啟動應用程式 
-僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
-
-應用程式會在使用者登入時自動啟動。 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Hololens 2 的新電源原則
-這些新新增的原則可讓系統管理員控制電源狀態，例如空閒超時。 若要深入瞭解每個個別原則，請按一下該原則的連結。
-
-|     原則檔連結                |     附註                                                                                                                                       |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  在 Windows 配置設計工具中使用的範例值，亦即100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     在 Windows 配置設計工具中使用的範例值，亦即100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置設計工具中使用的範例值，亦即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
-
 ### 憑證檢視器
 
 在 Windows 測試人員組建19041.1346 中，我們會在 HoloLens 2 設定應用程式中新增憑證檢視器。 此功能提供一種簡單且便於使用的方式來驗證您裝置上的憑證。 若要快速尋找特定憑證，您可以使用 [名稱]、[儲存] 或 [到期日] 等選項來排序。 使用者也可以直接搜尋證書。 使用新的憑證檢視器，系統管理員和使用者現在可以改良審核、診斷和驗證工具，以確保裝置保持安全且合規性。  若要查看個別憑證的詳細資訊，請選取憑證，然後按一下 [資訊]。
@@ -111,11 +88,62 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 ![[設定] 應用程式中的憑證檢視器](images/hololens-certificate-viewer.png)
 
+### HoloLens 原則
+已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
+
+| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0否（預設值）                                                |
+| MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0否（預設值）                                                |
+| MixedReality\MicrophoneDisabled                    | 停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                      | 1是，0否（預設值）                                                |
+| MixedReality\FallbackDiagnostics                   | 控制可收集診斷記錄的行為。                               | 0停用，已為裝置擁有者啟用1，完全啟用2（預設） |
+| MixedReality\HeadTrackingMode                      | 保留供日後使用。                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | 控制使用 AAD 群組成員資格快取多少天來進行面向 AAD 群組的展臺。 | 請參閱下方。                                                           |
+
+### 為離線資訊站快取 AAD 群組成員資格
+
+此原則控制的天數是，您可以使用 AAD 群組成員資格快取來指派針對已登入使用者的 AAD 群組指派的存取設定。 只要將此原則值設為大於0的值，就不會再使用 cache。  
+
+AADGroupMembershipCacheValidityInDays 
+
+最小值-0 天  
+最大值-60 天 
+
+正確使用此原則的步驟如下： 
+1. 針對使用 AAD 群組的展臺建立裝置配置設定檔，並將其指派給 HoloLens 裝置（s）。 
+1. 建立自訂 OMA URI 的裝置設定，將此原則值設為所需的天數（> 0），並將它指派給 HoloLens 裝置。 
+1. 註冊 HoloLens 裝置並確認這兩個設定都已套用到裝置。 
+1. 讓 AAD 使用者1登入當網際網路可供使用時，一旦使用者登入和 AAD 群組成員資格已成功確認，就會建立快取。 
+1. 現在 AAD 使用者1可以讓 HoloLens 離線，並在 kiosk 模式使用它，只要策略值允許 X 個天數。 
+1. 步驟4和5可針對任何其他 AAD 使用者 N 進行重複。以下是任何 AAD 使用者都必須使用網際網路登入到裝置，所以至少我們可以判斷他們是對哪些使用者配置目標的 AAD 群組成員。 
+ 
+> [!NOTE]
+> 在針對 AAD 使用者執行步驟4前，在「中斷式」的環境中，會出現以下所述的失敗行為。 
+
 ### HoloLens 2 的新裝置限制原則
 新啟用的原則，可讓您更多 HoloLens 2 裝置的管理選項。 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Hololens 2 的新電源原則
+這些新新增的原則可讓系統管理員控制電源狀態，例如空閒超時。 若要深入瞭解每個個別原則，請按一下該原則的連結。
+
+|     原則檔連結                |     附註                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  在 Windows 配置設計工具中使用的範例值，亦即100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     在 Windows 配置設計工具中使用的範例值，亦即100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置設計工具中使用的範例值，亦即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### 新啟用的 HoloLens 更新原則
+您現在可以在 HoloLens 2 裝置上啟用這些更新原則：
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### 已啟用 HoloLens 2 的設定頁面可見度
 我們現在已啟用原則，可讓 IT 系統管理員避免顯示或無法存取 [系統設定] app 中的特定頁面，或針對除指定以外的所有頁面執行此動作。 若要瞭解如何完全自訂這項功能，請按一下下方的連結。
@@ -124,22 +152,24 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
  
 ![在 [設定] 應用程式中修改之使用時間的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
 
-### HoloLens 原則
-已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製，以及在收集診斷時進行設定。  
+### 全域指派的存取-Kiosk 模式
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在[此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
 
-|     新的 HoloLens 原則                   |     描述                                                                            |     附註                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|     MixedReality\BrightnessButtonDisabled |     [允許停用亮度] 按鈕，因此按下不會變更亮度。    |     1是，0否（預設值）                                                |
-|     MixedReality\VolumeButtonDisabled     |     [允許停用音量] 按鈕，因此按下不會變更音量。            |     1是，0否（預設值）                                                |
-|     MixedReality\MicrophoneDisabled       |     停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                   |     1是，0否（預設值）                                                |
-|     MixedReality\FallbackDiagnostics      |     控制可收集診斷記錄的行為。                            |     0停用，已為裝置擁有者啟用1，完全啟用2（預設） |
-|     MixedReality\HeadTrackingMode         |     保留供日後使用。                                                               |                                                                          |
-### 新啟用的 HoloLens 更新原則
-您現在可以在 HoloLens 2 裝置上啟用這些更新原則：
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### 在多應用程式亭模式中自動啟動應用程式 
+僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
+
+應用程式會在使用者登入時自動啟動。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 管理失敗處理的 Kiosk 模式行為變更
+
+舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 從這個 Windows 測試人員組建開始，如果發生失敗，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
+
+![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
 ## 開始接收測試人員組建
 

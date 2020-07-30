@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827831"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899095"
 ---
 # 提高視覺品質和舒適度
 
@@ -89,6 +89,8 @@ HoloLens 2 使用眼球追蹤技術來改善您觀看虛擬環境並與其互動
 - 開啟房間中的光源或避免陽光直射
 
 如果您已遵守所有指導方針，且校準仍然失敗，您可以在 [設定] 中停用校準提示。 請在 [意見反應中樞](hololens-feedback.md)中提出您的意見反應，讓我們知道。
+
+也請參閱[影像色彩或亮度疑難排解](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)的相關資訊。
 
 請注意，設定 IPD 不適用於 Hololens 2，因為眼球位置是由系統計算。 
 
