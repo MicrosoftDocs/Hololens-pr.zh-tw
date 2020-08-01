@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c3d9a10533432b3e8489ffa297c16061abb9eaf
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828210"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903239"
 ---
 # 設定您的 HoloLens 2
 
@@ -69,12 +69,12 @@ HoloLens 2 會逐步引導您完成下列步驟：
 > 另請注意，在 HoloLens 設定期間，認證將在兩分鐘後逾時。 請在兩分鐘內輸入使用者名稱/密碼，否則使用者名稱欄位會自動清除。
 
 1. 登入您的使用者帳戶。 您可以選擇 [我的公司或學校擁有它]**** 或 [我擁有它]****。
-    - 當您選擇 [我的公司或學校擁有它]****，您可使用 Azure AD 帳戶登入。 如果您的組織使用 Azure AD Premium，且已設定自動 MDM 註冊，HoloLens 會自動在 MDM 中註冊。 如果您的組織未使用 Azure AD Premium，則無法使用自動 MDM 註冊。 在這種情況下，您必須[在裝置管理中手動註冊 HoloLens](hololens-enroll-mdm.md#enroll-through-settings-app)。
+    - 當您選擇 [我的公司或學校擁有它]****，您可使用 Azure AD 帳戶登入。 如果您的組織使用 Azure AD Premium，且已設定自動 MDM 註冊，HoloLens 會自動在 MDM 中註冊。 如果您的組織未使用 Azure AD Premium，則無法使用自動 MDM 註冊。 在這種情況下，您必須[在裝置管理中手動註冊 HoloLens](hololens-enroll-mdm.md#different-ways-to-enroll)。
         1. 輸入您組織的帳戶資訊。
         1. 接受隱私權聲明和使用者授權合約。
         1. 使用您的 Azure AD 認證登入。 這可能會重新導向至您組織的登入頁面。
         1. 繼續設定裝置。
-    - 當您選擇 [我擁有它]****，您可使用 Microsoft 帳戶登入。 設定完成後，您可以[在裝置管理中手動註冊 HoloLens](hololens-enroll-mdm.md#enroll-through-settings-app)。
+    - 當您選擇 [我擁有它]****，您可使用 Microsoft 帳戶登入。 設定完成後，您可以[在裝置管理中手動註冊 HoloLens](hololens-enroll-mdm.md#different-ways-to-enroll)。
         1. 輸入您的 Microsoft 帳戶資訊。
         2. 輸入您的密碼。 如果您的 Microsoft 帳戶需要[雙步驟驗證 (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)，請完成驗證程序。
 
