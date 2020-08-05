@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894049"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903328"
 ---
 # HoloLens 2 硬體
 
@@ -144,6 +144,23 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 ### 法規資訊
 [HoloLens 法規](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包括溫度、處置、無線電波和電視干擾等資訊。
+
+## 外包裝尺寸
+
+|      度量單位               |      單位衡量標準     |      單位英制     |
+|--------------------------------|-----------------------|-------------------------|
+|     單位長度                |     378.97 毫米          |     14.920 英吋       |
+|     單位寬度                 |     247.90 毫米          |     9.760 英吋        |
+|     單位深度                 |     163.07 毫米          |     6.420 英吋        |
+|     單位重量                |     2.878 公斤           |     6.344 磅           |
+|     外部託運容器長度    |     446.00 毫米          |     17.559 英吋       |
+|     外部託運容器寬度     |     257.99 毫米          |     10.157 英吋       |
+|     外部託運容器深度     |     172.01 毫米          |     6.772 英吋        |
+|     外部託運容器重量    |     3.284 公斤           |     7.240 磅           |
+
+注意：
+- 單位：黑色、零售樣式盒裝 HoloLens 2 已售出。
+- 外部託運容器：產品周圍包覆保護性運送包裝。
 
 ## 後續步驟
 
