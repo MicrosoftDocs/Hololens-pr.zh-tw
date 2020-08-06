@@ -1,7 +1,7 @@
 ---
 title: 準備新的 HoloLens 2
 description: 本指南會逐步解說首次設定和硬體指南。
-keywords: hololens
+keywords: 全息鏡、燈光、適應、舒適、部分
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b8803183382e3235c540c3bc175277ffdc7d04f2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
+ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828366"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905620"
 ---
 # 讓您的 HoloLens 2 準備好可供使用
 
@@ -119,6 +119,8 @@ ms.locfileid: "10828366"
 ### 保持舒適
 
 前幾次使用 HoloLens 不要太久，且務必要休息一下。 如果您感到不舒服，請停止使用並休息，直到感覺好些為止。 不舒服感可能包括暫時感到噁心、暈車、暈眩、迷失方向、頭痛、疲累、眼睛疲勞或乾眼。
+
+請參閱 [產品安全警告和指示](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)。
 
 > [!div class="nextstepaction"]
 > [啟動並設定您的 HoloLens 2](hololens2-start.md)
