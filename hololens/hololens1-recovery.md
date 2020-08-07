@@ -1,6 +1,6 @@
 ---
 title: 重新啟動、重設或復原 HoloLens 1
-ms.reviewer: Both basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
 description: 如何使用 Windows Device Recovery Tool，將影像快閃刷新至 HoloLens 第 1 代。
 keywords: 操作說明、重新啟動、重設、復原、硬重設、軟重設、電源重新啟動、HoloLens、關機、wdrt、Windows Device Recovery Tool
 ms.prod: hololens
@@ -16,116 +16,113 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
-ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
+ms.openlocfilehash: cd3e7a14ea811f6f3f3086563e7ead3bcd0115ae
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899176"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915940"
 ---
-# <span data-ttu-id="0067d-104">重新開機、重設或復原 HoloLens （第1代）</span><span class="sxs-lookup"><span data-stu-id="0067d-104">Restart, reset, or recover HoloLens (1st Gen)</span></span>
+# <span data-ttu-id="c3a6c-104">重新開機、重設或復原 HoloLens （第1代）</span><span class="sxs-lookup"><span data-stu-id="c3a6c-104">Restart, reset, or recover HoloLens (1st Gen)</span></span>
 
-<span data-ttu-id="0067d-105">如果您遇到 HoloLens 問題，您可以嘗試嘗試重新啟動、重設或甚至是使用裝置復原功能來重新快閃刷新。</span><span class="sxs-lookup"><span data-stu-id="0067d-105">If you're experiencing problems with your HoloLens you may want to try a restart, reset, or even re-flash with device recovery.</span></span>
+<span data-ttu-id="c3a6c-105">如果您在使用 HoloLens 時，發生問題，請嘗試重新啟動、重設或甚至使用裝置復原功能來重新快閃刷新。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-105">If you're experiencing problems with your HoloLens, you may want to try a restart or reset, or even reflash the device by using device recovery.</span></span> <span data-ttu-id="c3a6c-106">本文將逐步引導您完成建議的復原步驟。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-106">This article guides you through the recommended recovery steps in order.</span></span>
 
-<span data-ttu-id="0067d-106">如果您的 HoloLens 運作不良，以下是您可以嘗試的一些方法。</span><span class="sxs-lookup"><span data-stu-id="0067d-106">Here are some things to try if your HoloLens isn't running well.</span></span>  <span data-ttu-id="0067d-107">本文將逐步引導您逐步完成建議的復原步驟。</span><span class="sxs-lookup"><span data-stu-id="0067d-107">This article will guide you through the recommended recovery steps in succession.</span></span>
-
-<span data-ttu-id="0067d-108">如果要復原 HoloLens 2，請檢視 [復原 HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery) 的頁面，因為過程會有所不同。</span><span class="sxs-lookup"><span data-stu-id="0067d-108">If you are looking to recover a HoloLens 2, please view the page for [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as there are differences in the processes.</span></span>
-
-<span data-ttu-id="0067d-109">本文著重於 HoloLens 裝置和軟體，如果您的全像投影沒有正確顯示，[本文](hololens-environment-considerations.md)會討論改進全像投影品質的環境因素。</span><span class="sxs-lookup"><span data-stu-id="0067d-109">This article focuses on the HoloLens device and software, if your holograms don't look right, [this article](hololens-environment-considerations.md) talks about environmental factors that improve hologram quality.</span></span>
-
-## <span data-ttu-id="0067d-110">重新啟動</span><span class="sxs-lookup"><span data-stu-id="0067d-110">Restart</span></span>
-
-### <span data-ttu-id="0067d-111">使用 Cortana 執行安全重新啟動</span><span class="sxs-lookup"><span data-stu-id="0067d-111">Perform a safe restart by using Cortana</span></span>
-
-<span data-ttu-id="0067d-112">HoloLens 重新啟動最安全的方法是使用 Cortana。</span><span class="sxs-lookup"><span data-stu-id="0067d-112">The safest way to restart the HoloLens is by using Cortana.</span></span> <span data-ttu-id="0067d-113">這通常是 HoloLens 發生問題時的簡單第一步驟。</span><span class="sxs-lookup"><span data-stu-id="0067d-113">This is generally an easy first-step when experiencing an issue with HoloLens.</span></span> 
+<span data-ttu-id="c3a6c-107">如果您想要復原 HoloLens 2，請參閱 [復原 HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery)，因為這個過程有所不同。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-107">If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as that process differs.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0067d-114">並非所有裝置都提供 Cortana 功能。</span><span class="sxs-lookup"><span data-stu-id="0067d-114">Cortana is not avalible on all devices.</span></span> <span data-ttu-id="0067d-115">Cortana 適用於所有 HoloLens (第 1 代)裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-115">Cortana is avalible to all HoloLens (1st Gen) devices.</span></span>
-> <span data-ttu-id="0067d-116">在 Windows Holograpic 的版本 2004 更新之前，HoloLens 2 裝置可使用 Cortana。</span><span class="sxs-lookup"><span data-stu-id="0067d-116">Cortana is avalible on HoloLens 2 devices on a build prior to the Windows Holograpic, Version 2004 update.</span></span>
+> <span data-ttu-id="c3a6c-108">本文著重于 HoloLens 裝置和軟體。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-108">This article focuses on the HoloLens device and software.</span></span> <span data-ttu-id="c3a6c-109">如果您的全像投影看起來不正常，請參閱 **[HoloLens 的環境考慮](hololens-environment-considerations.md)**，瞭解改善全像投影品質的因素。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-109">If your holograms don't look right, see **[HoloLens environment considerations](hololens-environment-considerations.md)** for information about factors that improve hologram quality.</span></span>
 
-1. <span data-ttu-id="0067d-117">戴上您的裝置</span><span class="sxs-lookup"><span data-stu-id="0067d-117">Put on your device</span></span>
-1. <span data-ttu-id="0067d-118">請確認裝置已電源開啟，使用者已登入，且裝置並非正在等待密碼解鎖。</span><span class="sxs-lookup"><span data-stu-id="0067d-118">Make sure it's powered on, a user is logged in, and the device is not waiting for a password to unlock it.</span></span>
-1. <span data-ttu-id="0067d-119">請說出「嗨 Cortana，重新開機」或「嗨 Cortana，重新啟動」。</span><span class="sxs-lookup"><span data-stu-id="0067d-119">Say "Hey Cortana, reboot" or "Hey Cortana, restart."</span></span>
-1. <span data-ttu-id="0067d-120">當她確認收到時會要求您確認。</span><span class="sxs-lookup"><span data-stu-id="0067d-120">When she acknowledges she will ask you for confirmation.</span></span> <span data-ttu-id="0067d-121">完成問題後，請稍候等待播放音效，表明她在聽您說話，然後說出「是」。</span><span class="sxs-lookup"><span data-stu-id="0067d-121">Wait a second for a sound to play after she has finished her question, indicating she is listening to you and then say "Yes."</span></span>
-1. <span data-ttu-id="0067d-122">裝置現在會重新啟動。</span><span class="sxs-lookup"><span data-stu-id="0067d-122">The device will now restart.</span></span>
+## <span data-ttu-id="c3a6c-110">重新啟動</span><span class="sxs-lookup"><span data-stu-id="c3a6c-110">Restart</span></span>
 
-### <span data-ttu-id="0067d-123">使用電源按鈕執行安全重新啟動</span><span class="sxs-lookup"><span data-stu-id="0067d-123">Perform a safe restart by using the power button</span></span>
+### <span data-ttu-id="c3a6c-111">使用 Cortana 執行安全重新啟動</span><span class="sxs-lookup"><span data-stu-id="c3a6c-111">Do a safe restart by using Cortana</span></span>
 
-<span data-ttu-id="0067d-124">如果您仍然無法重新啟動裝置，您可以嘗試使用電源按鈕來重新啟動裝置：</span><span class="sxs-lookup"><span data-stu-id="0067d-124">If you still can't restart your device, you can try to restart it by using the power button:</span></span>
+<span data-ttu-id="c3a6c-112">重新啟動 HoloLens 最安全的方法是使用 Cortana，這項功能通常是在您使用 HoloLens 出問題時，第一件應該嘗試的動作。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-112">The safest way to restart the HoloLens is by using Cortana, which is generally the first thing to try when you experience an issue with HoloLens.</span></span>
 
-1. <span data-ttu-id="0067d-125">按住電源按鈕五秒。</span><span class="sxs-lookup"><span data-stu-id="0067d-125">Press and hold the power button for five seconds.</span></span>
-   1. <span data-ttu-id="0067d-126">一秒後，您會看到所有五個 LED 都亮起，然後從右至左慢慢關閉。</span><span class="sxs-lookup"><span data-stu-id="0067d-126">After one second, you will see all five LEDs illuminate, then slowly turn off from right to left.</span></span>
-   1. <span data-ttu-id="0067d-127">五秒後，所有 LED 都會關閉，指出已成功發出關機命令。</span><span class="sxs-lookup"><span data-stu-id="0067d-127">After five seconds, all LEDs will be off, indicating the shutdown command was issued successfully.</span></span>
-   1. <span data-ttu-id="0067d-128">請注意，關閉所有 LED 之後，請務必立即停止按下按鈕。</span><span class="sxs-lookup"><span data-stu-id="0067d-128">Note that it's important to stop pressing the button immediately after all the LEDs have turned off.</span></span>
-1. <span data-ttu-id="0067d-129">等待一分鐘，讓關閉完全成功。</span><span class="sxs-lookup"><span data-stu-id="0067d-129">Wait one minute for the shutdown to cleanly succeed.</span></span> <span data-ttu-id="0067d-130">請注意，即使關閉了顯示器，關機可能仍在進行中。</span><span class="sxs-lookup"><span data-stu-id="0067d-130">Note that the shutdown may still be in progress even if the displays are turned off.</span></span>
-1. <span data-ttu-id="0067d-131">按住電源按鈕一秒，以再次電源開啟裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-131">Power on the device again by pressing and holding the power button for one second.</span></span>
+> [!NOTE] 
+> <span data-ttu-id="c3a6c-113">並非所有裝置都能使用 Cortana 功能。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-113">Cortana is not available on all devices.</span></span>
+> - <span data-ttu-id="c3a6c-114">Cortana 功能可在所有 HoloLens (第 1 代)裝置上使用。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-114">Cortana is available on all HoloLens (1st Gen) devices.</span></span> 
+> - <span data-ttu-id="c3a6c-115">在 Windows Holograpic 的版本 2004 更新之前的HoloLens 2 上裝置可使用 Cortana。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-115">Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.</span></span>
 
-### <span data-ttu-id="0067d-132">使用 Windows 裝置入口網站來執行安全重新啟動</span><span class="sxs-lookup"><span data-stu-id="0067d-132">Perform a safe restart by using Windows Device Portal</span></span>
+1. <span data-ttu-id="c3a6c-116">開啟您的 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-116">Turn on your HoloLens.</span></span>
+1. <span data-ttu-id="c3a6c-117">請確認使用者已登入，且裝置並未等待密碼解鎖。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-117">Make sure that a user is logged in and the device isn't waiting for a password to unlock it.</span></span>
+2. <span data-ttu-id="c3a6c-118">請說出「嗨 Cortana，重新開機」或「嗨 Cortana，重新啟動」。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-118">Say "Hey Cortana, reboot" or "Hey Cortana, restart."</span></span>
+3. <span data-ttu-id="c3a6c-119">Cortana 會回復並提示您進行確認。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-119">Cortana will respond and prompt you to confirm.</span></span> <span data-ttu-id="c3a6c-120">在問題之後，請等候音效聲，然後說「是」。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-120">Wait for a sound to play after the question, and then say "Yes."</span></span> <span data-ttu-id="c3a6c-121">裝置會重新啟動。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-121">The device will restart.</span></span>
+
+### <span data-ttu-id="c3a6c-122">使用 [電源] 按鈕來執行安全重新啟動</span><span class="sxs-lookup"><span data-stu-id="c3a6c-122">Use the power button to do a safe restart</span></span>
+
+<span data-ttu-id="c3a6c-123">如果您仍然無法重新啟動裝置，請嘗試使用 **電源** 按鈕來重新啟動裝置：</span><span class="sxs-lookup"><span data-stu-id="c3a6c-123">If you still can't restart your device, try to restart it by using the **power** button:</span></span>
+
+1. <span data-ttu-id="c3a6c-124">按住**電源**按鈕 5 秒。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-124">Press and hold the **power** button for 5 seconds.</span></span> <span data-ttu-id="c3a6c-125">1秒之後，所有五個 LED 燈都會亮起，然後再慢慢地從右至左一個一個關閉。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-125">After 1 second, all five LEDs will illuminate and then slowly turn off one by one from right to left.</span></span> <span data-ttu-id="c3a6c-126">5秒之後，所有的 LED 燈都會關閉，表示裝置已成功關閉。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-126">After 5 seconds, all LEDs will be off, indicating successful shutdown.</span></span>
+      
+   > [!IMPORTANT]
+   > <span data-ttu-id="c3a6c-127">在所有 LED 燈關閉之後，請務必立即停止按壓按鈕。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-127">Stop pressing the button immediately after all the LEDs have turned off.</span></span>
+1. <span data-ttu-id="c3a6c-128">等待1分鐘，讓裝置完全關閉。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-128">Wait 1 minute for the shutdown to complete.</span></span> <span data-ttu-id="c3a6c-129">即使顯示器已關閉，關機動作仍可能還在進行中。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-129">The shutdown may still be in progress even after the displays are turned off.</span></span>
+2. <span data-ttu-id="c3a6c-130">按住 **電源** 按鈕 1 秒，以再次開啟裝置。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-130">Turn on the device again by pressing and holding the **power** button for 1 second.</span></span>
+
+### <span data-ttu-id="c3a6c-131">使用 Windows 裝置入口網站來執行安全重新啟動</span><span class="sxs-lookup"><span data-stu-id="c3a6c-131">Do a safe restart by using Windows Device Portal</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0067d-133">若要這麼做，您必須將 HoloLens 設定為開發人員裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-133">To do this, HoloLens has to be configured as a developer device.</span></span>  
-> <span data-ttu-id="0067d-134">閱讀有關 [Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)的更多資訊。</span><span class="sxs-lookup"><span data-stu-id="0067d-134">Read more about [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).</span></span>
+> <span data-ttu-id="c3a6c-132">在此程式中，您必須將 HoloLens 設定為開發人員裝置。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-132">For this process, HoloLens has to be configured as a developer device.</span></span> <span data-ttu-id="c3a6c-133">深入了解 [Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-133">Learn more at [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).</span></span>
 
-<span data-ttu-id="0067d-135">如果上述程式無法運作，您可以使用 [Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)來嘗試重新啟動裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-135">If the previous procedure doesn't work, you can try to restart the device by using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).</span></span> <span data-ttu-id="0067d-136">右上角有一個可重新啟動或關閉裝置的選項。</span><span class="sxs-lookup"><span data-stu-id="0067d-136">In the upper right corner, there is an option to restart or shut down the device.</span></span>
+<span data-ttu-id="c3a6c-134">如果前述程式無法運作，您可以使用 [Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) 以嘗試重新啟動裝置。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-134">If the previous procedure didn't work, try to restart the device by using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).</span></span> <span data-ttu-id="c3a6c-135">找到右上角可重新啟動或關閉裝置的選項。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-135">In the upper-right corner, find the option to restart or shut down the device.</span></span>
 
-### <span data-ttu-id="0067d-137">執行不安全的強制重新啟動</span><span class="sxs-lookup"><span data-stu-id="0067d-137">Perform an unsafe forced restart</span></span>
+### <span data-ttu-id="c3a6c-136">執行不安全的強制重新啟動</span><span class="sxs-lookup"><span data-stu-id="c3a6c-136">Do an unsafe forced restart</span></span>
 
-<span data-ttu-id="0067d-138">如果上述所有方法都無法順利重新啟動您的裝置，您可以強制重新啟動。</span><span class="sxs-lookup"><span data-stu-id="0067d-138">If none of the previous methods are able to successfully restart your device, you can force a restart.</span></span> <span data-ttu-id="0067d-139">此方法等同從 HoloLens 拉出電池。</span><span class="sxs-lookup"><span data-stu-id="0067d-139">This method is equivalent to pulling the battery from the HoloLens.</span></span>  <span data-ttu-id="0067d-140">這是危險的操作，可能會讓您的裝置損毀。</span><span class="sxs-lookup"><span data-stu-id="0067d-140">It is a dangerous operation which may leave your device in a corrupt state.</span></span>  <span data-ttu-id="0067d-141">如果發生這種情況，您必須快閃刷新您的 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="0067d-141">If that happens, you'll have to flash your HoloLens.</span></span>  
+<span data-ttu-id="c3a6c-137">如果前述方法並無法重新啟動您的 HoloLens，請強制重新啟動。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-137">If the previous methods didn't restart your HoloLens, force a restart.</span></span> <span data-ttu-id="c3a6c-138">此方法相當於移除並重新安裝電池。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-138">This method is equivalent to removing and reinstalling the battery.</span></span> <span data-ttu-id="c3a6c-139">這可能有點危險，因為這可能會讓您的裝置處於損毀狀態。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-139">It's dangerous because it might leave your device in a corrupted state.</span></span> <span data-ttu-id="c3a6c-140">如果發生這種情況，您必須快閃刷新您的 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-140">If that happens, you'll have to flash your HoloLens.</span></span>  
 
 > [!WARNING]
-> <span data-ttu-id="0067d-142">這是一種可能有害的方法，應僅在上述方法均無效的情況下使用。</span><span class="sxs-lookup"><span data-stu-id="0067d-142">This is a potentially harmful method and should only be used in the event none of the above methods work.</span></span>
+> <span data-ttu-id="c3a6c-141">這是一種可能有害的方法，僅適用於前述所提及的方法均無效的情況下，才可以使用。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-141">This is a potentially harmful method and should only be used if the previously cited methods didn't work.</span></span>
 
-1. <span data-ttu-id="0067d-143">按住電源按鈕至少 10 秒。</span><span class="sxs-lookup"><span data-stu-id="0067d-143">Press and hold the power button for at least 10 seconds.</span></span>
-   - <span data-ttu-id="0067d-144">您可將按鈕按住 10 秒以上。</span><span class="sxs-lookup"><span data-stu-id="0067d-144">It's okay to hold the button for longer than 10 seconds.</span></span>
-   - <span data-ttu-id="0067d-145">您可以放心忽略任何 LED 活動。</span><span class="sxs-lookup"><span data-stu-id="0067d-145">It's safe to ignore any LED activity.</span></span>
-1. <span data-ttu-id="0067d-146">放開按鈕並等待二到三秒。</span><span class="sxs-lookup"><span data-stu-id="0067d-146">Release the button and wait for two or three seconds.</span></span>
-1. <span data-ttu-id="0067d-147">按住電源按鈕一秒，以再次電源開啟裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-147">Power on the device again by pressing and holding the power button for one second.</span></span>
-<span data-ttu-id="0067d-148">如果仍有問題，請按電源按鈕 4 秒，直到所有電池指示器都淡出，且畫面停止顯示全像投影。</span><span class="sxs-lookup"><span data-stu-id="0067d-148">If you're still having problems, press the power button for 4 seconds, until all of the battery indicators fade out and the screen stops displaying holograms.</span></span> <span data-ttu-id="0067d-149">等待 1 分鐘，然後再按一次電源按鈕以開啟裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-149">Wait 1 minute, then press the power button again to turn on the device.</span></span>
+1. <span data-ttu-id="c3a6c-142">按住 **電源** 按鈕至少 10 秒。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-142">Press and hold the **power** button for at least 10 seconds.</span></span>
+   - <span data-ttu-id="c3a6c-143">您可將按鈕按住 10 秒以上。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-143">It's okay to hold the button for longer than 10 seconds.</span></span>
+   - <span data-ttu-id="c3a6c-144">您可以放心忽略任何 LED 活動。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-144">It's safe to ignore any LED activity.</span></span>
+1. <span data-ttu-id="c3a6c-145">放開按鈕並靜待 2-3 秒。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-145">Release the button and wait for 2-3 seconds.</span></span>
+1. <span data-ttu-id="c3a6c-146">按住**電源**按鈕 1 秒。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-146">Press and hold the **power** button for 1  second.</span></span>
+1. <span data-ttu-id="c3a6c-147">如果仍有問題，請按**電源**按鈕 4 秒，直到所有電池指示器都淡出，且畫面停止顯示全像投影。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-147">If you still have problems, press the **power** button for 4 seconds, until all the battery indicators fade out and the screen stops displaying holograms.</span></span> <span data-ttu-id="c3a6c-148">等待 1 分鐘，然後再按一次**電源**按鈕以開啟裝置。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-148">Wait 1 minute, and then press the **power** button again to turn on the device.</span></span>
 
-## <span data-ttu-id="0067d-150">重設成出廠預設值</span><span class="sxs-lookup"><span data-stu-id="0067d-150">Reset to factory settings</span></span>
+## <span data-ttu-id="c3a6c-149">重設成出廠預設值</span><span class="sxs-lookup"><span data-stu-id="c3a6c-149">Reset to factory settings</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0067d-151">若要重設，電池至少需要充電 40%。</span><span class="sxs-lookup"><span data-stu-id="0067d-151">The battery needs at least 40 percent charge to reset.</span></span>
+> <span data-ttu-id="c3a6c-150">電池至少需要有 40% 的電量才能重設。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-150">The battery needs at least a 40-percent charge to reset.</span></span>
 
-<span data-ttu-id="0067d-152">如果您的 HoloLens 在重新啟動後仍有問題，請嘗試將其重設為出廠狀態。</span><span class="sxs-lookup"><span data-stu-id="0067d-152">If your HoloLens is still experiencing issues after restarting, try resetting it to factory state.</span></span>  <span data-ttu-id="0067d-153">重設您的 HoloLens 會保留所安裝的 Windows Holographic 軟體版本，並將其他所有內容復原為出廠設定。</span><span class="sxs-lookup"><span data-stu-id="0067d-153">Resetting your HoloLens keeps the version of the Windows Holographic software that's installed on it and returns everything else to factory settings.</span></span>
+<span data-ttu-id="c3a6c-151">如果您的 HoloLens 仍有問題，請嘗試將它重設為出廠狀態。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-151">If your HoloLens still has a problem, try resetting it to factory state.</span></span> <span data-ttu-id="c3a6c-152">此步驟會保留所安裝的 Windows Holographic 軟體版本，並將其他所有內容復原為出廠設定。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-152">This step keeps the version of the Windows Holographic software that's installed on it and returns everything else to factory settings.</span></span>
 
-<span data-ttu-id="0067d-154">如果重設裝置，您所有\*\*全部的個人資料、應用程式和設定都會被清除，包含 TPM 重設。</span><span class="sxs-lookup"><span data-stu-id="0067d-154">If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset.</span></span> <span data-ttu-id="0067d-155">重設只會安裝最新版的 Windows Holographic，而您必須重做所有初始化步驟 (校準、連線至 Wi-Fi、建立使用者帳戶、下載應用程式等等)。</span><span class="sxs-lookup"><span data-stu-id="0067d-155">Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so forth).</span></span>
+>[!WARNING]
+> <span data-ttu-id="c3a6c-153">如果重設裝置，您所有的個人資料、應用程式和設定都會被清除，包含 TPM 重設資訊。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-153">If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset information.</span></span> <span data-ttu-id="c3a6c-154">重設只能安裝最新版的 Windows Holographic。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-154">Resetting will only install the latest installed version of Windows Holographic.</span></span> <span data-ttu-id="c3a6c-155">您必須重新執行所有的初始化步驟（校準、連線至 Wi-Fi、建立使用者帳戶、下載應用程式等等）。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-155">You'll have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so on).</span></span>
 
-1. <span data-ttu-id="0067d-156">啟動 [設定] 應用程式，然後選取 [更新]\*\*\*\*  >  [復原]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="0067d-156">Launch the Settings app, and then select **Update** > **Recovery**.</span></span>
-1. <span data-ttu-id="0067d-157">選擇 [重設裝置]\*\*\*\* 選項，然後閱讀確認訊息。</span><span class="sxs-lookup"><span data-stu-id="0067d-157">Select the **Reset device** option and read the confirmation message.</span></span>
-1. <span data-ttu-id="0067d-158">如果您同意重設裝置，裝置將會重新啟動，並顯示一組旋轉的齒輪，並顯示進度列。</span><span class="sxs-lookup"><span data-stu-id="0067d-158">If you agree to reset your device, the device will restart and display a set of spinning gears with a progress bar.</span></span>
-1. <span data-ttu-id="0067d-159">完成此程序約需 30 分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="0067d-159">Wait about 30 minutes for this process to complete.</span></span>
-1. <span data-ttu-id="0067d-160">重設將會完成，且裝置將重新啟動即可使用。</span><span class="sxs-lookup"><span data-stu-id="0067d-160">The reset will complete and the device will restart into the out-of-the-box experience.</span></span>
+1. <span data-ttu-id="c3a6c-156">開啟 [設定] 應用程式，然後選取 **[更新]**  > **[復原]**。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-156">Open the Settings app, and then select **Update** > **Recovery**.</span></span>
+1. <span data-ttu-id="c3a6c-157">選擇 [重設裝置]\*\*\*\* 選項，然後閱讀確認訊息。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-157">Select the **Reset device** option and read the confirmation message.</span></span>
+1. <span data-ttu-id="c3a6c-158">確認重設。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-158">Confirm the reset.</span></span> <span data-ttu-id="c3a6c-159">裝置將重新啟動，並顯示一組旋轉的齒輪和進度列。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-159">The device will restart and display a set of spinning gears and a progress bar.</span></span>
+1. <span data-ttu-id="c3a6c-160">完成此程序約需 30 分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-160">Wait about 30 minutes for this process to complete.</span></span> <span data-ttu-id="c3a6c-161">重設完成後，裝置將重新啟動至 [全新] 體驗。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-161">When it's done, the device will restart into the "out-of-the-box" experience.</span></span>
 
-## <span data-ttu-id="0067d-161">重新安裝作業系統</span><span class="sxs-lookup"><span data-stu-id="0067d-161">Re-install the operating system</span></span>
+## <span data-ttu-id="c3a6c-162">重新安裝作業系統</span><span class="sxs-lookup"><span data-stu-id="c3a6c-162">Reinstall the operating system</span></span>
 
-<span data-ttu-id="0067d-162">如果在重新啟動並重設之後裝置仍有問題，您可以在電腦上使用復原工具來重新安裝 HoloLens 的作業系統和韌體。</span><span class="sxs-lookup"><span data-stu-id="0067d-162">If the device is still having a problem after rebooting and resetting, you can use a recovery tool on your computer to reinstall the HoloLens' operating system and firmware.</span></span>  
+<span data-ttu-id="c3a6c-163">如果在重新啟動並重設之後裝置仍有問題，您可以在電腦上使用復原工具來重新安裝 HoloLens 作業系統和韌體。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-163">If the device is still having a problem after restart and reset, you can use a recovery tool on your computer to reinstall the HoloLens operating system and firmware.</span></span>  
 
-<span data-ttu-id="0067d-163">HoloLens 必須要重設的所有資料都封裝在 Full Flash Update (ffu) 中。</span><span class="sxs-lookup"><span data-stu-id="0067d-163">All of the data HoloLens needs to reset is packaged in a Full Flash Update (ffu).</span></span>  <span data-ttu-id="0067d-164">這類似於 iso、wim 或 vhd。</span><span class="sxs-lookup"><span data-stu-id="0067d-164">This is similar to an iso, wim, or vhd.</span></span>  [<span data-ttu-id="0067d-165">了解 FFU 影像檔案格式。</span><span class="sxs-lookup"><span data-stu-id="0067d-165">Learn about FFU image file formats.</span></span>](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+<span data-ttu-id="c3a6c-164">重設時，HoloLens 所需的資料會封裝在完整刷新更新（FFU）中，類似于 .iso、.wim 或 .vhd 檔案。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-164">The data that HoloLens needs for the reset is packaged in a Full Flash Update (FFU), which is similar to an .iso, .wim, or .vhd file.</span></span> [<span data-ttu-id="c3a6c-165">了解 FFU 影像檔案格式。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-165">Learn about FFU image file formats.</span></span>](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
-<span data-ttu-id="0067d-166">如有必要，您可以使用 Windows Device Recovery Tool 在 HoloLens (第 1 代) 上安裝全新的作業系統。</span><span class="sxs-lookup"><span data-stu-id="0067d-166">If necessary, you can install a completely new operating system on your HoloLens (1st gen) with the Windows Device Recovery Tool.</span></span>
+<span data-ttu-id="c3a6c-166">您可以使用 Windows Device Recovery Tool 在 HoloLens (第 1 代) 上安裝全新的作業系統。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-166">You can install a new operating system on your HoloLens (1st gen) by using the Windows Device Recovery Tool.</span></span> <span data-ttu-id="c3a6c-167">使用此工具之前，請先查看重新啟動或重設 HoloLens 是否可以解決問題。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-167">Before you use that tool, see if restarting or resetting your HoloLens fixes the problem.</span></span>
 
-<span data-ttu-id="0067d-167">使用此工具之前，請確定重新啟動或重設 HoloLens 是否可以解決問題。</span><span class="sxs-lookup"><span data-stu-id="0067d-167">Before you use this tool, determine if restarting or resetting your HoloLens fixes the problem.</span></span> <span data-ttu-id="0067d-168">復原程式可能需要一些時間。</span><span class="sxs-lookup"><span data-stu-id="0067d-168">The recovery process may take some time.</span></span>  <span data-ttu-id="0067d-169">完成後，將安裝針對您的 HoloLens 核可的最新版本 Windows Holographic 軟體。</span><span class="sxs-lookup"><span data-stu-id="0067d-169">When you're done, the latest version of the Windows Holographic software approved for your HoloLens will be installed.</span></span>
+<span data-ttu-id="c3a6c-168">修復程式可能需要一段時間。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-168">The recovery process may take a while.</span></span> <span data-ttu-id="c3a6c-169">完成後，將安裝最新版本的 Windows Holographic 軟體。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-169">When it's done, the latest version of the Windows Holographic software will be installed.</span></span>
 
-<span data-ttu-id="0067d-170">若要使用此工具，您需要一部執行 Windows 10 或更高版本的電腦，具備至少 4 GB 的可用儲存空間。</span><span class="sxs-lookup"><span data-stu-id="0067d-170">To use the tool, you'll need a computer running Windows 10 or later, with at least 4 GB of free storage space.</span></span>  <span data-ttu-id="0067d-171">請注意，您無法在虛擬機器上執行此工具。</span><span class="sxs-lookup"><span data-stu-id="0067d-171">Please note that you can't run this tool on a virtual machine.</span></span>
+<span data-ttu-id="c3a6c-170">若要使用此工具，您需要一部執行 Windows 10 或更新版本的電腦，並具備至少 4 GB 的可用儲存空間。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-170">To use the tool, you need a computer running Windows 10 or later with at least 4 GB of free storage space.</span></span> <span data-ttu-id="c3a6c-171">您無法在虛擬電腦上執行此工具。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-171">You can't run this tool on a virtual machine.</span></span>
 
-### <span data-ttu-id="0067d-172">復原您的 HoloLens：</span><span class="sxs-lookup"><span data-stu-id="0067d-172">Recover your HoloLens:</span></span>
+### <span data-ttu-id="c3a6c-172">復原您的 HoloLens</span><span class="sxs-lookup"><span data-stu-id="c3a6c-172">Recover your HoloLens</span></span>
 
-1. <span data-ttu-id="0067d-173">在您的電腦上下載並安裝 [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)。</span><span class="sxs-lookup"><span data-stu-id="0067d-173">Download and install the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) on your computer.</span></span>
-1. <span data-ttu-id="0067d-174">使用 HoloLens 隨附的 Micro USB 連接線，將 HoloLens (第 1 代) 連線至您的電腦。</span><span class="sxs-lookup"><span data-stu-id="0067d-174">Connect the HoloLens (1st gen) to your computer using the Micro USB cable that came with your HoloLens.</span></span>
-1. <span data-ttu-id="0067d-175">執行 Windows Device Recovery Tool 並依照指示操作。</span><span class="sxs-lookup"><span data-stu-id="0067d-175">Run the Windows Device Recovery Tool and follow the instructions.</span></span>
+1. <span data-ttu-id="c3a6c-173">在您的電腦上下載並安裝 [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-173">Download and install the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) on your computer.</span></span>
+1. <span data-ttu-id="c3a6c-174">使用 HoloLens 隨附的 Micro USB 連接線，將 HoloLens (第 1 代) 連線至您的電腦。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-174">Connect the HoloLens (1st gen) to your computer by using the Micro USB cable that came with your HoloLens.</span></span>
+1. <span data-ttu-id="c3a6c-175">開啟 Windows Device Recovery Tool 並依照指示操作。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-175">Open the Windows Device Recovery Tool and follow the instructions.</span></span>
 
-<span data-ttu-id="0067d-176">如果系統未自動偵測到 HoloLens (第 1 代)，請選取 [未偵測到我的裝置]\*\*\*\* ，並依照指示將裝置置於復原模式。</span><span class="sxs-lookup"><span data-stu-id="0067d-176">If the HoloLens (1st gen) isn't automatically detected, select **My device was not detected** and follow the instructions to put your device into recovery mode.</span></span>
+<span data-ttu-id="c3a6c-176">如果未自動偵測到 HoloLens （第1代），請選取 **[未偵測到我的裝置]**。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-176">If the HoloLens (1st gen) isn't automatically detected, select **My device was not detected**.</span></span> <span data-ttu-id="c3a6c-177">然後按照指示將裝置置於修復模式。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-177">Then follow the instructions to put the device into recovery mode.</span></span>
 
-### <span data-ttu-id="0067d-177">手動快閃刷新模式：</span><span class="sxs-lookup"><span data-stu-id="0067d-177">Manual Flashing Mode:</span></span>
+### <span data-ttu-id="c3a6c-178">手動快閃刷新模式</span><span class="sxs-lookup"><span data-stu-id="c3a6c-178">Manual flashing mode</span></span>
 
-<span data-ttu-id="0067d-178">如果您未偵測到您的裝置，請使用以下方法，將其手動置於快閃刷新模式。</span><span class="sxs-lookup"><span data-stu-id="0067d-178">In the event that your device is not being detected please use the following method to manually place it into flashing mode.</span></span>
+<span data-ttu-id="c3a6c-179">如果未偵測到您的裝置，請按照下列步驟將它置於快閃刷新模式：</span><span class="sxs-lookup"><span data-stu-id="c3a6c-179">If your device isn't detected, follow these steps to put it into flashing mode:</span></span>
 
-1. <span data-ttu-id="0067d-179">中斷所有電源與裝置的連接。</span><span class="sxs-lookup"><span data-stu-id="0067d-179">Unplug the device from all power sources.</span></span>
-1. <span data-ttu-id="0067d-180">如果裝置處於開啟狀態，請按住電源按鈕，直到完全關閉。</span><span class="sxs-lookup"><span data-stu-id="0067d-180">If the device is on please hold down the power button until it is completely off.</span></span>
-1. <span data-ttu-id="0067d-181">按住**調高音量**按鈕，然後短暫點選**電源按鈕**。</span><span class="sxs-lookup"><span data-stu-id="0067d-181">Hold the **Volume Up** button, and briefly tap the **Power button**.</span></span> 
-1. <span data-ttu-id="0067d-182">裝置應該會開機，然後只顯示中間的 LED。</span><span class="sxs-lookup"><span data-stu-id="0067d-182">The device should boot and then display only the middle LED light.</span></span>
-1. <span data-ttu-id="0067d-183">將裝置插入您的電腦。</span><span class="sxs-lookup"><span data-stu-id="0067d-183">Plug the device into your PC.</span></span>
-1. <span data-ttu-id="0067d-184">啟動 Windows Device Recovery Tool。</span><span class="sxs-lookup"><span data-stu-id="0067d-184">Launch Windows Device Recovery Tool.</span></span>
-1. <span data-ttu-id="0067d-185">您必須選取\*未偵測到我的裝置\*\*，然後選取 **HoloLens**。</span><span class="sxs-lookup"><span data-stu-id="0067d-185">You will need to select \*My device was not detected\*\*, and then select **HoloLens**.</span></span> 
-1. <span data-ttu-id="0067d-186">按照指示復原您的裝置。</span><span class="sxs-lookup"><span data-stu-id="0067d-186">Follow the instructions to recover your device.</span></span>
+1. <span data-ttu-id="c3a6c-180">斷開裝置的所有電源連接。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-180">Unplug the device from any power source.</span></span>
+1. <span data-ttu-id="c3a6c-181">如果裝置已開啟，請按住 **電源**按鈕，直到裝置完全關閉。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-181">If the device is on, hold down the **power** button until it completely turns off.</span></span>
+2. <span data-ttu-id="c3a6c-182">按住**調高音量**按鈕，然後點一下 **電源** 按鈕。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-182">Hold the **volume up** button, and briefly tap the **power** button.</span></span> <span data-ttu-id="c3a6c-183">裝置應該會開啟，並只顯示中間的 LED 燈。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-183">The device should start and display only the middle LED light.</span></span>
+3. <span data-ttu-id="c3a6c-184">將裝置插入您的電腦。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-184">Plug the device into your PC.</span></span>
+4. <span data-ttu-id="c3a6c-185">開啟 Windows Device Recovery Tool。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-185">Open the Windows Device Recovery Tool.</span></span>
+5. <span data-ttu-id="c3a6c-186">選取 **[未偵測到我的裝置]**，然後選取 **HoloLens**。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-186">Select **My device was not detected** and then **HoloLens**.</span></span> 
+6. <span data-ttu-id="c3a6c-187">按照指示復原您的裝置。</span><span class="sxs-lookup"><span data-stu-id="c3a6c-187">Follow the instructions to recover your device.</span></span>
