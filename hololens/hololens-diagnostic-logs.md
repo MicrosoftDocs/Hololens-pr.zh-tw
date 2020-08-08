@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
-ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
+ms.openlocfilehash: d14c397c4783acd88dcd922a92b0ffe6437a6473
+ms.sourcegitcommit: c2040b967f2f884a22f4b93a173224163e37da1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899166"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "10918594"
 ---
 # 透過 HoloLens 裝置收集與使用診斷資訊
 
@@ -34,16 +34,16 @@ HoloLens 使用者與系統管理員可以從四種不同的方法中選擇，�
 - 設定 App
 
 > [!IMPORTANT]  
-> 裝置診斷記錄包含個人身分識別資訊（PII），例如使用者在一般作業期間啟動哪些程式或應用程式。 當多個使用者共用一個 HoloLens 裝置時（例如，使用者使用不同的 Microsoft Azure Active Directory （AAD）帳戶登入相同的裝置），診斷記錄可能會包含適用于多個使用者的 PII 資訊。 如需詳細資訊，請參閱[Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+> 裝置診斷記錄包含個人可識別資訊 (PII) ，例如使用者在一般作業中啟動哪些程式或應用程式。 如果有多個使用者共用 HoloLens 裝置 (例如，使用者使用不同的 Microsoft Azure Active Directory 登入相同的裝置 (AAD) 帳戶) 診斷記錄可能包含適用于多個使用者的 PII 資訊。 如需詳細資訊，請參閱[Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 下表比較三個集合方法。 在表格後面的章節中，方法名稱連結至更詳細的資訊。
 
 |方法 |必要條件 |資料位置 |資料存取及使用 |資料保留 |
 | --- | --- | --- | --- | --- |
-|[意見反應中樞](#feedback-hub) |網路和網際網路連線<br /><br />意見反應中心應用程式<br /><br />將檔案上傳到 Microsoft 雲端的許可權 |Microsoft 雲端<br /><br />HoloLens 裝置（選用） |使用者要求協助、同意使用條款及上傳資料<br /><br />Microsoft 員工會以與使用條款相符的方式來查看資料 |雲端中的資料會針對 [新一代隱私權（NGP）] 定義的期間保留。 然後，系統會自動刪除該資料。<br /><br />裝置上的資料可隨時由擁有**裝置擁有**者或系統**管理員**許可權的使用者刪除。 |
-|[[設定] 疑難排解](#settings-troubleshooter) |設定 App |HoloLens 裝置<br /><br />已連接的電腦（選用） |使用者會儲存資料，而且只有使用者才存取資料（除非使用者特別與其他使用者共用資料）。 |資料會保留，直到使用者刪除為止。 |
+|[意見反應中樞](#feedback-hub) |網路和網際網路連線<br /><br />意見反應中心應用程式<br /><br />將檔案上傳到 Microsoft 雲端的許可權 |Microsoft 雲端<br /><br />HoloLens 裝置 (選用)  |使用者要求協助、同意使用條款及上傳資料<br /><br />Microsoft 員工會以與使用條款相符的方式來查看資料 |雲端中的資料會在下一代隱私權 (NGP) 所定義的期間保留。 然後，系統會自動刪除該資料。<br /><br />裝置上的資料可隨時由擁有**裝置擁有**者或系統**管理員**許可權的使用者刪除。 |
+|[[設定] 疑難排解](#settings-troubleshooter) |設定 App |HoloLens 裝置<br /><br />已連接的電腦 (選用)  |使用者會儲存資料，除非使用者明確與其他使用者共用資料，否則只有使用者存取資料 () 。 |資料會保留，直到使用者刪除為止。 |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |網路連線<br /><br />支援 DiagnosticLog CSP 的 MDM 環境 |系統管理員設定儲存位置 |在受管理的環境中，使用者隱含地同意資料的管理員存取權。<br /><br />系統管理員設定存取角色和許可權。 | 系統管理員配置保留原則。 |
-|[離線診斷](#offline-diagnostics) |裝置配置：<ul><li>已電源開啟並已連線至電腦</li><li>[電源] 和 [音量] 按鈕正常運作</li></ul> |HoloLens 裝置<br /><br />已連接的電腦 |使用者會儲存資料，而且只有使用者才存取資料（除非使用者特別與其他使用者共用資料）。 |資料會保留，直到使用者刪除為止。 | 
+|[離線診斷](#offline-diagnostics) |裝置配置：<ul><li>已電源開啟並已連線至電腦</li><li>[電源] 和 [音量] 按鈕正常運作</li></ul> |HoloLens 裝置<br /><br />已連接的電腦 |使用者會儲存資料，除非使用者明確與其他使用者共用資料，否則只有使用者存取資料 () 。 |資料會保留，直到使用者刪除為止。 | 
 
 
 -   最終使用者負責與其他人共用記錄。 這些檔案在與客戶服務和支援人員聯繫時主要很有用。  
@@ -62,15 +62,15 @@ HoloLens 使用者可以使用 Microsoft 意見中心桌面應用程式，傳送
 
 ### 資料位置、存取和保留
 
-透過同意意見反應中樞的使用條款，使用者就能明確同意資料的儲存及使用量（如該協定所定義）。
+透過同意意見反應中樞的使用條款，使用者就能明確地同意資料 (的儲存與使用狀況，如該合約) 所定義。
 
 意見反應中心提供兩個位置供使用者儲存診斷資訊：
 
-- **Microsoft 雲端**。 使用者使用「意見反應中心」 app 上傳的資料，會儲存為符合下一代隱私權（NGP）需求的天數。 Microsoft 員工可以使用 NGP 相容的檢視器，在此期間存取訊號。
+- **Microsoft 雲端**。 使用者使用「意見反應中樞」 app 上傳的資料，會儲存在與下一代隱私權 (NGP) 需求相符的天數。 Microsoft 員工可以使用 NGP 相容的檢視器，在此期間存取訊號。
    > [!NOTE]  
    > 這些需求適用于所有意見反應中樞類別中的資料。
 
-- **HoloLens 裝置**。 當您在意見反應中樞中歸檔報表時，使用者可以選取 [**儲存在提供意見反應時建立的診斷與附件的本機複本**]。 如果使用者選取此選項，意見反應中心就會儲存 HoloLens 裝置上的診斷資訊複本。 使用者仍可存取此資訊（或使用該帳戶登入 HoloLens 的任何人）。 若要刪除此資訊，使用者必須擁有裝置的**裝置擁有**者或系統**管理員**許可權。 具有適當許可權的使用者可以登入意見反應中樞，選取 [**設定**] [  >  **查看診斷記錄**]，然後刪除資訊。
+- **HoloLens 裝置**。 當您在意見反應中樞中歸檔報表時，使用者可以選取 [**儲存在提供意見反應時建立的診斷與附件的本機複本**]。 如果使用者選取此選項，意見反應中心就會儲存 HoloLens 裝置上的診斷資訊複本。 使用者 (或任何使用該帳戶登入 HoloLens) 的人，就能繼續存取此資訊。 若要刪除此資訊，使用者必須擁有裝置的**裝置擁有**者或系統**管理員**許可權。 具有適當許可權的使用者可以登入意見反應中樞，選取 [**設定**] [  >  **查看診斷記錄**]，然後刪除資訊。
 
 ## [設定] 疑難排解
 
@@ -100,7 +100,7 @@ HoloLens 使用者可以使用裝置上的 [設定] 應用程式來疑難排解�
 
 ## DiagnosticLog CSP
 
-在行動裝置管理（MDM）環境中，IT 系統管理員可以使用[DiagnosticLog configuration services 提供者（CSP）](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp)來設定登記的 HoloLens 裝置上的診斷設定。 IT 管理員可以設定這些設定，從已註冊的裝置收集記錄。
+在行動裝置管理 (MDM) 環境中，IT 系統管理員可以使用[DiagnosticLog 配置服務提供者 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp)來設定登記的 HoloLens 裝置上的診斷設定。 IT 管理員可以設定這些設定，從已註冊的裝置收集記錄。
 
 ### 必要條件
 
@@ -130,7 +130,7 @@ IT 系統管理員使用 DiagnosticLog CSP 來設定資料儲存、保留及存�
 2.  在您電腦上的檔案資源管理器中，流覽至「**這台電腦 \<hololens-device> \Internal 儲存空間**」。
 3.  如果未顯示**內部儲存**資料夾，表示裝置正在等待使用者登入。 您可以登入或關閉裝置，只要按住電源按鈕10秒。
 4.  按下，然後立即放開 [**電源 + 音量**] 按鈕。
-5.  稍等一分鐘，讓裝置準備 zip 檔案。
+5.  稍等一分鐘，讓裝置準備 zip 檔案。  (名為 HololensDiagnostics 的臨時檔案在裝置產生 zip 存檔時可能會顯示。 請勿存取或儲存該檔案。 程式完成後，zip 存檔就會取代該進程。 ) 
 6.  重新整理檔資源管理器，然後流覽至 [ **\ 檔**] 資料夾。
 7.  複製診斷程式 ZIP 檔案，並與 Microsoft 支援小組共用。
 
