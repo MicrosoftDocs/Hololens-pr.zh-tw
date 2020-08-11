@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902309"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919144"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -35,7 +35,7 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 ## Windows 測試人員版本資訊
 
-如果您要尋找的功能已不在此處列出，現在就能正式使用了。 請查看[版本](hololens-release-notes.md)資訊，瞭解哪些組建具有您令人興奮的功能。 請務必[更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。
+如果您要尋找的功能已不在此處列出，現在就能正式使用了。 請查看[版本](hololens-release-notes.md)資訊，瞭解哪些組建的功能 (s 已成為您興奮的) 。 請務必[更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。
 
 我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
 
@@ -57,7 +57,7 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 在 HoloLens 2 中，目視位置可讓您實現正確的全息圖定位、舒適的觀賞體驗，以及改善顯示品質。 眼睛位置會計算為眼睛追蹤結果的一部分。 不過，這需要每個使用者都能透過目視追蹤校準，即使在體驗不需要目視眼睛的輸入時也一樣。
 
-**自動目視位置（AEP）** 可讓這些案例使用互動式方式來計算使用者的目視位置。  自動目視位置會在使用者將裝置放在背景的時刻自動開始運作。 如果使用者沒有先前的目視追蹤校準，自動目視位置將會在較小的處理時間之後，在顯示系統中開始提供使用者的目視位置。 這個處理時間通常介於 20-60 秒之間。 使用者資料不會保留在裝置上，因此，如果使用者要卸載並將裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。  
+**自動眼睛位置 (AEP) **啟用這些案例，並使用互動式方式來計算使用者的目視位置。  自動目視位置會在使用者將裝置放在背景的時刻自動開始運作。 如果使用者沒有先前的目視追蹤校準，自動目視位置將會在較小的處理時間之後，在顯示系統中開始提供使用者的目視位置。 這個處理時間通常介於 20-60 秒之間。 使用者資料不會保留在裝置上，因此，如果使用者要卸載並將裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。  
 
 當 uncalibrated 使用者放在裝置上時，有一些系統行為會隨著自動目視位置功能而變更。 Uncalibrated 使用者會參照尚未在裝置上透過目視追蹤校準程式的人。
 
@@ -93,10 +93,10 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 | 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0否（預設值）                                                |
-| MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0否（預設值）                                                |
-| MixedReality\MicrophoneDisabled                    | 停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                      | 1是，0否（預設值）                                                |
-| MixedReality\FallbackDiagnostics                   | 控制可收集診斷記錄的行為。                               | 0停用，已為裝置擁有者啟用1，完全啟用2（預設） |
+| MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
+| MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
+| MixedReality\MicrophoneDisabled                    | 停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                      | 1是，0沒有 (預設)                                                 |
+| MixedReality\FallbackDiagnostics                   | 控制可收集診斷記錄的行為。                               | 0停用，為裝置擁有者啟用1，所有 (預設) 啟用2 |
 | MixedReality\HeadTrackingMode                      | 保留供日後使用。                                                                  |                                                                      |
 | MixedReality\AADGroupMembershipCacheValidityInDays | 控制使用 AAD 群組成員資格快取多少天來進行面向 AAD 群組的展臺。 | 請參閱下方。                                                           |
 
@@ -104,14 +104,16 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 
 此原則控制的天數是，您可以使用 AAD 群組成員資格快取來指派針對已登入使用者的 AAD 群組指派的存取設定。 只要將此原則值設為大於0的值，就不會再使用 cache。  
 
-AADGroupMembershipCacheValidityInDays 
+Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 最小值-0 天  
 最大值-60 天 
 
 正確使用此原則的步驟如下： 
-1. 針對使用 AAD 群組的展臺建立裝置配置設定檔，並將其指派給 HoloLens 裝置（s）。 
-1. 建立自訂 OMA URI 的裝置設定，將此原則值設為所需的天數（> 0），並將它指派給 HoloLens 裝置。 
+1. 針對使用 AAD 群組的展臺建立裝置配置設定檔，並將它指派給 HoloLens 裝置 (s) 。 
+1. 建立自訂 OMA URI 的裝置設定，將此原則值設為所需的天數 ( # A0 0) 並將它指派給 HoloLens 裝置 (s) 。 
+    1. URI 值應該在 OMA URI 文字方塊中輸入/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays。
+    1. 這個值可以介於 min/max （允許）之間。
 1. 註冊 HoloLens 裝置並確認這兩個設定都已套用到裝置。 
 1. 讓 AAD 使用者1登入當網際網路可供使用時，一旦使用者登入和 AAD 群組成員資格已成功確認，就會建立快取。 
 1. 現在 AAD 使用者1可以讓 HoloLens 離線，並在 kiosk 模式使用它，只要策略值允許 X 個天數。 
@@ -185,7 +187,7 @@ AADGroupMembershipCacheValidityInDays
 
     1. 從下載 ffu 到您的電腦 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
     
-    1. 從 Microsoft 網上商店安裝弧形（高級恢復隨附版）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. 從 Microsoft 網上商店 ([高級恢復隨附) ] 安裝弧形。[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
 1. 在 HoloLens-航班解鎖：開啟**設定**  >  **更新 & 安全性**  >  **Windows**測試人員計畫，然後註冊、重新開機裝置。
 
@@ -196,7 +198,7 @@ AADGroupMembershipCacheValidityInDays
 請在您的 HoloLens 上使用「[意見反應中樞」 app](hololens-feedback.md) ，以提供意見反應與報告問題。 使用意見反應中樞可確保所有必要的診斷資訊都包含在內，以協助我們的工程師快速調試並解決問題。  使用中文和日文版的 HoloLens 時，必須以相同的方式報告問題。
 
 > [!NOTE]
-> 請務必接受詢問您是否希望意見反應中樞存取您的 [檔] 資料夾的提示（在出現提示時，選取 **[是]** ）。
+> 請務必接受詢問您是否希望意見反應中樞存取您的 [檔] 資料夾的提示， (在出現) 提示時，選取 **[是]** 。
 
 ## 開發人員注意事項
 
