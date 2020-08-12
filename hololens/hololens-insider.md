@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919144"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924245"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -43,6 +43,7 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | 自動目視位置支援                            | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
 | 憑證檢視器                                   | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
+| Wi-fi 連線與使用 Autopilot                 | 從裝置 Wi-fi 使用 autopilot，而不需要乙太網卡。                            | 19041.1364 +                 |
 | HoloLens 原則                                    | 混合式現實裝置的新原則。                                                       | 19041.1349 +                 |
 | 為離線資訊站快取 AAD 群組成員資格         | 針對 Kiosk 模式允許使用 AAD 群組成員資格快取多少天的原則。     | 19041.1356 +                 |
 | HoloLens 2 的新裝置限制原則       | 新啟用 HoloLens 2 的裝置管理原則。                              | 19041.1349 +                 |
@@ -87,6 +88,9 @@ Windows 測試人員現在正在移至 [頻道]。 [**快速**響鈴] 會成為*
 若要查看憑證，請移至 [**設定] > 更新 & 安全性 > 憑證**。
 
 ![[設定] 應用程式中的憑證檢視器](images/hololens-certificate-viewer.png)
+
+### Wi-fi 連線與使用 Autopilot
+在 OOBE 期間，一旦您將 HoloLens 2 連線到 Wifi，OOBE 就會檢查該裝置的 autopilot 設定檔。 如果找到一個，就會用來完成 AAD 聯接和註冊流程的其餘部分。 換句話說，您不再需要使用乙太網路到 USB C 或 wifi 至 USB C 配接器，但如果在 OOBE 開始提供，這些功能就會繼續運作。 深入瞭解[HoloLens 2 裝置的 Autopilot](hololens2-autopilot.md)。
 
 ### HoloLens 原則
 已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
