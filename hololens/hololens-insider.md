@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
+ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924245"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926598"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -178,6 +178,13 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 ![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
 ## 開始接收測試人員組建
+
+> [!NOTE]
+> 如果您最近沒有更新，請重新開機您的裝置以更新狀態，並取得最新的組建。
+> - [重新開機裝置] 語音命令運作良好。 
+> - 您也可以在 [設定/Windows 測試人員計畫] 中選擇 [重新開機] 按鈕。
+>
+> 我們在您可能遇到的後端有錯誤，這會讓您繼續進行追蹤。
 
 在 HoloLens 2 裝置上，移至 [**設定**  >  **更新] & 安全性**  >  **Windows**測試人員計畫，然後選取 [**開始**使用]。 連結您用來註冊為「Windows 測試人員」的帳戶。
 

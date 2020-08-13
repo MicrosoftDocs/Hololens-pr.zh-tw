@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
+ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924255"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926326"
 ---
 # HoloLens 2 版本資訊
 
@@ -35,7 +35,7 @@ ms.locfileid: "10924255"
 更新中的改進與修正：
 
 - [設定] 應用程式將不會追蹤使用者進入虹彩註冊或目視追蹤校準體驗。
-- 已修正在 OOBE 期間套用置備套件並執行其他動作 (例如連接至網路) 的錯誤，將無法在裝置重新開機（因重新命名）後執行其他動作。
+- 已修正在 OOBE 期間套用置備套件並執行其他動作 (例如，連線至網路) 的錯誤，在裝置重新開機後由於重新命名，就無法執行其他動作。
 - 已修改初始裝置設定流程的色彩配置，以改善視覺品質。
 
 ## Windows 全息版 1903-2020 年8月更新
