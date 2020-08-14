@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857851"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927837"
 ---
 # HoloLens 的環境考量
 
@@ -116,6 +116,9 @@ HoloLens 可以快速適應這些變化，但前提是裝置可以清楚地看�
 若要取得校正應用程式，請移至**設定** > **系統** > **公用程式**。 選取**開啟校正**，再依照指示進行。
 
 如果其他人要使用您的 HoloLens，他們應首先執行校正應用程式，以便正確為他們設定裝置。
+
+### 溫度和法規資訊
+[HoloLens 法規](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包括溫度、處置、無線電波和電視干擾等資訊。
 
 ## 請參閱
 
