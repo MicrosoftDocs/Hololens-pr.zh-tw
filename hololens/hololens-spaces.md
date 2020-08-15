@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 992b17160eb6ba6ca2f6c8b12e112b98ab154774
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 7cedf2af90744477c33736087c85a43168167707
+ms.sourcegitcommit: 6f2ec9ced776166f96eddcd601bef5de715703a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828243"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931835"
 ---
 # 使用 HoloLens 來對應物理空間
 
@@ -119,4 +119,4 @@ HoloLens 會儲存 Wi-Fi 的特徵，以協助關聯儲存在已知空間 HoloLe
 
 ## 相關主題
 
-- [空間對應設計](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)
+- [空間對應設計](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)

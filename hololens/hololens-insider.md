@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
+ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929871"
+ms.locfileid: "10930860"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -33,25 +33,25 @@ ms.locfileid: "10929871"
 
 我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
 
-| 功能                                              | 描述                                                                                   | 可在測試人員組建中使用 |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| 自動目視位置支援                            | 積極找出眼睛位置，並啟用正確的全息圖位置。                       | 19041.1339 +                 |
-| 憑證檢視器                                   | 在 [設定] 應用程式中查看使用者和裝置憑證。                                        | 19041.1346 +                 |
-| 安裝和移除證書                      | 使用者可以使用憑證檢視器安裝及移除證書。                       | 19041.1361 +                 |
-| 從 USB 自動啟動預配                    | OOBE Automaticly 會偵測 USB 磁片磁碟機上的預配套件。                                 | 19041.1361 +                 |
-| 在 OOBE 中自動確認預配套件           | 在 OOBE 中自動套用預配套件。                                            | 19041.1361 +                 |
-| Wi-fi 連線與使用 Autopilot                 | 從裝置 Wi-fi 使用 autopilot，而不需要乙太網卡。                            | 19041.1364 +                 |
-| HoloLens 原則                                    | 混合式現實裝置的新原則。                                                       | 19041.1349 +                 |
-| 為離線資訊站快取 AAD 群組成員資格         | 針對 Kiosk 模式允許使用 AAD 群組成員資格快取多少天的原則。     | 19041.1356 +                 |
-| HoloLens 2 的新裝置限制原則       | 新啟用 HoloLens 2 的裝置管理原則。                              | 19041.1349 +                 |
-| HoloLens 2 的新電源原則                    | 新支援的 power timeout 設定原則。                                          | 19041.1349 +                 |
-| 更新原則                                      | 新啟用的原則，可讓您控制更新。                                           | 19041.1352 +                 |
-| 已啟用 HoloLens 2 的設定頁面可見度      | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                          | 19041.1349 +                 |
-| 全域指定存取                               | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。  | 19041.1356 +                 |
-| 在多應用程式亭中自動啟動應用程式                | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。 | 19041.1346 +                 |
-| 網亭的訪客自動登入                        | 啟用 [自動登入訪客帳戶]，以用於 Kiosk 模式。                        | 19041.1361 +                 |
-| 管理失敗處理的 Kiosk 模式行為變更 | 現在已處理 Kiosk 模式失敗的變更。                                             | 19041.1356 +                 |
-| 更新中的改進與修正                 | 更新中的其他修正程式。                                                               | 19041.1361 +                 |
+| 功能                                                | 描述                                                                                    | 可在測試人員組建中使用 |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極找出眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
+| [憑證檢視器](hololens-insider.md#certificate-viewer)                                     | 在 [設定] 應用程式中查看使用者和裝置憑證。                                         | 19041.1346 +                 |
+| [安裝和移除證書](hololens-insider.md#install-and-remove-certificates)                        | 使用者可以使用憑證檢視器安裝及移除證書。                        | 19041.1361 +                 |
+| [從 USB 自動啟動預配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 會自動偵測 USB 磁片磁碟機上的預配套件。                                | 19041.1361 +                 |
+| [在 OOBE 中自動確認預配套件](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自動套用預配套件。                                             | 19041.1361 +                 |
+| [使用 Autopilot 使用 Wi-fi 連接](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 從裝置 Wi-fi 使用 autopilot，而不需要乙太網卡。                             | 19041.1364 +                 |
+| [全域指定存取](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。 | 19041.1356 +                 |
+| [在多應用程式亭中自動啟動應用程式](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。     | 19041.1346 +                 |
+| [網亭的訪客自動登入](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 啟用自動登入訪客帳戶以用於 Kiosk 模式。                         | 19041.1361 +                 |
+| [管理失敗處理的 Kiosk 模式行為變更](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 現在已處理 Kiosk 模式失敗的變更。                                              | 19041.1356 +                 |
+| [HoloLens 原則](hololens-insider.md#hololens-policies)                                      | 混合式現實裝置的新原則。                                                        | 19041.1349 +                 |
+| [為離線資訊站快取 AAD 群組成員資格](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | 針對 Kiosk 模式允許使用 AAD 群組成員資格快取多少天的原則。    | 19041.1356 +                 |
+| [HoloLens 2 的新裝置限制原則](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | 新啟用 HoloLens 2 的裝置管理原則。                               | 19041.1349 +                 |
+| [HoloLens 2 的新電源原則](hololens-insider.md#new-power-policies-for-hololens-2)                      | 新支援的 power timeout 設定原則。                                           | 19041.1349 +                 |
+| [更新原則](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 新啟用的原則，可讓您控制更新。                                            | 19041.1352 +                 |
+| [已啟用 HoloLens 2 的設定頁面可見度](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                           | 19041.1349 +                 |
+| [更新中的改進與修正](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新中的其他修正程式。                                                                | 19041.1361 +                 |
 
 ### 自動目視位置支援
 
@@ -135,8 +135,39 @@ ms.locfileid: "10929871"
 
 您的裝置現在已設定，且會顯示 [提供成功] 畫面。
 
-### Wi-fi 連線與使用 Autopilot
+### 使用 Autopilot 使用 Wi-fi 連接
 在 OOBE 期間，一旦您將 HoloLens 2 連線到 Wifi，OOBE 就會檢查該裝置的 autopilot 設定檔。 如果找到一個，就會用來完成 AAD 聯接和註冊流程的其餘部分。 換句話說，您不再需要使用乙太網路到 USB C 或 wifi 至 USB C 配接器，但如果在 OOBE 開始提供，這些功能就會繼續運作。 深入瞭解 [HoloLens 2 裝置的 Autopilot](hololens2-autopilot.md)。
+
+### 全域指派的存取-Kiosk 模式
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
+
+### 在多應用程式亭模式中自動啟動應用程式 
+僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
+
+應用程式會在使用者登入時自動啟動。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 網亭的訪客自動登入
+這個新功能可讓訪客帳戶使用自動登入。 
+
+針對非 AAD 設定，若要針對訪客自動登入設定裝置，請執行下列動作：
+1.  建立以下專案的預配套件：
+    1.  將 **執行時間設定/AssignedAccess 設定** 為允許訪客帳戶。
+    1.  您也可以選擇在 MDM 中註冊裝置 ** (執行時間設定/工作場所/登記) ** ，以便日後進行管理。
+    1.  不要建立本機帳戶
+1.  套用[[預配套件](hololens-provisioning.md)]。
+
+在 AAD 設定中，使用者不需要進行這項變更，就能達到此內容。 針對 kiosk 模式設定的 AAD 連接裝置，可以在登入畫面上使用單一按鈕敲擊來登入訪客帳戶。 登入訪客帳戶之後，裝置就不會再次提示您登入，直到從 [開始] 功能表明確登出訪客為止，或重新開機裝置為止。
+
+### 管理失敗處理的 Kiosk 模式行為變更
+
+舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 從這個 Windows 測試人員組建開始，如果發生失敗，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
+
+![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens 原則
 已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
@@ -204,37 +235,6 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![在 [設定] 應用程式中修改之使用時間的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
-
-### 全域指派的存取-Kiosk 模式
-這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
-
-### 在多應用程式亭模式中自動啟動應用程式 
-僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
-
-應用程式會在使用者登入時自動啟動。 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### 網亭的訪客自動登入
-這個新功能可讓訪客帳戶使用自動登入。 
-
-針對非 AAD 設定，若要針對訪客自動登入設定裝置，請執行下列動作：
-1.  建立以下專案的預配套件：
-    1.  將 **執行時間設定/AssignedAccess 設定** 為允許訪客帳戶。
-    1.  您也可以選擇在 MDM 中註冊裝置 ** (執行時間設定/工作場所/登記) ** ，以便日後進行管理。
-    1.  不要建立本機帳戶
-1.  套用[[預配套件](hololens-provisioning.md)]。
-
-在 AAD 設定中，使用者不需要進行這項變更，就能達到此內容。 針對 kiosk 模式設定的 AAD 連接裝置，可以在登入畫面上使用單一按鈕敲擊來登入訪客帳戶。 登入訪客帳戶之後，裝置就不會再次提示您登入，直到從 [開始] 功能表明確登出訪客為止，或重新開機裝置為止。
-
-### 管理失敗處理的 Kiosk 模式行為變更
-
-舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 從這個 Windows 測試人員組建開始，如果發生失敗，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
-
-![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
 ### 更新中的改進與修正：
 - 已更新原則，停用 NCM for AllowUsbConnection 中的 USB 函數列舉。
