@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828485"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929839"
 ---
 # HoloLens 2 適合和舒適性常見問題
 
@@ -50,14 +50,9 @@ ms.locfileid: "10828485"
 
 ## 全像投影影像色彩或亮度看起來不對勁
 
-對 HoloLens 2 執行下列步驟，以確保全像投影在顯示器中呈現最高視覺品質：
+請參閱 HoloLens 2 [顯示器的疑難排解步驟](hololens2-display.md)。
 
-- **提高顯示器亮度。** 當顯示器設在最亮的等級時，全像投影看起來的效果最好。
-- **將面板拉近您的眼睛。** 將面板向下轉動到最接近眼睛的位置。
-- **將面板向下移。** 嘗試將額頭上的眉墊向下移動，這樣可讓面板往下移得更靠近鼻子一點。
-- **執行眼球校正。** 顯示器會使用 IPD 和眼球注視來最佳化顯示器上的影像。 如果沒有執行眼睛校正，影像品質可能會變差。
-
-## 裝置在使用時向下滑動，或者我需要把頭帶調到過緊才能固定
+## 裝置在使用時向下滑，或者我需要把頭帶調到過緊才能固定
 
 頭頂綁帶可以協助保持 HoloLens 固定在您的頭上，特別是如果您的移動量很大時。 綁帶也可以讓您稍微鬆開頭帶。 [了解如何使用頭頂綁帶](hololens2-setup.md#adjust-fit)。
 
