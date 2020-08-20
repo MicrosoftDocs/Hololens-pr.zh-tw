@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
-ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
+ms.openlocfilehash: 1e6b8fcfad1dab49823f38c722de33654b361f58
+ms.sourcegitcommit: 16d61083a1da8007278aed7e11eb6d44f7a90952
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10930860"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941685"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -29,11 +29,9 @@ ms.locfileid: "10930860"
 
 ## Windows 測試人員版本資訊
 
-如果您要尋找的功能已不在此處列出，現在就能正式使用了。 請查看 [版本](hololens-release-notes.md) 資訊，瞭解哪些組建的功能 (s 已成為您興奮的) 。 請務必 [更新您的 HoloLens](hololens-update-hololens.md) ，以取得所有最新功能。
+以下是您可以在 Windows 測試人員組建中立即試用的近期功能清單。
 
-我們會在我們發行給 Windows 測試人員組建的新功能時再次更新此頁面。
-
-| 功能                                                | 描述                                                                                    | 可在測試人員組建中使用 |
+| 功能                                                | 說明                                                                                    | 可在測試人員組建中使用 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極找出眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
 | [憑證檢視器](hololens-insider.md#certificate-viewer)                                     | 在 [設定] 應用程式中查看使用者和裝置憑證。                                         | 19041.1346 +                 |
@@ -41,6 +39,7 @@ ms.locfileid: "10930860"
 | [從 USB 自動啟動預配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 會自動偵測 USB 磁片磁碟機上的預配套件。                                | 19041.1361 +                 |
 | [在 OOBE 中自動確認預配套件](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自動套用預配套件。                                             | 19041.1361 +                 |
 | [使用 Autopilot 使用 Wi-fi 連接](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 從裝置 Wi-fi 使用 autopilot，而不需要乙太網卡。                             | 19041.1364 +                 |
+|[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 租使用者註冊並套用 policiy 之後，只要裝置重設或重新閃爍，裝置就只能在該租使用者中註冊。 | 19041.1366 +|
 | [全域指定存取](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。 | 19041.1356 +                 |
 | [在多應用程式亭中自動啟動應用程式](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。     | 19041.1346 +                 |
 | [網亭的訪客自動登入](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 啟用自動登入訪客帳戶以用於 Kiosk 模式。                         | 19041.1361 +                 |
@@ -83,7 +82,7 @@ ms.locfileid: "10930860"
 
 若要查看憑證，請移至 [ **設定] > 更新 & 安全性 > 憑證**。
 
-![[設定] 應用程式中的憑證檢視器](images/hololens-certificate-viewer.png)
+![[設定] 應用程式中的憑證檢視器](images/certificate-viewer-device.jpg)
 
 ### 安裝和移除證書
 從 Windows 測試人員發行19041.1361 中開始，您可以透過 [設定] 應用程式直接在 HoloLens 2 上安裝及移除證書。 證書安裝目前支援 .cer 與 .crt 檔案。 裝置擁有者可以在本機電腦和目前使用者中安裝憑證; 所有其他使用者只能安裝至目前的使用者。 使用者只能從 [設定] UI 中移除直接安裝的憑證。 如果憑證已透過其他方式安裝，則也必須使用相同的機制來移除。
@@ -104,7 +103,7 @@ ms.locfileid: "10930860"
 1. 按一下 [**移除**]
 1. 出現提示時，選取 [是]，然後在要求確認時選取 [是]。
 
-![顯示如何使用憑證 UI 來安裝憑證的圖片](images/hololens-install-certificate.jpg)
+![顯示如何使用憑證 UI 來安裝憑證的圖片](images/certificate-device-install.jpg)
 
 #### 已知問題 
 我們正在調查安裝流程期間的問題，在從檔案選擇器中選取憑證之後，安裝對話方塊 UI 就不會顯示所選的憑證檔案（雖然已選取）。 選取檔案後，即使您沒有看到出現在對話方塊中的檔案，您仍然可以繼續安裝。 
@@ -137,6 +136,39 @@ ms.locfileid: "10930860"
 
 ### 使用 Autopilot 使用 Wi-fi 連接
 在 OOBE 期間，一旦您將 HoloLens 2 連線到 Wifi，OOBE 就會檢查該裝置的 autopilot 設定檔。 如果找到一個，就會用來完成 AAD 聯接和註冊流程的其餘部分。 換句話說，您不再需要使用乙太網路到 USB C 或 wifi 至 USB C 配接器，但如果在 OOBE 開始提供，這些功能就會繼續運作。 深入瞭解 [HoloLens 2 裝置的 Autopilot](hololens2-autopilot.md)。
+
+### Tenantlockdown CSP 和 Autopilot
+HoloLens 2 裝置現已支援 Windows 測試人員組建 19041.1366 + 中的 TenantLockdown CSP。 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 只使用 Autopilot，可將 HoloLens 2 與 MDM 註冊進行關聯。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (最初在 HoloLens 2 上設定) 值時，此值仍會保留在裝置上，即使是重新閃爍、作業系統更新等。 
+
+一旦在 HoloLens 2 將 TenantLockdown Csp [RequireNetworkInOOBE] 節點設定為 true，在網路連線之後，OOBE 就會無限期地等待 Autopilot 設定檔下載並套用。 
+
+一旦在 HoloLens 2 上將 TenantLockdown Csp [RequireNetworkInOOBE] 節點設定為 true，則在 OOBE 中則不允許下列作業： 
+- 使用執行時間提供建立本機使用者 
+- 透過執行時間預配執行 AAD join 操作 
+- 選取在 OOBE 體驗中擁有裝置的人員 
+
+#### 如何使用 Intune 進行設定？ 
+1. 建立自訂的 OMA URI 裝置配置設定檔，並為 RequireNetworkInOOBE 節點指定 true，如下所示。
+OMA URI 的值應該是/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE ![ 設定 tennant 透過 OMA uri 來鎖定](images/hololens-tenant-lockdown.png)
+1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。  
+
+在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會生效。
+
+#### 如何使用 Intune 在 HoloLens 2 上取消 TenantLockdown 的 RequireNetworkInOOBE？ 
+1. 從先前已指派的裝置設定，將 HoloLens 2 從裝置群組中移除。 
+1. 建立自訂 OMA URI 的裝置配置設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值應該是. ![ 在 Intune 中透過 OMA URI 將 RequireNetworkInOOBE 設定為 false 的/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
+1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。
+
+在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會停用。 
+
+#### 如果在 TenantLockdown 設定為 true 後未在 HoloLens 中取消指派 Autopilot 設定檔，在 OOBE 期間會發生什麼情況？ 
+OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下對話方塊。 若要移除 TenantLockdown 的效果，裝置必須先使用 Autopilot 進行註冊，然後才能在 TenantLockdown CSP 所帶來的限制在移除之前的步驟中，以上一步中所述取消 RequireNetworkInOOBE。 
+
+![裝置中的 [裝置內視圖] 會在裝置上強制執行原則。](images/hololens-autopilot-lockdown.png)
 
 ### 全域指派的存取-Kiosk 模式
 這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
@@ -172,7 +204,7 @@ ms.locfileid: "10930860"
 ### HoloLens 原則
 已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
 | MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
