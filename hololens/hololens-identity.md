@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9829b90445be7f73cfdc0e330d9d57af1ef0a44b
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 17d55d8cd5540c9beaf4b7348688c362b079f5da
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919116"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955445"
 ---
 # 管理 HoloLens 的使用者身分識別和登入
 
@@ -44,7 +44,7 @@ HoloLens 支援多種類型的使用者身分識別。 您可以使用一或多�
 
 ## 設定使用者
 
-若要設定新的使用者，最常見的方法是在 HoloLens 全新體驗中 (OOBE) 。 在安裝期間，HoloLens 會提示使用者使用要在裝置上使用的帳戶登入。 此帳戶可以是已在 Azure 中設定的消費者 Microsoft 帳戶或企業帳戶。 請參閱設定您的[HoloLens (1 gen) ](hololens1-start.md)或[HoloLens 2](hololens2-start.md)。
+若要設定新的使用者，最常見的方法是在 HoloLens 全新體驗中 (OOBE) 。 在安裝期間，HoloLens 會提示使用者使用要在裝置上使用的帳戶登入。 此帳戶可以是已在 Azure 中設定的消費者 Microsoft 帳戶或企業帳戶。 請參閱設定您的 [HoloLens (1 gen) ](hololens1-start.md) 或 [HoloLens 2](hololens2-start.md)。
 
 就像其他裝置上的 Windows 一樣，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 同一個帳戶也會使用 Windows 帳戶管理員 Api，為應用程式（例如 Edge 或 Skype）提供單一登入。  
 
@@ -60,12 +60,14 @@ HoloLens 支援多種類型的使用者身分識別。 您可以使用一或多�
 
 ###  (僅限 AAD) 設定多使用者支援
 
-> [!NOTE]
-> **HoloLens (1 gen) **開始支援[Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)中的多個 AAD 使用者，成為[windows 全息版企業](hololens-upgrade-enterprise.md)的一部分。
-
 HoloLens 支援來自同一個 AAD 租使用者的多個使用者。 若要使用此功能，您必須使用屬於貴組織的帳戶來設定裝置。 接著，來自相同租使用者的其他使用者可以從登入畫面登入裝置，或在 [開始] 面板上敲擊 [使用者] 磚。 一次只能有一個使用者登入。 當使用者登入時，HoloLens 就會登出先前的使用者。  
 
 所有使用者都可以使用安裝在裝置上的應用程式。 不過，每個使用者都有自己的應用程式資料和喜好設定。 從裝置移除 app，就會將它移除給所有使用者。  
+
+使用 AAD 帳戶設定的裝置將不允許以 Microsoft 帳戶登入裝置。 所有使用的後續帳戶必須是與裝置來自相同租使用者的 AAD 帳戶。 您仍然可以 [使用 Microsoft 帳戶登入](hololens-identity.md#setting-up-multi-user-support-aad-only) 支援 (的 app，例如 microsoft Store) 。 若要從使用 AAD 帳戶變更為登錄到裝置的 Microsoft 帳戶，您必須 [reflash 裝置](hololens-recovery.md#clean-reflash-the-device)。
+
+> [!NOTE]
+> **HoloLens (1 gen) ** 開始支援 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 中的多個 AAD 使用者，成為 [windows 全息版企業](hololens-upgrade-enterprise.md)的一部分。
 
 ## 移除使用者
 
@@ -73,19 +75,19 @@ HoloLens 支援來自同一個 AAD 租使用者的多個使用者。 若要使�
 
 ## 在 app 內使用單一登入
 
-做為應用程式開發人員，您可以使用[Windows 帳戶管理員 api](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core)來利用 HoloLens 上連結的身分識別，就像在其他 Windows 裝置上一樣。 [這裡](https://go.microsoft.com/fwlink/p/?LinkId=620621)提供這些 api 的一些程式碼範例。
+做為應用程式開發人員，您可以使用 [Windows 帳戶管理員 api](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core)來利用 HoloLens 上連結的身分識別，就像在其他 Windows 裝置上一樣。 GitHub 上提供這些 Api 的一些程式碼範例： [Web 帳戶管理範例](https://go.microsoft.com/fwlink/p/?LinkId=620621)。
 
 您可能會發生的任何帳戶中斷（例如要求使用者同意帳戶資訊、雙因素驗證等）必須在應用程式要求驗證權杖時進行處理。
 
-如果您的應用程式需要先前未連結的特定帳戶類型，您的 app 可以要求系統提示使用者新增一個帳戶。 這個要求觸發 [帳戶設定] 窗格以啟動您 app 的模式子系。 對於 2D app，此視窗會直接呈現在您 app 的中央。 針對 Unity 應用程式，此要求會暫時將使用者從您的全息 app 取出，以轉譯子視窗。 如需自訂此窗格的命令和動作的相關資訊，請參閱[WebAccountCommand 類別](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)。
+如果您的應用程式需要先前未連結的特定帳戶類型，您的 app 可以要求系統提示使用者新增一個帳戶。 這個要求觸發 [帳戶設定] 窗格以啟動您 app 的模式子系。 對於 2D app，此視窗會直接呈現在您 app 的中央。 針對 Unity 應用程式，此要求會暫時將使用者從您的全息 app 取出，以轉譯子視窗。 如需自訂此窗格的命令和動作的相關資訊，請參閱 [WebAccountCommand 類別](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)。
 
 ## 企業及其他驗證
 
-如果您的 app 使用其他類型的驗證（例如 NTLM、Basic 或 Kerberos），您可以使用[Windows 認證 UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI)來收集、處理及儲存使用者的認證。 收集這些認證的使用者體驗與其他雲端導向的帳戶中斷很相似，在您的 2D app 上方會以子 app 的形式出現，或暫時掛起 Unity app 以顯示 UI。
+如果您的 app 使用其他類型的驗證（例如 NTLM、Basic 或 Kerberos），您可以使用 [Windows 認證 UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) 來收集、處理及儲存使用者的認證。 收集這些認證的使用者體驗與其他雲端導向的帳戶中斷很相似，在您的 2D app 上方會以子 app 的形式出現，或暫時掛起 Unity app 以顯示 UI。
 
 ## 已過時的 Api
 
-為 HoloLens 開發與桌面開發不同的一種方式是不完全支援[OnlineIDAuthenticator](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) API。 雖然在主要帳戶處於良好運作的情況下，API 會傳回權杖，但本文所述的中斷不會顯示使用者的任何 UI，也無法正確驗證帳戶。
+為 HoloLens 開發與桌面開發不同的一種方式是不完全支援 [OnlineIDAuthenticator](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) API。 雖然在主要帳戶處於良好運作的情況下，API 會傳回權杖，但本文所述的中斷不會顯示使用者的任何 UI，也無法正確驗證帳戶。
 
 ## 常見問題集
 
@@ -93,32 +95,32 @@ HoloLens 支援來自同一個 AAD 租使用者的多個使用者。 若要使�
 
 支援使用 PIN 來登入) 的 Windows Hello 企業版 (（HoloLens (1 Gen) 支援。 若要在 HoloLens 上允許 Windows Hello 企業版 PIN 登入：
 
-1. HoloLens 裝置必須[由 MDM 管理](hololens-enroll-mdm.md)。
+1. HoloLens 裝置必須 [由 MDM 管理](hololens-enroll-mdm.md)。
 1. 您必須為裝置啟用 Windows Hello 企業版。  ([請參閱 Microsoft Intune 的相關指示。](https://docs.microsoft.com/intune/windows-hello)) 
 1. 在 HoloLens 中，使用者可以使用 [**設定**] 登  >  **入選項**[  >  **新增 pin** ] 來設定 pin。
 
 > [!NOTE]
-> 使用 Microsoft 帳戶登入的使用者，也可以在 [**設定**] 登  >  **入選項**的 [  >  **新增 pin**] 中設定 pin。 這個 PIN 碼與[Windows hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)相關聯，而不是[Windows hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
+> 使用 Microsoft 帳戶登入的使用者，也可以在 [**設定**] 登  >  **入選項**的 [  >  **新增 pin**] 中設定 pin。 這個 PIN 碼與 [Windows hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)相關聯，而不是 [Windows hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
 
 ### 如何在 HoloLens 2 上實施虹彩生物特徵驗證？
 
 HoloLens 2 支援虹彩驗證。 虹彩是以 Windows Hello 技術為基礎，且支援由 Azure Active Directory 和 Microsoft 帳戶使用。 虹彩的執行方式與其他 Windows Hello 技術相同，且達到遠遠高於 1/10 萬的生物特徵安全性。
 
-您可以在[此](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)深入瞭解 Windows Hello 的生物特徵需求與規格。 深入瞭解[Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)和[Windows hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
+您可以在 [此](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)深入瞭解 Windows Hello 的生物特徵需求與規格。 深入瞭解 [Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 和 [Windows hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
 
 ### 帳戶類型會如何影響登入行為？
 
 如果套用登入原則，您需要隨時遵守原則。 如果沒有套用登入原則，以下是每個帳戶類型的預設行為：
 
-- **AZURE AD**：預設要求驗證，且由**設定設定**為不再要求驗證。
+- **AZURE AD**：預設要求驗證，且由 **設定設定** 為不再要求驗證。
 - **Microsoft 帳戶**：鎖定行為與允許自動解除鎖定不同，但重新開機時仍需要登入驗證。
 - [**本機帳戶**]：總是以密碼形式要求驗證，無法在 [設定] 中**設定**
 
 > [!NOTE]
-> 目前不支援非活動計時器，這表示裝置進入待機狀態時，只會考慮**AllowIdleReturnWithoutPassword**原則。
+> 目前不支援非活動計時器，這表示裝置進入待機狀態時，只會考慮 **AllowIdleReturnWithoutPassword** 原則。
 
 ## 其他資源
 
-進一步瞭解[Windows 10 安全性與身分識別檔上的](https://docs.microsoft.com/windows/security/identity-protection/)使用者身分識別保護和驗證。
+進一步瞭解 [Windows 10 安全性與身分識別檔上的](https://docs.microsoft.com/windows/security/identity-protection/)使用者身分識別保護和驗證。
 
-深入瞭解設定混合式身分識別基礎結構完整的[Azure 混合式身分識別檔](https://docs.microsoft.com/azure/active-directory/hybrid/)。
+深入瞭解設定混合式身分識別基礎結構完整的 [Azure 混合式身分識別檔](https://docs.microsoft.com/azure/active-directory/hybrid/)。
