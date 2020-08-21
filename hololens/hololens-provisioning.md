@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929859"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955455"
 ---
 # <span data-ttu-id="f1cb7-103">使用預配套件設定 HoloLens</span><span class="sxs-lookup"><span data-stu-id="f1cb7-103">Configure HoloLens by using a provisioning package</span></span>
 
@@ -173,7 +173,7 @@ ms.locfileid: "10929859"
 > [!NOTE]
 > <span data-ttu-id="f1cb7-224">如果裝置是在2016年8月之前購買，您必須使用 Microsoft 帳戶登入裝置、取得最新的作業系統更新，然後重設作業系統，才能套用預配套件。</span><span class="sxs-lookup"><span data-stu-id="f1cb7-224">If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.</span></span>
 
-### <span data-ttu-id="f1cb7-225">在安裝後將預配套件套用至 HoloLens</span><span class="sxs-lookup"><span data-stu-id="f1cb7-225">Apply a provisioning package to HoloLens after setup</span></span>
+## <span data-ttu-id="f1cb7-225">在安裝後將預配套件套用至 HoloLens</span><span class="sxs-lookup"><span data-stu-id="f1cb7-225">Apply a provisioning package to HoloLens after setup</span></span>
 
 > [!NOTE]
 > <span data-ttu-id="f1cb7-226">這些步驟只適用于 toWindows 10 （版本1809）。</span><span class="sxs-lookup"><span data-stu-id="f1cb7-226">These steps apply only toWindows 10, version 1809.</span></span>
