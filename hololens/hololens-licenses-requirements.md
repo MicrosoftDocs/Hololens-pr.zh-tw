@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857801"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956759"
 ---
 # 授權需求
 
@@ -31,9 +31,9 @@ ms.locfileid: "10857801"
 
 ## 識別您的案例和產品所需的授權
 
-### HoloLens 授權需求
+### HoloLens (第1代) 授權需求
 
-您可能需要將 HoloLens 第一代裝置升級至 Windows Holographic for Business。 (請參閱 [HoloLens 商業功能](holoLens-commercial-features.md#feature-comparison-between-editions)，判斷您是否需要升級)。
+您可能需要將 HoloLens (第1代) 裝置升級至 Windows Holographic for Business。 (請參閱 [HoloLens 商業功能](holoLens-commercial-features.md#feature-comparison-between-editions)，判斷您是否需要升級)。
 
  若是如此，您需要執行下列動作：
 
@@ -45,6 +45,7 @@ ms.locfileid: "10857801"
 請確定您具備所需的授權和裝置。 您可以在[這裡](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)找到更新的授權和產品需求。
 
 1. [遠端協助授權](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
+    1. 或嘗試使用 [[遠端協助] 試用版](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Teams 免費增值版/Teams](https://products.office.com/microsoft-teams/free)
 1. [Azure Active Directory (Azure AD) 授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
