@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: e819dfb95a6735d0eae6287d97f5856856a33526
+ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956769"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963681"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -261,8 +261,10 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 
 ### 已啟用 HoloLens 2 的設定頁面可見度
 我們現在已啟用原則，可讓 IT 系統管理員避免顯示或無法存取 [系統設定] app 中的特定頁面，或針對除指定以外的所有頁面執行此動作。 若要瞭解如何完全自訂這項功能，請按一下下方的連結。
- 
+
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+若要瞭解您可以在 HoloLens 2 上自訂的頁面設定，請造訪我們的 [ [設定 uri] 頁面](settings-uri-list.md)。 
  
 ![在 [設定] 應用程式中修改之使用時間的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
 
@@ -271,6 +273,7 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 - OOBE 中的更多螢幕現在處於深色模式。
 - 深入瞭解其他內容，請線上閱讀最新的隱私權聲明。
 - 解決使用者無法透過置備套件提供 VPN 設定檔的問題。
+- 解決了將裝置設定為 [單一應用程式亭](hololens-kiosk.md)時，無法在檔案資源管理器中透過媒體傳輸通訊協定 (MTP) 的問題。 請注意，在一般) 中，MTP (和 USB 連線仍可以使用 [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 原則停用。
 
 ## 開始接收測試人員組建
 
