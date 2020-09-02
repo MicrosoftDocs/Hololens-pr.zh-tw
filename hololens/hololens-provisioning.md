@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
-ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
+ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
+ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "10955455"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10990914"
 ---
 # 使用預配套件設定 HoloLens
 
@@ -176,7 +176,7 @@ HoloLens 2 裝置在組建 [19041.1103](hololens-release-notes.md#windows-hologr
 ## 在安裝後將預配套件套用至 HoloLens
 
 > [!NOTE]
-> 這些步驟只適用于 toWindows 10 （版本1809）。
+> 這些步驟只適用于 Windows 10 版本1809。
 
 在您的電腦上，請遵循下列步驟：
 1. 如在 [使用 hololens 嚮導建立 HoloLens 的預配套件](hololens-provisioning.md)中所述，建立預配套件。
@@ -205,5 +205,9 @@ HoloLens 2 裝置在組建 [19041.1103](hololens-release-notes.md#windows-hologr
 | **EditionUpgrade** | [升級到 Windows Holographic for Business。](hololens1-upgrade-enterprise.md)  |
 | **原則** | 允許或禁止在 HoloLens 上使用開發人員模式。 [Windows Holographic for Business 支援原則](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
+## 透過預配套件安裝應用程式
+
+您可以透過 HoloLens 2 裝置上的 [預配套件] 來安裝應用程式。 這可讓您使用輕鬆地重複使用的套件，協助您發佈您的應用程式。 閱讀透過 [ [預配套件] 部署 app](app-deploy-provisioning-package.md)的完整指示。  
+
 > [!NOTE]
-> HoloLens 目前不支援使用預配套件 (**UniversalAppInstall**) 安裝 app。
+> HoloLens (1 gen) 不支援使用預配套件 (**UniversalAppInstall**) 來安裝 app。

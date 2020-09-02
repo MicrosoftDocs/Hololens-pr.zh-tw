@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 7/17/2020
+ms.date: 8/21/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 843e0ecf393a922be80d4a0c9d9c8be84bd8c553
-ms.sourcegitcommit: 98d6c4e63636c5d8707011d0044014fbc4b84495
+ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
+ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "10965076"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985859"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -149,16 +149,27 @@ HoloLens 2 裝置現已支援 Windows 測試人員組建 19041.1366 + 中的 Ten
 
 #### 如何使用 Intune 進行設定？ 
 1. 建立自訂的 OMA URI 裝置配置設定檔，並為 RequireNetworkInOOBE 節點指定 true，如下所示。
-OMA URI 的值應該是/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE ![ 設定 tennant 透過 OMA uri 來鎖定](images/hololens-tenant-lockdown.png)
+OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![透過 OMA URI 設定 tennant 鎖定](images/hololens-tenant-lockdown.png)
+
 1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+
 1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。  
 
 在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會生效。
 
 #### 如何使用 Intune 在 HoloLens 2 上取消 TenantLockdown 的 RequireNetworkInOOBE？ 
 1. 從先前已指派的裝置設定，將 HoloLens 2 從裝置群組中移除。 
-1. 建立自訂 OMA URI 的裝置配置設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值應該是. ![ 在 Intune 中透過 OMA URI 將 RequireNetworkInOOBE 設定為 false 的/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
+
+1. 建立自訂 OMA URI 的裝置配置設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![透過 Intune 中的 OMA URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
+
 1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+
 1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。
 
 在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會停用。 
