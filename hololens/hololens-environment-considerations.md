@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927837"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993643"
 ---
 # HoloLens 的環境考量
 
@@ -117,8 +117,17 @@ HoloLens 可以快速適應這些變化，但前提是裝置可以清楚地看�
 
 如果其他人要使用您的 HoloLens，他們應首先執行校正應用程式，以便正確為他們設定裝置。
 
-### 溫度和法規資訊
-[HoloLens 法規](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包括溫度、處置、無線電波和電視干擾等資訊。
+## 溫度和法規資訊
+
+[HoloLens 法規資訊](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包括溫度範圍、處置、無線電波和電視干擾等資訊。
+
+以下是使用裝置時應遵循的一些指導方針：
+
+1. 在使用裝置之前，請將裝置存儲在溫度範圍內（待命或關閉）的環境中一小時。
+1. 在溫度範圍內使用裝置。
+1. 在室內使用裝置。
+1. 在陰涼處使用該設備；即使在室內也要避免直射窗戶或天窗的陽光。
+1. 如果您遵循上述指導方針，但遇到意外的過熱問題，請確保在提交[意見反應](hololens-feedback.md)之前啟用了完全遙測。
 
 ## 請參閱
 
