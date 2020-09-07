@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915955"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996411"
 ---
 # 重新啟動、重設或復原 HoloLens 2
 
 ## 為裝置充電
 
-開始進行任何疑難排解程序之前，如果可以，請先確認您的裝置已具備 20% 到40% 的電量。 使用 HoloLens2 裝置隨附的充電器和 USB Type-C 連接線。 如果您無法使用這些附件，請確認可用的充電器可支援至少 15 瓦的電源。
+開始進行任何疑難排解程序之前，如果可以，請先確認您的裝置已具備 20% 到40% 的電量。 使用在 HoloLens 2 裝置隨附的充電器和 USB 類型-C 型纜線。 裝置附帶的電源供應器和 USB-C-to-C 纜線是為 HoloLens 2 充電的最佳方式。 電源供應器提供 18W 的電力 (2A 時為 9V)。 如果您沒有這些附件，請確保可用的充電器至少可支援 15 瓦的功率。
 
 > [!NOTE]
 > 如果可以，請避免使用電腦透過 USB 為裝置充電 (速度慢)。
@@ -34,15 +34,19 @@ ms.locfileid: "10915955"
 
 - 從 HoloLens 裝置 UI 的主要功能表。
 - 檢視靠近電源按鈕的 LED (若具有 40% 的電量，您應至少看到兩個亮起的 LED 燈)。
-- 在您的主機電腦上開啟 [檔案總管]，然後在 **[這台電腦]** 下方左側尋找您的 HoloLens 2 裝置。 以滑鼠右鍵按一下裝置，並選取 **[內容]**。 對話方塊會隨即顯示電池電量等級。
+    - 裝置充電時，電池指示燈會亮起，指出目前的電量。  最後一個燈號會淡入和淡出以表示正在充電。
+    - 當您的 HoloLens 開啟時，電池指示器會以五個增量來顯示電池電量。
+    - 五個燈號中只有一個亮起時，表示電池電量低於 20%。
+    - 如果電池電量嚴重偏低，而您嘗試開啟裝置，就會有一個燈號短暫閃爍，然後熄滅。
+- 在您的主機電腦上，開啟 **File Explorer 文件資源管理** 器，然後在**This PC 這台電腦** 的左方, 尋找您的 HoloLens 2 裝置. 以滑鼠右鍵按一下裝置，並選取 **[內容]**。 對話方塊會隨即顯示電池電量等級。
 
    ![HoloLens 2 屬性畫面會顯示電池電量等級](images/ResetRecovery2.png)
 
-如果裝置無法引導至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置枚舉。 然後按照 [疑難排解指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)。 如果裝置狀態不符合疑難排解指南中所列的任何一種狀態，請執行*硬重設程序*，並將裝置連結到電源，而非您的主機電腦。 請至少等候一個小時，讓裝置充電。
+如果裝置無法引導至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置枚舉。 然後按照 [疑難排解指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)。 如果裝置狀態不符合疑難排解指南中所列的任何狀態，請將裝置連線至電源執行[硬重設程序](hololens-recovery.md#hard-reset-procedure) ，而不是連接到您的主機電腦。 請至少等候一個小時，讓裝置充電。
 
 ## 重設裝置
 
-在某些情況下，您可能需要在不使用 SW UI 的狀況下，手動重設裝置。
+在某些情況下，您可能需要手動重設裝置，而不需要使用軟體 UI。
 
 ### 標準程序
 1. 取下 Type-C 連接線，以中斷裝置和電源或主機電腦的連線。
@@ -70,7 +74,14 @@ ms.locfileid: "10915955"
 
 ## 乾淨重新快閃刷新裝置
 
-在特別的情況下，您可能需要乾淨快閃刷新 HoloLens 2。 有兩種方法可以快閃刷新裝置。 針對這兩種方法，您必須先 [從 Windows Store 上安裝 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
+在特別的情況下，您可能需要乾淨快閃刷新 HoloLens 2。 請注意，乾淨重新快閃刷新不會影響下列問題：
+- [顯示色彩一致性](hololens2-display.md)
+- 使用音效啟動但沒有顯示輸出
+- [1-3-5-LED 模式](hololens2-setup.md#lights-to-indicate-problems)
+- [過熱](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- OS 當機（不同於應用程式的當機）
+
+有兩種方法可以快閃刷新裝置。 針對這兩種方法，您必須先 [從 Windows Store 上安裝 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
 
 >[!WARNING]
 >如果快閃刷新裝置，您所有的個人資料、應用程式和設定都會被清除，包含 TPM 重設資訊。
