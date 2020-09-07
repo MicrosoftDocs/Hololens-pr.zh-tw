@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905620"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996401"
 ---
 # 讓您的 HoloLens 2 準備好可供使用
 
@@ -33,6 +33,8 @@ ms.locfileid: "10905620"
 - 當 HoloLens 開啟時，電池指示器會以增量來顯示電池電量。
 - 五個燈號中只有一個亮起時，表示電池電量低於 20%。
 - 如果電池電量嚴重偏低，而您嘗試開啟裝置，就會有一個燈號短暫閃爍，然後熄滅。
+
+如需詳細資訊，請參閱 [於此閱讀裝置充電的詳細資訊](hololens-recovery.md#charge-the-device)。 
 
 ## 調整合適度
 
@@ -108,7 +110,7 @@ ms.locfileid: "10905620"
 | - | - | - |
 | 按下 [電源] 按鈕。 | 一個燈號閃爍五次，然後關閉。 | HoloLens 電池電量極低。 請為您的 HoloLens 充電。 |
 | 按下 [電源] 按鈕。 | 所有五個燈號都閃爍五次，然後關閉。 |  HoloLens 無法正常啟動且處於錯誤狀態。 [重新安裝作業系統](hololens-recovery.md)以復原您的裝置。 |
-| 按下 [電源] 按鈕。 | 第 1、3 和 5 號燈不斷閃爍。 |  HoloLens 可能有硬體故障。 若要確定，請[重新安裝作業系統](hololens-recovery.md)，然後重試。 重新安裝作業系統後，如果燈號閃爍模式仍然存在，請連絡[支援人員](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)。 |
+| 按下 [電源] 按鈕。 | 第 1、3 和 5 號燈不斷閃爍。 |  HoloLens 可能有硬體故障。 連絡 [客戶支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)。 |
 
 ## 安全與舒適度
 
