@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
-ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
+ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903328"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009431"
 ---
 # HoloLens 2 硬體
 
@@ -126,13 +126,21 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 ## 預先安裝的軟體
 
 - Windows 全像攝影版作業系統
-- Microsoft Edge
-- Dynamics 365 Remote Assist
-- Dynamics 365 Guides
 - 3D 檢視器
-- 商務用 OneDrive
-- HoloLens 提示
+- 行事曆
 - Cortana
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- 意見反應中樞
+- 檔案總管
+- Mail
+- Microsoft Edge
+- Microsoft Store
+- 電影與電視
+- OneDrive
+- 相片
+- 設定
+- 提示
 
 ## 裝置認證
 

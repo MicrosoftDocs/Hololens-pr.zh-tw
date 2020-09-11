@@ -2,44 +2,47 @@
 title: 概覽-App 管理
 description: app、管理、app 管理
 keywords: HoloLens、使用者、帳戶、app、應用程式管理、
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: eeed478970d08eff8789a9decd084f1863c6d7f9
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e73a56e5a2fcef14e85f5f552e264dd8d796cc8f
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857914"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009451"
 ---
-# App 管理：簡介
+# 應用程式管理: 概觀
 
-您可以將應用程式部署在四個不同的路徑上：行動**裝置管理（MDM）**、 **Microsoft store for Business**、 **microsoft Store**，或透過 [**提供**] 進行安裝。 
+您可以將應用程式部署在四個不同的路徑上： [行動 **裝置管理] (MDM) **、[ **商務用 microsoft store**]、[ **microsoft store**]，或是透過 [ **提供**] 進行安裝。 
 
 ## 行動裝置管理 (MDM)
 
-MDM 解決方案能讓 IT 決策者和系統管理員秘密地自動安裝（推入）自己的內部、行業內應用程式，或透過使用者群組的商店購買 app。 HoloLens 裝置最適合用於[應用程式管理](app-deploy-intune.md)的 Microsoft 端點管理員（Intune）。 Intune 也透過公司入口網站下載體驗，讓使用者能夠更精細地控制 IT 管理的 app。
+MDM 方案可讓 IT 決策者和系統管理員自行自動安裝 (推) 其內部、行業內應用程式，或透過使用者群組的商店購買 app。 HoloLens 裝置最適合使用 Microsoft 端點管理員 (Intune) 進行 [應用程式管理](app-deploy-intune.md)。 Intune 也透過公司入口網站下載體驗，讓使用者能夠更精細地控制 IT 管理的 app。
 
 > [!NOTE] 
 > 下列指示適用于想要使用 Intune 管理其應用程式的使用者。 Microsoft 建議使用 Intune 進行應用程式與裝置管理。
     
-行動裝置管理（MDM）適用于下列情況： 
+行動裝置管理 (MDM) 適用于下列情況： 
 * MDM 已部署 + 公司入口網站 
-* Buisness （非公開）應用程式行
+* Buisness (非公開) app 的線路
 * 透過公司入口網站手動安裝可用的應用程式
 * 透過 MDM 原則管理推送
 * 透過 MDM 自動更新
 
 ## 商務用 Microsoft Store
 
-[Microsoft 網上商店可為](app-deploy-store-business.md)IT 決策者與企業中的系統管理員，以尋找、取得、管理及發佈免費和付費的 app。 IT 系統管理員可以管理一個詳細目錄中的 Microsoft Store 應用程式與私人企業營運應用程式，以及視需要指派和重複使用授權。 如需詳細資訊，請參閱[使用 Microsoft Store For Business 的先決條件](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)。
+[Microsoft 網上商店可為](app-deploy-store-business.md)IT 決策者與企業中的系統管理員，以尋找、取得、管理及發佈免費和付費的 app。 IT 系統管理員可以管理一個詳細目錄中的 Microsoft Store 應用程式與私人企業營運應用程式，以及視需要指派和重複使用授權。 如需詳細資訊，請參閱 [使用 Microsoft Store For Business 的先決條件](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)。
     
 商務用 Microsoft 網上商店適用于： 
 * 公開或商務線應用程式
@@ -56,14 +59,14 @@ Microsoft 市集中提供 IT 決策者與企業中的管理員，以尋找、取
 * 使用者手動下載應用程式
 * 連線至網際網路時的自動更新
 
-如需詳細資訊，請造訪 [[全息店應用程式](https://docs.microsoft.com/hololens/holographic-store-apps)]。
+如需詳細資訊，請造訪 [ [全息店應用程式](https://docs.microsoft.com/hololens/holographic-store-apps)]。
 
 ## 透過預配套件安裝
 
-[[預配套件](app-deploy-provisioning-package.md)] 可讓您安裝自訂或連線的應用程式，讓 IT 專業人員和系統管理員透過 USB 快速地將 app 安裝至本機裝置。 您可以在沒有網際網路連線及任何身分識別類型的情況下執行此動作。
+[[預配套件](app-deploy-provisioning-package.md)] 可讓您安裝自訂或連線的應用程式，讓 IT 專業人員和系統管理員透過 USB 將 app 快速安裝至本機裝置 () s。 您可以在沒有網際網路連線及任何身分識別類型的情況下執行此動作。
     
 透過 [預配套件] 安裝適用于： 
-* Buisness （非公開）應用程式行
-* 公用應用程式（如果有離線安裝程式的話）
+* Buisness (非公開) app 的線路
+* 公用應用程式在離線安裝程式可用時 () 
 * 僅限 USB 側邊載入
-* 無自動更新（需要透過預配套件進行手動更新）
+* 無自動更新 (需要透過預配套件進行手動更新) 
