@@ -72,6 +72,7 @@
 
 ## 原則
 ### [使用佈建套件設定 HoloLens](hololens-provisioning.md)
+### [使用 MDM 管理 HoloLens 裝置](hololens-mdm-configure.md)
 ### [設定 HoloLens (第 1 代) 的 kiosk](hololens-kiosk.md)
 # 部署
 ## 註冊
