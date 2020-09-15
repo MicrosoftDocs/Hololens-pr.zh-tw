@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883147"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009521"
 ---
 # 將 HoloLens 連線到網路
 
@@ -30,6 +30,8 @@ ms.locfileid: "10883147"
 
 第一次使用 HoloLens 時，系統會引導您連線至 Wi-Fi 網路。 如果您在安裝期間無法連線到 Wi-Fi，請確認您的網路是已開啟且有密碼保護的網路，還是網頁驗證入口網路。 確定網路不會要求您使用憑證來連線。 安裝之後，您可以連線至其他類型的 Wi-Fi 網路。
 
+在 HoloLens 2 裝置上，使用者也可能[使用 USB-C 轉乙太網路卡](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)直接連線至 Wi-Fi，以協助您設定裝置。 當裝置設定完成後，使用者可以繼續使用介面卡，或可以在設定後將裝置與介面卡斷開，並[連線到 Wi-Fii](hololens-network.md#connecting-to-wi-fi-after-setup)。 
+
 ## 在安裝後連線到 Wi-Fi
 
 1. 執行 [啟動手勢]**** 然後選取 [設定]****。 [設定] 應用程式會自動放置在您面前。
@@ -43,7 +45,7 @@ HoloLens 包含 802.11ac 功能，2x2 Wi-Fi 無線電。 將 HoloLens 連線到 
 
 您也可以在 [開始]**** 功能表中檢查 Wi-Fi 狀態，確認您已連線到 Wi-Fi 網路：
 
-1. 開啟 **[開始]** 功能表。
+1. 開啟 [開始]**** 功能表。
 1. 查看 [開始]**** 功能表左上角的 Wi-Fi 狀態。 會顯示 Wi-Fi 的狀態和已連線網路的 SSID。
 
 ## 疑難排解您與 Wi-Fi 的連線
@@ -69,7 +71,7 @@ VPN 預設不會啟用，但是您可以開啟 [設定]**** 應用程式，並�
 
 ### 在 HoloLens 上使用 [設定] 應用程式
 
-1. 開啟 **[開始]** 功能表。
+1. 開啟 [開始]**** 功能表。
 1. 從 [開始]**** 或從 [開始]**** 功能表右側的 [所有應用程式]**** 清單中，選取 [設定]**** 應用程式。 [設定]**** 應用程式會自動放置在您面前。
 1. 選取 [網路和網際網路]****。
 1. 選取 Wi-Fi 滑桿開關，將它移到 [關閉]**** 位置。 這會關閉 Wi-Fi 無線電的 RF 元件，並在 HoloLens 上停用所有 Wi-Fi 功能。
