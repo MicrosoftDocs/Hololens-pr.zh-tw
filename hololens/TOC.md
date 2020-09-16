@@ -66,6 +66,7 @@
 ## 網路與連線
 ### [設定適用於 HoloLens 的網路](hololens-commercial-infrastructure.md)
 ### [將 HoloLens 連線到網路](hololens-network.md)
+### [準備 HoloLens 2 的憑證和網路設定檔](hololens-certificates-network.md)
 ### [管理 HoloLens 的連線端點](hololens-offline.md)
 ### [連線至藍牙與 USB-C 裝置](hololens-connect-devices.md)
 
