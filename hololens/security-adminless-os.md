@@ -1,11 +1,11 @@
 ---
 title: 安全性無系統管理員作業系統
 description: 無系統管理員作業系統和全息透鏡安全性
+ms.prod: hololens
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
-ms.prod: hololens
 ms.topic: article
 keywords: 安全性、全息透鏡、無系統管理員、無系統管理員、作業系統、無系統管理員作業系統、無系統管理員作業系統、無系統管理員作業系統、全息透鏡2、全息透鏡2 安全性，
 ms.localizationpriority: high
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e8a10a32d30206877eb79d53c90e59307b3990ab
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009561"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016637"
 ---
 # 無系統管理員作業系統
 

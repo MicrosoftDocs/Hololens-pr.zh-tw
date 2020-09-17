@@ -5,20 +5,20 @@ author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
+ms.prod: hololens
 ms.topic: article
 keywords: 安全性、hololens、硬體備份完整性、執行時間證明、UEFI、UEFI 安全開機、安全啟動、TPM、威脅防護、Windows 反持久保證、代碼完整性、代碼保護、
-ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: befd2d892403b7b6c7050f48ba9beffb45b241fe
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009471"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016677"
 ---
 # 硬體支援的完整性與執行階段證明
 

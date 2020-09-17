@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929849"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016687"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -31,7 +31,9 @@ ms.locfileid: "10929849"
 本文提供有關 HoloLens 裝置專用之 kiosk 設定的各個方面的資訊。 如需不同類型的 Windows 網亭以及如何進行設定的一般資訊，請參閱 [在 windows 桌上出版上設定網亭和數位簽章](https://docs.microsoft.com/windows/configuration/kiosk-methods)。  
 
 > [!IMPORTANT]  
-> Kiosk 模式決定使用者登入裝置時可使用哪些 app。 不過，kiosk 模式不是安全性方法。 它不會停止「允許」 app，無法開啟其他不允許的應用程式。 為了封鎖 app 或進程的開啟，請使用 [Windows Defender 應用程式控制項 (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 來建立適當的原則。  
+> Kiosk 模式決定使用者登入裝置時可使用哪些 app。 不過，kiosk 模式不是安全性方法。 它不會停止「允許」 app，無法開啟其他不允許的應用程式。 為了封鎖 app 或進程的開啟，請使用 [Windows Defender 應用程式控制項 (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 來建立適當的原則。
+>
+> 深入瞭解 Microsoft 服務，為使用者提供 HoloLens 2 所使用的高級安全等級，進一步瞭解 [狀態分隔與隔離資訊保護](security-state-separation-isolation.md#defender-protections)。 或者，瞭解如何 [使用 WDAC 和 Windows PowerShell，透過 Microsoft Intune 在 HoloLens 2 裝置上允許或封鎖 app](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)。
 
 您可以在單一 app 或多重應用程式設定中使用 kiosk 模式，而且您可以使用三個進程中的其中一個來設定和部署展臺設定。
 
@@ -105,7 +107,7 @@ ms.locfileid: "10929849"
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist _8wekyb3d8bbwe \！RemoteAssist |
 |意見反應 &nbsp; 中樞 |WindowsFeedbackHub _8wekyb3d8bbwe \！適用 |
 |檔案總管 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|郵件 |windowscommunicationsapps_8wekyb3d8bbwe！ windowslive！ |
+|Mail |windowscommunicationsapps_8wekyb3d8bbwe！ windowslive！ |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |電影與電視 |ZuneVideo _8wekyb3d8bbwe \！ZuneVideo |
