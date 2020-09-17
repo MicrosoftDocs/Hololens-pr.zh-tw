@@ -4,7 +4,6 @@ description: app、管理、app 管理
 keywords: HoloLens、使用者、帳戶、app、應用程式管理、
 author: evmill
 ms.author: v-evmill
-ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
@@ -15,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e73a56e5a2fcef14e85f5f552e264dd8d796cc8f
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009451"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016647"
 ---
 # <span data-ttu-id="5332e-104">應用程式管理: 概觀</span><span class="sxs-lookup"><span data-stu-id="5332e-104">App Management: Overview</span></span>
 
