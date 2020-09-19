@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
-ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
+ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
+ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11027437"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -35,6 +35,8 @@ ms.locfileid: "11016294"
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極找出眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
 | [憑證管理員](hololens-insider.md#certificate-manager)                                     | 使用者可以在 [設定] 應用程式中查看、安裝及移除證書目前的使用者和本機電腦憑證。                                         | 19041.1361 +                 |
+| [應用程式安裝程式](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | 從 appx 檔案安裝應用程式的裝置 UI。 | 19041.1377 + |
+| [從網頁安裝應用程式](hololens-insider.md#installing-apps-from-a-web-page) | 從瀏覽器設定要下載並安裝的 app。 | 19041.1366 + | 
 | [從 USB 自動啟動預配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 會自動偵測 USB 磁片磁碟機上的預配套件。                                | 19041.1361 +                 |
 | [在 OOBE 中自動確認預配套件](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自動套用預配套件。                                             | 19041.1361 +                 |
 | [使用 Autopilot 使用 Wi-fi 連接](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 從裝置 Wi-fi 使用 autopilot，而不需要乙太網卡。                             | 19041.1364 +                 |
@@ -108,13 +110,30 @@ ms.locfileid: "11016294"
 
 ![顯示如何使用憑證 UI 來安裝憑證的圖片](images/certificate-device-install.jpg)
 
+### 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
+現在，使用者可以透過 Appx 套件安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。 這種體驗對於在本機裝置上安裝 app 或與其他不熟悉 HoloLens 中其他 app 安裝方法的人共用應用程式很簡單。
+
+這是發佈完全建立的 app 的簡單方法。 不論您是否只要想要使用 HoloLens 來示範您的應用程式給另一個使用者，或者您想要以縮放比例來部署您的應用程式，此方法也適用于這兩種情況。
+
+瞭解在 [HoloLens 2 上使用 App 安裝程式安裝應用](app-deploy-app-installer.md)程式的完整程式。  
+
+![透過 App 安裝程式安裝 MRTK 範例](images/hololens-app-installer-picture.jpg)
+
+### 從網頁安裝應用程式
+現在在 Windows 測試人員組建中，19041.1366 + 使用者可以直接從 web 伺服器安裝應用程式。 
+
+您現在可以在網頁上主持 Appx 套件的建立。 結合憑證部署時，此應用程式發佈方法對於 app 部署非常有用。
+
+瞭解在[HoloLens 2 上從網頁安裝 app](app-deploy-web-installer.md)的完整程式
+
 ### 從 USB 自動啟動預配
 在此組建之前，使用者必須先在 OOBE 中手動啟動 [提供] 畫面，才能使用按鈕組合進行提供。 現在，使用者可以在 USB 儲存空間磁片磁碟機上使用預配套件，以略過按鈕組合。 
 
 1. 在 OOBE 的第一個 interactable 時刻，將 USB 磁片磁碟機插入預配套件
 1. 當裝置準備好進行預配時，系統會自動以 [預配] 頁面開啟提示。 
 
-注意：如果在裝置啟動時，已將 USB 磁片磁碟機保留在插接，則 OOBE 會列舉現有的 USB 儲存裝置，也會監視其他插入的裝置。
+> [!NOTE]
+> 如果在裝置啟動時，系統會將 USB 磁片磁碟機保持插接，則 OOBE 會列舉現有的 USB 儲存裝置，也會監視其他插入的 USB 磁片磁碟機。
 
 如需在 OOBE 期間套用預配套件的詳細資訊，請繼續閱讀 [這裡](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
 
@@ -211,6 +230,9 @@ OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下�
 舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 從這個 Windows 測試人員組建開始，如果發生失敗，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
 
 ![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
+
+#### 更新
+您也可以針對這個方法來設定更新，即使使用者不是透過 Microsoft Store 安裝，他們仍然可以接收更新。 更新可以設定為以 app 啟動或排程為基礎。 若要進一步瞭解如何設定， [請造訪此頁面](https://docs.microsoft.com/windows/msix/app-installer/update-settings)。 
 
 ### HoloLens 原則
 已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
