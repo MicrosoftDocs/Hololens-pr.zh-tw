@@ -1,6 +1,6 @@
 ---
-title: 設定 URI
-description: 適用於 PageVisibilityList 的 HoloLens 支援 URI 清單
+title: 頁面設定可見度
+description: 適用於 PageVisibilityList 和指南的 HoloLens 支援 URI 清單
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -13,14 +13,14 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
+ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016697"
+ms.locfileid: "11026936"
 ---
-# 設定 URI
+# 頁面設定可見度
 
 HoloLens 裝置易管理的其中一項功能是使用 [設定/PageVisibilityList 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) 來限制 [設定] 應用程式中可看到的頁面。 PageVisibilityList 為一種原則，可讓 IT 系統管理員禁止顯示或存取 [系統設定] 應用程式中的特定頁面，或對特定頁面外的所有頁面執行此動作。 
 
@@ -122,8 +122,7 @@ HoloLens 裝置和 Windows 10 裝置在 [設定] 應用程式中有不同的頁�
 | Windows Update - 檢查更新 | ms-settings:windowsupdate-action          |
 | 進階選項                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 以下兩個 URI 實際上並不會帶您到 [進階選項] 或 [選項] 頁面，它們只會封鎖/顯示 Windows Update 主頁面。 
+>  <sup>1 </sup>以下兩個 URI 實際上並不會帶您到 **[進階選項]** 或 **[選項]** 頁面，它們只會封鎖或顯示 Windows Update 主頁面。 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
