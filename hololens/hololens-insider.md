@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027437"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052632"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -43,7 +43,6 @@ ms.locfileid: "11027437"
 |[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 當租使用者註冊並套用原則之後，只要裝置重設或重新閃爍，裝置就只能在該租使用者中註冊。 | 19041.1366 +|
 | [全域指定存取](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。 | 19041.1356 +                 |
 | [在多應用程式亭中自動啟動應用程式](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。     | 19041.1346 +                 |
-| [網亭的訪客自動登入](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 啟用自動登入訪客帳戶以用於 Kiosk 模式。                         | 19041.1361 +                 |
 | [管理失敗處理的 Kiosk 模式行為變更](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 現在已處理 Kiosk 模式失敗的變更。                                              | 19041.1356 +                 |
 | [HoloLens 原則](hololens-insider.md#hololens-policies)                                      | 混合式現實裝置的新原則。                                                        | 19041.1349 +                 |
 | [為離線資訊站快取 AAD 群組成員資格](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | 針對 Kiosk 模式允許使用 AAD 群組成員資格快取多少天的原則。    | 19041.1356 +                 |
@@ -213,18 +212,6 @@ OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下�
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### 網亭的訪客自動登入
-這個新功能可讓訪客帳戶使用自動登入。 
-
-針對非 AAD 設定，若要針對訪客自動登入設定裝置，請執行下列動作：
-1.  建立以下專案的預配套件：
-    1.  將 **執行時間設定/AssignedAccess 設定** 為允許訪客帳戶。
-    1.  您也可以選擇在 MDM 中註冊裝置 ** (執行時間設定/工作場所/登記) ** ，以便日後進行管理。
-    1.  不要建立本機帳戶
-1.  套用[[預配套件](hololens-provisioning.md)]。
-
-在 AAD 設定中，使用者不需要進行這項變更，就能達到此內容。 針對 kiosk 模式設定的 AAD 連接裝置，可以在登入畫面上使用單一按鈕敲擊來登入訪客帳戶。 登入訪客帳戶之後，裝置就不會再次提示您登入，直到從 [開始] 功能表明確登出訪客為止，或重新開機裝置為止。
-
 ### 管理失敗處理的 Kiosk 模式行為變更
 
 舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 從這個 Windows 測試人員組建開始，如果發生失敗，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
@@ -301,7 +288,7 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 
 若要瞭解您可以在 HoloLens 2 上自訂的頁面設定，請造訪我們的 [ [設定 uri] 頁面](settings-uri-list.md)。 
  
-![在 [設定] 應用程式中修改之使用時間的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
+![在 [設定] 應用程式中修改的使用時間之螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
 
 ### 研究模式
 在 [研究] 模式中，HoloLens 2 成為電腦視覺研究的 potent 工具。 與先前的版本相比，HoloLens 2 的研究模式具有下列優點：

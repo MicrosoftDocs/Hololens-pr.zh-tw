@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009501"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052580"
 ---
 # 佈建套件
 
@@ -32,6 +32,9 @@ ms.locfileid: "11009501"
 
 > [!NOTE] 
 > 若要瞭解為 HoloLens 裝置建立預配套件的基本概念，請造訪 [Hololens 提供](https://docs.microsoft.com/hololens/hololens-provisioning)。 若要部署 app，您必須從 [高級提供] 開始。 
+
+> [!NOTE] 
+> HoloLens (1 gen) 在有限支援中使用預配套件 (**UniversalAppInstall**) 安裝 app。 HoloLens (1 gen) 裝置只支援在 OOBE 期間使用 PPKG 安裝應用程式，且只支援使用者內容安裝。
 
 ## 設定
 
