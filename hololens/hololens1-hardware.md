@@ -1,6 +1,6 @@
 ---
 title: HoloLens (第 1 代) 硬體
-description: 組成 Microsoft HoloLens （第1代）元件的大綱，世界第一個完全 untethered 執行 Windows 的全息電腦。
+description: 組成 Microsoft HoloLens 的元件大綱 (first gen) ，是世界上第一個執行 Windows 的完整 untethered 全息電腦。
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
@@ -13,18 +13,18 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 1ef464e03bfc17d15e2b776768223b3889cdb4e9
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072780"
 ---
 # HoloLens (第 1 代) 硬體
 
-![Microsoft HoloLens （第1代）](images/see-through-400px.jpg)
+![Microsoft HoloLens (1 gen) ](images/see-through-400px.jpg)
 
-Microsoft HoloLens （1st gen）是世界上第一個完全 untethered 的全息電腦。 HoloLens 會透過全息版體驗重新定義個人計算，以讓您以新的方式進行。 HoloLens 會融合先進的光學器件與感應器，以將3D 全息圖固定在您周圍的真實世界。
+Microsoft HoloLens (1 gen) 是世界上第一個完全 untethered 的全息電腦。 HoloLens 會透過全息版體驗重新定義個人計算，以讓您以新的方式進行。 HoloLens 會融合先進的光學器件與感應器，以將3D 全息圖固定在您周圍的真實世界。
 
 ## HoloLens 元件
 
@@ -51,7 +51,7 @@ HoloLens 方塊包含下列專案：
 - **超細纖維布**。 使用布清潔您的 HoloLens 面板。
 
 >[!TIP]
->[遙控器](hololens1-clicker.md)隨附于 HoloLens （1St 1 Gen），在個別的方塊中。
+>[遙控器](hololens1-clicker.md)隨附于 HoloLens (1 Gen) ，在個別的方塊中。
 
 ### 電源供應器詳細資料
 
@@ -71,14 +71,14 @@ HoloLens 方塊包含下列專案：
 | - | - |
 | 光學 | 透明全像鏡頭 (波導管) |
 | 全像解析度 | 2個高清16:9 光源引擎產生 2.3 M 總光線點 |
-| 全像密度 | \ >2.5 k radiants （每 radian 的點數） |
+| 全像密度 | \ >2.5 k radiants (每個 radian 的光線點數)  |
 | 目視轉譯 | 自動 pupillary 距離校準 |
 
 ### 感應器
 
 ![HoloLens 有可瞭解其環境和使用者動作的感應器](images/sensor-bar-400px.jpg)
 
-- 1慣性度量單位（IMU）
+- 1個慣性度量單位 (IMU) 
 - 4瞭解攝影機的環境
 - 1深度相機
 - 1 2MP 相片/HD 攝影機
@@ -111,7 +111,7 @@ HoloLens 方塊包含下列專案：
 ![Microsoft HoloLens 版主機板](images/motherboard-400px.jpg)
 
 - 含 TPM 2.0 支援的 Intel 32 位架構
-- 自訂建的 Microsoft 全息處理單元（HPU 1.0）
+- 自訂建的 Microsoft 全息版 (HPU 1.0) 
 
 ### 記憶體
 
@@ -154,6 +154,7 @@ HoloLens 方塊包含下列專案：
 ### 安全
 
 HoloLens 已經過測試，符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本影響保護需求。
+- [SAR 資訊](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## 照顧與清潔
 
@@ -168,4 +169,4 @@ HoloLens 已經過測試，符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本�
 ![顯示如何清潔面板的影像](images/hololens-cleaning-visor.png)
 
 > [!div class="nextstepaction"]
-> [設定和啟動 HoloLens （第1代）](hololens1-setup.md)
+> [ (1 gen) 設定和啟動 HoloLens](hololens1-setup.md)

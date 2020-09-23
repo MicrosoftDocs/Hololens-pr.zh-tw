@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016687"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072790"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -107,7 +107,7 @@ ms.locfileid: "11016687"
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist _8wekyb3d8bbwe \！RemoteAssist |
 |意見反應 &nbsp; 中樞 |WindowsFeedbackHub _8wekyb3d8bbwe \！適用 |
 |檔案總管 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |windowscommunicationsapps_8wekyb3d8bbwe！ windowslive！ |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe！ windowslive |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |電影與電視 |ZuneVideo _8wekyb3d8bbwe \！ZuneVideo |
@@ -477,6 +477,9 @@ Kiosk 配置設定檔包括 [ **使用者登入類型** ] 設定。 **使用者�
 
     ![Kiosk 模式](images/kiosk.png)
 1. 重新開機 HoloLens。 如果您仍開啟了 [裝置入口網站] 頁面，您可以選取頁面頂端的 [ **重新開機** ]。
+
+> [!NOTE]
+> 您可以透過裝置入口網站的 REST API 來設定 Kiosk 模式，方法是使用一個所需的查詢字串參數 ( "kioskModeEnabled"，其中其中一個值為 "true" 或 "false" ) ，而其中一個選擇性參數 ( "startupApp" 與套件名稱) 的值。 請記住，Device Portal 僅適用于開發人員，不應在非開發人員裝置上啟用。 REST API 在未來的更新/發行中可能會變更。
 
 ## 詳細資訊
 
