@@ -3,7 +3,7 @@ title: 全域指定存取
 description: OMA-URI 在全域指定存取站的使用指南
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens、hololens 2、指定存取、kiosk
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902298"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052622"
 ---
 # 全域指定存取 – 接收站
 
@@ -44,7 +44,7 @@ ms.locfileid: "10902298"
 
 2.  依照在 [使用預配套件來設定單一應用程式或多重應用程式站](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)的步驟進行，特別是「Prov. 套件，步驟2–將工作站配置的 XML 檔案新增至佈建套件」，並參照上一個步驟中儲存的 XML 檔案。 
 
-## 我可以建立除了 1 個 AAD 帳戶或 AAD 群組以外,每個人皆可套用的全域適用組態嗎？ 
+## 我是否可以建立一個每個人皆可套用的全域設定，並在每 1 個 AAD 帳戶或 AAD 群組套用個別的設定？ 
 
 可以，請參照下方的 XML blob 範例。 如果找不到已登入的特定使用者，則全域指定存取的設定檔會套用至 Hololens，因此這是為登入的使用者預設的工作站模式設定。 這邊有一個是要使用 XML blob 的範例： 
 
