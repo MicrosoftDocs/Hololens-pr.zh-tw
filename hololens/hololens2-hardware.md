@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009431"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072770"
 ---
 # HoloLens 2 硬體
 
@@ -149,6 +149,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 * [產品安全](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [產品安全警告與指示](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * 視力安全：HoloLens 2 已經過測試，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影響保護需求。
+* [SAR 資訊](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### 法規資訊
 [HoloLens 法規](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包括溫度、處置、無線電波和電視干擾等資訊。
