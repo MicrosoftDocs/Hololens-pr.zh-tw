@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072790"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080442"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -90,8 +90,10 @@ ms.locfileid: "11072790"
 
 如果您使用行動裝置管理 (MDM) 系統或預配套件來設定 kiosk 模式，您可以使用 [AssignedAccess 配置服務提供者 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) 來指定應用程式。 CSP 會使用 [應用程式使用者模型識別碼 (aumid) ](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 來識別應用程式。 下表列出一些您可以在多應用程式亭中使用的 Aumid 應用程式。
 
-> [!CAUTION]
-> 您無法選取 [Shell] app 做為展臺 app。 此外，我們建議您 **不要選取 [** microsoft Edge]、[microsoft Store] 或 [檔案資源管理器] 做為展臺 app。  
+> [!IMPORTANT]
+> Kiosk 模式決定使用者登入裝置時可使用哪些 app。 不過，kiosk 模式不是安全性方法。 它不會停止「允許」 app，無法開啟其他不允許的應用程式。 因為我們不限制此行為，所以仍可從 Edge、檔案資源管理器以及 Microsoft Store 應用程式啟動 app。 如果您不想從展臺啟動特定的 app，請使用 [Windows Defender 應用程式控制項 (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 來建立適當的原則。 
+> 
+> 此外，混合式現實家用版無法設定為 kiosk app。
 
 <a id="aumids"></a>
 
