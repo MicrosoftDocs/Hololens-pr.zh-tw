@@ -39,6 +39,8 @@
 ## 規劃 HoloLens 2 企業部署
 ### [在商業環境中部署 HoloLens](hololens-requirements.md)
 ### [常見的基礎結構部署案例](common-scenarios.md)
+## 常見案例
+### [離線安全](hololens-common-scenarios-offline-secure.md)
 ## 安全性
 ### [安全性概觀](security-overview.md)
 ### [Architecture](security-architecture.md)

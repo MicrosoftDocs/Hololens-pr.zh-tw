@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
-ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
+ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078381"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088607"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -33,7 +33,7 @@ ms.locfileid: "11078381"
 
 | 功能                                                | 描述                                                                                    | 可在測試人員組建中使用 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極找出眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
+| [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極地計算眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
 | [憑證管理員](hololens-insider.md#certificate-manager)                                     | 使用者可以在 [設定] 應用程式中查看、安裝及移除證書目前的使用者和本機電腦憑證。                                         | 19041.1361 +                 |
 | [從 USB 自動啟動預配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 會自動偵測 USB 磁片磁碟機上的預配套件。                                | 19041.1361 +                 |
 | [在 OOBE 中自動確認預配套件](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自動套用預配套件。                                             | 19041.1361 +                 |
@@ -68,9 +68,6 @@ ms.locfileid: "11078381"
  如果使用者從尚未看不到的應用程式轉換到一個存取注視資料的應用程式，則會顯示校準提示。 不會變更為現成的體驗流程。 
  
 針對需要目視眼睛資料或非常精確的全息圖位置的體驗，我們建議 uncalibrated 使用者從目視追蹤校準提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [ **系統 > 校準] > 目視校準 > 執行目視校準**。
-
-**已知問題**
- - 我們正在調查在大量記憶體載入不足的情況下，目視追蹤器驅動程式主機進程可能會當機的問題。 目視追蹤驅動程式主機進程應該會自動復原。
 
 ### 憑證管理員
 
