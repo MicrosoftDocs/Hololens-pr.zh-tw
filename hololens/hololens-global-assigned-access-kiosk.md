@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
+ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052622"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11093933"
 ---
 # 全域指定存取 – 接收站
 
@@ -32,7 +32,12 @@ ms.locfileid: "11052622"
 > [!NOTE]
 > 請注意標示為「<！-」的區域。 這些區域會要求您根據您的喜好進行修改。 
 
-1.  按照下列步驟建立自訂的 OMA-URI 裝置設定設定檔，並將它套用到 HoloLens 裝置群組：在 Intune 中的 ![全域指定存取 OMA-URI。](images/global-assigned-access-omauri.png)
+1.  按照下列步驟建立自訂的 OMA-URI 裝置設定設定檔，並將它套用到 HoloLens 裝置群組： 
+
+    URI 值：.Device/Vendor/MSFT/AssignedAccess/Configuration
+   
+    > [!div class="mx-imgBorder"]
+    > ![在 Intune 中的全域指定存取 OMA-URI](images/global-assigned-access-omauri.png)
 
 2.  針對值，請更新並貼上下列內容： 
 
@@ -49,7 +54,7 @@ ms.locfileid: "11052622"
 可以，請參照下方的 XML blob 範例。 如果找不到已登入的特定使用者，則全域指定存取的設定檔會套用至 Hololens，因此這是為登入的使用者預設的工作站模式設定。 這邊有一個是要使用 XML blob 的範例： 
 
 > [!NOTE]
-> 請注意標示為「<！-」的醒目提示區域，因為這些區域會要求您根據您的喜好進行修改。 
+> 請注意以 `<!-` 標示的醒目區域。 這些區域會要求您根據您的喜好進行修改。 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
