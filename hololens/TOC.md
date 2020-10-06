@@ -62,6 +62,13 @@
 ## [解除鎖定 Windows Holographic for Business 功能](hololens1-upgrade-enterprise.md)
 
 # 設定
+## 裝置管理
+### [設定 CSP 和裝置管理概覽](hololens-csp-policy-overview.md)
+### [使用佈建套件設定 HoloLens](hololens-provisioning.md)
+### [使用 MDM 管理 HoloLens 裝置](hololens-mdm-configure.md)
+### [通用的裝置限制](hololens-common-device-restrictions.md)
+### [設定 HoloLens (第 1 代) 的 kiosk](hololens-kiosk.md)
+### [Windows Defender 應用程式控制 (WDAC)](windows-defender-application-control-wdac.md)
 ## 身份識別
 ### [管理 HoloLens 的使用者身分識別和登入](hololens-identity.md)
 ### [與多人共用 HoloLens](hololens-multiple-users.md)
@@ -71,16 +78,6 @@
 ### [準備 HoloLens 2 的憑證和網路設定檔](hololens-certificates-network.md)
 ### [管理 HoloLens 的連線端點](hololens-offline.md)
 ### [連線至藍牙與 USB-C 裝置](hololens-connect-devices.md)
-
-
-## 裝置管理
-### [設定 CSP 和裝置管理概覽](hololens-csp-policy-overview.md)
-### [使用佈建套件設定 HoloLens](hololens-provisioning.md)
-### [使用 MDM 管理 HoloLens 裝置](hololens-mdm-configure.md)
-### [通用的裝置限制](hololens-common-device-restrictions.md)
-### [設定 HoloLens (第 1 代) 的 kiosk](hololens-kiosk.md)
-### [Windows Defender 應用程式控制 (WDAC)](windows-defender-application-control-wdac.md)
-
 
 
 # 部署
