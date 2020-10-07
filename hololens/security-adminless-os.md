@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016637"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102312"
 ---
 # 無系統管理員作業系統
 
@@ -29,6 +29,8 @@ HoloLens 2 會透過停用系統管理員群組的支援，並限制所有協力
   * Windows
 
 Windows 元件還可以透過 System UWPs 運用 AppContainer 沙箱。 深入了解通用 Windows 平台 (UWP) ，請參閱 [UWP 文件](https://docs.microsoft.com/windows/uwp/)。 此外，具有更多許可權降低需求的 Windows 元件（例如瀏覽器內容頁面、分析者）會使用權限較少的 AppContainer （LPAC）沙箱，以切斷所有 AppContainers 存取資源集合。
+
+## 裝置擁有者
 
 最後，只有裝置擁有者才允許執行特定的全裝置操作，例如將裝置加入租用者或使用者管理。 此群組由裝置上的用戶透過下列步驟加入:
   * 裝置上的第一位使用者永遠都是指定擁有者。 

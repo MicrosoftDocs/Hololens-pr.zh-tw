@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899105"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102342"
 ---
 # 適用於 HoloLens 2 的 Windows Autopilot
 
@@ -199,6 +199,9 @@ ms.locfileid: "10899105"
 ## 適用於 HoloLens 2 的 Windows Autopilot 使用者體驗
 
 完成上述指示之後，您的 HoloLens 2 使用者將會完成下列體驗，以佈建其 HoloLens 裝置：  
+
+> [!NOTE]
+> 使用 Autopilot 會影響[裝置擁有者](security-adminless-os.md#device-owner)。
 
 1. 如前所述，在目前版本中，裝置必須先連線到網際網路，才能開啟 HoloLens 並啟動 Autopilot 佈建程式。 您可以使用「USB-C 轉乙太網路」介面卡將裝置連線到乙太網路，進行有線網路的連線，或使用「USB-C 轉 WiFi」介面卡進行無線網路的連線。
    

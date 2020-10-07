@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
-ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
+ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
+ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "11093933"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094971"
 ---
 # 全域指定存取 – 接收站
 
@@ -34,7 +34,7 @@ ms.locfileid: "11093933"
 
 1.  按照下列步驟建立自訂的 OMA-URI 裝置設定設定檔，並將它套用到 HoloLens 裝置群組： 
 
-    URI 值：.Device/Vendor/MSFT/AssignedAccess/Configuration
+    URI 值: ./Device/Vendor/MSFT/AssignedAccess/Configuration
    
     > [!div class="mx-imgBorder"]
     > ![在 Intune 中的全域指定存取 OMA-URI](images/global-assigned-access-omauri.png)
