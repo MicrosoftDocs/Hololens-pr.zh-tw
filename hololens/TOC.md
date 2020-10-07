@@ -3,6 +3,7 @@
 # 概觀
 
 ## 開始使用 HoloLens 2
+### [HoloLens 2 概觀](hololens2-options.md)
 ### [HoloLens 2 硬體](hololens2-hardware.md)
 ### [讓您的 HoloLens 2 準備好可供使用](hololens2-setup.md)
 ### [設定您的 HoloLens 2](hololens2-start.md)
