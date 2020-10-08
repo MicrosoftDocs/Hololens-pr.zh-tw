@@ -1,7 +1,7 @@
 ---
-title: Setting up your HoloLens 2 edition
-description: How each HoloLens 2 option is the same or different and what to do after getting one.
-keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
+title: 設定 HoloLens 2 版本
+description: 每個 HoloLens 2 選項在取得之後的方式相同或不同。
+keywords: Hololens 2 購買選項，HoloLens 選項，開發人員版本
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -14,27 +14,27 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c4729b5e4cf39889058ce18b61f4a458a32cbac
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: f5e13a150cea439228233c11173996f38aea2a9d
+ms.sourcegitcommit: 6927a5666c7232bd53164eec017f8364626e752b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102356"
+ms.locfileid: "11103871"
 ---
-# HoloLens 2 Overview
+# HoloLens 2 概觀
 
-HoloLens is a mixed reality device with apps and solutions that enhance collaboration, *powered by holograms*. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
+HoloLens 是一個混合式現實裝置，它是 *由全息影像* 所提供的，並提供可加強共同作業的 app 和解決方案。 使用 HoloLens 2，體驗效率與創新的新高度，以更聰明的方式工作。
 
-Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
+無論您是要 [尋找您的下](https://www.microsoft.com/hololens/apps) 一個行業解決方案， [開發人員](https://www.microsoft.com/hololens/developers) 正在努力建立新的現實經驗，或是 [企業決策者](https://www.microsoft.com/hololens/apps) 思考您的下一筆創新-HoloLens 2 是您的新實際計算。 
 
-## Options Overview
+## 選項概述
 
-**HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+**HoloLens 2 (僅限裝置) ** -HoloLens 2 提供最舒適和沉浸式混合的實際體驗，可利用 Microsoft 的雲端與 AI 服務的可靠性、安全性和伸縮性來加強。
 
-**HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+**Hololens 2 搭配 Dynamics 365 遠端協助** -在第一天使用 HoloLens 2，以及從 Microsoft 共同提供的最終混合現實應用程式。 利用更多用途，協助整個公司更具生產效率與創新。 使用來自業界合作夥伴的 Dynamics 365 和解決方案，立即體驗混合現實。
 
-## Get started with HoloLens 2 options
-Select a tab to learn more about your HoloLens journey. 
+## 開始使用 HoloLens 2 選項
+選取一個索引標籤，進一步瞭解您的 HoloLens 歷程。 
 
 [!INCLUDE[](includes/options-overview.md)]
 
