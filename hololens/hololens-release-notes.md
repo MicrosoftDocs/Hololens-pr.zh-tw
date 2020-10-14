@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997214"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117768"
 ---
 # HoloLens 2 版本資訊
 
@@ -28,6 +28,18 @@ ms.locfileid: "10997214"
 
 >[!NOTE]
 > 若要閱讀 HoloLens 模擬器版本資訊，請 [造訪](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)封存。
+
+## Windows 全息版 2004-2020 年10月更新
+- 組建19041.1124
+ 
+更新中的改進與修正：
+
+- 已移除導致執行時間系統錯誤的不必要檢查。
+
+## Windows 全息版 1903-2020 年10月更新
+- 組建18362.1081
+
+此每月品質更新不包含任何明顯的變更，我們鼓勵您試用 Windows 全息版（版本2004）的最新組建。
 
 ## Windows 全息版 2004-2020 年9月更新
 - 組建19041.1117
@@ -97,7 +109,7 @@ ms.locfileid: "10997214"
 - 改善錄製的影片中的全息圖穩定性。
 - 已解決混合式現實捕獲在超過數天后進入待機狀態後無法錄製影片的問題。
 - Unity 應用程式通常會停用 HolographicSpace UserPresence API。 此行為可避免在面板翻轉時，會導致某些 app 暫停的問題，即使已啟用 [在背景執行] 設定也一樣。 現在可針對 Unity 版本2018.4.18 及更新版本和2019.3.4 及更新版本啟用 API。
-- 當您透過 Wi-fi 連線存取裝置入口網站時，網頁瀏覽器可能會因為證書無效而無法存取。 瀏覽器可能會報告諸如「ERR_SSL_PROTOCOL_ERROR」之類的錯誤，即使裝置憑證先前是受信任的。 在此情況下，您無法對 Device Portal 進行進度，因為沒有任何選項可忽略安全性警告。 此更新解決了問題。 如果裝置憑證先前是在電腦上下載並信任，以移除瀏覽器安全性警告，且發生 SSL 錯誤，則必須下載新憑證，並信任該憑證，才能解決瀏覽器安全性警告。
+- 當您透過 Wi-Fi 連線存取 Device Portal 時，網頁瀏覽器可能會因為證書無效而無法存取。 瀏覽器可能會報告諸如「ERR_SSL_PROTOCOL_ERROR」之類的錯誤，即使裝置憑證先前是受信任的。 在此情況下，您無法對 Device Portal 進行進度，因為沒有任何選項可忽略安全性警告。 此更新解決了問題。 如果裝置憑證先前是在電腦上下載並信任，以移除瀏覽器安全性警告，且發生 SSL 錯誤，則必須下載新憑證，並信任該憑證，才能解決瀏覽器安全性警告。
 - 已啟用建立執行時間預配套件的功能，可使用 MSIX 套件安裝應用程式。
 - 已在 [**設定**系統全息影像] 中新增一個設定  >  **System**  >  **Holograms** ，可讓使用者在裝置關閉時，自動移除混合現實家用版中的所有全息影像。
 - 已修正導致 HoloLens app 變更其像素格式以在 HoloLens 模擬器中呈現黑色的問題。
@@ -128,7 +140,7 @@ ms.locfileid: "10997214"
 
 2020年5月2日 *Windows 全息2004版* 軟體更新包含一種令人興奮的新功能，例如支援 Windows Autopilot、應用程式暗模式、USB 乙太網上支援 5G/LTE 熱點，以及更多功能。 若要更新為最新版本，請開啟 [**設定**]   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          說明                                                                                              |
+|             功能                              |          描述                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 進行預設定及無縫的新裝置製作                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全金鑰以針對共用裝置啟用快速及安全的驗證            |
@@ -208,7 +220,7 @@ NetworkQoSPolicy configuration 服務提供者會建立網路服務品質 (QoS) 
 
 ### 已展開 5G/LTE tethered 裝置的 USB 乙太網上支援
 
-已新增支援，以啟用特定的行動寬頻裝置，例如 5G/LTE 手機和 Wi-fi hotpots （當他們透過 USB tethered 至 HoloLens 2 時）。 這些裝置現在會以另一個乙太網連線的方式顯示在 [ **網路設定** ] 中。  (不支援需要外部驅動程式的行動寬頻裝置。 ) 此功能可在未提供 Wi-fi 且 Wi-fi tethering 無法正常使用時，啟用高頻寬連線。 若要深入瞭解支援的 USB 裝置，請參閱連線 [至藍牙和 USB 裝置](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
+已新增支援，以啟用特定的行動寬頻裝置（例如 5G/LTE 手機和 Wi-Fi hotpots），並透過 USB tethered 至 HoloLens 2。 這些裝置現在會以另一個乙太網連線的方式顯示在 [ **網路設定** ] 中。  (不支援需要外部驅動程式的行動寬頻裝置。 ) 此功能可在 Wi-Fi 無法使用且 Wi-Fi tethering 不足的情況下啟用高頻寬連線。 若要深入瞭解支援的 USB 裝置，請參閱連線 [至藍牙和 USB 裝置](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
 
 ### 手動追蹤改善
 
@@ -228,7 +240,7 @@ NetworkQoSPolicy configuration 服務提供者會建立網路服務品質 (QoS) 
 
 - 設定 
 - Microsoft Store 
-- 郵件 
+- Mail 
 - 行事曆 
 - 檔案總管 
 - 意見反應中樞 
@@ -245,13 +257,13 @@ NetworkQoSPolicy configuration 服務提供者會建立網路服務品質 (QoS) 
 
 ### Cortana 更新
 
-已更新的應用程式會整合 Microsoft 365，以協助您在裝置上進行更多的工作 (目前僅提供英文) 。 在 HoloLens 2 上，Cortana 不再支援特定裝置特定的命令，例如調整音量或重新開機。 這些選項現已由新的系統語音命令支援。 深入瞭解我們的 [博客](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)中的新 Cortana app。
+已更新的應用程式會與 Microsoft 365 整合，以協助您在您的裝置上進行更多的工作 (目前僅 US-English) 。 在 HoloLens 2 上，Cortana 不再支援特定裝置特定的命令，例如調整音量或重新開機。 這些選項現已由新的系統語音命令支援。 深入瞭解我們的 [博客](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)中的新 Cortana app。
 
 ### 改善品質與修正
 
 更新中也會有改進與修正：  
 - 已推出活動的顯示校準系統。 此功能可改善全息影像的穩定性與對齊方式。 當您將自己從一邊移到另一側時，它們就會保持在適當的位置。
-- 修正了將 Wi-fi 流式處理定期中斷的錯誤。 如果應用程式指出它需要低延遲的資料流程，請呼叫 [SetSocketMediaStreamingMode 函數](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)來實施修正程式。
+- 修正 Wi-Fi 串流至 HoloLens 定期中斷的錯誤。 如果應用程式指出它需要低延遲的資料流程，請呼叫 [SetSocketMediaStreamingMode 函數](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)來實施修正程式。
 - 已修正在研究模式中進行流式處理期間發生的裝置暫停問題。
 - 修正錯誤：在某些情況下，當您繼續會話時，無法在登入畫面上顯示正確的使用者。
 - 已修正使用者無法透過 [ **設定**] 匯出 MDM 記錄的問題。
@@ -284,7 +296,7 @@ NetworkQoSPolicy configuration 服務提供者會建立網路服務品質 (QoS) 
 這些 [主機殼中] app 支援深色模式：
 - 設定
 - Microsoft Store
-- 郵件
+- Mail
 - 行事曆
 - 檔案總管
 - 意見反應中樞
