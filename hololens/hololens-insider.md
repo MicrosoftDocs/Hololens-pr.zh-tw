@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 10/15/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
-ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
+ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
+ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088607"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119296"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -31,13 +31,13 @@ ms.locfileid: "11088607"
 
 以下是您可以在 Windows 測試人員組建中立即試用的近期功能清單。
 
-| 功能                                                | 描述                                                                                    | 可在測試人員組建中使用 |
+| 功能                                                | 說明                                                                                    | 可在測試人員組建中使用 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極地計算眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
 | [憑證管理員](hololens-insider.md#certificate-manager)                                     | 使用者可以在 [設定] 應用程式中查看、安裝及移除證書目前的使用者和本機電腦憑證。                                         | 19041.1361 +                 |
 | [從 USB 自動啟動預配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 會自動偵測 USB 磁片磁碟機上的預配套件。                                | 19041.1361 +                 |
 | [在 OOBE 中自動確認預配套件](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自動套用預配套件。                                             | 19041.1361 +                 |
-| [使用 Autopilot 使用 Wi-fi 連接](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 從裝置 Wi-fi 使用 autopilot，而不需要乙太網卡。                             | 19041.1364 +                 |
+| [使用 Autopilot 進行 Wi-Fi 連接](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 從裝置 Wi-Fi 使用 autopilot，而不需要使用乙太網卡。                             | 19041.1364 +                 |
 |[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 當租使用者註冊並套用原則之後，只要裝置重設或重新閃爍，裝置就只能在該租使用者中註冊。 | 19041.1366 +|
 | [全域指定存取](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 針對適用于系統層級的多個 app kiosk 模式設定 HoloLens 2 裝置。 | 19041.1356 +                 |
 | [在多應用程式亭中自動啟動應用程式](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。     | 19041.1346 +                 |
@@ -49,6 +49,7 @@ ms.locfileid: "11088607"
 | [更新原則](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 新啟用的原則，可讓您控制更新。                                            | 19041.1352 +                 |
 | [已啟用 HoloLens 2 的設定頁面可見度](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 選取在 [設定] 應用程式中看到哪些頁面的原則。                                           | 19041.1349 +                 |
 |  [研究模式](hololens-insider.md#research-mode) | 在 HoloLens 2 上使用研究模式 | 19041.1375 + |
+| [錄製長度增加](hololens-insider.md#recording-length-increased) | MRC 錄製已不超過5分鐘的時間。 | 19041.1387 + |
 | [更新中的改進與修正](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新中的其他修正程式。                                                                | 19041.1361 +                 |
 
 
@@ -131,7 +132,7 @@ ms.locfileid: "11088607"
 
 您的裝置現在已設定，且會顯示 [提供成功] 畫面。
 
-### 使用 Autopilot 使用 Wi-fi 連接
+### 使用 Autopilot 進行 Wi-Fi 連接
 在 OOBE 期間，一旦您將 HoloLens 2 連線到 Wifi，OOBE 就會檢查該裝置的 autopilot 設定檔。 如果找到一個，就會用來完成 AAD 聯接和註冊流程的其餘部分。 換句話說，您不再需要使用乙太網路到 USB C 或 wifi 至 USB C 配接器，但如果在 OOBE 開始提供，這些功能就會繼續運作。 深入瞭解 [HoloLens 2 裝置的 Autopilot](hololens2-autopilot.md)。
 
 ### Tenantlockdown CSP 和 Autopilot
@@ -203,7 +204,7 @@ OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下�
 ### HoloLens 原則
 已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
 | MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
@@ -283,6 +284,15 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 研究人員現在可以選擇在其 HoloLens 裝置上啟用 [研究] 模式，以存取所有外部對等原始影像感應器資料流程。 HoloLens 2 的研究模式也提供加速計、gyroscope 和磁力儀讀數的存取。 為了保護使用者的隱私權，無法透過 [參考資料] 模式使用原始的目視追蹤相機影像，但可以透過現有的 Api 使用眼睛視覺方向。
 
 如需進一步的技術詳細資料，請參閱 [研究模式檔](https://docs.microsoft.com/windows/mixed-reality/research-mode) 。
+
+### 錄製長度增加
+由於客戶意見反應，我們已增加 [混合現實捕獲](holographic-photos-and-videos.md)的錄製長度。 預設只會將混合的實際捕獲限制為5分鐘，但會根據可用磁碟空間來計算最大錄製長度。 裝置會根據可用磁碟空間達到總磁碟空間的80%，來估計最大影片錄製持續時間。
+
+> [!NOTE]
+> 如果發生下列其中一種情況，HoloLens 會將預設的視頻錄製長度 (5 分鐘) ：
+> - 估計的最大錄製持續時間小於預設值5分鐘。
+> - 可用磁碟空間少於磁片總空間的20%。
+
 
 ### 更新中的改進與修正：
 - 已更新原則，停用 NCM for AllowUsbConnection 中的 USB 函數列舉。
