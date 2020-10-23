@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117768"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134422"
 ---
 # HoloLens 2 版本資訊
 
@@ -140,7 +140,7 @@ ms.locfileid: "11117768"
 
 2020年5月2日 *Windows 全息2004版* 軟體更新包含一種令人興奮的新功能，例如支援 Windows Autopilot、應用程式暗模式、USB 乙太網上支援 5G/LTE 熱點，以及更多功能。 若要更新為最新版本，請開啟 [**設定**]   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          描述                                                                                              |
+|             功能                              |          說明                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 進行預設定及無縫的新裝置製作                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全金鑰以針對共用裝置啟用快速及安全的驗證            |
@@ -155,7 +155,7 @@ ms.locfileid: "11117768"
 
 ### Windows Autopilot 支援
 
-HoloLens 2 的 Windows Autopilot 可讓裝置銷售通道預先登記 HoloLens 至您的 Intune 租使用者。 裝置到達時，就準備好在您的租使用者底下將其自行部署為共用裝置。 若要充分利用自行部署，在安裝程式的第一個畫面中，裝置必須使用 USB-乙太網或 USB 到 LTE 連接器連線到網路。
+HoloLens 2 的 Windows Autopilot 可讓裝置銷售通道預先登記 HoloLens 至您的 Intune 租使用者。 裝置到達時，就準備好在您的租使用者底下將其自行部署為共用裝置。 若要充分利用自行部署，在安裝程式的第一個畫面中，裝置必須使用 USB-C-乙太網連線到網路。
 
 使用者啟動 Autopilot 自我部署程式後，此程式會完成下列步驟：
 
