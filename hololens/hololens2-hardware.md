@@ -2,7 +2,7 @@
 title: HoloLens 2 硬體
 description: 概述 Microsoft HoloLens 2 的組成元件，這是執行 Windows 10 之 Microsoft 完全不受限制的全像版電腦最新發展。
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 9/17/2019
+ms.date: 10/20/2020
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072770"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134645"
 ---
 # HoloLens 2 硬體
 
@@ -170,6 +170,25 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 注意：
 - 單位：黑色、零售樣式盒裝 HoloLens 2 已售出。
 - 外部託運容器：產品周圍包覆保護性運送包裝。
+
+## 尋找序號
+
+HoloLens 2 裝置的序號印在面板下方。
+1. 提起裝置的面板。
+1. 看看眉墊附近。
+1. 您可以在轉軸附近找到序號。 
+
+
+<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+
+也可以透過連接的電腦找到序號：
+
+1. 插入裝置
+1. 在檔案總管中巡覽至**此電腦**
+1. 按右鍵並選擇 HoloLens 裝置的**屬性**
+1. 這會顯示裝置的序號。 如下面的螢幕擷取畫面所示。
+
+<img src="images/ResetRecovery2.png" width="400" height="600" />
 
 ## 後續步驟
 
