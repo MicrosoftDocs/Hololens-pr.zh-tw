@@ -3,7 +3,7 @@ title: 尋找、安裝和解除安裝應用程式
 description: '[Microsoft Store] 是您的應用程式和遊戲的來源，可與 HoloLens 搭配使用。  深入瞭解如何尋找、安裝和解除安裝全像攝影應用程式。'
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: hololens、store、uwp、應用程式、安裝
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985833"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145634"
 ---
 # 在 [Microsoft Store] 尋找、安裝及解除安裝應用程式
 
@@ -35,6 +35,15 @@ HoloLens 支援許多在 Microsoft Store 中既有的應用程式，以及專為
 ## 尋找應用程式
 
 若要開啟 Microsoft Store 可從 **[開始]** 功能表開啟之。 然後瀏覽應用程式和遊戲。 您可以使用[語音命令](hololens-cortana.md)透過說出「搜尋」以進行搜尋，當搜尋視窗開啟後，說出「開始聽寫」，接著當系統提示您輸入搜尋字詞時，開始說出您的搜尋字詞。
+
+> [!NOTE]
+> 在 2021 年 1 月 12 日，下列應用程式將於 HoloLens 裝置上進入終止支援。 我們鼓勵您在裝置上使用下列連結，以使用應用程式的 Web 版本。
+
+| 應用程式        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## 安裝應用程式
 
