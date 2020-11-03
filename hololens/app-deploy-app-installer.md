@@ -14,29 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135524"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150914"
 ---
 # 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
-
-在我們的 Windows 測試人員發行版本中，我們 **新增了 (App 安裝程式) 的新功能，可讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。  您現在可以安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。  只要透過 USB 或邊緣) 將 (下載到您的裝置，然後在檔案資源管理器中流覽至 Appx 套件，就會提示您啟動安裝。  或者， [從網頁啟動安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像從 Microsoft Store 或側載使用 MDM 的 LOB 應用程式部署功能所安裝的應用程式，應用程式必須使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 進行數位簽署，而且在部署 App 之前，必須由 HoloLens 裝置 [信任用來簽署的憑證](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 。   
-
-此更新會與桌面對齊，且 [預設為啟用側載](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/)
 
 > [!IMPORTANT]
 > 此功能目前僅適用于 Windows 測試人員組建 19041.1377 + 中的 avalible。 [深入瞭解如何在 Windows 測試人員組建中註冊](hololens-insider.md)。
 
-> [!NOTE]
-> 針對想要停用此功能的 IT 系統管理員，請在您的 [WDAC 原則](windows-defender-application-control-wdac.md)中使用下列套件系列名稱。 這只會封鎖 App 安裝程式應用程式，而不會封鎖從其他來源（例如 Microsoft Store 或您的 MDM 解決方案）所安裝的應用程式。
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> 建議您使用 [WDAC 原則](windows-defender-application-control-wdac.md) 來控制應用程式，但如果您只想要允許 Microsoft store 應用程式，將 [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) 原則設定為 [不允許] 的裝置將只允許從 Microsoft Store 安裝應用程式。 
+在我們的 Windows 測試人員發行版本中，我們 **新增了 (App 安裝程式) 的新功能，可讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
+
+如果下列 **任一** 條件成立，裝置就會被視為「受管理」：
+- 已[註冊](hololens-enroll-mdm.md)MDM
+- 使用[預配套件](hololens-provisioning.md)進行設定
+- 使用者身分 [識別](hololens-identity.md) 為 AAD
+
+您現在可以安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。  只要透過 USB 或邊緣) 將 (下載到您的裝置，然後在檔案資源管理器中流覽至 Appx 套件，就會提示您啟動安裝。  或者， [從網頁啟動安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像從 Microsoft Store 或側載使用 MDM 的 LOB 應用程式部署功能所安裝的應用程式，應用程式必須使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 進行數位簽署，而且在部署 App 之前，必須由 HoloLens 裝置 [信任用來簽署的憑證](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 。   
 
 ## 需求
 
@@ -60,6 +57,7 @@ Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 
 ## 安裝方法
 
+1.  確定您的裝置未被視為已管理。
 1.  確定您的 HoloLens 2 裝置已通電且已登入。
 1.  在您的電腦上流覽至您的自訂應用程式，並將 yourapp 複製到 yourdevicename\Internal Storage\Downloads。 
     完成檔案複製之後，您可能會中斷裝置連線，並在稍後完成安裝。

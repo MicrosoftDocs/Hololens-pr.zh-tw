@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: d054628ec53fdc00560d628299058ce4c8d56185
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135554"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150954"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -31,7 +31,7 @@ ms.locfileid: "11135554"
 
 以下是您可以在 Windows 測試人員組建中立即試用的近期功能清單。
 
-| 功能                                                | 說明                                                                                    | 可在測試人員組建中使用 |
+| 功能                                                | 描述                                                                                    | 可在測試人員組建中使用 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自動目視位置支援](hololens-insider.md#auto-eye-position-support)                              | 積極地計算眼睛位置，並啟用正確的全息圖位置。                        | 19041.1339 +                 |
 | [憑證管理員](hololens-insider.md#certificate-manager)                                     | 使用者可以在 [設定] 應用程式中查看、安裝及移除證書目前的使用者和本機電腦憑證。                                         | 19041.1361 +                 |
@@ -107,17 +107,25 @@ ms.locfileid: "11135554"
 ![顯示如何使用憑證 UI 來安裝憑證的圖片](images/certificate-device-install.jpg)
 
 ### 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
-在我們的 Windows 測試人員發行版本中，我們 **新增了 (App 安裝程式) 的新功能，可讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。  您現在可以安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。  只要透過 USB 或邊緣) 將 (下載到您的裝置，然後在檔案資源管理器中流覽至 Appx 套件，就會提示您啟動安裝。  或者， [從網頁啟動安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像從 Microsoft Store 或側載使用 MDM 的 LOB 應用程式部署功能所安裝的應用程式，應用程式必須使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 進行數位簽署，而且在部署 App 之前，必須由 HoloLens 裝置 [信任用來簽署的憑證](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 。 注意：您可以透過使用 [Windows Defender 應用程式控制](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)來停用 app 安裝程式來停用 [完全控制] 來停用這個新路徑，請封鎖 Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+我們會在下一次功能更新後立即寄出 app 安裝程式功能。 我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
+
+如果下列 **任一** 條件成立，裝置就會被視為「受管理」：
+- 已[註冊](hololens-enroll-mdm.md)MDM
+- 使用[預配套件](hololens-provisioning.md)進行設定
+- 使用者身分 [識別](hololens-identity.md) 為 AAD
+
+您現在可以安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。  只要透過 USB 或邊緣) 將 (下載到您的裝置，然後在檔案資源管理器中流覽至 Appx 套件，就會提示您啟動安裝。  或者， [從網頁啟動安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像從 Microsoft Store 或側載使用 MDM 的 LOB 應用程式部署功能所安裝的應用程式，應用程式必須使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 進行數位簽署，而且在部署 App 之前，必須由 HoloLens 裝置 [信任用來簽署的憑證](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 。
 
 **應用程式安裝指示。**
 
+1.  確定您的裝置未被視為受管理
 1.  確定您的 HoloLens 2 裝置已通電且已連線至您的電腦
-2.  確定您已登入 HoloLens 2 裝置
-3.  在您的電腦上流覽至您的自訂應用程式，並將 yourapp 複製到 yourdevicename\Internal Storage\Downloads。   完成檔案複製之後，您可以中斷裝置連線
-4.  從您的 HoloLens 2 裝置開啟 [開始] 功能表，選取 [所有應用程式]，然後啟動檔案資源管理器應用程式。
-5.  流覽至 [下載] 資料夾。 您可能需要在應用程式的左面板上，選取 [此裝置]，然後流覽至 [下載]。
-6.  選取 yourapp 檔案。
-7.  App 安裝程式將會啟動。 選取 [安裝] 按鈕來安裝您的 app。
+1.  確定您已登入 HoloLens 2 裝置
+1.  在您的電腦上流覽至您的自訂應用程式，並將 yourapp 複製到 yourdevicename\Internal Storage\Downloads。   完成檔案複製之後，您可以中斷裝置連線
+1.  從您的 HoloLens 2 裝置開啟 [開始] 功能表，選取 [所有應用程式]，然後啟動檔案資源管理器應用程式。
+1.  流覽至 [下載] 資料夾。 您可能需要在應用程式的左面板上，選取 [此裝置]，然後流覽至 [下載]。
+1.  選取 yourapp 檔案。
+1.  App 安裝程式將會啟動。 選取 [安裝] 按鈕來安裝您的 app。
 已安裝的應用程式將會在安裝完成後自動啟動。
 
 您可以在 [Windows 通用範例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 中找到範例應用程式，以測試這份流程。
@@ -225,7 +233,7 @@ OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下�
 ### HoloLens 原則
 已在組建 19041.1349 + 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
 | MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
