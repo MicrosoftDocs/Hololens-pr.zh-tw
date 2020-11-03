@@ -12,6 +12,8 @@
 ### [HoloLens 2 清潔常見問題集](hololens2-maintenance.md)
 ### [HoloLens 2 支援的語言](hololens2-language-support.md)
 ### [使用 HoloLens 2](hololens2-basic-usage.md)
+### [HoloLens 開發版常見問題](hololens2-development-edition-faq.md)
+
 
 ## 開始使用 HoloLens (第 1 代)
 ### [HoloLens (第 1 代) 硬體](hololens1-hardware.md)
@@ -108,6 +110,7 @@
 ## [適用於 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
 ### [全域受指派的存取權 - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [HoloLens 的頁面設定 URI](settings-uri-list.md)
+### [應用程式安裝程式](app-deploy-app-installer.md)
 
 ## [HoloLens (第 1 代) 版本資訊](hololens1-release-notes.md)
 # [提供意見反應給我們](hololens-feedback.md)
