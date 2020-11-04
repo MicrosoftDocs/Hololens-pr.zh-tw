@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327e2411f497ff01723b42e9c2d00d26f8c89c7a
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 7d9568e6498c9b73fdee7110248a51253540a7eb
+ms.sourcegitcommit: ef25b0470ad789fbf41591be64d737ff7ea43d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146169"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11151115"
 ---
 # HoloLens 開發版常見問題
 
@@ -41,6 +41,10 @@ HoloLens 2 開發版包含 HoloLens 2、$500 （在 Azure 點數中為3個月的
 
 您的折扣點數或試用版將會傳送至在產品運送的2個工作日內購買所用的電子郵件。
 
+### 我可以將 HoloLens 2 (裝置只升級) 裝置至 HoloLens 2 開發版，以取得試用點數嗎？
+
+不行，我們不提供裝置傳輸方案。 無法從任何版本轉移至任何其他版本。 
+
 ### 什麼是 Unity Pro？ 
 
 Unity 專業版是適用于小型/中型錄音室/公司的即時3D 平臺。 它專為混合使用技術和非技術技能的小組而設計。 [深入了解](https://store.unity.com/products/unity-pro)
@@ -61,13 +65,17 @@ HoloLens 2 開發版的融資將于2021年初推出。
 
 此裝置適用于組建混合式現實解決方案的開發人員。 我們只會針對每個客戶交易限制一個採購。 如果您的公司想要購買多個開發版裝置，則需要單獨的交易來代表公司購買 HoloLens 2 開發版裝置。 
 
+### 我可以向客戶顯示 HoloLens 2 開發版裝置嗎？ 
+
+是的，此裝置是用來建立並測試混合式現實解決方案的程式設計。
+
 ### 我可以在哪裡購買 HoloLens 2 開發版本？ 
 
 HoloLens 2 開發版專門在 Microsoft 網上商店出售。  
 
 ### 我可以返還 HoloLens 2 開發版本嗎？  
 
-不。
+所有銷售都是最終版本，且在 HoloLens 2 開發版中不提供退款功能。
 
 ### 開發人員版本是否與 HoloLens 2 有不同的硬體需求？
 
