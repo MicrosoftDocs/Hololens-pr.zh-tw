@@ -13,14 +13,17 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
+ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881336"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11155389"
 ---
 # 連線至藍牙與 USB-C 裝置
+
+> [!NOTE]
+> 無法使用外部麥克風。 HoloLens 2 使用其內建[麥克風陣列](hololens2-hardware.md#audio-and-speech)。
 
 ## 配對 [藍牙] 裝置
 
@@ -29,9 +32,6 @@ HoloLens 2 支援下列 [藍牙] 裝置類型：
 - 滑鼠
 - 鍵盤
 - [藍牙] 音訊輸出（A2DP）裝置
-
-> [!NOTE]
-> 無法使用外部麥克風。 HoloLens 2 使用其內建[麥克風陣列](hololens2-hardware.md#audio-and-speech)。
 
 HoloLens （第 1 代）支援下列 [藍牙] 裝置類型：
 
