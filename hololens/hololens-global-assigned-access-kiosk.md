@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094971"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154194"
 ---
 # 全域指定存取 – 接收站
 
@@ -64,3 +64,14 @@ ms.locfileid: "11094971"
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## 其他的全域指定存取範例
+
+這是全域指定存取站，當任何使用者登入時，他們將會擁有一個具 [設定應用程式]、[意見反應中心] 和 [Microsoft Edge] 的多重應用程式站。
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+這是全域指定存取站，可排除裝置擁有者，而任何其他 AAD 使用者登入時，他們將會擁有一個具 [設定應用程式]、[意見反應中心] 和 [Microsoft Edge] 的多重應用程式站。 這個工作站中也包含適用 [訪客] 帳戶的次要工作站設定，可讓任何人在鎖定畫面上登入。 當使用者登入 [訪客] 帳戶時，他們將會有一個只有 [意見反應中心] 應用程式的多重應用程式站。
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
