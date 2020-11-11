@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
-ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
+ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154189"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162969"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -445,8 +445,59 @@ ms.locfileid: "11154189"
 
 ## 詳細資訊
 
-瞭解如何使用預配套件來設定展臺。  
+### 瞭解如何使用預配套件來設定展臺。  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### 全域指派的存取-Kiosk 模式
+- 透過啟用在系統層級套用 Kiosk 模式的新型 Kiosk 方法，減少了資訊站的身分識別管理。
+
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
+
+### 在多應用程式亭模式中自動啟動應用程式 
+- 自動應用程式啟動的焦點體驗，進一步增加針對 Kiosk 模式體驗所選擇的 UI 和 app 選項。
+
+僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
+
+應用程式會在使用者登入時自動啟動。 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### 管理失敗處理的 Kiosk 模式行為變更
+- 在 Kiosk 模式失敗中消除可用的應用程式，以獲得更安全的 Kiosk 模式。 
+
+舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 現在在 Windows 全息版20H2 的情況下，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
+
+![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
+
+### 為離線資訊站快取 AAD 群組成員資格
+- 已啟用離線亭，以使用 AAD 群組，最多可達60天。
+
+此原則控制的天數是，您可以使用 AAD 群組成員資格快取來指派針對已登入使用者的 AAD 群組指派的存取設定。 只要將此原則值設為大於0的值，就不會再使用 cache。  
+
+Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+最小值-0 天  
+最大值-60 天 
+
+正確使用此原則的步驟如下： 
+1. 針對使用 AAD 群組的展臺建立裝置配置設定檔，並將它指派給 HoloLens 裝置 (s) 。 
+1. 建立自訂 OMA URI 的裝置設定，將此原則值設為所需的天數 ( # A0 0) 並將它指派給 HoloLens 裝置 (s) 。 
+    1. URI 值應該在 OMA URI 文字方塊中輸入/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays。
+    1. 這個值可以介於 min/max （允許）之間。
+1. 註冊 HoloLens 裝置並確認這兩個設定都已套用到裝置。 
+1. 讓 AAD 使用者1登入當網際網路可供使用時，一旦使用者登入和 AAD 群組成員資格已成功確認，就會建立快取。 
+1. 現在 AAD 使用者1可以讓 HoloLens 離線，並在 kiosk 模式使用它，只要策略值允許 X 個天數。 
+1. 步驟4和5可針對任何其他 AAD 使用者 N 進行重複。以下是任何 AAD 使用者都必須使用網際網路登入到裝置，所以至少我們可以判斷他們是對哪些使用者配置目標的 AAD 群組成員。 
+ 
+> [!NOTE]
+> 除非 AAD 使用者執行步驟4，否則會在「中斷連接」的環境中遇到失敗的行為。 
+
 
 ## 適用于 HoloLens 的 XML Kiosk 程式碼範例
 

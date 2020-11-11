@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/9/2020
+ms.date: 10/13/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
-ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
+ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134422"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163150"
 ---
 # HoloLens 2 版本資訊
 
@@ -28,6 +28,337 @@ ms.locfileid: "11134422"
 
 >[!NOTE]
 > 若要閱讀 HoloLens 模擬器版本資訊，請 [造訪](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)封存。
+
+## Windows 全息版、版本20H2
+- 組建19041.1128
+
+Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 專業人員提供了一組強大的新功能。 從「自動目視」位置，到 [設定] 中的 [憑證管理員]，以改善 Kiosk 模式功能，以及新的 Autopilot 設定功能。 這個新的更新可讓 IT 團隊進行更精細的控制來設定和管理 HoloLens 裝置，並提供使用者更順暢的全息體驗。 
+
+此最新發行為版本2004的每月更新，但這次我們包含新功能。 主要組建編號會保持不變，且 Windows 更新將指示每月發行到版本 2004 (組建 19041) 。 您可以在 [設定] > 中查看組建編號，以確認您使用的是最新的 [組建 19041.1128 +]。 若要更新為最新版本，請開啟 [設定] 應用程式，移至 [更新 & 安全性]，然後按一下 [檢查更新]。 如需如何管理 HoloLens 更新的詳細資訊，請流覽 [此頁面](https://docs.microsoft.com/hololens/hololens-updates)。
+
+### Windows 全息版、版本20H2 的新功能  
+
+| 功能                                              | 描述                                                                                                                                     |
+|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| [自動目視位置支援](hololens-release-notes.md#auto-eye-position-support) | 積極地計算眼睛位置，而不需要使用者進行活動校準。   |
+| [憑證管理員](hololens-release-notes.md#certificate-manager)   | 允許更簡單的方法來安裝及移除 [設定] 應用程式中的憑證。     |
+| [從 USB 自動啟動預配](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | 在您的 USB 磁片磁碟機上預配套件，會自動提示 OOBE 中的 [配頁]                                                         |
+| [在 OOBE 中自動確認預配套件](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 在 OOBE 期間，您可以從 [預配] 頁面自動套用 [預配套件]。                                                         |
+| [不使用 UI 的自動預配](hololens-release-notes.md#automatic-provisioning-without-using-ui) | 如何將 [自動啟動] 與 [自動確認] 結合在一起。 |
+| [使用 Autopilot 進行 Wi-Fi 連接](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | 從裝置 Wi-Fi 使用 autopilot，而不需要使用乙太網卡。 |
+| [Tenantlockdown CSP 和 Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | 當租使用者註冊並套用原則之後，只要裝置重設或重新閃爍，裝置就只能在該租使用者中註冊。 |
+| [全域指定存取](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | 針對多個 app kiosk 模式的新設定方法，可在系統層級套用展臺，讓它適用于所有物件。                  |
+| [在多應用程式亭中自動啟動應用程式](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | 將應用程式設定為在登入多重應用程式亭模式時自動啟動。                                                        |
+| [管理失敗處理的 Kiosk 模式行為變更](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 展臺模式失敗現在有限制的回退。                                                                                                |
+| [HoloLens 原則](hololens-release-notes.md#hololens-policies)                                    | 新的 HoloLens 原則。     |
+| [為離線資訊站快取 AAD 群組成員資格](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | 新原則可讓使用者使用群組成員資格快取，在設定的天數內將 Kiosk 模式設為離線。                                        |
+| [HoloLens 2 的新裝置限制原則](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | 新啟用 HoloLens 2 的裝置管理原則。                                                                                |
+| [HoloLens 2 的新電源原則](hololens-release-notes.md#new-power-policies-for-hololens-2)       | 新支援的 power timeout 設定原則。  |
+| [更新原則](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | 新啟用的原則，可讓您控制更新。           |
+| [已啟用 HoloLens 2 的設定頁面可見度](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | 選取在 [設定] 應用程式中看到哪些頁面的原則。             |
+| [研究模式](hololens-release-notes.md#research-mode) | 使用 HoloLens 2 上的研究模式。 |
+| [錄製長度增加](hololens-release-notes.md#recording-length-increased) | MRC 錄製已不超過5分鐘的時間。 |
+| [更新中的改進與修正](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | 更新中的其他修正程式。   |
+
+### 自動目視位置支援
+
+- 我們現在透過自動目視定位支援來提供更高的精確度，讓您可以更輕鬆地查看，以及改善顯示品質。 
+
+在 HoloLens 2 中，目視位置可讓您實現正確的全息圖定位、舒適的觀賞體驗，以及改善顯示品質。 眼睛位置會計算為眼睛追蹤結果的一部分。 不過，這需要每個使用者都能透過目視追蹤校準，即使在體驗不需要目視眼睛的輸入時也一樣。
+
+**自動眼睛位置 (AEP) ** 啟用這些案例，並使用互動式方式來計算使用者的目視位置。  自動目視位置會在使用者將裝置放在背景的時刻自動開始運作。 如果使用者沒有先前的目視追蹤校準，自動目視位置將會在較小的處理時間之後，在顯示系統中開始提供使用者的目視位置。 這個處理時間通常介於 20-60 秒之間。 使用者資料不會保留在裝置上，因此，如果使用者要卸載並將裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。  
+
+當 uncalibrated 使用者放在裝置上時，有一些系統行為會隨著自動目視位置功能而變更。 Uncalibrated 使用者會參照尚未在裝置上透過目視追蹤校準程式的人。
+
+|     使用中的應用程式                           |     舊行為                                   |     Windows 全息版20H2 的行為向前                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     看不到的已啟用 app 或全息式貝殼    |     隨即會顯示目視追蹤校準提示。    |     不會顯示任何提示。                                                                                |
+|     看著已啟用的 app                             |     隨即會顯示目視追蹤校準提示。    |     只會在應用程式存取目視注視串流時顯示目視追蹤校準提示。     |
+
+ 如果使用者從尚未看不到的應用程式轉換到一個存取注視資料的應用程式，則會顯示校準提示。 不會變更為現成的體驗流程。 
+ 
+針對需要目視眼睛資料或非常精確的全息圖位置的體驗，我們建議 uncalibrated 使用者從目視追蹤校準提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [ **系統 > 校準] > 目視校準 > 執行目視校準**。
+
+此資訊稍後可與 [其他校準資訊](hololens-calibration.md#auto-eye-position-support)一起找到。 
+
+### 憑證管理員
+
+- 透過新的憑證管理員改善裝置安全性與合規性的審核、診斷和驗證工具。 這項功能可讓您在商業環境中以比例部署、疑難排解及驗證您的憑證。
+
+在 Windows 全息版20H2 中，我們會在 HoloLens 2 設定應用程式中新增憑證管理員。 移至 [ **設定] > 更新 & 安全性 > 憑證**。 此功能提供一種簡單且便於使用的方式，可在您的裝置上查看、安裝和移除證書。 使用新的憑證管理員，系統管理員和使用者現在已改良了審核、診斷和驗證工具，以確保裝置保持安全且合規性。 
+
+-   **審計：** 能夠驗證正確地部署憑證或確認已適當地移除證書。 
+-   **診斷：** 發生問題時，請確認裝置上是否有適當的憑證，以節省時間並協助進行疑難排解。 
+-   **驗證：** 驗證憑證是否已提供預期用途，且運作正常，可以節省大量的時間，特別是在以較大比例部署憑證之前的商業環境中。
+
+若要快速尋找清單中的特定憑證，您可以使用 [名稱]、[儲存] 或 [到期日] 等選項來排序。 使用者也可以直接搜尋證書。 若要查看個別的憑證屬性，請選取憑證，然後按一下 [ **資訊**]。 
+
+證書安裝目前支援 .cer 與 .crt 檔案。 裝置擁有者可以在本機電腦和目前使用者中安裝憑證; 所有其他使用者只能安裝至目前的使用者。 使用者只能從 [設定] UI 中移除直接安裝的憑證。 如果憑證已透過其他方式安裝，也必須以相同的機制移除。
+
+#### 若要安裝證書： 
+
+1.  將您的 HoloLens 2 連線到電腦。
+1.  將您要安裝的憑證檔案放在 HoloLens 2 上的某個位置。
+1.  流覽至 [ **設定] App > 更新 & 安全性 > 憑證**，然後選取 [安裝憑證]。
+1.  按一下 [匯 **入** 檔案]，然後流覽至您儲存憑證的位置。
+1.  選取 [ **儲存位置**]。
+1.  選取 [ **證書存放區**]。
+1.  按一下 **\[安裝\]**。
+
+證書現在應該已安裝在裝置上。
+
+#### 移除證書： 
+1. 流覽至 [ **設定] App，> 更新及安全性 > 憑證**。
+1. [搜尋] 方塊中的 [依名稱搜尋憑證]。
+1. 選取憑證。
+1. 按一下 [**移除**]
+1. 提示確認時，選取 **[是]** 。
+
+![[設定] 應用程式中的憑證檢視器](images/certificate-viewer-device.jpg)
+
+![顯示如何使用憑證 UI 來安裝憑證的圖片](images/certificate-device-install.jpg)
+
+此資訊稍後可 [在新的 [憑證管理員] 頁面上](certificate-manager.md)找到。
+
+### 從 USB 自動啟動預配
+
+- 在 OOBE 期間使用配套件的 USB 磁片磁碟機時，自動化的程式可讓使用者互動。
+
+在此版本之前，使用者必須在 OOBE 期間手動啟動 [預配] 畫面，才能使用按鈕組合進行提供。 現在，使用者可以在 USB 儲存空間磁片磁碟機上使用預配套件，以略過按鈕組合。 
+
+1. 在 OOBE 的第一個 interactable 時刻，將 USB 磁片磁碟機插入預配套件
+1. 當裝置準備好進行預配時，系統會自動以 [預配] 頁面開啟提示。 
+
+注意：如果在裝置啟動時，已將 USB 磁片磁碟機保留在插接，則 OOBE 會列舉現有的 USB 儲存裝置，也會監視其他插入的裝置。
+
+如需在 OOBE 期間套用預配套件的詳細資訊，請繼續閱讀 [這裡](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+
+您可以在此找到此資訊 [。](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+
+### 在 OOBE 中自動確認預配套件
+- 自動程式可讓使用者互動，在顯示 [預配套件] 頁面時，系統會自動套用所有列出的套件。
+
+當提供的主畫面啟動時，OOBE 會先計算10秒，然後再自動開始套用所有的預配套件。 在驗證所需的套件之後，使用者仍然可以在10秒內確認或取消。
+
+您可以在此找到此資訊 [。](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+
+### 不使用 UI 的自動預配
+- 合併自動程式，以減少提供的裝置互動。 
+
+透過將自動啟動從 USB 裝置和自動確認功能套件結合在一起，使用者就可以在不使用裝置 UI 或甚至戴上裝置的情況下，自動預配 HoloLens 2 裝置。 您可以繼續在多個裝置上使用相同的 USB 磁片磁碟機和預配套件。 這適用于一次在相同區域部署多個裝置。 
+
+1. 使用[Windows 配置設計](https://www.microsoft.com/store/productId/9NBLGGH4TX22)工具[建立預配套件](hololens-provisioning.md)。 
+1. 將套件複製到 USB 儲存空間磁片磁碟機。
+1. 將[您的 HoloLens 2 快閃](hololens-insider.md#ffu-download-and-flash-directions)至[19041.1361 或更新版本](https://aka.ms/hololens2previewdownload)。 
+1. 當 [ [高級恢復] 隨附](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 完成後，您的裝置會拔出您的 USB-C 纜線。 
+1. 將 USB 磁片磁碟機插入裝置。
+1. 當 HoloLens 2 裝置在 OOBE 中啟動時，系統會自動偵測 USB 磁片磁碟機上的預配套件，並啟動 [預配] 頁面。
+1. 10秒後，裝置會自動套用預配套件。 
+
+您的裝置現在已設定，且會顯示 [提供成功] 畫面。
+
+您可以在此找到此資訊 [。](hololens-provisioning.md#automatic-provisioning-without-using-ui)
+
+### 使用 Autopilot 進行 Wi-Fi 連接
+- 已移除將 USB-C 配接器移至乙太網上減少硬體需求的需求，只要讓 Autopilot 能夠在 Wi-Fi 連接的裝置上運作。
+
+在 OOBE 期間，一旦您將 HoloLens 2 連線到 Wifi，OOBE 就會檢查該裝置的 Autopilot 設定檔。 如果找到一個，就會用來完成 AAD 聯接和註冊流程的其餘部分。 換句話說，不需要使用乙太網上至 USB-C 或 Wi-Fi 至 USB-C 配接器，但如果在 OOBE 開始提供，它們就會繼續運作。 深入瞭解 [HoloLens 2 裝置的 Autopilot](hololens2-autopilot.md)。
+
+### Tenantlockdown CSP 和 Autopilot
+- 即使透過裝置重設或 reflash，也可以將裝置鎖定至租使用者，以保留該組織的租使用者。 透過 [預配] 中的 [禁止帳戶建立] 來進一步保護。 
+
+HoloLens 2 裝置現在支援 TenantLockdown CSP，就跟 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2)。 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 只使用 Autopilot，可將 HoloLens 2 與 MDM 註冊進行關聯。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (最初在 HoloLens 2 上設定) 值時，此值仍會保留在裝置上，即使是重新閃爍、作業系統更新等。 
+
+一旦在 HoloLens 2 將 TenantLockdown Csp [RequireNetworkInOOBE] 節點設定為 true，在網路連線之後，OOBE 就會無限期地等待 Autopilot 設定檔下載並套用。 
+
+一旦在 HoloLens 2 上將 TenantLockdown Csp [RequireNetworkInOOBE] 節點設定為 true，則在 OOBE 中則不允許下列作業： 
+- 使用執行時間提供建立本機使用者 
+- 透過執行時間預配執行 AAD join 操作 
+- 選取在 OOBE 體驗中擁有裝置的人員 
+
+#### 如何使用 Intune 進行設定？ 
+1. 建立自訂的 OMA URI 裝置配置設定檔，並為 RequireNetworkInOOBE 節點指定 true，如下所示。
+OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![透過 OMA URI 設定 tennant 鎖定](images/hololens-tenant-lockdown.png)
+
+1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+
+1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。  
+
+在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會生效。
+
+#### 如何使用 Intune 在 HoloLens 2 上取消 TenantLockdown 的 RequireNetworkInOOBE？ 
+1. 從先前已指派的裝置設定，將 HoloLens 2 從裝置群組中移除。 
+
+1. 建立自訂 OMA URI 的裝置配置設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![透過 Intune 中的 OMA URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
+
+1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+
+1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。
+
+在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會停用。 
+
+#### 如果在 TenantLockdown 設定為 true 後未在 HoloLens 中取消指派 Autopilot 設定檔，在 OOBE 期間會發生什麼情況？ 
+OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下對話方塊。 若要移除 TenantLockdown 的效果，裝置必須先使用 Autopilot 進行註冊，然後才能在 TenantLockdown CSP 所帶來的限制在移除之前的步驟中，以上一步中所述取消 RequireNetworkInOOBE。 
+
+![裝置中的 [裝置內視圖] 會在裝置上強制執行原則。](images/hololens-autopilot-lockdown.png)
+
+您現在可以在 [TENANTLOCKDOWN CSP 和 Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)底下的其他 Autopilot 下找到此資訊。
+
+### 全域指派的存取-Kiosk 模式
+- 透過啟用在系統層級套用 Kiosk 模式的新型 Kiosk 方法，減少了資訊站的身分識別管理。
+
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
+
+### 在多應用程式亭模式中自動啟動應用程式 
+- 自動應用程式啟動的焦點體驗，進一步增加針對 Kiosk 模式體驗所選擇的 UI 和 app 選項。
+
+僅適用于多應用程式亭模式，且只有1個 app 可以使用 [指派的存取設定] 底下的 [醒目提示] 屬性來自動啟動。 
+
+應用程式會在使用者登入時自動啟動。 
+
+```xml
+<AllowedApps>                     
+    <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 管理失敗處理的 Kiosk 模式行為變更
+- 在 Kiosk 模式失敗中消除可用的應用程式，以獲得更安全的 Kiosk 模式。 
+
+舊版在套用 kiosk 模式時遇到失敗，HoloLens 用來顯示 [開始] 功能表中的所有應用程式。 現在在 Windows 全息版20H2 的情況下，[開始] 功能表中將不會顯示任何應用程式，如下所示： 
+
+![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
+
+### HoloLens 原則
+- 專為管理裝置而建立的 HoloLens 的裝置管理選項。 
+
+已在 Windows 全息版20H2 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
+
+| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
+| MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
+| MixedReality\MicrophoneDisabled                    | 停用麥克風，不能在 HoloLens 2 上錄製任何音訊。                      | 1是，0沒有 (預設)                                                 |
+| MixedReality\FallbackDiagnostics                   | 控制可收集診斷記錄的行為。                               | 0停用，為裝置擁有者啟用1，所有 (預設) 啟用2 |
+| MixedReality\HeadTrackingMode                      | 保留供日後使用。                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | 控制使用 AAD 群組成員資格快取多少天來進行面向 AAD 群組的展臺。 | 請參閱下方。                                                           |
+
+### 為離線資訊站快取 AAD 群組成員資格
+- 已啟用離線亭，以使用 AAD 群組，最多可達60天。
+
+此原則控制的天數是，您可以使用 AAD 群組成員資格快取來指派針對已登入使用者的 AAD 群組指派的存取設定。 只要將此原則值設為大於0的值，就不會再使用 cache。  
+
+Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+最小值-0 天  
+最大值-60 天 
+
+正確使用此原則的步驟如下： 
+1. 針對使用 AAD 群組的展臺建立裝置配置設定檔，並將它指派給 HoloLens 裝置 (s) 。 
+1. 建立自訂 OMA URI 的裝置設定，將此原則值設為所需的天數 ( # A0 0) 並將它指派給 HoloLens 裝置 (s) 。 
+    1. URI 值應該在 OMA URI 文字方塊中輸入/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays。
+    1. 這個值可以介於 min/max （允許）之間。
+1. 註冊 HoloLens 裝置並確認這兩個設定都已套用到裝置。 
+1. 讓 AAD 使用者1登入當網際網路可供使用時，一旦使用者登入和 AAD 群組成員資格已成功確認，就會建立快取。 
+1. 現在 AAD 使用者1可以讓 HoloLens 離線，並在 kiosk 模式使用它，只要策略值允許 X 個天數。 
+1. 步驟4和5可針對任何其他 AAD 使用者 N 進行重複。以下是任何 AAD 使用者都必須使用網際網路登入到裝置，所以至少我們可以判斷他們是對哪些使用者配置目標的 AAD 群組成員。 
+ 
+> [!NOTE]
+> 除非 AAD 使用者執行步驟4，否則會在「中斷連接」的環境中遇到失敗的行為。 
+
+### HoloLens 2 的新裝置限制原則
+- 允許使用者管理特定的裝置管理原則，例如封鎖新增或移除預配套件的功能。
+
+新啟用的原則，可讓您更多 HoloLens 2 裝置的管理選項。 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+
+這兩個新的 AllowAddProvisioningPackage 和 AllowRemoveProvisioningPackage 原則已新增到我們的 [常見裝置限制](hololens-common-device-restrictions.md)中。
+
+### Hololens 2 的新電源原則
+- 當 HoloLens 休眠或透過電源原則鎖定時，還有更多選項。 
+
+這些新新增的原則可讓系統管理員控制電源狀態，例如空閒超時。 若要深入瞭解每個個別原則，請按一下該原則的連結。
+
+|     原則檔連結                |     附註                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  在 Windows 配置設計工具中使用的範例值，亦即100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     在 Windows 配置設計工具中使用的範例值，亦即100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置設計工具中使用的範例值，亦即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置設計工具中使用的範例值，亦即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+這兩個新的 DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 原則已新增到我們的 [常見裝置限制](hololens-common-device-restrictions.md)中。
+
+> [!NOTE]
+> 若要在 HoloLens 2 上保持一致的體驗，請確認 DisplayOffTimeoutOnBattery 和 StandbyTimeoutOnBattery 的值都設定為相同的值。 同樣適用于 DisplayOffTimeoutPluggedIn 和 StandbyTimeoutPluggedIn。 如需新式待機的詳細資訊，請參閱 [顯示、睡眠及休眠閒置計時器](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) 。
+
+### 新啟用的 HoloLens 更新原則
+- 已安裝更新的更多選項，或停用 [暫停更新] 按鈕以確保更新。
+
+您現在可以在 HoloLens 2 裝置上啟用這些更新原則：
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+
+您可以在此閱讀 [管理 hololens 更新](hololens-updates.md)中的 thise 更新原則和如何使用 HoloLens 裝置的完整詳細資料。
+
+### 已啟用 HoloLens 2 的設定頁面可見度
+- [設定] 應用程式中增加的 UI 控制項，可能會混淆，以顯示有限的頁面。
+
+我們現在已啟用原則，可讓 IT 系統管理員避免顯示或無法存取 [系統設定] app 中的特定頁面，或針對除指定以外的所有頁面執行此動作。 若要瞭解如何完全自訂這項功能，請按一下下方的連結。
+
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+若要瞭解您可以在 HoloLens 2 上自訂的頁面設定，請造訪我們的 [ [設定 uri] 頁面](settings-uri-list.md)。 
+ 
+![在 [設定] 應用程式中修改的使用時間之螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
+
+### 研究模式
+在 [研究] 模式中，HoloLens 2 成為電腦視覺研究的 potent 工具。 與先前的版本相比，HoloLens 2 的研究模式具有下列優點：
+-   除了在 HoloLens 中公開的感應器 (1 gen) 研究模式一樣，我們現在提供 IMU 感應器存取，包括加速計、gyroscope 和磁力儀。
+-   HoloLens 2 提供可搭配研究模式搭配使用的新功能。 具體來說，就是存取可提供更豐富實驗的明確式手寫追蹤和目視跟蹤 Api。
+
+研究人員現在可以選擇在其 HoloLens 裝置上啟用 [研究] 模式，以存取所有外部對等原始影像感應器資料流程。 HoloLens 2 的研究模式也提供加速計、gyroscope 和磁力儀讀數的存取。 為了保護使用者的隱私權，無法透過 [參考資料] 模式使用原始的目視追蹤相機影像，但可以透過現有的 Api 使用眼睛視覺方向。
+
+如需進一步的技術詳細資料，請參閱 [研究模式檔](https://docs.microsoft.com/windows/mixed-reality/research-mode) 。
+
+### 錄製長度增加
+由於客戶意見反應，我們已增加 [混合現實捕獲](holographic-photos-and-videos.md)的錄製長度。 預設只會將混合的實際捕獲限制為5分鐘，但會根據可用磁碟空間來計算最大錄製長度。 裝置會根據可用磁碟空間達到總磁碟空間的80%，來估計最大影片錄製持續時間。
+
+> [!NOTE]
+> 如果發生下列其中一種情況，HoloLens 會將預設的視頻錄製長度 (5 分鐘) ：
+> - 估計的最大錄製持續時間小於預設值5分鐘。
+> - 可用磁碟空間少於磁片總空間的20%。
+
+您可以 [在這裡](holographic-photos-and-videos.md#maximum-recording-length)再次找到此資訊。 
+
+### 更新中的改進與修正：
+- OOBE 中的更多螢幕現在處於深色模式。
+- 深入瞭解其他內容，請線上閱讀最新的隱私權聲明。
+- 解決使用者無法透過置備套件提供 VPN 設定檔的問題。
+- 已修正 VPN 連線的 proxy 設定問題。
+- 已更新原則，停用 NCM for AllowUsbConnection 中的 USB 函數列舉。
+- 解決了將裝置設定為 [單一應用程式亭](hololens-kiosk.md)時，無法在檔案資源管理器中透過媒體傳輸通訊協定 (MTP) 的問題。 請注意，在一般) 中，MTP (和 USB 連線仍可以使用 [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 原則停用。
+- 已修正 [開始] 功能表中的圖示在 Kiosk 模式中正確縮放的問題。
+- 已修正與針對 AAD 群組的 kiosk 模式干擾的 HTTP 快取問題。
+- 已修正在啟用開發人員模式之後，使用者無法使用 [配對] 按鈕的問題，除非它們已停用且已重新啟用開發人員模式。
+
+## Windows 全息版，版本 1903-2020 年11月更新
+- 組建18362.1085
+
+此每月品質更新不包含任何明顯的變更，我們鼓勵您試用我們的最新功能版本組建 Windows 全息版，版本20H2。
 
 ## Windows 全息版 2004-2020 年10月更新
 - 組建19041.1124
@@ -140,7 +471,7 @@ ms.locfileid: "11134422"
 
 2020年5月2日 *Windows 全息2004版* 軟體更新包含一種令人興奮的新功能，例如支援 Windows Autopilot、應用程式暗模式、USB 乙太網上支援 5G/LTE 熱點，以及更多功能。 若要更新為最新版本，請開啟 [**設定**]   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          說明                                                                                              |
+|             功能                              |          描述                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 進行預設定及無縫的新裝置製作                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全金鑰以針對共用裝置啟用快速及安全的驗證            |

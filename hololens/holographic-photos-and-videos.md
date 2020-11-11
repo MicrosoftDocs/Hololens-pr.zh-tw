@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100268"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163116"
 ---
 # 建立混合實境相片和影片
 
@@ -155,8 +155,18 @@ HoloLens 讓使用者能夠與數位世界混合現實世界。  混合式現實
 ## 混合現實捕獲的限制
 
 - 使用混合現實捕獲時，HoloLens 的幀頻會減半到 30 Hz。
-- 影片的最大長度為5分鐘。
 - 如果相片/視頻攝影機已由另一個應用程式、即時資料流或系統資源不足，可能會降低相片和影片的解析度。
+
+### 最大錄製長度
+
+在 Windows 全息版前的 HoloLens 2 裝置上，在裝置上錄製的版本20H2 影片的長度限制為最多五分鐘。
+
+由於客戶意見反應，我們已增加 [混合現實捕獲](holographic-photos-and-videos.md)的錄製長度。 預設只會將混合的實際捕獲限制為5分鐘，但會根據可用磁碟空間來計算最大錄製長度。 裝置會根據可用磁碟空間達到總磁碟空間的80%，來估計最大影片錄製持續時間。
+
+> [!NOTE]
+> 如果發生下列其中一種情況，HoloLens 會將預設的視頻錄製長度 (5 分鐘) ：
+> - 估計的最大錄製持續時間小於預設值5分鐘。
+> - 可用磁碟空間少於磁片總空間的20%。
 
 ## 預設檔案格式及解析度
 

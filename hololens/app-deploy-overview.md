@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 36d86e24cc10d6b8457cfb415528398a8d43aa27
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016647"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162858"
 ---
 # 應用程式管理: 概觀
 
@@ -65,7 +65,18 @@ Microsoft 市集中提供 IT 決策者與企業中的管理員，以尋找、取
 [[預配套件](app-deploy-provisioning-package.md)] 可讓您安裝自訂或連線的應用程式，讓 IT 專業人員和系統管理員透過 USB 將 app 快速安裝至本機裝置 () s。 您可以在沒有網際網路連線及任何身分識別類型的情況下執行此動作。
     
 透過 [預配套件] 安裝適用于： 
-* Buisness (非公開) app 的線路
+* Buisness/自行開發 (非公開) 應用程式的線路
 * 公用應用程式在離線安裝程式可用時 () 
 * 僅限 USB 側邊載入
 * 無自動更新 (需要透過預配套件進行手動更新) 
+
+## 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
+您可以使用 [應用程式安裝程式](app-deploy-app-installer.md) 使用者，輕鬆地在本機裝置上安裝應用程式，或與不熟悉 HoloLens 上其他 App 安裝方法的使用者共用應用程式。 您可以在不需要啟用開發人員模式或使用 Device Portal 的情況下執行此動作。 這是發佈完全建立的 app 的簡單方法。 不論您是否只想要使用 HoloLens 來示範您的 app，或者您想要部署您的應用程式，此方法很容易運作。
+
+透過 App 安裝程式安裝適用于： 
+* Buisness/自行開發 (非公開) 應用程式的線路
+* 僅側邊載入
+* 不需要開發人員模式或 Device portal
+* 便於使用者安裝
+
+

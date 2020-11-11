@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120144"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162940"
 ---
 # 透過 HoloLens 裝置收集與使用診斷資訊
 
@@ -123,9 +123,17 @@ IT 系統管理員使用 DiagnosticLog CSP 來設定資料儲存、保留及存�
 當裝置透過 USB 纜線連線到電腦之後，在檔案資源管理器中顯示時，就能正常運作。 
 
 > [!NOTE]
-> 只有在使用者使用 OOBE 或 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 原則時，才會啟用 [離線診斷] 設定為 [完整 (在 Hololens) 上為預設值。 
+> 根據您的作業系統版本，離線診斷程式的產生和管理的控制方式會有所不同。 先前它是由遙測設定所控制，但現在是透過原則直接加以控制。 
 
-如果裝置已鎖定，則不會顯示記錄。 若要停用離線診斷，請移至 [**設定] App > 隱私權**] 頁面，然後選取 [在**診斷資料**中**基本**] 在離線診斷依賴遙測設定的組建上，它只會影響是否收集任何記錄。 它不會影響收集的檔案。
+[Windows 全息版之前的行為，請 Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2)：
+ - 只有在使用者使用 OOBE 或 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 原則時，才會啟用 [離線診斷] 設定為 [完整 (在 HoloLens) 上為預設值。 
+- 若要停用離線診斷，請移至 [**設定] App > 隱私權**] 頁面，然後選取 [在**診斷資料**中**基本**] 在離線診斷依賴遙測設定的組建上，它只會影響是否收集任何記錄。 它不會影響收集的檔案。
+- 如果裝置已鎖定，則不會顯示記錄。
+
+在組建 [Windows 全息版上，verison [20H2](hololens-release-notes.md#windows-holographic-version-20h2) ] 和 [向前]：
+- 啟用回退診斷時，系統將會由特定的 MDM 策略來控制，並提供相對應的設定 [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- 如果裝置已鎖定，則不會顯示記錄。
+
 
 觀看這段影片以深入瞭解。 
 

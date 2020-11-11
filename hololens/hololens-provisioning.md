@@ -10,18 +10,18 @@ ms.custom:
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 03/10/2020
+ms.date: 10/13/2020
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052642"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162997"
 ---
 # 使用預配套件設定 HoloLens
 
@@ -46,7 +46,7 @@ HoloLens 嚮導可協助您設定預配套件中的下列設定：
     > 這只適用于 HoloLens 1 gen 裝置。 如果預配套件包含適用于 Windows 全息版的版本升級授權，或 [裝置已升級至 Windows 全息版企業](hololens1-upgrade-enterprise.md)版，則只能套用預配套件中的設定。
 
 - 設定 HoloLens 第一次體驗 (OOBE) 
-- 設定 Wi-fi 網路
+- 設定 Wi-Fi 網路
 - 在 Azure Active Directory 中註冊裝置，或建立本機帳戶
 - 新增憑證
 - 啟用開發人員模式
@@ -88,12 +88,12 @@ HoloLens 嚮導可協助您設定預配套件中的下列設定：
 ### 進行設定
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>流覽並選取企業授權檔案以升級 HoloLens 版本。</br></br>您也可以切換 <strong> [是] </strong> 或 [ <strong> 否] </strong> 以隱藏第一次體驗的部分。</br></br>若要設定裝置，而不需要連線到 Wi-fi 網路，請將 [關閉 <strong> wi-fi] 設定切換至 [ </strong> 開啟 <strong> ] </strong> 。</br></br>選取將使用裝置的區域和時區。 </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>在此區段中，您可以輸入裝置應該自動連接的 Wi-fi 無線網路的詳細資料。 若要這樣做，請選取 <strong> [開啟] </strong> 、輸入 SSID、網路類型 ([ <strong> 開啟] 或 [ </strong> <strong> wpa2-個人] </strong>) ，然後 (<strong> [WPA2-個人] </strong>) 無線網路的密碼。</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>流覽並選取企業授權檔案以升級 HoloLens 版本。</br></br>您也可以切換 <strong> [是] </strong> 或 [ <strong> 否] </strong> 以隱藏第一次體驗的部分。</br></br>若要設定裝置，而不需要連線至 Wi-Fi 網路，請將 [ <strong> 略過 Wi-Fi 安裝程式] 切換 </strong> 為 [ <strong> 開啟] </strong> 。</br></br>選取將使用裝置的區域和時區。 </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>在此區段中，您可以輸入裝置應該自動連接的 Wi-Fi 無線網路的詳細資料。 若要這樣做，請選取 <strong> [開啟] </strong> 、輸入 SSID、網路類型 ([ <strong> 開啟] 或 [ </strong> <strong> wpa2-個人] </strong>) ，然後 (<strong> [WPA2-個人] </strong>) 無線網路的密碼。</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>您可以在 Azure Active Directory 中註冊裝置，或在裝置上建立本機帳戶</br></br>在您使用 Windows 設定設計工具精靈設定大量 Azure AD 註冊前，請<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">設定 Azure AD 加入組織</a>。 您 Azure AD 租用戶中的 <strong>\[每位使用者的裝置數目上限\]</strong> 設定決定您在精靈中使用的大量權杖可使用多少次。 若要在 Azure AD 中註冊裝置，請選取該選項，並為您將使用精靈取得的大量權杖輸入易記的名稱。 設定權杖的到期日 (上限為自您取得權杖起的 30 天)。 選取 [ <strong> 取得大量權杖] </strong> 。 在 [ <strong> Let&#39;s 已登入 </strong> ] 視窗中，輸入擁有將裝置加入至 Azure AD 的許可權，然後輸入密碼的帳戶。 選取 <strong> [Accept] （接受） </strong> ，為 Windows 配置設計工具提供必要的許可權。 </br></br>若要建立本機帳戶，請選取該選項，然後輸入使用者名稱和密碼。 </br></br><strong>重要：</strong> <br />Windows 10 版 (，版本1607只有) 如果您在預配套件中建立本機帳戶，您就必須使用 <strong> 每42天的 [設定] app 來變更密碼 </strong> 。 如果在該期內沒有變更密碼，帳戶會被鎖，因而無法登入。  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>若要使用憑證佈建裝置，請按一下 <strong>\[新增憑證\]</strong>。 輸入憑證的名稱，然後瀏覽至要使用的憑證並加以選取。</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>開啟 <strong> [是] </strong> 或 [ <strong> 否] </strong> ，在 HoloLens 上啟用開發人員模式。 <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">深入了解開發人員模式。</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finish"/></br></br>請勿設定密碼來保護您的預配套件。 如果預配套件受密碼保護，則預配 HoloLens 裝置將會失敗。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>請勿設定密碼來保護您的預配套件。 如果預配套件受密碼保護，則預配 HoloLens 裝置將會失敗。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 完成後，請選取 [ **建立**]。 只需要幾秒鐘。 套件建置時，儲存套件的位置會在頁面底端顯示成超連結。
@@ -152,7 +152,13 @@ HoloLens 嚮導可協助您設定預配套件中的下列設定：
 
 ## 在安裝期間將預配套件套用至 HoloLens
 
-HoloLens 2 裝置在組建 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 或更新版本上，可能會使用 USB 磁片磁碟機來套用預配套件。 只要將 ppkg 檔案複製到 USB 磁片磁碟機的根目錄即可。 只有在 USB 磁片磁碟機的根目錄中，才會套用 [預配套件]。 有多個提供套件會依序套用。
+在 Windows 全息版上，版本2004或組建 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 或更新版本上的 HoloLens 2 裝置，可能會使用 USB 磁片磁碟機來套用預配套件。 只要將 ppkg 檔案複製到 USB 磁片磁碟機的根目錄即可。 只有在 USB 磁片磁碟機的根目錄中，才會套用 [預配套件]。 有多個提供套件會依序套用。
+
+在 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 或更新版本上，HoloLens 2 裝置的更新功能可協助簡化並簡化此程式，讓它自動進行。 請參閱下列各節：
+
+- [從 USB 自動啟動預配](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [在 OOBE 中自動確認預配套件](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [不使用 UI 的自動預配](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 1. 使用 USB 纜線將裝置連接至 PC (或) 的 USB 磁片磁碟機，然後啟動裝置。 請勿繼續超過 OOBE 的 **第一個 interactable 時刻** 頁面。   
     - 在 HoloLens (1 gen) ，此頁面包含藍色方塊。 
@@ -172,6 +178,39 @@ HoloLens 2 裝置在組建 [19041.1103](hololens-release-notes.md#windows-hologr
 
 > [!NOTE]
 > 如果裝置是在2016年8月之前購買，您必須使用 Microsoft 帳戶登入裝置、取得最新的作業系統更新，然後重設作業系統，才能套用預配套件。
+
+### 從 USB 自動啟動預配
+
+- 在 OOBE 期間使用配套件的 USB 磁片磁碟機時，自動化的程式可讓使用者互動。
+
+在此版本之前，使用者必須在 OOBE 期間手動啟動 [預配] 畫面，才能使用按鈕組合進行提供。 現在，使用者可以在 USB 儲存空間磁片磁碟機上使用預配套件，以略過按鈕組合。 
+
+1. 在 OOBE 的第一個 interactable 時刻，將 USB 磁片磁碟機插入預配套件
+1. 當裝置準備好進行預配時，系統會自動以 [預配] 頁面開啟提示。 
+
+注意：如果在裝置啟動時，已將 USB 磁片磁碟機保留在插接，則 OOBE 會列舉現有的 USB 儲存裝置，也會監視其他插入的裝置。
+
+如需在 OOBE 期間套用預配套件的詳細資訊，請繼續閱讀 [這裡](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+
+### 在 OOBE 中自動確認預配套件
+- 自動程式可讓使用者互動，在顯示 [預配套件] 頁面時，系統會自動套用所有列出的套件。
+
+當提供的主畫面啟動時，OOBE 會先計算10秒，然後再自動開始套用所有的預配套件。 在驗證所需的套件之後，使用者仍然可以在10秒內確認或取消。
+
+### 不使用 UI 的自動預配
+- 合併自動程式，以減少提供的裝置互動。 
+
+透過將自動啟動從 USB 裝置和自動確認功能套件結合在一起，使用者就可以在不使用裝置 UI 或甚至戴上裝置的情況下，自動預配 HoloLens 2 裝置。 您可以繼續在多個裝置上使用相同的 USB 磁片磁碟機和預配套件。 這適用于一次在相同區域部署多個裝置。 
+
+1. 使用[Windows 配置設計](https://www.microsoft.com/store/productId/9NBLGGH4TX22)工具[建立預配套件](hololens-provisioning.md)。 
+1. 將套件複製到 USB 儲存空間磁片磁碟機。
+1. 將[您的 HoloLens 2 快閃](hololens-insider.md#ffu-download-and-flash-directions)至[19041.1361 或更新版本](https://aka.ms/hololens2previewdownload)。 
+1. 當 [ [高級恢復] 隨附](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 完成後，您的裝置會拔出您的 USB-C 纜線。 
+1. 將 USB 磁片磁碟機插入裝置。
+1. 當 HoloLens 2 裝置在 OOBE 中啟動時，系統會自動偵測 USB 磁片磁碟機上的預配套件，並啟動 [預配] 頁面。
+1. 10秒後，裝置會自動套用預配套件。 
+
+您的裝置現在已設定，且會顯示 [提供成功] 畫面。
 
 ## 在安裝後將預配套件套用至 HoloLens
 

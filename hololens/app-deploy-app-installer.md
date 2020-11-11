@@ -5,7 +5,7 @@ keywords: app 管理、app、hololens、app 安裝程式
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150914"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162894"
 ---
 # 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
 
+
+我們會在 Windows 全息版20H2 更新後立即傳送 app 安裝程式功能。 我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
+
 > [!IMPORTANT]
-> 此功能目前僅適用于 Windows 測試人員組建 19041.1377 + 中的 avalible。 [深入瞭解如何在 Windows 測試人員組建中註冊](hololens-insider.md)。
+> 此功能目前僅能在 [Windows 測試人員] 組建中使用。 [深入瞭解如何在 Windows 測試人員組建中註冊](hololens-insider.md)。
 
 在我們的 Windows 測試人員發行版本中，我們 **新增了 (App 安裝程式) 的新功能，可讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
 
@@ -38,8 +41,7 @@ ms.locfileid: "11150914"
 ## 需求
 
 ### 針對您的裝置： 
-> [!NOTE]
-> 此功能目前僅適用于 Windows 測試人員組建 19041.1377 + 中的 avalible。 [深入瞭解如何在 Windows 測試人員組建中註冊](hololens-insider.md)。
+此 avalible 目前在適用于 HoloLens 2 裝置的 Windows 測試人員 [組建](hololens-insider.md) 中。 請確定使用此方法的任何裝置都 [已更新](hololens-update-hololens.md)。 
 
 ### 針對您的應用程式： 
 您 app 的解決方案設定必須是 [ **主版** ] 或 [ **發行** ]，因為 app 安裝程式會使用市集中的相依性。 查看更多關於 [建立應用程式套件](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)的資訊。
@@ -53,7 +55,7 @@ ms.locfileid: "11150914"
 **挑選證書部署方法。** 
 - 您可以將[預配套件](hololens-provisioning.md)套用到本機裝置。
 - MDM 可用來 [將憑證與裝置](https://docs.microsoft.com/mem/intune/protect/certificates-configure)設定搭配使用。
-- 使用 [裝置 [憑證管理員](hololens-insider.md#certificate-manager)]。 
+- 使用 [裝置 [憑證管理員](certificate-manager.md)]。 
 
 ## 安裝方法
 
