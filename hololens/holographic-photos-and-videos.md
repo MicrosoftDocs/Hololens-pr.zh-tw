@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163116"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165002"
 ---
 # 建立混合實境相片和影片
 
@@ -140,7 +140,7 @@ HoloLens 讓使用者能夠與數位世界混合現實世界。  混合式現實
 秘訣：
 - 如果您沒有看到任何檔案，請確認您已登入您的 HoloLens，以啟用資料存取權。
 - 您可以在其他資料夾中取得其他檔案，例如 [檔] 資料夾中的 [ [診斷](hololens-diagnostic-logs.md#offline-diagnostics) 檔案]。
-- 從您電腦上的檔案資源管理器，您可以選取 [裝置屬性]，以查看 Windows 全息 OS 版本號碼 (固件版本) 與裝置序列值及電池百分比。
+- 從您電腦上的檔案資源管理器，您可以選取 [裝置屬性]，以查看 Windows 全息 OS 版本號碼 (固件版本) 、裝置序列值及電池百分比。
 - 如果您的組織已使用 MDM 停用 [連接/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) ，則您將無法連線到您的裝置。
 
 ## 分享您的混合現實相片和影片

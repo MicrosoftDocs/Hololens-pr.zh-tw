@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163150"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165977"
 ---
 # HoloLens 2 版本資訊
 
-為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們會繼續發行功能、錯誤和安全性更新。 在此頁面上，您可以查看每個月的 HoloLens 新功能。 若要取得最新的 HoloLens 2 完整快閃記憶體更新 (FFU) 若要透過 [高級恢復隨附裝置快閃](hololens-recovery.md#clean-reflash-the-device)，請 [在此下載](https://aka.ms/hololens2download)。 下載會保持最新狀態，並提供最新的一般可用組建。
+為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們會繼續發行功能、錯誤和安全性更新。 在此頁面上，您可以查看每個月的 HoloLens 新功能。 若要取得最新的 HoloLens 2 更新，您可以 [檢查更新並手動更新](hololens-update-hololens.md#check-for-updates-and-manually-update) ，或取得完整的快閃記憶體更新 (FFU) 若要透過 [ [高級恢復隨附] 將您的裝置閃爍](hololens-recovery.md#clean-reflash-the-device)，請 [在這裡下載](https://aka.ms/hololens2download)。 下載會保持最新狀態，並提供最新的一般可用組建。
 
 >[!NOTE]
 > 若要閱讀 HoloLens 模擬器版本資訊，請 [造訪](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)封存。
@@ -40,7 +40,7 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 
 | 功能                                              | 描述                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [自動目視位置支援](hololens-release-notes.md#auto-eye-position-support) | 積極地計算眼睛位置，而不需要使用者進行活動校準。   |
+| [自動目視位置支援](hololens-release-notes.md#auto-eye-position-support) | 積極地計算眼睛位置，而不需要使用者透過目視追蹤校準進行。   |
 | [憑證管理員](hololens-release-notes.md#certificate-manager)   | 允許更簡單的方法來安裝及移除 [設定] 應用程式中的憑證。     |
 | [從 USB 自動啟動預配](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | 在您的 USB 磁片磁碟機上預配套件，會自動提示 OOBE 中的 [配頁]                                                         |
 | [在 OOBE 中自動確認預配套件](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 在 OOBE 期間，您可以從 [預配] 頁面自動套用 [預配套件]。                                                         |
@@ -62,22 +62,22 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 
 ### 自動目視位置支援
 
-- 我們現在透過自動目視定位支援來提供更高的精確度，讓您可以更輕鬆地查看，以及改善顯示品質。 
+在 HoloLens 2 中，目視位置可讓您實現正確的全息圖定位、舒適的觀賞體驗，以及改善顯示品質。 目視位置會在內部計算，做為目視追蹤計算的一部分。 不過，這只需要每位使用者進行目視追蹤校準，即使經驗可能不需要目視眼睛的輸入也一樣。
 
-在 HoloLens 2 中，目視位置可讓您實現正確的全息圖定位、舒適的觀賞體驗，以及改善顯示品質。 眼睛位置會計算為眼睛追蹤結果的一部分。 不過，這需要每個使用者都能透過目視追蹤校準，即使在體驗不需要目視眼睛的輸入時也一樣。
+**自動眼睛位置 (AEP) ** 啟用這些案例，並使用互動式方式來計算使用者的目視位置。 自動目視位置會在使用者將裝置放在背景的時刻自動開始運作。 如果使用者沒有先前的目視追蹤校準，自動目視就會在處理時間 20-30 秒後開始提供使用者的目視位置給顯示系統。 使用者資料不會保留在裝置上，因此，如果使用者要卸載並將裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。
 
-**自動眼睛位置 (AEP) ** 啟用這些案例，並使用互動式方式來計算使用者的目視位置。  自動目視位置會在使用者將裝置放在背景的時刻自動開始運作。 如果使用者沒有先前的目視追蹤校準，自動目視位置將會在較小的處理時間之後，在顯示系統中開始提供使用者的目視位置。 這個處理時間通常介於 20-60 秒之間。 使用者資料不會保留在裝置上，因此，如果使用者要卸載並將裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。  
+當 uncalibrated 使用者放在裝置上時，有一些系統行為會隨著自動目視位置功能而變更。 在這種情況下，uncalibrated 使用者會參照在裝置上未透過目視追蹤校準程式的人。
 
-當 uncalibrated 使用者放在裝置上時，有一些系統行為會隨著自動目視位置功能而變更。 Uncalibrated 使用者會參照尚未在裝置上透過目視追蹤校準程式的人。
+| 使用中的應用程式 | 前一個行為 | Windows 全息版、版本20H2 更新的行為 |
+|:-------------------|:-----------------|:-----------------------------------|
+| 看不到的已啟用 app 或全息式貝殼 |隨即會顯示 [目視追蹤校正提示] 對話方塊。 | 不會顯示任何提示。 |
+| 看著已啟用的 app | 隨即會顯示 [目視追蹤校正提示] 對話方塊。 | 只會在應用程式存取目視注視串流時顯示目視追蹤校準提示。 |
 
-|     使用中的應用程式                           |     舊行為                                   |     Windows 全息版20H2 的行為向前                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     看不到的已啟用 app 或全息式貝殼    |     隨即會顯示目視追蹤校準提示。    |     不會顯示任何提示。                                                                                |
-|     看著已啟用的 app                             |     隨即會顯示目視追蹤校準提示。    |     只會在應用程式存取目視注視串流時顯示目視追蹤校準提示。     |
+如果使用者從尚未看不到的應用程式轉換到一個存取注視資料的應用程式，則會顯示校準提示。 
 
- 如果使用者從尚未看不到的應用程式轉換到一個存取注視資料的應用程式，則會顯示校準提示。 不會變更為現成的體驗流程。 
- 
-針對需要目視眼睛資料或非常精確的全息圖位置的體驗，我們建議 uncalibrated 使用者從目視追蹤校準提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [ **系統 > 校準] > 目視校準 > 執行目視校準**。
+當目前的使用者沒有作用中的目視追蹤校準時，所有其他的系統行為都會類似。 例如，將不會啟用單向開始手勢。 在初始設定中，將不會有任何變更。
+
+針對需要目視眼睛資料或非常精確的全息圖位置的體驗，我們建議您 uncalibrated 使用者來執行目視追蹤校準。 您可以從目視追蹤校準提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [ **系統 > 校準] > 目視校準 > [執行目視校準**]。
 
 此資訊稍後可與 [其他校準資訊](hololens-calibration.md#auto-eye-position-support)一起找到。 
 
@@ -189,7 +189,7 @@ OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。  
 
-在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會生效。
+在 Intune 入口網站確認已成功套用裝置設定。 成功地在 HoloLens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會生效。
 
 #### 如何使用 Intune 在 HoloLens 2 上取消 TenantLockdown 的 RequireNetworkInOOBE？ 
 1. 從先前已指派的裝置設定，將 HoloLens 2 從裝置群組中移除。 
@@ -203,7 +203,7 @@ OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。
 
-在 Intune 入口網站確認已成功套用裝置設定。 成功地在 Hololens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會停用。 
+在 Intune 入口網站確認已成功套用裝置設定。 成功地在 HoloLens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會停用。 
 
 #### 如果在 TenantLockdown 設定為 true 後未在 HoloLens 中取消指派 Autopilot 設定檔，在 OOBE 期間會發生什麼情況？ 
 OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下對話方塊。 若要移除 TenantLockdown 的效果，裝置必須先使用 Autopilot 進行註冊，然後才能在 TenantLockdown CSP 所帶來的限制在移除之前的步驟中，以上一步中所述取消 RequireNetworkInOOBE。 
@@ -284,7 +284,7 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 
 這兩個新的 AllowAddProvisioningPackage 和 AllowRemoveProvisioningPackage 原則已新增到我們的 [常見裝置限制](hololens-common-device-restrictions.md)中。
 
-### Hololens 2 的新電源原則
+### HoloLens 2 的新電源原則
 - 當 HoloLens 休眠或透過電源原則鎖定時，還有更多選項。 
 
 這些新新增的原則可讓系統管理員控制電源狀態，例如空閒超時。 若要深入瞭解每個個別原則，請按一下該原則的連結。

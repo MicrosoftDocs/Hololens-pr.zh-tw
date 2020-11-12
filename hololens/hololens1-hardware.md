@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134672"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165015"
 ---
 # HoloLens (第 1 代) 硬體
 
@@ -168,19 +168,19 @@ HoloLens 已經過測試，符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本�
 
 ![顯示如何清潔面板的影像](images/hololens-cleaning-visor.png)
 
-## 尋找序列值
+## 尋找序號
 
 HoloLens (1 gen) 裝置的序列值會列印在右側鏡頭下方。
-1. 將裝置放在您前面，就像您想要磨損一樣。
+1. 將裝置放在您前面，就像您要坐在頭上時一樣。 裝置正面朝上且豎直地向中。
 1. 如果鏡頭仍朝前，請將 deivce 倒置，讓您看到下方。
 1. 右透鏡現在會位於左側，印刷在頻帶上的鏡頭上，就是序列值。 
 
-您也可以透過連線的電腦找到序列值：
+也可以透過連接的電腦找到序號：
 
 1. 插入裝置
-1. 在檔案資源管理器中流覽至**這台電腦**
-1. 以滑鼠右鍵按一下並選取 HoloLens 裝置的**屬性**
-1. 這會顯示裝置的數列編號。 下面這個螢幕擷取畫面所示。
+1. 在檔案總管中巡覽至**此電腦**
+1. 按右鍵並選擇 HoloLens 裝置的**屬性**
+1. 這會顯示裝置的序號。 如下面的螢幕擷取畫面所示。
 
 <img src="images/hl1-serial-number.png" width="400" height="600" />
 
