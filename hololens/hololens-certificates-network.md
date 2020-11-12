@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015517"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162981"
 ---
 # 準備 HoloLens 2 的憑證和網路設定檔
 
@@ -45,18 +45,20 @@ ms.locfileid: "11015517"
 1.  為每個根憑證和中繼憑證建立設定檔（請參閱[建立受信任的憑證設定檔](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)）。每個設定檔都必須有包含 DD/MM/YYYY 格式的到期日描述。 **不部署沒有到期日的憑證設定檔。**
 1.  為每個 SCEP 或 PKCS 憑證建立設定檔（請參閱[建立 SCEP 憑證設定檔或建立 PKCS 憑證設定檔](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)）。每個設定檔都必須有包含 DD/MM/YYYY 格式的到期日說明。 **不部署沒有到期日的憑證設定檔。**
 
-> [!NOTE]
-> 由於 HoloLens 2 被認為是共用裝置，每個裝置有多個使用者，因此建議在可能的情况下部署裝置憑證而不是使用者憑證來進行 Wi-Fi 驗證
+    > [!NOTE]
+    > 由於 HoloLens 2 被認為是共用裝置，每個裝置有多個使用者，因此建議在可能的情况下部署裝置憑證而不是使用者憑證來進行 Wi-Fi 驗證
 
 3.  為每個企業 Wi-Fi 網路建立設定檔（請參閱 [適用于 Windows 10 及更新版本的 Wi-Fi 設定](https://docs.microsoft.com/intune/wi-fi-settings-windows)）。 
-> [!NOTE]
-> 建議盡可能將 Wi-Fi 設定檔[指派](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)到裝置群組，而不是使用者群組。 
+    > [!NOTE]
+    > 建議盡可能將 Wi-Fi 設定檔[指派](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)到裝置群組，而不是使用者群組。 
 
-> [!TIP]
-> 也可以從公司網路上的 Windows 10 電腦匯出正常運作的 Wi-Fi 設定檔。 此匯出將建立包含所有目前設定的 XML 檔案。 然後，將此檔案匯入 Intune，並將它做為您 HoloLens 2 裝置的 Wi-Fi 設定檔。 請參閱 [匯出和匯入 Windows 裝置的 Wi-Fi 設定。](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
+    > [!TIP]
+    > 也可以從公司網路上的 Windows 10 電腦匯出正常運作的 Wi-Fi 設定檔。 此匯出將建立包含所有目前設定的 XML 檔案。 然後，將此檔案匯入 Intune，並將它做為您 HoloLens 2 裝置的 Wi-Fi 設定檔。 請參閱 [匯出和匯入 Windows 裝置的 Wi-Fi 設定。](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
 4.  為每個企業 VPN 建立設定檔（請參閱 [使用 Intune 新增 VPN 連線的 Windows 10 和 Windows 全像攝影版裝置設定](https://docs.microsoft.com/intune/vpn-settings-windows-10)）。
 
+## 憑證疑難排解
 
+如果您需要驗證憑證部署正確與否，請使用裝置上的[憑證管理員](certificate-manager.md)，確認憑證是否存在。  
 
 

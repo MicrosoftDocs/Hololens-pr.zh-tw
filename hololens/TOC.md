@@ -71,7 +71,9 @@
 ### [使用 MDM 管理 HoloLens 裝置](hololens-mdm-configure.md)
 ### [通用的裝置限制](hololens-common-device-restrictions.md)
 ### [設定 HoloLens (第 1 代) 的 kiosk](hololens-kiosk.md)
+### [全域受指派的存取權 - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender 應用程式控制 (WDAC)](windows-defender-application-control-wdac.md)
+### [適用于 HoloLens 的頁面設定 CSP 與 URL](settings-uri-list.md)
 ## 身份識別
 ### [管理 HoloLens 的使用者身分識別和登入](hololens-identity.md)
 ### [與多人共用 HoloLens](hololens-multiple-users.md)
@@ -81,7 +83,7 @@
 ### [準備 HoloLens 2 的憑證和網路設定檔](hololens-certificates-network.md)
 ### [管理 HoloLens 的連線端點](hololens-offline.md)
 ### [連線至藍牙與 USB-C 裝置](hololens-connect-devices.md)
-
+## [憑證管理員](certificate-manager.md)
 
 # 部署
 ## 註冊
@@ -107,10 +109,8 @@
 
 # HoloLens 版本資訊
 ## [HoloLens 2 版本資訊](hololens-release-notes.md)
-## [適用於 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
-### [全域受指派的存取權 - Kiosk](hololens-global-assigned-access-kiosk.md)
-### [HoloLens 的頁面設定 URI](settings-uri-list.md)
+## [適用於 Microsoft HoloLens 的測試人員預覽](hololens-insider.md)
 ### [應用程式安裝程式](app-deploy-app-installer.md)
-
 ## [HoloLens (第 1 代) 版本資訊](hololens1-release-notes.md)
+
 # [提供意見反應給我們](hololens-feedback.md)

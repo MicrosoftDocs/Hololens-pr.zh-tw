@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940203"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163015"
 ---
 # HoloLens 2 顯示器
 
@@ -59,7 +59,7 @@ HoloLens 2 顯示器設計為可供人眼觀看。 裝置具有適合使用者�
 
 HoloLens 2 顯示器功能會根據使用者的眼睛位置校正影像。 [眼球校正](hololens-calibration.md) 提供兩個重要輸入：(1) 使用者的瞳距 (IPD)，以及 (2) 每個眼睛注視的方向。 若沒有眼球校正，系統會預設顯示沒有眼球移動的額定眼部定位。 主動色彩校正與不校正之間的差異取決於使用者的生理狀況。 例如，具有與系統預設值相同 IPD 的使用者將看到較少的色彩校正改進。 雖然比系統預設值更窄或更寬 IPD 的使用者將會看到顯示器影像的更多變化。
 
-請注意，未來作業系統更新中將包含一項新功能，將開始 [自動檢測眼部定位](hololens-insider.md#auto-eye-position-support)。 使用者可以註冊 [Insider Preview](hololens-insider.md)，以立即試用此功能。
+注意， [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中的新功能將會開始進行 [自動偵測目視位置](hololens-calibration.md#auto-eye-position-support)。 
 
 ### HoloLens (第1代) 和 HoloLens 2 之間的顯示器差異為何？
 

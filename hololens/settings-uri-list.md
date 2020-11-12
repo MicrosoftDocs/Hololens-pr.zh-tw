@@ -3,7 +3,7 @@ title: 頁面設定可見度
 description: 適用於 PageVisibilityList 和指南的 HoloLens 支援 URI 清單
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens, hololens 2, 指定存取, kiosk, 設定頁面
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026936"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163139"
 ---
 # 頁面設定可見度
 
 HoloLens 裝置易管理的其中一項功能是使用 [設定/PageVisibilityList 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) 來限制 [設定] 應用程式中可看到的頁面。 PageVisibilityList 為一種原則，可讓 IT 系統管理員禁止顯示或存取 [系統設定] 應用程式中的特定頁面，或對特定頁面外的所有頁面執行此動作。 
 
-> [!IMPORTANT]
-> 此功能目前僅能在 [[Windows 測試人員] 組建](hololens-insider.md)中使用。 請確認您想要使用此功能的裝置為組建 19041.1349 +。
+> [!NOTE]
+> 此功能僅適用于 HoloLens 2 裝置的 [Windows 全息版，版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)。 請確定您想要使用此功能的裝置已更新。
 
 下列範例說明只允許存取 [關於] 和 [藍牙] 頁面的原則，其中分別有 [ms-settings:network-wifi] 和 [ms-settings:bluetooth] 等 URI:
 - showonly:network-wifi;network-proxy;bluetooth
