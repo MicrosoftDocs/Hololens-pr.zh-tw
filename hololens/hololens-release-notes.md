@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
-ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
+ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165977"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176905"
 ---
 # HoloLens 2 版本資訊
 
@@ -38,9 +38,9 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 
 ### Windows 全息版、版本20H2 的新功能  
 
-| 功能                                              | 描述                                                                                                                                     |
+| 功能                                              | 說明                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [自動目視位置支援](hololens-release-notes.md#auto-eye-position-support) | 積極地計算眼睛位置，而不需要使用者透過目視追蹤校準進行。   |
+| [自動眼部定位支援](hololens-release-notes.md#auto-eye-position-support) | 積極地計算眼睛位置，而不需要使用者透過目視追蹤校準進行。   |
 | [憑證管理員](hololens-release-notes.md#certificate-manager)   | 允許更簡單的方法來安裝及移除 [設定] 應用程式中的憑證。     |
 | [從 USB 自動啟動預配](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | 在您的 USB 磁片磁碟機上預配套件，會自動提示 OOBE 中的 [配頁]                                                         |
 | [在 OOBE 中自動確認預配套件](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 在 OOBE 期間，您可以從 [預配] 頁面自動套用 [預配套件]。                                                         |
@@ -60,24 +60,24 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 | [錄製長度增加](hololens-release-notes.md#recording-length-increased) | MRC 錄製已不超過5分鐘的時間。 |
 | [更新中的改進與修正](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | 更新中的其他修正程式。   |
 
-### 自動目視位置支援
+### 自動眼部定位支援
 
-在 HoloLens 2 中，目視位置可讓您實現正確的全息圖定位、舒適的觀賞體驗，以及改善顯示品質。 目視位置會在內部計算，做為目視追蹤計算的一部分。 不過，這只需要每位使用者進行目視追蹤校準，即使經驗可能不需要目視眼睛的輸入也一樣。
+在 HoloLens 2 中，眼部定位可實現正確的全像投影定位、舒適的觀賞體驗，以及改善顯示品質。 眼部定位會在內部計算，屬於眼球追蹤計算的一部分。 不過，這只需要每位使用者進行眼球追蹤校正，即使體驗可能不需要眼睛注視輸入也一樣。
 
-**自動眼睛位置 (AEP) ** 啟用這些案例，並使用互動式方式來計算使用者的目視位置。 自動目視位置會在使用者將裝置放在背景的時刻自動開始運作。 如果使用者沒有先前的目視追蹤校準，自動目視就會在處理時間 20-30 秒後開始提供使用者的目視位置給顯示系統。 使用者資料不會保留在裝置上，因此，如果使用者要卸載並將裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。
+**自動眼部定位 (AEP)** 啟用這些案例，並使用互動式方式來計算使用者的眼部定位。 從使用者戴上裝置開始，[自動眼部定位] 會在背景自動開始運作。 如果使用者沒有先前的球追蹤校正，[自動眼部定位] 就會在 20 至 30 秒的處理時間後開始提供使用者的眼部定位給顯示系統。 使用者資料不會保留在裝置上，因此如果使用者要移除並重新配戴裝置，或裝置重新開機或從睡眠狀態喚醒，就會重複此處理程式。
 
-當 uncalibrated 使用者放在裝置上時，有一些系統行為會隨著自動目視位置功能而變更。 在這種情況下，uncalibrated 使用者會參照在裝置上未透過目視追蹤校準程式的人。
+當未經校正的使用者配戴裝置時，有一些系統行為會隨著 [自動眼部定位] 功能而變更。 在這種情況下，未經校正的使用者是指之前未在裝置上透過眼球追蹤校正程式的使用者。
 
-| 使用中的應用程式 | 前一個行為 | Windows 全息版、版本20H2 更新的行為 |
+| 作用中應用程式 | 先前行為 | Windows 全像攝影版、版本20H2 更新的行為 |
 |:-------------------|:-----------------|:-----------------------------------|
-| 看不到的已啟用 app 或全息式貝殼 |隨即會顯示 [目視追蹤校正提示] 對話方塊。 | 不會顯示任何提示。 |
-| 看著已啟用的 app | 隨即會顯示 [目視追蹤校正提示] 對話方塊。 | 只會在應用程式存取目視注視串流時顯示目視追蹤校準提示。 |
+| 未啟用注視的應用程式或全像攝影命令介面 |會顯示 [眼球追蹤校正提示] 對話方塊。 | 不會顯示任何提示。 |
+| 已啟用注視的應用程式 | 會顯示 [眼球追蹤校正提示] 對話方塊。 | 只會在應用程式存取眼睛注視串流時顯示眼球追蹤校正提示。 |
 
-如果使用者從尚未看不到的應用程式轉換到一個存取注視資料的應用程式，則會顯示校準提示。 
+如果使用者從未啟用注視的應用程式轉換到一個存取注視資料的應用程式，則會顯示校正提示。 
 
-當目前的使用者沒有作用中的目視追蹤校準時，所有其他的系統行為都會類似。 例如，將不會啟用單向開始手勢。 在初始設定中，將不會有任何變更。
+所有其他的系統行為都類似於當目前使用者沒有作用中的眼球追蹤校正時。 例如，將不會啟用單手 [開始] 手勢。 在初始設定中，全新體驗將不會有任何變更。
 
-針對需要目視眼睛資料或非常精確的全息圖位置的體驗，我們建議您 uncalibrated 使用者來執行目視追蹤校準。 您可以從目視追蹤校準提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [ **系統 > 校準] > 目視校準 > [執行目視校準**]。
+針對需要眼睛注視資料或非常精確的全像投影定位之體驗，我們建議未校正的使用者執行眼球追蹤校正。 您可以從眼球追蹤校正提示，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 **[系統] > [校準] > [眼球校正] > [執行眼球校正]**。
 
 此資訊稍後可與 [其他校準資訊](hololens-calibration.md#auto-eye-position-support)一起找到。 
 
@@ -165,50 +165,50 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 在 OOBE 期間，一旦您將 HoloLens 2 連線到 Wifi，OOBE 就會檢查該裝置的 Autopilot 設定檔。 如果找到一個，就會用來完成 AAD 聯接和註冊流程的其餘部分。 換句話說，不需要使用乙太網上至 USB-C 或 Wi-Fi 至 USB-C 配接器，但如果在 OOBE 開始提供，它們就會繼續運作。 深入瞭解 [HoloLens 2 裝置的 Autopilot](hololens2-autopilot.md)。
 
 ### Tenantlockdown CSP 和 Autopilot
-- 即使透過裝置重設或 reflash，也可以將裝置鎖定至租使用者，以保留該組織的租使用者。 透過 [預配] 中的 [禁止帳戶建立] 來進一步保護。 
+- 透過將裝置鎖定到租用戶 (即使透過裝置重設或重新快閃)，將裝置保留在組織的租用戶上。 透過預配中的禁止帳戶建立來進一步提高安全性。 
 
 HoloLens 2 裝置現在支援 TenantLockdown CSP，就跟 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2)。 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 只使用 Autopilot，可將 HoloLens 2 與 MDM 註冊進行關聯。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (最初在 HoloLens 2 上設定) 值時，此值仍會保留在裝置上，即使是重新閃爍、作業系統更新等。 
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 使 Hololens 2 僅使用 Autopilot 與 MDM 注册綁定。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點在 HoloLens 2上設定為 true 或 false (初始設定) 值時，此值仍會保留在裝置上，即使是重新快閃、作業系統更新等。 
 
-一旦在 HoloLens 2 將 TenantLockdown Csp [RequireNetworkInOOBE] 節點設定為 true，在網路連線之後，OOBE 就會無限期地等待 Autopilot 設定檔下載並套用。 
+一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點在 HoloLens 2 上設定為 true，OOBE 將無限期地等待 Autopilot 設定檔在網路連線後成功下載和套用。 
 
-一旦在 HoloLens 2 上將 TenantLockdown Csp [RequireNetworkInOOBE] 節點設定為 true，則在 OOBE 中則不允許下列作業： 
-- 使用執行時間提供建立本機使用者 
-- 透過執行時間預配執行 AAD join 操作 
+一旦在 HoloLens 2 上將 TenantLockdown Csp 的 RequireNetworkInOOBE 節點設定為 true，則在 OOBE 中則不允許下列作業： 
+- 使用執行階段佈建建立本機使用者 
+- 透過執行階段佈建執行 AAD 加入操作 
 - 選取在 OOBE 體驗中擁有裝置的人員 
 
 #### 如何使用 Intune 進行設定？ 
-1. 建立自訂的 OMA URI 裝置配置設定檔，並為 RequireNetworkInOOBE 節點指定 true，如下所示。
+1. 建立自訂的 OMA URI 裝置組態設定檔，並為 RequireNetworkInOOBE 節點指定 true，如下所示。
 OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![透過 OMA URI 設定 tennant 鎖定](images/hololens-tenant-lockdown.png)
+   > ![透過 OMA-URI 設定組用戶鎖定](images/hololens-tenant-lockdown.png)
 
-1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+1. 建立群組，並將裝置組態設定檔指派到該裝置群組。 
 
-1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。  
+1. 使 Hololens 2 裝置成為在上一步中建立的群組的成員並觸發同步。  
 
 在 Intune 入口網站確認已成功套用裝置設定。 成功地在 HoloLens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會生效。
 
 #### 如何使用 Intune 在 HoloLens 2 上取消 TenantLockdown 的 RequireNetworkInOOBE？ 
 1. 從先前已指派的裝置設定，將 HoloLens 2 從裝置群組中移除。 
 
-1. 建立自訂 OMA URI 的裝置配置設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+1. 建立自訂的基於 OMA URI 的裝置組態設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值應該是./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
    > ![透過 Intune 中的 OMA URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
 
-1. 建立群組，並將裝置設定設定檔指派到該裝置群組。 
+1. 建立群組，並將裝置組態設定檔指派到該裝置群組。 
 
-1. 將您在上一個步驟中建立之群組的 HoloLens 2 裝置成員，然後觸發同步處理。
+1. 使 Hololens 2 裝置成為在上一步中建立的群組的成員並觸發同步。
 
 在 Intune 入口網站確認已成功套用裝置設定。 成功地在 HoloLens 2 裝置上套用此裝置設定之後，TenantLockdown 的效果將會停用。 
 
-#### 如果在 TenantLockdown 設定為 true 後未在 HoloLens 中取消指派 Autopilot 設定檔，在 OOBE 期間會發生什麼情況？ 
-OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下對話方塊。 若要移除 TenantLockdown 的效果，裝置必須先使用 Autopilot 進行註冊，然後才能在 TenantLockdown CSP 所帶來的限制在移除之前的步驟中，以上一步中所述取消 RequireNetworkInOOBE。 
+#### 如果在 TenantLockdown 設定為 true 後未在 HoloLens 中取消指派 Autopilot 設定檔，在 OOBE 期間會發生什麼？ 
+OOBE 將無限期地等待 Autopilot 設定檔下載，且會出現以下對話方塊。 若要移除 TenantLockdown 效果，裝置必須先以原始租使用者且僅使用 Autopilot 進行注冊，且 TenantLockdown CSP 帶來的限制被移除之前，必須以前面步驟中所述的取消 RequireNetworkInOOBE。 
 
-![裝置中的 [裝置內視圖] 會在裝置上強制執行原則。](images/hololens-autopilot-lockdown.png)
+![裝置上強制執行原則的裝置檢視。](images/hololens-autopilot-lockdown.png)
 
 您現在可以在 [TENANTLOCKDOWN CSP 和 Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)底下的其他 Autopilot 下找到此資訊。
 
@@ -241,7 +241,7 @@ OOBE 將會無限期地等待下載 Autopilot 的設定檔，且會出現以下�
 
 已在 Windows 全息版20H2 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
 | MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
@@ -283,6 +283,9 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 - [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 這兩個新的 AllowAddProvisioningPackage 和 AllowRemoveProvisioningPackage 原則已新增到我們的 [常見裝置限制](hololens-common-device-restrictions.md)中。
+
+> [!NOTE]
+> 就 [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)而言，HoloLens 只支援/Vendor/MSFT/RemoteLock/Lock 設定。 不支援處理 PIN （例如 reset 和 recover）的設定。
 
 ### HoloLens 2 的新電源原則
 - 當 HoloLens 休眠或透過電源原則鎖定時，還有更多選項。 
@@ -471,7 +474,7 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 
 2020年5月2日 *Windows 全息2004版* 軟體更新包含一種令人興奮的新功能，例如支援 Windows Autopilot、應用程式暗模式、USB 乙太網上支援 5G/LTE 熱點，以及更多功能。 若要更新為最新版本，請開啟 [**設定**]   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          描述                                                                                              |
+|             功能                              |          說明                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 進行預設定及無縫的新裝置製作                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全金鑰以針對共用裝置啟用快速及安全的驗證            |
