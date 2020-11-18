@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168520"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176895"
 ---
 # 適用於 HoloLens 2 的 Windows Autopilot
 
@@ -326,8 +326,8 @@ OOBE 將無限期地等待 Autopilot 設定檔下載，且會出現以下對話�
 
 ## 已知問題
 
-- 在 Intune 中設定的裝置內容式應用程式安裝尚未運作。
-- 透過 Wi-Fi 設定 Autopilot 時，可能會有一個實例，其中的 Autopilot 設定檔不會在第一次建立網際網路連線時下載，並會顯示終端使用者授權合約 (EULA)，且使用者可以選擇繼續使用非 Autopilot 的設定體驗進行。 若要使用 Autopilot 重試設定，請將裝置設為睡眠，然後開啟電源，或重新開啟裝置，並再試一次。
+- 在 Intune 中設定的裝置內容式應用程式安裝尚未運作。 [深入瞭解如何安裝裝置內容和使用者內容。](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   透過 Wi-Fi 設定 Autopilot 時，可能會出現一種情況：在第一次建立網際網路連線時並未下載 Autopilot 設定檔。 在此情況下，會顯示使用者授權合約 (EULA)，而使用者可以選擇繼續進行非 Autopilot 的設定體驗。 若要使用 Autopilot 重試設定，請將裝置設為睡眠，然後開啟電源，或重新開啟裝置，並再試一次。
 
 ### 疑難排解
 
