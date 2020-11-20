@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
+ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162969"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182004"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -53,7 +53,10 @@ ms.locfileid: "11162969"
 
 您可以將任何 HoloLens 2 裝置設定為使用 kiosk 模式。
 
-若要將 HoloLens (1 gen) 裝置設定為使用 kiosk 模式，您必須先確定裝置執行的是 Windows 10 版本1803或更新版本。 如果您已使用 Windows 裝置恢復工具將 HoloLens (1 gen) 裝置復原為預設組建，或者如果您已安裝最新的更新，則您的裝置已準備好進行設定。
+> [!IMPORTANT]
+> [展臺模式] 只有在裝置有 Windows 全息企業版時才能使用。 所有的 HoloLens 2 裝置都隨附 Windows 全息版，沒有其他版本。 每個 HoloLens 2 裝置都能從盒中執行 Kiosk 模式。
+>
+> HoloLens (1 gen) 裝置必須以作業系統組建和 OS 版本進行升級。 以下是將 HoloLens (1 gen) 更新為 [Windows 全息](hololens1-upgrade-enterprise.md) 版版本的詳細資訊。 若要將 HoloLens (1 gen) 裝置更新為使用 kiosk 模式，您必須先確定裝置執行的是 Windows 10 版本1803或更新版本。 如果您已使用 Windows 裝置恢復工具將 HoloLens (1 gen) 裝置復原為預設組建，或者如果您已安裝最新的更新，則您的裝置已準備好進行設定。
 
 > [!IMPORTANT]  
 > 若要協助保護在 kiosk 模式下執行的裝置，請考慮新增裝置管理原則，以關閉 USB 連線等功能。 此外，請檢查您的 [更新鈴聲] 設定，以確定在上班時間期間不會進行自動更新。
@@ -415,9 +418,6 @@ ms.locfileid: "11162969"
 ## 使用 Windows Device Portal 設定單一應用程式亭
 
 若要使用 Windows Device Portal 設定 kiosk 模式，請依照下列步驟進行。
-
-> [!IMPORTANT]
-> [展臺模式] 只有在裝置已安裝 [Windows 全息企業](hololens1-upgrade-enterprise.md) 版時才能使用。
 
 1. [設定 HoloLens 裝置以使用 Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)。 Device Portal 是您 HoloLens 上的網頁伺服器，您可以從電腦上的網頁瀏覽器與它連線。
 
