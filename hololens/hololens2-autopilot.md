@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182444"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192443"
 ---
 # 適用於 HoloLens 2 的 Windows Autopilot
 
@@ -223,11 +223,8 @@ ms.locfileid: "11182444"
     
     - 將您的裝置與「USB-C 到 WiFi」 配接器連線，以進行無線網際網路連線並讓 HoloLens 2 自動完成 Autopilot 體驗。
 
-       > [!NOTE]
-       > 使用 Autopilot 會影響[裝置擁有者](security-adminless-os.md#device-owner)。
-   
-       > [!IMPORTANT]  
-       > 試圖在 OOBE 中使用 Wi-Fi 網路進行 Autopilot 的裝置必須使用 [Windows 全像攝影版，版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)。
+        > [!IMPORTANT]  
+       > 嘗試在 OOBE 中對 Autopilot 使用 Wi-Fi 網路的裝置必須使用 [Windows 全像攝影版，版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)。
        >
        > 如果是使用乙太網配接器的裝置，您必須先將裝置連線到網路，全新體驗 (OOBE) 才會開始。 在第一個 OOBE 畫面上，裝置會判斷它是否要佈建為 Autopilot 裝置。 如果裝置無法連線到網路，或您選擇不要將裝置佈建為 Autopilot 裝置，之後就無法變更為 Autopilot 佈建。 若要將裝置改為佈建為 Autopilot 裝置，則必須重新開始此程序。
 
