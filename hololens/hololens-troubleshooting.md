@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
+ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915939"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195279"
 ---
 # 疑難排解
 
@@ -28,14 +28,14 @@ ms.locfileid: "10915939"
 
 如果您的 HoloLens 無法啟動：
 
-- 如果電源按鈕旁的指示燈不亮，或只有一個指示燈短暫閃爍，您可能需要為[HoloLens 充電。](hololens-recovery.md#charge-the-device)
-- 當您按下電源按鈕時，如果指示燈看不到任何內容，請[preform 裝置的硬重設](hololens-recovery.md#hard-reset-procedure)。
+- 如果電源按鈕旁的指示燈不亮，或只有一個指示燈短暫閃爍，您可能需要為 [HoloLens 充電。](hololens-recovery.md#charge-the-device)
+- 當您按下電源按鈕時，如果指示燈看不到任何內容，請 [preform 裝置的硬重設](hololens-recovery.md#hard-reset-procedure)。
 
 如果您的 HoloLens 遭到凍結或沒有回應：
 
 - 您可以按下電源按鈕來關閉您的 HoloLens，直到所有5個指示燈關閉為止，或在指示燈沒有回應的情況下，再按15秒。 若要啟動 HoloLens，請再按一次 [電源] 按鈕。
 
-如果這些步驟無法運作，您可以嘗試[將 hololens 2 裝置](hololens-recovery.md)或[hololens 復原 (1 gen) 裝置。](hololens1-recovery.md)
+如果這些步驟無法運作，您可以嘗試 [將 hololens 2 裝置](hololens-recovery.md) 或 [hololens 復原 (1 gen) 裝置。](hololens1-recovery.md)
 
 ## 全息影像看起來不好
 
@@ -45,6 +45,17 @@ ms.locfileid: "10915939"
 - 增加房間中的光線。
 - 流覽並查看您的周圍，讓 HoloLens 能更完整地進行掃描。
 - 為您的眼睛校準您的 HoloLens。 移至 [**設定**  >  **系統**  >  **工具**]。 在 [校正]**** 底下，選取 [開啟校正]****。
+ 
+### 報告全息圖不穩定或看起來不正確的問題
+ 
+1. 請錄製並將問題的 [混合現實捕獲影片](holographic-photos-and-videos.md#capture-a-mixed-reality-video) 中。 您可以稍後透過意見反應中樞將這個影片上傳成附加的檔案。  
+1. 透過 [**設定**] 應用程式啟用完整遙測->**隱私權**  ->  **診斷 & 意見**反應，並在 [**選擇性診斷資料**] 底下，確保已將切換設定為 [**開啟**]
+1. 更新至最新的 [Windows 全息 OS、 (20H2 或更高版本的) ， ](hololens-release-notes.md#windows-holographic-version-20h2)以取得最新的全息圖縮放與穩定性修正。 更新完成後，請執行下列動作：
+    1. 透過 [**設定**] app 移除所有全息影像->**系統**  ->  **全息影像**-> 然後選取 [**移除所有全息影像**]，然後從新的地圖開始。
+    1. 戴上 HoloLens 並流覽房間並查看空間中的所有區域和表面，以建立新的空間地圖。 針對2-3 分鐘執行此動作。
+    1. 執行 IPD 校準。 移至 [**設定**  >  **系統**  >  **工具**]。 在 [校正]**** 底下，選取 [開啟校正]****。
+    1. 重新測試案例，看看它是否仍然存在。
+1. 如果更新無法修正問題，請歸檔 [意見反應中樞問題](hololens-feedback.md)。 在您填入意見反應之後，您可以使用 [ **共用** ] 按鈕，建立可在聯絡支援時傳送的輕鬆共用連結。
 
 ## HoloLens 沒有回應手動輸入
 
@@ -52,7 +63,7 @@ ms.locfileid: "10915939"
 - 在 HoloLens (1 gen) ，看著游標會從某個點變更為環
 - 在 HoloLens 2 上，當您的手接近平板時，會出現指尖游標，而當 slates 離開時，就會出現手光線
 
-許多沉浸式應用程式都遵循與混合現實家用類似的輸入模式。  深入瞭解在 HoloLens 上使用 [手動輸入] [ (1 gen) ](hololens1-basic-usage.md#use-hololens-with-your-hands)與[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)。
+許多沉浸式應用程式都遵循與混合現實家用類似的輸入模式。  深入瞭解在 HoloLens 上使用 [手動輸入] [ (1 gen) ](hololens1-basic-usage.md#use-hololens-with-your-hands) 與 [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)。
 
 如果您佩戴手套，請注意，某些類型的手套無法搭配手動追蹤。  常見的範例是黑色橡膠手套，通常是用來吸收紅外光源，而不是由深度相機拾取。  如果您的工作涉及橡膠手套，我們建議您嘗試較淺的色彩，例如藍色或灰色。  另一個範例是大型 baggy 手套，通常是遮住您手的圖形。 我們建議您使用以表單管接頭作為最佳結果的手套。
 
@@ -67,16 +78,16 @@ ms.locfileid: "10915939"
 如果 HoloLens 無法對應或載入您的空間，它會進入 [限制模式]，而且您無法放置全息影像，或查看您所放置的全息影像。 您可以嘗試以下方法：
 
 - 請確定您的環境中有足夠的光線，因此 HoloLens 可以查看並對應空間。
-- 請確認您已連線到 Wi-fi 網路。 如果您未連線到 Wi-fi，HoloLens 就無法識別並載入已知的空間。
+- 請確認您已連線至 Wi-Fi 網路。 如果您未連線到 Wi-fi，HoloLens 就無法識別並載入已知的空間。
 - 如果您需要建立新的空間，請連線至 Wi-fi，然後重新開機 HoloLens。
 - 若要查看正確的空間是否作用中，或是要手動載入空格，請移至 [**設定**  >  **系統**  >  **空間**]。
-- 如果載入了正確的空間，但仍有問題，可能是空間已損毀。 若要修正此問題，請選取空格，然後選取 [**移除**]。 移除空格之後，HoloLens 就會開始對應您的環境，並建立新的空間。
+- 如果載入了正確的空間，但仍有問題，可能是空間已損毀。 若要修正此問題，請選取空格，然後選取 [ **移除**]。 移除空格之後，HoloLens 就會開始對應您的環境，並建立新的空間。
 
 ## 我的 HoloLens 無法判斷我正在進行的空間
 
 如果您的 HoloLens 無法識別並載入您要自動進行的空間，請檢查下列因素：
 
-- 確認您已連線至 Wi-fi
+- 請確定您已連線至 Wi-Fi
 - 確定房間中有足夠的光線
 - 確定周圍沒有任何主要的變更。
 
@@ -89,12 +100,12 @@ ms.locfileid: "10915939"
 - 刪除部分未使用的空格。 移至 [**設定**  >  **系統**  >  **空間**]，選取您不再需要的空間，然後選取 [**移除**]。
 - 移除您所放置的一些全息影像。
 - 從 [相片] 應用程式刪除一些圖片和影片。
-- 從您的 HoloLens 解除安裝部分應用程式。 在 [**所有應用程式**] 清單中，按住您要卸載的應用程式，然後選取 [**卸載**]。
+- 從您的 HoloLens 解除安裝部分應用程式。 在 [ **所有應用程式** ] 清單中，按住您要卸載的應用程式，然後選取 [ **卸載**]。
 
 ## 我的 HoloLens 無法建立新的空間
 
-最可能的問題是您的儲存空間不足。 請嘗試上述其中一種[秘訣](#im-getting-a-low-disk-space-error)，以釋放一些磁碟空間。
+最可能的問題是您的儲存空間不足。 請嘗試上述其中一種 [秘訣](#im-getting-a-low-disk-space-error) ，以釋放一些磁碟空間。
 
 ## HoloLens 模擬器無法運作
 
-有關 HoloLens 模擬器的資訊位於我們的開發人員檔中。  閱讀更多關於[HoloLens 模擬器疑難排解的](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting)資訊。
+有關 HoloLens 模擬器的資訊位於我們的開發人員檔中。  閱讀更多關於 [HoloLens 模擬器疑難排解的](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting)資訊。
