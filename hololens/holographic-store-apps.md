@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
+ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145634"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11194863"
 ---
 # 在 [Microsoft Store] 尋找、安裝及解除安裝應用程式
 
@@ -35,6 +35,11 @@ HoloLens 支援許多在 Microsoft Store 中既有的應用程式，以及專為
 ## 尋找應用程式
 
 若要開啟 Microsoft Store 可從 **[開始]** 功能表開啟之。 然後瀏覽應用程式和遊戲。 您可以使用[語音命令](hololens-cortana.md)透過說出「搜尋」以進行搜尋，當搜尋視窗開啟後，說出「開始聽寫」，接著當系統提示您輸入搜尋字詞時，開始說出您的搜尋字詞。
+
+> [!NOTE]
+> HoloLens 裝置的系統需求基於應用程式組建的架構。 如果 HoloLens (第 1 代) 的應用程式版本尚未更新到商店中的較新的 UWP 以包含 ARM 架構套件，則它將不適用於 HoloLens 2 裝置。 同樣，如果 HoloLens 2 應用程式不包括 x86 架構套件，它將不能用於 HoloLens (第 1 代) 裝置。 HoloLens 裝置架構：
+> - x86 = HoloLens (第 1 代)
+> - ARM = HoloLens 2
 
 > [!NOTE]
 > 在 2021 年 1 月 12 日，下列應用程式將於 HoloLens 裝置上進入終止支援。 我們鼓勵您在裝置上使用下列連結，以使用應用程式的 Web 版本。
