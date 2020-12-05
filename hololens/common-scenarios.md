@@ -1,7 +1,8 @@
 ---
 title: 常見的基礎結構部署案例
+description: 根據不同常見基礎結構的一些常見部署案例
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 6/30/2020
+ms.date: 11/04/2020
 keywords: hololens
 manager: yannisle
 ms.prod: hololens
@@ -13,27 +14,29 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f8d69fc988afabad5f4ae1cce9003381ceb8e68c
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e9e91535bb49b5076547e8b9934bdc86808d41fc
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857873"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195566"
 ---
-# 常見的基礎結構部署案例
-下列資訊提供在企業中部署和管理 Microsoft HoloLens 2 裝置的三種常見案例的高層結構概覽。
+# 常見的基礎結構部署案例概述
+
+下列資訊提供在企業中部署和管理 Microsoft HoloLens 2 裝置的三種常見案例的高層結構概覽。 您通常會如何管理裝置，以及如何存取貴組織的資源主要是由目前已準備好的因素決定。 根據現有的基礎結構，我們會邀請您在下列案例中審查常見的裝置管理樣式，並嘗試在符合您需求的案例中部署輔助線。
 
 ## 案例
 
-下圖代表 HoloLens 2 部署的三種典型案例。 
-![案例](images/scenarios.jpg)
+下圖代表 HoloLens 2 部署的三種典型案例。
+![案例圖表](images/scenarios.jpg)
 
-### 案例 A
+### 案例 A：部署到雲端連接裝置
 
 已部署 HoloLens 2，主要用於公司網路中的外部環境。 公司資源無法存取，或可能受 VPN 限制。 這個部署與公司內受管理的行動裝置非常類似。
  * 基本常見設定
-   * Wi-fi 網路通常會完全開啟至網際網路和雲端服務。
-   * 使用 MDM 自動註冊的 Azure AD 聯接--MDM （Intune）管理
-   * 使用者以自己的公司帳戶（AAD）登入 
+   * Wi-Fi 的網路通常會完全開啟網際網路和雲端服務。
+   * 使用 MDM 自動註冊的 Azure AD 聯接--MDM (Intune) 管理
+   * 使用者以自己的公司帳戶登入 (AAD) 
      * 每個裝置支援單一或多個使用者
    * 根據特定的使用案例，從完全開啟到單一應用程式亭，就會套用各種不同的裝置鎖定設定等級。
    * 一或多個應用程式是透過 MDM 部署
@@ -41,28 +44,33 @@ ms.locfileid: "10857873"
 * 常見的難題
    * 根據案例需求決定要套用至 HoloLens 2 的 MDM 設定。
 
-### 案例 B
+如需與此案例類似的部署指南，請參閱我們的 [雲端連線 HoloLens （含遠端協助](hololens2-cloud-connected-overview.md)）指南。
+
+> [!div class="nextstepaction"]
+> [部署指南–雲端連線的 HoloLens 2 （含遠端協助）](hololens2-cloud-connected-overview.md)
+
+### 案例 B：在貴組織的網路內部部署
 
 HoloLens 2 已部署，主要用於公司網路，可存取內部公司資源。 網際網路和雲端服務可能受到限制。 這是大部分 Windows 10 電腦的典型部署。
  * 基本常見設定
-   * Wi-fi 網路是一種內部公司網路，有權存取內部資源，以及網際網路或雲端服務的有限存取權。
-   * 使用 MDM 自動註冊的 Azure AD 加入 
-   * MDM （Intune）管理
-   * 使用者以自己的公司帳戶（AAD）登入
+   * Wi-Fi 網路是內部公司網路，可存取內部資源，以及網際網路或雲端服務的有限存取權。
+   * 使用 MDM 自動註冊的 Azure AD 加入
+   * MDM (Intune) 管理
+   * 使用者以自己的公司帳戶登入 (AAD) 
      * 每個裝置支援單一或多個使用者
    * 根據特定的使用案例，從完全開啟到單一應用程式亭，就會套用各種不同的裝置鎖定設定等級。
    * 一或多個應用程式是透過 MDM 部署
 
  * 常見的難題
-   * HoloLens 2 不支援內部部署廣告連接或 SCCM。 僅限使用 MDM 的 Azure AD 加入。 在此案例中，許多公司現在仍會部署 Windows 10 電腦，就像是由 System Center Configuration Manager （SCCM）管理，而且可能沒有部署/設定的基礎結構，可透過雲端的 MDM 解決方案來管理內部 Windows 10 裝置。
-   * 因為 HoloLens 2 是雲端第一個裝置，所以它大量依賴網際網路和雲端聯機服務來進行使用者驗證、作業系統更新、MDM 管理等。連線至公司網路時，最可能需要調整 Proxy/防火牆規則，才能啟用 HoloLens 2 以及在其上執行的應用程式的存取權。 
-   * 公司 Wi-fi 連線通常需要認證，才能向網路驗證裝置或使用者。 透過 MDM 將憑證部署到 Windows 10 裝置所需的基礎結構或設定，可能很難設定。
+   * HoloLens 2 不支援內部部署廣告連接或 SCCM。 僅限使用 MDM 的 Azure AD 加入。 在這種情況下，許多公司現在仍會部署 Windows 10 電腦，因為內部部署廣告已加入裝置是由 System Center Configuration Manager () SCCM 所管理，而且可能不會透過雲端的 MDM 解決方案部署/設定基礎結構來管理內部 Windows 10 裝置。
+   * 因為 HoloLens 2 是雲端第一個裝置，所以它大量依賴網際網路和雲端聯機服務來進行使用者驗證、作業系統更新、MDM 管理等。連線至公司網路時，最可能需要調整 Proxy/防火牆規則，才能啟用 HoloLens 2 以及在其上執行的應用程式的存取權。
+   * 企業 Wi-Fi 連線通常需要認證，才能向網路驗證裝置或使用者。 透過 MDM 將憑證部署到 Windows 10 裝置所需的基礎結構或設定，可能很難設定。
 
-### 案例 C
+### 案例 C：在安全的離線環境中部署
 
 HoloLens 2 已部署，主要用於離線使用，沒有網路或網際網路存取。 這是高度安全或機密位置的典型部署。
  * 基本常見設定
-   * Wi-fi 連接已停用。 如果需要，可以透過 USB 乙太網上的乙太網路進行局域網連線。
+   * Wi-Fi 連線性已停用。 如果需要，可以透過 USB 乙太網上的乙太網路進行局域網連線。
    * 未管理。
    * 裝置登入的本機使用者帳戶。
      * HoloLens 2 只支援1個本機帳戶。
@@ -73,3 +81,8 @@ HoloLens 2 已部署，主要用於離線使用，沒有網路或網際網路存
    * 您可以透過預配套件使用一組有限的設定
    * 雲端服務無法被利用，因此限制 HoloLens 2 的功能。
    * 更高的管理負荷，因為這些裝置必須手動設定、設定及更新。
+
+如需與此案例類似的部署指南，請參閱我們的 [離線安全部署指南](hololens-common-scenarios-offline-secure.md)。
+
+> [!div class="nextstepaction"]
+> [部署指南–離線安全 HoloLens 2](hololens-common-scenarios-offline-secure.md)

@@ -10,13 +10,13 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
-ms.openlocfilehash: b7523b8ab38cfc37795ea6c99f9b22953baffe47
-ms.sourcegitcommit: 30e910348f5d5b68e914219c8eadb34d93770eab
+ms.date: 11/04/2020
+ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11099802"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195586"
 ---
 # HoloLens 2 企業版部署與管理
 
@@ -48,7 +48,7 @@ HoloLens 2 是專門設計來由行動裝置管理 (在企業環境中使用 MDM
 為了提供 IT 系統管理員以 Windows Update 為主的其他管理功能 (例如，能夠將更新部署到裝置群組，以及定義安裝更新的維護時段)，Microsoft 設計了商務用 Windows Update。 您可以 [在此](https://docs.microsoft.com/hololens/hololens-updates)找到管理 HoloLens 2 更新的詳細資料。
 
 ### 憑證
-如果您的環境需要 Corp Wi-fi 網路驗證的憑證或存取其他資源，則 HoloLens 2 支援透過 MDM 部署憑證。 您可能需要使用一些 MDM 基礎結構設定，才能將證書部署到 HoloLens 2。 瞭解如何為 [HoloLens 2 準備證書和網路設定檔](https://docs.microsoft.com/hololens/hololens-certificates-network)。 您可以 [在此](https://docs.microsoft.com/mem/intune/protect/certificates-configure)找到 Intune 詳細資料。
+如果您的環境需要 Corp 的憑證 Wi-Fi 網路驗證或存取其他資源，則 HoloLens 2 支援透過 MDM 部署憑證。 您可能需要使用一些 MDM 基礎結構設定，才能將證書部署到 HoloLens 2。 瞭解如何為 [HoloLens 2 準備證書和網路設定檔](https://docs.microsoft.com/hololens/hololens-certificates-network)。 您可以 [在此](https://docs.microsoft.com/mem/intune/protect/certificates-configure)找到 Intune 詳細資料。
 
 ## 設定
 
@@ -75,7 +75,7 @@ HoloLens 2 也支援透過自訂的置備套件設定有限的 CSP 設定。 您
 
 ### 證書部署
 
-如果需要證書才能存取公司 Wi-fi 網路或貴組織內的其他服務，HoloLens 2 支援透過 MDM 進行使用者和裝置憑證部署。 注意：您的 MDM 解決方案可能需要額外的基礎結構配置，才能將證書部署到 Windows 10 裝置。
+如果需要證書才能存取企業 Wi-Fi 網路或貴組織內的其他服務，HoloLens 2 支援透過 MDM 進行使用者和裝置憑證部署。 注意：您的 MDM 解決方案可能需要額外的基礎結構配置，才能將證書部署到 Windows 10 裝置。
 
 ### 安全性審查
 
@@ -88,8 +88,8 @@ HoloLens 2 也支援透過自訂的置備套件設定有限的 CSP 設定。 您
 | 裝置設定 | 簡短說明。                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
 | [硬體限制](hololens-requirements.md#hardware-restrictions)               | 硬體限制減少連線性並協助資料保護。                        |
-| [Wi-Fi 設定檔](hololens-requirements.md#wi-fi-profiles)               | 在不使用使用者干預或互動的情況下，設定 Wi-fi 設定檔。                              |
-| [憑證](hololens-requirements.md#certificates-1)               | 提供 web 內容的帳戶和/或 Wi-fi 驗證、VPN 加密及 SSL 加密。 |
+| [Wi-Fi 設定檔](hololens-requirements.md#wi-fi-profiles)               | 設定 Wi-Fi 設定檔，而不需要使用者干預或互動。                              |
+| [憑證](hololens-requirements.md#certificates-1)               | 提供帳戶和/或 Wi-Fi 驗證、VPN 加密及 SSL 網頁內容加密。 |
 | [Proxy](hololens-requirements.md#proxy)              | 管理內部流量。                                                                        |
 |  [VPN](hololens-requirements.md#vpn)              | 控制其公司內部網路上的應用程式和資源的存取權。                               |
 | [Kiosk 模式](hololens-requirements.md#kiosk-mode) | 限制透過 UI 提供給使用者的應用程式。 |
@@ -100,7 +100,7 @@ HoloLens 2 使用的是一流的技術，包括相機、麥克風、喇叭、USB
 
 下列列出最常使用的 MDM 設定（HoloLens 2 支援來設定硬體限制）。 其中部分硬體限制提供連線功能，並可協助資料保護。
 
-- [**允許 WiFi：**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) 使用者是否可以在裝置上啟用和使用 Wi-fi 無線電
+- [**允許 WiFi：**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) 使用者是否可以在裝置上啟用和使用 Wi-Fi 無線電
 - [**允許 USB 連線：**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 是否已啟用 USB 連線 (&#39;t 會影響 USB 充電) 
 - [**允許藍牙：**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) 使用者是否可以在裝置上啟用和使用藍牙無線電
 
@@ -108,19 +108,19 @@ HoloLens 2 使用的是一流的技術，包括相機、麥克風、喇叭、USB
 
 #### Wi-Fi 設定檔
 
-大多數的公司 Wi-Fi 網路需要有憑證及其他複雜的資訊，才能限制並保護使用者存取。 這個高級 Wi-fi 資訊對於設定一般使用者而言很困難，但 MDM 系統可以完全設定這些 Wi-fi 設定檔，而不需要使用者干預。 您可以在 MDM 系統中建立多個 Wi-Fi 設定檔。
+大多數的公司 Wi-Fi 網路需要有憑證及其他複雜的資訊，才能限制並保護使用者存取。 這個高級 Wi-Fi 資訊對一般使用者而言很困難，但 MDM 系統可以完全設定這些 Wi-Fi 設定檔，而不需要使用者干預。 您可以在 MDM 系統中建立多個 Wi-Fi 設定檔。
 
-如需 Windows 10 版 Wi-fi 設定的詳細資訊，請參閱 [企業設定檔 WiFi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)。
+如需 Windows 10 Wi-Fi 設定的詳細資訊，請參閱 [企業設定檔 WiFi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)。
 
 #### 憑證
 
-認證：提供帳戶驗證、Wi-fi 驗證、VPN 加密及網頁內容 SSL 加密，以協助改善安全性。 雖然系統管理員可以透過置備套件手動管理裝置上的憑證，但&#39;最佳做法是，在整個週期中使用您的 MDM system 管理這些憑證，從註冊到更新和吊銷等。 只要 MDM system 支援簡單的憑證註冊通訊協定 (SCEP) 或公開金鑰密碼編譯標準 #12 (# A5，您的 MDM system 就可以自動將這些憑證部署到&#39; 證書 (儲存裝置的裝置。 MDM 也可以在目前的憑證過期前，查詢及刪除已註冊的用戶端憑證，或觸發新的註冊要求。
+證書可提供帳戶驗證、Wi-Fi 驗證、VPN 加密及網頁內容 SSL 加密，以協助提高安全性。 雖然系統管理員可以透過置備套件手動管理裝置上的憑證，但&#39;最佳做法是，在整個週期中使用您的 MDM system 管理這些憑證，從註冊到更新和吊銷等。 只要 MDM system 支援簡單的憑證註冊通訊協定 (SCEP) 或公開金鑰密碼編譯標準 #12 (# A5，您的 MDM system 就可以自動將這些憑證部署到&#39; 證書 (儲存裝置的裝置。 MDM 也可以在目前的憑證過期前，查詢及刪除已註冊的用戶端憑證，或觸發新的註冊要求。
 
 進一步瞭解如何為 [HoloLens 2 準備證書和網路設定檔。](https://docs.microsoft.com/hololens/hololens-certificates-network)
 
 #### Proxy
 
-大多數公司內部網路都利用 proxy 來管理內部流量。 使用 HoloLens 2，您可以設定乙太網與 Wi-fi 連線的 proxy 伺服器。 這些設定不會套用至 VPN 連線。
+大多數公司內部網路都利用 proxy 來管理內部流量。 使用 HoloLens 2，您可以設定乙太網路的 proxy 伺服器與 Wi-Fi 連線。 這些設定不會套用至 VPN 連線。
 
 如需 Windows 10 proxy 設定的詳細資訊，請參閱 [NETWORKPROXY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)。
 
@@ -169,7 +169,7 @@ Microsoft 也會將安全性和穩定性的更新直接傳送並安裝到 HoloLe
 
 企業客戶可以使用 MDM 系統管理 HoloLens 2 的更新體驗與處理常式。 在大部分情況下，用以管理更新程序的原則將會同時套用到功能和品質更新。 在 [針對 HoloLens 更新設定 MDM 的](https://docs.microsoft.com/hololens/hololens-updates)詳細資料。
 
-### 管理應用程式 
+### 管理應用程式
 
 IT 管理員可以控制在 HoloLens 2 上允許安裝哪些應用程式，以及應該如何保持最新狀態。
 
@@ -188,3 +188,6 @@ HoloLens 2 支援3種擦除裝置的方法
 **在 [設定] 中重設裝置：** 最終使用者可以在裝置上的 [設定] 應用程式中手動重設 HoloLens 2。 清除裝置上所有儲存的資料。
 
 **先進的恢復隨附 (弧形) ：** 從執行弧形工具的電腦，使用者或系統管理員可以使用 USB 纜線，將 HoloLens 2 連線到電腦。 清除裝置上所有儲存的資料。
+
+> [!div class="nextstepaction"]
+> [常見的部署案例](common-scenarios.md)
