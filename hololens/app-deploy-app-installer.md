@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162894"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201367"
 ---
 # 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
 
 
-我們會在 Windows 全息版20H2 更新後立即傳送 app 安裝程式功能。 我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
+我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
 
-> [!IMPORTANT]
-> 此功能目前僅能在 [Windows 測試人員] 組建中使用。 [深入瞭解如何在 Windows 測試人員組建中註冊](hololens-insider.md)。
+> [!NOTE]
+> 此功能可在 [Windows 全息版 20H2-2020 年12月更新](hololens-release-notes.md)中取得。 請確定您的裝置已 [更新](hololens-update-hololens.md) ，才能使用此功能。
 
-在我們的 Windows 測試人員發行版本中，我們 **新增了 (App 安裝程式) 的新功能，可讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
+我們 **新增了 (App 安裝程式) 的新功能，可讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
 
 如果下列 **任一** 條件成立，裝置就會被視為「受管理」：
 - 已[註冊](hololens-enroll-mdm.md)MDM

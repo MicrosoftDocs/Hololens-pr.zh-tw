@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176905"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201377"
 ---
 # HoloLens 2 版本資訊
 
@@ -28,6 +28,52 @@ ms.locfileid: "11176905"
 
 >[!NOTE]
 > 若要閱讀 HoloLens 模擬器版本資訊，請 [造訪](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)封存。
+
+
+## Windows 全息版20H2 –2020年12月更新
+- 組建19041.1131
+
+### 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
+
+我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
+
+如果下列 **任一** 條件成立，裝置就會被視為「受管理」：
+- 已[註冊](hololens-enroll-mdm.md)MDM
+- 使用[預配套件](hololens-provisioning.md)進行設定
+- 使用者身分 [識別](hololens-identity.md) 是 Azure AD
+
+您現在可以安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。  只要透過 USB 或邊緣) 將 (下載到您的裝置，然後在檔案資源管理器中流覽至 Appx 套件，就會提示您啟動安裝。  或者， [從網頁啟動安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像從 Microsoft Store 或側載使用 MDM 的 LOB 應用程式部署功能所安裝的應用程式，應用程式必須使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 進行數位簽署，而且在部署 App 之前，必須由 HoloLens 裝置 [信任用來簽署的憑證](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 。
+
+**應用程式安裝指示。**
+
+1.  確定您的裝置未被視為受管理
+1.  確定您的 HoloLens 2 裝置已通電且已連線至您的電腦
+1.  確定您已登入 HoloLens 2 裝置
+1.  在您的電腦上流覽至您的自訂應用程式，並將 yourapp 複製到 yourdevicename\Internal Storage\Downloads。   完成檔案複製之後，您可以中斷裝置連線
+1.  從您的 HoloLens 2 裝置開啟 [開始] 功能表，選取 [所有應用程式]，然後啟動檔案資源管理器應用程式。
+1.  流覽至 [下載] 資料夾。 您可能需要在應用程式的左面板上，選取 [此裝置]，然後流覽至 [下載]。
+1.  選取 yourapp 檔案。
+1.  App 安裝程式將會啟動。 選取 [安裝] 按鈕來安裝您的 app。
+已安裝的應用程式將會在安裝完成後自動啟動。
+
+您可以在 [Windows 通用範例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 中找到範例應用程式，以測試這份流程。
+
+瞭解在 [HoloLens 2 上使用 App 安裝程式安裝應用](app-deploy-app-installer.md)程式的完整程式。  
+
+![透過 App 安裝程式安裝 MRTK 範例](images/hololens-app-installer-picture.jpg)
+
+### 更新中的改進與修正：
+
+- [手動追蹤] 現在會在許多先前已遺失的新案例中維持追蹤。  在這些新案例中，只有 palm 位置會根據使用者的真實手繼續更新，而另一個接頭則是根據先前的姿勢來推斷。  此變更可協助改善移動（例如 slapping、拋出、scooping 和拍手）中的追蹤一致性。  當手靠近表面或保留物件時，也會有協助。  當手寫接頭被推斷時， [每個接點精確度](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 值將會設定為 "近似值"，而不是 "High"。
+- 已修正 Azure AD 帳戶的 PIN 重設會顯示錯誤「發生錯誤」的問題。
+- 使用者在啟動 ET、從 [設定] 應用程式虹彩、[新增使用者] 或 [通知快顯] 時，應該會看到較少的啟動後 OOBE 當機。
+- 使用者應該已有正確的時區不在 OOBE 中。
+
+## Windows 全息版1903–2020年12月更新
+- 組建18362.1088
+
+此每月品質更新不包含任何明顯的變更，我們鼓勵您試用最新的 Windows 全息版 20H2-2020 更新，以及在組建中新增的 App 安裝程式功能。
+
 
 ## Windows 全息版、版本20H2
 - 組建19041.1128
@@ -38,7 +84,7 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 
 ### Windows 全息版、版本20H2 的新功能  
 
-| 功能                                              | 說明                                                                                                                                     |
+| 功能                                              | 描述                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [自動眼部定位支援](hololens-release-notes.md#auto-eye-position-support) | 積極地計算眼睛位置，而不需要使用者透過目視追蹤校準進行。   |
 | [憑證管理員](hololens-release-notes.md#certificate-manager)   | 允許更簡單的方法來安裝及移除 [設定] 應用程式中的憑證。     |
@@ -241,7 +287,7 @@ OOBE 將無限期地等待 Autopilot 設定檔下載，且會出現以下對話�
 
 已在 Windows 全息版20H2 上為 HoloLens 2 裝置建立新的混合式實際原則。 新的可控設定包括：設定亮度、設定音量、停用混合式實際捕獲中的音訊錄製、可收集診斷程式的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | [允許停用亮度] 按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設)                                                 |
 | MixedReality\VolumeButtonDisabled                  | [允許停用音量] 按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設)                                                 |
@@ -474,7 +520,7 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 
 2020年5月2日 *Windows 全息2004版* 軟體更新包含一種令人興奮的新功能，例如支援 Windows Autopilot、應用程式暗模式、USB 乙太網上支援 5G/LTE 熱點，以及更多功能。 若要更新為最新版本，請開啟 [**設定**]   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          說明                                                                                              |
+|             功能                              |          描述                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 進行預設定及無縫的新裝置製作                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全金鑰以針對共用裝置啟用快速及安全的驗證            |

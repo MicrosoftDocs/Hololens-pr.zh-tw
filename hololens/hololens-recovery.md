@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996411"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195596"
 ---
 # 重新啟動、重設或復原 HoloLens 2
 
@@ -57,7 +57,7 @@ ms.locfileid: "10996411"
 
 4. 將裝置連線到主機電腦，然後開啟 [裝置管理員]。 (針對 Windows 10，請按 **Windows** 鍵，再按 **X** 鍵，然後選取 **裝置管理員**。) 確認裝置枚舉正確為 *Microsoft HoloLens* 如以下影像所示:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 裝置管理員](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### 硬重設程序
 
@@ -70,7 +70,7 @@ ms.locfileid: "10996411"
 4. 將裝置連接到主機電腦。
 5. 開啟 [裝置管理員] （如果是 Windows 10，請按 **Windows** 鍵，然後按 **X** 鍵，並選取 **[裝置管理員]**）。 請確認裝置枚舉正確為 *Microsoft HoloLens*，如下列影像所示：
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 裝置管理員 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## 乾淨重新快閃刷新裝置
 
@@ -81,12 +81,12 @@ ms.locfileid: "10996411"
 - [過熱](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - OS 當機（不同於應用程式的當機）
 
-有兩種方法可以快閃刷新裝置。 針對這兩種方法，您必須先 [從 Windows Store 上安裝 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
+有兩種方法可以快閃刷新裝置。 針對這兩者，您必須先 [從 Windows 市集中安裝 [進階修復小幫手]](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
 
 >[!WARNING]
 >如果快閃刷新裝置，您所有的個人資料、應用程式和設定都會被清除，包含 TPM 重設資訊。
 
-根據預設，[Advanced Recovery Companion] 目前已設定為下載 [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004) 發行組建功能。 若要取得最新的 HoloLens 2 完整刷新更新（FFU）套件，以透過 [Advanced Recovery Companion] 快閃刷新您的裝置，請 [於此下載](https://aka.ms/hololens2download)。 此版本是最新的萬用組建。
+根據預設，[進階修復小幫手] 設定為下載最新的功能版本版本，請查看此處以閱讀我們的[版本資訊](hololens-release-notes.md#)以瞭解最新功能版本。 若要取得最新的 HoloLens 2 完整刷新更新 (FFU) 套件，以透過 [進階修復小幫手] 快閃刷新您的裝置，請按一下此處下載最新的每月 HoloLens 2 影像[。](https://aka.ms/hololens2download) 此版本是最新的萬用組建。
 
 在啟動快閃刷新程序前，請確認已在 Windows 10 電腦上安裝並執行該應用程式，並準備好偵測裝置。
 
@@ -134,8 +134,8 @@ ms.locfileid: "10996411"
 1. 請移至 [商務用 Microsoft Store](https://businessstore.microsoft.com)，並使用 Azure Active Directory 身分識別登入。
 
 1. 移至 **管理-設定**。 開啟 **[購物體驗]** 底下的 **[顯示離線應用程式]**。 
-1. 移至**為我的群組採購**並搜尋 [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
-1. 將**授權類型**變更為 ***離線***，然後按一下 **[管理]**。
+1. 移至**為我的群組採購**並搜尋 [**_進階修復小幫手_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
+1. 將_*授權類型**變更為 **_離線_*_，然後按一下_*[管理]**。
 1. 在 **[下載套件供離線使用]** 底下，選取第二個藍色 **[下載]** 按鈕。 請確定檔案副檔名為 *.appxbundle*。
 
     - 在這個階段，如果桌上型電腦具有網際網路存取權，只要按兩下套件以安裝應用程式即可。

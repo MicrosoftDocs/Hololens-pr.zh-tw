@@ -1,5 +1,5 @@
 ---
-title: 適用於 Microsoft HoloLens 的 Insider Preview
+title: 適用於 Microsoft HoloLens 的測試人員預覽
 description: 您可以輕鬆開始使用測試人員組建，並為我們的下一個主要作業系統更新提供寶貴的意見反應，以進行 HoloLens。
 ms.prod: hololens
 ms.sitesec: library
@@ -16,46 +16,20 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb8ac3b6b74fd6998cde4d32df12dcbd84556597
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162953"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201337"
 ---
-# 適用於 Microsoft HoloLens 的 Insider Preview
+# 適用於 Microsoft HoloLens 的測試人員預覽
 
 歡迎使用 HoloLens 的最新 Insider Preview 組建！ [開始](hololens-insider.md#start-receiving-insider-builds)使用並為我們的下一個重要作業系統更新提供寶貴的意見反應，這是一件簡單的工作。
 
 ## Windows 測試人員版本資訊
 
-### 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
-我們會在 Windows 全息版20H2 更新後立即傳送 app 安裝程式功能。 我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
-
-如果下列 **任一** 條件成立，裝置就會被視為「受管理」：
-- 已[註冊](hololens-enroll-mdm.md)MDM
-- 使用[預配套件](hololens-provisioning.md)進行設定
-- 使用者身分 [識別](hololens-identity.md) 為 AAD
-
-您現在可以安裝應用程式，而不需要啟用開發人員模式或使用 Device Portal。  只要透過 USB 或邊緣) 將 (下載到您的裝置，然後在檔案資源管理器中流覽至 Appx 套件，就會提示您啟動安裝。  或者， [從網頁啟動安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像從 Microsoft Store 或側載使用 MDM 的 LOB 應用程式部署功能所安裝的應用程式，應用程式必須使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 進行數位簽署，而且在部署 App 之前，必須由 HoloLens 裝置 [信任用來簽署的憑證](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 。
-
-**應用程式安裝指示。**
-
-1.  確定您的裝置未被視為受管理
-1.  確定您的 HoloLens 2 裝置已通電且已連線至您的電腦
-1.  確定您已登入 HoloLens 2 裝置
-1.  在您的電腦上流覽至您的自訂應用程式，並將 yourapp 複製到 yourdevicename\Internal Storage\Downloads。   完成檔案複製之後，您可以中斷裝置連線
-1.  從您的 HoloLens 2 裝置開啟 [開始] 功能表，選取 [所有應用程式]，然後啟動檔案資源管理器應用程式。
-1.  流覽至 [下載] 資料夾。 您可能需要在應用程式的左面板上，選取 [此裝置]，然後流覽至 [下載]。
-1.  選取 yourapp 檔案。
-1.  App 安裝程式將會啟動。 選取 [安裝] 按鈕來安裝您的 app。
-已安裝的應用程式將會在安裝完成後自動啟動。
-
-您可以在 [Windows 通用範例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 中找到範例應用程式，以測試這份流程。
-
-瞭解在 [HoloLens 2 上使用 App 安裝程式安裝應用](app-deploy-app-installer.md)程式的完整程式。  
-
-![透過 App 安裝程式安裝 MRTK 範例](images/hololens-app-installer-picture.jpg)
+我們最近放開了所有的 Windows 測試人員功能。 由於所有這些功能都已全部提供，因此我們建議您閱讀我們的 [版本](hololens-release-notes.md) 資訊，以查看我們的最新功能。 持續查看這裡，看看我們何時開始正式新的激動人心的功能來試試！
 
 ## 開始接收測試人員組建
 

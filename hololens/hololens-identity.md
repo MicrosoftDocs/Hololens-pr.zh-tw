@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5963e71bd6fdd084ca442995b02d99fc40da9d43
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102332"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201357"
 ---
 # 管理 HoloLens 的使用者身分識別和登入
 
@@ -36,11 +36,14 @@ HoloLens 支援多種類型的使用者身分識別。 您可以使用一或多�
 
 | 身分識別類型 | 每個裝置的帳戶 | 驗證選項 |
 | --- | --- | --- |
-| [Azure Active Directory (AAD) ](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web 身分認證提供者</li><li>Azure 驗證器應用程式</li><li>僅限生物特徵 (虹彩) &ndash; HoloLens 2</li><li>Hololens &ndash; (1 gen) （hololens 2 所需）的 PIN 選用</li><li>密碼</li></ul> |
+| [Azure Active Directory (AAD) ](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web 身分認證提供者</li><li>Azure 驗證器應用程式</li><li>生物特徵 (虹彩) &ndash; HoloLens 2 僅 <sup> 1</sup> </li><li>Hololens &ndash; (1 gen) （hololens 2 所需）的 PIN 選用</li><li>密碼</li></ul> |
 | [Microsoft 帳戶 (MSA) ](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | sr-1 | <ul><li>僅限生物特徵 (虹彩) &ndash; HoloLens 2</li><li>Hololens &ndash; (1 gen) （hololens 2 所需）的 PIN 選用</li><li>密碼</li></ul> |
 | [本機帳戶](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | sr-1 | 密碼 |
 
 雲端線上帳戶 (AAD 與 MSA) 提供更多功能，因為他們可以使用 Azure 服務。  
+
+> [!NOTE]
+> 1-雖然 HoloLens 2 裝置可支援最多64個 Azure AD 帳戶，但只有10個帳戶才能註冊虹彩驗證。 這會與 Windows Hello 企業版的其他生物識別驗證選項對齊。 [深入閱讀這裡。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## 設定使用者
 
