@@ -39,10 +39,15 @@
 ## [如何更新 HoloLens](hololens-update-hololens.md)
 
 # 準備
-## 規劃 HoloLens 2 企業部署
-### [在商業環境中部署 HoloLens](hololens-requirements.md)
-### [常見的基礎結構部署案例](common-scenarios.md)
-## 常見案例
+## [在商業環境中部署 HoloLens](hololens-requirements.md)
+## 常見的部署案例
+### [基礎結構部署案例](common-scenarios.md)
+### 使用 Remote Assist 部署的雲端連接 HoloLens 2
+#### [雲端連接-部署概覽](hololens2-cloud-connected-overview.md)
+#### [雲端連接-準備](hololens2-cloud-connected-prepare.md)
+#### [雲端連接-設定](hololens2-cloud-connected-configure.md)
+#### [雲端連接-部署](hololens2-cloud-connected-deploy.md)
+#### [雲端連接-維護](hololens2-cloud-connected-maintain.md)
 ### [離線安全](hololens-common-scenarios-offline-secure.md)
 ## 安全性
 ### [安全性概觀](security-overview.md)
