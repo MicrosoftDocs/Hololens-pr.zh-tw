@@ -100,6 +100,7 @@
 ### [Intune 與公司入口網站](app-deploy-intune.md)
 ### [商務用 Microsoft Store](app-deploy-store-business.md)
 ### [佈建套件](app-deploy-provisioning-package.md)
+### [應用程式安裝程式](app-deploy-app-installer.md)
 
 # 維護
 ## [管理 HoloLens 更新](hololens-updates.md)
@@ -114,8 +115,7 @@
 
 # HoloLens 版本資訊
 ## [HoloLens 2 版本資訊](hololens-release-notes.md)
-## [適用於 Microsoft HoloLens 的測試人員預覽](hololens-insider.md)
-### [應用程式安裝程式](app-deploy-app-installer.md)
+## [適用於 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
 ## [HoloLens (第 1 代) 版本資訊](hololens1-release-notes.md)
 
 # [提供意見反應給我們](hololens-feedback.md)
