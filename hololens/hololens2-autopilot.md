@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
-ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
+ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
+ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "11192443"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205765"
 ---
 # 適用於 HoloLens 2 的 Windows Autopilot
 
@@ -93,13 +93,12 @@ ms.locfileid: "11192443"
 
 註冊 HoloLens 裝置的主要方式有兩種： 
 
-1. **轉銷商可以在您下訂單時在 [合作夥伴中心] 中註冊裝置。** 
- > [!NOTE]  
-   > 這是新增裝置至 Autopilot 服務的建議路徑。 [深入了解](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)。  
+ - **轉銷商可以在您下訂單時在 [合作夥伴中心] 中註冊裝置。** 
 
-   或
+   > [!NOTE]  
+   > 這是新增裝置至 Autopilot 服務的建議路徑。 [深入了解](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)。  
    
-2. **檢索硬體雜湊 (也稱為硬體識別碼) 並在 MEM 系統管理中心手動註冊裝置**。 
+ - **擷取硬體雜湊值 (又稱為硬體識別碼)，並在 MEM 系統管理中心手動註冊裝置**。 
 
 **取得硬體雜湊**
 
@@ -134,11 +133,13 @@ ms.locfileid: "11192443"
 
 1. 在 **[新增 Windows Autopilot 裝置]** 中，選取 DeviceHash CSV 檔案，選取 **[開啟]**，然後選取 **[匯入]**。  
    
-   ![使用 [匯入] 命令來匯入硬體雜湊。](./images/hololens-ap-hash-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![使用 [匯入] 命令來匯入硬體雜湊。](./images/hololens-ap-hash-import.png)
    
 1. 匯入完成後，請選取 [裝置]****  >  [Windows]****  >  [Windows 註冊]****  >  [裝置]****  >  [同步]****。視正在同步的裝置而定，此程序可能需要幾分鐘的時間才能完成。 若要查看已登錄的裝置，選取 [重新整理]****。  
    
-   ![使用 [同步] 和 [重新整理] 命令來檢視裝置清單。](./images/hololens-ap-devices-sync.png)  
+   > [!div class="mx-imgBorder"]
+   > ![使用 [同步] 和 [重新整理] 命令來檢視裝置清單。](./images/hololens-ap-devices-sync.png)  
 
 ### 3. 建立裝置群組。
 
@@ -168,7 +169,9 @@ ms.locfileid: "11192443"
 1. 輸入設定檔名稱和描述，然後選取 **[下一步]**。  
    您應該會看到包含 **HoloLens** 的清單。 如果沒有出現此選項，請使用其中一個[意見反應](hololens2-autopilot.md#feedback-and-support-for-autopilot)選項與我們連絡。
 
-   ![新增設定檔名稱和描述](./images/hololens-ap-profile-name.png)
+   > [!div class="mx-imgBorder"]
+   > ![新增設定檔名稱和描述](./images/hololens-ap-profile-name.png)
+   
 1. 在 [全新體驗 (OOBE)]**** 頁面上，大部分的設定都是預先設定，以簡化此評估的 OOBE。 您可以選擇性地設定下列設定：  
 
    - **語言 (地區)**：選取 OOBE 的語言。 建議您從 [HoloLens 2 支援的語言][](hololens2-language-support.md) 清單中選取語言。
@@ -177,7 +180,9 @@ ms.locfileid: "11192443"
      > [!NOTE]  
      > 如果您使用裝置名稱範本，OOBE 程序會在套用裝置名稱和將裝置加入 Azure AD 之前，將裝置再重新開機一次。 此重新開機動作會讓新名稱生效。  
 
-   ![設定 OOBE 設定](./images/hololens-ap-profile-oobe.png)
+   > [!div class="mx-imgBorder"]
+   > ![設定 OOBE 設定](./images/hololens-ap-profile-oobe.png)
+   
 1. 進行設定之後，選取 [下一步]****。
 1. 在 [範圍標籤]**** 頁面上，選擇性地新增您要套用至此設定檔的範圍標籤。 如需有關範圍標籤的詳細資訊，請參閱[使用角色型存取控制和範圍標籤](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md)。 完成時，選取 [下一步]****。
 1. 在 [指派]**** 頁面上，針對 [指派給]****，選取 [已選取的群組]****。
@@ -186,11 +191,13 @@ ms.locfileid: "11192443"
   
    如果想要排除任何群組，請選取 [選取要排除的群組]****，然後選取您要排除的群組。
 
-   ![將裝置群組指派給設定檔。](./images/hololens-ap-profile-assign-devicegroup.png)
+   > [!div class="mx-imgBorder"]
+   > ![將裝置群組指派給設定檔。](./images/hololens-ap-profile-assign-devicegroup.png)
    
 1. 在 [檢閱 + 建立]**** 頁面上，檢閱設定，然後選取 [建立]**** 來建立設定檔。  
    
-   ![檢閱 + 建立](./images/hololens-ap-profile-summ.png)
+   > [!div class="mx-imgBorder"]
+   > ![檢閱 + 建立](./images/hololens-ap-profile-summ.png)
 
 ### 5. 驗證 ESP 組態
 
