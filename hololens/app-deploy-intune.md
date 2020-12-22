@@ -17,16 +17,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 55e2b15808e52bb80e8114e215bc0cef52358842
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
+ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016663"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247215"
 ---
 # Intune 與公司入口網站
 
-透過行動裝置管理 (MDM) ，您可以透過 [Microsoft 端點管理員 (Intune) ](https://docs.microsoft.com/intune/windows-holographic-for-business) 將自己的自訂應用程式直接部署到您的 HoloLens 裝置。 Microsoft Intune 是一個雲端服務，主要針對行動裝置管理 (MDM) 與行動應用程式管理 (MAM) 。 Intune 包含在 Microsoft[企業行動性 + 安全性 (EMS) 套件](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)中，而且能讓使用者在保持貴組織資料受到保護的同時，也能提高生產力。 若要深入瞭解 Intune，請參閱 [什麼是 intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)。
+透過行動裝置管理 (MDM) ，您可以透過 [Microsoft 端點管理員 (Intune) ](https://docs.microsoft.com/intune/windows-holographic-for-business) 將自己的自訂應用程式直接部署到您的 HoloLens 裝置。 Microsoft Intune 是一個雲端服務，主要針對行動裝置管理 (MDM) 與行動應用程式管理 (MAM) 。 Intune 包含在 Microsoft [企業行動性 + 安全性 (EMS) 套件](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)中，而且能讓使用者在保持貴組織資料受到保護的同時，也能提高生產力。 若要深入瞭解 Intune，請參閱 [什麼是 intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)。
 
 ## 設定
 
