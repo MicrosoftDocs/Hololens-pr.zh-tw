@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
-ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10882983"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253170"
 ---
 # 商業功能
 
@@ -64,7 +64,7 @@ HoloLens (第 1 代) 隨附兩個授權選項，即開發人員授權和商業�
 |Microsoft Store (消費者) |消費者 |使用 MDM 進行篩選 |使用 MDM 進行篩選 |
 |[商務用 Microsoft Store 入口網站](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**安全性與身分識別** | | | |
-|使用 Azure Active Directory (AAD) 帳戶登入 |✔️ |✔️ |✔️ |
+|使用 Azure Active Directory (Azure AD) 帳戶登入 |✔️ |✔️ |✔️ |
 |使用 Microsoft 帳戶登入 (MSA)  |✔️ |✔️ |✔️ |
 |使用 PIN 解除鎖定的新一代認證 |✔️ |✔️ |✔️ |
 |[安全開機](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |

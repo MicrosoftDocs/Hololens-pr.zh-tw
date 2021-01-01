@@ -1,6 +1,6 @@
 ---
 title: HoloLens 的基礎結構指導方針
-description: ''
+description: HoloLens 裝置的基礎結構指導方針
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1031eaeaf2767f8aa982d74bb282bc1fb086051b
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: a67aaa5df4c74531b5bed88abaa266b00de5c406
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940213"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253160"
 ---
 # 設定適用於 HoloLens 的網路
 
@@ -35,7 +35,7 @@ HoloLens 是與 Azure 整合的 Windows 行動裝置。  它在可使用無線�
 
 重要的雲端服務包括：
 
-- Azure Active Directory (AAD)
+- Azure Active Directory (Azure AD)
 - Windows Update (WU)
 
 商業客戶需要企業行動管理 (EMM) 或行動裝置管理 (MDM) 基礎結構，以管理大規模的 HoloLens 裝置。  本指南使用 [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) 範例，而任何提供 Microsoft Policy 完整支援的提供者都可以支援 HoloLens。  詢問您的行動裝置管理提供者是否支援 HoloLens 2。

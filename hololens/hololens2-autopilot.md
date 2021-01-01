@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
-ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
+ms.openlocfilehash: 23a850022a686389669e96e987274cc6481b936e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "11205765"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253240"
 ---
 # 適用於 HoloLens 2 的 Windows Autopilot
 
@@ -255,7 +255,7 @@ ms.locfileid: "11205765"
 
 一旦在 HoloLens 2 上將 TenantLockdown Csp 的 RequireNetworkInOOBE 節點設定為 true，則在 OOBE 中則不允許下列作業： 
 - 使用執行階段佈建建立本機使用者 
-- 透過執行階段佈建執行 AAD 加入操作 
+- 透過執行階段佈建執行 Azure AD 加入作業 
 - 選取在 OOBE 體驗中擁有裝置的人員 
 
 #### 如何使用 Intune 進行設定？ 
