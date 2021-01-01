@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162940"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253150"
 ---
 # 透過 HoloLens 裝置收集與使用診斷資訊
 
@@ -34,7 +34,7 @@ HoloLens 使用者與系統管理員可以從四種不同的方法中選擇，�
 - 設定 App
 
 > [!IMPORTANT]  
-> 裝置診斷記錄包含個人可識別資訊 (PII) ，例如使用者在一般作業中啟動哪些程式或應用程式。 如果有多個使用者共用 HoloLens 裝置 (例如，使用者使用不同的 Microsoft Azure Active Directory 登入相同的裝置 (AAD) 帳戶) 診斷記錄可能包含適用于多個使用者的 PII 資訊。 如需詳細資訊，請參閱 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+> 裝置診斷記錄包含個人可識別資訊 (PII) ，例如使用者在一般作業中啟動哪些程式或應用程式。 當多個使用者共用 HoloLens 裝置時 (例如，使用者使用不同的 Microsoft Azure Active Directory (Azure AD) 帳戶登入相同的裝置) 診斷記錄可能包含適用于多個使用者的 PII 資訊。 如需詳細資訊，請參閱 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 下表比較三個集合方法。 在表格後面的章節中，方法名稱連結至更詳細的資訊。
 

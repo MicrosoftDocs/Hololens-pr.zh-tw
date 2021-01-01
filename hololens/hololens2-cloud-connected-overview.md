@@ -14,34 +14,34 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ba3f826360f999a72e671166af7a19d19ce9c567
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196286"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253180"
 ---
 # 部署指南–雲端連線的 HoloLens 2 （含遠端協助）-概覽
 
 本指南可協助 IT 專業人員規劃 Microsoft HoloLens 2 裝置並將其部署至組織，其總體目標是將這些裝置雲與您的組織連線至您的組織，並準備好使用動態365遠端協助。 請記住，這將會成為您組織在各種 HoloLens 2 使用案例中部署的概念驗證模型。
 
-在本指南中，我們將說明如何將裝置註冊到您的裝置管理、根據需要套用授權，以及驗證您的最終使用者是否能夠在設定裝置時立即使用遠端協助。 若要這樣做，我們將會透過重要的基礎結構部分來設定並執行，以使用 HoloLens 2 來實現規模的部署。
+在指南中，我們將說明如何將裝置註冊到裝置管理，視需要套用授權，並確認您的使用者能夠立即在裝置設定中使用遠端協助。 若要這樣做，我們將會透過重要的基礎結構部分來設定並執行，以使用 HoloLens 2 來實現規模的部署。
 
 ## 本指南中
 
-本指南具有在您的 HoloLens 裝置上設定遠端協助的特定目標。 我們將涵蓋完成該目標所需的 necessities。 為了維持焦點在這個目標上，系統會預先選取某些準備和設定，以便針對此部署進行優化，或減少設定所需的專案。 您將會收到這些選項的通知，您可以根據您的業務需求來自訂您的部署。
+本指南具有在您的 HoloLens 裝置上設定遠端協助的特定目標。 我們將涵蓋完成該目標所需的 necessities。 為了維持焦點在這個目標上，特定的準備和設定將會預先選取，以便針對此部署進行優化，或減少設定所需的專案。 您將會收到這些選項的通知，您可以根據您的業務需求來自訂您的部署。
 
-這項設定與 [案例 a：部署到雲端連接裝置](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)一樣，這是許多概念驗證部署的好選項，這些會包括：
+這項設定與 [案例 a：部署到雲端連接裝置](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)一樣，這是許多概念驗證部署的好選項，其中包括：
 
 - Wi-Fi 的網路通常會完全開啟網際網路和雲端服務
 - 使用 MDM 自動註冊的 Azure AD 聯接--MDM (Intune) 管理
-- 使用者以自己的公司帳戶登入 (AAD) 
+- 使用者以自己的公司帳戶登入 (Azure AD) 
   - 每個裝置支援單一或多個使用者
 - 根據特定的使用案例，從完全開啟到單一應用程式亭，就會套用各種不同的裝置鎖定設定等級
 
 ![雲端連接案例](./images/cloud-connected-deployment-chart.png)
 
-本指南中不會套用其他裝置限制或設定，但我們建議您在完成後探索這些選項。
+本指南中不會套用任何其他裝置限制或設定，但我們建議您在完成後探索這些選項。
 
 ## 瞭解遠端協助
 
@@ -55,8 +55,8 @@ ms.locfileid: "11196286"
 
 > [!div class="checklist"]
 > - [瞭解 HoloLens 2 裝置的基礎結構基礎。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [如果您沒有&#39;，請進一步瞭解 AAD 並設定一個。](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [瞭解身分識別管理，以及如何最好地設定 AAD 帳戶。](hololens2-cloud-connected-prepare.md#identity-management)
+> - [深入瞭解 Azure AD，並設定一個（如果您不&#39;t）。](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [瞭解身分識別管理，以及如何最好地設定 Azure AD 帳戶。](hololens2-cloud-connected-prepare.md#identity-management)
 > - [深入瞭解 MDM，如果您沒有&#39;t 已準備好，就可以使用 Intune 進行設定。](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [瞭解遠端協助的網路需求。](hololens2-cloud-connected-prepare.md#network)
 > - [選擇性： VPN 連接至組織資源](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
@@ -65,7 +65,7 @@ ms.locfileid: "11196286"
 
 > [!div class="checklist"]
 > - [如何建立使用者和群組。](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [如何在 AAD 中設定自動註冊。](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [如何在 Azure AD 中設定自動註冊。](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
 > - [如何指派您的應用程式授權。](hololens2-cloud-connected-configure.md#application-licenses)
 
 部署

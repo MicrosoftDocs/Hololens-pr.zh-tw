@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0e9222df2c387fab8f61a585d3a7f3966b9ecd31
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196284"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253050"
 ---
 # 準備-雲端連接指南
 
-本文結束時，您將會設定 AAD、MDM，並瞭解如何使用 AAD 帳戶和網路需求。 本指南的本節將協助您和您的組織準備將 HoloLens 2 部署到雲端，並使用 Dynamics 365 遠端協助。 它將會超越您基礎結構每個部分的重要性，並提供輔助線連結，協助您視需要設定這些元件。
+在本文的結尾，您將會設定 Azure AD、MDM，並深入瞭解如何使用 Azure AD 帳戶和網路需求。 本指南的本節將協助您和您的組織準備將 HoloLens 2 部署到雲端，並使用 Dynamics 365 遠端協助。 它將會超越您基礎結構每個部分的重要性，並提供輔助線連結，協助您視需要設定這些元件。
 
 ## 基礎結構基本資訊
 
@@ -40,11 +40,11 @@ Azure AD 是一種雲端式的目錄服務，可提供身分識別和存取管�
 
 員工只能使用一個帳戶來初始化裝置，因此您的組織必須先控制要啟用哪個帳戶才能&#39;s。 所選擇的帳戶將決定誰能夠控制裝置，而且會影響您的管理功能。
 
-在本指南中，我們已選取 [針對使用的身分 [識別](https://docs.microsoft.com/hololens/hololens-identity) ]，我們將會使用 AAD 帳戶或 Azure Active Directory 帳戶。 您想要使用 AAD 帳戶有數個優點，例如：
+在本指南中，我們已選取 [針對使用的身分 [識別](https://docs.microsoft.com/hololens/hololens-identity) ，我們將會使用 azure AD 帳戶或 Azure Active Directory 帳戶]。 我們想要使用的 Azure AD 帳戶有數個優點，例如：
 
-- 員工使用其 Azure AD 帳戶在 Azure AD 中註冊裝置，並自動使用組織&#39;s MDM 方案 (AAD + MDM）註冊該裝置，而需要 Azure AD Premium) 。
-- AAD 帳戶支援 [單一登入](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)。 當使用者登入遠端協助時，系統會辨識來自已登入的 AAD 使用者身分識別，且使用者會登入 app 以簡化體驗。
-- AAD 帳戶透過[Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)提供其他[驗證選項](https://docs.microsoft.com/hololens/hololens-identity)。 除了虹彩登入使用者之外，您還可以從另一個裝置登入，或使用 FIDO 安全性金鑰。
+- 員工使用其 Azure AD 帳戶在 Azure AD 中註冊裝置，並自動向組織&#39;的 MDM 方案註冊， (Azure AD + MDM –需要 Azure AD Premium) 。
+- Azure AD 帳戶支援 [單一登入](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)。 當使用者登入遠端協助時，系統就會辨識已登入的 Azure AD 使用者身分識別，且使用者會登入 app 以簡化體驗。
+- Azure AD 帳戶透過[Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)提供其他[驗證選項](https://docs.microsoft.com/hololens/hololens-identity)。 除了虹彩登入使用者之外，您還可以從另一個裝置登入，或使用 FIDO 安全性金鑰。
 
 ### 行動裝置管理
 

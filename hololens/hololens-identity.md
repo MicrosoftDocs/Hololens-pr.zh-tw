@@ -1,7 +1,7 @@
 ---
 title: 管理 HoloLens 的使用者身分識別和登入
 description: 管理使用者身分識別、安全性和 HoloLens 的登入。
-keywords: HoloLens、使用者、帳戶、aad、adfs、microsoft 帳戶、msa、認證、參考
+keywords: HoloLens、使用者、帳戶、AAD、Azure AD、adfs、microsoft 帳戶、msa、認證、參考
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201357"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253220"
 ---
 # 管理 HoloLens 的使用者身分識別和登入
 
@@ -36,11 +36,11 @@ HoloLens 支援多種類型的使用者身分識別。 您可以使用一或多�
 
 | 身分識別類型 | 每個裝置的帳戶 | 驗證選項 |
 | --- | --- | --- |
-| [Azure Active Directory (AAD) ](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web 身分認證提供者</li><li>Azure 驗證器應用程式</li><li>生物特徵 (虹彩) &ndash; HoloLens 2 僅 <sup> 1</sup> </li><li>Hololens &ndash; (1 gen) （hololens 2 所需）的 PIN 選用</li><li>密碼</li></ul> |
+| [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web 身分認證提供者</li><li>Azure 驗證器應用程式</li><li>生物特徵 (虹彩) &ndash; HoloLens 2 僅 <sup> 1</sup> </li><li>Hololens &ndash; (1 gen) （hololens 2 所需）的 PIN 選用</li><li>密碼</li></ul> |
 | [Microsoft 帳戶 (MSA) ](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | sr-1 | <ul><li>僅限生物特徵 (虹彩) &ndash; HoloLens 2</li><li>Hololens &ndash; (1 gen) （hololens 2 所需）的 PIN 選用</li><li>密碼</li></ul> |
 | [本機帳戶](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | sr-1 | 密碼 |
 
-雲端線上帳戶 (AAD 與 MSA) 提供更多功能，因為他們可以使用 Azure 服務。  
+雲端線上帳戶 (Azure AD 和 MSA) 提供更多功能，因為他們可以使用 Azure 服務。  
 
 > [!NOTE]
 > 1-雖然 HoloLens 2 裝置可支援最多64個 Azure AD 帳戶，但只有10個帳戶才能註冊虹彩驗證。 這會與 Windows Hello 企業版的其他生物識別驗證選項對齊。 [深入閱讀這裡。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
@@ -61,20 +61,20 @@ HoloLens 支援多種類型的使用者身分識別。 您可以使用一或多�
 
 連結帳戶不會分隔在裝置上建立的使用者資料，例如影像或下載專案。  
 
-###  (僅限 AAD) 設定多使用者支援
+### 設定多使用者支援 (僅限 Azure AD) 
 
-HoloLens 支援來自同一個 AAD 租使用者的多個使用者。 若要使用此功能，您必須使用屬於貴組織的帳戶來設定裝置。 接著，來自相同租使用者的其他使用者可以從登入畫面登入裝置，或在 [開始] 面板上敲擊 [使用者] 磚。 一次只能有一個使用者登入。 當使用者登入時，HoloLens 就會登出先前的使用者。 裝置上的第一個使用者會被視為設備擁有者，除了 AAD Join 的情況以外，請 [進一步瞭解裝置擁有](security-adminless-os.md#device-owner)者。
+HoloLens 支援來自同一個 Azure AD 租使用者的多個使用者。 若要使用此功能，您必須使用屬於貴組織的帳戶來設定裝置。 接著，來自相同租使用者的其他使用者可以從登入畫面登入裝置，或在 [開始] 面板上敲擊 [使用者] 磚。 一次只能有一個使用者登入。 當使用者登入時，HoloLens 就會登出先前的使用者。 裝置上的第一個使用者會被視為裝置擁有者，除了 Azure AD Join 的情況以外，請 [進一步瞭解裝置擁有](security-adminless-os.md#device-owner)者。
 
 所有使用者都可以使用安裝在裝置上的應用程式。 不過，每個使用者都有自己的應用程式資料和喜好設定。 從裝置移除 app，就會將它移除給所有使用者。  
 
-使用 AAD 帳戶設定的裝置將不允許以 Microsoft 帳戶登入裝置。 所有使用的後續帳戶必須是與裝置來自相同租使用者的 AAD 帳戶。 您仍然可以 [使用 Microsoft 帳戶登入](hololens-identity.md#setting-up-multi-user-support-aad-only) 支援 (的 app，例如 microsoft Store) 。 若要從使用 AAD 帳戶變更為登錄到裝置的 Microsoft 帳戶，您必須 [reflash 裝置](hololens-recovery.md#clean-reflash-the-device)。
+使用 Azure AD 帳戶設定的裝置將不允許以 Microsoft 帳戶登入裝置。 所有使用的後續帳戶必須是與裝置來自相同租使用者的 Azure AD 帳戶。 您仍然可以 [使用 Microsoft 帳戶登入](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) 支援 (的 app，例如 microsoft Store) 。 若要從使用 Azure AD 帳戶變更為 Microsoft 帳戶登入裝置，您必須 [reflash 裝置](hololens-recovery.md#clean-reflash-the-device)。
 
 > [!NOTE]
-> **HoloLens (1 gen) ** 開始支援 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 中的多個 AAD 使用者，成為 [windows 全息版企業](hololens-upgrade-enterprise.md)的一部分。
+> **HoloLens (1 gen) ** 開始支援 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 中的多個 Azure AD 使用者，成為 [windows 全息版企業](hololens-upgrade-enterprise.md)版的一部分。
 
 ## 移除使用者
 
-您可以移至 [ **Settings**  >  **Accounts**  >  **其他人**] 的 [設定帳戶]，將使用者從裝置移除。 此動作也會從裝置移除該使用者的所有應用程式資料，以回收空間。  
+您可以移至 [ ****  >  ****  >  **其他人**] 的 [設定帳戶]，將使用者從裝置移除。 此動作也會從裝置移除該使用者的所有應用程式資料，以回收空間。  
 
 ## 在 app 內使用單一登入
 

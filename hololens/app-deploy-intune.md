@@ -1,6 +1,6 @@
 ---
 title: Intune 和公司入口網站
-description: intune、app 管理、app、公司入口網站、入口網站
+description: Intune、app 管理、app、公司入口網站、入口網站
 keywords: intune、app 管理、app、公司入口網站、入口網站、hololens
 author: evmill
 ms.author: v-evmill
@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
-ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
+ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247215"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252654"
 ---
 # Intune 與公司入口網站
 
@@ -32,28 +32,29 @@ ms.locfileid: "11247215"
 
 1. 將應用程式上傳到某個商務用，或將自訂應用程式上傳到您的 Intune 租使用者。 另請參閱： [企業 app 管理](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management)。
 
-2. [將您的 App 指派給群組](https://docs.microsoft.com/mem/intune/apps/apps-deploy)。 根據您所選擇的作業類型，您可以自動傳送應用程式，或在您有應用程式的選取專案時，輕鬆地將 app 納入。 
+2. [將您的 App 指派給群組](https://docs.microsoft.com/mem/intune/apps/apps-deploy)。 根據您選擇的作業類型，如果您有應用程式，就可以自動傳送應用程式，或隨時將 app 納入。
 
-> [!NOTE] 
+> [!NOTE]
 > 建立 appx 套件時，請務必考慮包括您要部署至的裝置 (s) 的架構。 HoloLens 2 是 ARM64，而 HoloLens (1 Gen) 是 x86。 如果您打算使用混合式裝置環境，就可以在單一 appx 套件中包含這兩者。
 
 ## 工作分派類型
 
-如果您想要在註冊之後在裝置上自動安裝您的 app，您應該選取該群組 (s **所需** 的) 。
-如果您想要讓您的 app 可透過公司入口網站下載至已註冊的應用程式，請選取 [ **適用于已註冊的裝置**]。
+若要讓您的應用程式在註冊之後自動安裝在裝置上，您應該針對該群組選取 [ (s]) **所需** 的。
+若要讓您的 app 可供下載至透過公司入口網站註冊的裝置，請選取 [ **適用于已註冊的裝置**]。
 
+## End-User 體驗
 
-## 使用者體驗
-
-在 Intune 上設定設定之後，您就可以讓使用者接收您選取的應用程式。
+在 Intune 上設定好配置之後，您就可以讓使用者接收您選取的 app。
 
 請依照下列步驟，自動取得您的 app (s) ：
-1. 向您的租使用者註冊您的裝置。 
-2. 裝置完成註冊後，您應該會在您的裝置上收到 app。 
-3. 如果您沒有立即看到您的應用程式，請移至 [**設定**  >  **帳戶**  >  **工作] 或 [學校**  >  **youraccount**資訊]，然後向下滾動以查看已安裝 app 狀態的相關資訊。
+
+1. 向您的租使用者註冊您的裝置。
+2. 裝置完成註冊後，您應該會在您的裝置上收到 app。
+3. 如果您沒有立即看到您的應用程式，請移至 [**設定**  >  **帳戶**]  >  **工作或學校**  >  *您的帳戶*資訊，然後向下滾動以查看已安裝 app 狀態的相關資訊。
 
 如何透過公司入口網站取得 app：
-1. 開啟 [ **開始] 功能表** ，然後選取 [ **Microsoft Store**]。 
+
+1. 開啟 [ **開始] 功能表** ，然後選取 [ **Microsoft Store**]。
 2. 搜尋 **公司入口網站** 並下載 app。
 3. 登入您的帳戶。
 4. 選取您想要接收並下載的 app。

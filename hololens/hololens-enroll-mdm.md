@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5adc1b48c4603f3a9d3145bef4f1d8aa1867a9d1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 7c17cbf88fc2e7a6dcd9aa600ad6e6910edb29a8
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102322"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253230"
 ---
 # 在 MDM 中註冊 HoloLens
 
@@ -36,9 +36,9 @@ ms.locfileid: "11102322"
 
 根據在 OOBE 或登入登入時所選擇的身分識別類型，有不同的註冊方法。 若要深入瞭解 HoloLens 上的每個身分識別類型，請流覽 [此頁面](hololens-identity.md)。
 
-- 如果身分識別是 AAD，請在 OOBE 期間或 [**設定] 應用程式**  ->  **存取工作或學校**  ->  **連接**按鈕期間進行。
-    - 針對 AAD，只有在使用註冊 Url 設定 AAD 時，才會發生自動 MDM 登記。
-- 如果身分識別是 AAD，且已預先向 Intune MDM server 指派了特定配置設定檔，則在 OOBE 期間會自動進行 AAD 加入與註冊。
+- 如果身分識別是 Azure AD，請在 OOBE 期間或**設定應用程式**  ->  **存取工作或學校**  ->  **連接**按鈕期間進行。
+    - 針對 Azure AD，只有當 Azure AD 已設定註冊 Url 之後，才會發生自動 MDM 註冊。
+- 如果身分識別是 Azure AD，且已在已指派特定配置設定檔的 Intune MDM server 上預註冊了裝置，則在 OOBE 期間 Azure AD-Join 和註冊會自動進行。
     - 也稱為[19041.1103 + 組建](hololens-release-notes.md#windows-holographic-version-2004)中提供的[Autopilot 流程](hololens2-autopilot.md)。
 - 如果身分識別為 MSA，請使用 [**設定應用程式**  ->  **存取工作**  ->  **] 或 [** 學校連線] 按鈕。
     - 也稱為 [新增工作帳戶] (AWA) 流程]。
@@ -49,11 +49,11 @@ ms.locfileid: "11102322"
 
 ## 在 MDM 中自動註冊
 
-如果您的組織使用 Azure Active Directory (Azure AD) 和 MDM 解決方案 (其接受驗證用的 AAD 權杖，目前只有 Microsoft Intune 和 AirWatch 有支援)，您的 IT 系統管理員可以設定 Azure AD，在使用者使用 Azure AD 帳戶登入後自動允許 MDM 註冊。 [了解如何設定 Azure AD 註冊。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+如果您的組織使用 Azure Active Directory (Azure AD) ，以及可接受 Azure AD 權杖以進行驗證 (目前僅支援 Microsoft Intune 和 AirWatch) 的 MDM 方案，您的 IT 管理員可以將 Azure AD 設定為在使用者使用其 Azure AD 帳戶登入後自動允許 MDM 註冊。 [了解如何設定 Azure AD 註冊。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 當啟用自動註冊，就不需要手動註冊。 當使用者使用 Azure AD 帳戶登入時，裝置會在完成初次執行體驗後在 MDM 註冊。
 
-當裝置已 AAD 加入時，可能會影響被認為是 [裝置擁有](security-adminless-os.md#device-owner)者的人員。
+如果裝置已加入 Azure AD，可能會影響認為該 [裝置擁有](security-adminless-os.md#device-owner)者的人員。
 
 ## 從 Intune 取消註冊 HoloLens
 

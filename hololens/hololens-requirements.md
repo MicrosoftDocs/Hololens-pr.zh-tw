@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195586"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253210"
 ---
 # HoloLens 2 企業版部署與管理
 
@@ -140,7 +140,7 @@ HoloLens 2 使用的是一流的技術，包括相機、麥克風、喇叭、USB
 
 ### MDM Device 登記
 
-針對企業部署，建議您只使用 Azure AD 聯結和自動 MDM 登記 (AAD + MDM) ，將 [裝置登記](https://docs.microsoft.com/hololens/hololens-enroll-mdm) 為僅限企業裝置。 這需要 Azure AD Premium，且支援自動註冊到數個 MDM 提供程式（包括 Intune）。
+在企業版部署中，建議您先使用 Azure AD 連接和自動 MDM 註冊 (Azure AD + MDM) ，將 [裝置註冊](https://docs.microsoft.com/hololens/hololens-enroll-mdm) 到 MDM。 這需要 Azure AD Premium，且支援自動註冊到數個 MDM 提供程式（包括 Intune）。
 
 深入瞭解自行部署註冊方法 [Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot)。
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: beee64159415c0635812463f81c0b5565e44e4a8
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196280"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252694"
 ---
 # 維護-雲端連接指南
 
@@ -29,11 +29,11 @@ ms.locfileid: "11196280"
 
 瞭解如何 [管理 HoloLens 更新](https://docs.microsoft.com/hololens/hololens-updates) ，包括排程的天數、排程時間，以及在裝置上設定使用中的時間，讓它會在工作時間以外更新。
 
-[遠端協助] 是 In-Box 應用程式，可以透過 Microsoft Store app 進行更新。 對於透過 Microsoft Store 下載的所有 app，都可以手動 [透過 Microsoft store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) 應用程式本身進行更新。
+遠端協助是 In-Box 應用程式，可以透過 Microsoft Store app 進行更新。 對於透過 Microsoft Store 下載的所有 app，都可以手動 [透過 Microsoft store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) 應用程式本身進行更新。
 
 ## 支援方案
 
-支援方案是您必須準備好的工作。 讓某個人或群組訓練了 HoloLens 裝置上的註冊程式，以及貴組織內的 HoloLens 裝置的一般用途，都很有説明。 為了讓您的使用者能夠更快速地解決問題，我們建議您將升級程式的處理方式與此類似：
+支援方案是您必須準備好的工作。 讓某個人或群組訓練了 HoloLens 裝置上的註冊程式，以及貴組織內的 HoloLens 裝置的一般用途，都很有説明。 為了讓您的使用者能夠更快速地解決問題，我們建議您以類似的方式來處理升級程式：
 
 1. 您的支援中心。
 2. 您的 HoloLens 專家小組

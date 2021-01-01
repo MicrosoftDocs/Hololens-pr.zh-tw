@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
-ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
+ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182004"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253030"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -82,8 +82,8 @@ ms.locfileid: "11182004"
 
 | &nbsp; |支援的使用者類型 | 自動登入 | 多個存取層級 |
 | --- | --- | --- | --- |
-|單一應用程式資訊站 |受管理的服務帳戶 (Azure Active Directory (AAD) 或本機帳戶中的 MSA)  |是 |否 |
-|多個應用程式 Kiosk |AAD 帳戶 |否 |是 |
+|單一應用程式資訊站 |受管理的服務帳戶 (Azure Active Directory 中的 MSA)  (Azure AD) 或本機帳戶 |是 |否 |
+|多個應用程式 Kiosk |Azure AD 帳戶 |否 |是 |
 
 如需如何使用這些功能的範例，請參閱下表。
 
@@ -143,7 +143,7 @@ ms.locfileid: "11182004"
 通常會為使用者或使用者群組啟用展臺。 不過，如果您打算撰寫自己的 XML 資訊亭，您可能會想要考慮全域指派的存取權，而不論身分識別，都能在裝置層級套用展臺。 如果您想瞭解 [有關全域指派的 Access 網亭的詳細資訊，請參閱。](hololens-global-assigned-access-kiosk.md)
 
 #### 如果您要建立 XML 檔案：
--   您有許多 [建立多個展臺設定檔]，並指派給不同的使用者/群組。 例如，有許多應用程式的 AAD 群組的 Kiosk，以及具有多個 app 展臺的訪客（具有單一 app）。
+-   您有許多 [建立多個展臺設定檔]，並指派給不同的使用者/群組。 例如，您的 Azure AD 群組有許多應用程式的 Kiosk，以及有多個 app 展臺的訪客（含單一 app）。
 -   您的 kiosk 配置將稱為 **設定檔識別碼** ，且具有 GUID。
 -   您將會在 [配置] 區段中指派該設定檔，方法是指定使用者類型並對 **DefaultProfile 識別碼**使用相同的 GUID。
 - 您可以建立自訂的 OMA URI 裝置設定檔，並將其套用至 HoloLens 裝置群組（使用 URI 值：/Device/Vendor/MSFT/AssignedAccess/Configuration），以建立 XML 檔案，但仍透過 MDM 將它套用到裝置
@@ -151,7 +151,7 @@ ms.locfileid: "11182004"
 #### 如果您是在 Intune 中建立展臺。
 -   每個裝置可能只會收到單一展臺設定檔，否則會產生衝突，並根本不接收任何展臺設定。 
     -   其他類型的設定檔與原則，例如與 kiosk 配置設定檔無關的裝置限制，請勿與 kiosk 設定設定檔發生衝突。
--   系統會針對屬於使用者登入類型的所有使用者啟用 Kiosk，這將會與使用者或 AAD 群組設定。 
+-   系統會針對屬於使用者登入類型的所有使用者啟用 Kiosk，這將會使用使用者或 Azure AD 群組進行設定。 
 -   設定 Kiosk 設定之後， **使用者登入類型** (可以登入 Kiosk 的使用者) 且已選取這些應用程式，則仍必須將裝置設定指派給群組。 指派的群組 (s) 決定哪些裝置會收到 Kiosk 裝置設定，但在啟用資訊亭時不會與之互動。 
     - 如需在 Intune 中指派設定檔的效果的完整討論，請參閱 [在 Microsoft Intune 中指派使用者和裝置設定檔](https://docs.microsoft.com/intune/configuration/device-profile-assign)。
 
@@ -176,7 +176,7 @@ ms.locfileid: "11182004"
 |部署多應用程式亭    | 否            | 是                  | 是  |
 |僅部署到本機裝置 | 是           | 是                  | 否   |
 |使用開發人員模式進行部署 |必要       | 不需要            | 不需要   |
-|使用 Azure Active Directory (AAD) 進行部署  | 不需要            | 不需要                   | 必要  |
+|使用 Azure Active Directory (Azure AD) 進行部署  | 不需要            | 不需要                   | 必要  |
 |自動部署      | 否            | 否                   | 是  |
 |部署速度            | 快速       | 快速                 | 慢速 |
 |在縮放時部署 | 不建議使用    | 建議執行        | 建議執行 |
@@ -204,7 +204,7 @@ ms.locfileid: "11182004"
 ### <a id="mdmprofile"></a>MDM，步驟 2 &ndash; 建立 kiosk 配置設定檔
 
 1. 開啟 [Azure](https://portal.azure.com/) 入口網站，並登入您的 Intune 系統管理員帳戶。
-1. 選取 [ **Microsoft Intune**裝置設定]-[設定檔]  >  **Device configuration - Profiles**  >  **建立設定檔**。
+1. 選取 [ **Microsoft Intune**裝置設定]-[設定檔]  >  ****  >  **建立設定檔**。
 1. 輸入設定檔名稱。
 1. 選取 [**平臺**  >  **Windows 10 及更新版本**]，然後選取 [**配置檔案類型**  > **裝置限制**]。
 1. 選取 [**設定**  >  **Kiosk**]，然後選取下列其中一項：
@@ -311,7 +311,7 @@ ms.locfileid: "11182004"
 
 #### <a id="ppkioskguest"></a>選用：新增來賓對 kiosk 設定的存取權
 
-在 XML 檔案的 [配置] [ **Configs**區段](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)中，您可以將名為「**訪客**」的特殊群組設定為允許來賓使用資訊站。 如果將 kiosk 設定為支援 **「訪客特殊」** 群組，則會在登入頁面中新增「**來賓**」選項。 **來賓**帳戶不需要密碼，而且與該帳戶相關聯的任何資料都會在帳戶登出時刪除。
+在 XML 檔案的 [配置] [ **** 區段](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)中，您可以將名為「**訪客**」的特殊群組設定為允許來賓使用資訊站。 如果將 kiosk 設定為支援 **「訪客特殊」** 群組，則會在登入頁面中新增「**來賓**」選項。 **來賓**帳戶不需要密碼，而且與該帳戶相關聯的任何資料都會在帳戶登出時刪除。
 
 若要啟用 **來賓** 帳戶，請將下列程式碼片段新增至您的 KIOSK 配置 XML：
 
@@ -475,10 +475,10 @@ ms.locfileid: "11182004"
 
 ![[展臺模式] 在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
-### 為離線資訊站快取 AAD 群組成員資格
-- 已啟用離線亭，以使用 AAD 群組，最多可達60天。
+### 針對離線展臺緩存 Azure AD 群組成員資格
+- 已啟用離線網亭，以便與 Azure AD 群組搭配使用，最多可達60天。
 
-此原則控制的天數是，您可以使用 AAD 群組成員資格快取來指派針對已登入使用者的 AAD 群組指派的存取設定。 只要將此原則值設為大於0的值，就不會再使用 cache。  
+此原則控制的天數是，可使用 Azure AD 群組成員資格快取來針對已登入使用者的 Azure AD 群組指派的存取設定。 只要將此原則值設為大於0的值，就不會再使用 cache。  
 
 Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -486,30 +486,30 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 最大值-60 天 
 
 正確使用此原則的步驟如下： 
-1. 針對使用 AAD 群組的展臺建立裝置配置設定檔，並將它指派給 HoloLens 裝置 (s) 。 
+1. 為以 Azure AD 群組為目標的 kiosk 建立裝置配置設定檔，並將它指派給 HoloLens 裝置 (s) 。 
 1. 建立自訂 OMA URI 的裝置設定，將此原則值設為所需的天數 ( # A0 0) 並將它指派給 HoloLens 裝置 (s) 。 
     1. URI 值應該在 OMA URI 文字方塊中輸入/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays。
     1. 這個值可以介於 min/max （允許）之間。
 1. 註冊 HoloLens 裝置並確認這兩個設定都已套用到裝置。 
-1. 讓 AAD 使用者1登入當網際網路可供使用時，一旦使用者登入和 AAD 群組成員資格已成功確認，就會建立快取。 
-1. 現在 AAD 使用者1可以讓 HoloLens 離線，並在 kiosk 模式使用它，只要策略值允許 X 個天數。 
-1. 步驟4和5可針對任何其他 AAD 使用者 N 進行重複。以下是任何 AAD 使用者都必須使用網際網路登入到裝置，所以至少我們可以判斷他們是對哪些使用者配置目標的 AAD 群組成員。 
+1. 讓 Azure AD 使用者1登入當網際網路可用時，使用者登入和 Azure AD 群組成員資格一經確認，就會建立快取。 
+1. 現在，Azure AD 使用者1可以離線使用 HoloLens，並將它用於 kiosk 模式（只要原則值允許 X 個天數）。 
+1. 您可以針對任何其他 Azure AD 使用者 N 重複步驟4和5。以下是任何 Azure AD 使用者都必須使用網際網路登入裝置，至少我們才能判斷他們是 Azure AD 群組的成員，其是您設定目標的資訊。 
  
 > [!NOTE]
-> 除非 AAD 使用者執行步驟4，否則會在「中斷連接」的環境中遇到失敗的行為。 
+> 在針對 Azure AD 使用者執行步驟4之前，將會在「中斷連接」的環境中遇到失敗的行為。 
 
 
 ## 適用于 HoloLens 的 XML Kiosk 程式碼範例
 
-### 針對 AAD 群組的多個 app kiosk 模式。 
-此展臺會針對 AAD 群組中的使用者部署一個資訊站，他們將會啟用一個包含3個應用程式的展臺： [設定]、[遠端協助] 和 [意見反應中心]。 若要將這個範例修改成立即使用，請務必變更以下醒目提示的 GUID，以符合您自己的 AAD 群組。 
+### 針對 Azure AD 群組的多個 app kiosk 模式。 
+此展臺會針對 Azure AD 群組中的使用者部署資訊站，他們將會啟用一個包含3個應用程式的展臺： [設定]、[遠端協助] 和 [意見反應中心]。 若要將這個範例修改成立即使用，請務必變更以下醒目提示的 GUID，以符合您自己的 Azure AD 群組。 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### 以 AAD 帳戶為目標的多個 app kiosk 模式。
-此展臺會為單一使用者部署資訊站，他們將會啟用一個包含3個應用程式的展臺： [設定]、[遠端協助] 和 [意見反應中心]。 若要將這個範例修改成立即使用，請務必變更下列的帳戶，以符合您自己的 AAD 帳戶。 
+### 針對 Azure AD 帳戶的多個 app kiosk 模式。
+此展臺會為單一使用者部署資訊站，他們將會啟用一個包含3個應用程式的展臺： [設定]、[遠端協助] 和 [意見反應中心]。 若要將這個範例修改成立即使用，請務必變更以下所述的帳戶，以符合您自己的 Azure AD 帳戶。 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

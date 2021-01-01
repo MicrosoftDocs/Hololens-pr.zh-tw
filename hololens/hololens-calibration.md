@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165040"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252527"
 ---
 # 提高視覺品質和舒適度
 
@@ -42,9 +42,9 @@ HoloLens 2 使用眼球追蹤技術來改善您觀看虛擬環境並與其互動
 
 ![調整眼球的校正提示。](./images/07-et-adjust-for-your-eyes.png)
 
-在此程序中，您會看到一組目標 (寶石)。 您在校正期間眨眼是沒關係的，但請盡量專注在寶石上，而非房間中的其他物體。  這可讓 HoloLens 了解您的眼球位置，以呈現您的全像世界。
+在此程序中，您會看到一組目標 (寶石)。 您在校正期間眨眼是沒關係的，但請盡量專注在寶石上，而非房間中的其他物體。  專注在寶石上可讓 HoloLens 了解您的眼球位置，以呈現您的全像世界。
 
-![校正提示告訴使用者保持頭部靜止，並用眼睛追蹤圓點。](./images/07-et-hold-head-still.png)
+![校正提示會告訴使用者保持頭部靜止，並用眼睛追蹤圓點。](./images/07-et-hold-head-still.png)
 
 ![使用寶石範例的校正提示。](./images/08-et-gems.png)
 

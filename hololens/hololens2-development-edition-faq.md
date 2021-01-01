@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 開發版常見問題
+title: HoloLens 2 開發版常見問題集
 description: 有關 HoloLens 2 開發版本常見問題的常見問題。
 keywords: Hololens 2 購買選項，HoloLens 選項，開發人員版本
 author: evmill
@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7ef5fd06f4d77f541047a934056cffd863962c73
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176865"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252784"
 ---
-# HoloLens 2 開發版常見問題
+# HoloLens 2 開發版常見問題集
 
 ## 一般
 
@@ -29,7 +29,7 @@ ms.locfileid: "11176865"
 
 HoloLens 2 開發版包含 HoloLens 2、$500 （在 Azure 點數中為3個月的 Unity 專業版試用，以及3個月的 Pixyz 外掛程式試用版）。
 
-### HoloLens 2 與 HoloLens 2 開發版本有何不同？ 
+### HoloLens 2 與 HoloLens 2 開發版本有何不同？
 
 您只能使用 HoloLens 2 開發版本，以便在生產設定中與 HoloLens 2 (商業版) 中的正式組建與測試搭配使用。 在購買開發版時，Microsoft 可能會自行決定如何在結帳期間提供您所識別的特定權利，例如，將特定的折扣積分或試用版兌換為有限期間內的特定 Microsoft 或協力廠商服務或工具的許可權。 [深入了解](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
@@ -43,13 +43,13 @@ HoloLens 2 開發版包含 HoloLens 2、$500 （在 Azure 點數中為3個月的
 
 ### 我可以將 HoloLens 2 (裝置只升級) 裝置至 HoloLens 2 開發版，以取得試用點數嗎？
 
-不行，我們不提供裝置傳輸方案。 無法從任何版本轉移至任何其他版本。 
+不行，我們不提供裝置傳輸方案。 無法從任何版本轉移至任何其他版本。
 
-### 什麼是 Unity Pro？ 
+### 什麼是 Unity Pro？
 
 Unity 專業版是適用于小型/中型錄音室/公司的即時3D 平臺。 它專為混合使用技術和非技術技能的小組而設計。 [深入了解](https://store.unity.com/products/unity-pro)
 
-### 什麼是 Pixyz 外掛程式？ 
+### 什麼是 Pixyz 外掛程式？
 
 Pixyz 外掛程式會讀取並轉換幾乎任何格式、優化並將它放在 Unity 中，以及將其階段提供給即時應用程式的現成資產。 [深入了解](https://unity.com/products/pixyz)
 
@@ -117,7 +117,7 @@ MRTK-Unreal 是要發行且目前僅在 HoloLens 2 上受支援的第一個 UX �
 
 ### 我的 Unity 試用版包含哪些內容？
 
-[3-行事曆 month] 專業版專業版試用版可讓專業人員在建立、運作及獲利的完整方案中，使用 Unity 來存取 Unity&#39;s 關聯的 Unity 專業試用版沒有兌換的截止時間。
+三曆個月 Unity 專業版試用版可讓專業人員在建立、操作及獲利的完整方案中，使用這種方法來存取 Unity&#39;s。 關聯的 Unity 專業試用版沒有兌換的截止時間。
 
 此選項適用于新使用者，不適用於已建立的 Unity 專業訂閱。 Unity 專業版試用程式可能受其他可在兌換中使用的條款。 審查適用 [的 &amp; 條款](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) 與 [隱私權原則](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
 
@@ -127,8 +127,8 @@ MRTK-Unreal 是要發行且目前僅在 HoloLens 2 上受支援的第一個 UX �
 
 1. 造訪 id.unity.com
 2. 使用您的 Unity ID 登入或建立帳戶
-3. 按一下 [&#39;兌換產品代碼&#39;
-4. 輸入產品代碼，然後按一下 &#39;兌換產品代碼&#39;
+3. 選取 &#39;兌換產品代碼&#39;
+4. 輸入產品代碼，然後選取 &#39;兌換產品代碼&#39;
 
 若要[深入瞭解](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)，請造訪 HoloLens 2 開發版檔
 
@@ -144,7 +144,7 @@ MRTK-Unreal 是要發行且目前僅在 HoloLens 2 上受支援的第一個 UX �
 
 ### 我的 Pixyz 外掛程式試用版包含哪些內容？
 
-可讓您存取 Pixyz 的3行事曆月份 Pixyz 外掛程式試用版，以使用完美的 tessellated 網格、有限的多邊形數和自動 UV 來建立現成的資產。 相關的 Pixyz 外掛程式試用版沒有兌換的截止時間。
+可讓您存取 Pixyz 的三行事曆月份 Pixyz 外掛程式試用版，以使用完美的 tessellated 網格、有限的多邊形數和自動 UV 來建立現成的資產。 相關的 Pixyz 外掛程式試用版沒有兌換的截止時間。
 
 此選項適用于新使用者，不會堆疊到已建立的 Pixyz 訂閱。 Pixyz 外掛程式可能會受到兌換時所做的其他條款的制約。 審查適用 [的 &amp; 條款](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) 與 [隱私權原則](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
 

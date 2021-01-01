@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 72b976560664c89b7ae3cd9270c57ead438679cd
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865572"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253120"
 ---
 # HoloLens 裝置和全像投影的常見問題
 
@@ -256,7 +256,7 @@ HoloLens 不支援藍牙音訊設定檔。 藍牙音訊裝置 (例如喇叭和�
 
 ### 我是否可以使用 Active Directory 網域服務 (AD DS) 管理 HoloLens 使用者帳戶？
 
-不。 您必須使用 Azure Active Directory (AAD) 管理 HoloLens 裝置的使用者帳戶。
+不。 您必須使用 Azure Active Directory (Azure AD) 管理 HoloLens 裝置的使用者帳戶。
 
 ### HoloLens 是否能夠進行 Automated Data Capture Systems (ADCS) 自動註冊？
 
@@ -271,7 +271,7 @@ HoloLens 不支援藍牙音訊設定檔。 藍牙音訊裝置 (例如喇叭和�
 不。 不過，您可以使用下列其中一種方法解決此問題：
 
 - 建立自訂應用程式，然後[啟用 Kiosk 模式](hololens-kiosk.md)。 自訂應用程式可以有商標，而且可以啟動其他應用程式 (例如 Remote Assist)。  
-- 將 AAD 中的所有使用者個人檔案圖片變更為您的公司標誌。 不過，這可能不適用於所有案例。
+- 將 Azure AD 中的所有使用者設定檔圖片變更為您的公司標誌。 不過，這可能不適用於所有案例。
 
 ### HoloLens (第1代) 和 HoloLens 2 提供哪些記錄功能？
 
@@ -281,8 +281,8 @@ HoloLens 不支援藍牙音訊設定檔。 藍牙音訊裝置 (例如喇叭和�
 
 ## 保護 HoloLens 裝置的相關問題
 
-請參閱[我們的 HoloLens 2 安全性資訊](security-overview.md)。
-若是 HoloLens 1 Gen 裝置，請參閱[此常見問題](hololens1-faq-security.md)。
+請參閱 [我們的 HoloLens 2 安全性資訊](security-overview.md)。
+若是 HoloLens 1 Gen 裝置，請參閱 [此常見問題](hololens1-faq-security.md)。
 
 [返回清單](#list)
 
