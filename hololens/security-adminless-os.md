@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102312"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253080"
 ---
 # 無系統管理員作業系統
 
@@ -34,9 +34,9 @@ Windows 元件還可以透過 System UWPs 運用 AppContainer 沙箱。 深入�
 
 最後，只有裝置擁有者才允許執行特定的全裝置操作，例如將裝置加入租用者或使用者管理。 此群組由裝置上的用戶透過下列步驟加入:
   * 裝置上的第一位使用者永遠都是指定擁有者。 
-    * 這項規則的例外情況是，如果裝置是 AAD 聯結，執行聯結的使用者就成為裝置擁有者。 例如，如果裝置是透過 Autopilot 加入 AAD，在這種情況下，第一個使用者登入該裝置時並未加入該裝置，因此不會成為裝置擁有者。 若要深入瞭解如何在 AAD 聯結的裝置上成為裝置擁有者，請參閱 [[指派本機系統管理員] 文件](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) （但由於系統管理員不在 HoloLens 中，請將 [本機系統管理員] 作為 [裝置擁有者]）。
+    * 這項規則的例外情況是，如果裝置已加入 Azure AD，執行加入的使用者就成為裝置擁有者。 例如，如果裝置是透過 Autopilot 加入 Azure AD，在這種情況下，第一個使用者登入該裝置時並未加入該裝置，因此不會成為裝置擁有者。 若要深入瞭解有關誰將被設為加入 Azure AD 的裝置的裝置擁有者，請參閱 [[指派本機系統管理員] 文件](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) （但由於系統管理員不在 HoloLens 中，請將 [本機系統管理員] 作為 [裝置擁有者]）。
   * 當裝置上的另一個 [擁有者] 從 [設定 UX] 中提升一個使用者為 [擁有者] 時。
-  * 如果無法再使用裝置擁有者（例如離開公司），且裝置已加入 AAD，租用者系統管理員可以在 Azure 入口網站中將裝置擁有者變更為新使用者。
+  * 如果裝置擁有者不再可用 (例如離開公司)，且裝置已加入 Azure AD，租用者系統管理員可以在 Azure 入口網站中將裝置擁有者變更為新使用者。
 Azure AD 租用者的全域系統管理員在未執行上述任一項步驟下，隱式以該裝置上的擁有者身分登入。 
 
 IT 系統管理員可以管理應用程式可以透過 [隱私權](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) 原則存取的內容。 

@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093224"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253140"
 ---
 # 在 MAC 位址受限 Wi-Fi 環境中的 HoloLens 裝置企業注冊
 
@@ -26,7 +26,7 @@ ms.locfileid: "11093224"
 
 ## 示範案例
 
-安全環境中的許多客戶對其無線或有線網路有限制，僅允許經核准的裝置（基於 MAC 位址）成功連線（在無綫存取點或 DHCP 伺服器上使用 MAC 位址篩選）。 另外，一些無線網路可由 PEAP 保護，這要求在能够成功地驗證無線網路之前，向裝置套用憑證。
+安全環境中的許多客戶對其無線或有線網路有限制，僅允許經核准的裝置 (基於 MAC 位址) 成功連線 (在無綫存取點或 DHCP 伺服器上使用 MAC 位址篩選)。 另外，一些無線網路可由 PEAP 保護，這要求在能够成功地驗證無線網路之前，向裝置套用憑證。
 
 HoloLens 裝置可能會出現兩個關鍵問題，這會導致將 HoloLens 裝置加入到網路時出現延遲和手動執行。
 
@@ -46,8 +46,8 @@ HoloLens 裝置可能會出現兩個關鍵問題，這會導致將 HoloLens 裝�
 | 解決方案 | 優點 | 需求 |
 | --- | --- | --- |
 | 具有乙太網路配接器的佈建套件 | 改善 OOBE 體驗，並允許更快的技術人員體驗。 | 與 HoloLens 相容的 USB C HubTechnician 仍需要與裝置進行互動，以便進行 MAC 擷取和 OOBE 完成 |
-| 乙太網路上具有 Intune 注册的 Autopilot  | 裝置到客戶環境的單步連線和注册可以在不與裝置互動的情况下完成 MAC 擷取 | 為客戶 AAD TenantHoloLens 相容 USB-C 網路介面卡啟用 Intune |
-| 自動報告 MAC 位址 | 在 Intune 租用戶中注册裝置後，請將 MAC 位址報告腳本給技術人員。 | Intune Powershell Commandlets |
+| 乙太網路上具有 Intune 注册的 Autopilot  | 裝置到客戶環境的單步連線和注册可以在不與裝置互動的情况下完成 MAC 擷取 | 為客戶 Azure AD TenantHoloLens 相容 USB-C 網路介面卡啟用 Intune |
+| 自動報告 MAC 位址 | 在 Intune 租用戶中注册裝置後，請將 MAC 位址報告腳本給技術人員。 | Intune PowerShell Commandlets |
 
 ## 具有乙太網路配接器的佈建套件
 
@@ -117,7 +117,7 @@ HoloLens 裝置可能會出現兩個關鍵問題，這會導致將 HoloLens 裝�
 3. 該裝置應透過乙太網路配接器自動連線到 OOBE 上的網際網路，偵測 Autopilot 設定，並自動注冊 Azure AD 和 Intune
 4. 裝置會視需要透過 Intune 套用所需的 Wi-Fi 憑證和其他設定
 5. 完成後，技術人員將能够載入 Intune（端點管理員）入口網站，並在 **首頁 -> 裝置 ->DeviceName-> 硬體** 裝置屬性頁鑽研。
-6. Wifi MAC 位址將在 Intune 入口網站中可見
+6. Wi-Fi MAC 位址將在 Intune 入口網站中可見
 
 ![透過 Intune 的 MAC 位址](images/mac-address-intune.jpg)
 
@@ -125,14 +125,14 @@ HoloLens 裝置可能會出現兩個關鍵問題，這會導致將 HoloLens 裝�
 
 ### 優點
 
-這將為技術人員提供&quot;無障礙&quot;的部署體驗，裝置能够從方塊進入 AAD 和 Intune，而無需技術人員佩戴裝置或手動與 HoloLens 環境互動。
+這將為技術人員提供&quot;無障礙&quot;的部署體驗，裝置能够從方塊進入 Azure AD 和 Intune 注冊，而無需技術人員佩戴裝置或手動與 HoloLens 環境互動。
 
 ## 向技術人員報告 MAC 位址
 
 ### 需求
 
-- 針對客戶租用戶授權 &quot;Intune Graph Powershell&quot;
-- 在技術人員機器上安裝 Intune Graph Powershell。
+- 針對客戶租用戶授權 &quot;Intune Graph PowerShell&quot;
+- 在技術人員機器上安裝 Intune Graph PowerShell。
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - 對 Intune 的&quot;受托管裝置&quot;元素的讀取存取權。 （協助技術支援人員或更高階層人員，或自訂角色）
 

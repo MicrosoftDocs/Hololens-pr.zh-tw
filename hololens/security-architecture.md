@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f8434ffe2442f270d6360018bea4b64064168d0c
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009551"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253250"
 ---
 # 安全性概觀和架構
 
@@ -32,7 +32,7 @@ Windows HoloLens 2 和作業系統架構提供下列創新的安全性功能：
   
   * **資料保護**：如果使用者的裝置遺失或遭竊，HoloLens 2 會仰賴於資料的 BitLocker 加密來以防止未授權的應用程式讀取敏感性資訊。 
   
-  * **無密碼的作業系統**：較舊的、以密碼為基礎的作業系統可能會不慎讓使用者暴露在網路釣魚威脅中，且往往需對遭入侵的帳戶負責。 Windows Holographic for Business 讓您不需對 MSA 和 AAD 登入使用密碼，並使用 Windows Hello™ 和 FIDO2 登入強化使用者身分識別保護。 
+  * **無密碼的作業系統**：較舊的、以密碼為基礎的作業系統可能會不慎讓使用者暴露在網路釣魚威脅中，且往往需對遭入侵的帳戶負責。 Windows Holographic for Business 讓您不需對 MSA 和 Azure AD 登入使用密碼，並使用 Windows Hello™ 和 FIDO2 登入強化使用者身分識別保護。 
   
     > [!NOTE]
     > 若要擁有 FIDO2 支援，裝置必須採用組建 19041 或更新版本。 

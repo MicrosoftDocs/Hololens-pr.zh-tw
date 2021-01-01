@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009511"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252970"
 ---
 # 減少使用密碼
 
@@ -52,7 +52,7 @@ ms.locfileid: "11009511"
 
 如需相關資訊，請參閱下列資訊圖表：
 
-  ![Winows Hello 登入](images/security-hello-sign-in.png)
+  ![Windows Hello 登入](images/security-hello-sign-in.png)
   
 請注意，在上面顯示的圖形中，nonce 代表「數字一次」，而且是隨機或半隨機產生的數字。 Windows Hello 生物特徵辨識或 PIN 認證設定完成之後，永遠不會離開佈建這些認證所在的裝置。 即使使用者的 Windows Hello PIN 遭竊，例如透過網路釣魚攻擊，該認證[在沒有使用者實體裝置的情況之下毫無用處](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password)。 
 
@@ -62,17 +62,17 @@ ms.locfileid: "11009511"
 
 ## 使用 Web 帳戶管理員進行單一登入 
 
-單一登入 (SSO) 可讓無密碼使用者利用使用者的個人帳戶或公司或學校帳戶登入裝置。 透過 [Web 帳戶管理員 API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)，使用者可以在所有整合的應用程式和服務上使用 SSO 自動獲得授權。
+單一登入 (SSO) 可讓無密碼使用者利用使用者的個人帳戶或公司或學校帳戶登入裝置。 透過 [Web 帳戶管理員 API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)，使用者可以在所有整合的應用程式和服務上使用 SSO 自動獲得授權。
 
 一旦透過一個應用程式新增身分識別之後，在使用者同意的情況之下，該身分識別可以提供給使用系統層級整合的所有應用程式和服務。 這可以大幅降低應用程式的登入負荷，而且能夠提供使用者順暢無阻的身分識別體驗。
 
 如需有關如何實作 Web 帳戶管理員 API 的詳細資訊，請移至[實作 Web 帳戶管理員 API](https://docs.microsoft.com/windows/uwp/security/web-account-manager)。
 
-  ![Winows Hello 登入](images/security-api-img.png)
+  ![安全性 API](images/security-api-img.png)
   
 若是有特殊驗證要求的應用程式套件，Web 帳戶管理員 (WAM) 架構可以延伸到自訂身分識別提供者。 使用者可以從 Microsoft Store 下載自訂身分識別提供者 (封裝成通用 Windows 平台 (UWP) 應用程式)，以便在與該身分識別提供者整合的其他應用程式上啟用 SSO。 
 
-如需有關實作自訂 WAM 身分識別提供者的詳細資訊，請參閱[自訂 WAM 身分識別提供者的 API 參照](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)。
+如需有關實作自訂 WAM 身分識別提供者的詳細資訊，請參閱[自訂 WAM 身分識別提供者的 API 參照](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)。
 
 ## 使用 WebAuthn 登入 Windows Hello 和 FIDO2
 
@@ -83,7 +83,7 @@ HoloLens 2 可以採用無密碼的使用者認證 (例如 Windows Hello 或 FID
 
 正如 Windows Hello 一樣，當使用者建立並註冊 FIDO2 認證時，裝置 (HoloLens 2 或 FIDO2 安全性金鑰) 會在裝置上產生私密金鑰和公開金鑰。 私密金鑰會安全地儲存在裝置上，而且只能在使用本機手勢 (例如生物特徵辨識或 PIN) 解除鎖定之後才能使用。 儲存私密金鑰時，公開金鑰會傳送到雲端中的 Microsoft 帳戶系統，並以相關聯的使用者帳戶進行註冊。
 
-使用 MSA 和 AAD 帳戶登入後，系統會將產生的編號或資料變數傳送到 HoloLens 2 或 FIDO2 裝置。 HoloLens 2 或裝置使用私密金鑰簽署身分識別。 已簽署的身分識別和中繼資料會傳回 Microsoft 帳戶系統，並使用公開金鑰加以確認。
+使用 MSA 和 Azure AD 帳戶登入後，系統會將產生的編號或資料變數傳送到 HoloLens 2 或 FIDO2 裝置。 HoloLens 2 或裝置使用私密金鑰簽署身分識別。 已簽署的身分識別和中繼資料會傳回 Microsoft 帳戶系統，並使用公開金鑰加以確認。
 
 Windows Hello 和 FIDO2 裝置會根據 HoloLens 裝置 (尤其是內建的信賴平台模組 Secure Enclave) 實作認證。 TPM Enclave 會儲存私密金鑰，需要使用生物特徵辨識或 PIN 才能解除鎖定。 同樣地，FIDO2 安全性金鑰是小型的外部裝置，內建儲存私密金鑰的 Secure Enclave，需要生物特徵辨識或 PIN 才能解除鎖定。
 
@@ -91,7 +91,7 @@ Windows Hello 和 FIDO2 裝置會根據 HoloLens 裝置 (尤其是內建的信�
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA 和 AAD 是第一批信賴憑證者，透過實作 WebAuthn 的方法支援無密碼驗證。 
+MSA 和 Azure AD 是第一批信賴憑證者，透過實作 WebAuthn 的方法支援無密碼驗證。 
 
 如需有關使用 WebAuthn 搭配應用程式和/或 SDK 的詳細資訊，請移至[適用於 Windows 10 無密碼驗證的 WebAuthn API](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis)。
 
