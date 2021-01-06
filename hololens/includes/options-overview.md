@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5995c0a1eaa7dad4e22791e9be5bf7d97b04a7ad
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 3af593ead9a6a3a18013852ac64d9991834b1250
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146140"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253937"
 ---
 # [HoloLens 2](#tab/device)
 
@@ -27,14 +27,14 @@ ms.locfileid: "11146140"
 | 以來     | 負面  |
 |---|---|
 | [針對 HoloLens 設定您的網路](../hololens-commercial-infrastructure.md)。  | 您設定您的網路。  |
-| 準備 [網路 ceritifcates](../hololens-certificates-network.md)。  | 您已準備好證書。   |
+| 準備 [網路憑證](../hololens-certificates-network.md)。  | 您已準備好證書。   |
 | 選擇 [裝置管理解決方案](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) ，並考慮您要使用的 [裝置限制](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) 。  | 您選擇的是裝置管理解決方案。   |
 
 ### 部署
 | 以來  | 負面  |
 |---|---|
 | [註冊](../hololens-enroll-mdm.md) 您的裝置。   | 您瞭解如何註冊您的裝置。   |
-| 部署您的 [應用程式](../app-deploy-overview.md)。  | 您瞭解所有應用程式部署方法 avalible 並挑選了。  |
+| 部署您的 [應用程式](../app-deploy-overview.md)。  | 您瞭解所有可用的應用程式部署方法並挑選一個。  |
 
 ### 維護
 | 以來  |  負面  |
@@ -77,15 +77,17 @@ ms.locfileid: "11146140"
 
 ## 2. 使用 HoloLens 2 和 Dynamics 365 遠端協助版本，以下是如何進行下一步。
 
+我們已建立一個指南，專門用來協助以端到端的規模部署 HoloLens 裝置，從設定 Azure Active Directory 到驗證遠端協助通話。 請參閱此 **[部署指南-雲端連線 HoloLens 2 （含遠端協助）](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview)。**
+
 | 以來  | 負面                                |
 |-------------|----------------------------------------|
-| [開始使用](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | 「遠端協助」快速入門。        |
-| [Liscene](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | [兌換遠端協助的授權]。      |
+| [入門](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | 「遠端協助」快速入門。        |
+| [授權](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | [兌換遠端協助的授權]。      |
 | [連線](https://docs.microsoft.com/hololens/hololens-network)     | 將您的裝置 (s) 連線至 Wi-fi。       |
 | [註冊](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | 向您的組織註冊裝置。 |
 
 ## 3. 為貴組織部署 HoloLens 裝置
-本節將讓您和您的組織準備好部署 HoloLens 裝置。 
+本節將讓您和您的組織準備好部署 HoloLens 裝置。
 
 ### 準備
 | 以來  | 負面  |
@@ -127,7 +129,7 @@ ms.locfileid: "11146140"
 
 ## 1. 瞭解開發版本
 
-> [!NOTE] 
+> [!NOTE]
 > 開發版本不允許與商業分散式方案一起部署。 開發版本可以在開發和/或測試應用程式的商業設定中部署 aiding。  
 
 HoloLens 2 開發版本包含 HoloLens 2、$500 （在 Azure 點數中為3個月）的 Unity 專業版試用版，以及3個月的 PiXYZ 外掛程式試用版：
@@ -143,21 +145,21 @@ HoloLens 2 開發版本包含 HoloLens 2、$500 （在 Azure 點數中為3個月
 ## 2. 兌換您的點數
 
 ### Unity
-您會收到唯一的程式碼。 兌換 Unity Pro 試用版的指示： 
-1. 造訪 [id.unity.com](http://id.unity.com/) 
+您會收到唯一的程式碼。 兌換 Unity Pro 試用版的指示：
+1. 造訪 [id.unity.com](http://id.unity.com/)
 1. 使用您的 Unity ID 登入或建立一個
-1. 按一下 [**兌換產品代碼**] 
+1. 按一下 [**兌換產品代碼**]
 1. 輸入產品代碼，然後按一下 [**兌換產品代碼**]
 
 更多關於 [如何啟動 Unity 授權](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-)的詳細資料。 如有需要，請與 [Unity 支援](https://support.unity3d.com/hc) 取得協助。  
 
 ### Pixyz
-您會收到唯一的程式碼。 兌換 Pixyz 外掛程式試用版的指示： 
+您會收到唯一的程式碼。 兌換 Pixyz 外掛程式試用版的指示：
 1. 造訪 [id.unity.com](http://id.unity.com/)
 1. 按一下 [**兌換產品代碼**]
 1. 輸入您的 Pixyz 外掛程式產品代碼，然後按一下 [**兌換產品代碼**]
 
-更多關於如何[兌換 Pixyz 授權](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)的詳細資料。 如有需要，請與 [Pixyz 支援](https://www.pixyz-software.com/support/) 人員取得協助。 
+更多關於如何[兌換 Pixyz 授權](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)的詳細資料。 如有需要，請與 [Pixyz 支援](https://www.pixyz-software.com/support/) 人員取得協助。
 
 ### Azure
 以下是一些 [適用于混合現實的常見 Azure 產品](https://azure.microsoft.com/topic/mixed-reality/) ，您可能會想要兌換您的 Azure 點數。
@@ -170,20 +172,18 @@ HoloLens 2 開發版本包含 HoloLens 2、$500 （在 Azure 點數中為3個月
 
 選擇您的引擎、下載您的工具，以及將您的鍵盤灰塵。 歡迎使用混合式現實生態系統-就是建立時間。
 
-|     以來                              |     負面                                                                                                                    | 
+|     以來                              |     負面                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 |     [開始設計及建立原型](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     在您的核心概念、互動模型和 UX 元素之間，啟動您的冒險設計混合式現實應用程式。     |
 |     [開始針對混合現實進行開發](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     選擇您的引擎、下載您的工具、新增核心構造塊，然後開始建立。                                  |
 |     [探索 Azure 雲端服務](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     使用 Azure 遠端轉譯和 Azure 空間錨點建立引人注目的沉浸式體驗。                                 |
 
 ## 其他資源
-- [請務必安裝適用于 HoloLens 開發的工具。](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
+
+- [請務必安裝適用于 HoloLens 開發的工具。](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [瞭解使用 Unity 針對 HoloLens 2 進行開發的相關資訊](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
 - [瞭解如何將 MRTK 與 Unity 結合](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)。
-- [瞭解如何部署您的建立的 app](https://docs.microsoft.com/hololens/app-deploy-overview)。 
+- [瞭解如何部署您的建立的 app](https://docs.microsoft.com/hololens/app-deploy-overview)。
 - [探索混合式現實的所有可能性](https://docs.microsoft.com/windows/mixed-reality/)。
 - [瞭解使用 Unreal 進行 HoloLens 2 的開發。](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [向您的開發人員諮詢我們的 HoloDevelopers 寬延時間頻道](https://holodevelopersslack.azurewebsites.net/)。
-
-
-
