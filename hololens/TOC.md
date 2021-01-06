@@ -118,4 +118,6 @@
 ## [適用於 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
 ## [HoloLens (第 1 代) 版本資訊](hololens1-release-notes.md)
 
-# [提供意見反應給我們](hololens-feedback.md)
+# [提供意見反應給我們]
+## [透過意見反應中樞提供意見反應給我們](hololens-feedback.md)
+## [HoloLens 文件參與指南](contributing.md)
