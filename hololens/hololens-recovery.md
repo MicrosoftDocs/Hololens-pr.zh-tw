@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253579"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254830"
 ---
 # 重新啟動、重設或復原 HoloLens 2
 
@@ -49,6 +49,7 @@ ms.locfileid: "11253579"
 在某些情況下，您可能需要手動重設裝置，而不需要使用軟體 UI。
 
 ### 標準程序
+
 1. 取下 Type-C 連接線，以中斷裝置和電源或主機電腦的連線。
 
 2. 按住**電源**按鈕 15 秒。 所有的 LED 均應關閉。
@@ -88,7 +89,7 @@ ms.locfileid: "11253579"
 
 根據預設，[進階修復小幫手] 設定為下載最新的功能版本版本，請查看此處以閱讀我們的[版本資訊](hololens-release-notes.md#)以瞭解最新功能版本。 若要取得最新的 HoloLens 2 完整刷新更新 (FFU) 套件，以透過 [進階修復小幫手] 快閃刷新您的裝置，請按一下此處下載最新的每月 HoloLens 2 影像[。](https://aka.ms/hololens2download) 此版本是最新的萬用組建。
 
-在啟動快閃刷新程序前，請確認已在 Windows 10 電腦上安裝並執行該應用程式，並準備好偵測裝置。
+在啟動快閃刷新程序前，請確認已在 Windows 10 電腦上安裝並執行該應用程式，並準備好偵測裝置。 另外，請確定您的 HoloLens 的電量至少為40%。
 
 ![HoloLens 2 乾淨快閃刷新螢幕擷取畫面](images/ARC1.png)
 
@@ -126,22 +127,21 @@ ms.locfileid: "11253579"
 
 如果 IT 環境禁止使用 Windows Store 應用程式或限制存取零售商店，則 IT 系統管理員可以透過「離線」部署路徑，提供此應用程式。
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT 系統管理員也可以透過 [系統中心設定管理員(SCCM)] 或 Intune 來分發這個應用程式。
  > - 本指南將側重於 Advance Recovery Companion，但該程式也適用於其他 [離線] 應用程式。
 
 按照下列步驟啟用部署路徑：
 1. 請移至 [商務用 Microsoft Store](https://businessstore.microsoft.com)，並使用 Azure Active Directory 身分識別登入。
 
-1. 移至 **管理-設定**。 開啟 **[購物體驗]** 底下的 **[顯示離線應用程式]**。 
+1. 移至 **管理-設定**。 開啟 **[購物體驗]** 底下的 **[顯示離線應用程式]**。
 1. 移至**為我的群組採購**並搜尋 [**_進階修復小幫手_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
 1. 將_*授權類型**變更為 **_離線_*_，然後按一下_*[管理]**。
 1. 在 **[下載套件供離線使用]** 底下，選取第二個藍色 **[下載]** 按鈕。 請確定檔案副檔名為 *.appxbundle*。
 
     - 在這個階段，如果桌上型電腦具有網際網路存取，只要按兩下套件以安裝應用程式即可。
 
-
-    - 如果目的地電腦沒有網際網路連線，請依照下列步驟進行： 
+    - 如果目的地電腦沒有網際網路連線，請依照下列步驟進行：
        1. 選取未編碼的授權，然後選取 **[產生授權]**。
        2. 在 **[所需的框架]** 底下，選取 **[下載]**。
        3. 使用 DISM 將套件與依存關係和授權一起套用。 在系統管理員的命令提示字元中執行下列命令：
@@ -153,7 +153,7 @@ ms.locfileid: "11253579"
             > 此代碼範例中的版本號碼可能不符目前可用的版本。 您可能也選取了不同於範例的下載位置。 視需要變更命令。
 
 > [!TIP]
-> 當您打算使用 Advanced Recovery Companion 離線安裝 FFU 時，下載快閃影像可能會很有用。 [**下載 HoloLens 2 目前的影像**](https://aka.ms/hololens2download)。 
+> 當您打算使用 Advanced Recovery Companion 離線安裝 FFU 時，下載快閃影像可能會很有用。 [**下載 HoloLens 2 目前的影像**](https://aka.ms/hololens2download)。
 
 其他資源：
 - [散發離線 App](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
