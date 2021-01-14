@@ -8,27 +8,41 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/10/2020
+ms.date: 1/12/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e1bdc6292dc016dde78c781db79505e2b64b0d6d
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 7c93f567921a634e5a75c274304819ec9e81b933
+ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253060"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269414"
 ---
 # HoloLens 2 版本資訊
 
 為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們會繼續發行功能、錯誤和安全性更新。 在此頁面上，您可以查看每個月的 HoloLens 新功能。 若要取得最新的 HoloLens 2 更新，您可以 [檢查更新並手動更新](hololens-update-hololens.md#check-for-updates-and-manually-update) ，或取得完整的快閃記憶體更新 (FFU) 若要透過 [ [高級恢復隨附] 將您的裝置閃爍](hololens-recovery.md#clean-reflash-the-device)，請 [在這裡下載](https://aka.ms/hololens2download)。 下載會保持最新狀態，並提供最新的一般可用組建。
 
+我們很高興能再次開始將新功能正式給 Windows 測試人員。 我們將會正式至開發人員通道，以取得最新的更新。 我們會在我們的 Windows 測試人員組建中新增更多功能與更新，繼續進行 HoloLens 測試人員 [備](hololens-insider.md) 忘稿。 令您興奮並準備好將這些更新混合在您的現實中。 
+
 >[!NOTE]
 > 若要閱讀 HoloLens 模擬器版本資訊，請 [造訪](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)封存。
 
+## Windows 全息版 20H2-2021 年1月更新
+- 組建19041.1134
+
+更新中的改進與修正：
+
+- 在裝置上有許多使用者時，在啟動、繼續和使用者切換期間改善效能。
+- 已新增 [ [研究] 模式](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)的 arm32 支援。
+
+## Windows 全息版 1903-2021 年1月更新
+- 組建18362.1091
+
+此每月品質更新不包含任何明顯的變更，我們鼓勵您試用 Windows 全息版（版本2004）的最新組建。
 
 ## Windows 全息版20H2 –2020年12月更新
 - 組建19041.1131
@@ -221,7 +235,7 @@ HoloLens 2 裝置現在支援 TenantLockdown CSP，就跟 [Windows 全息版 20H
 
 一旦在 HoloLens 2 上將 TenantLockdown Csp 的 RequireNetworkInOOBE 節點設定為 true，則在 OOBE 中則不允許下列作業： 
 - 使用執行階段佈建建立本機使用者 
-- 透過執行時間提供執行 Azure AD join 作業 
+- 透過執行階段佈建執行 Azure AD 加入作業 
 - 選取在 OOBE 體驗中擁有裝置的人員 
 
 #### 如何使用 Intune 進行設定？ 

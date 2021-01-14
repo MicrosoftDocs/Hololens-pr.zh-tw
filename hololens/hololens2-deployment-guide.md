@@ -1,24 +1,24 @@
 ---
-title: 部署指南
-description: '使用「遠端協助」進行 HoloLens 2 (的部署指南，例如) '
+title: 外部用戶端部署指南
+description: '適用于外部用戶端的 HoloLens 2 部署指南 (以遠端協助作為範例) '
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/7/2021
+ms.date: 1/12/2021
 ms.custom: ''
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0cd75fdbe5f6a4e6da87770768ce9f22bce491c0
-ms.sourcegitcommit: 58bffba63ed581351d80d13b1437aca74d7ed64a
+ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
+ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "11266362"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "11267999"
 ---
 # 使用遠端協助將 HoloLens 2 部署到外部用戶端
 
