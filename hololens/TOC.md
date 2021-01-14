@@ -48,6 +48,7 @@
 #### [雲端連接-設定](hololens2-cloud-connected-configure.md)
 #### [雲端連接-部署](hololens2-cloud-connected-deploy.md)
 #### [雲端連接-維護](hololens2-cloud-connected-maintain.md)
+### [使用遠端協助將 HoloLens 2 部署到外部用戶端](hololens2-deployment-guide.md)
 ### [離線安全](hololens-common-scenarios-offline-secure.md)
 ## 安全性
 ### [安全性概觀](security-overview.md)
