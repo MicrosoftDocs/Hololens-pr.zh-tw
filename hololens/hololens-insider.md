@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
-ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
+ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269478"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271698"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -29,7 +29,7 @@ ms.locfileid: "11269478"
 
 ## Windows 測試人員版本資訊
 
-我們很高興能再次開始將新功能正式給 Windows 測試人員。 我們將會正式至開發人員通道，以取得最新的更新。 我們會繼續更新此頁面，因為我們會在我們的 Windows 測試人員組建中新增更多功能與更新。  令您興奮並準備好將這些更新混合在您的現實中。 
+我們很高興能再次開始將新功能正式給 Windows 測試人員。 我們將會正式至開發人員通道，以取得最新的更新。 我們會繼續更新此頁面，因為我們會在我們的 Windows 測試人員組建中新增更多功能與更新。  令您興奮並準備好將這些更新混合在您的現實中。
 
 | 功能名稱                                              | 簡短描述                                                                      | 可在組建中使用 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -38,12 +38,16 @@ ms.locfileid: "11269478"
 | [預設的應用程式選擇器](#default-app-picker)                 | 針對每個檔案或連結類型選擇要啟動的應用程式                                      | 20279.1006 |
 | [Office web app](#office-web-app)                         | Office web app 的快捷方式現已列在 [所有應用程式] 中。                                   | 20279.1006 |
 | [向類型滑動](#swipe-to-type)                           | 使用手指的秘訣在全息鍵盤上「滑動」字                        | 20279.1006 |
+| [USB-C 外部麥克風支援](#usb-c-external-microphone-support) | 針對 app 和/或遠端協助使用 USB-C 麥克風。| 20279.1006 |
+| [在 Kiosk 模式中新應用程式的新 Aumid](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新設定與邊緣 app 的 Aumid | 20279.1006 |
+| [改良的 Kiosk 模式失敗處理](#kiosk-mode-behavior-changes-for-handling-of-failures) | 展臺模式會在清空 [開始] 功能表前尋找全域指派的存取權。 | 20279.1006 |
+| [設定回退診斷](#configuring-fallback-diagnostics-via-settings-app) | 在 [設定] App 中設定回退診斷行為 | 20279.1006 |
 
 ### 新的 Microsoft Edge 簡介
 
 ![舊版 Microsoft Edge 標誌的動畫至新的 Microsoft Edge 標誌](images/new-edge.gif)
 
-新的 Microsoft Edge 會 [採用 Chromium 的「開啟來源」專案](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) ，為客戶建立更佳的相容性，並為 網頁程式開發人員提供較少的網路碎片。 
+新的 Microsoft Edge 會 [採用 Chromium 的「開啟來源」專案](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) ，為客戶建立更佳的相容性，並為 網頁程式開發人員提供較少的網路碎片。
 
 透過此測試人員預覽版，第一次可將新的 Microsoft Edge 提供給 HoloLens 2 客戶！ 雖然新的 Microsoft Edge 最終會取代 HoloLens 2 上舊版的 Microsoft Edge，但測試人員目前都可使用這兩種瀏覽器。 請透過新的 Microsoft Edge 或透過[意見反應中樞](hololens-feedback.md)中的 [**傳送意見**反應] 功能，與我們的小組共用意見反應和錯誤。
 
@@ -51,16 +55,17 @@ ms.locfileid: "11269478"
 
 #### 啟動新的 Microsoft Edge
 
-有兩個版本的 Microsoft Edge 可供測試人員使用：新的 Microsoft Edge ![ 新的 Microsoft edge 圖示 ](images/new_edge_logo.png) (以藍色和綠色的漩渦圖示) ，而舊版的 microsoft edge (由白色 "e" 圖示) 所代表。 新的 Microsoft Edge 會釘選到 [開始] 功能表，當您啟動網頁連結時，系統會自動啟動。 如果您想要還原為使用舊版 Microsoft Edge 做為預設的網頁瀏覽器，請參閱以下指示來 [重設預設 app](#default-app-picker)。
+有兩個版本的 Microsoft Edge 可供測試人員使用：新的 Microsoft Edge ![ 新的 Microsoft edge 圖示 ](images/new_edge_logo.png) (以藍色和綠色的漩渦圖示) 與舊版 Microsoft edge 所代表 (由白色 "e" 圖示) 所代表。 新的 Microsoft Edge 會釘選到 [開始] 功能表，當您啟動網頁連結時，系統會自動啟動。 如果您想要還原為使用舊版 Microsoft Edge 做為預設的網頁瀏覽器，請參閱以下指示來 [重設預設 app](#default-app-picker)。
 
 > [!NOTE]
 > 當您第一次在 HoloLens 2 上啟動新的 Microsoft Edge 時，您的設定和資料將會從舊版 Microsoft Edge 中匯入。 如果您在啟動新的 Microsoft Edge 後繼續使用舊版 Microsoft Edge，新的資料將不會從舊版 Microsoft Edge 同步處理至新的 Microsoft Edge。
 
 #### 設定新 Microsoft Edge 的原則設定
 
-新的 Microsoft Edge 為 IT 專業人員提供與舊版 Microsoft Edge 相比，在 HoloLens 2 上更廣泛的瀏覽器原則。 
+新的 Microsoft Edge 為 IT 管理員提供與舊版 Microsoft Edge 相比，在 HoloLens 2 上更廣泛的瀏覽器原則。
 
 以下是一些有用的資源，可讓您深入瞭解如何管理新 Microsoft Edge 的原則設定：
+
 - [使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [舊版 Microsoft Edge 與 Microsoft Edge 的原則對應](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
 - [Google Chrome 與 Microsoft Edge 的原則對應](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
@@ -92,8 +97,10 @@ ms.locfileid: "11269478"
 **即將推出的案例與功能：**
 - WebXR 和360檢視器擴充功能
 - 在您的環境中流覽多個視窗時，內容還原以修正視窗
-- 多個視窗中同時有音訊資料流程的空間音效
 - 透過瀏覽器加入 Microsoft 團隊通話（含影片、混合現實捕獲或螢幕共用） (使用音訊加入通話的功能良好) 
+
+**預期無法運作的案例與功能：**
+- 多個視窗中同時有音訊資料流程的空間音效
 - 「看看，請說出它」
 - 列印
 
@@ -134,7 +141,7 @@ ms.locfileid: "11269478"
 
 ### 預設的應用程式選擇器
 
-當您啟動超連結或開啟的檔案類型有多個已安裝的應用程式（支援它）時，系統會顯示一個開啟的新視窗，提示您選取哪些已安裝的應用程式應該處理檔案或連結類型。 在這個視窗中，您也可以選擇讓所選取的應用程式處理檔案或連結類型「一次」或「永遠」。 
+當您啟動超連結或開啟的檔案類型有多個已安裝的應用程式（支援它）時，系統會顯示一個開啟的新視窗，提示您選取哪些已安裝的應用程式應該處理檔案或連結類型。 在這個視窗中，您也可以選擇讓所選取的應用程式處理檔案或連結類型「一次」或「永遠」。
 
 ![App 選擇器視窗](images/default-app-picker.png)
 
@@ -149,6 +156,69 @@ Office web app 已新增至 [開始] 功能表中的 [所有應用程式] 清單
 有些客戶會透過輕掃想要輸入的單字圖形，在虛擬鍵盤上快速找出「輸入」，並為全息鍵盤預覽此功能。 您可以一次在一個單字上滑動一個字，方法是將手指放在全息鍵盤的平面上，輕觸該單字的圖案，然後從鍵盤平面 withdrawing 您的手指秘訣。 您可以透過在文字之間的鍵盤移除手指，不需按下空格鍵，即可輕觸後續字詞。 如果您在鍵盤上的手指移動之後看到滑動軌跡，您就會知道該功能已正常運作。
 
 請注意，這項功能可能會因您不會對 (手指感到阻力的情況下（不像是) 的手機顯示幕）而使用。 我們正在評估此功能以供公開發行，所以您的意見反應很重要;如果您發現該功能對您有所説明，或是您有建設性的意見反應，請透過 [意見反應中樞](hololens-feedback.md)告知我們。
+
+### USB-C 外部麥克風支援
+
+> [!IMPORTANT]
+> 插入 **USB 麥克風時，不會自動將它設定為輸入裝置**。 當您在一組 USB-C 耳機中插入時，系統會看到耳機的音訊會自動重新導向至耳機，但 HoloLens OS 會將內部麥克風陣列的優先順序設為任何其他輸入裝置的上方。 **若要使用 USB-C 麥克風，請遵循下列步驟。**
+
+使用者現在可以使用 [ **音效** 設定] 面板選取 [與 USB 連接的外部麥克風]。 這可讓使用者使用自己的麥克風連接，但在錄製和應用程式中則是 USB。 USB-C 麥克風很容易啟用和使用。
+
+開啟 [**設定**] 應用程式，然後選取 [**系統**  ->  **音效**]。
+
+![音效設定](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> 若要將外部麥克風與 **遠端協助**程式搭配使用，使用者將需要按一下 [管理聲音裝置] 超連結。
+>
+> 然後使用下拉式清單將外部麥克風設定為 **預設** 或 **通訊預設值。** 選擇 [ **預設值** ] 表示將在所有位置使用外部麥克風。
+>
+> 選擇 [ **通訊預設值** ] 表示將在遠端協助和其他通訊 app 中使用外部麥克風，但 HoloLens 麥克風陣列可能仍會用於其他工作。
+
+![管理聲音裝置](images/usbc-mic-2.png)
+
+<br>
+
+![設定麥克風預設值](images/usbc-mic-3.jpg)
+
+#### 藍牙麥克風支援怎麼辦？
+
+遺憾的是，目前尚不支援 HoloLens 2 上的藍牙麥克風。
+
+#### USB-C 麥克風疑難排解
+
+請注意，某些 USB C 麥克風無法正確地將自己報告為麥克風 *和* 喇叭。 這是麥克風而不是 HoloLens 的問題。 將其中一個麥克風插入 HoloLens 時，可能會遺失聲音。 幸運的是，有一個簡單的修正程式。  
+
+在 [**設定**  ->  **系統**  ->  **音效**] 中，將內建的喇叭明確設定** (類比功能音訊驅動程式) **做為**預設裝置**。 即使隨後移除並重新連接麥克風，HoloLens 也應記住此設定。
+
+![USB-C 麥克風疑難排解](images/usbc-mic-4.png)
+
+### 在 Kiosk 模式中使用新的設定和邊緣 app
+
+當您在 [亭](hololens-kiosk.md)中包含應用程式時，IT 系統管理員通常會將 app 新增到展臺，但使用它的 App 使用者模型識別碼 (AUMID) 。 因為 [設定] 應用程式和 Microsoft Edge 應用程式都被視為新的應用程式，而與這些應用程式使用 Aumid 的舊版 app 亭一樣，則需要更新，才能使用新的 AUMID。
+
+修改 Kiosk 以包含新的應用程式時，建議您在新的 AUMID 中新增，並留下舊的 app。 這將會在使用者更新作業系統時建立輕鬆轉換，而且不需要接收新的原則就能持續使用 Kiosk。
+
+| 應用程式                    | AUMID                                                  |
+|------------------------|--------------------------------------------------------|
+| 舊版的 [設定] 應用程式       | HolographicSystemSettings_cw5n1h2txyewy！適用            |
+| 新的 [設定] 應用程式       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy！適用 |
+| 舊版 Microsoft Edge 應用程式 | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| 新的 Microsoft Edge 應用程式 | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe！MSEDGE    |
+
+### 管理失敗處理的 Kiosk 模式行為變更
+
+在舊版組建中，如果裝置的 kiosk 設定是由全域指派的存取權和 AAD 群組成員所指派的存取權組成，則如果決定 AAD 群組成員資格失敗，使用者就會看到[「開始」功能表中的 [沒有顯示](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)]。
+
+從 Windows 測試人員發行版本開始，如果在 AAD 群組 kiosk 模式期間發生失敗，則 kiosk 體驗將會回退到全域 kiosk 設定 (（如果有) 的話）。
+
+### 透過 [設定] 應用程式設定備用診斷
+
+現在，使用者可以在 [設定] App 中設定 [回退診斷](hololens-diagnostic-logs.md)的行為。 在 [設定] 應用程式中，流覽至 [**隱私權**  ->  **疑難排解**] 頁面以設定此設定。
+
+> [!NOTE]
+> 如果裝置已設定 MDM 原則，使用者將無法覆寫該行為。  
+
 
 
 

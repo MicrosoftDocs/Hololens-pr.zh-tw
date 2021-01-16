@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270719"
+ms.locfileid: "11271164"
 ---
 # HoloLens 2 硬體
 
-![HoloLens 2 側面圖](images/hololens2-exploded-medium.png)
+![HoloLens 2 側面圖](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens (第 1 代) 開始的全像式運算旅程，提供更舒適且更具視覺效果的方式，搭配在混合實境中共同作業的更多選項。
 
@@ -69,7 +69,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 | 慣性測量單位 (IMU) | 加速計、陀螺儀、磁力儀 |
 | 相機 | 8 個 MP 靜止影像、1080p30 影片 |
 
-![HoloLens 2 感應器](images/hl2-sensors.png)
+![HoloLens 2 感應器](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 請勿遮蔽圖片中指出的任何感應器。 頭部追蹤相機有非常寬廣的 FOV，除了不應加以遮蔽以外，也不應有任何項目在其周圍。

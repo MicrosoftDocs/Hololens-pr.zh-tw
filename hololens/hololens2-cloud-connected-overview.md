@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253180"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271669"
 ---
 # 部署指南–雲端連線的 HoloLens 2 （含遠端協助）-概覽
 
@@ -39,7 +39,7 @@ ms.locfileid: "11253180"
   - 每個裝置支援單一或多個使用者
 - 根據特定的使用案例，從完全開啟到單一應用程式亭，就會套用各種不同的裝置鎖定設定等級
 
-![雲端連接案例](./images/cloud-connected-deployment-chart.png)
+![雲端連接案例](./images/cloud-connected-guide-diagram.png)
 
 本指南中不會套用任何其他裝置限制或設定，但我們建議您在完成後探索這些選項。
 

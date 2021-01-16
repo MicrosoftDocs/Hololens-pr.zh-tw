@@ -13,20 +13,28 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
-ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
+ms.openlocfilehash: 7658ace4879fef401accabb95ca22e307e5f80a8
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "11267999"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271657"
 ---
 # 使用遠端協助將 HoloLens 2 部署到外部用戶端
 
-這份檔可協助 IT professions 規劃並部署 HoloLens 2 裝置，並將焦點放在遠端協助上。 [深入瞭解遠端協助](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
+本指南可協助 IT 專業人員使用下列目標，在其組織中部署 Microsoft HoloLens 2 裝置：
+
+1. 雲端連接 HoloLens 2 裝置
+1. 向外部用戶端貸款 HoloLens 2 裝置以供使用
+1. 安全的借出裝置
+
+本指南將提供適用于大部分 HoloLens 2 部署案例的 [一般 HoloLens 2 部署建議](#general-deployment-recommendations-and-instructions) ，以及客戶在部署外部使用的遠端協助時的 [常見考慮](#common-concerns) 。
 
 ## 案例描述
 
 針對本檔的用途，Contoso 公司想要將 HoloLens 2 裝置運送到外部用戶端的工廠，以進行短期或長期使用。 當用戶端需要協助服務機械時，用戶端將使用 Contoso 公司提供的認證登入 HoloLens 2 裝置，並使用 [遠端協助] 與 Contoso 公司的專家取得聯繫。
+
+深入瞭解[遠端協助。](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
 ### 此案例的需求
 
@@ -112,7 +120,7 @@ ms.locfileid: "11267999"
 1. 在 HoloLens 2 裝置上使用 [WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) 來允許或黑色 app。
 1. 將遠端協助更新為安裝程式中的最新版本。 有兩個選項可以執行此動作：
     1. 若要執行此動作，您可以移至 Windows **Microsoft 網上商店，> 遠端協助--> 與更新 App**。
-    1. 另一種方法是將 HoloLens 2 插在夜間，以進行自動更新。
+    1. 使用 [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) CSP 啟用自動更新，並讓裝置保持電源開啟來接收更新。
 1. [停](https://docs.microsoft.com/hololens/settings-uri-list) 用 [網路設定] 以外的所有 [設定] 頁面，以允許使用者連線至用戶端網站上的來賓網路。
 1. [管理 HoloLens 更新](https://docs.microsoft.com/hololens/hololens-updates)
     1. [控制 OS 更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)或允許自由流動的選項。
