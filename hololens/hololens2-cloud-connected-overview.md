@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253180"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271669"
 ---
 # <span data-ttu-id="20e43-104">部署指南–雲端連線的 HoloLens 2 （含遠端協助）-概覽</span><span class="sxs-lookup"><span data-stu-id="20e43-104">Deployment Guide – Cloud connected HoloLens 2 with Remote Assist – Overview</span></span>
 
@@ -39,7 +39,7 @@ ms.locfileid: "11253180"
   - <span data-ttu-id="20e43-118">每個裝置支援單一或多個使用者</span><span class="sxs-lookup"><span data-stu-id="20e43-118">Single or multiple users per device supported</span></span>
 - <span data-ttu-id="20e43-119">根據特定的使用案例，從完全開啟到單一應用程式亭，就會套用各種不同的裝置鎖定設定等級</span><span class="sxs-lookup"><span data-stu-id="20e43-119">Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk</span></span>
 
-![雲端連接案例](./images/cloud-connected-deployment-chart.png)
+![雲端連接案例](./images/cloud-connected-guide-diagram.png)
 
 <span data-ttu-id="20e43-121">本指南中不會套用任何其他裝置限制或設定，但我們建議您在完成後探索這些選項。</span><span class="sxs-lookup"><span data-stu-id="20e43-121">No other device restrictions or configurations will be applied in this guide, however we encourage you to explore those options after finishing.</span></span>
 
