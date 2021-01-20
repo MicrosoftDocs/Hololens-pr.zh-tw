@@ -14,16 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e52cc2f031c284b619c61ffa04f259f76397faf5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253090"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280652"
 ---
 # 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
-
-我們正在 **新增 (App 安裝程式) 的新功能，讓您在 HoloLens 2 裝置上更順暢地安裝應用程式** 。 預設會將 **未受管理的裝置的功能預設為開啟**。 為了避免中斷企業，目前 **不會對受管理的裝置提供** app 安裝程式。  
 
 > [!NOTE]
 > 此功能可在 [Windows 全息版 20H2-2020 年12月更新](hololens-release-notes.md)中取得。 請確定您的裝置已 [更新](hololens-update-hololens.md) ，才能使用此功能。
@@ -47,7 +45,7 @@ ms.locfileid: "11253090"
 ### 針對您的應用程式： 
 您 app 的解決方案設定必須是 [ **主版** ] 或 [ **發行** ]，因為 app 安裝程式會使用市集中的相依性。 查看更多關於 [建立應用程式套件](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)的資訊。
 
-透過此方法所安裝的應用程式必須經過數位簽章。 您必須使用憑證來簽署 app。 您可以從 [MS 信任的 CA 清單](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)中取得證書，在這種情況下，您不需要採取任何其他動作。 或者，您也可以簽署您自己的憑證，但必須將憑證推送到裝置上。
+透過此方法所安裝的應用程式必須經過數位簽章。 您必須使用憑證來簽署 app。 您可以從 [MS 信任的 CA 清單](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)中取得證書，在這種情況下，您不需要採取任何額外的動作。 或者，您也可以簽署您自己的憑證，但必須將憑證推送到裝置上。
 
 - 如何[使用 [簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)] 簽署 app。
 
