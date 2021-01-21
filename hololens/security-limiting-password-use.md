@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252970"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280662"
 ---
 # 減少使用密碼
 
@@ -97,7 +97,7 @@ MSA 和 Azure AD 是第一批信賴憑證者，透過實作 WebAuthn 的方法�
 
 ## 本機帳戶
 
-您可以設定單一本機帳戶以用於離線模式的部署。 本機帳戶依預設不會啟用，而且必須在裝置佈建期間設定。 本機帳戶必須使用密碼登入，而且不支援替代的驗證方法 (例如 [Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)或 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello))。 
+您可以設定單一本機帳戶以用於離線模式的部署。 本機帳戶依預設不會啟用，而且必須在裝置佈建期間設定。 他們必須使用密碼登入，而且不支援替代的驗證方法 (如 [Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)或 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello))。 
 
 您可以在 [HoloLens 身分識別](https://docs.microsoft.com/hololens/hololens-identity)中找到有關 HoloLens 使用者帳戶的詳細資料。 
 
