@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162997"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284154"
 ---
 # 使用預配套件設定 HoloLens
 
@@ -29,12 +29,12 @@ ms.locfileid: "11162997"
 
 您可以在置備套件中套用的一些 HoloLens 設定包括下列各項：
 
-- [在此](hololens1-upgrade-enterprise.md)升級至 Windows 全息企業版
+- 升級至[Windows 全息企業](hololens1-upgrade-enterprise.md)版
 - 設定本機帳戶
 - 設定 Wi-Fi 連線
 - 將憑證套用到裝置
 - 啟用開發人員模式
-- 設定 Kiosk 模式 (您可以 [在此](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)找到配置 kiosk 模式的詳細指示。
+- 遵循我們的 [詳細指示](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)來設定 Kiosk 模式。
 
 ## 預配套件 HoloLens 嚮導
 
@@ -50,7 +50,7 @@ HoloLens 嚮導可協助您設定預配套件中的下列設定：
 - 在 Azure Active Directory 中註冊裝置，或建立本機帳戶
 - 新增憑證
 - 啟用開發人員模式
-- 設定 kiosk 模式。  ([配置 kiosk 模式] 的詳細指示，請參閱 [此處](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)) 。
+- 按照 [詳細指示](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 進行) ，以設定 kiosk 模式。
 
 > [!WARNING]
 > 您必須在 Windows 10 上執行 Windows 設定設計工具，才能使用任何一個精靈設定 Azure Active Directory 註冊。
@@ -66,7 +66,7 @@ HoloLens 嚮導可協助您設定預配套件中的下列設定：
 2. **選項2：** [從 Windows 評估與部署套件 (適用于 WINDOWS 10 的 ADK) ](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)。 如果您從 Windows ADK 安裝 Windows 配置設計工具，請從 [**選取您要安裝的功能**] 對話方塊中選取 [**配置設計**工具]。 此選項不含 HoloLens 2 功能。
 
 > [!NOTE]
-> 如果您知道您將使用需要存取 Windows 配置設計工具的離線電腦，請遵循 [這裡](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) 的離線 app 安裝，以取得高級恢復隨附的內容，但讓 Windows Confiugration Desinger 您的選取範圍。 
+> 如果您知道您將使用需要存取 Windows 配置設計工具的離線電腦，請依照 [離線 app 安裝] (https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) 指示進行，以取得高級恢復隨附的相關資訊。 讓 Windows 配置設計工具選取。 
 
 ### 2. 建立預配套件
 
@@ -190,7 +190,7 @@ HoloLens 嚮導可協助您設定預配套件中的下列設定：
 
 注意：如果在裝置啟動時，已將 USB 磁片磁碟機保留在插接，則 OOBE 會列舉現有的 USB 儲存裝置，也會監視其他插入的裝置。
 
-如需在 OOBE 期間套用預配套件的詳細資訊，請繼續閱讀 [這裡](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+瞭解在 [OOBE 期間套用預配套件](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)的功能。
 
 ### 在 OOBE 中自動確認預配套件
 - 自動程式可讓使用者互動，在顯示 [預配套件] 頁面時，系統會自動套用所有列出的套件。

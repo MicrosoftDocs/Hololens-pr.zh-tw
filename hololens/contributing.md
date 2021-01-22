@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
-ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
+ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253819"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283656"
 ---
 # 對 HoloLens 檔所做的貢獻
 
@@ -233,6 +233,8 @@ Microsoft 員工：一旦您的貢獻已合併至「主要」分支之後，您�
       ![在瀏覽器中選擇 [全部儲存]](images/explorer-save.png)
       
    3. 當出現提示) 時，請確認**原始程式碼管理**中的**所有**變更 (寫入提交訊息。
+   
+      ![在原始程式碼管理中選擇 [全部提交]](images/source-control-commit.png)
       
    4. 選取 [ **同步** 處理] 按鈕，將您的變更同步回到 GitHub 上 (您的) 。
       
