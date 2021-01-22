@@ -1,6 +1,6 @@
 ---
 title: 常見案例–離線安全 HoloLens 2
-description: 透過 [提供] 進行離線安全部署和 app 部署。
+description: 瞭解如何使用 HoloLens 裝置的預配來設定離線安全部署和 app 部署案例。
 keywords: HoloLens、管理、離線、離線安全
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,16 +14,17 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d53f9ce19b020a866770b756dde6ab97b8331362
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: 03003995f1e63708652955e6217e506d53555c1b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080475"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283414"
 ---
 # 常見案例–離線安全 HoloLens 2
 
 ## 概觀
+
 本指南提供應用程式範例，以在安全環境中鎖定 HoloLens 2，以使用下列限制：
 -   停用 WiFi。
 -   停用藍牙。
@@ -31,7 +32,8 @@ ms.locfileid: "11080475"
 -   防止新增或移除預配套件。
 -   任何使用者都無法啟用上述任何受限制的元件。
 
-## 準備 
+## 準備
+
 Windows 10 電腦設定
 1. 將[最新的 HoloLens 2 OS](https://aka.ms/hololens2download)檔案直接下載到電腦。 
    1. 此設定的支援包含在組建19041.1117 和更新版本中。
@@ -42,6 +44,7 @@ Windows 10 電腦設定
 
 
 ## 設定
+
 建立安全的配置提供套件
 
 1. 在您的電腦上啟動 WCD 工具。
@@ -54,12 +57,12 @@ Windows 10 電腦設定
 
 此預配套件中設定的配置：
 
-|     項目                                                |     設定                       |     說明                                                                                                                    |
+|     項目                                                |     設定                       |     描述                                                                                                                    |
 |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 |     帳戶/使用者                                    |     本機使用者名稱 & 密碼    |     針對這些離線裝置，系統必須為裝置的所有使用者設定和共用單一使用者名稱和密碼。          |
 |     第一次體驗/HoloLens/SkipCalibration       |     True                          |     在初始裝置設定期間略過校準                                                                             |
 |     第一次體驗/HoloLens/SkipTraining          |     True                          |     在初始裝置設定期間略過裝置訓練                                                                              |
-|     第一次體驗/HoloLens/Wlan                  |     True                          |     在初始裝置設定期間略過 Wi-fi config                                                                                 |
+|     第一次體驗/HoloLens/Wlan                  |     True                          |     在初始裝置設定期間跳過 Wi-Fi config                                                                                 |
 |     原則/連通性/AllowBluetooth                |     否                            |     停用藍牙                                                                                                             |
 |     原則/經驗/AllowCortana                    |     否                            |     停用 Cortana (，以避免在停用麥克風後發生的潛在問題)                                           |
 |     原則/MixedReality/MicrophoneDisabled            |     是                           |     停用麥克風                                                                                                            |
@@ -68,7 +71,7 @@ Windows 10 電腦設定
 |     原則/安全性/AllowAddProvisioningPackage       |     否                            |     防止任何人新增可嘗試覆寫鎖定原則的預配套件。                         |
 |     原則/安全性/AllowRemoveProvisioningPackage    |     否                            |     防止任何人移除此鎖定的預配套件。                                                           |
 |     原則/系統/AllowLocation                       |     否                            |     防止裝置嘗試追蹤位置資料。                                                                        |
-|     原則/WiFi/AllowWiFi                             |     否                            |     停用 Wi-fi                                                                                                                 |
+|     原則/WiFi/AllowWiFi                             |     否                            |     停用 Wi-Fi                                                                                                                 |
 
 4. 選取 [執行時間設定] 底下的 [**帳戶/使用者/使用者名稱： Holo/密碼**] 
     - 請注意密碼，並視需要重設。
@@ -84,6 +87,7 @@ Windows 10 電腦設定
 
 
 ## 部署
+
 1. 透過 USB 纜線將 HL2 連線到您的 Windows 10 電腦。
 1. 啟動 [弧形] 工具並選取 [ **HoloLens 2** ]
 
@@ -110,5 +114,6 @@ Windows 10 電腦設定
 1. 接著，系統會提示您使用共用的本機帳戶和密碼登入裝置。
 
 ## 維護
+
 使用此設定時，建議您重新開機上述程式，並使用 ARC 工具 reflash 裝置，並套用新的 PPKG，以對作業系統和/或應用程式 (s) 進行任何更新。 
 

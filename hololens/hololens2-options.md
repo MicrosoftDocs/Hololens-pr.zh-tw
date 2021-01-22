@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 版本
-description: 每個 HoloLens 2 選項在取得之後的方式相同或不同。
-keywords: Hololens 2 購買選項，HoloLens 選項，開發人員版本
+description: 瞭解每個 HoloLens 2 裝置版本如何相同或不同，以及取得您自己的裝置版本之後該如何處理。
+keywords: Hololens 2 購買選項、HoloLens 選項、Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -14,40 +14,41 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d15dddc36a733adb3af2a0c2ae1fc8859c7a0d1e
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 8e89285a2fdda9965192510fd0147ba2d4fdab4b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253564"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283844"
 ---
 # HoloLens 2 概觀
 
-HoloLens 是一個混合式現實裝置，它是 *由全息影像* 所提供的，並提供可加強共同作業的 app 和解決方案。 使用 HoloLens 2，體驗效率與創新的新高度，以更聰明的方式工作。
+HoloLens 是一種混合實境** 裝置，由全向圖提供，並提供可增強共同合作功能的應用程式和解決方案。 使用 HoloLens 2，體驗新的生產力和創新高度，並提升工作效率。
 
-無論您是要 [尋找您的下](https://www.microsoft.com/hololens/apps) 一個行業解決方案， [開發人員](https://www.microsoft.com/hololens/developers) 正在努力建立新的現實經驗，或是 [企業決策者](https://www.microsoft.com/hololens/apps) 思考您的下一筆創新-HoloLens 2 是您的新實際計算。 
+無論您是正在尋找下一個產業解決方案的[IT](https://www.microsoft.com/hololens/apps)專業人員、尋求為[](https://www.microsoft.com/hololens/developers)新實境建立體驗的開發人員，或商業決策者思考[](https://www.microsoft.com/hololens/apps)下一個創新，HoloLens 2 都是您運算的新實境。 
 
-|                                                         | 使用 [遠端協助] 的 HoloLens 2 | HoloLens 2 (僅限裝置)  | HoloLens 2 開發版本 |
+|                                                         | HoloLens 2 與遠端協助 | HoloLens 2 (裝置)  | HoloLens 2 Development Edition |
 |---------------------------------------------------------|:-----------------------------:|:------------------------:|:------------------------------:|
-| HoloLens 2 裝置 <br> (一個裝置)                       |               ✔️               |             ✔️            |                ✔️               |
-| Dynamics 365 Remote Assist<br> (一個座位)                 |               ✔️               |                          |                                |
+| HoloLens 2 裝置 <br> (一部裝置)                       |               ✔️               |             ✔️            |                ✔️               |
+| Dynamics 365 Remote Assist<br> (一個)                 |               ✔️               |                          |                                |
 | 瑕疵擔保                                                |               ✔️               |             ✔️            |                ✔️               |
-| 可用於開發應用程式                                 |               ✔️               |             ✔️            |                ✔️               |
-| 適用于 Azure 的 $500 點數，包括 mixed reality 服務 |                               |                          |                ✔️               |
-| Unity 專業版 & Pixyz 外掛程式 <br> (三個月免費)         |                               |                          |                ✔️               |
-| 裝置購買限制                                   |              無             |           無           |          每位使用者一個          |
+| 可用來開發應用程式                                 |               ✔️               |             ✔️            |                ✔️               |
+| Azure 的 $500 美元信用額度，包括混合實境服務 |                               |                          |                ✔️               |
+| 使用 Pixyz &使用者 Pro <br> (三個月免費)         |                               |                          |                ✔️               |
+| 裝置購買限制                                   |              無             |           無           |          每個使用者一個          |
 
-## 選項概述
+## 選項概觀
 
-**HoloLens 2 (僅限裝置) **： hololens 2 提供最舒適且具有沉浸式混合的實際體驗，可透過 Microsoft 的雲端與 AI 服務的可靠性、安全性和伸縮性來加強。
+**HoloLens 2 (** 裝置僅適用于) ：HoloLens 2 提供最舒適且最沉浸式混合實境體驗—由 Microsoft 雲端和 AI 服務的可靠性、安全性和擴充性所增強。
 
-**Hololens 2 搭配 Dynamics 365 遠端協助**：在第一天使用 HoloLens 2，以及從 Microsoft 共同提供的最終混合現實應用程式。 利用更多用途，協助整個公司更具生產效率與創新。 使用來自業界合作夥伴的 Dynamics 365 和解決方案，立即體驗混合現實。
+**HoloLens 2 with Dynamics 365 遠端**小幫手：使用 HoloLens 2 和 Microsoft 的終極混合實境通訊應用程式，于一天開始使用。 以更多用途協助全公司更具生產力並創新。 使用 Dynamics 365 和產業合作夥伴的解決方案，體驗混合實境。
 
-**HoloLens 2 開發版**：開始使用此方案組建混合現實，以結合使用 HoloLens 2 和雲端服務的免費試用版軟體及 Azure 點數。 瞭解如何超越基本概念，並開始針對混合式現實進行開發。
+**HoloLens 2 Development Edition：** 使用這項優惠開始建立混合實境，將 HoloLens 2 與 Cloud 服務的 Azure 軟體免費試用版與 Azure 信用額度結合。 瞭解如何超越基礎，並開始為混合實境進行開發。
 
-瞭解不同的 [HoloLens 2 版本](https://www.microsoft.com/hololens/buy)
+瞭解不同 [HoloLens 2 版本](https://www.microsoft.com/hololens/buy)
 
 ## 開始使用 HoloLens 2 選項
-選取一個索引標籤，進一步瞭解您的 HoloLens 歷程。
+
+選取一個 Tab 以深入瞭解您的 HoloLens 旅程。
 
 [!INCLUDE[](includes/options-overview.md)]

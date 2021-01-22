@@ -1,6 +1,6 @@
 ---
 title: 安裝 HoloLens 的當地語系化版本
-description: 了解如何安裝中文或日文版的 HoloLens
+description: 了解如何安裝當地語系化版本的 HoloLens (第 1 代)，包括中文版和日文版。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9ccee2e11650926a5570967f1de5f6b341a17ae6
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: af79e42477a3a317dde03a795c442fa31241600d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828544"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282974"
 ---
 # 安裝 HoloLens (第 1 代) 的當地語系化版本
 
