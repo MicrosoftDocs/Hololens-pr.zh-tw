@@ -1,6 +1,6 @@
 ---
 title: 疑難排解
-description: 常見 HoloLens 問題的解決方案。
+description: 掌握最新的 HoloLens 裝置問題與疑難排解技巧的常見方案。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
@@ -8,17 +8,17 @@ ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens
 manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
-ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
+keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens
+ms.openlocfilehash: f57aea52337f7ca7e15bda1363f73a3a7265a025
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11195279"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283044"
 ---
 # 疑難排解
 

@@ -1,6 +1,6 @@
 ---
-title: 部署指南–雲端連線的 HoloLens 2 （含遠端協助）-概覽
-description: 透過雲端連接的網路註冊 HoloLens 裝置
+title: 使用遠端協助將雲端連接 HoloLens 2 的概覽
+description: 瞭解如何使用 Dynamics 365 遠端協助，在雲端連接的網路上註冊 HoloLens 2 裝置。
 keywords: HoloLens、管理、雲端連線、遠端協助、AAD、Azure AD、MDM、行動裝置管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271669"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283074"
 ---
 # 部署指南–雲端連線的 HoloLens 2 （含遠端協助）-概覽
 

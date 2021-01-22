@@ -1,6 +1,6 @@
 ---
 title: 佈建套件
-description: app、app 部署、企業應用程式部署、資源調配
+description: 瞭解 HoloLens 裝置的 app 封裝、配置、部署及企業應用程式部署。
 keywords: app、app 部署、企業應用程式部署、資源調配
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 11bc83be188e1b81959690efcb2bdf26d800aae3
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 9c73b03e6a8dca6baf6c58fed091df96994c3780
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252674"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283694"
 ---
 # 佈建套件
 

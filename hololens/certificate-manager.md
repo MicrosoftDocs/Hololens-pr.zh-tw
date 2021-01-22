@@ -1,6 +1,6 @@
 ---
 title: 憑證管理員
-description: 瞭解如何在 HoloLens 2 上手動管理憑證。
+description: 瞭解如何在 HoloLens 2 混合現實裝置上手動安裝、管理及移除證書。
 author: evmill
 ms.author: v-evmill
 manager: yannisle
@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 04d7e8cb78357b5398c58e0a0c55e6e530fa363a
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 9d221321adcb8062206695e3e610d35dee14523e
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163216"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283684"
 ---
 # 憑證管理員
 

@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 開發版常見問題集
-description: 有關 HoloLens 2 開發版本常見問題的常見問題。
+description: 掌握 HoloLens 2 開發版混合式現實裝置最常遇到的常見問題。
 keywords: Hololens 2 購買選項，HoloLens 選項，開發人員版本
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252784"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283854"
 ---
 # HoloLens 2 開發版常見問題集
 
-## 一般
+## 一般問題
 
 ### 使用 HoloLens 2 開發版時，我可以取得什麼？
 

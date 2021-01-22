@@ -1,6 +1,6 @@
 ---
 title: 設定 HoloLens (第 1 代) 的 kiosk
-description: 使用 kiosk 配置來鎖定 HoloLens 上的應用程式。
+description: 瞭解如何設定和使用 kiosk 配置來鎖定 HoloLens 裝置上的應用程式。
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 245de50fcaaf1235cce02cd1b6cae921b64f2851
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253030"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283984"
 ---
 # 設定 HoloLens (第 1 代) 的 kiosk
 
@@ -452,7 +452,7 @@ ms.locfileid: "11253030"
 ### 全域指派的存取-Kiosk 模式
 - 透過啟用在系統層級套用 Kiosk 模式的新型 Kiosk 方法，減少了資訊站的身分識別管理。
 
-這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 如需此新功能的詳細資訊，請參閱 [HoloLens 全域指派的 access kiosk](hololens-global-assigned-access-kiosk.md) 檔。
 
 ### 在多應用程式亭模式中自動啟動應用程式 
 - 自動應用程式啟動的焦點體驗，進一步增加針對 Kiosk 模式體驗所選擇的 UI 和 app 選項。

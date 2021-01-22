@@ -1,6 +1,6 @@
 ---
 title: 通用的裝置限制
-description: 裝置 restrctions 通常是在 HoloLens 上設定。
+description: 使用最新的裝置限制及 HoloLens 混合式現實裝置的設定來保持最新狀態。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 744d54a344867c5c38681781580f5357e0a0da70
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e9c44466da375611f8864eae1b6e6ceea3ef9b09
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162967"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283354"
 ---
 # 通用的裝置限制 
 

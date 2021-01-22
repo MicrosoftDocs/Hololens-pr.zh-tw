@@ -1,6 +1,6 @@
 ---
 title: 部署指南–雲端連接 HoloLens 2 部署，並以遠端協助維持規模
-description: 透過雲端連接的網路維護 HoloLens 裝置的秘訣
+description: 使用我們在雲端連接的網路上維護和支援 HoloLens 裝置的秘訣，掌握最新資訊。
 keywords: HoloLens、管理、雲端連線、遠端協助、AAD、Azure AD、MDM、行動裝置管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: bc34c4e41c5a6cee8f3f9a0a97407ee38d419bbc
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252694"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283894"
 ---
 # 維護-雲端連接指南
 

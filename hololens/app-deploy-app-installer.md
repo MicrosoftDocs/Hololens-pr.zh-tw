@@ -1,6 +1,6 @@
 ---
 title: 如何透過 HoloLens 2 App 安裝程式載入並安裝應用程式
-description: 透過 UI 進行投影片載入和安裝應用程式
+description: 瞭解如何透過 UI 安裝與應用程式安裝程式和安裝應用程式的應用程式，並進行疑難排解。
 keywords: app 管理、app、hololens、app 安裝程式
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
-ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
+ms.openlocfilehash: 89f48fab236fdaf58fb0bf8b29e5a3aacb3bdee3
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "11280652"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283734"
 ---
 # 透過 App 安裝程式在 HoloLens 2 上安裝應用程式
 

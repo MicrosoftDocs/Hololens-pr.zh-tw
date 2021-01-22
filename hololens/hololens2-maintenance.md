@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 清潔常見問題集
-description: ''
+description: 取得清除及維護 HoloLens 2 裝置之所有常見問題的最新回答。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
-ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
+ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888552"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283084"
 ---
 # HoloLens 2 清潔常見問題集
 
@@ -32,7 +32,7 @@ ms.locfileid: "10888552"
 **清理裝置**
 
 1. 使用乾燥、不起毛的 microfiber 布移除任何灰塵，以輕輕擦拭裝置表面。
-1. 若要輕輕 moisten 布，請 usingmedical "70%" isopropyl 酒精，然後使用 moistened 布輕輕擦拭裝置表面。
+1. 使用醫學 "70%" isopropyl 酒精來輕輕 moisten 布，然後使用 moistened 布輕輕擦拭裝置表面。
 
    ![顯示如何清潔面板的影像](images/hololens-cleaning-visor.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "10888552"
 
 ## 我可以使用 disinfecting 擦除來清理裝置嗎？
 
-是，如果擦除不含 bleach。 您可以使用非 bleach 的 disinfecting 擦除來[輕輕擦拭 HoloLens 表面](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)。  
+是，如果擦除不含 bleach。 您可以使用非 bleach 的 disinfecting 擦除來 [輕輕擦拭 HoloLens 表面](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)。  
 
 > [!CAUTION]  
 > 避免使用包含 bleach 的 disinfecting 擦除來清潔 HoloLens 表面。 如果沒有任何其他可用，就可以在重要情況中使用 bleach 擦除。 不過，bleach 可能會損壞 HoloLens 面板或其他表面。
@@ -72,7 +72,7 @@ ms.locfileid: "10888552"
 
 若要清潔 brow 墊，請使用由水和輕度 antibiotic soap moistened 的布擦拭。 在再次使用前，讓 brow 墊幹完整。
 
-## 我可以使用 ultraviolet （UV） light 淨化裝置嗎？
+## 我可以使用 ultraviolet (UV) light 來淨化裝置嗎？
 
 UVC irradiance 使用 UVC LED，在265nm 度層級（介於 0.5-0.6 mW/cm 2 之間）運作，而且不會產生 <sup> </sup> ozone，可以用來淨化 HoloLens2。 請依照製造商有關處理與披露時間的規格。
 
@@ -80,7 +80,7 @@ UVC irradiance 使用 UVC LED，在265nm 度層級（介於 0.5-0.6 mW/cm 2 之�
 > 高層次的 UV A 和 UV B 曝露可能會降低裝置的顯示品質，並損壞面板塗層。 針對 UV A 和 UV B 輻射的過度曝光，具有下列效果，且會依曝光的持續時間與強度：
 >  
 > 1. Brow 墊和裝置閉包會變成脫色。
-> 1. 在面板和感應器視窗上的防反射（AR）塗層中，會出現瑕疵。
+> 1. 在面板和感應器視窗上，防反射 (AR) 塗層中都會出現瑕疵。
 > 1. 在面板的基本材料和感應器視窗中都會出現瑕疵。
 > 1. 顯示效能會降低。
 

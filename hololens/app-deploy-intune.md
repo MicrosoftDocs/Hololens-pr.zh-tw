@@ -1,6 +1,6 @@
 ---
 title: Intune 和公司入口網站
-description: Intune、app 管理、app、公司入口網站、入口網站
+description: 瞭解如何在 Intune、行動裝置管理和公司入口網站上設定、指派及建立舒適的使用者體驗。
 keywords: intune、app 管理、app、公司入口網站、入口網站、hololens
 author: evmill
 ms.author: v-evmill
@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: f91f97b6cddf678b20d0bdb3f381e01809b10f3f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252654"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283714"
 ---
 # Intune 與公司入口網站
 
