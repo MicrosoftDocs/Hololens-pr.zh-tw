@@ -1,6 +1,6 @@
 ---
 title: HoloLens (第 1 代) 硬體
-description: 組成 Microsoft HoloLens 的元件大綱 (first gen) ，是世界上第一個執行 Windows 的完整 untethered 全息電腦。
+description: 瞭解組成 Microsoft HoloLens (1 gen) 的元件，以及執行 Windows 10 之 untethered 全息版 Microsoft 電腦的最新演變。
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: a9719d06b824ba23f2fbfefb6adb220d32b2892b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165015"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284014"
 ---
 # HoloLens (第 1 代) 硬體
 

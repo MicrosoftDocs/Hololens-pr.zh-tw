@@ -1,6 +1,6 @@
 ---
 title: HoloLens 的基礎結構指導方針
-description: HoloLens 裝置的基礎結構指導方針
+description: 瞭解 HoloLens 裝置基礎結構指導方針，包括無線網路支援、遠端協助及行動裝置管理。
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a67aaa5df4c74531b5bed88abaa266b00de5c406
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 4eb55bec56e53de9195ac87e0491eefd91992f3d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253160"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283384"
 ---
 # 設定適用於 HoloLens 的網路
 
@@ -59,9 +59,9 @@ HoloLens 也支援一組有限的雲端連線中斷體驗。
 
 ### 遠端協助特定網路需求
 
-1. 若要獲得最佳遠端協助的效能，建議使用的頻寬為 1.5Mbps。 您可以在[這裡](https://docs.microsoft.com/MicrosoftTeams/prepare-network)找到詳細的網路需求及其他資訊。
+1. 若要獲得最佳遠端協助的效能，建議使用的頻寬為 1.5Mbps。 如需額外資訊，請參閱 [詳細網路需求](https://docs.microsoft.com/MicrosoftTeams/prepare-network)。
 **(請注意，如果您的網路未具備至少 1.5Mbps 的網路速度，遠端協助仍可運作。 但品質可能會受到影響。)**
-1. 請確認您的網路防火牆允許這些連接埠和 URL。 這可讓 Microsoft Teams 正常運作。 您可以在[這裡](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)找到最新清單。
+1. 請確定網路防火牆允許這些埠和 URL，讓 Microsoft Teams 能正常運作。 隨時更新到 [最新的埠清單](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)。
 
 - 深入瞭解特定的[遠端協助的網路需求](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)。 
 - 深入瞭解如何 [準備貴組織的 Microsoft Teams 網路](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
@@ -81,14 +81,14 @@ HoloLens 也支援一組有限的雲端連線中斷體驗。
 1. 如果您打算使用自動註冊，您必須[設定 Azure AD 註冊。](https://docs.microsoft.com/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
 
 1. 確定貴公司的使用者位於 Azure Active Directory (Azure AD) 中。
-您可以在[這裡](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)找到新增使用者的指示。
+請參閱下列新增使用者的[指示](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)。
 
 1. 建議將需要類似授權的使用者新增至相同的群組。
     1. [建立群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [新增使用者至群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 1. 確定貴公司的使用者 (或使用者群組) 已獲指派必要的授權。
-您可以在[這裡](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)找到指派授權的指示。
+如果您需要指派授權，請按照下列 [指示](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)進行。
 
 1. 只有在使用者想要註冊自己的 HoloLens/行動裝置時，再執行此步驟 (有三個選項)。這些步驟可確定貴公司的使用者 (或使用者群組) 可以新增裝置。
     1. **選項 1：** 提供所有使用者將裝置加入 Azure AD 的權限。
@@ -110,7 +110,7 @@ HoloLens 也支援一組有限的雲端連線中斷體驗。
 
 持續的裝置管理將視您的行動裝置管理基礎結構而定。  大部分會與一般功能相同，但使用者介面可能有所差異。
 
-1. [CSP (組態服務提供者)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) 可讓您為網路上的裝置建立並部署管理設定。 您可以在[這裡](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)找到 HoloLens 的 CSP 清單。
+1. [設定檔 (服務提供者)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) 可讓您建立及部署您網路上裝置的管理設定。 請參閱 [HoloLens CSPs 清單](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) 以供參考。
 
 1. [合規性原則](https://docs.microsoft.com/intune/device-compliance-get-started)是裝置必須符合的規則和設定，以符合您公司的基礎結構。 使用這些原則搭配條件式存取，以封鎖不合規的裝置存取公司資源。 例如，您可以建立必須啟用 Bitlocker 的原則。
 
@@ -151,20 +151,20 @@ Intune 包括稱為 Windows 10 裝置更新週期的功能，包含 HoloLens 2 �
 
 ### 憑證
 
-您可以透過 MDM 提供者發佈憑證。 如果貴公司需要憑證，Intune 支援 PKCS、PFX 和 SCEP。 請務必了解哪個憑證適合貴公司。 請造訪[這裡](https://docs.microsoft.com/intune/protect/certificates-configure)，以判斷何種憑證最適合您。 如果您計劃將憑證用於 HoloLens 驗證，則 PFX 或 SCEP 可能適合您。
+您可以透過 MDM 提供者發佈憑證。 如果貴公司需要憑證，Intune 支援 PKCS、PFX 和 SCEP。 請務必了解哪個憑證適合貴公司。 請前往 [憑證設定](https://docs.microsoft.com/intune/protect/certificates-configure) 文件，以判斷哪一種憑證最適合您。 如果您計劃將憑證用於 HoloLens 驗證，則 PFX 或 SCEP 可能適合您。
 
-您可以在[這裡](https://docs.microsoft.com/intune/protect/certificates-profile-scep)找到 SCEP 的步驟。
+請參閱下列 [SCEP](https://docs.microsoft.com/intune/protect/certificates-profile-scep) 使用步驟。
 
 ### 如何升級至 Holographics for Business 商業套件
 
 > [!NOTE]
 > Windows Holographics for Business (商業套件) 僅適用於 HoloLens 第一代裝置。 設定檔將不會套用到 HoloLens 2 裝置。
 
-您可以在[這裡](https://docs.microsoft.com/intune/configuration/holographic-upgrade)找到升級至商業套件相關指示。
+您可以在 [全像攝影升級](https://docs.microsoft.com/intune/configuration/holographic-upgrade) 文件中找到升級至商業套件的相關指示。
 
 ### 如何使用 Microsoft Intune 設定 Kiosk 模式
 
-1. 將 Microsoft Store 同步處理至 Intune ([這裡](https://docs.microsoft.com/intune/apps/windows-store-for-business))。
+1. 將 Microsoft Store 同步處理至 Intune (請參閱[下列指示](https://docs.microsoft.com/intune/apps/windows-store-for-business))。
 
 1. 檢查您的應用程式設定
     1. 登入您的 Microsoft Store 商務帳戶
@@ -180,7 +180,7 @@ Intune 包括稱為 Windows 10 裝置更新週期的功能，包含 HoloLens 2 �
 
 ![顯示 Intune 中 Kiosk 模式設定的影像](images/aad-kioskmode.png)
 
-如需其他 MDM 服務，請參閱提供者文件中的指示。 如果您需要在 MDM 服務中使用自訂設定和完整 XML 設定來設定 Kiosk，可在[這裡](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)找到其他指示
+如需其他 MDM 服務，請參閱提供者文件中的指示。 如果您需要使用自訂設定和完整的 XML 設定來設定 MDM 服務中的資訊站，請參閱 [HoloLens Kiosk](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 指示。
 
 ## 憑證和驗證
 

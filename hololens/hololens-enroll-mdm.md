@@ -1,6 +1,6 @@
 ---
 title: 在 MDM 中註冊 HoloLens
-description: 在行動裝置管理 (MDM) 中註冊 HoloLens，可更加輕鬆管理多個裝置。
+description: 瞭解如何在行動裝置管理 (MDM) 中註冊 HoloLens，以便更輕鬆地管理多個裝置。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7c17cbf88fc2e7a6dcd9aa600ad6e6910edb29a8
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: b9473f4e80f6438ef4c438711ac0de342c5327e1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253230"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283184"
 ---
 # 在 MDM 中註冊 HoloLens
 

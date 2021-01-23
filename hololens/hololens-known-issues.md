@@ -1,6 +1,6 @@
 ---
 title: HoloLens 的已知問題
-description: 這是可能會影響 HoloLens 客戶與開發人員的已知問題清單。
+description: 掌握已知問題和因應措施的清單，以及可能會影響 HoloLens 客戶和使用 Unity 和 Windows Device Portal 之開發人員的因應措施。
 keywords: 疑難排解、已知問題、協助
 author: mattzmsft
 ms.author: mazeller
@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: e5450cc41406416ec1b6e7c0bd7c8205056cb7d4
-ms.sourcegitcommit: bf9a784d1b5f221d0766c5ae90efa4e9a5979b84
+ms.openlocfilehash: 54bc090352983e814c64deea8f1f401c24e3261b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "11194621"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284074"
 ---
 # HoloLens 的已知問題
 

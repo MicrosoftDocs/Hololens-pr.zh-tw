@@ -1,6 +1,6 @@
 ---
 title: 透過 HoloLens 裝置收集與使用診斷資訊
-description: 透過 HoloLens 裝置收集與使用診斷資訊
+description: 瞭解如何從 HoloLens 裝置收集、使用及保留診斷資訊。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/15/2020
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 206a31476820e8722b1b72fbd501345a089379b1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253150"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283224"
 ---
 # 透過 HoloLens 裝置收集與使用診斷資訊
 

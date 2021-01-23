@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 版本資訊
-description: 瞭解每個新版 HoloLens 2 發行版本中的更新。
+description: 在每個新的 HoloLens 2 發行版本中，隨時掌握所有更新的最新資訊。
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,16 +15,16 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7c93f567921a634e5a75c274304819ec9e81b933
-ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
+ms.openlocfilehash: 8dd5f4c50ebdab202d24d4a52d393b8bee086c7a
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269414"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284094"
 ---
 # HoloLens 2 版本資訊
 
-為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們會繼續發行功能、錯誤和安全性更新。 在此頁面上，您可以查看每個月的 HoloLens 新功能。 若要取得最新的 HoloLens 2 更新，您可以 [檢查更新並手動更新](hololens-update-hololens.md#check-for-updates-and-manually-update) ，或取得完整的快閃記憶體更新 (FFU) 若要透過 [ [高級恢復隨附] 將您的裝置閃爍](hololens-recovery.md#clean-reflash-the-device)，請 [在這裡下載](https://aka.ms/hololens2download)。 下載會保持最新狀態，並提供最新的一般可用組建。
+為了確保您在 HoloLens 裝置上擁有生產力的體驗，我們會繼續發行功能、錯誤和安全性更新。 在此頁面上，您可以查看每個月的 HoloLens 新功能。 若要取得最新的 HoloLens 2 更新，您可以 [檢查更新並手動更新](hololens-update-hololens.md#check-for-updates-and-manually-update) ，或取得完整的快閃記憶體更新 (FFU) ，透過高級復原隨附的方式來 [快取您的裝置](hololens-recovery.md#clean-reflash-the-device)。 [下載](https://aka.ms/hololens2download)會保持最新狀態，並提供最新的一般可用組建。
 
 我們很高興能再次開始將新功能正式給 Windows 測試人員。 我們將會正式至開發人員通道，以取得最新的更新。 我們會在我們的 Windows 測試人員組建中新增更多功能與更新，繼續進行 HoloLens 測試人員 [備](hololens-insider.md) 忘稿。 令您興奮並準備好將這些更新混合在您的現實中。 
 
@@ -191,16 +191,14 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 
 注意：如果在裝置啟動時，已將 USB 磁片磁碟機保留在插接，則 OOBE 會列舉現有的 USB 儲存裝置，也會監視其他插入的裝置。
 
-如需在 OOBE 期間套用預配套件的詳細資訊，請繼續閱讀 [這裡](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+如需在 OOBE 期間套用預配套件的詳細資訊，請造訪 [HoloLens 提供](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) 檔。
 
-您可以在此找到此資訊 [。](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+您可以在 HoloLens 提供檔中找到 [來自 USB 自動啟動預配](hololens-provisioning.md#auto-launch-provisioning-from-usb) 的其他資訊。
 
 ### 在 OOBE 中自動確認預配套件
 - 自動程式可讓使用者互動，在顯示 [預配套件] 頁面時，系統會自動套用所有列出的套件。
 
-當提供的主畫面啟動時，OOBE 會先計算10秒，然後再自動開始套用所有的預配套件。 在驗證所需的套件之後，使用者仍然可以在10秒內確認或取消。
-
-您可以在此找到此資訊 [。](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+當提供的主畫面啟動時，OOBE 會先計算10秒，然後再自動開始套用所有的預配套件。 在驗證所需的套件之後，使用者仍然可以在10秒內 [確認或取消](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) 。
 
 ### 不使用 UI 的自動預配
 - 合併自動程式，以減少提供的裝置互動。 
@@ -215,9 +213,7 @@ Windows 全息版、版本20H2 現已推出，並為 HoloLens 2 使用者和 IT 
 1. 當 HoloLens 2 裝置在 OOBE 中啟動時，系統會自動偵測 USB 磁片磁碟機上的預配套件，並啟動 [預配] 頁面。
 1. 10秒後，裝置會自動套用預配套件。 
 
-您的裝置現在已設定，且會顯示 [提供成功] 畫面。
-
-您可以在此找到此資訊 [。](hololens-provisioning.md#automatic-provisioning-without-using-ui)
+您的裝置現在已設定，且會 [顯示 [提供成功] 畫面](hololens-provisioning.md#automatic-provisioning-without-using-ui)。
 
 ### 使用 Autopilot 進行 Wi-Fi 連接
 - 已移除將 USB-C 配接器移至乙太網上減少硬體需求的需求，只要讓 Autopilot 能夠在 Wi-Fi 連接的裝置上運作。
@@ -275,7 +271,7 @@ OOBE 將無限期地等待 Autopilot 設定檔下載，且會出現以下對話�
 ### 全域指派的存取-Kiosk 模式
 - 透過啟用在系統層級套用 Kiosk 模式的新型 Kiosk 方法，減少了資訊站的身分識別管理。
 
-這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請在 [此深入瞭解](hololens-global-assigned-access-kiosk.md)這項新功能。
+這項新功能可讓 IT 系統管理員針對在系統層級適用的多個 app kiosk 模式設定 HoloLens 2 裝置，且與登入裝置的每個人都有關聯的資訊。 請參閱 [HoloLens 全域指派的 access kiosk](hololens-global-assigned-access-kiosk.md)中的此新功能。
 
 ### 在多應用程式亭模式中自動啟動應用程式 
 - 自動應用程式啟動的焦點體驗，進一步增加針對 Kiosk 模式體驗所選擇的 UI 和 app 選項。
@@ -405,7 +401,7 @@ Name （名稱）： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MS
 > - 估計的最大錄製持續時間小於預設值5分鐘。
 > - 可用磁碟空間少於磁片總空間的20%。
 
-您可以 [在這裡](holographic-photos-and-videos.md#maximum-recording-length)再次找到此資訊。 
+您可以在我們的 [全息相片和](holographic-photos-and-videos.md#maximum-recording-length) 影片檔中找到完整需求。 
 
 ### 更新中的改進與修正：
 - OOBE 中的更多螢幕現在處於深色模式。

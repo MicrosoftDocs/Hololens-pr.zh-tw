@@ -1,6 +1,6 @@
 ---
 title: 設定 CSP 和裝置管理概覽
-description: 如何設定 Csp、原則和裝置管理。
+description: 瞭解如何使用行動裝置管理和置備套件來設定 Csp、原則和裝置管理。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6da29506035525b1b1b5141a04603f63de1ef24
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252774"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283244"
 ---
 # 設定 CSP 和裝置管理概覽
 

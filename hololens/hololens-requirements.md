@@ -1,6 +1,6 @@
 ---
 title: 在商業環境中設定 HoloLens
-description: 深入瞭解在企業環境中部署和管理 HoloLens。
+description: 深入瞭解在企業環境中部署和管理 HoloLens，包括基礎結構、azure active directory 及行動裝置管理。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 9458a6fd02cf96dd265580cb099e39fa221d4206
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253210"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284044"
 ---
 # HoloLens 2 企業版部署與管理
 
@@ -45,27 +45,27 @@ HoloLens 2 是專門設計來由行動裝置管理 (在企業環境中使用 MDM
 > 在 HoloLens 2 上不支援傳統的內部部署電腦管理系統（例如 System Center Configuration Manager）。
 
 ### 商務用 Windows Update
-為了提供 IT 系統管理員以 Windows Update 為主的其他管理功能 (例如，能夠將更新部署到裝置群組，以及定義安裝更新的維護時段)，Microsoft 設計了商務用 Windows Update。 您可以 [在此](https://docs.microsoft.com/hololens/hololens-updates)找到管理 HoloLens 2 更新的詳細資料。
+為了提供 IT 系統管理員以 Windows Update 為主的其他管理功能 (例如，能夠將更新部署到裝置群組，以及定義安裝更新的維護時段)，Microsoft 設計了商務用 Windows Update。 如需有關管理 HoloLens 2 更新的詳細資訊，請參閱 [HoloLens 更新](https://docs.microsoft.com/hololens/hololens-updates) 檔。
 
 ### 憑證
-如果您的環境需要 Corp 的憑證 Wi-Fi 網路驗證或存取其他資源，則 HoloLens 2 支援透過 MDM 部署憑證。 您可能需要使用一些 MDM 基礎結構設定，才能將證書部署到 HoloLens 2。 瞭解如何為 [HoloLens 2 準備證書和網路設定檔](https://docs.microsoft.com/hololens/hololens-certificates-network)。 您可以 [在此](https://docs.microsoft.com/mem/intune/protect/certificates-configure)找到 Intune 詳細資料。
+如果您的環境需要 Corp 的憑證 Wi-Fi 網路驗證或存取其他資源，則 HoloLens 2 支援透過 MDM 部署憑證。 您可能需要使用一些 MDM 基礎結構設定，才能將證書部署到 HoloLens 2。 瞭解如何為 [HoloLens 2 準備證書和網路設定檔](https://docs.microsoft.com/hololens/hololens-certificates-network)。 如果您使用的是 Intune，請查看 [認證配置](https://docs.microsoft.com/mem/intune/protect/certificates-configure) 的詳細資料。
 
 ## 設定
 
 MDM 系統管理員可以在任何已登錄 MDM 系統的公司裝置上定義和執行原則設定。 您使用的設定會根據部署案例而有所不同。 在 Windows 10 中，Configuration Services 提供者 (CSP) s 是一個介面，可用於讀取、設定、修改或刪除裝置上的配置設定。 這些設定會對應到登錄機碼或檔案。 如需 HoloLens 2 的 Windows 10 裝置管理 Csp 的詳細資訊，請參閱 [hololens 裝置中支援的 csp](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)完整清單。
 
-HoloLens 2 也支援透過自訂的置備套件設定有限的 CSP 設定。 您通常會將預配套件用於非 MDM 管理的裝置，且需要手動套用到每個裝置。 您可以在 [這裡](https://docs.microsoft.com/hololens/hololens-provisioning)找到有關建立自訂預配套件的詳細資訊。
+HoloLens 2 也支援透過自訂的置備套件設定有限的 CSP 設定。 您通常會將預配套件用於非 MDM 管理的裝置，且需要手動套用到每個裝置。 如需有關建立自訂預配套件的詳細資訊，請參閱 [HoloLens 提供](https://docs.microsoft.com/hololens/hololens-provisioning) 檔。
 
 > [!NOTE]
 > HoloLens 2 支援 [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)，提供一個簡單且簡單的程式來管理您的公司 Windows 10 裝置設定。
 
 ### 身分識別管理
 
-員工只能使用一個帳戶來初始化裝置，因此您的組織必須先控制要啟用哪個帳戶才能&#39;s。 所選擇的帳戶將決定誰能夠控制裝置，而且會影響您的管理功能。 HoloLens 2 支援3個帳戶類型： [本機使用者帳戶]、[個人 Microsoft 帳戶] 和 [Azure Active Directory 帳戶]。 強烈建議您使用 Azure Active Directory 做為您的企業身分識別管理解決方案，因為它會在您的 HoloLens 2 裝置上啟用完整功能。 您可以在 [此](https://docs.microsoft.com/hololens/hololens-identity)找到有關 HoloLens 2 身分識別的詳細資訊。
+員工只能使用一個帳戶來初始化裝置，因此您的組織必須先控制要啟用哪個帳戶才能&#39;s。 所選擇的帳戶將決定誰能夠控制裝置，而且會影響您的管理功能。 HoloLens 2 支援3個帳戶類型： [本機使用者帳戶]、[個人 Microsoft 帳戶] 和 [Azure Active Directory 帳戶]。 強烈建議您使用 Azure Active Directory 做為您的企業身分識別管理解決方案，因為它會在您的 HoloLens 2 裝置上啟用完整功能。 如需 HoloLens 2 身分識別的詳細資訊，請參閱 [HoloLens 身分識別](https://docs.microsoft.com/hololens/hololens-identity) 。
 
 ### 網路和連線性
 
-因為 HoloLens 2 是雲端第一個裝置，所以需要提供線上資源的網路存取，才能取得完整的功能和功能。 如果您要部署使用與公司內部網路網路連接的 HoloLens 2 裝置，您可能需要更新您的 proxy/防火牆規則，以允許存取 HoloLens 2 雲端服務。 您可以在 [此](https://docs.microsoft.com/hololens/hololens-offline)找到 HoloLens 2 作業系統所需的常用端點清單。 您可能需要存取其他端點，應用程式或其他雲端服務才能成功在 HoloLens 2 上執行。
+因為 HoloLens 2 是雲端第一個裝置，所以需要提供線上資源的網路存取，才能取得完整的功能和功能。 如果您要部署使用與公司內部網路網路連接的 HoloLens 2 裝置，您可能需要更新您的 proxy/防火牆規則，以允許存取 HoloLens 2 雲端服務。 如需詳細資訊，請參閱 [HoloLens 2 作業系統的常見端點](https://docs.microsoft.com/hololens/hololens-offline)清單。 您可能需要存取其他端點，應用程式或其他雲端服務才能成功在 HoloLens 2 上執行。
 
 某些常見的 HoloLens 2 服務需要額外的端點存取，如下所示：
 
@@ -79,7 +79,7 @@ HoloLens 2 也支援透過自訂的置備套件設定有限的 CSP 設定。 您
 
 ### 安全性審查
 
-大部分的企業 IT 部門都需要評量及審查要部署至公司商業網路的新裝置。 如果您的組織需要 HoloLens 2 的安全性審查，您可以在 [這裡找到更多詳細資料，以協助您取得安全性核准](https://docs.microsoft.com/hololens/security-overview)。
+大部分的企業 IT 部門都需要評量及審查要部署至公司商業網路的新裝置。 如果您的組織需要 HoloLens 2 的安全性審查，您可以找到更多詳細資料，以協助您 [取得安全性核准](https://docs.microsoft.com/hololens/security-overview)。
 
 ### 常見的 HoloLens 2 裝置設定
 
@@ -150,7 +150,7 @@ HoloLens 2 使用的是一流的技術，包括相機、麥克風、喇叭、USB
 
 利用 Windows10，就能使用適用於 Windows app 的通用 Windows 平台 (UWP)，來開發可在多個裝置上順暢運作的 app。
 
-有多種方法可以將應用程式部署到 HoloLens 2 裝置。 App 可以直接透過 MDM、Microsoft 網上商店或側載，透過置備套件進行部署。 您 [可以在這裡找到有關 app 部署](https://docs.microsoft.com/hololens/app-deploy-overview)的更多詳細資料。
+有多種方法可以將應用程式部署到 HoloLens 2 裝置。 App 可以直接透過 MDM、Microsoft 網上商店或側載，透過置備套件進行部署。 如需詳細資訊，請參閱 [app 部署](https://docs.microsoft.com/hololens/app-deploy-overview) 檔。
 
 > [!NOTE]
 > HoloLens 2 只支援執行 UWP ARM64 應用程式。

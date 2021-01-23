@@ -1,6 +1,6 @@
 ---
 title: 管理 HoloLens 的使用者身分識別和登入
-description: 管理使用者身分識別、安全性和 HoloLens 的登入。
+description: 瞭解如何管理使用者身分識別、多位使用者支援、安全性、企業驗證，以及 HoloLens 裝置的登入。
 keywords: HoloLens、使用者、帳戶、AAD、Azure AD、adfs、microsoft 帳戶、msa、認證、參考
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: d9b7bebd9fd326def4ddfc2982bfecb09cb14186
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253220"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283274"
 ---
 # 管理 HoloLens 的使用者身分識別和登入
 
@@ -43,7 +43,7 @@ HoloLens 支援多種類型的使用者身分識別。 您可以使用一或多�
 雲端線上帳戶 (Azure AD 和 MSA) 提供更多功能，因為他們可以使用 Azure 服務。  
 
 > [!NOTE]
-> 1-雖然 HoloLens 2 裝置可支援最多64個 Azure AD 帳戶，但只有10個帳戶才能註冊虹彩驗證。 這會與 Windows Hello 企業版的其他生物識別驗證選項對齊。 [深入閱讀這裡。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 1-雖然 HoloLens 2 裝置可支援最多64個 Azure AD 帳戶，但只有10個帳戶才能註冊虹彩驗證。 這會與 [Windows Hello 企業版的其他生物識別驗證選項](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)對齊。
 
 ## 設定使用者
 
@@ -109,7 +109,7 @@ HoloLens 支援來自同一個 Azure AD 租使用者的多個使用者。 若要
 
 HoloLens 2 支援虹彩驗證。 虹彩是以 Windows Hello 技術為基礎，且支援由 Azure Active Directory 和 Microsoft 帳戶使用。 虹彩的執行方式與其他 Windows Hello 技術相同，且達到遠遠高於 1/10 萬的生物特徵安全性。
 
-您可以在 [此](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)深入瞭解 Windows Hello 的生物特徵需求與規格。 深入瞭解 [Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 和 [Windows hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
+如需詳細資訊，請參閱 [Windows Hello 的生物特徵需求與規格](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) 。 深入瞭解 [Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 和 [Windows hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
 
 ### 帳戶類型會如何影響登入行為？
 

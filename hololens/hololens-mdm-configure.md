@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft 的端點管理員 Intune 管理 HoloLens 裝置
-description: 使用 MDM 來設定 CSP 與原則，並依比例管理 HoloLens。
+description: 瞭解如何使用 Intune 來設定 CSP、原則，以及管理 HoloLens 混合式現實裝置。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4fda0b271e915e82350f806418d2f02cbdd5a796
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: ce288afdcb112c17ffde75078d641f3637a8448c
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009633"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283954"
 ---
 # 使用 Microsoft 的端點管理員 Intune 管理 HoloLens 裝置
 
@@ -40,14 +40,14 @@ Intune 包含您可以在組織內的不同裝置上啟用或停用的設定和�
 使用 MDM 管理裝置可提供大量的專案供您選取。 
 
 ### Wi-Fi
-[Wi-fi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) 會將無線網路設定指派給使用者和裝置。 當您指派 Wi-fi 設定檔時，使用者可以在不需自行設定的情況下，取得您公司的 Wi-fi 存取權。
+[Wi-fi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) 會將無線網路設定指派給使用者和裝置。 當您指派 Wi-Fi 設定檔時，使用者將無法存取您的公司 Wi-Fi，而無需自行設定。
 進一步瞭解如何 [針對 HoloLens 設定您的網路](hololens-commercial-infrastructure.md)
 
 ### 憑證
-認證：提供帳戶驗證、Wi-fi 驗證、VPN 加密及網頁內容 SSL 加密，以協助改善安全性。 雖然系統管理員可以透過預配套件手動管理裝置上的憑證，但最佳做法是使用您的 MDM system 在整個週期中管理這些憑證，從註冊到更新和吊銷等。 您可以註冊 (裝置之後，您的 MDM 系統就能自動將這些憑證部署到裝置的憑證存放區，只要 MDM system 支援簡單憑證註冊通訊協定 (SCEP) 或公開金鑰加密標準 #12 (# A5 的) PKCS # 12。 MDM 也可以在目前的憑證過期前，查詢及刪除已註冊的用戶端憑證，或觸發新的註冊要求。 
+證書可提供帳戶驗證、Wi-Fi 驗證、VPN 加密及網頁內容 SSL 加密，以協助提高安全性。 雖然系統管理員可以透過預配套件手動管理裝置上的憑證，但最佳做法是使用您的 MDM system 在整個週期中管理這些憑證，從註冊到更新和吊銷等。 您可以註冊 (裝置之後，您的 MDM 系統就能自動將這些憑證部署到裝置的憑證存放區，只要 MDM system 支援簡單憑證註冊通訊協定 (SCEP) 或公開金鑰加密標準 #12 (# A5 的) PKCS # 12。 MDM 也可以在目前的憑證過期前，查詢及刪除已註冊的用戶端憑證，或觸發新的註冊要求。 
 
 ### Proxy
-大多數公司內部網路都利用 proxy 來管理內部流量。 使用 HoloLens 2，您可以設定乙太網與 Wi-fi 連線的 proxy 伺服器。 這些設定不會套用至 VPN 連線。 如需 Windows 10 proxy 設定的詳細資訊，請參閱 [NETWORKPROXY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)。
+大多數公司內部網路都利用 proxy 來管理內部流量。 使用 HoloLens 2，您可以設定乙太網路的 proxy 伺服器與 Wi-Fi 連線。 這些設定不會套用至 VPN 連線。 如需 Windows 10 proxy 設定的詳細資訊，請參閱 [NETWORKPROXY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)。
 
 ### VPN
 組織通常會使用 VPN，來控制對其公司內部網路上 app 與資源的存取權。 HoloLens 2 支援 SSL VPN 連線，這需要來自 Microsoft Store 的可下載外掛程式，而且是您選擇的 VPN 廠商專用的。 

@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker 加密
-description: 啟用 Bitlocker 裝置加密，以保護儲存在 HoloLens 上的檔案
+description: 瞭解如何啟用 Bitlocker 裝置加密來保護儲存在 HoloLens 混合現實裝置上的檔案。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,24 +11,24 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 5ab35f0804c6a906cb0bb262211e8ae5ab017459
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865672"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284024"
 ---
-# HoloLens (1 Gen) BitLocker 加密
+# HoloLens (第一代) BitLocker 加密
 
 HoloLens (1 gen) 與 HoloLens 2 都支援使用 BitLocker 進行裝置加密，不過，在 HoloLens 2 上將永遠啟用 BitLocker。
 
 本文將協助您在 HoloLens 上啟用和管理 BitLocker (1 代) 。
 
-在 HoloLens (1 gen) 您可以手動啟用 BitLocker 裝置加密，或使用行動裝置管理 (MDM) 。 請依照這些指示來啟用[BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)，以保護儲存在 HoloLens 上的檔案和資訊。 裝置加密可協助您使用 AES-CBC 128 加密方法來保護您的資料，這相當於 BitLocker 設定服務提供者 (CSP) 中的[EncryptionMethodByDriveType 方法 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 。 具有正確加密金鑰的人員 (（例如密碼) ）可解密或執行資料復原。
+在 HoloLens (1 gen) 您可以手動啟用 BitLocker 裝置加密，或使用行動裝置管理 (MDM) 。 請依照這些指示來啟用 [BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) ，以保護儲存在 HoloLens 上的檔案和資訊。 裝置加密可協助您使用 AES-CBC 128 加密方法來保護您的資料，這相當於 BitLocker 設定服務提供者 (CSP) 中的 [EncryptionMethodByDriveType 方法 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 。 具有正確加密金鑰的人員 (（例如密碼) ）可解密或執行資料復原。
 
 ## 使用 MDM 啟用裝置加密
 
-您可以使用行動裝置管理 (MDM) 提供者來套用需要裝置加密的原則。 要使用的原則是原則 CSP 中的 [[安全性/RequireDeviceEncryption] 設定](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption)。
+您可以使用行動裝置管理 (MDM) 提供者來套用需要裝置加密的原則。 要使用的原則是原則 CSP 中的 [ [安全性/RequireDeviceEncryption] 設定](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 。
 
 [請參閱使用 Microsoft Intune 啟用裝置加密的指示。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
