@@ -13,6 +13,7 @@
 ### [HoloLens 2 支援的語言](hololens2-language-support.md)
 ### [使用 HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens 2 開發版常見問題集](hololens2-development-edition-faq.md)
+### [管理 HoloLens 2 的自訂應用程式](hololens2-holographic-custom-apps.md)
 
 
 ## 開始使用 HoloLens (第 1 代)
@@ -24,6 +25,8 @@
 ### [使用 HoloLens (第 1 代)](hololens1-basic-usage.md)
 ### [使用 HoloLens (第 1 代) 簡報導覽裝置](hololens1-clicker.md)
 ### [在 HoloLens (第 1 代) 上使用 3D 檢視器](holographic-3d-viewer-beta.md)
+### [管理 HoloLens 的自訂應用程式](holographic-custom-apps.md)
+
 
 ## 瀏覽 Windows 全像攝影介面
 ### [使用 [開始] 功能表和混合實境住家](holographic-home.md)
@@ -32,7 +35,6 @@
 ### [建立混合實境相片和影片](holographic-photos-and-videos.md)
 ## 全像攝影應用程式
 ### [尋找、安裝和解除安裝應用程式](holographic-store-apps.md)
-### [管理 HoloLens 的自訂應用程式](holographic-custom-apps.md)
 ## 空間中的全像投影光學與定位
 ### [提高視覺品質和舒適度](hololens-calibration.md)
 ### [使用 HoloLens 來對應物理空間](hololens-spaces.md) 
