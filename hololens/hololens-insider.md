@@ -1,6 +1,6 @@
 ---
 title: 適用於 Microsoft HoloLens 的 Insider Preview
-description: 您可以輕鬆開始使用測試人員組建，並為我們的下一個主要作業系統更新提供寶貴的意見反應，以進行 HoloLens。
+description: 瞭解如何開始使用測試人員組建，並針對我們的下一個重要作業系統更新提供寶貴的意見反應。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271698"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283194"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -108,6 +108,15 @@ ms.locfileid: "11271698"
 - 重設裝置將會移除新的 Microsoft Edge
 - [全息鍵盤] 中的放大鏡預覽顯示不正確的內容
 
+#### Microsoft Edge 測試人員頻道
+
+Microsoft Edge 小組將三個預覽頻道提供給 Edge 擁有者群組： Beta、開發人員和未圖。 安裝預覽頻道並不會卸載您 HoloLens 2 上已發行版本本的 Microsoft Edge，您可以同時安裝一個以上的版本。 
+
+若要深入瞭解 Edge 測試人員社區，請造訪 [Microsoft Edge](https://www.microsoftedgeinsider.com) 測試人員的首頁。 若要深入瞭解不同的邊緣測試人員頻道並開始使用，請造訪邊緣測試人員 [下載頁面](https://www.microsoftedgeinsider.com/download)。
+
+> [!NOTE]
+> 在針對 HoloLens 2 的 Windows 測試人員預覽版期間，您裝置上的 Microsoft Edge 版本可能高於在部分 (或所有) 的 Microsoft Edge 測試人員頻道中提供的版本。 這是為了確保專門針對 HoloLens 2 上的網頁瀏覽器提供的新功能和修正程式可能會儘快取得我們的 Windows 測試人員。 在公開發行下一個 Windows 更新之後不久，Microsoft Edge 測試人員通道組建將超過並早在 HoloLens 2 上的 Microsoft Edge 版本。
+
 ### 新的 [設定] 應用程式
 
 在這個版本中，我們會推出新版本的 [設定] 應用程式。 新的 [設定] 應用程式在下欄區域中包含 HoloLens 2 的新功能和已展開的設定：聲音、Power & 睡眠、網路 & 網際網路、應用程式、帳戶、輕鬆存取等。
@@ -162,7 +171,7 @@ Office web app 已新增至 [開始] 功能表中的 [所有應用程式] 清單
 > [!IMPORTANT]
 > 插入 **USB 麥克風時，不會自動將它設定為輸入裝置**。 當您在一組 USB-C 耳機中插入時，系統會看到耳機的音訊會自動重新導向至耳機，但 HoloLens OS 會將內部麥克風陣列的優先順序設為任何其他輸入裝置的上方。 **若要使用 USB-C 麥克風，請遵循下列步驟。**
 
-使用者現在可以使用 [ **音效** 設定] 面板選取 [與 USB 連接的外部麥克風]。 這可讓使用者使用自己的麥克風連接，但在錄製和應用程式中則是 USB。 USB-C 麥克風很容易啟用和使用。
+使用者可以使用 [ **音效** 設定] 面板，選取 [與 USB 連接的外部麥克風]。 USB-C 麥克風可以用來進行通話、錄製等。
 
 開啟 [**設定**] 應用程式，然後選取 [**系統**  ->  **音效**]。
 

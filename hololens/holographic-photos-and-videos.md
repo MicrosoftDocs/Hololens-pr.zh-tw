@@ -1,6 +1,6 @@
 ---
 title: 捕獲及管理混合現實相片和影片
-description: 瞭解如何使用 HoloLens 來捕獲、查看及共用混合現實相片和影片。
+description: 瞭解如何使用 HoloLens 混合現實裝置來捕獲、查看及共用混合現實相片和影片。
 keywords: hololens、相片、影片、捕獲、mrc、混合現實捕獲、相片、相機、串流、livestream、示範
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 6b7bb29ab76a16aa518ca38ee04f434dfd0cf0c7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165002"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283504"
 ---
 # 建立混合實境相片和影片
 
