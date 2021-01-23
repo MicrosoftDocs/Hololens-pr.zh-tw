@@ -1,6 +1,6 @@
 ---
 title: 準備新的 HoloLens
-description: 本指南會逐步解說首次設定。
+description: 瞭解第一次該如何準備、調整並安裝您的 HoloLens (第 1 代) 混合實境裝置。
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03e6353500342a03d14955991cd73acbc5d2f261
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0361af22fa6d84f636b841f6a311edcdace5a937
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828473"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283164"
 ---
 # 讓您的 HoloLens (第 1 代) 準備好可供使用
 

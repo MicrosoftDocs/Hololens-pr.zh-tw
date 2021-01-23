@@ -1,6 +1,6 @@
 ---
 title: 頁面設定可見度
-description: 適用於 PageVisibilityList 和指南的 HoloLens 支援 URI 清單
+description: 在 HoloLens 混合實境裝置上，使用 PageVisibilityList 和 [指南] 的支援 URI 清單，以隨時掌握最新資訊。。
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163139"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284114"
 ---
 # 頁面設定可見度
 
@@ -42,7 +42,8 @@ HoloLens 裝置易管理的其中一項功能是使用 [設定/PageVisibilityLis
 1. 選取 [資料挑選] 時，請選擇: **字串**
 1. 輸入值時，請使用: **showonly:network-wifi;network-proxy;bluetooth**
 1. 請務必將自訂裝置設定指派給裝置要加入的群組。
-如需有關 Intune 群組和裝置設定的詳細資訊，請 [造訪這裡](hololens-mdm-configure.md)。
+
+如需有關 Intune 群組和裝置設定的詳細資訊，請參閱 [HoloLens MDM 設定](hololens-mdm-configure.md)。
 
 無論是哪種方法，您的裝置都應立即收到變更，且使用者會看到下列的 [設定] 應用程式。 
 
@@ -126,4 +127,4 @@ HoloLens 裝置和 Windows 10 裝置在 [設定] 應用程式中有不同的頁�
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-如需 Windows 10 設定 URI 的完整清單，請造訪[此處](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)。 
+如需 Windows 10 設定 URI 的完整清單，請造訪[啟動設定](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) 文件。 

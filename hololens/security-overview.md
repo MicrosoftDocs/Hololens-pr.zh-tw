@@ -1,6 +1,6 @@
 ---
 title: HoloLens 安全性概觀
-description: 安全性概觀
+description: 開始使用 HoloLens 混合實境裝置的安全性概觀。
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd626d404831cdfb39acd5a2d8a4f6507a5c694b
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009441"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284144"
 ---
 # 安全性概觀
 

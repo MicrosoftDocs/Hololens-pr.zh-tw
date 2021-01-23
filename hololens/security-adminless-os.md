@@ -1,6 +1,6 @@
 ---
-title: 安全性無系統管理員作業系統
-description: 無系統管理員作業系統和全息透鏡安全性
+title: 系統管理較少的作業系統安全性
+description: 瞭解系統管理較少的作業系統、裝置擁有者，以及 HoloLens 混合實境裝置上的安全性。
 ms.prod: hololens
 author: evmill
 ms.author: v-evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: a5c86a5420f3a9b0705667161e6b9440134731d7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253080"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284124"
 ---
 # 無系統管理員作業系統
 
