@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/13/2021
+ms.date: 1/21/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
+ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283194"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297656"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -113,6 +113,24 @@ ms.locfileid: "11283194"
 Microsoft Edge 小組將三個預覽頻道提供給 Edge 擁有者群組： Beta、開發人員和未圖。 安裝預覽頻道並不會卸載您 HoloLens 2 上已發行版本本的 Microsoft Edge，您可以同時安裝一個以上的版本。 
 
 若要深入瞭解 Edge 測試人員社區，請造訪 [Microsoft Edge](https://www.microsoftedgeinsider.com) 測試人員的首頁。 若要深入瞭解不同的邊緣測試人員頻道並開始使用，請造訪邊緣測試人員 [下載頁面](https://www.microsoftedgeinsider.com/download)。
+
+有幾種方法可將 Microsoft Edge 測試人員通道安裝至 HoloLens 2：
+
+**在裝置上直接安裝 (目前僅提供未受管理的裝置) **
+  1. 在您的 HoloLens 2，請造訪 Edge 「測試人員 [-下載」頁面](https://www.microsoftedgeinsider.com/download)
+  1. 針對您要安裝的 [邊緣測試人員] 頻道，選取 [ **HoloLens 2 的下載** ] 按鈕。
+  1. 使用 [檔案資源管理器] (從 Edge 下載佇列或裝置的 [下載] 資料夾啟動已下載的 msix 檔案) 
+  1. [App 安裝程式](app-deploy-app-installer.md) 將會啟動
+  1. 選取 [ **安裝** ] 按鈕
+  1. 成功安裝之後，您會在 [開始] 功能表的 [ **所有應用程式** ] 清單中找到 Microsoft Edge Beta、開發人員或未放大的專案，做為個別的專案
+
+**透過電腦安裝 Windows Device Portal (需要在 HoloLens 2 上啟用 [開發人員模式](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)) **
+  1. 在您的電腦上，流覽 [邊緣測試人員 [下載] 頁面](https://www.microsoftedgeinsider.com/download)
+  1. 針對您想要安裝的邊緣測試人員頻道，選取 [Windows 10 版下載] 按鈕旁的 **下拉式箭號按鈕** 。
+  1. 在下拉式功能表中選取 [ **HoloLens 2** ]
+  1. 將 msix 檔案儲存到電腦的 [下載] 資料夾 (或您可以輕鬆找到的其他資料夾) 
+  1. 在您的電腦上使用 [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) ，在 HoloLens 2 上安裝已下載的 msix 檔案
+  1. 成功安裝之後，您會在 [開始] 功能表的 [ **所有應用程式** ] 清單中找到 Microsoft Edge Beta、開發人員或未放大的專案，做為個別的專案
 
 > [!NOTE]
 > 在針對 HoloLens 2 的 Windows 測試人員預覽版期間，您裝置上的 Microsoft Edge 版本可能高於在部分 (或所有) 的 Microsoft Edge 測試人員頻道中提供的版本。 這是為了確保專門針對 HoloLens 2 上的網頁瀏覽器提供的新功能和修正程式可能會儘快取得我們的 Windows 測試人員。 在公開發行下一個 Windows 更新之後不久，Microsoft Edge 測試人員通道組建將超過並早在 HoloLens 2 上的 Microsoft Edge 版本。
@@ -253,6 +271,17 @@ Windows 測試人員現在正在移至 [頻道]。 [ **快速** 響鈴] 會成�
 接著，選取 [Windows 作用中 **的開發**]，選擇您要接收 **開發人員通道** 或 **Beta 通道** 組建，並查看程式條款。
 
 選取 [ **確認] > [立即重新開機** ] 完成。 重新開機裝置之後，請移至 [ **設定] > 更新 & 安全性 > 檢查更新** ，以取得最新的組建。
+
+### 更新錯誤0x80070490 工作-周圍
+如果您在 [開發人員] 或 [Beta] 通道上更新時遇到更新錯誤0x80070490，請嘗試以下短期工作。 它需要移動您的測試人員通道、挑選更新，然後再移回您的測試人員頻道。
+
+#### 階段式單一發行預覽
+1.  設定，更新 & 安全性，Windows 測試人員計畫，請選取 [ **發行預覽頻道**]。
+2.  [設定]、[更新 & 安全性]、[Windows Update]、[ **檢查更新**]。 更新之後，請繼續執行第二階段。
+
+#### 階段二開發人員通道
+1. 設定，更新 & 安全性，Windows 測試人員計畫，選取 **開發頻道**。
+2. [設定]、[更新 & 安全性]、[Windows Update]、[ **檢查更新**]。
 
 ## FFU 下載和快閃路線
 若要使用 [航班式簽署 ffu] 進行測試，您必須先將裝置解除鎖定，然後才能閃爍 [航班已簽署] ffu。
