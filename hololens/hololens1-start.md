@@ -1,6 +1,6 @@
 ---
 title: 設定 HoloLens (第 1 代)
-description: 本指南會逐步解說首次設定。  您需要具備 Wi-Fi 網路以及 Microsoft (MSA) 或 Azure Active Directory (Azure AD) 帳戶。
+description: 瞭解如何使用 Microsoft (MSA) 或 Azure Active Directory (AAD) 帳戶，在 Wi-Fi 網路上首次設定 HoloLens (第 1 代)。
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903229"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283924"
 ---
 # 設定您的 HoloLens (第 1 代)
 
@@ -55,7 +55,7 @@ HoloLens 隨附的**選用舒適配件**，可協助您獲得最舒適的配戴�
         1. 繼續設定裝置。
     - 當您選擇 [我擁有它]**** 時，請使用 Microsoft 帳戶登入。 設定完成後，您可以[在裝置管理中手動註冊 HoloLens](hololens-enroll-mdm.md#different-ways-to-enroll)。
         1. 輸入您的 Microsoft 帳戶資訊。
-        1. 輸入您的密碼。 如果您的 Microsoft 帳戶需要[兩步驟驗證 (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)，請完成驗證程序。
+        1. 輸入您的密碼。 如果您的 Microsoft 帳戶需要[雙步驟驗證 (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)，請完成驗證程序。
 
 1. 裝置會根據它從 Wi-Fi 網路取得的資訊來設定您的時區。
 

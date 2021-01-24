@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 適合和舒適性常見問題集
-description: 有關如何調整 HoloLens 2 適合度的常見問題解答。
+description: 隨時關注有關如何適應 HoloLens 2 的常見問題解答回覆，並在混合實境體驗中保持舒適。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929839"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283834"
 ---
 # HoloLens 2 適合和舒適性常見問題
 
