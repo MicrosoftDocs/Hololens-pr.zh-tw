@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
-ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
+ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
+ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297656"
+ms.locfileid: "11297763"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -97,7 +97,6 @@ ms.locfileid: "11297656"
 **即將推出的案例與功能：**
 - WebXR 和360檢視器擴充功能
 - 在您的環境中流覽多個視窗時，內容還原以修正視窗
-- 透過瀏覽器加入 Microsoft 團隊通話（含影片、混合現實捕獲或螢幕共用） (使用音訊加入通話的功能良好) 
 
 **預期無法運作的案例與功能：**
 - 多個視窗中同時有音訊資料流程的空間音效
@@ -164,6 +163,7 @@ Microsoft Edge 小組將三個預覽頻道提供給 Edge 擁有者群組： Beta
 - 先前設定的視窗將會被移除 (請參閱上方的記事) 
 - [造訪通知] 頁面可能會造成 [設定] 應用程式 (調查) 
 - [乙太網] 頁面目前沒有顯示 (要立即修正) 
+- 您不能再使用 [設定] 應用程式重新命名您的裝置 (IT 系統管理員可以使用 [預配套件] 或 [MDM] 重新命名裝置) 
 - 新 Microsoft Edge 的電池使用量可能不准確，因為它的性質是由 UWP 配接器層支援的 Win32 桌面應用程式 (沒有立即預期的修正) 
 
 ### 預設的應用程式選擇器
