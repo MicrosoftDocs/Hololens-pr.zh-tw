@@ -114,7 +114,7 @@
 ### [常見問題集](hololens-faq.md)
 ### [HoloLens 的已知問題](hololens-known-issues.md)
 ### [透過 HoloLens 裝置收集與使用診斷資訊](hololens-diagnostic-logs.md)
-### [取得支援](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [取得技術支援](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # HoloLens 版本資訊
 ## [HoloLens 2 版本資訊](hololens-release-notes.md)
