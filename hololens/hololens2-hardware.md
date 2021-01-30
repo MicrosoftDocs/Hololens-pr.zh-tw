@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283034"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304966"
 ---
 # HoloLens 2 硬體
 
@@ -29,10 +29,12 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 - **面板**。 包含 HoloLens 感應器及顯示器。 您可以在佩戴 HoloLens 時將面板向上旋轉。
 - **頭帶**。 若要戴上 HoloLens，請使用調整輪來展開頭帶。 將 HoloLens 放在適當位置之後，向右轉緊調整輪，直到頭帶舒適為止。
-- **亮度按鈕**。 戴上 HoloLens 時，亮度按鈕位於裝置的左側。
-- **音量按鈕**。 戴上 HoloLens 時，音量按鈕位於裝置的右側。
+- **亮度按鈕**。 戴上 HoloLens 時，亮度按鈕位於面板的左側。
+- **音量按鈕**。 戴上 HoloLens 時，音量按鈕位於面板的右側。
+- **電源按鈕**。 戴上 HoloLens 時，電源按鈕位於背部外蓋的右側。
+- **USB-C 連接埠**。 戴上 HoloLens 時，USB-C 連接埠位於背部外蓋右側的電源按鈕下方。
 
-## 包裝盒內容物
+## 包裝盒內容
 
 - **眉墊**。 您可以視需要取下及更換眉墊。
 - **頭頂綁帶**。 當您戴上 HoloLens 並四處移動時，請使用頭頂綁帶以協助將裝置固定在原位。 如果要長時間戴著 HoloLens，頭頂綁帶可以使裝置戴起來更舒適。
