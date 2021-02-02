@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
+ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283854"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "11306652"
 ---
 # HoloLens 2 開發版常見問題集
 
@@ -31,7 +31,7 @@ HoloLens 2 開發版包含 HoloLens 2、$500 （在 Azure 點數中為3個月的
 
 ### HoloLens 2 與 HoloLens 2 開發版本有何不同？
 
-您只能使用 HoloLens 2 開發版本，以便在生產設定中與 HoloLens 2 (商業版) 中的正式組建與測試搭配使用。 在購買開發版時，Microsoft 可能會自行決定如何在結帳期間提供您所識別的特定權利，例如，將特定的折扣積分或試用版兌換為有限期間內的特定 Microsoft 或協力廠商服務或工具的許可權。 [深入了解](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+您只能使用 HoloLens 2 開發版本來建立並測試內部企業應用程式，以便在生產設定中與 HoloLens 2 (商業版) 搭配使用。 在購買開發版時，Microsoft 可能會自行決定在結帳程式中提供特定的權利。 這些權利包括在有限期間內兌換特定的折扣積分或試用版，以及特定 Microsoft 或協力廠商服務或工具的許可權。 [深入了解](hololens2-options.md#learn-about-the-development-edition)
 
 ### 是否可使用任何版本的 HoloLens 2 來進行開發？
 
