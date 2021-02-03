@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a7a9fe510c699571dc2e307f5def8c730097815
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
+ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306686"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11311743"
 ---
 # HoloLens 2 - 工業版常見問題集
 
-![在無塵室中使用工業版](./images/industrial-edition.jpg)
+![在無塵室中使用工業版](./images/industrial-sku-with-remote-assist.png)
 
 ## HoloLens 2 工業版的優點
 
@@ -92,7 +92,7 @@ HoloLens 2 工業版不支援使用更換零件及整新品。 如果您認為�
 
 ### HoloLens 2 工業版上可以執行哪些應用程式？
 
-HoloLens 2 工業版同時支援第一方和第三方應用程式，並具有精選的內建企業就緒應用程式。 您可以利用數個[應用程式部署方法](https://docs.microsoft.com/hololens/app-deploy-overview)，將商務營運應用程式部署到裝置。
+HoloLens 2 工業版同時支援第一方和第三方應用程式，並具有精選的內建企業就緒應用程式。 您可以利用數個[應用程式部署方法](https://docs.microsoft.com/hololens/app-deploy-overview)，將企業營運應用程式部署到裝置。
 
 ### 我可以從 HoloLens 2 升級至 HoloLens 2 工業版嗎？
 
