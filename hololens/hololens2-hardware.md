@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
-ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
+ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
+ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304966"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11306921"
 ---
 # HoloLens 2 硬體
 
@@ -132,22 +132,23 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 ## 預先安裝的軟體
 
-- Windows 全像攝影版作業系統
-- 3D 檢視器
-- 行事曆
-- Cortana
-- Dynamics 365 Guides
-- Dynamics 365 Remote Assist
-- 意見反應中樞
-- 檔案總管
-- Mail
-- Microsoft Edge
-- Microsoft Store
-- 電影與電視
-- OneDrive
-- 相片
-- 設定
-- 提示
+|   |   |
+| - | - |
+| Windows 全像攝影版作業系統 | 有了 Windows 全像攝影版，Windows 10 使用者將能夠透過 HoloLens 2 在混合實境環境中使用其應用程式和遊戲。
+| 3D 檢視器 | [3D 檢視器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)可讓您輕鬆地即時檢視 3D 模型和動畫。|
+| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) 是您的個人生產力小幫手，可協助您掌握重要資訊，並節省您尋找所需資訊的時間。  |
+| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 可協助員工更快速地學習有關 HoloLens 裝置的新技能。 |
+| Dynamics 365 Remote Assist | [Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 可讓技術人員使用 Microsoft Teams 或 Dynamics 365 Remote Assist 來共同作業及解決遠端作業者的問題。  |
+| 意見反應中樞 | [意見反應中樞](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)可讓您透過共用您的建議或問題，提供有關 Windows 和應用程式的意見反應。  |
+| 檔案總管 | 檔案總管提供用於存取檔案系統的圖形化使用者介面。 |
+| 郵件和行事曆 | [郵件和行事曆](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)應用程式可協助您掌握最新的電子郵件、管理您的排程，並與您的連絡人保持連絡。 |  
+| Microsoft Edge | Microsoft Edge 讓您瀏覽時有更高的隱私權、更高的生產力以及更多的價值，為您提供世界級的效能。 |
+| Microsoft Store | 您可以在 [Microsoft Store](https://www.microsoft.com) 取得可與 HoloLens 搭配使用的應用程式和遊戲。|
+| 電影與電視 | [電影與電視](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)在一個簡單、快速且優雅的應用程式中為您提供最新的娛樂。 |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) 可讓您從各個位置的裝置存取和編輯您的檔案。  |
+| 相片| [相片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)可讓您檢視和編輯您的相片和影片、製作電影和建立相簿。  |
+| 設定 | [設定] 應用程式是您詳細自訂 Windows 全像攝影版運作方式的位置。  |
+| 提示 | [提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)可讓您掌握 Windows 全像攝影版中令人驚喜且較不為人知的功能。 |
 
 ## 裝置認證
 
@@ -174,9 +175,9 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 |     外部託運容器深度     |     172.01 毫米          |     6.772 英吋        |
 |     外部託運容器重量    |     3.284 公斤           |     7.240 磅           |
 
-注意：
-- 單位：黑色、零售樣式盒裝 HoloLens 2 已售出。
-- 外部託運容器：產品周圍包覆保護性運送包裝。
+> [!NOTE]
+> - 單元：銷售 HoloLens 2 所採用的黑色、零售樣式包裝盒。
+> - 外部託運容器：產品周圍包覆保護性運送包裝。
 
 ## 尋找序號
 
@@ -186,18 +187,18 @@ HoloLens 2 裝置的序號印在面板下方。
 1. 您可以在轉軸附近找到序號。 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 也可以透過連接的電腦找到序號：
 
 1. 插入裝置
 1. 在檔案總管中巡覽至**此電腦**
-1. 按右鍵並選擇 HoloLens 裝置的**屬性**
-1. 這會顯示裝置的序號。 如下面的螢幕擷取畫面所示。
+1. 在 HoloLens 裝置上按一下滑鼠右鍵，並選擇 [屬性]****
+1. 這會顯示裝置的序號，如以下螢幕擷取畫面所示。
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## 後續步驟
+## 下一步
 
 > [!div class="nextstepaction"]
 > [設定和啟動 HoloLens 2](hololens2-setup.md)

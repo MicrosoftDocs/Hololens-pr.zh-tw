@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/21/2021
+ms.date: 2/2/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
-ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
+ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
+ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297763"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311823"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -34,6 +34,7 @@ ms.locfileid: "11297763"
 | 功能名稱                                              | 簡短描述                                                                      | 可在組建中使用 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [新的 Microsoft Edge](#introducing-the-new-microsoft-edge) | 新的、以 Chromium 為基礎的 Microsoft Edge 現已提供于 HoloLens 2                         | 20279.1006 |
+| [WebXR 和360檢視器](#webxr-and-360-viewer)             | 嘗試沉浸式 web 體驗和360影片播放                                           | 20289.1000 |
 | [新的 [設定] 應用程式](#new-settings-app)                     | 舊版設定應用程式將由含新功能和設定的更新版本取代 | 20279.1006 |
 | [預設的應用程式選擇器](#default-app-picker)                 | 針對每個檔案或連結類型選擇要啟動的應用程式                                      | 20279.1006 |
 | [Office web app](#office-web-app)                         | Office web app 的快捷方式現已列在 [所有應用程式] 中。                                   | 20279.1006 |
@@ -133,6 +134,57 @@ Microsoft Edge 小組將三個預覽頻道提供給 Edge 擁有者群組： Beta
 
 > [!NOTE]
 > 在針對 HoloLens 2 的 Windows 測試人員預覽版期間，您裝置上的 Microsoft Edge 版本可能高於在部分 (或所有) 的 Microsoft Edge 測試人員頻道中提供的版本。 這是為了確保專門針對 HoloLens 2 上的網頁瀏覽器提供的新功能和修正程式可能會儘快取得我們的 Windows 測試人員。 在公開發行下一個 Windows 更新之後不久，Microsoft Edge 測試人員通道組建將超過並早在 HoloLens 2 上的 Microsoft Edge 版本。
+
+### WebXR 和360檢視器
+
+*已在 Windows 測試人員組建20289.1000 中新增*
+
+新的 Microsoft Edge 包括 WebXR 的支援，這是建立沉浸式網路體驗 (取代 WebVR) 的新標準。 許多沉浸式網路體驗是使用 VR 來設計， (它們會將您的視圖欄位取代為虛擬環境) ，但 HoloLens 2 也支援這些體驗。 WebXR 標準也能利用您的實體環境，加強及混合現實的網頁體驗。 隨著開發人員花更多的時間 WebXR，我們會預計新擴大和混合現實的沉浸式體驗將會送出給 HoloLens 2 客戶！
+
+360檢視器擴充功能是在 WebXR 上建立，並會在 HoloLens 2 上的新 Microsoft Edge 旁邊自動安裝。 此網頁延伸功能可讓您在360度的影片中 immerse 自己的功能。 YouTube 提供最大的360影片選取範圍，因此我們鼓勵您開始進行。
+
+#### 如何使用 WebXR
+
+1. 流覽至有 WebXR 支援的網站。
+1. 選取網站上的 [ **輸入 VR** ] 按鈕。 此按鈕的位置和視覺表示方式可能會因網站而異，但看起來可能會像這樣：
+
+    ![輸入 VR 按鈕範例](images/75px-enter-vr.png)
+
+1. 當您第一次嘗試在特定網域上啟動 WebXR 體驗時，瀏覽器會要求您同意輸入沉浸式查看，請選取 [ **允許**]。
+1. 使用 [HoloLens 2 手勢](hololens2-basic-usage.md#the-hand-tracking-frame) 來操作體驗。
+1. 如果體驗沒有 [結束] **按鈕，** 請使用 [ [開始] 手勢](hololens2-basic-usage.md#start-gesture) 傳回 home。
+
+**建議的 WebXR 範例**
+- 360檢視器 (請參閱下一節) 
+- [XR Dinosaurs](https://www.xrdinosaurs.com/)
+- [Barista Express](https://constructarca.de/game/barista-express/)
+- [WebXR 畫圖](https://threejs.org/examples/webxr_vr_paint.html)
+
+#### 如何使用360檢視器
+
+1. 流覽至 YouTube 上的360度影片。
+1. 在影片框架中，選取混合現實耳機按鈕：
+
+    ![啟動360檢視器的按鈕](images/enter-360-viewer.jpg)
+
+1. 當您第一次嘗試在特定網域上啟動360檢視器時，瀏覽器會要求您同意輸入沉浸式查看。 選取 [ **允許**]。
+1. [空中攻絲](hololens2-basic-usage.md#select-using-air-tap) 以顯示播放控制項。 使用 [[手飛機] 和 [air](hololens2-basic-usage.md#select-using-air-tap) ] 來播放/暫停、跳過/後退、開啟/關閉標題，或停止 (的體驗，以)  播放控制會在幾秒不活動後消失。
+
+#### 熱門 WebXR 及360檢視器已知問題
+- 在 WebXR 體驗中，當您傾斜頭部或在您的環境中移動時，全息影像可能會移動或傾斜。
+- 根據 WebXR 體驗的複雜性，頻數可能會下降或斷斷續續。
+- WebXR 中尚未提供所示的手接頭。
+- 在退出 WebXR 或360檢視器體驗時，混合現實家用版中的全息影像可能需要30秒以上的時間才能再次出現。
+- 從 YouTube 以外的網站中的360視頻可能無法如期運作。
+- 如果360影片沒有輸入沉浸式視圖 (或混合現實耳機按鈕沒有出現) ，請嘗試重新整理頁面。
+- 在 HoloLens 2 上的360檢視器中，仍看不到 [標題]。
+- 暫停360檢視器中的影片會使影片無法轉譯 (，但選取 [播放] 按鈕就能正確地繼續播放) 。
+- 360檢視器中的 [下一個影片] 按鈕目前無法運作。
+- 您可以在沉浸式「劇院」模式中播放2D 影片，但幀頻將小於 30 fps。
+
+#### 提供 WebXR 與360檢視器的意見反應
+
+請透過新版 Microsoft Edge 中的 [ **傳送意見** 反應] 功能，與我們的小組共用意見反應和錯誤。
 
 ### 新的 [設定] 應用程式
 

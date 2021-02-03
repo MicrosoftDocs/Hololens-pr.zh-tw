@@ -13,7 +13,8 @@
 ### [HoloLens 2 支援的語言](hololens2-language-support.md)
 ### [使用 HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens 2 開發版常見問題集](hololens2-development-edition-faq.md)
-### [管理 HoloLens 2 的自訂應用程式](hololens2-holographic-custom-apps.md)
+### [HoloLens 2 工業版常見問題集](hololens2-industrial-edition-faq.md)
+
 
 
 ## 開始使用 HoloLens (第 1 代)
@@ -35,6 +36,7 @@
 ### [建立混合實境相片和影片](holographic-photos-and-videos.md)
 ## 全像攝影應用程式
 ### [尋找、安裝和解除安裝應用程式](holographic-store-apps.md)
+### [管理 HoloLens 2 的自訂應用程式](hololens2-holographic-custom-apps.md)
 ## 空間中的全像投影光學與定位
 ### [提高視覺品質和舒適度](hololens-calibration.md)
 ### [使用 HoloLens 來對應物理空間](hololens-spaces.md) 
