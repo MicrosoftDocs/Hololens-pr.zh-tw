@@ -14,18 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283074"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312630"
 ---
-# 部署指南–雲端連線的 HoloLens 2 （含遠端協助）-概覽
+# 部署指南－雲端連線 HoloLens 2 與遠端協助－概覽
 
 本指南可協助 IT 專業人員規劃 Microsoft HoloLens 2 裝置並將其部署至組織，其總體目標是將這些裝置雲與您的組織連線至您的組織，並準備好使用動態365遠端協助。 請記住，這將會成為您組織在各種 HoloLens 2 使用案例中部署的概念驗證模型。
 
 在指南中，我們將說明如何將裝置註冊到裝置管理，視需要套用授權，並確認您的使用者能夠立即在裝置設定中使用遠端協助。 若要這樣做，我們將會透過重要的基礎結構部分來設定並執行，以使用 HoloLens 2 來實現規模的部署。
+
+![雲端連接的橫幅](./images/cloud-connected-hololens-large.png)
 
 ## 本指南中
 
@@ -81,7 +83,7 @@ ms.locfileid: "11283074"
 > - [建立支援計畫。](hololens2-cloud-connected-maintain.md#support-plan)
 > - [開發規劃。](hololens2-cloud-connected-maintain.md#development-plan)
 
-## 後續步驟
+## 下一步
 
 > [!div class="nextstepaction"]
 > [雲端連接部署-準備](hololens2-cloud-connected-prepare.md)

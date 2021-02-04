@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d4275d8fe71e469eee3f8c63576794e6ea5adf3c
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306672"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312648"
 ---
 # HoloLens 2 概觀
 
@@ -106,7 +106,7 @@ HoloLens 2 工業版已透過新的資料和認證進行增強並重新設計，
 
 除了已升級的裝置，HoloLens 2 工業版也提供 2 年保固和快速更換方案。
 
-請檢視 [HoloLens 2 工業版常見問題](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md)。
+請檢視 [HoloLens 2 工業版常見問題](hololens2-industrial-edition-faq.md)。
 
 #### 清潔並處理 HoloLens 2
 您可以使用 "70%" 酒精與水清除 HoloLens 2 工業版，以清潔裝置的硬質表面，包括面板、眉墊及頭帶。 如需詳細資訊，請參閱 [HoloLens 2 清潔常見問題集](https://docs.microsoft.com/hololens/hololens2-maintenance)。 
