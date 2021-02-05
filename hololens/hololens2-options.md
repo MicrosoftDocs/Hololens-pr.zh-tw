@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
+ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312648"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313550"
 ---
 # HoloLens 2 概觀
 
@@ -66,7 +66,7 @@ HoloLens 是一個混合實境裝置，它是 *由全像投影* 所提供的，�
 
 ### **HoloLens 2 (僅限裝置)**
 #### 瞭解 HoloLens 2
-在商業環境中使用 HoloLens 2 裝置，就是您的企業或組織的強大工具。 您也可以使用任何 HoloLens 2 來建立混合實境應用程式。 
+在商業環境中使用 HoloLens 2 裝置，就是您的企業或組織的強大工具。 開發人員也可以使用任何 HoloLens 2 來建立混合實境應用程式。 
 
 <br>
 
@@ -87,7 +87,7 @@ HoloLens 是一個混合實境裝置，它是 *由全像投影* 所提供的，�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### 以下是使用 HoloLens 2 和 Dynamics 365 Remote Assist 版本進行下一步的操作
-我們已建立特定指南，以協助您依比例部署 HoloLens 裝置。 本指南包含針對 Azure Active Directory 進行端對端設定，以驗證 [遠端協助] 通話。 如需更多詳細資料，請參閱我們的 [部署指南－雲端連接 HoloLens 2 與遠端協助](hololens2-cloud-connected-overview.md)。
+我們已建立特定指南，以協助您依比例部署 HoloLens 裝置。 本指南包含 Azure Active Directory 的端對端設定，以驗證遠端協助通話。 如需更多詳細資料，請參閱我們的 [部署指南－雲端連接 HoloLens 2 與遠端協助](hololens2-cloud-connected-overview.md)。
 
 | 檢查點  | 結果                                |
 |-------------|----------------------------------------|
@@ -131,7 +131,7 @@ HoloLens 2 開發版本包含 HoloLens 2、$500 的 Azure 點數、3 個月的 U
 |---|---|
 |  [Unity](https://unity.com/) | 即時 3D 開發平臺。   |
 |  [Unity 的 Pixyz 外掛程式](https://www.pixyz-software.com/plugin/) | 使用開發世界與工程 &amp; CAD 世界連接一起的橋樑。   |
-| [Azure 服務的 $500 Azure 點數](https://azure.microsoft.com/resources/) | HoloLens 2 開發版本隨附的 Azure 點數是快速開始在 Azure 上建立及測試混合實境應用程式。 |
+| [Azure 服務的 $500 Azure 點數](https://azure.microsoft.com/resources/) | HoloLens 2 開發版隨附的 Azure 點數，可讓您快速開始在 Azure 上建立及測試混合實境應用程式。 |
 
 #### 兌換您的點數
 
