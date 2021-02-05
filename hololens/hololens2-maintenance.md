@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 清潔常見問題集
-description: 取得清除及維護 HoloLens 2 裝置之所有常見問題的最新回答。
+description: 取得有關清理及維護 HoloLens 2 裝置之所有常見問題的最新解答。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
+ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283084"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313792"
 ---
 # HoloLens 2 清潔常見問題集
 
@@ -28,6 +28,10 @@ ms.locfileid: "11283084"
 > Microsoft 無法決定任何特定 disinfectant 產品在緊急 pathogens （例如 COVID-19）中的效能。 請參閱當地公開健康情況授權，瞭解如何抵禦潛在的病毒感染。  
 
 ## HoloLens 2 裝置的一般清洗指示是什麼？
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+## HoloLens 2 裝置的一般清洗指示是什麼？
+<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **清理裝置**
 
@@ -60,11 +64,11 @@ ms.locfileid: "11283084"
 
 ## 我可以使用酒精來清理裝置嗎？
 
-是。 您可以使用「70%」 isopropyl 酒精與水的解決方案來清潔裝置的硬表面，包括面板。 使用混合 isopropyl 酒精和水來輕輕 moisten 布，然後輕拭擦拭裝置表面
+可以。 您可以使用「70%」 isopropyl 酒精與水的解決方案來清潔裝置的硬表面，包括面板。 使用混合 isopropyl 酒精和水來輕輕 moisten 布，然後輕拭擦拭裝置表面
 
 ## Brow 墊是否可自行更換？
 
-是。 眉墊是以磁吸方式連接到裝置。 若要分離，請將它從 headband 中輕輕拉出來。 若要更換它，請將它貼回位置。
+可以。 眉墊是以磁吸方式連接到裝置。 若要分離，請將它從 headband 中輕輕拉出來。 若要更換它，請將它貼回位置。
 
 ![取下或更換眉墊](images/hololens2-remove-browpad.png)
 
