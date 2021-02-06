@@ -4,7 +4,7 @@ description: 瞭解每個 HoloLens 2 裝置版本的相同或相異之處，以�
 keywords: HoloLens 2 購買選項，HoloLens 選項，開發人員版本
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314264"
 ---
 # HoloLens 2 概觀
 
@@ -106,7 +106,9 @@ HoloLens 2 工業版已透過新的資料和認證進行增強並重新設計，
 
 除了已升級的裝置，HoloLens 2 工業版也提供 2 年保固和快速更換方案。
 
-請檢視 [HoloLens 2 工業版常見問題](hololens2-industrial-edition-faq.md)。
+![用於無塵室的工業版](./images/ie-small-pic.png)
+
+請檢視 [HoloLens 2 工業版常見問題集](hololens2-industrial-edition-faq.md)。
 
 #### 清潔並處理 HoloLens 2
 您可以使用 "70%" 酒精與水清除 HoloLens 2 工業版，以清潔裝置的硬質表面，包括面板、眉墊及頭帶。 如需詳細資訊，請參閱 [HoloLens 2 清潔常見問題集](https://docs.microsoft.com/hololens/hololens2-maintenance)。 
@@ -116,7 +118,9 @@ HoloLens 2 工業版已透過新的資料和認證進行增強並重新設計，
 #### 瞭解 Trimble XR10
 Trimble XR10 與 HoloLens 2 是使用 Microsoft HoloLens 自訂程式所建立的第一個裝置，並將最新的空間計算技術整合到已認證的解決方案中，以供員工安全的安全帽使用。
 
-請查看更多有關 [TRIMBLE XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)的詳細資訊。
+![Trimble SKU](./images/trimble-ed.png)
+
+查看更多有關 [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2) 的詳細資訊。
 
 ### **HoloLens 2 開發版**
 
@@ -132,6 +136,8 @@ HoloLens 2 開發版本包含 HoloLens 2、$500 的 Azure 點數、3 個月的 U
 |  [Unity](https://unity.com/) | 即時 3D 開發平臺。   |
 |  [Unity 的 Pixyz 外掛程式](https://www.pixyz-software.com/plugin/) | 使用開發世界與工程 &amp; CAD 世界連接一起的橋樑。   |
 | [Azure 服務的 $500 Azure 點數](https://azure.microsoft.com/resources/) | HoloLens 2 開發版隨附的 Azure 點數，可讓您快速開始在 Azure 上建立及測試混合實境應用程式。 |
+
+![HoloLens 2 開發版](./images/hololens-2-dev-ed.png)
 
 #### 兌換您的點數
 
