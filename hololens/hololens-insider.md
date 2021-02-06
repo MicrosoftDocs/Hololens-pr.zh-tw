@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
-ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
+ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311823"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11314004"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -30,6 +30,11 @@ ms.locfileid: "11311823"
 ## Windows 測試人員版本資訊
 
 我們很高興能再次開始將新功能正式給 Windows 測試人員。 我們將會正式至開發人員通道，以取得最新的更新。 我們會繼續更新此頁面，因為我們會在我們的 Windows 測試人員組建中新增更多功能與更新。  令您興奮並準備好將這些更新混合在您的現實中。
+
+> [!IMPORTANT]
+> 如果您先前曾在 Kiosk 中使用 [設定] app 或 [Microsoft Edge] app，我們已將這些 app 取代成使用不同應用程式識別碼的新應用程式。 我們強烈建議您 [在展臺模式中，以 [新應用程式] 來閱讀新的 aumid](#use-the-new-settings-and-edge-apps-in-kiosk-modes) 。 這可確保您在展臺中繼續擁有 [設定] 應用程式，或加入新的 Microsoft Edge app。
+
+<br>
 
 | 功能名稱                                              | 簡短描述                                                                      | 可在組建中使用 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -117,20 +122,20 @@ Microsoft Edge 小組將三個預覽頻道提供給 Edge 擁有者群組： Beta
 有幾種方法可將 Microsoft Edge 測試人員通道安裝至 HoloLens 2：
 
 **在裝置上直接安裝 (目前僅提供未受管理的裝置) **
-  1. 在您的 HoloLens 2，請造訪 Edge 「測試人員 [-下載」頁面](https://www.microsoftedgeinsider.com/download)
-  1. 針對您要安裝的 [邊緣測試人員] 頻道，選取 [ **HoloLens 2 的下載** ] 按鈕。
-  1. 使用 [檔案資源管理器] (從 Edge 下載佇列或裝置的 [下載] 資料夾啟動已下載的 msix 檔案) 
-  1. [App 安裝程式](app-deploy-app-installer.md) 將會啟動
-  1. 選取 [ **安裝** ] 按鈕
-  1. 成功安裝之後，您會在 [開始] 功能表的 [ **所有應用程式** ] 清單中找到 Microsoft Edge Beta、開發人員或未放大的專案，做為個別的專案
+  1. 在您的 HoloLens 2，請造訪邊緣測試人員 [下載頁面](https://www.microsoftedgeinsider.com/download)。
+  1. 針對您想要安裝的 [Edge 測試人員] 頻道，選取 [ **HoloLens 2 版下載** ] 按鈕。
+  1. 從 Edge 下載佇列或裝置的 [下載] 資料夾啟動 msix 檔案， (使用檔案資源管理器) 。
+  1. [App 安裝程式](app-deploy-app-installer.md) 將會啟動。
+  1. 選取 [ **安裝** ] 按鈕。
+  1. 成功安裝之後，您會在 [開始] 功能表的 [ **所有應用程式** ] 清單中，找到 Microsoft Edge Beta、開發人員或未放大的專案。
 
 **透過電腦安裝 Windows Device Portal (需要在 HoloLens 2 上啟用 [開發人員模式](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)) **
-  1. 在您的電腦上，流覽 [邊緣測試人員 [下載] 頁面](https://www.microsoftedgeinsider.com/download)
+  1. 在您的電腦上，流覽 [邊緣測試人員 [下載] 頁面](https://www.microsoftedgeinsider.com/download)。
   1. 針對您想要安裝的邊緣測試人員頻道，選取 [Windows 10 版下載] 按鈕旁的 **下拉式箭號按鈕** 。
-  1. 在下拉式功能表中選取 [ **HoloLens 2** ]
-  1. 將 msix 檔案儲存到電腦的 [下載] 資料夾 (或您可以輕鬆找到的其他資料夾) 
-  1. 在您的電腦上使用 [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) ，在 HoloLens 2 上安裝已下載的 msix 檔案
-  1. 成功安裝之後，您會在 [開始] 功能表的 [ **所有應用程式** ] 清單中找到 Microsoft Edge Beta、開發人員或未放大的專案，做為個別的專案
+  1. 在下拉式功能表中選取 [ **HoloLens 2** ]。
+  1. 將 msix 檔案儲存到您電腦的 [下載] 資料夾 (或您可以輕鬆找到) 的另一個資料夾。
+  1. 在您的電腦上使用 [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) ，在 HoloLens 2 上安裝已下載的 msix 檔案。
+  1. 成功安裝之後，您會在 [開始] 功能表的 [ **所有應用程式** ] 清單中，找到 Microsoft Edge Beta、開發人員或未放大的專案。
 
 > [!NOTE]
 > 在針對 HoloLens 2 的 Windows 測試人員預覽版期間，您裝置上的 Microsoft Edge 版本可能高於在部分 (或所有) 的 Microsoft Edge 測試人員頻道中提供的版本。 這是為了確保專門針對 HoloLens 2 上的網頁瀏覽器提供的新功能和修正程式可能會儘快取得我們的 Windows 測試人員。 在公開發行下一個 Windows 更新之後不久，Microsoft Edge 測試人員通道組建將超過並早在 HoloLens 2 上的 Microsoft Edge 版本。
@@ -196,27 +201,29 @@ Microsoft Edge 小組將三個預覽頻道提供給 Edge 擁有者群組： Beta
 ![新的設定 app 首頁](images/new-settings-app.png)
 
 **新功能和設定**
-- [設定搜尋]：使用關鍵字或設定的名稱從 [設定] 首頁搜尋設定
+- [設定搜尋]：使用關鍵字或設定的名稱，從 [設定] 首頁搜尋設定。
 - 系統 > 音效：
-  - 輸入和輸出音訊裝置：單獨選擇您的輸入和輸出音訊裝置 (例如，透過藍牙耳機收聽音訊，或使用 USB-C 麥克風進行音訊輸入) 。 注意： HoloLens 2 不支援藍牙麥克風。
-  - App 數量：獨立調整每個應用程式的音量
-- 系統 > Power & 睡眠：選擇裝置應該在一段時間後進入睡眠狀態
-- 系統 > 電池：手動啟用節電模式，或設定節電模式自動開啟的電池閾值
-- 裝置 > USB：您可以根據預設，停用 USB 連接
+  - 輸入和輸出音訊裝置：單獨選擇您的輸入和輸出音訊裝置 (例如，透過藍牙耳機收聽音訊，或使用 USB-C 麥克風進行音訊輸入) 。 
+    > [!NOTE]
+    > HoloLens 2 不支援藍牙麥克風。
+  - App 數量：獨立調整每個應用程式的音量。
+- 系統 > Power & 睡眠：選擇裝置在一段時間不活動之後要進入睡眠狀態的時間。
+- 系統 > 電池：手動啟用節電模式，或設定節電模式自動開啟的電池閾值。
+- 裝置 > USB：您可以根據預設，停用 USB 連線。
 - 網路 & 網際網路：
-  - USB-C 乙太網卡現在會出現在網路 & 網際網路中
-  - USB-C 乙太網路介面卡設定現已提供，包括其 IP 位址
-  - 您現在可以在 HoloLens 2 上啟用飛安模式
+  - USB-C 乙太網卡現在會出現在 [網路 & 網際網路] 中。
+  - 現在可以使用 USB-C 乙太網路介面卡設定，包括其 IP 位址。
+  - 您現在可以在 HoloLens 2 上啟用飛安模式。
 - App：您可以重設用於檔案和連結類型的預設應用程式。 如需詳細資訊，請參閱 [預設的 app 選擇器](#default-app-picker) 。
 - 帳戶 > 其他使用者：裝置擁有者可以新增使用者、將標準使用者升級至裝置擁有者、將裝置擁有者降級為標準使用者，以及移除使用者。
-- 輕鬆存取：變更文字大小和一些視覺效果
+- 輕鬆存取：變更文字大小和一些視覺效果。
 
 **已知問題**
-- 先前設定的視窗將會被移除 (請參閱上方的記事) 
-- [造訪通知] 頁面可能會造成 [設定] 應用程式 (調查) 
-- [乙太網] 頁面目前沒有顯示 (要立即修正) 
-- 您不能再使用 [設定] 應用程式重新命名您的裝置 (IT 系統管理員可以使用 [預配套件] 或 [MDM] 重新命名裝置) 
-- 新 Microsoft Edge 的電池使用量可能不准確，因為它的性質是由 UWP 配接器層支援的 Win32 桌面應用程式 (沒有立即預期的修正) 
+- 先前設定的視窗將會被移除 (請參閱上方) 的記事。
+- [造訪通知] 頁面可能會造成 [設定] 應用程式 (調查) 。
+- [乙太網] 頁面目前沒有顯示 (要儘快修正) 。
+- 您無法使用 [設定] app 來重新命名您的裝置 (IT 系統管理員可以使用 [預配套件] 或 [MDM] 重新命名裝置) 。
+- 新 Microsoft Edge 的電池使用量可能不准確，因為其本質是由 UWP 配接器層支援的 Win32 桌面應用程式 (沒有立即預期的修正) 。
 
 ### 預設的應用程式選擇器
 
@@ -341,7 +348,7 @@ Windows 測試人員現在正在移至 [頻道]。 [ **快速** 響鈴] 會成�
 
     1. 從下載 ffu 到您的電腦 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
     
-    1. 從 Microsoft 網上商店 ([高級恢復隨附) ] 安裝弧形。 [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. 從 Microsoft 網上商店 (的 [高級恢復隨附]) 安裝弧形 [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 。
     
 1. 在 HoloLens-航班解鎖：開啟**設定**  >  **更新 & 安全性**  >  **Windows**測試人員計畫，然後註冊、重新開機裝置。
 
