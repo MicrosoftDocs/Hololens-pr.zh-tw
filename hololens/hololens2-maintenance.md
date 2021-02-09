@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
+ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313994"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319277"
 ---
 # HoloLens 2 清潔常見問題集
 
@@ -37,9 +37,6 @@ ms.locfileid: "11313994"
 
 1. 使用乾燥、不起毛的 microfiber 布移除任何灰塵，以輕輕擦拭裝置表面。
 1. 使用醫學 "70%" isopropyl 酒精來輕輕 moisten 布，然後使用 moistened 布輕輕擦拭裝置表面。
-
-   ![顯示如何清潔面板的影像](images/hololens-cleaning-visor.png)
-
 1. 讓裝置完全晾乾。
 
 **若要清潔 brow 墊**
@@ -64,11 +61,11 @@ ms.locfileid: "11313994"
 
 ## 我可以使用酒精來清理裝置嗎？
 
-可以。 您可以使用「70%」 isopropyl 酒精與水的解決方案來清潔裝置的硬表面，包括面板。 使用混合 isopropyl 酒精和水來輕輕 moisten 布，然後輕拭擦拭裝置表面
+是。 您可以使用「70%」 isopropyl 酒精與水的解決方案來清潔裝置的硬表面，包括面板。 使用混合 isopropyl 酒精和水來輕輕 moisten 布，然後輕拭擦拭裝置表面
 
 ## Brow 墊是否可自行更換？
 
-可以。 眉墊是以磁吸方式連接到裝置。 若要分離，請將它從 headband 中輕輕拉出來。 若要更換它，請將它貼回位置。
+是。 眉墊是以磁吸方式連接到裝置。 若要分離，請將它從 headband 中輕輕拉出來。 若要更換它，請將它貼回位置。
 
 ![取下或更換眉墊](images/hololens2-remove-browpad.png)
 
