@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
-ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
+ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319277"
+ms.locfileid: "11324778"
 ---
 # HoloLens 2 清潔常見問題集
 
 > [!IMPORTANT]  
 > Microsoft 無法決定任何特定 disinfectant 產品在緊急 pathogens （例如 COVID-19）中的效能。 請參閱當地公開健康情況授權，瞭解如何抵禦潛在的病毒感染。  
 
-## HoloLens 2 裝置的一般清洗指示是什麼？
+## HoloLens 2 使用與小心
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -36,8 +36,12 @@ ms.locfileid: "11319277"
 **清理裝置**
 
 1. 使用乾燥、不起毛的 microfiber 布移除任何灰塵，以輕輕擦拭裝置表面。
-1. 使用醫學 "70%" isopropyl 酒精來輕輕 moisten 布，然後使用 moistened 布輕輕擦拭裝置表面。
-1. 讓裝置完全晾乾。
+
+   ![在按住 brow 墊的同時進行清理](images/hl2-cleaning.png)
+
+2. 使用醫學 "70%" isopropyl 酒精來輕輕 moisten 布，然後使用 moistened 布輕輕擦拭裝置表面。
+
+3. 讓裝置完全晾乾。
 
 **若要清潔 brow 墊**
 
@@ -54,7 +58,7 @@ ms.locfileid: "11319277"
 
 ## 我可以使用 disinfecting 擦除來清理裝置嗎？
 
-是，如果擦除不含 bleach。 您可以使用非 bleach 的 disinfecting 擦除來 [輕輕擦拭 HoloLens 表面](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)。  
+是，如果擦除不含 bleach。 您可以使用非 bleach 的 disinfecting 擦除來 [輕輕擦拭 HoloLens 表面](#hololens-2-use-and-care)。  
 
 > [!CAUTION]  
 > 避免使用包含 bleach 的 disinfecting 擦除來清潔 HoloLens 表面。 如果沒有任何其他可用，就可以在重要情況中使用 bleach 擦除。 不過，bleach 可能會損壞 HoloLens 面板或其他表面。

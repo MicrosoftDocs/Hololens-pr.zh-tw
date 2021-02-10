@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11314004"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324796"
 ---
 # 適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -48,6 +48,9 @@ ms.locfileid: "11314004"
 | [在 Kiosk 模式中新應用程式的新 Aumid](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新設定與邊緣 app 的 Aumid | 20279.1006 |
 | [改良的 Kiosk 模式失敗處理](#kiosk-mode-behavior-changes-for-handling-of-failures) | 展臺模式會在清空 [開始] 功能表前尋找全域指派的存取權。 | 20279.1006 |
 | [設定回退診斷](#configuring-fallback-diagnostics-via-settings-app) | 在 [設定] App 中設定回退診斷行為 | 20279.1006 |
+| [與附近的裝置共用專案](#share-things-with-nearby-devices) | 從 HoloLens 將檔案或 Url 共用至電腦 | 20279.1006 |
+| [新的 OS 更新疑難排解程式](#new-os-update-troubleshooter) | [作業系統更新的設定] 中的新疑難排解 | 20279.1006 |
+| [更新中的改進與修正](#improvements-and-fixes-in-the-update) | 更新中的其他修正程式。 | 20279.1006 |
 
 ### 新的 Microsoft Edge 簡介
 
@@ -304,6 +307,20 @@ Office web app 已新增至 [開始] 功能表中的 [所有應用程式] 清單
 
 > [!NOTE]
 > 如果裝置已設定 MDM 原則，使用者將無法覆寫該行為。  
+
+### 與附近的裝置共用專案
+
+在 Windows 10 裝置附近共用內容，包括 Pc 和其他執行 HoloLens 測試人員組建 20279.1006 + 的 HoloLens 2 裝置。 您可以在 [**設定**  ->  **系統**  ->  **共用體驗**] 中嘗試將來自 HoloLens 的檔案或 url 共用至電腦。 如需詳細資訊，請參閱如何 [在 Windows 10 中與附近的裝置共用內容](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)。
+
+此功能可透過連線 [性/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)進行管理。
+
+### 新的 OS 更新疑難排解程式
+
+除了 [設定] 應用程式中先前的疑難排解外，還新增了新的疑難排解程式，並新增了新的 [設定] app 來進行 OS 更新。 流覽至 [**設定**] [  ->  **更新 &amp; 安全性**  ->  **疑難排解**  ->  **Windows 更新**]，然後選取 [**開始**]。 這可讓您在使用作業系統更新重現您的問題時，收集蹤跡，以協助您的 IT 或支援人員進行疑難排解。
+
+### 更新中的改進與修正：
+
+- [離線診斷程式](hololens-diagnostic-logs.md#offline-diagnostics) 也會包含序列值與作業系統版本的其他裝置資訊。
 
 
 

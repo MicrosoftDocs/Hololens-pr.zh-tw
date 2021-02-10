@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
-ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
+ms.openlocfilehash: 2c1cc7fb2ec362fde96df5f0cea23aab132b62ef
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314264"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324766"
 ---
 # HoloLens 2 概觀
 
@@ -73,7 +73,8 @@ HoloLens 是一個混合實境裝置，它是 *由全像投影* 所提供的，�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### 以下是使用 HoloLens 2 之後的下一步操作
-1. [讓您的裝置準備就緒以供使用](https://docs.microsoft.com/hololens/hololens2-setup) ，然後 [開始設定](https://docs.microsoft.com/hololens/hololens2-start)。
+1. [請在 HoloLens 2 使用與注意事項](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)觀看這段影片。
+1. [讓您的裝置準備好使用](https://docs.microsoft.com/hololens/hololens2-setup) ，然後 [開始設定](https://docs.microsoft.com/hololens/hololens2-start)
 1. [瞭解如何使用 HoloLens 2](https://docs.microsoft.com/hololens/holographic-home)。
 1. 在您舒適之後，請 [拍攝一些混合實境的相片或影片](https://docs.microsoft.com/hololens/holographic-photos-and-videos)。
 1. 查看 [Microsoft App Store 中所有可供 HoloLens 2 使用的應用程式](https://docs.microsoft.com/hololens/holographic-store-apps)。
@@ -111,7 +112,7 @@ HoloLens 2 工業版已透過新的資料和認證進行增強並重新設計，
 請檢視 [HoloLens 2 工業版常見問題集](hololens2-industrial-edition-faq.md)。
 
 #### 清潔並處理 HoloLens 2
-您可以使用 "70%" 酒精與水清除 HoloLens 2 工業版，以清潔裝置的硬質表面，包括面板、眉墊及頭帶。 如需詳細資訊，請參閱 [HoloLens 2 清潔常見問題集](https://docs.microsoft.com/hololens/hololens2-maintenance)。 
+您可以使用 "70%" 酒精與水清除 HoloLens 2 工業版，以清潔裝置的硬質表面，包括面板、眉墊及頭帶。 如需詳細資訊，請參閱 [HoloLens 2 清潔常見問題集](https://docs.microsoft.com/hololens/hololens2-maintenance)。
 
 ### **Trimble XR10 搭配使用 HoloLens 2**
 
