@@ -74,7 +74,7 @@ HoloLens 是一個混合實境裝置，它是 *由全像投影* 所提供的，�
 
 #### 以下是使用 HoloLens 2 之後的下一步操作
 1. [請在 HoloLens 2 使用與注意事項](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)觀看這段影片。
-1. [讓您的裝置準備好使用](https://docs.microsoft.com/hololens/hololens2-setup) ，然後 [開始設定](https://docs.microsoft.com/hololens/hololens2-start)
+1. [備妥裝置](https://docs.microsoft.com/hololens/hololens2-setup) ，然後[開始設定](https://docs.microsoft.com/hololens/hololens2-start)
 1. [瞭解如何使用 HoloLens 2](https://docs.microsoft.com/hololens/holographic-home)。
 1. 在您舒適之後，請 [拍攝一些混合實境的相片或影片](https://docs.microsoft.com/hololens/holographic-photos-and-videos)。
 1. 查看 [Microsoft App Store 中所有可供 HoloLens 2 使用的應用程式](https://docs.microsoft.com/hololens/holographic-store-apps)。
