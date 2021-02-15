@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
-ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
+ms.openlocfilehash: 11ce1af46189605cbac898f69647bdca28c573dc
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11311743"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328097"
 ---
 # HoloLens 2 - 工業版常見問題集
 
@@ -44,6 +44,10 @@ HoloLens 2 工業版支援擁有嚴格需求的控管環境，且符合 ISO 1464
 HoloLens 2 工業版通過認證，可在可能存在可燃氣體、煙霧或液體的 UL Class I，Division 2-Groups A、B、C 和 D HAZLOC 環境中使用。
 
 如需詳細資訊，請參閱 [UL 認證](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search)。
+
+### HoloLens 2 工業版是否擁有 ATEX 認證？
+
+否。 HoloLens 2 工業版未擁有 ATEX 認證。 HoloLens 2 工業版擁有 US/CAN 類別 1、部門 2 群組 A、B、C 和 D 認證。
 
 ### 該裝置可以用在半導體和製藥環境中嗎？
 

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
-ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
+ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11306921"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328107"
 ---
 # HoloLens 2 硬體
 
@@ -29,8 +29,8 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 - **面板**。 包含 HoloLens 感應器及顯示器。 您可以在佩戴 HoloLens 時將面板向上旋轉。
 - **頭帶**。 若要戴上 HoloLens，請使用調整輪來展開頭帶。 將 HoloLens 放在適當位置之後，向右轉緊調整輪，直到頭帶舒適為止。
-- **亮度按鈕**。 戴上 HoloLens 時，亮度按鈕位於面板的左側。
-- **音量按鈕**。 戴上 HoloLens 時，音量按鈕位於面板的右側。
+- **亮度按鈕**。 戴上 HoloLens 時，亮度按鈕位於靠近您太陽穴的面板左側。
+- **音量按鈕**。 戴上 HoloLens 時，音量按鈕位於靠近您太陽穴的面板左側。
 - **電源按鈕**。 戴上 HoloLens 時，電源按鈕位於背部外蓋的右側。
 - **USB-C 連接埠**。 戴上 HoloLens 時，USB-C 連接埠位於背部外蓋右側的電源按鈕下方。
 
@@ -44,7 +44,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 ### 電源供應器詳細資料
 
-裝置附帶的電源供應器和 USB 纜線是最佳的充電方式。 電源供應器為 18W 充電器。  它在 2A 下供應 9V。
+裝置附帶的電源供應器和 USB 纜線是最佳的充電方式。 電源供應器為 18W 充電器。  其在 2A 下提供 9V。
 
 充電速率和速度可能因裝置執行的環境而異。
 
@@ -81,7 +81,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 |   |   |
 | - | - |
 | 麥克風陣列 | 5 個頻道 |
-| 喇叭 | 內建的空間音效 |
+| 喇叭 | 內建空間音效 |
 
 ### 運算和連線能力
 
@@ -135,7 +135,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 |   |   |
 | - | - |
 | Windows 全像攝影版作業系統 | 有了 Windows 全像攝影版，Windows 10 使用者將能夠透過 HoloLens 2 在混合實境環境中使用其應用程式和遊戲。
-| 3D 檢視器 | [3D 檢視器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)可讓您輕鬆地即時檢視 3D 模型和動畫。|
+| 3D 檢視器 | [3D 檢視器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) 可讓您輕鬆即時檢視 3D 模型和動畫。|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) 是您的個人生產力小幫手，可協助您掌握重要資訊，並節省您尋找所需資訊的時間。  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 可協助員工更快速地學習有關 HoloLens 裝置的新技能。 |
 | Dynamics 365 Remote Assist | [Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 可讓技術人員使用 Microsoft Teams 或 Dynamics 365 Remote Assist 來共同作業及解決遠端作業者的問題。  |
@@ -166,13 +166,13 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 |      度量單位               |      單位衡量標準     |      單位英制     |
 |--------------------------------|-----------------------|-------------------------|
-|     單位長度                |     378.97 毫米          |     14.920 英吋       |
-|     單位寬度                 |     247.90 毫米          |     9.760 英吋        |
-|     單位深度                 |     163.07 毫米          |     6.420 英吋        |
+|     單位長度                |     378.97 公釐          |     14.920 英吋       |
+|     單位寬度                 |     247.90 公釐          |     9.760 英吋        |
+|     單位深度                 |     163.07 公釐          |     6.420 英吋        |
 |     單位重量                |     2.878 公斤           |     6.344 磅           |
-|     外部託運容器長度    |     446.00 毫米          |     17.559 英吋       |
-|     外部託運容器寬度     |     257.99 毫米          |     10.157 英吋       |
-|     外部託運容器深度     |     172.01 毫米          |     6.772 英吋        |
+|     外部託運容器長度    |     446.00 公釐          |     17.559 英吋       |
+|     外部託運容器寬度     |     257.99 公釐          |     10.157 英吋       |
+|     外部託運容器深度     |     172.01 公釐          |     6.772 英吋        |
 |     外部託運容器重量    |     3.284 公斤           |     7.240 磅           |
 
 > [!NOTE]
@@ -182,10 +182,10 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 ## 尋找序號
 
 HoloLens 2 裝置的序號印在面板下方。
+
 1. 提起裝置的面板。
 1. 看看眉墊附近。
-1. 您可以在轉軸附近找到序號。 
-
+1. 您可以在轉軸附近找到序號。
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
