@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: befd2d892403b7b6c7050f48ba9beffb45b241fe
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 0a89fa5e61e560f629444efd2728f6dd41db60d3
+ms.sourcegitcommit: ab35169529776f0682eeb8fa448c9d9e8f598513
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016677"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11340522"
 ---
 # 硬體支援的完整性與執行階段證明
 
@@ -27,11 +27,11 @@ ms.locfileid: "11016677"
 ## UEFI 安全開機
 
 HoloLens 2 會強制一直執行統一的可延伸韌體介面（UEFI）安全啟動，且 UEFI 只會啟動 Windows Holographic for Business。
-安全啟動可確保整體的啟動鏈驗證完整，且 Windows 永遠都能以所套用的正確安全性原則進行啟動。 若要深入瞭解如何安全啟動，請前往這裡。
+安全啟動可確保整體的啟動鏈驗證完整，且 Windows 永遠都能以所套用的正確安全性原則進行啟動。 深入瞭解 [安全開機](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)。
 
 ## TPM
 
-信賴平臺模組（TPM）是終端裝置上的專用晶片。 HoloLens 2 使用提供硬體強制金鑰隔離的 TPM 2.0。
+信賴平臺模組 (TPM) 是終端裝置上的專用晶片。 HoloLens 2 使用提供硬體強制金鑰隔離的 TPM 2.0。 深入瞭解 [TPM 基礎](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals)。
 
 ## 持久性存取威脅防護
 
@@ -39,9 +39,9 @@ HoloLens 2 會強制一直執行統一的可延伸韌體介面（UEFI）安全�
 
 事實上，由於其維持目標裝置或網路存取權的戰略需要，因此目標攻擊會被視為「進階持續威脅」。 因此，Windows Holographic for Business 認為對抗持久絕對至關重要，並使用反持久技術達成客戶的絕對安全性承諾。
 
-### 安全開機 
+### 安全開機
 
-HoloLens 2 會在所有核心作業系統狀態強制執行統一的可延伸韌體介面（UEFI）安全開機。 UEFI 只會開啟 Microsoft 信賴平台，這可確保整體的啟動鏈驗證完整，且 Windows 永遠都能以所套用的正確安全性原則進行啟動。 HoloLens 2 無法讓安全開機關閉，也無法讓協力廠商開啟載入程式。
+HoloLens 2 會在所有核心作業系統狀態強制執行統一的可延伸韌體介面 (UEFI) 安全開機。 UEFI 只會開啟 Microsoft 信賴平台，這可確保整體的啟動鏈驗證完整，且 Windows 永遠都能以所套用的正確安全性原則進行啟動。 HoloLens 2 無法讓安全開機關閉，也無法讓協力廠商開啟載入程式。
 
 > [!Tip]
 > 深入瞭解 [安全啟動](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)。
@@ -50,8 +50,8 @@ HoloLens 2 會在所有核心作業系統狀態強制執行統一的可延伸韌
 
 HoloLens 2 反持久保證其使用者就算在發生運行時受損的罕見情況下，例如遠端攻擊，則會透過關閉裝置，移除系統中所有惡意程式碼，以緩解活動。 為進一步強化其反持久，HoloLens 2 新增了強大的完整性保護，並安排好唯讀防護功能。
 
-對以資料的形式操作系統資料的持久仍會發生，除非使用者執行刪除所有可變分區的裝置按鈕重設（.PBR）。 當對不可變分區的持久變得更困難時，使用者必須對 Hololens 2 使用裝置按鈕重設，以移除來自可變部分的任何可能的威脅持久。
+對以資料的形式操作系統資料的持久仍會發生，除非使用者執行刪除所有可變分區的裝置按鈕重設（.PBR）。 當對不可變分區的持久變得更困難時，使用者必須對 HoloLens 2 使用裝置按鈕重設，以移除來自可變部分的任何可能的威脅持久。
 
-## 代碼完整性保護 
+## 代碼完整性保護
 
 代碼完整性（CI）是現代化作業系統的重要安全性屬性。 強制執行 CI 可讓您做出合理的安全性決策，因為這保證了代碼的出處對使用者和作業系統都是透明的。 完整的代碼完整性需要延伸過去的二進位影像簽署，並包含執行時間強制，例如控制項流程完整性和動態代碼限制。 CI 對於防止多重類別的攻擊至關重要，包含如勒索軟體、遠端代碼執行漏洞以及各種其他攻擊課程的社交工程惡意軟體。
