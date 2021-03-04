@@ -13,19 +13,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
-ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
+ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "11302267"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385492"
 ---
-# 連線至藍牙與 USB-C 裝置
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>連線至藍牙與 USB-C 裝置
 
 > [!NOTE]
 > 無法使用外部麥克風。 HoloLens 2 使用其內建[麥克風陣列](hololens2-hardware.md#audio-and-speech)。
 
-## 配對 [藍牙] 裝置
+## <a name="pair-bluetooth-devices"></a>配對 [藍牙] 裝置
 
 HoloLens 2 支援下列 [藍牙] 裝置類型：
 
@@ -37,12 +37,12 @@ HoloLens （第 1 代）支援下列 [藍牙] 裝置類型：
 
 - 滑鼠
 - 鍵盤
-- HoloLens (第 1 代) 簡報導覽裝置
+- [HoloLens (第 1 代) 簡報導覽裝置](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > 其他類型的 [藍牙] 裝置，例如 喇叭、耳機、智慧型手機和遊戲台，可能會在 HoloLens 設定中列為可用裝置。 不過，HoloLens （第1代）並不支援這些裝置。 如需詳細資訊，可參照 [HoloLens 設定中列為可用裝置，但此裝置無法使用](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)。
 
-### 配對 [藍牙] 鍵盤或滑鼠
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>配對 [藍牙] 鍵盤或滑鼠
 
 1. 開啟您的鍵盤或滑鼠，並將它設為可搜尋的。 若要瞭解如何讓裝置設為可搜尋的，請在裝置（或其文件）中尋找相關資訊，或造訪製造商的網站。
 
@@ -52,21 +52,7 @@ HoloLens （第 1 代）支援下列 [藍牙] 裝置類型：
 
 1. 當您看到裝置名稱時，請選取 **配對**，然後按照指示操作。
 
-### HoloLens（第 1 代）：配對簡報導覽裝置
-
-1. 使用綻開手勢並移至 **開始**，然後選取 **設定**。
-
-1. 選取 **裝置**，並確定藍牙已開啟。
-
-1. 使用筆尖壓住 [簡報導覽裝置] 的配對按鈕並按住不放，直到 [簡報導覽裝置] 狀態燈號呈白色閃爍。 請務必按住按鈕直到燈號出現閃爍為止。  
-
-   [配對] 按鈕位於 [簡報導覽裝置] 的下方、手指環旁邊。
-
-   ![配對按鈕位於手指環的旁邊](images/use-hololens-clicker-1.png)
-
-1. 在配對的畫面上，選取 **簡報導覽裝置** > **配對**。
-
-## 停用 [藍牙] 
+## <a name="disable-bluetooth"></a>停用 [藍牙] 
 
 此程式會關閉 [藍牙] 無線電裝置的 RF 元件，並停用 Microsoft HoloLens 中的所有藍牙功能。
 
@@ -74,7 +60,7 @@ HoloLens （第 1 代）支援下列 [藍牙] 裝置類型：
 
 1. 將 **藍牙** 的滑杆開關移至 **[關閉]** 位置。
 
-## HoloLens 2：連接 USB-C 裝置
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2：連接 USB-C 裝置
 
 HoloLens 2 支援下列 USB-C 裝置類型：
 
@@ -84,14 +70,12 @@ HoloLens 2 支援下列 USB-C 裝置類型：
 - USB-C 數位音訊耳機（包括耳機轉接器加上充電）
 - 有線滑鼠
 - 有線鍵盤
-- 組合 PD 集線器（USB A 加 PD 充電）
+- 組合 PD 集線器 (USB A 加 PD 充電)
 
 > [!NOTE]
-> 部份具有 USB-C 連線的行動裝置，本身就會以乙太網配接器的形式顯示在 HoloLens 上，因此可在 [網際網路共用] 設定中使用，以 Windows 全像攝影版（版本 2004）開始。 不支援需要單獨驅動程式，和/或安裝有用於設定之應用程式的 USB LTE 數據機。
+> 針對客戶意見反應，我們已為 [行動數據連線能力] 啟用部分支援，並透過 USB-C 直接連結到 HoloLens。 請參閱 [連接至行動電話和 5G](hololens-cellular.md) 以瞭解更多資訊。
 
-針對客戶意見反應，我們已為 [行動數據連線能力] 啟用部分支援，並透過 USB-C 直接連結到 HoloLens。  網路共享的連線能力只適用於支援一般的 Microsoft [ RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驅動程式執行，且不需要安裝任何其他驅動程式或應用程式。  當連線時，這些裝置會自動在 HoloLens 2 網路設定 UI 中顯示為一個新的乙太網連線。 請洽詢您的裝置製造商，以詳細瞭解是否支援一般通用的 Microsoft RNDIS 驅動程式。
-
-### USB-C 集線器
+### <a name="usb-c-hubs"></a>USB-C 集線器
 
 有些使用者可能需要一次連線多個裝置。 對於希望預覽測試人員功能並[將 USB-C 麥克風](hololens-insider.md#usb-c-external-microphone-support)與其他連線裝置一起使用的使用者，USB-C 集線器可能適合客戶的需求。 Microsoft 尚未測試這些裝置，我們也無法建議任何特定品牌。
 
@@ -100,7 +84,7 @@ HoloLens 2 支援下列 USB-C 裝置類型：
 - 已連線裝置必須不需要安裝驅動程式。
 - 所有連線裝置的總功耗必須低於 4.5 瓦特。
 
-## 連線到 Miracast
+## <a name="connect-to-miracast"></a>連線到 Miracast
 
 若要使用 Miracast，請按照下列步驟操作：
 

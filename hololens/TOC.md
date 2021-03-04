@@ -41,6 +41,7 @@
 ### [提高視覺品質和舒適度](hololens-calibration.md)
 ### [使用 HoloLens 來對應物理空間](hololens-spaces.md) 
 ## [如何更新 HoloLens](hololens-update-hololens.md)
+## [Microsoft 網格 (預覽) ](/mesh/overview)
 
 # 準備
 ## [在商業環境中部署 HoloLens](hololens-requirements.md)
@@ -94,6 +95,7 @@
 ### [準備 HoloLens 2 的憑證和網路設定檔](hololens-certificates-network.md)
 ### [管理 HoloLens 的連線端點](hololens-offline.md)
 ### [連線至藍牙與 USB-C 裝置](hololens-connect-devices.md)
+### [連接至行動電話和 5G](hololens-cellular.md)
 ## [憑證管理員](certificate-manager.md)
 
 # 部署

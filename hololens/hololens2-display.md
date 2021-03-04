@@ -12,18 +12,18 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 6cb646ec1104952b5ecfe42391c24465fd074771
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163015"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385598"
 ---
-# HoloLens 2 顯示器
+# <a name="hololens-2-display"></a>HoloLens 2 顯示器
 
 HoloLens 2 顯示器是波導和光投影機的組合。 使用者在戴著頭戴式裝置時，可以透過波導 (面板內的鏡頭) 觀察。 光投影機位於眉毛上方的外殼內。 HoloLens 2 使用雷射光來照亮顯示器。
 
-## 疑難排解
+## <a name="troubleshooting"></a>疑難排解
 
 對 HoloLens 2 執行下列步驟，以確保全像投影在顯示器中呈現最高視覺品質：
 
@@ -32,15 +32,15 @@ HoloLens 2 顯示器是波導和光投影機的組合。 使用者在戴著頭�
 * **將面板向下移。** 嘗試將額頭上的眉墊向下移動，這樣可讓面板往下移得更靠近鼻子一點。
 * **執行眼球校正。** 顯示器會使用瞳距 (IPD) 和眼睛目光來最佳化顯示器上的影像。 如果沒有執行眼睛校正，影像品質可能會變差。 若要執行 [眼睛校正]，請移至 **設定** > **系統** > **校正** > **執行眼睛校正**。
 
-## 常見問題集
+## <a name="faq"></a>常見問題集
 
-### 在顯示器的底部角落，偶爾閃爍的模式是什麼？
+### <a name="what-are-the-patterns-that-occasionally-flash-in-the-bottom-corners-of-the-display"></a>在顯示器的底部角落，偶爾閃爍的模式是什麼？
 
 有時候，HoloLens 2 會在顯示器的左下角和右下角顯示不同的模式。 範例如下 (動態 GIF)。 此模式屬於 HoloLens 2 裝置的一般執行方式，可供您校正顯示器以取得最佳體驗。
 
 ![Biphase 模式](./images/DAT-Biphase-Fiducial.gif) ![GEO 模式](./images/DAT-GEO-Fiducial.gif)
 
-### 為什麼我的 HoloLens 2 顯示器無法拍攝準確的照片？
+### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>為什麼我的 HoloLens 2 顯示器無法拍攝準確的照片？
 
 HoloLens 2 顯示器設計為可供人眼觀看。 裝置具有適合使用者眼睛的主動色彩校正系統。 與人眼相比，相機會看到環境的不同之處，而下列因素可能會影響相機擷取的內容和使用者看到的內容之間之不一致。
 
@@ -55,27 +55,27 @@ HoloLens 2 顯示器設計為可供人眼觀看。 裝置具有適合使用者�
 
 也就是說，您仍然可以使用特殊的工業相機，從 HoloLens 2 顯示器中擷取具代表性的影像。 可惜的是，智慧型手機、消費型和專業相機無法擷取與使用者在 HoloLens 2 上看到一致的圖像。
 
-### 眼球校正如何顯示影像品質？
+### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>眼球校正如何顯示影像品質？
 
 HoloLens 2 顯示器功能會根據使用者的眼睛位置校正影像。 [眼球校正](hololens-calibration.md) 提供兩個重要輸入：(1) 使用者的瞳距 (IPD)，以及 (2) 每個眼睛注視的方向。 若沒有眼球校正，系統會預設顯示沒有眼球移動的額定眼部定位。 主動色彩校正與不校正之間的差異取決於使用者的生理狀況。 例如，具有與系統預設值相同 IPD 的使用者將看到較少的色彩校正改進。 雖然比系統預設值更窄或更寬 IPD 的使用者將會看到顯示器影像的更多變化。
 
 注意， [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中的新功能將會開始進行 [自動偵測目視位置](hololens-calibration.md#auto-eye-position-support)。 
 
-### HoloLens (第1代) 和 HoloLens 2 之間的顯示器差異為何？
+### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>HoloLens (第1代) 和 HoloLens 2 之間的顯示器差異為何？
 
 在體驗 HoloLens 1 之後，客戶對 Microsoft 提出的一些重要要求是 (1) 增加視野和 (2) 增加亮度。 技術進步允許 Microsoft 生產出將視野區域加倍的波導，並產生出高達三倍亮度顯示器的光投影機。 硬體為顯示器影像品質的三種權衡設定基準線：(1) 視野、(2) 亮度和（3）色彩均勻性。 持續的技術進步可改善所有區域，而不會犧牲另一個區域。 在這期間，現有的技術為這些權衡設定了限制。
 
-### 即將進行哪些改進以改善 HoloLens 2 影像品質？
+### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>即將進行哪些改進以改善 HoloLens 2 影像品質？
 
 雖然我們正在進行許多調查以改善影像品質，但以下區域預期將出現在即將推出的更新：
 
 * **自動眼部定位。** 這項功能可讓您在背景中進行眼球校正程序。 用戶將不再需要執行 [眼球校正] ，就能使用 [主動色彩校正]。 相反地，它將正常運作。
 * **色彩校正的改善。** 此更新著重於較深色彩的色彩值 (例如深灰色)。 目前，較暗的色彩會呈現紅色色調。 當整個顯示器呈現暗色時也會發生此問題—整個顯示器會呈現紅色色彩。 這個問題是由於色色彩通道中這些色彩較深的活動太多所致。 我們以這些深色的雷射照明曲線來描述特徵，並正在努力為使用者提供校正程序。 結果會讓整個亮度色譜實現更高的色彩準確度。 在全亮度下，它不會變更白色背景的外觀。 我們會繼續建議在應用程式中使用深色模式設計模式。
-* **閱讀模式。** 應用程式開發人員可以權衡顯示器視野，以達到更高的角度解析度。 應用程式開發人員可覆寫投影矩陣，以便呈現顯示器的繪圖解析度呈現內容。 這項功能會導致視野縮小 30%，並相對提高角度的解析度。 正努力將這項功能引進混合實境工具組。 如果可用的話，[閱讀模式] 可在任何 HoloLens 2 作業系統上運作—不依賴於作業系統更新。
+* **閱讀模式。** 應用程式開發人員可以權衡顯示器視野，以達到更高的角度解析度。 應用程式開發人員可覆寫投影矩陣，以便呈現顯示器的繪圖解析度呈現內容。 這項功能會導致視野縮小 30%，並相對提高角度的解析度。 正努力將這項功能引進 [混合實境工具組](https://github.com/Microsoft/MixedRealityToolkit-Unity)。 如果可用的話，[閱讀模式] 可在任何 HoloLens 2 作業系統上運作—不依賴於作業系統更新。
 
 系統會自動傳遞作業系統更新。 您也可以透過測試人員預覽計畫來測試舊版軟件改善。
 
-### 開發人員可使用哪些指導方針來套用深色模式設計原則？
+### <a name="what-guidance-is-available-for-developers-to-apply-dark-mode-design-principles"></a>開發人員可使用哪些指導方針來套用深色模式設計原則？
 
 避免使用白色背景時，使用者可獲得最佳的體驗。 深色模式是應用程式用以使用黑色或深色背景的設計原則。 系統設定預設為 [深色模式]，可透過移至 **設定** > **系統** > **色彩**來調整。
 
@@ -86,6 +86,6 @@ HoloLens 2 顯示器功能會根據使用者的眼睛位置校正影像。 [眼�
 
 當全息圖需要白色背景時，請將全息圖的大小保持小於顯示的完整功能欄位檢視。 這大小可讓使用者將全息影像放在顯示的中間。
 
-### 如何清潔 HoloLens 2 顯示器？
+### <a name="how-do-you-clean-a-hololens-2-display"></a>如何清潔 HoloLens 2 顯示器？
 
 使用超細纖維布輕輕擦拭面板。 若要消毒面板，請使用 70% 異丙醇輕輕沾濕一塊布，然後擦拭面板。 請參閱 [HoloLens 2 清潔常見問題集](hololens2-maintenance.md) 中的完整指導方針。
