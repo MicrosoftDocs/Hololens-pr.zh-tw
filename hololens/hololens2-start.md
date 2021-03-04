@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 31c2c9ed7b2a35c759a0e1d86b89a2f0ab75d965
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283874"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385606"
 ---
-# 設定您的 HoloLens 2
+# <a name="set-up-your-hololens-2"></a>設定您的 HoloLens 2
 
 第一次開啟 HoloLens 時，系統會引導您設定裝置、使用使用者帳戶登入，以及將 HoloLens 校正到您的眼睛。  本節將逐步解說 HoloLens 2 初次設定體驗。
 
 在下一節中，您將了解如何使用 HoloLens 並與全像投影互動。 若要跳到該篇文章，請參閱[開始使用 HoloLens 2](hololens2-basic-usage.md)。
 
-## 開始之前
+## <a name="before-you-start"></a>開始之前
 
 開始使用之前，請確定您有下列項目可用：
 
@@ -37,7 +37,7 @@ ms.locfileid: "11283874"
 
 HoloLens 隨附的**選用舒適配件**，可協助您獲得最舒適的配戴感受。 [適合和舒適性的詳細說明](hololens2-setup.md#adjust-fit)。
 
-## 設定 Windows
+## <a name="set-up-windows"></a>設定 Windows
 
 首次啟動 HoloLens 2 時，第一項工作是設定 Windows 全像攝影版。  啟動 HoloLens 時，您會聽到音樂並看到 Windows 標誌。
 
@@ -91,7 +91,10 @@ HoloLens 2 會逐步引導您完成下列步驟：
 
 恭喜！  設定完成後，您就可以開始使用 HoloLens 了！
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
+
+1. 立即開始使用混合實境互動，並瀏覽 HoloLens 上的 Windows 10 - 請查看 **提示** 應用程式，進行手部互動的實際操作教學課程。 使用 [開始] 手勢移至 [開始]，或說出「移至開始」，然後選取 [提示]。 
+1. 按一下下方以繼續閱讀使用 HoloLens 2 的詳細資訊。
 
 > [!div class="nextstepaction"]
 > [開始使用 HoloLens 2](hololens2-basic-usage.md)
