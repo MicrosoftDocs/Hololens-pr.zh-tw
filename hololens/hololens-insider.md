@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ac408f100fb6e421a0ed0c85563ed920f1a25a83
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385571"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388778"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -155,8 +155,6 @@ ms.locfileid: "11385571"
 - 單一瀏覽器視窗的空間音效
 - 瀏覽器的自動和手動更新
 - 使用 「儲存至 PDF」選項 (從列印功能表儲存 PDF) 
-
-**即將推出案例和功能：**
 - WebXR 和 360 Viewer 擴充功能
 - 當您流覽環境中多個視窗時，內容還原以修正視窗
 
@@ -168,6 +166,9 @@ ms.locfileid: "11385571"
 **已知瀏覽器的熱門問題：**
 - 重設您的裝置將會移除新的 Microsoft Edge
 - 全攝影鍵盤中的放大鏡預覽顯示不正確的內容
+- 卷軸有時可能會斷斷續續
+- Microsoft Store 應用程式中的網頁連結可能無法啟動瀏覽器
+- 如果您先前從不同的瀏覽器視窗播放音訊，音訊可能會從錯誤的瀏覽器視窗播放
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insider Channels
 
@@ -330,6 +331,7 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
     - 解決方法：選取另一個設定頁面，然後重新選取校正頁面。
 - 如果您的 HoloLens 2 在執行顯示色彩校正時進入睡眠狀態，它稍後會繼續到混合實境首頁，您的顯示亮度等級仍然會變暗。
 - 您可能需要嘗試向上/向下按下裝置左側的亮度按鈕數次，才能如預期地工作。
+- 並非所有市場都已完成當地語系化
 
 ### <a name="default-app-picker"></a>預設應用程式選擇器
 
@@ -350,6 +352,9 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
 ### <a name="office-web-app"></a>Office Web App
 
 Office Web App 已新增到開始功能表中的 「所有應用程式」清單。 這個 Web 應用程式也可以釘釘到開始或卸載。 由於這是 Web 應用程式，因此其功能會完全符合您流覽時的體驗 https://www.office.com 。 Office Web App 功能只有在 HoloLens 2 有有效的網際網路連接時才能使用。
+
+**已知問題**
+- 重設您的裝置將會移除 Office Web App
 
 ### <a name="swipe-to-type"></a>滑動以輸入
 
@@ -453,7 +458,7 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
 - URI 值：./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| 原則  | 說明   | 設定  |
+| 原則  | 描述   | 設定  |
 |---|---|---|
 | MixedReality/VisitorAutoLogon  | 允許訪客自動登入 Kiosk   | 1 (是) ，0 (否，預設值.)   |
 
@@ -635,7 +640,7 @@ Windows Insider 目前正在移往頻道。 快速**通道**會變成**開發人
 如果您不想再收到 Windows 全攝影版的測試人員版本，您可以選擇在 HoloLens 執行生產版時退出，或者您可以使用進一步[](hololens-recovery.md)修復小夥伴復原您的裝置，將裝置復原為非測試人員版本的 Windows 全攝影版。
 
 > [!CAUTION]
-> 有一個已知問題，在手動重新安裝全新預覽版之後，從 Insider Preview 建立取消註冊的使用者，會遇到藍色畫面。 之後，他們必須手動復原裝置。 如需有關您是否會受到影響的完整詳細資料，請進一步查看此 [已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
+> 有一個已知問題，在手動重新安裝全新預覽版之後，從 Insider Preview 版本取消註冊的使用者會遇到藍色畫面。 之後，他們必須手動復原裝置。 如需有關您是否會受到影響的完整詳細資料，請進一步查看此 [已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
 
 若要確認您的 HoloLens 正在進行生產建立：
 
