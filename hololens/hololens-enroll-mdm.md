@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5613c69bda8bbf70722a050ac5ce4ebeab95d332
-ms.sourcegitcommit: 771e53feefbcc6bce18577515ad7d3f6a7f33840
+ms.openlocfilehash: 4042cce40bea2c3d52d6ffc5d2908f6fde7cf222
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399381"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400673"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中註冊 HoloLens
 
@@ -34,12 +34,15 @@ ms.locfileid: "11399381"
  
 ## <a name="different-ways-to-enroll"></a>不同的註冊方式
 
-根據在 OOBE 或登錄後所選擇的身分識別類型，有不同的註冊方法。 若要深入瞭解 HoloLens 上每種身分識別類型，請流覽 [此頁面](hololens-identity.md)。
+根據在 OOBE 或後登錄期間所選擇的身分識別類型，有許多不同的註冊方法。 [](hololens-identity.md)
 
-- 如果身分識別是 Azure AD，則不論是在 OOBE 或設定**應用程式**  ->  **存取公司或學校**  ->  **連接按鈕期間**。
-    - 若是 Azure AD，只有在 Azure AD 已使用註冊 URL 進行設置時，才會發生自動 MDM 註冊。
-- 如果身分識別是 Azure AD，且裝置已預先向 Intune MDM 伺服器註冊，且已指派特定設定檔設定檔給該伺服器，則 Azure AD-Join 和註冊會自動在 OOBE 期間進行。
+- 如果身分識別是 Azure AD，則不論是在 OOBE 或設定**應用程式**  ->  **存取公司或學校**  ->  **連接**按鈕期間。
+    - 若是 Azure [AD，只有在](hololens-enroll-mdm.md#auto-enrollment-in-mdm) Azure AD 已使用註冊 URL 進行設置時，才會發生自動 MDM 註冊。 
+     
+- 如果身分識別是 Azure AD，且裝置已預先向 Intune MDM 伺服器註冊，且已指派特定設定檔設定檔給該伺服器，則 Azure AD-Join 和自動 [MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 註冊將在 OOBE 期間進行。
     - 也稱為[Autopilot flow Available](hololens2-autopilot.md) In [19041.1103+ builds.](hololens-release-notes.md#windows-holographic-version-2004)
+    
+
 - 如果身分識別是 MSA，則使用**設定應用程式**  ->  **存取公司或學校**  ->  **連接**按鈕。
     - 也稱為新增公司帳戶 (AWA) 流程。
 - 如果身分識別是本地使用者，則只在裝置管理連結中使用**設定應用程式**存取公司或學校  ->  ****  ->  **註冊**。
@@ -49,7 +52,7 @@ ms.locfileid: "11399381"
 
 ## <a name="auto-enrollment-in-mdm"></a>在 MDM 中自動註冊
 
-如果貴組織使用 Azure Active Directory (Azure AD) 和接受 Azure AD 權杖進行驗證的 MDM 解決方案 (目前僅在 Microsoft Intune 和 AirWatch) 中支援，您的 IT 系統管理員可以設定 Azure AD 在使用者使用 Azure AD 帳戶進行登錄後自動允許 MDM 註冊。 [了解如何設定 Azure AD 註冊。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+如果貴組織有 [Azure](https://azure.microsoft.com/overview/)Premium 訂閱，則使用 Azure Active Directory (Azure AD) 和接受 Azure AD 權杖進行驗證的 MDM 解決方案 (目前僅在 Microsoft Intune 和 AirWatch) 中支援，您的 IT 系統管理員可以設定 Azure AD，讓使用者使用 Azure AD 帳戶登錄後自動允許 MDM 註冊。 [了解如何設定 Azure AD 註冊。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 當啟用自動註冊，就不需要手動註冊。 當使用者使用 Azure AD 帳戶登入時，裝置會在完成初次執行體驗後在 MDM 註冊。
 
