@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
-ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
+ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "11328107"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400693"
 ---
-# HoloLens 2 硬體
+# <a name="hololens-2-hardware"></a>HoloLens 2 硬體
 
 ![HoloLens 2 側面圖](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens (第 1 代) 開始的全像式運算旅程，提供更舒適且更具視覺效果的方式，搭配在混合實境中共同作業的更多選項。
 
-## HoloLens 元件
+## <a name="hololens-components"></a>HoloLens 元件
 
 - **面板**。 包含 HoloLens 感應器及顯示器。 您可以在佩戴 HoloLens 時將面板向上旋轉。
 - **頭帶**。 若要戴上 HoloLens，請使用調整輪來展開頭帶。 將 HoloLens 放在適當位置之後，向右轉緊調整輪，直到頭帶舒適為止。
@@ -34,15 +34,14 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 - **電源按鈕**。 戴上 HoloLens 時，電源按鈕位於背部外蓋的右側。
 - **USB-C 連接埠**。 戴上 HoloLens 時，USB-C 連接埠位於背部外蓋右側的電源按鈕下方。
 
-## 包裝盒內容
+## <a name="in-the-box"></a>包裝盒內容
 
-- **眉墊**。 您可以視需要取下及更換眉墊。
-- **頭頂綁帶**。 當您戴上 HoloLens 並四處移動時，請使用頭頂綁帶以協助將裝置固定在原位。 如果要長時間戴著 HoloLens，頭頂綁帶可以使裝置戴起來更舒適。
-- **USB-C 纜線**。 使用 USB-C 纜線將 HoloLens 連接至電源供應器以進行充電，或將 HoloLens 連接至您的電腦。
-- **電源供應器**。 插入電源插座。
+- **[眉墊](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**。 您可以視需要取下及更換眉墊。
+- **[頭頂綁帶](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**。 當您戴上 HoloLens 並四處移動時，請使用頭頂綁帶以協助將裝置固定在原位。 如果要長時間戴著 HoloLens，頭頂綁帶可以使裝置戴起來更舒適。
+- **[USB-C 充電器和纜線](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**。 將電源供應器插入電源插座。 使用 USB-C 纜線將 HoloLens 連接至電源供應器以進行充電，或將 HoloLens 連接至您的電腦。
 - **超細纖維布**。 用來清潔 HoloLens 面板。
 
-### 電源供應器詳細資料
+### <a name="power-supply-details"></a>電源供應器詳細資料
 
 裝置附帶的電源供應器和 USB 纜線是最佳的充電方式。 電源供應器為 18W 充電器。  其在 2A 下提供 9V。
 
@@ -50,9 +49,9 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 為了讓裝置開啟時保持/提高內部電池電量百分比，必須將其連接到至少 15W 的充電器。
 
-## 裝置規格
+## <a name="device-specifications"></a>裝置規格
 
-### 顯示器
+### <a name="display"></a>顯示器
 
 |   |   |
 | - | - |
@@ -61,7 +60,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 | 全像密度 | >2.5k 弧度 (每弧度光點) |
 | 目視轉譯 | 3D 眼睛位置的顯示最佳化 |
 
-### 感應器
+### <a name="sensors"></a>感應器
 
 |   |   |
 | - | - |
@@ -76,45 +75,45 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 > [!NOTE]
 > 請勿遮蔽圖片中指出的任何感應器。 頭部追蹤相機有非常寬廣的 FOV，除了不應加以遮蔽以外，也不應有任何項目在其周圍。
 
-### 音訊與語音
+### <a name="audio-and-speech"></a>音訊與語音
 
 |   |   |
 | - | - |
 | 麥克風陣列 | 5 個頻道 |
-| 喇叭 | 內建空間音效 |
+| 喇叭 | 內建的空間音效 |
 
-### 運算和連線能力
+### <a name="compute-and-connectivity"></a>運算和連線能力
 
 |   |   |
 | - | - |
 | 晶片上的系統 | Qualcomm Snapdragon 850 運算平台[詳細資料](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
 | 全像處理單元 | 第二代自訂建置的全像處理單元 |
 | 記憶體 | 4 GB LPDDR4x 系統 DRAM |
-| 儲存體 | 64-GB UFS 2.1 |
+| 儲存空間 | 64-GB UFS 2.1 |
 | WiFi | 802.11ac 2x2 |
 | 藍牙 | 5.0 |
 | USB | USB Type-C |
 
-### 電源
+### <a name="power"></a>電源
 
 |   |   |
 | - | - |
-| 電池使用時間 | 使用中的2-3 小時。 最多 2 週的待機時間。 |
+| 電池使用時間 | 使用中時間 2-3 小時。 最多兩周的待機時間。 |
 | 電池技術 | [鋰電池](https://www.microsoft.com/download/details.aspx?id=43388) |
 | 充電行為 | 在充電時完全正常運作 |
 | 降溫類型 | 被動冷卻（無風扇） |
 | 電源消耗 | 為了讓裝置開啟時保持/提高內部電池電量百分比，必須將其連接到至少 15W 的充電器。 |
 
-### 調整
+### <a name="fit"></a>調整
 
 |   |   |
 | - | - |
 | 大小 | 單一大小，具可調整綁帶。  可戴在眼鏡上 |
 | 粗細 | 566 克 |
 
-## 裝置功能
+## <a name="device-capabilities"></a>裝置功能
 
-### 人類理解
+### <a name="human-understanding"></a>人類理解
 
 |   |   |
 | - | - |
@@ -122,7 +121,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 | 眼球追蹤 | 即時追蹤 |
 | 語音 | 裝置上命令及控制項；使用網際網路連線的 Cortana 自然語言 |
 
-### 環境了解
+### <a name="environment-understanding"></a>環境了解
 
 |   |   |
 | - | - |
@@ -130,7 +129,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 | 空間對應 | 即時環境網格 |
 | 混合實境擷取 | 混合式全像投影和實體環境相片與影片 |
 
-## 預先安裝的軟體
+## <a name="pre-installed-software"></a>預先安裝的軟體
 
 |   |   |
 | - | - |
@@ -141,7 +140,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 | Dynamics 365 Remote Assist | [Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 可讓技術人員使用 Microsoft Teams 或 Dynamics 365 Remote Assist 來共同作業及解決遠端作業者的問題。  |
 | 意見反應中樞 | [意見反應中樞](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)可讓您透過共用您的建議或問題，提供有關 Windows 和應用程式的意見反應。  |
 | 檔案總管 | 檔案總管提供用於存取檔案系統的圖形化使用者介面。 |
-| 郵件和行事曆 | [郵件和行事曆](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)應用程式可協助您掌握最新的電子郵件、管理您的排程，並與您的連絡人保持連絡。 |  
+| 郵件和行事曆 | [郵件和日曆](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 應用程式可協助您隨時掌握最新的電子郵件、管理排程，並與您的連絡人保持聯繫。 |  
 | Microsoft Edge | Microsoft Edge 讓您瀏覽時有更高的隱私權、更高的生產力以及更多的價值，為您提供世界級的效能。 |
 | Microsoft Store | 您可以在 [Microsoft Store](https://www.microsoft.com) 取得可與 HoloLens 搭配使用的應用程式和遊戲。|
 | 電影與電視 | [電影與電視](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)在一個簡單、快速且優雅的應用程式中為您提供最新的娛樂。 |
@@ -150,19 +149,27 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 | 設定 | [設定] 應用程式是您詳細自訂 Windows 全像攝影版運作方式的位置。  |
 | 提示 | [提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)可讓您掌握 Windows 全像攝影版中令人驚喜且較不為人知的功能。 |
 
-## 裝置認證
+## <a name="device-certifications"></a>裝置認證
 
-### 安全
+### <a name="safety"></a>安全
 
 * [產品安全](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [產品安全警告與指示](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * 視力安全：HoloLens 2 已經過測試，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影響保護需求。
 * [SAR 資訊](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
-### 法規資訊
+### <a name="regulatory-information"></a>法規資訊
 [HoloLens 法規](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包括溫度、處置、無線電波和電視干擾等資訊。
 
-## 外包裝尺寸
+## <a name="warranty-information"></a>保固資訊
+
+Microsoft HoloLens 2 隨附標準有限 [保固](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)。 
+
+購買受 [Microsoft Store 使用條款與銷售條款](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) 所規限。 
+
+購買 HoloLens 2 即表示您同意 [軟體授權合約](https://www.microsoft.com/Useterms/)。
+
+## <a name="package-dimensions"></a>外包裝尺寸
 
 |      度量單位               |      單位衡量標準     |      單位英制     |
 |--------------------------------|-----------------------|-------------------------|
@@ -179,7 +186,7 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 > - 單元：銷售 HoloLens 2 所採用的黑色、零售樣式包裝盒。
 > - 外部託運容器：產品周圍包覆保護性運送包裝。
 
-## 尋找序號
+## <a name="finding-the-serial-number"></a>尋找序號
 
 HoloLens 2 裝置的序號印在面板下方。
 
@@ -198,7 +205,7 @@ HoloLens 2 裝置的序號印在面板下方。
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## 下一步
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [設定和啟動 HoloLens 2](hololens2-setup.md)
