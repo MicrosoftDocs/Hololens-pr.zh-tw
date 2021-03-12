@@ -1,6 +1,6 @@
 ---
 title: 適用於 Microsoft HoloLens 的 Insider Preview
-description: 瞭解如何開始使用測試人員建立，並為 HoloLens 的下一個主要作業系統更新提供寶貴的意見。
+description: 瞭解如何開始使用測試人員版本，並為 HoloLens 的下一個主要作業系統更新提供寶貴的意見。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
+ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400703"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "11406769"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -29,7 +29,7 @@ ms.locfileid: "11400703"
 
 ## <a name="windows-insider-release-notes"></a>Windows Insider Release Notes
 
-我們很高興能再次開始向 Windows Insider 提供新功能。 新版將在開發通道中測試，以尋找最新更新。 隨著我們新增更多功能與更新至我們的 Windows 測試人員版本，我們會持續更新此頁面。  期待並準備好將這些更新融入您的實際。
+我們很高興能再次開始向 Windows Insider 提供新功能。 新版將在開發通道中測試，以尋找最新更新。 隨著我們新增更多功能與更新至我們的 Windows 測試人員版本，我們會持續更新此頁面。  期待並準備好將這些更新混合到您的實境中。
 
 這項功能更新包含兩個目標物件的功能。 使用者可在裝置上使用的功能，以及 IT 系統管理員可配置的新裝置管理選項。 下方功能表格會說明哪些物件能夠使用每項新功能。 如果您是 IT 系統管理員，請查看我們的 IT 系統管理員 [- 更新檢查清單](#it-admin---update-checklist)
 
@@ -52,7 +52,7 @@ ms.locfileid: "11400703"
 | [列在登錄畫面上的多個使用者](#multiple-users-listed-on-sign-in-screen) | 在登錄畫面上顯示多個使用者帳戶 | 使用者 | 20293.1000 |
 | [USB-C 外接麥克風支援](#usb-c-external-microphone-support) | 針對應用程式和/或遠端輔助使用 USB-C 麥克風。| 使用者 | 20279.1006 |
 | [資訊站的訪客自動登入](#visitor-auto-logon-for-kiosks)                          | 啟用訪客帳戶的自動登入，以用於 Kiosk 模式。                         | IT 系統管理員 | 20279.1006                 |
-| [Kiosk 模式中新 App 的新 AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 適用于新設定和 Edge 應用程式的 AUMIDs | IT 系統管理員 | 20279.1006 |
+| [Kiosk 模式中新 App 的新 AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 適用于新設定和 Edge 應用程式的 AUMID | IT 系統管理員 | 20279.1006 |
 | [改良的 Kiosk 模式失敗交還](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk 模式會先尋找全域指派的 Access，然後再尋找空白的開始功能表。 | IT 系統管理員 | 20279.1006 |
 | [頁面設定可見度的新設定URIS](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ 個新的 SettingsURIs for Settings/PageVisibilityList policy | IT 系統管理員 | 20289.1000 |
 | [設定後背診斷](#configuring-fallback-diagnostics-via-settings-app) | 在設定應用程式中設定後背診斷行為 | IT 系統管理員 | 20279.1006 |
@@ -93,12 +93,12 @@ ms.locfileid: "11400703"
 
 #### <a name="enable-new-endpoints-for-edge"></a>啟用 Edge 的新端點
 
-如果您有涉及網路端點的基礎結構 ，例如 Proxy 或防火牆，請為新的[Microsoft Ege](#managing-endpoints-for-the-new-microsoft-edge)應用程式啟用這些新的端點。
+如果您有涉及網路端點的基礎結構 ，例如 Proxy 或防火牆，請針對新的 Microsoft Edge 應用程式啟用 [這些新的端點。](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>新可配置的專案
 
 - [設定後背診斷](#configuring-fallback-diagnostics-via-settings-app)
-  - 您可以設定是否收集及誰可能收集退後診斷。
+  - 您可以設定是否收集及誰可能收集後背診斷。
 - [與附近的裝置共用專案](#share-things-with-nearby-devices)
   - 您可以停用附近的新共用功能。
 - [設定新 Microsoft Edge 的策略設定](#configuring-policy-settings-for-the-new-microsoft-edge)
@@ -111,7 +111,7 @@ ms.locfileid: "11400703"
 
 ### <a name="introducing-the-new-microsoft-edge"></a>全新 Microsoft Edge 的介紹
 
-![將舊版 Microsoft Edge 標誌動畫新到新的 Microsoft Edge 標誌](images/new-edge.gif)
+![新 Microsoft Edge 標誌的舊版 Microsoft Edge 標誌動畫](images/new-edge.gif)
 
 新的 Microsoft Edge [採用 Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) 開放來源專案，為客戶建立更佳的相容性，以及減少網頁開發人員的網路分散程度。
 
@@ -121,14 +121,14 @@ ms.locfileid: "11400703"
 
 #### <a name="launching-the-new-microsoft-edge"></a>啟動新的 Microsoft Edge
 
-測試人員可以使用兩個版本的 Microsoft Edge：新的 Microsoft Edge 新 Microsoft Edge 圖示 (以藍色和綠色旋轉圖示) 和舊版 Microsoft Edge (以白色 ![ ](images/new_edge_logo.png) "e" 圖示) 表示。 新的 Microsoft Edge 已釘釘到開始功能表，且會在您啟用網頁連結時自動啟動。 如果您想要還原成使用舊版 Microsoft Edge 做為預設網頁瀏覽器，請參閱下列指示 [以重設預設應用程式](#default-app-picker)。
+測試人員可以使用兩個版本的 Microsoft Edge：新的 Microsoft Edge 新 Microsoft Edge 圖示 (以藍色和綠色旋轉圖示) 和舊版 Microsoft Edge (以白色 ![ ](images/new_edge_logo.png) "e" 圖示) 表示。 新的 Microsoft Edge 已釘釘到開始功能表，且會在您啟用網頁連結時自動啟動。 如果您想要還原成使用舊版 Microsoft Edge 做為預設網頁瀏覽器，請參閱下列重設預設應用程式 [的指示](#default-app-picker)。
 
 > [!NOTE]
 > 當您第一次在 HoloLens 2 上啟動新的 Microsoft Edge 時，您的設定和資料將會從舊版 Microsoft Edge 中匯出。 如果您在啟動新的 Microsoft Edge 之後繼續使用舊版 Microsoft Edge，新資料將不會從舊版 Microsoft Edge 同步處理到新的 Microsoft Edge。
 
 #### <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>設定新 Microsoft Edge 的策略設定
 
-新的 Microsoft Edge 為 IT 系統管理員提供了一組更寬廣的 HoloLens 2 瀏覽器政策，比舊版 Microsoft Edge 提供的範圍更大。
+新的 Microsoft Edge 提供 IT 系統管理員在 HoloLens 2 上的瀏覽器政策，比舊版 Microsoft Edge 提供的範圍更加廣泛。
 
 以下是一些實用的資源，可進一步學習管理新 Microsoft Edge 之策略設定：
 
@@ -163,14 +163,14 @@ ms.locfileid: "11400703"
 - 當您流覽環境中多個視窗時，內容還原以修正視窗
 
 **無法預期的案例和功能：**
-- 同時有音訊流的多個視窗的空間音效
+- 包含同時音訊流的多個視窗的空間音效
 - 「看到它，說出它」
 - 列印
 
 **已知瀏覽器的熱門問題：**
 - 重設您的裝置將會移除新的 Microsoft Edge
 - 全攝影鍵盤中的放大鏡預覽顯示不正確的內容
-- 卷軸有時可能會斷斷續續
+- 卷卷有時可能會斷斷續續
 - Microsoft Store 應用程式中的網頁連結可能無法啟動瀏覽器
 - 如果您先前從不同的瀏覽器視窗播放音訊，音訊可能會從錯誤的瀏覽器視窗播放
 
@@ -196,7 +196,7 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
   1. 在**下拉式功能表中選取 HoloLens 2。**
   1. 將 .msix 檔案儲存到您電腦中的 「下載」資料夾 (或另一個您可以輕鬆地找到) 。
   1. 使用 [您電腦中的 Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) 裝置入口網站在 HoloLens 2 上安裝下載的 .msix 檔案。
-  1. 成功安裝之後，您可以在開始功能表的所有應用程式清單中，將 Microsoft Edge Beta 版、Dev**** 或 Canary 視為個別專案。
+  1. 成功安裝之後，您可以在開始功能表的所有應用程式清單中，將 Microsoft Edge Beta、Dev 或**** Canary 視為個別專案。
 
 > [!NOTE]
 > 在 HoloLens 2 的 Windows 測試人員預覽版期間，您裝置上的 Microsoft Edge 版本可能高於某些 (或 Microsoft Edge 測試人員) 中提供的版本。 這是為了確保專為 HoloLens 2 的網頁瀏覽器所設計的新功能和修正程式能儘快連至我們的 Windows 測試人員。 下一次 Windows 更新公開發行之後，Microsoft Edge 測試人員通道版本將會超越並超越 HoloLens 2 上的 Microsoft Edge 版本。
@@ -219,7 +219,7 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
 
 新的 Microsoft Edge 支援 WebXR，這是建立取代 WebVR (網頁體驗的新) 。 許多沉浸式網頁體驗在設計時都考慮到 VR， (以虛擬環境) 取代您的視野，但 HoloLens 2 也支援這些體驗。 WebXR 標準也可啟用使用您實體環境的增強和混合實境沉浸式 Web 體驗。 隨著開發人員花更多時間使用 WebXR，我們預期新的增強和混合實境沉浸式體驗將送達 HoloLens 2 客戶嘗試！
 
-360 檢視器擴充功能建立在 WebXR 上，會自動與 HoloLens 2 上的新 Microsoft Edge 一起安裝。 此 Web 擴充功能讓您能沉浸于 360 度影片中。 YouTube 提供最多 360 個影片選擇，因此我們建議您從該影片開始。
+360 檢視器擴充功能建立在 WebXR 上，並會自動與 HoloLens 2 上的新 Microsoft Edge 一起安裝。 此 Web 擴充功能讓您能沉浸于 360 度影片中。 YouTube 提供最多 360 個影片選擇，因此我們建議您從該影片開始。
 
 #### <a name="how-to-use-webxr"></a>如何使用 WebXR
 
@@ -246,13 +246,13 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
     ![啟用 360 檢視器的按鈕](images/enter-360-viewer.jpg)
 
 1. 當您第一次嘗試在特定的網域上啟動 360 Viewer 時，瀏覽器會要求同意進入沉浸式檢視。 選取 **允許**。
-1. [點兩](hololens2-basic-usage.md#select-using-air-tap) 下以顯示播放控制項。 使用 [手](hololens2-basic-usage.md#select-using-air-tap) 拍和空中點兩下來播放/暫停、向前/向後跳、開啟/關閉輔助字幕，或 (結束沉浸式) 。 播放控制項會在閒置數秒後消失。
+1. [空中點兩](hololens2-basic-usage.md#select-using-air-tap) 下可顯示播放控制項。 使用 [手](hololens2-basic-usage.md#select-using-air-tap) 雷和空中點兩下來播放/暫停、向前/向後跳、開啟/關閉輔助字幕，或停止結束 (結束沉浸式) 。 播放控制項會在閒置數秒後消失。
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>WebXR 和 360 檢視器已知問題
 - 在 WebXR 體驗中，當您傾斜頭部或四處移動時，全形影像可能會移動或傾斜。
 - 根據 WebXR 體驗的複雜度，框架速率可能會降低或斷斷續續。
-- WebXR 目前還無法提供手寫手連接。
-- 在離開 WebXR 或 360 檢視器體驗時，混合實境首頁中的全形影像可能需要 30 秒或更長時間重新出現。
+- WebXR 目前還無法提供手寫手部連接。
+- 在離開 WebXR 或 360 檢視器體驗時，混合實境首頁中的全彩影像可能需要 30 秒或更長時間重新出現。
 - YouTube 外網站的 360 個影片可能無法如預期地播放。
 - 如果 360 影片未進入沉浸式 (或混合實境耳機按鈕未顯示在) ，請嘗試重新組織頁面。
 - 在 HoloLens 2 上的 360 Viewer 中還看不到標題。
@@ -269,7 +269,7 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
 此版本推出後，我們將推出新版的設定應用程式。 新的設定應用程式包含 HoloLens 2 的新功能和下列領域的擴充設定：音效、Power & 睡眠、網路 & 網際網路、應用程式、帳戶、輕鬆存取等等。
 
 > [!NOTE]
-> 由於新的設定應用程式與舊版的設定應用程式不同，因此您先前置於環境周圍的任何設定視窗，都會在更新時移除。
+> 由於新的設定應用程式與舊版的設定應用程式不同，因此您先前置於環境中的任何設定視窗都會在更新時移除。
 
 ![新的設定應用程式首頁](images/new-settings-app.png)
 
@@ -295,16 +295,16 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
 - 先前放置的設定視窗將會移除 (上方的備註) 。
 - 您無法再使用設定應用程式重新命名您的裝置。 IT 系統管理員可以使用 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) 裝置名稱範本的 Windows Autopilot 或 MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 節點來重新命名裝置。
 - 乙太網路頁面會一 (「usbNcm」) 虛擬乙太網路裝置。
-- 新版 Microsoft Edge 的電池使用量可能無法正確無誤，因為其性質是 UWP 介面卡圖層支援的 Win32 桌面應用程式， (預期近期將修正) 。
+- 新版 Microsoft Edge 的電池使用量可能不太正確，因為其性質是 UWP 介面卡圖層支援的 Win32 桌面應用程式， (預期近期將修正) 。
 
 ### <a name="display-color-calibration"></a>顯示色彩校正
 
 *在 Windows Insider Build 20293.1000 中新增*
 
-有了這個新設定，您可以選取 HoloLens 2 顯示器的替代色彩設定檔。 這可協助色彩顯示更精確，尤其是在較低的顯示亮度等級。 顯示色彩校正可在設定 App 的系統調整>頁面上找到。
+有了這個新設定，您可以選取 HoloLens 2 顯示器的替代色彩設定檔。 這可協助色彩顯示更精確，尤其是在較低的顯示亮度等級。 顯示色彩校正可以在設定 App 的系統校正頁面上找到>校正。
 
 > [!NOTE]
-> 由於此設定會將新的色彩設定檔新存到您的顯示中，因此它是每個裝置設定 (，並非每個使用者帳戶) 。
+> 由於此設定會將新的色彩設定檔存到您的顯示中，因此它是每個裝置設定 (，並非每個使用者帳戶) 。
 
 #### <a name="how-to-use-display-color-calibration"></a>如何使用顯示色彩校正
 
@@ -333,7 +333,7 @@ Microsoft Edge 小組提供三個預覽通道給 Edge 測試人員社群：Beta�
 如果您不滿意儲存到 HoloLens 2 的自訂色彩設定檔，您可以還原裝置的原始色彩設定檔：
 1. 啟動設定 **應用程式** ，然後流覽至 **系統>校正**。
 1. 在 **顯示色彩校正下**，選取重 **設成預設色彩設定檔** 按鈕。
-1. 對話方塊開啟時，如果您已準備好重新開機**** HoloLens 2 並套用變更，請選取 [重新開機。
+1. 當對話方塊開啟時，如果您已準備好**** 重新開機 HoloLens 2 並套用變更，請選取 [重新開機。
 
 #### <a name="top-display-color-calibration-known-issues"></a>顯示色彩校正已知問題
 
@@ -370,7 +370,7 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
 有些客戶會滑動想要輸入之字詞的形狀，以在虛擬鍵盤上更快速地「輸入」，我們正在預覽全攝影鍵盤的這項功能。 您可以一次滑動一個字，將手指的筆尖透過全攝影鍵盤的螢幕、滑動文字的形狀，然後從鍵盤上收回手指的提示。 您可以將手指從鍵盤移除文字之間，以不需要按空格鍵，即可滑動後續文字。 如果您看到手指在鍵盤上移動後看到滑動軌跡，就會知道此功能正在使用中。
 
-請注意，由於全像攝影鍵盤的性質，您不會因為手指而感到受威脅，因此使用和掌握這項功能可能會有些難度 (手機顯示器和手機) 。 我們正在評估這項公開發行功能，因此您的意見至關重要;您是否覺得此功能實用或您的意見有建設性的意見，請透過意見回饋中心 [讓我們知道](hololens-feedback.md)。
+請注意，由於全像攝影鍵盤的性質，您不會因為手指而感到受威脅，因此使用和掌握這項功能可能會有些難度 (手機顯示器和手機) 。 我們正在評估這項公開發行功能，因此您的意見至關重要;您是否覺得這項功能實用或您的意見有建設性的意見，請透過意見回饋中心 [讓我們知道](hololens-feedback.md)。
 
 ### <a name="power-menu-from-start"></a>從開始功能表的電源功能表
 
@@ -390,7 +390,7 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
-5. 選取功能表選項以登出、重新開機或關閉 HoloLens。 如果裝置是針對單一 Microsoft 帳戶或 [MSA](hololens-identity.md)帳戶設定 (登出) 選項。
+5. 選取功能表選項以登出、重新開機或關閉 HoloLens。 如果裝置是針對單一 Microsoft 帳戶或 MSA 帳戶設定 [ (，) 選項](hololens-identity.md)。
 
 6. 輕觸其他位置，或以開始手勢關閉開始功能表，即可關閉功能表。
 
@@ -404,9 +404,9 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
 之前，The Sign In screen 只會顯示最近已登錄的使用者，以及 'Other user' 進入點。 我們已收到客戶的意見回饋，指出如果有多個使用者已登錄裝置，這項功能就不足。 他們仍然需要重新輸入使用者名稱等。
 
-此 Windows 測試人員建立推出時****，選取位於 PIN 專案欄位右邊的其他使用者時，即會顯示先前已登錄裝置的多個使用者。 這可讓使用者選取其使用者設定檔，然後使用他們的 Windows Hello 認證來登錄。 您也可以透過此其他使用者頁面，透過新增帳戶按鈕，將新使用者新 **加入** 裝置。
+此 Windows 測試人員建立推出時****，選取位於 PIN 專案欄位右邊的其他使用者時，即會顯示先前已登錄裝置的多個使用者。 這可讓使用者選取其使用者設定檔，然後使用他們的 Windows Hello 認證來登錄。 您也可以透過此其他使用者頁面，透過新增帳戶按鈕，將新使用者 **新加入** 裝置。
 
-當在其他使用者功能表中時，其他使用者按鈕會顯示最後一個已簽署裝置的使用者。 選取此按鈕以返回此使用者的登錄畫面。
+在其他使用者功能表中時，其他使用者按鈕會顯示最後一個已簽署裝置的使用者。 選取此按鈕以返回此使用者的登錄畫面。
 
 ![預設登錄畫面](./images/multiusers1.jpg)
 
@@ -417,11 +417,11 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 ### <a name="usb-c-external-microphone-support"></a>USB-C 外接麥克風支援
 
 > [!IMPORTANT]
-> 插入 USB **麥克風並不會自動將其設定為輸入裝置**。 插入一組 USB-C 耳機時，使用者會注意到耳機的音訊會自動重新導向至耳機，但 HoloLens OS 會將內部麥克風陣列排列為高於任何其他輸入裝置優先順序。 **若要使用 USB-C 麥克風，請遵循下列步驟。**
+> 插入 USB **麥克風並不會自動將其設定為輸入裝置**。 插入一組 USB-C 耳機時，使用者會注意到耳機的音訊會自動重新導向至耳機，但 HoloLens OS 會將內部麥克風陣列優先排列于任何其他輸入裝置上方。 **若要使用 USB-C 麥克風，請遵循下列步驟。**
 
 使用者可以使用聲音設定面板選取 USB-C 連接 **的外部** 麥克風。 USB-C 麥克風可用於通話、錄製等。
 
-開啟設定**應用程式**，然後選取**系統**  >  **音效**。
+開啟設定**應用程式****，然後選取**系統  >  **音效**。
 
 ![音效設定](images/usbc-mic-1.jpg)
 
@@ -470,13 +470,13 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
 | 原則  | 描述   | 設定  |
 |---|---|---|
-| MixedReality/VisitorAutoLogon  | 允許訪客自動登入 Kiosk   | 1 (是) ，0 (否，預設值.)   |
+| MixedReality/VisitorAutoLogon  | 允許訪客自動登入 Kiosk   | 1 (是) ，0 (否，default.)   |
 
 ### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>在 Kiosk 模式中使用新的設定和 Edge 應用程式
 
-在 Kiosks 中加入 [應用程式時](hololens-kiosk.md)，IT 系統管理員通常會將應用程式新增到 Kiosk，但使用其應用程式使用者模型識別碼 (AUMID) 。 因為設定應用程式和 Microsoft Edge 應用程式都視為新的應用程式，而且與那些應用程式使用 AUMIDs 的舊版 App Kiosk 不同，因此必須更新以使用新的 AUMID。
+在 [Kiosks](hololens-kiosk.md)中加入應用程式時，IT 系統管理員通常會將應用程式新增到 Kiosk，但使用其應用程式使用者模型識別碼 (AUMID) 。 因為設定應用程式和 Microsoft Edge 應用程式都視為新的應用程式，而且不同于那些應用程式使用 AUMIDs 的舊版 App Kiosk，因此必須更新以使用新的 AUMID。
 
-修改 Kiosk 以包含新 App 時，建議您新增新 AUMID，並離開舊的 AUMID。 這可讓使用者在更新作業系統時輕鬆進行轉換，而且不需要收到新政策，就如預期一樣持續使用 Kiosk。
+修改 Kiosk 以包含新 App 時，建議您新增新 AUMID，以及離開舊的 AUMID。 這可讓使用者在更新作業系統時輕鬆進行轉換，而且不需要收到新政策，就如預期一樣持續使用 Kiosk。
 
 | 應用程式                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
@@ -487,9 +487,9 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>資訊站模式行為變更處理失敗
 
-在較舊的建立中，如果裝置有資訊站組式 ，這是全域指派的存取權和 AAD 群組成員指派存取權的組合，如果決定 AAD 群組成員資格失敗，使用者[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)會看到「開始」功能表中沒有顯示任何內容。
+在較舊的建立中，如果裝置有資訊站組式 ，這是全域指派的存取權和 AAD 群組成員指派存取的組合，如果決定 AAD 群組成員資格失敗，使用者會看到[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)「開始」功能表中沒有任何顯示。
 
-從 Windows 測試人員發行開始，如果 AAD 群組資訊站模式失敗 (資訊站) 資訊站體驗會備份到全域資訊站組配置。
+從 Windows 測試人員發行開始，如果 AAD 群組資訊站模式期間發生失敗 (資訊站) 資訊站體驗會備份到全域資訊站組配置。
 
 ### <a name="new-settingsuris-for-page-settings-visibility"></a>頁面設定可見度的新設定URIS
 
@@ -502,7 +502,7 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 > [!NOTE]
 > **已替代：ms-settings：network-Proxy**
 >
-> 在這些較新的版本內，有一個設定頁面已由它所替代。 舊的**網路&**  >  **Internet Proxy**頁面已不再提供做為全域設定。 您可以在 Network & **Internet**  >  **Wi-Fi**屬性或網際網路乙太網路屬性&找到新的每  >  ** ** **&**  >  ****  >  **設定**。
+> 在這些較新的版本內，有一個設定頁面已由它所替代。 已不再**提供&** Internet  >  **Proxy**頁面做為全域設定。 您可以在 Network & **Internet**  >  **Wi-Fi**屬性或網際網路乙太網路屬性&找到新的每  >  ** ** **&**  >  ****  >  **設定**。
 
 <br>
 
@@ -548,13 +548,13 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 
 ### <a name="share-things-with-nearby-devices"></a>與附近的裝置共用專案
 
-與 Windows 10 裝置附近共用專案，包括執行 HoloLens Insider builds 20279.1006+ 的 PC 和其他 HoloLens 2 裝置。 您可以在設定**系統共用體驗**中試用，以將 HoloLens 中的檔案或  ->  ****  ->  ** **URL 共用至電腦。 若要進一步閱讀詳細資料，請參閱如何在 [Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)中與附近的裝置共用專案。
+與 Windows 10 裝置附近共用專案，包括執行 HoloLens Insider builds 20279.1006+ 的 PC 和其他 HoloLens 2 裝置。 您可以在設定**系統共用體驗**中試用，以將 HoloLens 的檔案或  ->  ****  ->  ** **URL 共用至電腦。 若要進一步閱讀詳細資料，請參閱如何在 [Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)中與附近的裝置共用專案。
 
 此功能可透過 [Connectivity/AllowConnectedDevices 管理](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)。
 
 ### <a name="new-os-update-troubleshooter"></a>新的 OS Update 疑難排解員
 
-除了設定應用程式中先前的疑難排解員之外，系統還加入了新的疑難排解員，並新增了 OS 更新的新設定應用程式。 流覽至**設定**  ->  **更新 &amp; 安全性**  >  **疑難排解**  >  **Windows Update，** 然後選取開始。 **** 這可讓您在重現作業系統更新問題時收集追蹤，以協助您針對 IT 或支援進行疑難排解。
+除了設定應用程式中先前的疑難排解員之外，我們新增了新的疑難排解員，並新增了 OS 更新的新設定應用程式。 流覽至**設定**  ->  **更新 &amp; 安全性**  >  **疑難排解**  >  **Windows Update，** 然後選取開始。 **** 這可讓您在重現作業系統更新問題時收集追蹤，以協助您針對 IT 或支援進行疑難排解。
 
 ### <a name="delivery-optimization-preview"></a>傳遞優化預覽
 
@@ -597,17 +597,17 @@ Office Web App 已新增到開始功能表中的 「所有應用程式」清單�
 > - 「重新開機裝置」語音命令運作正常。 
 > - 您也可以選擇設定/Windows Insider Program 中的重新開機按鈕。
 >
-> 我們在後端有一個錯誤，您可能會遇到這個錯誤，這將會使您回到正軌。
+> 我們在後端遇到您可能會遇到的錯誤，這將會讓系統復原正軌。
 
 在 HoloLens 2 裝置**** 上，& Windows 測試人員計畫的設定更新，然後  >  ****  >  **** 選取開始。 **** 連結您用來註冊為 Windows Insider 的帳戶。
 
-Windows Insider 目前正在移往頻道。 快速**通道**會變成**開發人員**通道，慢速通道會變成******Beta**通道，而發行**預覽**通道將會變成**發行預覽通道**。 以下是該地圖的外觀：
+Windows Insider 目前正在移往頻道。 快速**通道**會變成**開發人員**通道，慢速通道會變成******Beta**通道，而發行**預覽**通道會變成發行**預覽通道**。 以下是該地圖的外觀：
 
 ![Windows Insider Channels 說明](images/WindowsInsiderChannels.png)
 
 詳細資訊請參閱 Windows 部落格 [上的 Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 介紹。
 
-然後，選取 **Windows 的主動**開發，選擇您是否要接收 **開發通道** 或 **Beta 通道** 版本，並審查計畫條款。
+然後，選取 **Windows 的進行**中開發，選擇您是否要接收 **開發通道** 或 **Beta 通道** 版本，並審查計畫條款。
 
 選取 **確認>立即重新開機** 以完成。 重新開機裝置之後，請>更新& **安全性>檢查更新** 以取得最新版。
 
@@ -616,7 +616,7 @@ Windows Insider 目前正在移往頻道。 快速**通道**會變成**開發人
 
 #### <a name="stage-one---release-preview"></a>階段 1 - 發行預覽版
 1.  設定、更新&、Windows Insider Program、選取 **發行預覽通道**。
-2.  設定、更新&安全性、Windows **Update、檢查更新**。 更新之後，請繼續到階段 2。
+2.  設定、更新&安全性、Windows **Update、檢查更新**。 更新之後，繼續進行階段 2。
 
 #### <a name="stage-two---dev-channel"></a>階段 2 - 開發人員通道
 1. 設定、更新&、Windows 測試人員計畫、選取 **開發人員通道**。
@@ -639,18 +639,18 @@ Windows Insider 目前正在移往頻道。 快速**通道**會變成**開發人
 請使用 [HoloLens](hololens-feedback.md) 上的意見回饋中樞應用程式，提供意見回饋及報告問題。 使用意見中樞可確保包含所有必要的診斷資訊，協助我們的工程師快速進行診斷並解決問題。  中文版和日文版的 HoloLens 問題應該以相同方式報告。
 
 > [!NOTE]
-> 請務必接受詢問您是否希望意見回應中樞存取您的檔資料夾的提示， (系統提示時選取) 。 ****
+> 請務必接受詢問您是否要意見回應中樞存取您的檔資料夾的提示， (系統提示時選取) 。 ****
 
 ## <a name="note-for-developers"></a>開發人員注意事項
 
-歡迎並鼓勵您嘗試使用 HoloLens 測試人員建立來開發您的應用程式。  請參閱 [HoloLens 開發人員檔](https://developer.microsoft.com/windows/mixed-reality/development) 以開始使用。 這些相同的指示可與 HoloLens 測試人員建立一起使用。  您可以使用與 HoloLens 開發中一樣使用的同一個單一和 Visual Studio 版本。
+歡迎並鼓勵您嘗試使用 HoloLens 測試人員建立來開發您的應用程式。  請參閱 [HoloLens 開發人員檔](https://developer.microsoft.com/windows/mixed-reality/development) 以開始使用。 這些相同的指示可與 HoloLens 測試人員建立一起使用。  您可以使用與 HoloLens 開發中一樣使用的同一個同一個製作平臺。。
 
 ## <a name="stop-receiving-insider-builds"></a>停止接收測試人員建立
 
 如果您不想再收到 Windows 全攝影版的測試人員版本，您可以選擇在 HoloLens 執行生產版時退出，或者您可以使用進一步[](hololens-recovery.md)修復小夥伴復原您的裝置，將裝置復原為非測試人員版本的 Windows 全攝影版。
 
 > [!CAUTION]
-> 有一個已知問題，在手動重新安裝全新預覽版之後，從 Insider Preview 建立取消註冊的使用者，會遇到藍色畫面。 之後，他們必須手動復原裝置。 如需有關您是否會受到影響的完整詳細資料，請進一步查看此 [已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
+> 有一個已知問題，在手動重新安裝全新預覽版之後，從 Insider Preview 版本取消註冊的使用者會遇到藍色畫面。 之後，他們必須手動復原裝置。 如需有關您是否會受到影響的完整詳細資料，請進一步查看此 [已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
 
 若要確認您的 HoloLens 正在進行生產建立：
 
