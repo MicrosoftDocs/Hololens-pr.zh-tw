@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: e48e596f46aaad1b2fc79abd0fe60bd2f44bab6d
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400693"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408413"
 ---
 # <a name="hololens-2-hardware"></a>HoloLens 2 硬體
 
 ![HoloLens 2 側面圖](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens (第 1 代) 開始的全像式運算旅程，提供更舒適且更具視覺效果的方式，搭配在混合實境中共同作業的更多選項。
+Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens (第 1 代) 開始的全像式運算旅程，提供更舒適且更具視覺效果的方式，搭配在混合實境中共同作業的更多選項。 需要使用者帳戶才能使用 HoloLens 2。
 
 ## <a name="hololens-components"></a>HoloLens 元件
 
@@ -165,9 +165,12 @@ Microsoft HoloLens 2 是不受限制的全像電腦。  它改善了由 HoloLens
 
 Microsoft HoloLens 2 隨附標準有限 [保固](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)。 
 
-購買受 [Microsoft Store 使用條款與銷售條款](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) 所規限。 
+
+購買受 [Microsoft Store 使用條款與銷售條款](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) 所規限。 一經售出，概不退換。 不退款。
 
 購買 HoloLens 2 即表示您同意 [軟體授權合約](https://www.microsoft.com/Useterms/)。
+
+不適合 13 歲以下兒童使用。
 
 ## <a name="package-dimensions"></a>外包裝尺寸
 

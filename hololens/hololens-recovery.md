@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: b5b9568bab5afebe4ac3e9d57645c18837c71cb6
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284084"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408423"
 ---
-# 重新啟動、重設或復原 HoloLens 2
+# <a name="restart-reset-or-recover-hololens-2"></a>重新啟動、重設或復原 HoloLens 2
 
-## 為裝置充電
+## <a name="charge-the-device"></a>為裝置充電
 
-開始進行任何疑難排解程序之前，如果可以，請先確認您的裝置已具備 20% 到40% 的電量。 使用在 HoloLens 2 裝置隨附的充電器和 USB 類型-C 型纜線。 裝置附帶的電源供應器和 USB-C-to-C 纜線是為 HoloLens 2 充電的最佳方式。 電源供應器提供 18W 的電力 (2A 時為 9V)。 使用提供的壁掛式充電器，HoloLens 2 裝置可以在裝置處於待機狀態時，在 65 分鐘內將電量充滿。 如果您無法使用這些附件，請確認提供的充電器是可以使用且可支援至少 15 瓦的電源。
+開始進行任何疑難排解程序之前，如果可以，請先確認您的裝置已具備 20% 到40% 的電量。 使用在 HoloLens 2 裝置隨附的[充電器和 USB 類型-C 型纜線](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1)。 裝置附帶的電源供應器和 USB-C-to-C 纜線是為 HoloLens 2 充電的最佳方式。 電源供應器提供 18W 的電力 (2A 時為 9V)。 使用提供的壁掛式充電器，HoloLens 2 裝置可以在裝置處於待機狀態時，在 65 分鐘內將電量充滿。 如果您無法使用這些附件，請確認提供的充電器是可以使用且可支援至少 15 瓦的電源。
 
 > [!NOTE]
 > 如果可以，請避免使用電腦透過 USB 為裝置充電 (速度慢)。
@@ -44,11 +44,11 @@ ms.locfileid: "11284084"
 
 如果裝置無法引導至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置枚舉。 然後按照 [疑難排解指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)。 如果裝置狀態不符合疑難排解指南中所列的任何狀態，請將裝置連線至電源執行[硬重設程序](hololens-recovery.md#hard-reset-procedure) ，而不是連接到您的主機電腦。 請至少等候一個小時，讓裝置充電。
 
-## 重設裝置
+## <a name="reset-the-device"></a>重設裝置
 
 在某些情況下，您可能需要手動重設裝置，而不需要使用軟體 UI。
 
-### 標準程序
+### <a name="standard-procedure"></a>標準程序
 
 1. 取下 Type-C 連接線，以中斷裝置和電源或主機電腦的連線。
 
@@ -60,7 +60,7 @@ ms.locfileid: "11284084"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 裝置管理員](images/MicrosoftHoloLens_DeviceManager.png)
 
-### 硬重設程序
+### <a name="hard-reset-procedure"></a>硬重設程序
 
 如果標準重設程序無法運作，請使用硬重設程序:
 
@@ -73,7 +73,7 @@ ms.locfileid: "11284084"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 裝置管理員 2](images/MicrosoftHoloLens_DeviceManager.png)
 
-## 乾淨重新快閃刷新裝置
+## <a name="clean-reflash-the-device"></a>乾淨重新快閃刷新裝置
 
 在特別的情況下，您可能需要乾淨快閃刷新 HoloLens 2。 請注意，乾淨重新快閃刷新不會影響下列問題：
 - [顯示色彩一致性](hololens2-display.md)
@@ -93,7 +93,7 @@ ms.locfileid: "11284084"
 
 ![HoloLens 2 乾淨快閃刷新螢幕擷取畫面](images/ARC1.png)
 
-### 正常程序
+### <a name="normal-procedure"></a>正常程序
 
 1. 當 HoloLens 裝置執行時，請將它連線到先前開啟的 Advanced Recovery Companion 應用程式的 Windows 10 電腦。
  
@@ -103,7 +103,7 @@ ms.locfileid: "11284084"
 
 3. 在 Advanced Recovery Companion 應用程式 UI 中選取 HoloLens 2 裝置，並依照指示完成快閃刷新。
 
-### 手動程序
+### <a name="manual-procedure"></a>手動程序
 
 如果 HoloLens2 無法正確啟動，您可能需要將裝置置於修復模式:
 
@@ -123,7 +123,7 @@ ms.locfileid: "11284084"
 
 6. 在 Advanced Recovery Companion 應用程式 UI 中選取 HoloLens 2 裝置，然後依照指示完成快閃刷新。
 
-## 不使用應用程式商店來下載 ARC
+## <a name="download-arc-without-using-the-app-store"></a>不使用應用程式商店來下載 ARC
 
 如果 IT 環境禁止使用 Windows Store 應用程式或限制存取零售商店，則 IT 系統管理員可以透過「離線」部署路徑，提供此應用程式。
 
@@ -134,10 +134,10 @@ ms.locfileid: "11284084"
 按照下列步驟啟用部署路徑：
 1. 請移至 [商務用 Microsoft Store](https://businessstore.microsoft.com)，並使用 Azure Active Directory 身分識別登入。
 
-1. 移至 **管理-設定**。 開啟 **[購物體驗]** 底下的 **[顯示離線應用程式]**。
-1. 移至**為我的群組採購**並搜尋 [**_進階修復小幫手_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
-1. 將_*授權類型**變更為 **_離線_*_，然後按一下_*[管理]**。
-1. 在 **[下載套件供離線使用]** 底下，選取第二個藍色 **[下載]** 按鈕。 請確定檔案副檔名為 *.appxbundle*。
+1. 移至 **管理-設定**。 開啟**購物體驗**底下的**顯示離線應用程式**。
+1. 移至**為我的群組採購**並搜尋[**_進階修復小幫手_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
+1. 將**授權類型**變更為**_離線_，然後選取_*管理***。
+1. 在**下載套件供離線使用**底下，選取第二個藍色**下載**按鈕。 請確定檔案副檔名為 *.appxbundle*。
 
     - 在這個階段，如果桌上型電腦具有網際網路存取，只要按兩下套件以安裝應用程式即可。
 
