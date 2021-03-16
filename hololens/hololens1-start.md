@@ -8,23 +8,23 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f0ec62e55f15fda6d5a8304ea2bb77039d644b9e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283924"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439059"
 ---
-# 設定您的 HoloLens (第 1 代)
+# <a name="set-up-your-hololens-1st-gen"></a>設定您的 HoloLens (第 1 代)
 
 第一次開啟 HoloLens 時，系統會引導您校正裝置、設定裝置並登入。  本文會逐步解說 HoloLens (第 1 代) 首次啟動和設定體驗。
 
 在下一節中，您將了解如何使用 HoloLens 並與全像投影互動。 若要跳到該篇文章，請參閱[開始使用 HoloLens (第 1 代)](hololens1-basic-usage.md)。
 
-## 開始之前
+## <a name="before-you-start"></a>開始之前
 
 開始使用之前，請確定您有下列項目可用：
 
@@ -41,7 +41,7 @@ HoloLens 隨附的**選用舒適配件**，可協助您獲得最舒適的配戴�
 > - 您第一次使用 HoloLens 時，[Cortana](hololens-cortana.md) 已開啟並準備好引導您 (雖然在您設定好裝置之前，她無法回應您的問題)。 您隨時都可以在 Cortana 的設定中關閉 Cortana。
 > - 若要切換到中文或日文版 HoloLens，您需要在電腦上下載該語言組建，然後將它安裝在 HoloLens 上。 如需詳細資訊，請參閱[安裝 HoloLens (第 1 代) 的當地語系化版本](hololens1-install-localized.md)。
 
-## 啟動 Hololens 並設定 Windows
+## <a name="start-your-hololens-and-set-up-windows"></a>啟動 Hololens 並設定 Windows
 
 第一次啟動 HoloLens 時，第一項工作是在您的裝置上設定 Windows 全像攝影版。
 
@@ -59,7 +59,7 @@ HoloLens 隨附的**選用舒適配件**，可協助您獲得最舒適的配戴�
 
 1. 裝置會根據它從 Wi-Fi 網路取得的資訊來設定您的時區。
 
-## 校正
+## <a name="calibration"></a>校正
 
 當 Cortana 自我介紹之後，下一個設定步驟就是校正。 為了獲得最佳的 HoloLens 體驗，您應該在安裝期間完成校正程序。
 
@@ -73,7 +73,7 @@ HoloLens (第 1 代) 使用您瞳孔之間的距離 (IPD，或稱為[瞳距](htt
 
 恭喜！ 設定完成後，您就可以開始使用 HoloLens 了。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [開始使用 HoloLens (第 1 代)](hololens1-basic-usage.md)

@@ -6,24 +6,24 @@ ms.sitesec: library
 author: JesseMcCulloch
 ms.author: jemccull
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 8/12/2019
 ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 0361af22fa6d84f636b841f6a311edcdace5a937
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 30912fda53d5d8b9ea5e60f29eeb93ea29cca2d2
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283164"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439079"
 ---
-# 讓您的 HoloLens (第 1 代) 準備好可供使用
+# <a name="get-your-hololens-1st-gen-ready-to-use"></a>讓您的 HoloLens (第 1 代) 準備好可供使用
 
 跟著程序首次設定 HoloLens (第 1 代)。
 
-## 為您的 HoloLens (第 1 代) 充電
+## <a name="charge-your-hololens-1st-gen"></a>為您的 HoloLens (第 1 代) 充電
 
 若要為您的 HoloLens 充電，請使用隨附的 Micro USB 纜線將電源供應器連接至充電埠。 然後將電源供應器插入電源插座。 當裝置正在充電時，電池指示器將會以波浪圖樣亮起。
 
@@ -38,7 +38,7 @@ ms.locfileid: "11283164"
 
 充電速率和速度可能因裝置執行的環境而異。
 
-## 調整合適度
+## <a name="adjust-fit"></a>調整合適度
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
@@ -50,7 +50,7 @@ ms.locfileid: "11283164"
 |4. 使用裝置臂握住裝置，然後將它放到您的頭上。 確定頭帶位於額頭上，然後將調整輪轉緊。|![步驟 4，放上裝置並調整頭帶](./images/FitGuideStep4.png)|
 |5. 向後滑動面板，然後檢查裝置的合適度。 頭帶應該位於額頭上、剛好在髮際線下方，喇叭位在耳朵上方。 鏡頭應該居中對準眼睛。|![步驟 5，向後滑動面板，並檢查合適度](./images/FitGuideSetep5.png)|
 
-## 開啟您的 HoloLens
+## <a name="turn-on-your-hololens"></a>開啟您的 HoloLens
 
 使用電源按鈕開啟和關閉 HoloLens，或將它置於待命模式。
 
@@ -63,25 +63,25 @@ ms.locfileid: "11283164"
 > [!TIP]
 > 若要重新啟動 HoloLens，請說「嗨 Cortana，請重新啟動裝置」。
 
-### 將 HoloLens 置於待命狀態
+### <a name="put-hololens-in-standby"></a>將 HoloLens 置於待命狀態
 
 若要在 HoloLens 開啟時將它置於待命狀態，請按一次電源按鈕。 電池指示燈會閃爍關閉。 若要從待命中將它喚醒，請再按一次電源按鈕。
 
 在閒置 3 分鐘之後，HoloLens 會自動進入待命狀態。 當它處於待命狀態時，它會在 4 小時後，或電池電量下降 10% 後自動關機。
 
-### 關機 HoloLens
+### <a name="shut-down-hololens"></a>關機 HoloLens
 
 若要關機 (關閉) HoloLens，請按住電源按鈕四秒。 電池指示燈會逐一關閉，接著裝置關機。
 
 當電池電量下降至 1% 時，HoloLens 即會自動關機，即使已插入電源也一樣。 將電池充電至 3% 之後，您就可以再次開啟 HoloLens。
 
-## 調整音量與亮度
+## <a name="adjust-volume-and-brightness"></a>調整音量與亮度
 
 亮度和音量按鈕位於裝置臂的上方&mdash;音量在您的右側，亮度在您的左側。
 
 ![顯示 HoloLens 按鈕的影像](./images/hololens-buttons.jpg)
 
-## HoloLens 指示燈
+## <a name="hololens-indicator-lights"></a>HoloLens 指示燈
 
 ![顯示 HoloLens 指示燈的影像](./images/hololens-lights.png)
 
@@ -97,13 +97,13 @@ ms.locfileid: "11283164"
 |全部亮起，然後一個短暫閃爍，然後全部關閉。 |電池電量極低。 HoloLens 需要充電。 |
 |全部捲動，然後一個閃爍，然後全部捲動。 |電池電量極低。 HoloLens 正在充電。 |
 
-## 安全與舒適度
+## <a name="safety-and-comfort"></a>安全與舒適度
 
-### 在安全的環境中使用
+### <a name="use-in-safe-surroundings"></a>在安全的環境中使用
 
 請在沒有障礙物和絆倒危險的安全空間中使用 HoloLens。 當您需要清晰視野和全神貫注時請勿使用，例如正在操作車輛或進行其他有潛在危險的活動時。
 
-### 保持舒適
+### <a name="stay-comfortable"></a>保持舒適
 
 前幾次使用 HoloLens 不要太久，且務必要休息一下。 如果您感到不舒服，請停止使用並休息，直到感覺好些為止。 不舒服感可能包括暫時感到噁心、暈車、暈眩、迷失方向、頭痛、疲累、眼睛疲勞或乾眼。
 
