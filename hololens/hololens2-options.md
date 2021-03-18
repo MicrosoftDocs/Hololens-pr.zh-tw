@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7e8e333471df139ced3613801d07a5bfaafd8d30
-ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
+ms.openlocfilehash: f34517a74a7a47f4687c094e63b1550a7d3ff4fb
+ms.sourcegitcommit: 257720deb27f3bbc301175ce2a4afa79001862d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408403"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "11440344"
 ---
 # <a name="hololens-2-overview"></a>HoloLens 2 概觀
 
@@ -47,6 +47,18 @@ HoloLens 是一個混合實境裝置，它是 *由全像投影* 所提供的，�
 - <sup>1 </sup> -包含 $500 Azure 點數和 Unity Pro 和 Pixyz 外掛程式的 3 個月試用版。
 - <sup>2 </sup> - 在 Microsoft 收到有問題的裝置之前，利用隔夜運送或快速運送 (更快速的可用選項) 收到更換裝置。
 - <sup>3 </sup> - 有關 Trimble XR10 搭配使用 HoloLens 2 版本的保固、支援與認證問題，[請聯繫 Trimble](https://fieldtech.trimble.com/en/contact-support)。
+
+## <a name="countries-where-hololens-2-is-available"></a>提供 HoloLens 2 的國家/地區
+
+<br>
+
+| HoloLens 2 版本                  | 支援的市場               |
+|-------------------------------------------| ----------------------------------------| 
+| HoloLens 2 | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳洲、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港特別行政區、臺灣和韓國 |
+| 使用 [遠端協助] 的 HoloLens 2 | 澳洲、日本、加拿大、美國、奧地利、比利時、丹麥、芬蘭、法國、德國、義大利、荷蘭、挪威、西班牙、瑞典、瑞士、英國和愛爾蘭 <sup> 1</sup> 
+| HoloLens 2 工業版 *(推出)* | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳洲、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港特別行政區、臺灣和韓國 |
+| HoloLens 2 開發版 | 加拿大、德國、法國、英國、愛爾蘭、日本、澳大利亞、義大利、瑞士和紐西蘭 |
+- <sup>1 </sup> 此清單為動態，請返回查看更新
 
 ## <a name="options-overview"></a>選項概觀
 
