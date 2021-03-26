@@ -53,7 +53,13 @@
 #### [雲端連接-設定](hololens2-cloud-connected-configure.md)
 #### [雲端連接-部署](hololens2-cloud-connected-deploy.md)
 #### [雲端連接-維護](hololens2-cloud-connected-maintain.md)
-### [使用遠端協助將 HoloLens 2 部署到外部用戶端](hololens2-deployment-guide.md)
+### [使用 Remote Assist 將 HoloLens 2 部署到外部用戶端](hololens2-deployment-guide.md)
+### 使用 Dynamic 365 Guides 部署公司連接的 HoloLens 2
+#### [公司已連接 - 部署概覽](hololens2-corp-connected-overview.md)
+#### [公司已連線 - 準備](hololens2-corp-connected-prepare.md)
+#### [公司已連接 - 設定](hololens2-corp-connected-configure.md)
+#### [公司已連接 - 部署](hololens2-corp-connected-deploy.md)
+#### [公司已連接 - 維護](hololens2-corp-connected-maintain.md)
 ### [離線安全](hololens-common-scenarios-offline-secure.md)
 ## 安全性
 ### [安全性概觀](security-overview.md)
