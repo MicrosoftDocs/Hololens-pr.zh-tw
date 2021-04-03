@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 3/4/2021
+ms.date: 04/01/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
-ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
+ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
+ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470061"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474838"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -167,12 +167,15 @@ ms.locfileid: "11470061"
 - 「查看、說出」
 - 列印
 
-**已知瀏覽器的熱門問題：**
-- 重設您的裝置會移除新的 Microsoft Edge
-- 全圖鍵盤中的放大鏡預覽顯示不正確的內容
-- 卷軸有時可能會斷續續續
+**瀏覽器已知熱門問題：**
+- Wi-Fi Proxy 組配置 ，這是以個別使用者Wi-Fi為目標的 Proxy 策略，目前無法與新的 Microsoft Edge 合作。 我們正努力在公開發行作業系統更新之前解除封鎖此問題。
+- 全新 Microsoft Edge 已停用全圖鍵盤中的放大鏡預覽。 我們希望在未來更新中重新啟用這項功能，一旦縮放正確無誤。
+- 在全新的 Microsoft Edge 中，日文鍵盤上的兩個字元無法如預期地工作。 此問題是由根原因所導致，應該很快就會修正。
 - Microsoft Store App 中的 Web 連結可能無法啟動瀏覽器
-- 如果您先前從不同的瀏覽器視窗播放音訊，可能會從錯誤的瀏覽器視窗播放音訊
+- 如果您有另一個瀏覽器視窗開啟且使用中，音訊可能會從錯誤的瀏覽器視窗播放。 您可以關閉其他不應該播放音訊的使用中視窗，以解決此問題。
+- 當您在「追蹤我」模式中從瀏覽器視窗播放 [音訊](hololens2-basic-usage.md#follow-me-stop-following)時，如果您停用「追蹤我」模式，音訊會繼續播放。 您可以先停止音訊播放，再停用「追蹤我」模式，或是使用 X 按鈕關閉視窗，以 **解決此問題** 。
+- 與作用中的 Microsoft Edge 視窗互動可能會導致其他 2D 應用程式視窗非預期地進入非作用中狀態。 您可以再次與視窗互動，以重新啟用這些視窗。
+- 開啟來自另一個應用程式的網頁連結，或 PDF 等特定類型的檔，可能會導致在瀏覽器中開啟第二個空白的定位停駐點 (除了使用網頁連結或檔案連結的內容所建立的新) 。 您可以關閉其他空白的定位停駐點，以解決此問題。
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insider 頻道
 
@@ -249,16 +252,14 @@ Microsoft Edge 小組提供三個預覽頻道供 Edge 測試人員社群使用�
 1. [點兩](hololens2-basic-usage.md#select-using-air-tap) 下以顯示播放控制項。 使用 [手部光線和空中](hololens2-basic-usage.md#select-using-air-tap) 點兩下來播放/暫停、向前/向後略過、開啟/關閉輔助字幕，或停止體驗 (結束沉浸式) 。 播放控制項會在閒置幾秒鐘後消失。
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>熱門 WebXR 和 360 檢視器已知問題
-- 在 WebXR 體驗中，當您傾斜頭部或移動環境時，全形圖可能會移動或傾斜。
 - 根據 WebXR 體驗的複雜度，框架速率可能會降低或斷斷續續。
-- WebXR 中還無法提供連接接點。
+- 根據預設，不支援 WebXR 中的手接點。 開發人員可以開啟「WebXR 手動輸入」來 `edge://flags` 啟用支援。
 - 在退出 WebXR 或 360 Viewer 體驗時，混合實境首頁中的全圖可能需要 30 秒以上時間，再重新出現。
 - YouTube 外網站的 360 個影片可能無法如預期使用。
-- 如果 360 影片未進入 (或混合實境耳機按鈕未顯示在) ，請嘗試重新流覽頁面。
-- HoloLens 2 上的 360 Viewer 中還看不到標題。
+- HoloLens 2 上的 360 Viewer 目前停用標題。 我們計畫在日後的更新中啟用此功能。
 - 在 360 檢視器中暫停影片會停止影片 (但選取播放按鈕後，播放畫面會) 。
 - 360 Viewer 中的 「下一個視像」按鈕目前無法工作。
-- 您可以在身臨其境的「劇院」模式中播放 2D 影片，但框架速率會小於 30 fps。
+- 您可以在沉浸式「劇院」模式中播放 2D 影片，但框架速率可能小於 30 fps。
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>在 WebXR 和 360 檢視器上提供意見回饋
 
@@ -337,11 +338,8 @@ Microsoft Edge 小組提供三個預覽頻道供 Edge 測試人員社群使用�
 
 #### <a name="top-display-color-calibration-known-issues"></a>熱門顯示色彩校正已知問題
 
-- 在設定頁面上，告訴您上次變更色彩設定檔時間的狀態字串將會過期，直到您重載該設定頁面為止 
+- 在設定頁面上，告訴您上次變更色彩設定檔時間的狀態字串將會過期，直到您重載該設定頁面為止。
     - 解決方法：選取另一個設定頁面，然後重新選取校正頁面。
-- 如果您的 HoloLens 2 在執行顯示色彩校正時進入睡眠狀態，它稍後會繼續到混合實境首頁，您的顯示器亮度等級仍然會變暗。
-- 您可能需要嘗試向上/向下按裝置左側的亮度按鈕數次，才能如預期地工作。
-- 並非所有市場都完成當地語系化
 
 ### <a name="default-app-picker"></a>預設應用程式選擇器
 
@@ -360,6 +358,9 @@ Microsoft Edge 小組提供三個預覽頻道供 Edge 測試人員社群使用�
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### <a name="office-web-app"></a>Office Web App
+
+>[!NOTE]
+>從 Windows 測試人員建立 20325.1000 起，Office Web App 將不再預先安裝 (且不會為即將推出的公開發行作業系統更新預先安裝。 若要安裝 Office Web App，請流覽並選取網址欄中的 App 可用或安裝 https://www.office.com **Office**按鈕。 **** 選取 **安裝** 以確認。
 
 Office Web App 已新增到 「開始」功能表中的「所有應用程式」清單中。 此 Web App 也可以釘釘到開始或卸載。 因為這是 Web 應用程式，因此其功能完全符合您流覽 時的體驗 https://www.office.com 。 Office Web App 功能只有在 HoloLens 2 有使用中網際網路連接時才能使用。
 
@@ -585,9 +586,15 @@ Office Web App 已新增到 「開始」功能表中的「所有應用程式」�
 
 - [離線診斷也會](hololens-diagnostic-logs.md#offline-diagnostics) 包含序號和作業系統版本的其他裝置資訊。
 
+### <a name="known-issues-and-work-around"></a>已知問題及解決
 
+#### <a name="pairing-hololens-to-pc"></a>將 HoloLens 配對至 PC
 
+在 Windows 測試人員建立 20325.1000 之前，當使用者在 [Windows Holographic、版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 或 [Windows Holographic 版本 2004](hololens-release-notes.md#windows-holographic-version-2004) 上設定配對認證並更新至 Windows 測試人員建立時，他們先前設定的將 HoloLens 與電腦配對的認證，用於部署和調試應用程式 ，例如透過 Visual Studio，就無法再運作。 Windows 測試人員建立 20325.1000 修正此問題，而且不需要執行其他動作，就不需要使用裝置入口網站繼續。
 
+使用測試人員[](#ffu-download-and-flash-directions)建立快速更新其裝置的使用者現在必須重新將裝置 (重新發佈至 20325.1000+ 或 GA) ，才能將裝置與電腦配對。
+
+尚未註冊 Windows Insiders 且將在一般可用時進行功能更新的使用者不受影響。
 
 
 ## <a name="start-receiving-insider-builds"></a>開始接收測試人員建立

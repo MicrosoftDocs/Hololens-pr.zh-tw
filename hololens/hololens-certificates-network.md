@@ -10,29 +10,32 @@ ms.localizationpriority: high
 ms.date: 9/15/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: ''
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1bfac948b493c2e55207e45042d6b022c1818969
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: de9f2c4f136a26a5956ba8a8f3b9faba1e90ea66
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283434"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470051"
 ---
-# 準備 HoloLens 2 的憑證和網路設定檔
+# <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>準備 HoloLens 2 的憑證和網路設定檔
 
 憑證式驗證是使用 HoloLens 2 客戶的常見需求。 您可能需要證書才能存取 Wi-Fi、連線到 VPN 解決方案或存取組織中的內部資源。
 
-因為 HoloLens 2 裝置通常加入到 Azure Active Directory (Azure AD) 並由 Intune 或其他 MDM 提供者管理，因此您需要使用與 MDM 解決方案整合的網路裝置註冊服務 (SCEP) 或公開金鑰加密標準 (PKCS) 憑證基礎結構來部署此類憑證。
+因為 HoloLens 2 裝置通常加入到 Azure Active Directory (Azure AD) 並由 Intune 或其他 MDM 提供者管理，因此您需要使用與 MDM 解決方案整合的網路裝置註冊服務 (SCEP) 或公開金鑰加密標準 (PKCS) 憑證基礎結構來部署此類憑證。 
 
-## 憑證需求
+>[!NOTE]
+> 如果沒有 MDM 提供者，仍然可以透過 [Windows 設定設計工具](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)中的[佈建套件](https://docs.microsoft.com/hololens/hololens-provisioning#steps-for-creating-provisioning-packages)或[憑證管理員](https://docs.microsoft.com/hololens/certificate-manager) (前往 **[設定] > [更新與安全性] > [憑證管理員]**) 設定憑證。
+
+## <a name="certificate-requirements"></a>憑證需求
 透過 SCEP 或 PKCS 基礎結構部署憑證需要根憑證。 組織中的其他應用程式和服務也可能需要將根憑證部署到 HoloLens 2 裝置上。 
 
-## Wi-Fi 連線需求
+## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi 連線需求
 要允許裝置自動獲得企業網路所需的 Wi-Fi 設定，您需要 Wi-Fi 設定檔。 可以設定 Intune 或其他 MDM 提供者，將這些設定檔部署到您的裝置。 如果您的網路安全需要裝置是本機網域的一部分，您可能還需要評估 Wi-Fi 網路基礎結構，以確保它與 HoloLens 2 裝置相容（HoloLens 2 裝置僅加入 Azure AD）。
 
-## 部署憑證基礎結構
+## <a name="deploy-certificate-infrastructure"></a>部署憑證基礎結構
 如果不存在 SCEP 或 PKCS 基礎結構，則需要準備一個。 若要支援使用 SCEP 或 PKCS 憑證進行驗證，Intune 需要使用[憑證連接器](https://docs.microsoft.com/mem/intune/protect/certificate-connectors)。
 
 > [!NOTE]
@@ -40,7 +43,7 @@ ms.locfileid: "11283434"
 
 如需詳細資訊， 請參閱 [在 Microsoft Intune 中為您的裝置設定憑證設定檔。](https://docs.microsoft.com/intune/certificates-configure)
 
-## 部署憑證和 Wi-Fi/VPN 設定檔
+## <a name="deploy-certificates-and-wi-fivpn-profile"></a>部署憑證和 Wi-Fi/VPN 設定檔
 若要部署憑證和設定檔，請遵循下列步驟：
 1.  為每個根憑證和中繼憑證建立設定檔（請參閱[建立受信任的憑證設定檔](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)）。每個設定檔都必須有包含 DD/MM/YYYY 格式的到期日描述。 **不部署沒有到期日的憑證設定檔。**
 1.  為每個 SCEP 或 PKCS 憑證建立設定檔（請參閱[建立 SCEP 憑證設定檔或建立 PKCS 憑證設定檔](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)）。每個設定檔都必須有包含 DD/MM/YYYY 格式的到期日說明。 **不部署沒有到期日的憑證設定檔。**
@@ -57,7 +60,7 @@ ms.locfileid: "11283434"
 
 4.  為每個企業 VPN 建立設定檔（請參閱 [使用 Intune 新增 VPN 連線的 Windows 10 和 Windows 全像攝影版裝置設定](https://docs.microsoft.com/intune/vpn-settings-windows-10)）。
 
-## 憑證疑難排解
+## <a name="troubleshooting-certificates"></a>憑證疑難排解
 
 如果您需要驗證憑證部署正確與否，請使用裝置上的[憑證管理員](certificate-manager.md)，確認憑證是否存在。  
 
