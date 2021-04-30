@@ -1,6 +1,6 @@
 ---
-title: 與多人共用您的 HoloLens
-description: 您可以將 HoloLens 設定為由多個 Azure Active Directory 帳戶或多個使用單一帳戶的使用者共用。
+title: 與多人分享您的 HoloLens
+description: 您可以將 HoloLens 設定為由多個 Azure Active Directory 帳戶或多個使用單一帳戶的使用者所共用。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -14,45 +14,45 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 39de72bb704ff500b0262f2268d003a08d520eb2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828420"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308837"
 ---
-# 與多人共用您的 HoloLens
+# <a name="share-your-hololens-with-multiple-people"></a>與多人分享您的 HoloLens
 
-與許多人共用一個 HoloLens，或讓許多人共用一組 HoloLens 裝置是常見的情況。  本文將說明您可以共用裝置的不同方式。
+通常會與許多人共用一個 HoloLens，或讓許多人共用一組 HoloLens 裝置。  本文說明可共用裝置的不同方式。
 
-## 與多人共用，每個人都使用自己的帳戶
+## <a name="share-with-multiple-people-each-using-their-own-account"></a>使用自己的帳戶與多位人共用
 
-**先決條件**： HoloLens 裝置必須執行 Windows 10 版本1803或更新版本。  HoloLens （1st 1 gen）也需要[升級至 Windows 全息](hololens-upgrade-enterprise.md)版。
+**先決條件**： HoloLens 裝置必須執行 Windows 10 1803 版或更新版本。  HoloLens (第1代) 也需要 [升級至 Windows Holographic for Business](hololens-upgrade-enterprise.md)。
 
-當他們使用自己的 Azure Active Directory （Azure AD）帳戶時，多個使用者可以在裝置上保留自己的使用者設定和使用者資料。
+當他們使用自己的 Azure Active Directory (Azure AD) 帳戶時，多個使用者可以在裝置上保留自己的使用者設定和使用者資料。
 
-若要確認多人可以在您的 HoloLens 上使用自己的帳戶，請依照下列步驟進行設定：
+若要確定多位使用者可以在您的 HoloLens 上使用自己的帳戶，請遵循下列步驟來進行設定：
 
-1. 請確定裝置執行的是 Windows 10 版本1803或更新版本。
+1. 請確定裝置正在執行 Windows 10 1803 版或更新版本。
    > [!IMPORTANT]
-   > 如果您使用的是 HoloLens （第1代）裝置，請將[裝置升級到 Windows 全息版企業](hololens1-upgrade-enterprise.md)版。
-1. 當您設定裝置時，請選取 [**我的公司或學校擁有**]，然後使用 Azure AD 帳戶登入。
-1. 完成設定之後，請確認 [帳戶設定] （[**設定**  >  **帳戶**]）包括**其他使用者**。
+   > 如果您使用 HoloLens (第1代) 裝置，請將 [裝置升級為 Windows Holographic for Business](hololens1-upgrade-enterprise.md)。
+1. 當您設定裝置時，請選取 [ **我的工作或學校擁有** ]，然後使用 Azure AD 帳戶登入。
+1. 完成設定之後，請確定帳戶設定 (**設定**  >  **帳戶**) 包含 **其他使用者**。
 
-若要使用 HoloLens，每位使用者都要遵循下列步驟：
+若要使用 HoloLens，每位使用者都遵循下列步驟：
 
-1. 如果有其他使用者使用該裝置，請執行下列其中一項操作：
-   - 按下電源按鈕，移至 [待機]，然後再按一次電源按鈕，回到鎖定畫面。
-   - HoloLens 2 使用者可從 [開始] 功能表選取 [使用者] 磚，以登出目前的使用者。
+1. 如果另一位使用者已在使用該裝置，請執行下列其中一項動作：
+   - 按下電源按鈕一次進入待命狀態，然後再按一次電源按鈕返回鎖定畫面
+   - HoloLens 2 使用者可以從 [開始] 功能表中選取使用者磚，以將目前的使用者登出。
 
 1. 使用您的 Azure AD 帳號憑證來登入裝置。  
-    如果這是您第一次使用該裝置，您必須將 HoloLens[校準](hololens-calibration.md)到您自己的眼睛。
+    如果這是您第一次使用裝置，您必須將 HoloLens [校正](hololens-calibration.md) 為您自己的眼睛。
 
-若要查看裝置使用者清單，或從裝置中移除使用者，請移至 [ **Settings**  >  **Accounts**  >  **其他使用者**的設定帳戶]。
+若要查看裝置使用者清單或從裝置移除使用者，請移至 [**設定**  >  **帳戶**  >  **其他使用者**]。
 
-## 使用相同的帳戶與多人共用
+## <a name="share-with-multiple-people-all-using-the-same-account"></a>與多位人共用，全部使用相同的帳戶
 
-多個使用者也可以使用單一使用者帳戶來共用 HoloLens 裝置。
+在使用單一使用者帳戶的同時，多位使用者也可以共用 HoloLens 裝置。
 
-**在 HoloLens 2 上**，新使用者第一次將裝置放在其頭部（同時保持相同的帳戶登入）時，裝置會提示新的使用者快速校準並個人化觀賞體驗。 裝置可以儲存校準資訊，讓裝置能自動優化品質並舒適掌握每個使用者的觀賞體驗。 使用者不需要再次校準裝置。
+**在 HoloLens 2 上**，當新的使用者第一次將裝置置於其前端 (，同時讓相同帳戶保持登入) 時，裝置會提示新使用者快速地校正和個人化觀看體驗。 裝置可以儲存校正資訊，如此一來，在未來，裝置就可以自動將每個使用者的觀賞體驗優化，並使其更輕鬆。 使用者不需要重新校準裝置。
 
-**在 HoloLens （1 gen）** ，共用帳戶的使用者必須在 [設定] app 中要求重新校準。  閱讀更多關於[校準](hololens-calibration.md)的資訊。
+**在 HoloLens (第1代)** 共用帳戶的使用者必須要求在 [設定] 應用程式中重新校準。  深入瞭解 [校正](hololens-calibration.md)。

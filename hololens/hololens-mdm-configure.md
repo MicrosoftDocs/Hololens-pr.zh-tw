@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft 的端點管理員 Intune 管理 HoloLens 裝置
-description: 瞭解如何使用 Intune 來設定 CSP、原則，以及管理 HoloLens 混合式現實裝置。
+title: 使用 Microsoft 的端點管理員 Intune 來管理 HoloLens 裝置
+description: 瞭解如何使用 Intune 來大規模設定 CSP、原則，以及管理 HoloLens 混合現實裝置。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -14,62 +14,62 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ce288afdcb112c17ffde75078d641f3637a8448c
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283954"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308840"
 ---
-# 使用 Microsoft 的端點管理員 Intune 管理 HoloLens 裝置
+# <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>使用 Microsoft 的端點管理員 Intune 來管理 HoloLens 裝置
 
-您可以透過 MDM 管理多種不同的設定。 您可以將 Intune 裝置組成群組，並將配置部署到這些使用者或裝置群組。 您也可以部署和管理 app、設定裝置以連線至您的網路，以及將更新設定為在所需的時間，以及在需要更新環路時進行。 
+您可以透過 MDM 來管理許多不同的設定。 使用 Intune 裝置可群組在一起，並可將設定部署至這些使用者或裝置群組。 您也可以部署和管理應用程式、設定裝置以連接到您的網路，以及設定在需要的時間和更新通道上進行更新。 
 
-## 如何透過 Intune 管理
+## <a name="how-to-manage-via-intune"></a>如何透過 Intune 管理
 
-### 裝置類別和群組
-使用 Intune，您可以建立裝置類別，根據您建立的類別（例如工程、醫學、開發人員等），自動將裝置新增到群組中。 其目的是讓您更容易管理執行 Windows 全息版的裝置。
-延伸閱讀：將 [裝置分類成群組](https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping)
+### <a name="device-categories-and-groups"></a>裝置類別和群組
+使用 Intune，您可以建立裝置類別，根據您所建立的類別（例如工程、醫療、開發人員等），自動將裝置新增至群組。 用意是讓您可以更輕鬆地管理執行 Windows Holographic for Business 的裝置。
+深入瞭解：將 [裝置分類成群組](https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping)
 
-### 裝置設定設定檔
-Intune 包含您可以在組織內的不同裝置上啟用或停用的設定和功能。 這些設定和功能是使用設定檔來管理。 例如，您可以建立可在執行 Windows 全息版的裝置上啟用 Cortana 或使用 Microsoft Defender Smart 螢幕的設定檔。
-在您的設定檔中，您可以使用 OMA-URI 來自訂部分設定、建立裝置限制，以及設定虛擬私人網路 (VPN) 和 Wi-fi。
-[開始使用設定檔](https://docs.microsoft.com/mem/intune/configuration/device-profiles)和 [設定檔概覽](https://docs.microsoft.com/mem/intune/configuration/device-profile-create)。
+### <a name="device-configuration-profiles"></a>裝置組態設定檔
+Intune 包含您可以在組織內不同裝置上啟用或停用的設定及功能。 可使用設定檔來管理這些設定和功能。 例如，您可以在執行 Windows Holographic for Business 的裝置上，建立啟用 Cortana 或使用 Microsoft Defender SmartScreen 的設定檔。
+在您的設定檔中，您可以使用 OMA-URI 來自訂一些設定、建立裝置限制，以及設定虛擬私人網路 (VPN) 和 Wi-Fi。
+[開始使用](https://docs.microsoft.com/mem/intune/configuration/device-profiles)設定設定檔和 [設定檔總覽](https://docs.microsoft.com/mem/intune/configuration/device-profile-create)。
 
-## 可管理和設定的範例
+## <a name="examples-of-what-can-be-managed-and-configured"></a>可管理和設定的範例
 
-使用 MDM 管理裝置可提供大量的專案供您選取。 
+使用 MDM 來管理裝置，可提供一系列可選取的專案。 
 
-### Wi-Fi
-[Wi-fi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) 會將無線網路設定指派給使用者和裝置。 當您指派 Wi-Fi 設定檔時，使用者將無法存取您的公司 Wi-Fi，而無需自行設定。
-進一步瞭解如何 [針對 HoloLens 設定您的網路](hololens-commercial-infrastructure.md)
+### <a name="wi-fi"></a>Wi-Fi
+[Wi-Fi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure)指派給使用者和裝置的無線網路設定。 當您指派 Wi-Fi 設定檔時，使用者不需要自行設定，即可存取您的公司 Wi-Fi。
+深入瞭解如何 [為 HoloLens 設定您的網路](hololens-commercial-infrastructure.md)
 
-### 憑證
-證書可提供帳戶驗證、Wi-Fi 驗證、VPN 加密及網頁內容 SSL 加密，以協助提高安全性。 雖然系統管理員可以透過預配套件手動管理裝置上的憑證，但最佳做法是使用您的 MDM system 在整個週期中管理這些憑證，從註冊到更新和吊銷等。 您可以註冊 (裝置之後，您的 MDM 系統就能自動將這些憑證部署到裝置的憑證存放區，只要 MDM system 支援簡單憑證註冊通訊協定 (SCEP) 或公開金鑰加密標準 #12 (# A5 的) PKCS # 12。 MDM 也可以在目前的憑證過期前，查詢及刪除已註冊的用戶端憑證，或觸發新的註冊要求。 
+### <a name="certificates"></a>憑證
+憑證藉由提供帳戶驗證、Wi-Fi 驗證、VPN 加密，以及 web 內容的 SSL 加密，來協助提升安全性。 雖然系統管理員可以透過布建套件手動管理裝置上的憑證，但最佳做法是使用您的 MDM 系統，在整個生命週期中管理這些憑證–從註冊到續約和撤銷。 只要 MDM 系統支援簡單憑證註冊通訊協定 (SCEP) 或公開金鑰加密標準 #12 (PKCS # 12) ) ，您的 MDM 系統就可以在您註冊 (裝置後，自動將這些憑證部署到裝置的憑證存放區。 MDM 也可以查詢和刪除已註冊的用戶端憑證，或在目前的憑證到期之前觸發新的註冊要求。 
 
-### Proxy
-大多數公司內部網路都利用 proxy 來管理內部流量。 使用 HoloLens 2，您可以設定乙太網路的 proxy 伺服器與 Wi-Fi 連線。 這些設定不會套用至 VPN 連線。 如需 Windows 10 proxy 設定的詳細資訊，請參閱 [NETWORKPROXY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)。
+### <a name="proxy"></a>Proxy
+大部分的公司內部網路網路都利用 proxy 來管理內部流量。 您可以使用 HoloLens 2 設定適用于 ethernet 和 Wi-Fi 連線的 proxy 伺服器。 這些設定不會套用至 VPN 連線。 如需 Windows 10 proxy 設定的詳細資訊，請參閱 [NETWORKPROXY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)。
 
-### VPN
-組織通常會使用 VPN，來控制對其公司內部網路上 app 與資源的存取權。 HoloLens 2 支援 SSL VPN 連線，這需要來自 Microsoft Store 的可下載外掛程式，而且是您選擇的 VPN 廠商專用的。 
-- 閱讀更多有關 [HoloLens 上 VPN 的](hololens-network.md#vpn)資訊。
-- 如需有關 VPN 設定檔的詳細資訊，請參閱 [VPNV2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)。
+### <a name="vpn"></a>VPN
+組織通常會使用 VPN，來控制對其公司內部網路上 app 與資源的存取權。 HoloLens 2 支援 SSL VPN 連線，這需要來自 Microsoft Store 的可下載外掛程式，且特定于您選擇的 VPN 廠商。 
+- 深入瞭解 [HoloLens 上的 VPN](hololens-network.md#vpn)。
+- 如需 VPN 設定檔的詳細資訊，請參閱 [>VPNV2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)。
 
-### 部署及管理 app
-使用 Intune，您可以在執行 Windows 全息版的裝置上新增應用程式。 MDM 方案可讓 IT 決策者和系統管理員自行自動安裝 (推) 其內部、行業內應用程式，或透過使用者群組的商店購買 app。 部署應用程式的方法有很多種，包括：
+### <a name="deploy-and-manage-apps"></a>部署和管理 App
+使用 Intune 時，您可以將應用程式新增至執行 Windows Holographic for Business 的裝置。 MDM 解決方案可讓 IT 決策者和系統管理員私下自動安裝 (推送) 其內部、企業營運應用程式，或透過使用者群組的商店購買應用程式。 有許多方式可以部署應用程式，包括：
 -   [Intune 和公司入口網站]( app-deploy-intune.md)
 -   [商務用 Microsoft Store]( app-deploy-store-business.md)
 
-深入瞭解透過 Intune 進行的 app 管理。
+深入瞭解如何透過 Intune 進行應用程式管理。
 -   [將應用程式新增至 Intune](https://docs.microsoft.com/mem/intune/apps/apps-add)
 -   [新增 Microsoft Store 應用程式](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
 -   [新增您建立的應用程式](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
 - [將應用程式指派給群組](https://docs.microsoft.com/mem/intune/apps/apps-deploy)
 
-### 軟體更新
-Intune 包括 Windows 10 裝置的「更新響鈴」功能。 這些更新鈴響包括一組決定如何安裝更新的設定。 例如，您可以建立要安裝更新的維護時段，或選擇在安裝更新後重新開機。 更新環可以套用到執行 Windows 全息企業版的多個裝置。
-進一步瞭解如何 [管理 HoloLens 更新](hololens-updates.md) 及透過 [Intune 管理軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
+### <a name="software-updates"></a>軟體更新
+Intune 包含一項適用於 Windows 10 裝置的功能，稱為更新通道。 這些更新通道包含一組決定了更新安裝方式的設定。 例如，您可以建立一個維護期間來安裝更新，或選擇在安裝更新後重新啟動。 您可以將更新通道套用至多個執行 Windows Holographic for Business 的裝置。
+深入瞭解如何透過 Intune [管理 HoloLens 更新](hololens-updates.md) 和 [管理軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
 
-### 設定 Kiosk 模式
-使用 Intune 中提供的共用或來賓電腦功能，您可以將 Windows 全息版裝置設定為以展臺方式執行。 這些裝置可以 (單一 app kiosk 模式) 執行一個 app，或執行多個 app (多重 app kiosk 模式) 。 Kiosk 模式是一個 UI，可控制哪些身分預設可以存取哪些 app。
+### <a name="configure-kiosk-mode"></a>設定 kiosk 模式
+使用 Intune 中可用的共用或來賓電腦功能，您可以設定 Windows Holographic for Business 裝置當做 kiosk 來執行。 這些裝置可以執行一個應用程式 (單一應用程式 kiosk 模式)，或執行多個應用程式 (多應用程式 kiosk 模式)。 Kiosk 模式是一個 UI，可控制哪些身分識別可以依預設存取哪些應用程式。
 瞭解如何 [將 HoloLens 設定為 kiosk]( hololens-kiosk.md)
 

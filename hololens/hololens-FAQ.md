@@ -1,7 +1,7 @@
 ---
-title: HoloLens 裝置和全像投影的常見問題
-description: 您對於 HoloLens 或與全像投影互動有任何問題嗎？  本文提供快速的解答和更多資源。
-keywords: hololens, 常見問題, 已知問題, 說明
+title: HoloLens 裝置和全像影像的常見問題
+description: 您是否有關于 HoloLens 的快速問題或與全像的互動？  本文提供快速解答和更多資源。
+keywords: hololens、常見問題、已知問題、協助
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -18,281 +18,282 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 660c3b4d3a35a7794de5e3e2fb18f2a4aba03c0e
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393857"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308311"
 ---
-# <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>HoloLens 裝置和全像投影的常見問題
+# <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>HoloLens 裝置和全像影像的常見問題
 
-本文會解答在使用 HoloLens 上可能會碰到的一些問題，包括如何放置全像投影、使用空格等等。
+本文將回答一些有關如何使用 HoloLens 的問題，包括如何放置全像影像、使用空間等等。
 
-每當發生問題時，請確定已向 HoloLens [收費](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)。 請嘗試[重新啟動](hololens-restart-recover.md)，查看是否可以修正問題。 接著，請使用 [意見反應] 應用程式傳送問題的相關資訊。 您將在 [**[開始]** 功能表](holographic-home.md)上找到 [意見反應] 應用程式。
+每當您遇到問題時，請確定 HoloLens 已 [收費](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)。 請嘗試將 [它重新開機](hololens-restart-recover.md) ，以查看是否能修正問題。 而且，請使用意見反應應用程式傳送有關問題的資訊給我們。 您會在 [ [**開始** ] 功能表](holographic-home.md)上找到意見反應應用程式。
 
-有關如何穿戴 HoloLens 的秘訣，請參閱 [HoloLens (第一](hololens1-fit-comfort-faq.md)代) 配戴和舒適常見問題。
+如需有關如何磨損 HoloLens 的秘訣，請參閱 [hololens (第1代) 配合並緩和常見問題](hololens1-fit-comfort-faq.md)。
 
-本文將解決下列問題：
-<a id="list"></a>
+本文將討論下列問題和問題： <a id="list"></a>
 
-- [我的全像投影看起來不正確或在四處移動](#my-holograms-dont-look-right-or-are-moving-around)
-- [我看到顯示「正在尋找您的空間」的訊息](#i-see-a-message-that-says-finding-your-space)
-- [我在我的空間看不到我期望看到的全像投影](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
-- [我無法將全像投影放在我想要的位置](#i-cant-place-holograms-where-i-want-to)
-- [全像投影消失或包覆在其他全像投影或物體內](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
-- [我可以看到牆壁另一面的全像投影](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
-- [當我將全像投影放在牆壁上時，全像投影似乎是浮動的](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
-- [當我嘗試移動應用程式後，似乎離我太近了](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
-- [我收到磁碟空間不足的錯誤](#im-getting-a-low-disk-space-error)
+- [我的全像移動](#my-holograms-dont-look-right-or-are-moving-around)
+- [我看到一則訊息，指出「正在尋找您的空間」](#i-see-a-message-that-says-finding-your-space)
+- [我看不到我想要在我的空間中看到的全像影像](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
+- [我無法在我想要的地方放置全息](#i-cant-place-holograms-where-i-want-to)
+- [全像是 encased 在其他的全像投影或物件中](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
+- [我可以看到位於牆另一端的全像影像](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
+- [當我在牆上放置全息圖時，全像是浮動](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
+- [當我嘗試移動應用程式時，應用程式看起來太近](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
+- [我遇到磁碟空間不足的錯誤](#im-getting-a-low-disk-space-error)
 - [HoloLens 沒有回應我的手勢](#hololens-doesnt-respond-to-my-gestures)
-- [HoloLens 沒有回應我的語音](#hololens-doesnt-respond-to-my-voice)
-- [我在配對或使用藍牙裝置時發生問題](#im-having-problems-pairing-or-using-a-bluetooth-device)
+- [HoloLens 沒有回應我的聲音](#hololens-doesnt-respond-to-my-voice)
+- [我在配對或使用 Bluetooth 裝置時遇到問題](#im-having-problems-pairing-or-using-a-bluetooth-device)
 - [HoloLens 設定會列出可用的裝置，但裝置無法運作](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
-- [我在使用 HoloLens 簡報導覽裝置時發生問題](#im-having-problems-using-the-hololens-clicker)
-- [我無法連線至 Wi-Fi](#i-cant-connect-to-wi-fi)
-- [我的 HoloLens 沒有順利運作、沒有回應或無法啟動](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
-- [我無法登入 HoloLens 裝置，因為該裝置先前已針對其他人設定](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
+- [我在使用 HoloLens clicker 時發生問題](#im-having-problems-using-the-hololens-clicker)
+- [我無法連接到 Wi-fi](#i-cant-connect-to-wi-fi)
+- [我的 HoloLens 未正常運作、沒有回應，或無法啟動](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
+- [我無法登入 HoloLens 裝置，因為先前已為他人設定](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
 - [管理 HoloLens 裝置的相關問題](#questions-about-managing-hololens-devices)
 - [保護 HoloLens 裝置的相關問題](#questions-about-securing-hololens-devices)
-- [如何刪除所有空間？](#how-do-i-delete-all-spaces)
-- [我找不到鍵盤或無法使用鍵盤在 HoloLens 2 模擬器中輸入](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
+- [如何? 刪除所有空格？](#how-do-i-delete-all-spaces)
+- [我找不到或無法使用鍵盤來輸入 HoloLens 2 模擬器](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
 
-## <a name="my-holograms-dont-look-right-or-are-moving-around"></a>我的全像投影看起來不正確或在四處移動
+## <a name="my-holograms-dont-look-right-or-are-moving-around"></a>我的全像移動
 
-如果您的全像投影看起來不正確 (例如抖動或晃動，或您看到的是黑底片)，請嘗試下列其中一項修正：
+如果您的全像是看起來不正確 (例如，它們會抖動或晃動，或是您在上面看到黑色修補程式) ，請嘗試下列其中一個修正：
 
-- [清潔您的裝置面板](hololens1-hardware.md#care-and-cleaning)，並確認沒有任何東西擋住感應器。
-- 請確定您位在光線充足的房間，且沒有大量陽光直射。
-- 嘗試四處走走並注視周圍的環境，讓 HoloLens 可以更完整地進行掃描。
-- 如果您放置了許多全像投影，請嘗試移除一些。
+- [清除您的裝置面板](hololens1-hardware.md#care-and-cleaning) ，並確定沒有任何專案封鎖感應器。
+- 請確定您是在沒有大量直接日光的知名房間內。
+- 試著在您的環境中撥雲見日，讓 HoloLens 可以更完整地掃描。
+- 如果您已放入大量的全像投影，請嘗試移除一些。
 
-如果仍有問題，請嘗試執行 [校正] 應用程式。 此應用程式會專門為您校正 HoloLens，讓您的全像投影更美觀。 若要這麼做，請移至 [設定]**** > [系統]**** > [工具]****。 在 [校正]**** 底下，選取 [開啟校正]****。
-
-[返回清單](#list)
-
-## <a name="i-see-a-message-that-says-finding-your-space"></a>我看到顯示「正在尋找您的空間」的訊息
-
-當 HoloLens 正在學習或載入空間時，您可能會看到一則簡短的訊息，顯示「正在尋找您的空間」。 如果這則訊息顯示好幾秒，您將會在 [開始] 功能表底下看到另一則訊息，顯示「仍在尋找您的空間」。
-
-這些訊息表示 HoloLens 無法對應您的空間。 發生這種情況時，您可以開啟應用程式，但無法將全像投影放在您的環境中。
-
-如果您經常看到這些訊息，請嘗試以下一或多項修正：
-
-- 請確定您位在光線充足的房間，且沒有大量陽光直射。
-- 確認您的裝置面板是乾淨的。 [了解如何清潔您的面板](hololens1-hardware.md#care-and-cleaning)。
-- 確認您的 Wi-Fi 訊號很強。 如果您進入的新環境沒有 Wi-Fi 訊號或 Wi-Fi 訊號微弱，則 HoloLens 將找不到您的空間。 移至 [設定]**** > [網路 &amp; 網際網路]**** > [Wi-Fi]**** 以檢查您的 Wi-Fi 連線。
-- 請嘗試更緩慢地移動。
+如果您仍遇到問題，請嘗試執行校正應用程式。 此應用程式會校正您的 HoloLens，以協助讓您的全像投影更加完美。 若要這樣做，請移至 [**設定**  >  **系統**  >  **公用程式**]。 在 [ **校正**] 下，選取 [ **開啟校正**]。
 
 [返回清單](#list)
 
-## <a name="im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space"></a>我在我的空間看不到我期望看到的全像投影
+## <a name="i-see-a-message-that-says-finding-your-space"></a>我看到一則訊息，指出「正在尋找您的空間」
 
-如果您沒有看到您所放置的全像投影，或者如果您看到一些非預期的全像投影，請嘗試下列其中一或多項修正：
+當 HoloLens 正在學習或載入空間時，您可能會看到簡短的訊息，指出「找出您的空間」。 如果這則訊息顯示超過幾秒鐘，您會在 [開始] 功能表下看到另一則訊息，指出「仍在尋找您的空間」。
 
-- 打開一些燈。 HoloLens 最適合在光線良好的空間運作。
-- 移至 [設定]**** > [系統]**** > [全像投影]**** > [移除附近的全像投影]****，以移除不需要的全像投影。 或者，如有需要，請選取 [移除所有全像投影]****。
+這些訊息表示 HoloLens 在對應您的空間時遇到問題。 當發生這種情況時，您可以開啟應用程式，但無法在您的環境中放置全像影像。
+
+如果您經常看到這些訊息，請嘗試下列一或多個修正：
+
+- 請確定您是在沒有大量直接日光的知名房間內。
+- 請確定您的裝置面板已清除。 [瞭解如何清理您的面板](hololens1-hardware.md#care-and-cleaning)。
+- 請確定您有強式 Wi-Fi 信號。 如果您輸入的新環境沒有 Wi-Fi 或弱 Wi-Fi 信號，HoloLens 將無法找到您的空間。 前往 [**設定**  >  **網路 &amp; 網際網路**  >  **wi-fi**]，檢查您的 Wi-Fi 連接。
+- 請嘗試移動更慢的速度。
+
+[返回清單](#list)
+
+## <a name="im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space"></a>我看不到我想要在我的空間中看到的全像影像
+
+如果您看不到您所放置的全像影像，或您看到的部分未預期，請嘗試下列一或多個修正：
+
+- 開啟一些燈。 HoloLens 最適合用在妥善的空間中。
+- 移至 [**設定** 系統全像投影]，以移除您不需要的全像全像的全像影像  >    >    >  ****。 或者，若有需要，請選取 [ **移除所有的全** 像]。
 
   > [!NOTE]
-  > 如果您空間中的版面配置或光線顯著變化，您的裝置可能無法識別您的空間，並顯示您的全像投影。
+  > 如果您空間中的版面配置或光線大幅變更，您的裝置可能會無法識別您的空間並顯示您的全像影像。
 
 [返回清單](#list)
 
-## <a name="i-cant-place-holograms-where-i-want-to"></a>我無法將全像投影放在我想要的位置
+## <a name="i-cant-place-holograms-where-i-want-to"></a>我無法在我想要的地方放置全息
 
-如果您無法放置全像投影，以下是您可以嘗試的一些方法：
+以下是您在進行全像時遇到問題時要嘗試的一些事項：
 
-- 站在離您要嘗試放置全像投影一到三公尺之間的位置。
-- 不要將全像投影放在黑色或反光的表面。
-- 請確定您位在光線充足的房間，且沒有大量陽光直射。
-- 在房間裡四處走走，讓 HoloLens 可以重新掃描您的周圍環境。 若要查看已掃描的內容，請在空中點選以顯示對應的網格圖形。
-
-[返回清單](#list)
-
-## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>全像投影消失或包覆在其他全像投影或物體內
-
-如果您離全像投影太近，就會暫時消失&mdash;若要還原全像投影，只要將其移開即可。 此外，如果您將多個全像投影併攏放置，則有些全像投影可能會消失。 請嘗試移除一些。
-
-全像投影也可能遭到其他全像投影或物體 (例如牆壁) 擋住或包覆。 如果發生這種情況，請嘗試下列其中一項修正：
-
-- 如果全像投影包覆在其他全像投影內，請將包覆的全像投影移至另一個位置。 若要這樣做，請選取 [調整]****，然後點選並按住，以便將其定位。
-- 如果全像投影包覆在牆壁中，請選取 [調整]****，然後走向牆壁，直到全像投影出現為止。 點選並按住，然後將全像投影往前拉或拉出牆壁。
-- 如果您無法使用手勢移動全像投影，請使用您的語音來移除。 注視全像投影，然後說「移除」。 接著，重新開啟全像投影，並將其放在新的位置。
+- 從您嘗試放置全像位置的一到三個計量。
+- 請勿在黑色或反射表面上放置全像影像。
+- 請確定您是在沒有大量直接日光的知名房間內。
+- 您可以四處解說房間，讓 HoloLens 可以重新掃描您的環境。 若要查看已掃描的內容，請按一下以顯示地圖網格圖形。
 
 [返回清單](#list)
 
-## <a name="i-can-see-holograms-that-are-on-the-other-side-of-a-wall"></a>我可以看到牆壁另一面的全像投影
+## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>全像是 encased 在其他的全像投影或物件中
 
-如果您很靠近牆壁，或者 HoloLens 尚未掃描牆壁，您可以看到位於下一個房間的全像投影。 若要掃描牆壁，請站在離牆壁一到三公尺之間的位置，然後注視牆壁。
+如果您太接近了全息圖，它會暫時消失， &mdash; 以還原全像移動。 此外，如果您將數個全息合在一起，有些可能會消失。 請嘗試移除一些。
 
-當 HoloLens 嘗試掃描牆壁時，如果牆壁附近有黑色或反光的物體 (例如黑色沙發或不銹鋼冰箱)，可能會引起問題。 如果有這種物體，請掃描牆壁的另一面。
+您也可以透過其他的全像或牆壁等物件來封鎖或 encased 全像影像。 如果發生這種情況，請嘗試下列其中一個修正：
 
-[返回清單](#list)
-
-## <a name="when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float"></a>當我將全像投影放在牆壁上時，全像投影似乎是浮動的
-
-您放置在牆壁上的全像投影通常是距離牆壁 1 英吋左右。 如果距離似乎更遠，請嘗試下列其中一或多項修正：
-
-- 當您將全像投影放置在牆壁上時，請站在距離牆壁一到三公尺的距離，然後面對牆壁。
-- 在空中點選牆壁以顯示對應的網格圖形。 請確認網格與牆壁對齊。 否則，請移除全像投影、重新掃描牆壁，然後再試一次。
-- 如果問題持續發生，請執行 [校正] 應用程式。 您將在 [設定]**** > [系統]**** > [公用程式]**** 中找到此應用程式。
+- 如果 encased 在另一個全息圖中，請將 encased 的全息圖移至另一個位置。 若要這樣做，請選取 [ **調整**]，然後按住以定位。
+- 如果在牆中 encased 了全息圖，請選取 [ **調整**]，然後向下流覽至牆上，直到出現全像影像為止。 按住並按住，然後從牆上向前和向外拉出全像影像。
+- 如果您無法使用手勢來移動全息圖，請使用您的聲音將它移除。 看一下全像影像，然後說「移除」。 然後重新開啟全息圖，並將它放在新的位置。
 
 [返回清單](#list)
 
-## <a name="apps-appear-too-close-to-me-when-im-trying-to-move-them"></a>當我嘗試移動應用程式後，似乎離我太近了
+## <a name="i-can-see-holograms-that-are-on-the-other-side-of-a-wall"></a>我可以看到位於牆另一端的全像影像
 
-嘗試四處走走並注視您要放置應用程式的區域，讓 HoloLens 可以從不同角度掃描該區域。 [清潔您的裝置面板](hololens1-hardware.md#care-and-cleaning)也可能有幫助。
+如果您很接近牆，或 HoloLens 尚未掃描牆，您可以看到下個房間的全像投影。 若要掃描牆，請從牆中離開一到三個計量，然後看看它。
+
+黑色或反光的物件 (例如，黑色沙發或附近的 stainless 鋼冰箱) 可能會在 HoloLens 嘗試掃描牆壁時發生問題。 如果有這類物件，請掃描牆的另一端。
 
 [返回清單](#list)
 
-## <a name="im-getting-a-low-disk-space-error"></a>我收到磁碟空間不足的錯誤
+## <a name="when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float"></a>當我在牆上放置全息圖時，全像是浮動
 
-請執行下列其中一或多項操作，以釋放一些儲存空間：
+您放置在牆上的全像影像，通常會顯示為一英寸或遠離牆。 如果看起來更遠，請嘗試下列一或多個修正：
 
-- 移除您所放置的部分全像投影，或從應用程式中移除一些儲存的資料。 [我要如何找到我的資料？](holographic-data.md)
-- 在 [相片] 應用程式中刪除部分圖片和影片。
-- 從您的 HoloLens 解除安裝部分應用程式。 在 [所有應用程式]**** 清單中，點選並按住您要解除安裝的應用程式，然後選取 [解除安裝]****  (解除安裝應用程式也會刪除該應用程式儲存在裝置上的所有資料)。
+- 當您在牆上放置全像投影時，請從牆上的一到三個計量表，並直接朝上臉部。
+- 按一下牆以顯示地圖網格圖形。 請確定網格與牆對齊。 如果不是，請移除全像影像、重新掃描牆，然後再試一次。
+- 如果問題持續發生，請執行校正應用程式。 您可以在 **設定**  >  **系統**  >  **公用程式** 中找到它。
+
+[返回清單](#list)
+
+## <a name="apps-appear-too-close-to-me-when-im-trying-to-move-them"></a>當我嘗試移動應用程式時，應用程式看起來太近
+
+請試著流覽並查看您要放置應用程式的區域，讓 HoloLens 從不同的角度掃描區域。 [清除您的裝置面板](hololens1-hardware.md#care-and-cleaning) 也可能有所説明。
+
+[返回清單](#list)
+
+## <a name="im-getting-a-low-disk-space-error"></a>我遇到磁碟空間不足的錯誤
+
+執行下列一或多個動作，以釋出一些儲存空間：
+
+- 移除您所放置的一些全息，或從應用程式中移除一些已儲存的資料。 [如何? 尋找我的資料嗎？](holographic-data.md)
+- 刪除相片應用程式中的某些圖片和影片。
+- 從 HoloLens 卸載一些應用程式。 在 **所有應用程式** 清單中，按住您要卸載的應用程式，然後選取 [ **卸載**]。 卸載應用程式 (也會刪除應用程式在裝置上儲存的所有資料。 ) 
 
 [返回清單](#list)
 
 ## <a name="hololens-doesnt-respond-to-my-gestures"></a>HoloLens 沒有回應我的手勢
 
-為確保 HoloLens 可以看到您的手勢，請將您的手放在手勢框架中。 手勢框架可以在您的兩側延伸幾英呎。 當您將您的手放在身體前方約 18 英吋處 (但是您不一定要這麼做) 時，HoloLens 還能將您的手看得更清楚。 當 HoloLens 可以看到您的手時，游標會從一個點變更為一個圓環。 深入了解[如何在 HoloLens 2 中使用手勢](hololens2-basic-usage.md)，或[如何在 HoloLens (第 1 代) 中使用手勢](hololens1-basic-usage.md)。
+若要確定 HoloLens 可以看到您的手勢，請將您的手放在手勢框架中。 手勢框架會在您的任一邊延伸幾英尺。 當您將大約18英寸的內容放在本文前面時，HoloLens 也最適合您的手， (但您不需要精確地瞭解此) 。 當 HoloLens 可以看到您的手時，游標會從點變成環形。 深入瞭解如何 [使用 HoloLens 2 中的手勢](hololens2-basic-usage.md) ，或 [使用 HoloLens 中的手勢 (第1代) ](hololens1-basic-usage.md)。
 
 [返回清單](#list)
 
-## <a name="hololens-doesnt-respond-to-my-voice"></a>HoloLens 沒有回應我的語音
+## <a name="hololens-doesnt-respond-to-my-voice"></a>HoloLens 沒有回應我的聲音
 
-HoloLens (第 1 代) 和 HoloLens 2 具備內建的語音辨識功能，而且也支援 Cortana (線上語音辨識)。
+HoloLens (第1代) 和 HoloLens 2 都有內建的語音辨識，也支援 Cortana (線上語音辨識) 。
 
-### <a name="built-in-voice-commands-do-not-work"></a>內建語音命令無法運作
+### <a name="built-in-voice-commands-do-not-work"></a>內建的語音命令無法運作
 
-在 HoloLens (第 1 代) 上，內建語音辨識無法設定。 該功能一律是開啟狀態。 在 HoloLens 2 上，您可以在裝置設定期間，選擇是否要同時開啟語音辨識和 Cortana。
+在 HoloLens (第1代) 中，內建的語音辨識無法設定。 它一定會開啟。 在 HoloLens 2 上，您可以選擇是否要在裝置設定期間開啟語音辨識和 Cortana。
 
-如果 HoloLens 2 沒有回應您的語音，請確認已開啟 [語音辨識]。 移至 [開始]**** > [設定]**** > [隱私權]**** > [語音]****，然後開啟 [語音辨識]****。
+如果您的 HoloLens 2 沒有回應您的聲音，請確定已開啟 [語音辨識]。 移至 [**開始**  >  **設定**  >  **隱私權**  >  **語音**]，然後開啟 [**語音辨識**]。
 
 ### <a name="cortana-or-dictation-doesnt-work"></a>Cortana 或聽寫無法運作
 
-如果 Cortana 或聽寫沒有回應您的語音，請確認已開啟線上語音辨識。 移至 [開始]**** > [設定]**** > [隱私權]**** > [語音]****，然後驗證 [線上語音辨識]**** 設定。 
+如果 Cortana 或聽寫沒有回應您的聲音，請確定已開啟線上語音辨識。 移至 [**開始**  >  **設定**  >  **隱私權**  >  **語音**]，並確認 **線上語音辨識** 設定。 
 
-如果 Cortana 仍然沒有回應，請執行下列其中一項操作來驗證 Cortana 本身已開啟：
+如果 Cortana 仍沒有回應，請執行下列其中一項動作來確認 Cortana 本身已開啟：
 
-- 在 [所有應用程式]**** 中，選取 [Cortana]**** > [功能表]**** > [筆記型電腦]**** > [設定]**** 以進行變更。
-- 在 HoloLens 2 上，選取 [語音設定]**** 按鈕，或說出「語音設定」。
+- 在 **所有應用程式** 中，選取 [ **Cortana** ] > 選取 [**功能表**  >  **筆記本**  >  **設定**] 以進行變更。
+- 在 HoloLens 2 上，選取 [ **語音設定** ] 按鈕或說「語音設定」。
 
-若要深入了解您可以說什麼，請參閱[使用您的聲音操作 HoloLens](hololens-cortana.md)。
+若要深入瞭解您可以說的內容，請參閱搭配 [HoloLens 使用您的語音](hololens-cortana.md)。
 
 [返回清單](#list)
 
-## <a name="im-having-problems-pairing-or-using-a-bluetooth-device"></a>我在配對或使用藍牙裝置時發生問題
+## <a name="im-having-problems-pairing-or-using-a-bluetooth-device"></a>我在配對或使用 Bluetooth 裝置時遇到問題
 
-如果您無法[配對藍牙裝置](hololens-connect-devices.md)，請嘗試下列步驟：
+如果您在 [配對藍牙裝置](hololens-connect-devices.md)時遇到問題，請嘗試下列動作：
 
-- 移至 [設定]**** > [裝置]****，並確認 [藍牙] 已開啟。 如果是，請將其關閉後重新開啟。
-- 請確認您的藍牙裝置已充滿電或有新的電池。
-- 如果仍然無法連線，請[重新啟動 HoloLens](hololens-recovery.md)。
+- 移至 [**設定**  >  **裝置**]，並確定已開啟藍牙。 如果是，請將它關閉，然後再重新開啟。
+- 請確定您的藍牙裝置已完全收費，或有全新的電池。
+- 如果您仍然無法連線，請 [重新開機 HoloLens](hololens-recovery.md)。
 
 [返回清單](#list)
 
 ## <a name="hololens-settings-lists-devices-as-available-but-the-devices-dont-work"></a>HoloLens 設定會列出可用的裝置，但裝置無法運作
 
-HoloLens 不支援藍牙音訊設定檔。 藍牙音訊裝置 (例如喇叭和耳機) 可能會在 HoloLens 設定中顯示為可用，但不受支援。
+HoloLens (第1代) 不支援藍牙音訊設定檔。 藍牙音訊裝置（例如喇叭和耳機）在 HoloLens 設定中可能會顯示為可用，但不受支援。
 
-如果您無法使用藍牙裝置，請確認這是支援的裝置。 支援的裝置包括：
+HoloLens 2 支援適用于身歷聲播放的藍牙 A2DP 音訊設定檔。 HoloLens 2 不支援可從藍牙周邊啟用麥克風捕捉的藍牙手入設定檔。
 
-- 英文 QWERTY 藍牙鍵盤 (您可以在您使用全像投影鍵盤的任何地方使用這些鍵盤)。
+如果您在使用藍牙裝置時遇到問題，請確定它是支援的裝置。 支援的裝置包括下列各項：
+
+- 英文版的繁體中文藍牙鍵盤 (您可以在使用全像全像鍵盤) 的任何地方使用這些鍵盤。
 - 藍牙滑鼠。
-- [HoloLens 簡報導覽裝置](hololens1-clicker.md)。
+- [HoloLens clicker](hololens1-clicker.md)。
 
-您可以將其他藍牙 HID 和 GATT 裝置與您的 HoloLens 一起配對。 不過，您可能需要從 Microsoft Store 安裝對應的配套應用程式，才能實際使用這些裝置。
-
-[返回清單](#list)
-
-## <a name="im-having-problems-using-the-hololens-clicker"></a>我在使用 HoloLens 簡報導覽裝置時發生問題
-
-使用[簡報導覽裝置](hololens1-clicker.md)選取、捲動、移動全像投影並調整其大小。 個別應用程式可能支援其他按一下手勢。
-
-如果您無法使用簡報導覽裝置，請確認其已充好電，且與您的 HoloLens 配對。 如果電池電量不足，指示燈會閃爍琥珀色。 若要確認已配對簡報導覽裝置，請移至 [設定]**** > [裝置]****，然後查看其是否顯示在該處。 如需詳細資訊，請參閱[配對簡報導覽裝置](hololens1-clicker.md)。
-
-如果簡報導覽裝置已充好電並配對，但仍有問題，請按住主按鈕和配對按鈕 15 秒來重設。 接著，將簡報導覽裝置與您的 HoloLens 再次配對。
-
-如果重設簡報導覽裝置沒有幫助，請參閱[重新開機或復原 HoloLens 簡報導覽裝置](hololens1-clicker.md#restart-or-recover-the-clicker)。
+您可以將其他 Bluetooth 的 HID 和 GATT 裝置與 HoloLens 配對在一起。 不過，您可能必須從 Microsoft Store 安裝對應的附屬應用程式，才能實際使用裝置。
 
 [返回清單](#list)
 
-## <a name="i-cant-connect-to-wi-fi"></a>我無法連線至 Wi-Fi
+## <a name="im-having-problems-using-the-hololens-clicker"></a>我在使用 HoloLens clicker 時發生問題
 
-如果您無法將 HoloLens 連線到 Wi-Fi 網路，請嘗試下列步驟：
+使用 [clicker](hololens1-clicker.md) 來選取、滾動、移動及調整全像大尺寸。 個別的應用程式可能支援額外的 clicker 手勢。
 
-- 確定已開啟 Wi-Fi。 若要檢查，請使用 [開始] 手勢，然後選取 [設定]**** > [網路 &amp; 網際網路]**** > [Wi-Fi]****。 如果 Wi-Fi 已開啟，請嘗試關閉後再重新開啟。
-- 移到更接近的路由器或存取點。
-- 重新啟動 Wi-Fi 路由器，然後[重新啟動 HoloLens](hololens-recovery.md)。 再次嘗試連線。
-- 如果這些都沒有作用，請確認您的路由器使用的是最新的韌體。 您可以在製造商網站上找到這項資訊。
+如果您在使用 clicker 時遇到問題，請確定其已向您的 HoloLens 收費並與您的 HoloLens 配對。 如果電池偏低，指標燈會閃爍琥珀色。 若要確認 clicker 是否成對，請移至 [**設定**  >  **裝置**]，並查看它是否顯示在該處。 如需詳細資訊，請參閱 [將 Clicker 配對](hololens1-clicker.md)。
 
-[返回清單](#list)
+如果 clicker 已收費且配對，而您仍然遇到問題，請按住 [主要] 按鈕和 [配對] 按鈕15秒來重設。 然後再次將 clicker 與您的 HoloLens 配對。
 
-## <a name="my-hololens-isnt-running-well-is-unresponsive-or-wont-start"></a>我的 HoloLens 沒有順利運作、沒有回應或無法啟動
-
-如果您的裝置無法正常執行，請參閱[重新啟動、重設或復原 HoloLens](hololens-recovery.md)。
+如果重設 clicker 沒有説明，請參閱 [重新開機或復原 HoloLens clicker](hololens1-clicker.md#restart-or-recover-the-clicker)。
 
 [返回清單](#list)
 
-## <a name="i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else"></a>我無法登入 HoloLens 裝置，因為該裝置先前已針對其他人設定
+## <a name="i-cant-connect-to-wi-fi"></a>我無法連接到 Wi-Fi
 
-如果您先前已為其他人設定您的裝置，而是針對客戶或離職員工，且您沒有解除鎖定裝置的密碼，您可以執行下列其中一項操作：
+如果您無法將 HoloLens 連接到 Wi-Fi 網路，請嘗試下列一些事項：
 
-- 若是已經在 Intune 行動裝置管理 (MDM) 中註冊的裝置，您可以使用 Intune，從遠端[抹除](https://docs.microsoft.com/intune/remote-actions/devices-wipe)裝置。 接著，裝置會重新閃爍。  
+- 請確定 Wi-Fi 已開啟。 若要檢查，請使用開始手勢，然後選取 [**設定**  >  **網路 &amp; 網際網路**  >  **wi-fi**]。 如果 Wi-Fi 是開啟的，請嘗試關閉它，然後再重新開啟。
+- 移到較靠近路由器或存取點的位置。
+- 重新開機 Wi-Fi 路由器，然後 [重新開機 HoloLens](hololens-recovery.md)。 請嘗試重新連線。
+- 如果上述專案都無法運作，請檢查以確定您的路由器使用的是最新的固件。 您可以在製造商網站上找到此資訊。
+
+[返回清單](#list)
+
+## <a name="my-hololens-isnt-running-well-is-unresponsive-or-wont-start"></a>我的 HoloLens 未正常運作、沒有回應，或無法啟動
+
+如果您的裝置未正確執行，請參閱 [重新開機、重設或復原 HoloLens](hololens-recovery.md)。
+
+[返回清單](#list)
+
+## <a name="i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else"></a>我無法登入 HoloLens 裝置，因為先前已為他人設定
+
+如果您的裝置先前是針對用戶端或先前的員工設定，而您沒有其密碼來將裝置解除鎖定，您可以執行下列其中一項動作：
+
+- 針對已在 Intune 行動裝置管理 (MDM) 中註冊的裝置，您可以使用 Intune [從遠端抹除](https://docs.microsoft.com/intune/remote-actions/devices-wipe) 裝置。 裝置接著會重新閃爍。  
    > [!IMPORTANT]  
-   > 當您抹除裝置時，請務必取消核取 [保留註冊狀態及使用者帳戶]****。
-- 若是非 MDM 裝置，您可以[將裝置置於 [閃爍模式]****，並使用 [進階修復小幫手]](hololens-recovery.md#clean-reflash-the-device) 來復原裝置。
+   > 當您抹除裝置時，請務必保持未核取 [ **保留註冊狀態] 和 [使用者帳戶** ]。
+- 若為非 MDM 裝置，您可以 [讓裝置進入 **閃爍模式** ，並使用 Advanced Recovery 隨附](hololens-recovery.md#clean-reflash-the-device) 的復原裝置。
 
 [返回清單](#list)
 
 ## <a name="questions-about-managing-hololens-devices"></a>管理 HoloLens 裝置的相關問題
 
-### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>我是否可以使用 System Center Configuration Manager (SCCM) 管理 HoloLens 裝置？
+### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>我可以使用 System Center 設定管理員 (SCCM) 來管理 HoloLens 裝置嗎？
 
-不。 您必須使用 MDM 系統管理 HoloLens 裝置。
+不會。 您必須使用 MDM 系統來管理 HoloLens 裝置。
 
-### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>我是否可以使用 Active Directory 網域服務 (AD DS) 管理 HoloLens 使用者帳戶？
+### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>我可以使用 Active Directory Domain Services (AD DS) 來管理 HoloLens 使用者帳戶嗎？
 
-不。 您必須使用 Azure Active Directory (Azure AD) 管理 HoloLens 裝置使用者帳戶。
+不會。 您必須使用 Azure Active Directory (Azure AD) 來管理 HoloLens 裝置的使用者帳戶。
 
-### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>HoloLens 是否能夠進行 Automated Data Capture Systems (ADCS) 自動註冊？
+### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>HoloLens 是否能夠自動 (ADC) 自動註冊？
 
-不。
+不會。
 
 ### <a name="can-hololens-participate-in-integrated-windows-authentication"></a>HoloLens 是否可以參與整合式 Windows 驗證？
 
-不。
+不會。
 
 ### <a name="does-hololens-support-branding"></a>HoloLens 是否支援商標？
 
-不。 不過，您可以使用下列其中一種方法解決此問題：
+不會。 不過，您可以使用下列其中一種方法來解決此問題：
 
-- 建立自訂應用程式，然後[啟用 Kiosk 模式](hololens-kiosk.md)。 自訂應用程式可以有商標，而且可以啟動其他應用程式 (例如 Remote Assist)。  
-- 將 Azure AD 中所有的使用者設定檔圖片變更為公司標誌。 不過，這可能不適用於所有案例。
+- 建立自訂應用程式，然後 [啟用 Kiosk 模式](hololens-kiosk.md)。 自訂應用程式可以有商標，也可以啟動其他應用程式 (例如遠端協助) 。  
+- 將 Azure AD 中的所有使用者設定檔圖片變更為您的公司標誌。 不過，這對所有案例而言可能都不理想。
 
-### <a name="what-logging-capabilities-do-hololens-1st-gen-and-hololens-2-offer"></a>HoloLens (第1代) 和 HoloLens 2 提供哪些記錄功能？
+### <a name="what-logging-capabilities-do-hololens-1st-gen-and-hololens-2-offer"></a>HoloLens (第一代) 和 HoloLens 2 供應專案的哪些記錄功能？
 
-記錄限制於可以在開發或疑難排解案例中擷取的追蹤，或裝置傳送到 Microsoft 伺服器的遙測。
+記錄僅限於可在開發或疑難排解案例中捕捉的追蹤，或是裝置傳送到 Microsoft 伺服器的遙測。
 
 [返回清單](#list)
 
 ## <a name="questions-about-securing-hololens-devices"></a>保護 HoloLens 裝置的相關問題
 
 請參閱 [我們的 HoloLens 2 安全性資訊](security-overview.md)。
-如需 HoloLens 第 1 代裝置，請查閱 [此常見問題](hololens1-faq-security.md)。
+針對 HoloLens 1 代裝置，請參閱 [此常見問題](hololens1-faq-security.md)。
 
 [返回清單](#list)
 
-## <a name="how-do-i-delete-all-spaces"></a>如何刪除所有空間？
+## <a name="how-do-i-delete-all-spaces"></a>如何? 刪除所有空格？
 
 *即將推出*
 
 [返回清單](#list)
 
-## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>我找不到鍵盤或無法使用鍵盤在 HoloLens 2 模擬器中輸入
+## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>我找不到或無法使用鍵盤來輸入 HoloLens 2 模擬器
 
 *即將推出*
 

@@ -1,6 +1,6 @@
 ---
-title: HoloLens (第 1 代) 適合和舒適性常見問題
-description: 隨時掌握有關調整 HoloLens (第 1 代) 混合實境裝置適合度方式之常見問題解答的最新資訊。
+title: HoloLens (第1代) 納入並緩和常見問題
+description: 隨時掌握有關如何將 HoloLens (第一代) 混合現實裝置的常見問題解答。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -14,56 +14,56 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c596eac214b0134d04a5b34acded69ff973be3b4
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439019"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308286"
 ---
-# <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>HoloLens (第 1 代) 適合和舒適性常見問題
+# <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>HoloLens (第1代) 納入並緩和常見問題
 
-以下是一些在使用 HoloLens 時保持舒適並獲得最佳經驗的提示。
+以下是一些有關如何保持舒適的秘訣，以及使用 HoloLens 的最佳體驗。
 
-如需戴上和調整裝置的逐步說明和影片，請參閱[讓您的 HoloLens (第 1 代) 準備好可供使用](hololens1-setup.md)。
+如需逐步指示以及有關放置和調整裝置的影片，請參閱 [取得 HoloLens (第1代) 可供使用](hololens1-setup.md)。
 
 > [!NOTE]
-> 本主題中的適合和舒適性提示僅作為一般指導&mdash;它們無法取代任何法律或法規，也無法取代您在使用 HoloLens 時的自我判斷力。 保持安全，玩得開心！
+> 本主題中的「配合」和「緩和」秘訣僅適用于一般指導方針 &mdash; ，其不會取代任何法律或法規，或您在使用 HoloLens 時的良好判斷。 保持安全，而且樂趣很有趣！
 
-以下是一些在使用 HoloLens 時保持舒適並獲得最佳經驗的提示。
+以下是一些有關如何保持舒適的秘訣，以及使用 HoloLens 的最佳體驗。
 
-## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>當我使用裝置時，感到不適。 我該怎麼做？
+## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>我在使用裝置時遇到不適感。 我該怎麼辦？
 
-如果您感到不舒服，請休息直到感覺好些為止。 請坐在光線充足的房間裡放鬆一下。 下次使用 HoloLens 時，一開始請先嘗試使用較短的時間。
+如果您遇到不適感，請先中斷，直到您感覺更好。 試著坐在一個好用的房間，然後放鬆一點。 當您下一次使用 HoloLens 時，請先嘗試使用較短的一段時間。
 
-如需詳細資訊，請參閱 [HoloLens 健康與安全](https://go.microsoft.com/fwlink/p/?LinkId=746661)。
+如需詳細資訊，請參閱 [HoloLens 的健康狀態和安全性](https://go.microsoft.com/fwlink/p/?LinkId=746661)。
 
-## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>我看不到整個全像畫面，或者我的全像投影被截斷
+## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>我看不到全全像全像的框架，或我的全像是剪下
 
-若想看到全像畫面的頂端邊緣，請移動裝置，使其位於頭部較高處，或讓頭帶稍微向上傾斜。 若想看到底部邊緣，請移動裝置，使其位於頭部較低處，或將頭帶稍微向下傾斜。 如果看不到檢視畫面的左邊緣或右邊緣，請確保 HoloLens 面板位於前額正中央。
+若要查看全像攝影框架的上邊緣，請移動裝置，使其在您的頭部較高，或將 headband 的角度稍微放在前方。 若要查看下邊緣，請將裝置移至您的前端上，或將 headband 的角度稍微放在前方。 如果看不到視圖框架的左邊或右邊，請確定 HoloLens 面板的中心在您的冷汗上。
 
-## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>我需要向上看或向下看才看得到全像投影
+## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>我需要查閱或向下查看全像影像
 
-請嘗試調整裝置面板的位置，使全像畫面符合您的自然目光。 方法如下：
+請嘗試調整裝置面板的位置，讓全像攝影框架符合您的自然注視。 方法如下：
 
-- **如果您需要向上看才看得到全像投影**。 首先，將頭帶的背面移高一點。 然後，用一隻手握住頭帶保持在原位，另一隻手輕輕旋轉面板，讓您能夠獲得良好的全像畫面視野。
-- **如果您需要向下看才看得到全像投影**。 首先，將頭帶的背面移低一點。 然後，將拇指放在裝置臂下、將食指放在頭帶頂端，然後用拇指輕輕擠壓以旋轉面板，讓您能夠獲得良好的全像畫面視野。
+- **如果您需要查閱以查看全像影像**。 首先，將 headband 的背面移至您的頭上更高的位置。 然後使用一手勢來將 headband 放在原處，另一個用來將面板輕輕旋轉，讓您有絕佳的全像攝影框架。
+- **如果您需要向下查看全像影像**。 首先，將 headband 的背面向下移一點。 然後，將您的拇指放在裝置 arm 下，並將您的索引手指放在 headband 上方，然後以您的拇指輕輕地捏住面板來旋轉面板，讓您有很大的全像攝影框架。
 
-## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>裝置在使用時向下滑，或者我需要把頭帶調到過緊才能固定
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>當裝置使用時，裝置會向下滑下，或者我需要讓 headband 太過嚴格以保持安全
 
-頭頂綁帶可以協助保持 HoloLens 固定在您的頭上，特別是如果您的移動量很大時。 綁帶也可以讓您稍微鬆開頭帶。 [了解如何使用頭頂綁帶](hololens1-setup.md#adjust-fit)。
+附帶的額外負荷有助於確保您的 HoloLens 安全，特別是當您四處移動時。 腕帶也可讓您 headband 一點。 [瞭解如何使用它](hololens1-setup.md#adjust-fit)。
 
-您還可以根據自己的頭部大小和形狀嘗試調整頭帶的位置&mdash;您可能需要向上或向下滑動，以便將它重新放置在前額上。
+您也可以根據您的前端大小和形狀來試驗 headband 的定位 &mdash; ，您可能需要將它向上或向下滑動，以將它重新置放到冷汗上。
 
-## <a name="my-hololens-feels-heavy-on-my-nose"></a>HoloLens 讓我的鼻子感覺很重
+## <a name="my-hololens-feels-heavy-on-my-nose"></a>我的 HoloLens 在我的鼻子上感覺很大
 
-如果 HoloLens 調整正確，鼻墊應輕輕放在鼻子上。 如果鼻子感覺很重，請嘗試向上旋轉面板或調整頭帶的角度。 您還可以將裝置面板滑出&mdash;抓住面板後面的裝置臂，輕輕向前拉。
+如果您的 HoloLens 已正確調整，鼻子板應該會在您的鼻子上輕輕。 如果您的鼻子很大，請試著將面板旋轉或調整 headband 的角度。 您也可以滑出裝置的面板 &mdash; ，從面板後方抓住裝置 arm，並輕輕地向前復原。
 
-## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>如何調整 HoloLens 以適合我的眼鏡？
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>如何調整 HoloLens 以配合我的眼鏡？
 
-裝置面板可以滑入和滑出，以適應眼鏡。 抓住面板後面的裝置臂，輕輕向前拉以調整。
+裝置面板可以滑入和移出以配合 eyewear。 在面板後方抓住裝置 arm，並輕輕地拉出以進行調整。
 
-## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>當我使用手勢時，我的手臂感到疲倦。 我該怎麼做？
+## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>當我使用手勢時，我的 arm 會感到厭倦。 我該怎麼處理？
 
-使用手勢時，無需將手臂伸出遠離身體。 保持手臂靠近您的身體，這樣您的手臂會更舒適，也不會那麼累。 [深入了解手勢](hololens1-basic-usage.md#use-hololens-with-your-hands)。
+使用手勢時，不需要從您的主體延伸您的 arm。 讓它更接近您的位置，讓它更習慣，而且會較不厭倦。 [深入瞭解手勢](hololens1-basic-usage.md#use-hololens-with-your-hands)。
 
-也請務必嘗試[語音命令](hololens-cortana.md)和 [HoloLens 簡報導覽裝置](hololens1-clicker.md)。
+而且，請務必試用 [語音命令](hololens-cortana.md) 和 [HoloLens clicker](hololens1-clicker.md)。

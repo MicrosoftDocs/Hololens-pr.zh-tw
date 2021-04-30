@@ -1,7 +1,7 @@
 ---
-title: 部署指南 – 使用 Dynamics 365 指南與公司連接的 HoloLens 2 - 部署
-description: 瞭解如何使用 Dynamics 365 指南，在公司已連接網路上設定 HoloLens 2 裝置部署。
-keywords: HoloLens，管理，公司關係，Dynamics 365 指南，AAD，Azure AD，MDM，行動裝置管理
+title: 部署指南–與 Dynamics 365 的公司連線 HoloLens 2 指南-部署
+description: 瞭解如何透過使用 Dynamics 365 指南的公司連線網路，設定 HoloLens 2 裝置的部署。
+keywords: HoloLens、管理、公司連線、Dynamics 365 指南、AAD、Azure AD、MDM、Mobile 裝置管理
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -15,103 +15,103 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: febf56f94a5cab623fd7ad08ae7abf7050224717
-ms.sourcegitcommit: d7c86ccad7be32f7223d4b801083798454fda740
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "11448531"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308681"
 ---
-# <a name="deploy---corporate-connected-guide"></a>部署 - 公司關聯指南
+# <a name="deploy---corporate-connected-guide"></a>部署-公司連接指南
 
-每一個部署的重要部分，就是先確定您的部署已正確設定，然後再自己測試，以確保使用者有順暢的體驗。
+每個部署的重要部分是確保您的部署在自行測試之前已正確設定，以確保使用者能順暢地體驗。
 
-由於我們正在透過 MDM 部署 Wi-Fi 憑證，因此我們一開始需要在開啟的 Wi-Fi 網路或不需要憑證的網路上設定 HoloLens 並註冊裝置。 一旦 HoloLens 完成 OOBE 和註冊，裝置就會收到先前所配置的網路憑證和 LOB，而且我們將能驗證裝置是否同時收到這兩者。
+由於我們是透過 MDM 部署 Wi-Fi 憑證，因此我們必須一開始就在開啟的 Wi-Fi 網路或不需要憑證的網路上設定 HoloLens 和註冊裝置。 HoloLens 完成 OOBE 並註冊之後，裝置將會接收先前設定的網路憑證和 LOB，而且我們將能夠驗證這兩者都是由裝置所接收。
 
-之後，您可以確認可以同時撰寫及操作測試指南。
+之後，您將能夠確認是否可以撰寫和操作測試指南。
 
 ## <a name="enrollment-validation"></a>註冊驗證
 
-現在所有專案都為 Azure AD 和 MDM 註冊正確配置，剩下的應該就是快照。 您需要一個Wi-Fi HoloLens 裝置，以及一個先前已配置的 Azure AD 使用者帳戶。
+現在所有專案都已針對 Azure AD 和 MDM 註冊正確設定，接下來應該是貼齊。 您將需要 Wi-Fi 連接和 HoloLens 裝置，以及先前設定的 Azure AD 使用者帳戶之一。
 
-如果您的裝置目前不是處於出廠設定狀態，現在是重新飛出 [裝置的時候](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)。
+如果您的裝置目前未處於原廠設定狀態，現在是 [重新刷新裝置](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)的好時機。
 
-1. 一旦裝置在 OOBE 中，您必須開始互動，並遵循提示。
+1. 當您的裝置在 OOBE 之後，您必須開始互動並遵循提示。
 
-2. 連接到開啟Wi-Fi網路，而不需要憑證來加入 Wi-Fi。 這可以讓裝置下載憑證，以在初始設定Wi-Fi使用。
+2. 連接到不需要憑證來加入 Wi-fi 的開放式 Wi-Fi 網路。 這可讓裝置下載憑證，以便在初始安裝之後用於組織的 Wi-Fi。
 
-3. 當系統詢問您這個**HoloLens**的擁有者時，會提示您重要提示嗎？ 選取 **我的公司或學校擁有** 它，然後輸入您的 Azure AD 帳號憑證。
+3. 當系統要求您 **擁有此 HoloLens** 時，會出現重要提示？ 選取 [ **我的工作或學校擁有** ]，然後輸入您的 Azure AD 帳號憑證。
 
-4. 註冊成功時，系統會提示您設定 PIN。 此 PIN 在此使用者裝置中是獨一無二的。 系統也會提示您進行虹膜掃描、語音資料和遙測設定，最後，您將可以瞭解如何開啟開始功能表並完成 OOBE。
+4. 註冊成功時，系統會提示您設定 PIN。 這是此使用者對此裝置而言唯一的 PIN。 系統也會提示您輸入鳶尾花掃描、語音資料和遙測設定，最後您將能夠學習如何開啟 [開始] 功能表並完成 OOBE。
 
-5. 一旦登入混合實境首頁，使用您剛剛學會的開始手勢 **開啟開始功能表** 。
+5. 當您進入混合現實首頁之後，請使用您剛剛學到的 **開始手勢** 來開啟 [開始] 功能表。
 
-6. 選取設定**應用程式****，然後選取**系統 。 您會看到的第一個資訊是您的裝置名稱，而 HoloLens 2 裝置會為 &quot; HOLOLENS，後面接著 &quot; 六個字元字串。
+6. 選取 [ **設定** ] 應用程式，然後選取 [ **系統**]。 您將會看到的第一項資訊是您的裝置名稱，而您的 HoloLens 2 裝置將會是 &quot; HoloLens， &quot; 後面接著6個字元的字串。
 
-7. 記下這個名稱。
+7. 記下此名稱。
 
-    ![HoloLens 2 設定畫面](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 設定] 畫面](./images/hololens2-settings-about.jpg)
 
-8. 確認您的裝置已成功加入 Azure AD。 有兩種方法;
+8. 確認您的裝置已成功聯結至 Azure AD。 有兩種方式：
 
-    1.  設定應用程式。 從**設定選取****帳戶**  ->  **存取公司或學校**。 在此畫面中，您可以看到已連接到 Azure AD 中的 &quot; nameofAAD，&#39;註冊成功。 以 *yourusername@nameofAAD.onmicrosoft.com*連接。 這會確認您的裝置已加入貴組織&#39;Azure AD。
+    1.  [設定] 應用程式。 從 [**設定**] 選取 [**帳戶**  ->  **存取公司或學校**]。 在此畫面中，您可以看到 &quot; 連線到 nameofAAD&#39;s Azure AD，以確認您已成功註冊。 連接者 *yourusername@nameofAAD.onmicrosoft.com* 。 這會確認您的裝置已加入您的組織&#39;s Azure AD。
 
-    1. Azure [入口網站](https://portal.azure.com/#home)。 前往**Azure Active Directory**  ->  **Devices All**  ->  **devices**，然後搜尋裝置名稱。 在加入類型下，會顯示為 'Azure AD 已加入'。
-        ![在 Azure AD 中驗證加入類型](./images/hololens2-devices-all-devices.png)
+    1. [Azure 入口網站](https://portal.azure.com/#home)。 移至 **Azure Active Directory**  ->  **裝置**  ->  **所有裝置**]，並搜尋裝置名稱。 在 [聯結類型] 下，它會顯示為「Azure AD 聯結」。
+        ![確認 Azure AD 中的聯結類型](./images/hololens2-devices-all-devices.png)
 
-9. 確認您的裝置已註冊 MDM。 有兩種方法;
+9. 確認您的裝置已向 MDM 註冊。 有兩種方式：
 
-    1. 從**設定**中，選取**帳戶**  ->  **存取公司或學校**。 在此畫面中，您可以看到已連接到 Azure AD 中的 &quot; nameofAAD，&#39;註冊成功。 以 *yourusername@nameofAAD.onmicrosoft.com*連接。 從此 Access 公司或學校帳戶，選取 Azure AD&#39;&quot; nameofAAD。 以圖示 &quot; yourusername@nameofAAD.onmicrosoft.com，然後選取資訊按鈕****。
+    1. 在 [**設定**] 中，選取 [**帳戶**  ->  **存取公司或學校** 帳戶]。 在此畫面中，您可以看到 &quot; 連線到 nameofAAD&#39;s Azure AD，以確認您已成功註冊。 連接者 *yourusername@nameofAAD.onmicrosoft.com* 。 藉由選取 [ &quot; 連線到 nameofAAD&#39;s] Azure AD，從此存取工作或學校帳戶。 連接者 yourusername@nameofAAD.onmicrosoft.com &quot; ，然後選取 [**資訊**] 按鈕。
 
-    1. [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com/#home)。 登入並選取  **裝置**  ，然後選取  **所有裝置**。 您可以在這裡搜尋 HoloLens 裝置&#39;名稱。 您應該可以看到您的 HoloLens 列在 Intune 上。
+    1. [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com/#home)。 登入並選取 [  **裝置**  ]，然後選取 [  **所有裝置**]。 您可以從這裡搜尋 HoloLens 裝置&#39;的名稱。 您應該能夠看到您的 HoloLens 列在 Intune 上。
 
-        ![在 Azure AD 中驗證由 Intune 管理](./images/hololens2-devices-all-devices2.png)
+        ![確認 Azure AD 中的 Intune 管理](./images/hololens2-devices-all-devices2.png)
 
 
-## <a name="wi-fi-certificate-validation"></a>Wi-Fi憑證驗證
+## <a name="wi-fi-certificate-validation"></a>Wi-Fi 憑證驗證
 
-現在，裝置應該已經收到Wi-Fi憑證。 您可以執行最簡單的驗證，就是嘗試Wi-Fi您收到憑證的&#39;連接。 開啟設定**應用程式**，然後流覽至** &amp; 網路網際網路**  ->  **Wi-Fi，** 然後選取 Wi-Fi 連接。 連接之後，請開啟 Microsoft Edge 應用程式並確認您可以流覽至網站。
+現在，裝置應該已收到 Wi-Fi 憑證。 您可以進行的最簡單驗證是嘗試連接到您&#39;已收到憑證的 Wi-Fi 連接。 開啟 [**設定**] 應用程式，並流覽至 [**網路 &amp; 網際網路**  ->  **wi-fi** ]，然後選取 [wi-fi 連線]。 連接之後，開啟 Microsoft Edge 應用程式，並確認您可以流覽至網站。
 
-若要確認您已收到裝置上的憑證，您可以使用 [憑證管理員](https://docs.microsoft.com/hololens/certificate-manager)。
+若要確認您已在裝置上收到憑證，您可以使用 [ [憑證管理員](https://docs.microsoft.com/hololens/certificate-manager)]。
 
-## <a name="validate-lob-app-install"></a>驗證 LOB App 安裝
+## <a name="validate-lob-app-install"></a>驗證 LOB 應用程式安裝
 
-若要查看受管理 App 的安裝進度，您可以查看應用程式是否已安裝，或檢查設定。 將 LOB 應用程式佈建為群組所需的安裝，在向指派群組中的使用者註冊 HoloLens 之後，應用程式會自動下載到 HoloLens。
+若要查看受管理應用程式的安裝進度，您可以查看應用程式是否已安裝或檢查設定。 藉由將 LOB 應用程式設定為群組的必要安裝，在向已指派群組中的使用者註冊 HoloLens 之後，應用程式將會自動下載到 HoloLens。
 
-開啟開始功能表，然後選取所有 **應用程式**。 視您擁有的應用程式數量，您可能需要使用向上或向下**頁面按鈕。** ****
+開啟 [開始] 功能表，然後選取 [ **所有應用程式**]。 視您擁有的應用程式數目而定，您可能需要使用 **page up** 或 **page down** 按鈕。
 
-若要驗證裝置上 App 的安裝，您可以透過設定帳戶****  ->  ****  ->  **存取****** 公司或學校執行此作業;選取帳戶，然後選取資訊按鈕，然後向下卷起以查看從 MDM 將不同的設定與應用程式所適用于裝置。
+若要在裝置上驗證應用程式的安裝，您可以透過 **設定**  ->  **帳戶**  ->  **存取公司或學校**，然後選取 [帳戶] 和 [**資訊**] 按鈕，再向下滾動查看從 MDM 套用至裝置的不同設定和應用程式。
 
-若要驗證 Intune 的安裝，請流覽至[MEM](https://endpoint.microsoft.com/#home)入口網站  ->  **App** ->**所有應用程式**  -> *TheNameOfYourApp*  ->  **裝置安裝狀態**頁面。
+若要從 Intune 驗證安裝，請流覽至 [[記憶體入口網站](https://endpoint.microsoft.com/#home)  ->  **應用程式**-> 所有 **應用程式**  -> *TheNameOfYourApp*  ->  **裝置安裝狀態**] 頁面。
 
-查看更多 [：HoloLens 的 Intune 應用程式部署](https://docs.microsoft.com/hololens/app-deploy-intune)
+查看更多： [適用于 HoloLens 的 Intune 應用程式部署](https://docs.microsoft.com/hololens/app-deploy-intune)
 
-## <a name="validate-dynamics-365-guides"></a>驗證 Dynamics 365 輔助線
+## <a name="validate-dynamics-365-guides"></a>驗證 Dynamics 365 指南
 
-HoloLens 上的指南應用程式有撰寫和操作模式。 您需要先完成撰寫指南，再操作指南。
+在 HoloLens、撰寫和操作方面，有一些適用于指南應用程式的模式。 在操作之前，您必須先完成撰寫指南。
 
 ### <a name="authoring-the-guide"></a>撰寫指南
 
-我們不需要為此快速驗證執行太多工作。 只要選取您電腦準備的指南。 您需要錨定 [指南](https://docs.microsoft.comdynamics365/mixed-reality/guides/hololens-app-anchor)，才能快速驗證，才能使用全圖錨點。 之後，您應該 [放置您的步驟和模型](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-orientation)。
+這種快速驗證不需要這麼做。 只要選取您在電腦上準備的指南。 您將需要 [錨定節目表](https://docs.microsoft.comdynamics365/mixed-reality/guides/hololens-app-anchor)，以快速驗證您可以使用全息的錨點。 之後，您應該 [放置步驟和模型](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-orientation)。
 
 >[!NOTE]
-> 您需要作者 **角色** 才能登入 HoloLens 上的電腦和作者。 運算子角色為唯讀，且無法存取 PC 應用程式。
+> 您將需要 **撰寫** 角色才能登入電腦，並在 HoloLens 上編寫。 操作員角色是唯讀的，而且沒有電腦應用程式的存取權。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="operating-the-guide"></a>操作指南
 
-一旦全能圖就位後，您可以測試操作指南。 
+在您的全像地方之後，您可以測試您的指南。 
 - 選取 **運算子模式**
 - 按一下指南的步驟。
 
-若要深入瞭解如何操作指南，請查看以下資源：
+如需有關如何操作指南的更深入指引，請參閱下列資源：
 
-[在 Dynamics 365 指南中操作指南概觀](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
+[Dynamics 365 指南中操作指南的總覽](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
 
-[以 Dynamics 365 輔助線中的運算子使用步驟卡片進行導向](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-step-card-orientation)
+[以 Dynamics 365 指南中的操作員的身份使用步驟卡取得導向](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="next-step"></a>下一步 
+## <a name="next-step"></a>後續步驟 
 > [!div class="nextstepaction"]
-> [公司連接部署 - 維護](hololens2-corp-connected-maintain.md)
+> [企業連線部署-維護](hololens2-corp-connected-maintain.md)

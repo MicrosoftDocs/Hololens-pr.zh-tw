@@ -1,6 +1,6 @@
 ---
-title: 使用 HoloLens 簡報導覽裝置
-description: 本文概述如何使用 HoloLens 簡報導覽裝置，包括 簡報導覽裝置配對、充電和復原。
+title: 使用 HoloLens clicker
+description: 本文概述如何使用 HoloLens clicker，包括 clicker 配對、充電和復原。
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 manager: jarrettr
@@ -14,89 +14,89 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439049"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309022"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>使用 HoloLens (第 1 代) 簡報導覽裝置
+# <a name="use-the-hololens-1st-gen-clicker"></a>使用 HoloLens (第1代) clicker
 
-簡報導覽裝置是專為 HoloLens （第一代）所設計，可讓您使用另一種方式與全息影像互動。 它隨附于 HoloLens （第1代），並在個別的盒子中。
+Clicker 是專為 HoloLens (第一代) 所設計，可讓您以另一種方式與全像投影互動。 它隨附于 HoloLens (第一代) ，位於另一個方塊中。
 
-您可以將它用來取代 [選取]、[投影]、[移動] 和 [調整大小] 應用程式。
+您可以使用它來取代手勢，以選取、滾動、移動及調整應用程式的大小。
 
-## <a name="clicker-hardware-and-pairing"></a>簡報導覽裝置硬體與配對
+## <a name="clicker-hardware-and-pairing"></a>Clicker 硬體和配對
 
-HoloLens （第一代） 簡報導覽裝置有手指環，可讓您更輕鬆地按住，以及一個指示燈。
+HoloLens (第一代) clicker 有一個手指迴圈，可讓您更輕鬆地保存和指標燈。
 
-![HoloLens 簡報導覽裝置](images/use-hololens-clicker-1.png)
+![HoloLens Clicker](images/use-hololens-clicker-1.png)
 
-### <a name="clicker-indicator-lights"></a>簡報導覽裝置指示燈
+### <a name="clicker-indicator-lights"></a>Clicker 指標燈
 
-以下是簡報導覽裝置的燈之含義。
+以下是 clicker 的燈光意思。
 
-- **閃爍白光**。 簡報導覽裝置是配對模式。
-- **快速閃爍的白光**。 配對成功。
-- **穩定的白光**。 簡報導覽裝置在充電中。
-- **閃爍琥珀色光**。 電量不足。
-- **穩定的琥珀色光**。 簡報導覽裝置發生錯誤，您需要重新啟動。 按配對按鈕時，請按一下並按住15秒。
+- **閃爍的白色**。 Clicker 處於配對模式。
+- **快速閃爍的白色**。 配對成功。
+- **純白色**。 Clicker 正在收費。
+- **閃爍琥珀色**。 電池偏低。
+- **穩固的琥珀色**。 Clicker 發生錯誤，因此您必須重新開機。 按配對按鈕時，請按一下並按住15秒。
 
-### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>將簡報導覽裝置與您的 HoloLens (第一代) 再次配對。
+### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>將 clicker 與 HoloLens 配對 (第1代) 
 
-1. 使用開花圖示，移至 **[開始]**，然後選取 **[設定]** > **[裝置]** 並確認 [藍牙] 已開啟。
-1. 在簡報導覽裝置中，按住配對按鈕直到狀態燈閃爍白色。
-1. 在配對的畫面上，選取 **簡報導覽裝置** > **配對**。
+1. 使用 bloom 手勢移至 [**開始**]，然後選取 [**設定**  >  **裝置**] 並確認藍牙已開啟。
+1. 在 clicker 上，按住配對按鈕，直到狀態燈閃爍白色為止。
+1. 在 [配對] 畫面上，選取 [ **Clicker** 組]  >  ****。
 
-### <a name="charge-the-clicker"></a>幫簡報導覽裝置充電
+### <a name="charge-the-clicker"></a>收取 clicker 費用
 
-當簡報導覽裝置電量不足時，電池指示燈會呈琥珀色閃爍。 將微 USB 纜線插入 USB 電源，以為裝置充電。
+當 clicker 電池偏低時，電池指示器將會閃爍琥珀色。 將微型 USB 纜線插入 USB 電源供應器，以收費裝置。
 
-## <a name="use-the-clicker-with-hololens-1st-gen"></a>以 HoloLens (第一代) 使用簡報導覽裝置。
+## <a name="use-the-clicker-with-hololens-1st-gen"></a>使用 clicker 搭配 HoloLens (第1代) 
 
-### <a name="hold-the-clicker"></a>拿好簡報導覽裝置
+### <a name="hold-the-clicker"></a>保存 clicker
 
-若要放在簡報導覽裝置上，請將環滑動到您無名指或中指，讓微 USB 插槽面向您的手腕。 將您的拇指放在縮排中。
+若要放在 clicker 上，請將迴圈滑到環形或中間手指，讓微型 USB 埠朝向手腕。 將您的 thumb 放在縮排中。
 
-![如何拿好簡報導覽裝置](images/use-hololens-clicker-2.png)
+![如何保存 Clicker](images/use-hololens-clicker-2.png)
 
-### <a name="clicker-gestures"></a>簡報導覽裝置手勢
+### <a name="clicker-gestures"></a>Clicker 手勢
 
-簡報導覽裝置的拿取手勢是透過小的手腕旋轉，而不是操作 HoloLens 的較大動作手勢。 且 HoloLens 可辨識您的手勢和簡報導覽裝置，即使簡報導覽裝置是在 [[手勢框架]](hololens1-basic-usage.md)之外進行，如此一來，您才能將簡報導覽裝置放在最適合您的位置。
+Clicker 手勢是很小的手腕旋轉，而不是用於 HoloLens 手勢的較大移動。 而 HoloLens 可以辨識您的手勢，即使 clicker 在 [手勢框架](hololens1-basic-usage.md)之外，也可以按一下，因此您可以將 clicker 放在最熟悉的位置。
 
-- **[選取]**。 若要選取全息圖、按鈕或其他元素，請注視該項目，然後按一下。
+- **選取**。 若要選取全息圖、按鈕或其他元素，請在其中選取，然後按一下。
 
-- **按一下並按住**。 按一下按鈕並按住按鈕，就能執行您想要的動作，例如移動全息圖或調整其大小。
+- **按一下並按住**。 按一下按鈕，並將您的捲動方塊放在按鈕上，以進行一些與點一下的相同動作，例如移動或調整全像影像。
 
-- **捲動**。 在應用程式列中，選取 **[滾動工具]**。 按一下並按住，然後向上、向下、向左或向右旋轉簡報導覽裝置。 若要快速滾動，請將您的手移至 [滾動工具] 的中央。
+- **滾動**。 在應用程式行上，選取 [ **Scroll Tool**]。 按一下並按住，然後將 clicker 向上、向下、向左或向右旋轉。 若要更快地滾動，請從滾動工具的中央移動您的手。
 
-- **縮放**。 在應用程式列中，選取 **[縮放工具]**。 按一下並按住，然後向上滾動簡報導覽裝置以放大，或向下旋轉以縮小。
+- **縮放**。 在應用程式行上，選取 [ **縮放] 工具**。 按一下並按住，然後將 clicker 向上旋轉以放大，或向下旋轉以縮小。
 
 > [!TIP]
-> 若要在使用 Microsoft Edge 時放大或縮小，請注視頁面並按兩下。
+> 若要在使用 Microsoft Edge 時放大或縮小，請在頁面上按一下，然後按兩下。
 
-## <a name="restart-or-recover-the-clicker"></a>重新開啟或復原簡報導覽裝置
+## <a name="restart-or-recover-the-clicker"></a>重新開機或復原 clicker
 
-如果 HoloLens 簡報導覽裝置沒有回應或無法運作，請嘗試以下的方法。
+以下是 HoloLens clicker 沒有回應或無法正常運作時，應嘗試的一些事項。
 
-### <a name="restart-the-clicker"></a>重新開啟簡報導覽裝置
+### <a name="restart-the-clicker"></a>重新開機 clicker
 
-使用觸筆的筆尖按下並按住配對按鈕。 同時，請按一下並按住簡報導覽裝置 15 秒。 如果簡報導覽裝置已經配對您的 HoloLens，它會在重新開啟後保持配對。
+使用畫筆的秘訣來按住配對按鈕。 同時，在15秒內按一下並按住 clicker。 如果 clicker 已經與您的 HoloLens 配對，它會在重新開機後保持配對。
 
-如果簡報導覽裝置無法開啟或重新開啟，請嘗試使用 HoloLens 充電器向其充電。 如果電量極為不足，可能需要幾分鐘的時間才能開啟白色指示器。
+如果 clicker 不會開啟或重新開機，請嘗試使用 HoloLens 充電器進行收費。 如果電池很低，則可能需要幾分鐘的時間，才會開啟白色指示器燈。
 
-### <a name="re-pair-the-clicker"></a>重新配對簡報導覽裝置
+### <a name="re-pair-the-clicker"></a>重新配對 clicker
 
-選取 **[設定]** > **[裝置]**，然後選取簡報導覽裝置。 選取 **[移除]**，稍候幾秒，然後再配對簡報導覽裝置。
+選取 [**設定**  >  **裝置**]，然後選取 [clicker]。 選取 [ **移除**]，等候幾秒鐘，然後再次將 clicker 配對。
 
-### <a name="recover-the-clicker"></a>復原簡報導覽裝置
+### <a name="recover-the-clicker"></a>復原 clicker
 
-如果重新開啟並重新配對簡報導覽裝置無法修正問題，Windows Device Recovery Tool 可協助您進行復原。 復原程式可能需要一些時間，且這會為您安裝最新版的簡報導覽裝置軟體。 若要使用此工具，您需要一部執行 Windows 10 或更高版本，且具備至少 4 GB 的可用儲存空間的電腦。
+如果重新開機並重新配對 clicker 無法修正問題，Windows 裝置修復工具可協助您進行復原。 復原程式可能需要一些時間，而且會安裝最新版本的 clicker 軟體。 若要使用此工具，您需要執行 Windows 10 或更新版本且至少有 4 GB 可用儲存空間的電腦。
 
-若要復原簡報導覽裝置:
+復原 clicker：
 
-1. 在您的電腦上下載並安裝 [Windows Device Recovery Tool](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/)。
-1. 使用 HoloLens 隨附的 Micro USB 連接線，將 簡報導覽裝置連接至您的電腦。
-1. 執行 Windows Device Recovery Tool 並依照指示操作。
+1. 在您的電腦上下載並安裝 [Windows 裝置修復工具](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) 。
+1. 使用 HoloLens 隨附的微型 USB 纜線將 clicker 連接到您的電腦。
+1. 執行 Windows 裝置修復工具，並遵循指示進行。
 
-如果系統未自動偵測到簡報導覽裝置，請選取 **[未偵測到我的裝置]** ，並依照指示將裝置置於復原模式。
+如果未自動偵測到 clicker，請選取 [ **我的裝置** 未偵測到]，並遵循指示將裝置進入修復模式。
