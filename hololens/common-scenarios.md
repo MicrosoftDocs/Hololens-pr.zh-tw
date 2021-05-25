@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4b9bd4335e45180276d69af2ce5f33a38ecb800f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 30a35fb0fe5d5b669249df25ebff0228b552596c
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308786"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397413"
 ---
 # <a name="common-infrastructure-deployment-scenarios-overview"></a>常見的基礎結構部署案例總覽
 
@@ -27,10 +27,12 @@ ms.locfileid: "108308786"
 
 ## <a name="scenarios"></a>案例
 
-下圖代表 HoloLens 2 部署的三個一般案例。
-![案例圖表](images/scenarios.jpg)
+下圖代表 HoloLens 2 部署的兩個典型受控案例。
+ 
 
-### <a name="scenario-a-deploy-to-cloud-connect-devices"></a>案例 A：部署至雲端 connect 裝置
+另外還有第三種情況允許離線的安全部署。
+
+### <a name="scenario-a-deploy-to-cloud-connected-devices"></a>案例 A：部署至雲端連接的裝置
 
 HoloLens 2 部署為主要用於公司網路外部的環境。 公司資源無法存取，或可能會透過 VPN 來限制。 此部署與公司內受管理的行動裝置類似。
  * 基本的一般設定
@@ -41,13 +43,19 @@ HoloLens 2 部署為主要用於公司網路外部的環境。 公司資源無�
    * 不同層級的裝置鎖定設定會根據特定使用案例套用，從完全開放到單一應用程式 Kiosk。
    * 透過 MDM 部署一或多個應用程式
 
+
+
 * 常見的挑戰
    * 根據案例需求，判斷要套用至 HoloLens 2 的 MDM 設定。
 
-如需類似案例 A 的部署指南，請參閱 [遠端協助的雲端連線 HoloLens 2](hololens2-cloud-connected-overview.md)指南。
+[![案例圖 ](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+
+如需類似于此案例的部署指南，請參閱《 [雲端連線環境部署指南](hololens2-cloud-connected-overview.md)》的指南。
 
 > [!div class="nextstepaction"]
-> [部署指南–與遠端協助的雲端連線 HoloLens 2](hololens2-cloud-connected-overview.md)
+> [雲端連線環境部署指南](hololens2-cloud-connected-overview.md)
+> [!div class="nextstepaction"]
+> [雲端連線環境 (外部用戶端) 部署指南](hololens2-deployment-guide.md)
 
 ### <a name="scenario-b-deploy-inside-your-organizations-network"></a>案例 B：在組織的網路內部署
 
@@ -67,8 +75,14 @@ HoloLens 2 部署在公司網路上，可存取內部公司資源。 網際網�
    * 由於 HoloLens 2 是雲端的第一部裝置，因此其高度依賴網際網路和雲端聯機服務來進行使用者驗證、作業系統更新、MDM 管理等等。 連線到公司網路時，可能需要調整 Proxy/防火牆規則，才能啟用 HoloLens 2 的存取，以及對其執行的應用程式。
    * 公司 Wi-Fi 連線通常需要憑證來向網路驗證裝置或使用者。 透過 MDM 將憑證部署到 Windows 10 裝置所需的基礎結構或設定，可能是設定的挑戰。
 
+[![案例 B1 圖表 ](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+
+[![案例 B2 圖表 ](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+如需類似于此案例的部署指南，請參閱《 [商業網路部署指南](hololens2-corp-connected-overview.md)》的指南。
+
 > [!div class="nextstepaction"]
-> [部署指南–與 Dynamics 365 的公司連線 HoloLens 2 指南](hololens2-corp-connected-overview.md)
+> [公司網路部署指南](hololens2-corp-connected-overview.md)
 
 ### <a name="scenario-c-deploy-in-secure-offline-environment"></a>案例 C：在安全的離線環境中部署
 
@@ -86,7 +100,9 @@ HoloLens 2 部署在公司網路上，可存取內部公司資源。 網際網�
    * 無法使用雲端服務，因此會限制 HoloLens 2 的功能。
    * 更高的系統管理負荷，因為這些裝置必須手動設定、設定和更新。
 
-如需類似于此案例的部署指南，請參閱我們的 [離線安全部署指南](hololens-common-scenarios-offline-secure.md)。
+[![離線安全圖 1 ](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+
+如需類似于此案例的部署指南，請參閱我們的 [離線安全環境部署指南](hololens-common-scenarios-offline-secure.md)。
 
 > [!div class="nextstepaction"]
-> [部署指南–離線安全 HoloLens 2](hololens-common-scenarios-offline-secure.md)
+> [離線安全環境部署指南](hololens-common-scenarios-offline-secure.md)

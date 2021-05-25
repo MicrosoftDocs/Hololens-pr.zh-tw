@@ -13,14 +13,14 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens
-ms.openlocfilehash: f57aea52337f7ca7e15bda1363f73a3a7265a025
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 1039af533b5039eb4eef6599c7cbb480955b0661
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308813"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397259"
 ---
-# <a name="troubleshooting"></a>疑難排解
+# <a name="troubleshoot-common-issues"></a>針對常見問題進行疑難排解
 
 本文說明如何解決數個常見的 HoloLens 問題。
 

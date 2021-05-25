@@ -1,6 +1,6 @@
 ---
 title: 管理 HoloLens 更新
-description: 瞭解系統管理員如何使用行動裝置管理來管理 HoloLens 裝置更新。
+description: 瞭解系統管理員如何使用行動裝置管理來管理 HoloLens 裝置的更新。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -11,207 +11,235 @@ ms.localizationpriority: high
 ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ms.custom:
 - CI 116337
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: fa31ab20b149ab62fa59e334f6710b98f2e826ff
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 6c9d1551b2a3348a6ff9962180c2d5552eb100f1
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284054"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397229"
 ---
-# 管理 HoloLens 更新
+# <a name="manage-hololens-updates"></a>管理 HoloLens 更新
 
-HoloLens 使用 Windows Update 的方式與其他 Windows 10 裝置相同。 當有可用的更新時，系統會在您下次插入裝置並聯線到網際網路時，自動下載並安裝。 本文說明如何管理企業或其他受管理環境中的更新。 如需如何管理個別 HoloLens 裝置更新的相關資訊，請參閱[更新 HoloLens](hololens-update-hololens.md)。
+HoloLens 使用 Windows Update 的方式與其他 Windows 10 裝置相同。 當有可用的更新時，系統會在您下次裝置插入並聯機到網際網路時，自動下載並安裝該更新。 本文說明如何在企業或其他受管理的環境中管理更新。 如需如何管理個別 HoloLens 裝置更新的詳細資訊，請參閱 [更新 HoloLens](hololens-update-hololens.md)。
 
-## 自動管理更新
+## <a name="manage-updates-automatically"></a>自動管理更新
 
-### 使用商務用 Windows Update 來管理更新
+### <a name="managing-updates-by-using-windows-update-for-business"></a>使用商務用 Windows Update 管理更新
 
-Windows Holographic for Business 可使用 [商務用 Windows Update](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) 來管理更新。 所有 HoloLens 2 裝置都可以使用 Windows Holographic for Business。 請確認其使用 Windows Holographic for Business 組建10.0.18362.1042 或更新版本。 如果您使用的是 HoloLens (第 1 代) 裝置，則必須[將其升級至 Windows Holographic for Business](hololens1-upgrade-enterprise.md)，以便管理其更新。
+Windows Holographic for Business 可以使用 [商務用 Windows Update](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) 來管理更新。 所有 HoloLens 2 裝置都可以使用 Windows Holographic for Business。 請確定它們使用 Windows Holographic for Business build 10.0.18362.1042 或更新版本的組建。 如果您有 HoloLens (第1代) 裝置，您必須將 [它們升級為 Windows Holographic for Business](hololens1-upgrade-enterprise.md) 才能管理其更新。
 
-商務用 Windows Update 會直接將 HoloLens 裝置連線至 Windows Update 服務。 使用商務用 Windows Update，您可以控制更新程序&mdash;的多個環節，例如哪些裝置在何時取得哪些更新。 例如，您可以階段推出更新到裝置的一個子集，以進行測試，之後再向其餘的裝置階段推出更新。 或者，您可以針對不同類型的更新定義不同的更新排程。
+商務用 Windows Update 直接將 HoloLens 裝置連接到 Windows Update 服務。 藉由使用商務用 Windows Update，您可以控制更新程式的多個層面 &mdash; ，也就是哪些裝置會在何時取得更新。 例如，您可以將更新推出到一部分的裝置以進行測試，然後再將更新推出到其餘的裝置。 或者，您可以針對不同類型的更新定義不同的更新排程。
 
 > [!NOTE]  
-> 針對 HoloLens 裝置，您可以自動管理功能更新 (每年發行兩次) 和品質更新 (按月或按需發行，包括重大安全性更新)。 如需更新類型的詳細資訊，請參閱[商務用 Windows Update 所管理的更新類型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)。
+> 若為 HoloLens 裝置，您可以自動管理功能更新 (每年發行兩次) 和品質更新 (每月發行或視需要發行，包括) 的重大安全性更新。 如需更新類型的詳細資訊，請參閱 [商務用 Windows Update 管理的更新類型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)。
 
-您可以使用行動裝置管理 (MDM) 解決方案 (例如 Microsoft Intune) 中的原則，來設定 HoloLens 的商務用 Windows Update 設定。
+您可以使用行動裝置管理 (MDM) 解決方案（例如 Microsoft Intune）中的原則，來設定 HoloLens 的商務用 Windows Update 設定。
 
-### 使用 Microsoft Intune 來管理商務用 Windows Update
+### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>使用 Microsoft Intune 管理商務用 Windows Update
 
-如需如何使用 Intune 來設定商務用 Windows Update 的詳細討論，請參閱[在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure)。 有關 HoloLens 支援的特定 Intune 功能的更多資訊，請參閱 [HoloLens 支援的 Intune 更新管理功能](#intune-update-management-functions-that-hololens-supports)。
+如需如何使用 Intune 設定商務用 Windows Update 的詳細討論，請參閱 [在 intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure)。 如需 HoloLens 支援之特定 Intune 功能的詳細資訊，請參閱 [hololens 支援的 intune 更新管理功能](#intune-update-management-functions-that-hololens-supports)。
 
 > [!IMPORTANT]  
-> Intune 提供管理更新的兩種原則類型： *Windows 10 更新通道*和 *Windows 10 版功能更新*。 Windows 10 功能更新原則類型目前處於公開預覽狀態，且不支援 HoloLens。
+> Intune 提供兩種用於管理更新的原則類型： *Windows 10 更新* 通道和 *Windows 10 功能更新*。 Windows 10 功能更新原則類型目前處於公開預覽狀態，且不支援 HoloLens。
 >  
-> 您可以使用 Windows 10 更新通道原則來管理 HoloLens 2 更新。
+> 您可以使用 Windows 10 更新響鈴原則來管理 HoloLens 2 更新。
 
-### 設定 HoloLens 2 或 HoloLens (第 1 代) 的更新原則
+### <a name="configure-update-policies-for-hololens-2-or-hololens-1st-gen"></a>設定 HoloLens 2 或 HoloLens (第1代) 的更新原則
 
-本節將說明可用來管理 HoloLens 2 或 HoloLens (第 1 代) 更新的原則。 如需有關針對 HoloLens 2 所提供功能的詳細資訊，請參閱[計畫及設定 HoloLens 2 的更新階段推出](#plan-and-configure-update-rollouts-for-hololens-2)。
+本節說明您可用來管理 HoloLens 2 或 HoloLens (第1代) 更新的原則。 如需 HoloLens 2 可用功能的詳細資訊，請參閱 [規劃和設定 HoloLens 2 的更新部署](#plan-and-configure-update-rollouts-for-hololens-2)。
 
-[原則 CSP - 更新](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update)會定義設定商務用 Windows Update 的原則。
-
-> [!NOTE]  
-> 如需特定版本 HoloLens 支援的特定原則設定服務提供者 (CSP) 清單，請參閱 [HoloLens 裝置支援的原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)。
-
-#### 設定自動檢查更新
-
-您可以使用 **Update/AllowAutoUpdate** 原則來管理自動更新行為，例如掃描、下載及安裝更新。 如需此原則可用設定的詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)。
+[原則 CSP-更新](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) 會定義設定商務用 Windows Update 的原則。
 
 > [!NOTE]  
-> 在 Microsoft Intune 中，您可以使用**自動更新行為** 來變更此原則。 如需詳細資訊，請參閱[管理 Intune 中的 Windows 10 軟體更新](https://docs.microsoft.com/intune/windows-update-for-business-configure)。
+> 如需特定版本 HoloLens 所支援之特定原則設定服務提供者 (Csp) 的清單，請參閱 [hololens 裝置所支援的原則 csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)。
 
-#### 設定更新排程
+#### <a name="configure-automatic-checks-for-updates"></a>設定自動檢查更新
 
-若要設定套用更新的方式和時間，請使用下列原則：
+您可以使用 **Update/AllowAutoUpdate** 原則來管理自動更新行為，例如掃描、下載及安裝更新。 如需此原則之可用設定的詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)。
+
+> [!NOTE]  
+> 在 Microsoft Intune 中，您可以使用 **自動更新行為** 來變更此原則。 如需詳細資訊，請參閱 [在 Intune 中管理 Windows 10 的軟體更新](https://docs.microsoft.com/intune/windows-update-for-business-configure)。
+
+#### <a name="configure-an-update-schedule"></a>設定更新排程
+
+若要設定套用更新的方式和時機，請使用下列原則：
 
 - [Update/ScheduledInstallDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday)  
-  - 值：**0** – **7** (0 = 每天、1 = 星期日、7 = 星期六) 
-  - 預設值：**0** (每天)
+  - 值： **0**–**7** (0 = 每天，1 = 星期日，7 = 星期六) 
+  - 預設值： **0** (每天) 
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
-  - 值：0–23 (0 = 午夜，23 = 下午 11 點) 
-  - 預設值：下午 3 點
+  - 值：0– 23 (0 = 午夜，23 = 11 PM) 
+  - 預設值： 3 PM
 
-#### 設定使用時間
-從 [Windows 全像攝影版，版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 開始，IT 系統管理員可以指定 HoloLens 2 裝置的使用時間範圍。
+#### <a name="configure-active-hours"></a>設定使用時間
+從 Windows 全像攝影 [版開始，20H2](hololens-release-notes.md#windows-holographic-version-20h2) IT 系統管理員可以指定 HoloLens 2 裝置的使用中時數範圍。
 
-[使用時間] 會識別您預期裝置處於使用中的一段時間。 更新之後的自動重新啟動會在使用時間之外發生。 指定的範圍將會從使用時間的開始時間來計算。 您可以如,[使用時間設定 MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) 中所述來使用 MDM。 MDM 使用 Policy CSP 中的 Update/ActiveHoursStart and Update/ActiveHoursEnd 和 Update/ActiveHoursMaxRange 設定來設定使用時間。
+[使用時間] 會識別您預期裝置處於使用中的一段時間。 更新之後的自動重新啟動會在使用時間之外發生。 指定的範圍將會從使用時間的開始時間來計算。 您可以如,[使用時間設定 MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) 中所述來使用 MDM。 MDM 會使用原則 CSP 中的 Update/ActiveHoursStart 和 Update/ActiveHoursEnd 和 Update/ActiveHoursMaxRange 設定來設定使用中的時數。
 
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - 此值設定結束時間。 從開始時間起最多 12 小時。
-    -   支援的值為 0-23，其中 0 為上午 12 點，1 為上午 1 點，依此類推。
-    -   預設值為 17 (下午 5 點)。
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - 此值設定從開始時間起的最大使用時間 (小時) 數。
-    -   支援的值為 8-18。
-    -   預設值為 18 (小時)。
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - 此值設定開始時間。 從結束時間起最多 12 小時。
-    -   支援的值為 0-23，其中 0 為上午 12 點，1 為上午 1 點，依此類推。
-    -   預設值為 8 (上午8點)。
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) -此值會設定結束時間。 從開始時間最多可有12小時的時間。
+    -   支援的值為0-23，其中0是上午12點，1是上午1點，依此類推。
+    -   預設值為 17 (下午5點) 。
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) -此值會設定從開始時間起的最大作用中時數。
+    -   支援的值為8-18。
+    -   預設值為 18 (小時) 。
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) -此值會設定開始時間。 結束時間最多可達12個小時。
+    -   支援的值為0-23，其中0是上午12點，1是上午1點，依此類推。
+    -   預設值為 8 (上午8點) 。
 
-#### 僅限執行 Windows 10 版本1607 的裝置
+#### <a name="for-devices-that-run-windows-10-version-1607-only"></a>針對執行 Windows 10 的裝置，僅限1607版
 
-您可以使用下列更新原則將裝置設定為從 Windows Server Update Services (WSUS) 取得更新，而非從 Windows Update：
+您可以使用下列更新原則，將裝置設定為從 Windows Server Update Service (WSUS) （而不是從 Windows Update 取得更新：
 
 - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
-### 規劃和設定 HoloLens 2 的更新階段性推出
+### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>規劃和設定 HoloLens 2 的更新部署
 
-HoloLens 2 比 HoloLens (第 1 代) 支援更多更新自動化功能。 如果您使用 Microsoft Intune 來管理商務用 Windows Update 原則，則尤其如此。 這些功能可讓您更輕鬆地在組織中規劃和實施更新階段性推出。
+HoloLens 2 支援比 HoloLens (第一代) 更多的更新自動化功能。 尤其是當您使用 Microsoft Intune 管理商務用 Windows Update 原則時更是如此。 這些功能可讓您更輕鬆地在整個組織中規劃和執行更新的部署。
 
-#### 規劃更新策略
+#### <a name="plan-the-update-strategy"></a>規劃更新策略
 
-商務用 Windows Update 有支援延遲原則。 Microsoft 發行更新之後，您可以使用延遲原則，來定義在裝置上安裝該更新之前要等待多久。 將裝置的子集 (又稱為*更新通道*) 與不同的延遲原則相關聯，您就可以協調貴組織的更新階段性推出策略。
+商務用 Windows Update 支援延遲原則。 Microsoft 發行更新之後，您可以使用延遲原則來定義在裝置上安裝該更新之前要等待的時間長度。 藉由將您的裝置子集 (也稱為 *更新* 通道) 具有不同的延遲原則，您可以為組織協調更新推出策略。
 
-例如假設組織擁有1,000 個裝置，且必須以五波更新裝置。 組織可以建立五個更新通道，如下表所示。
+例如，假設有一個具有1000裝置的組織，而且必須在五個波內更新裝置。 組織可以建立五個更新響鈴，如下表所示。
 
-|群組 |裝置數量 |延遲 (天)  |
+|Group |裝置數目 |延遲 (天)  |
 | ---| :---: | :---: |
-|群組 1 (IT 員工) |5 |0 |
-|群組 2 (早期採用者) |50 |60 |
-|群組 3 (主要 1) |250 |120 |
-|群組 4 (主要 2) |300 |150 |
-|群組 5 (主要 3) |395 |180 |
+|Grp 1 (IT 人員)  |5 |0 |
+|Grp 2 (早期採用者)  |50 |60 |
+|Grp 3 (主要 1)  |250 |120 |
+|Grp 4 (主要 2)  |300 |150 |
+|Grp 5 (主要 3)  |395 |180 |
 
-以下是一段時間之後，階段推出在整個組織的進展方式。
+以下是在一段時間內首度推出到整個組織的方式。
 
-![部署更新的時間表](./images/hololens-updates-timeline.png)
+![部署更新的時程表](./images/hololens-updates-timeline.png)
 
-#### 設定更新延遲原則
+#### <a name="configure-an-update-deferral-policy"></a>設定更新延遲原則
 
-延遲原則是指定更新可用的日期，以及更新提供給裝置使用的日期之間的天數。
+延遲原則會指定更新可供使用的日期與將更新提供給裝置的日期之間的天數。
 
-您可以設定不同的延遲來進行功能更新和品質更新。 下表列出每一類型使用的特定原則和每個類別的最大延遲。
+您可以為功能更新和品質更新設定不同的延期。 下表列出每個類型要使用的特定原則，以及每個類型的最大延遲。
 
 |類別 |原則 |延遲上限 |
 | --- | --- | --- |
 |功能更新 |DeferFeatureUpdatesPeriodInDays |365 天 |
 |品質更新 |DeferQualityUpdatesPeriodInDays |30 天 |
 
-#### 透過裝置暫停更新
+#### <a name="pause-updates-via-device"></a>透過裝置暫停更新
 
-如果使用者沒有 MDM 的存取權，他們可以在 [2004 版或更高版本的 Windows 全像攝影版](hololens-release-notes.md#windows-holographic-version-2004)的 HoloLens 2 裝置上手動暫停更新 35 天。 用戶可以透過瀏覽至 **[設定] -> [更新與安全性] -> [進階選項]** 向下捲動以**暫停更新**，並選擇暫停更新的日期。 一旦使用者達到暫停限制，裝置將需要取得新的更新，因為它們可以再次暫停。 
+如果使用者沒有 MDM 的存取權，他們可以在組建 Windows 全像 [2004 版](hololens-release-notes.md#windows-holographic-version-2004) 或更新版本的 HoloLens 2 裝置上，手動暫停最多35天的更新。 使用者可以藉由流覽至 [ **設定]-[設定] > [更新] & [安全性] > [Advanced options** ] 向下滾動以 **暫停更新** ，然後選取要暫停更新的日期。 一旦使用者達到暫停限制，裝置將需要取得新的更新，因為它們可以再次暫停。 
 
-從 [20H2 版 Windows 全像攝影版](hololens-release-notes.md#windows-holographic-version-20h2)開始，這個暫停更新功能可以為 Hololens 2 裝置管理。 
+從 Windows 全像 [20H2 版](hololens-release-notes.md#windows-holographic-version-20h2)開始，可針對 HoloLens 2 裝置管理此暫停更新功能。 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)。
-    - 0 (預設值)：已啟用。
-    - 1 – 已停用。
+    - 0 (預設) –已啟用
+    - 1–已停用
 
-#### HoloLens 支援的 Intune 更新管理功能
+#### <a name="intune-update-management-functions-that-hololens-supports"></a>HoloLens 支援的 Intune 更新管理功能
 
-您可以使用下列 Intune 更新管理功能來管理 HoloLens 更新。
+您可以使用下列 Intune 更新管理功能來管理 HoloLens 的更新。
 
-- **建立**和**指派**：這些函數會將 Windows 10 更新通道新增到更新通道清單中。 如需詳細資訊，請參閱[建立並指派更新通道](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)。
+- **建立** 並 **指派**：這些函式會將 Windows 10 更新通道新增至更新通道清單。 如需詳細資訊，請參閱 [建立和指派更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)通道。
 
-- **暫停**：如果在部署功能或品質更新時遇到問題，您可以暫停更新 35 天 (從指定日期開始)。 當您解決或緩解問題之前，暫停會防止其他裝置安裝更新。 如果您暫停功能更新，系統仍會提供品質更新，以確保其保持安全。 當更新類型暫停時，該通道的 [概觀] 窗格會顯示該更新類型繼續前剩餘的天數。 經過指定時間後，暫停會自動到期，而更新程式會繼續進行。
+- **暫停**：如果您在部署功能或品質更新時遇到問題，您可以將更新從指定的日期) 開始 (暫停35天。 此暫停會防止其他裝置安裝更新，直到您解決或緩和問題為止。 如果您暫停功能更新，仍會提供品質更新給裝置，以確保它們保持安全。 暫停某個更新類型時，該通道的 [概觀] 窗格會顯示在多少天之後，該更新類型才會繼續。 經過指定的時間之後，暫停會自動到期，更新程式就會繼續。
 
   當更新通道暫停時，您可以選取下列其中一個選項：
 
-  - **延長**：將更新類型的暫停時間延長 35天。
-  - **繼續**：將該通道的更新還原為使用中的作業。 您可以視需要再次暫停更新通道。
+  - **延長**：延長35天更新類型的暫停期間。
+  - **繼續**：將該通道的更新還原至使用中的作業。 如有必要，您可以再次暫停更新通道。
 
   > [!NOTE]  
-  > HoloLens 2 裝置不支援更新通道的 [解除安裝]**** 作業。
+  > HoloLens 2 的裝置不支援更新通道的 **卸載** 操作。
 
-## 手動檢查更新
+### <a name="delivery-optimization-preview"></a>傳遞最佳化預覽
 
-雖然 HoloLens 會定期檢查系統更新，但有時候您可能會想手動檢查。
+[Windows 全像21H1 版](hololens-release-notes.md#windows-holographic-version-21h1) 已啟用傳遞優化設定的早期預覽，可減少從多個 HoloLens 裝置下載的頻寬耗用量。 您可以在這裡找到這項功能的完整說明，以及建議的網路設定： [Windows 10 更新的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。
 
-若要手動檢查更新，請移至 [設定]****  >  [更新 & 安全性]****  >  [檢查更新]****。 如果 [設定] 應用程式指出您的裝置為最新狀態，表示已擁有目前可用的所有更新。
+下列設定會在管理介面中啟用，並且 [可從 Intune 設定](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)：
 
-## 手動復原更新
+- [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
+- [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
+- [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
+- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
+- [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
+- [DOMaxBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
+- [DOMaxForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
+- [>dopercentagemaxbackgroundbandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+- [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+- [>dosethourstolimitforegrounddownloadbandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+- [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 
-在某些情況下，您可能會想還原到舊版的 HoloLens 軟體。 執行此作業的程序取決於您使用的是 HoloLens 2 或 HoloLens (第 1 代)。
+關於此預覽供應專案的一些注意事項：
 
-### 還原為先前版本 (HoloLens 2)
+- HoloLens 支援僅限在此預覽版中提供作業系統更新。
+- Windows Holographic for Business 僅支援來自 [Microsoft 網內快取端點](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache)的 HTTP 下載模式和下載;HoloLens 裝置目前不支援對等下載模式和群組指派。
+- HoloLens 不支援 Windows Server Update Services 端點的部署或傳遞優化。
+- 疑難排解將需要網內快取伺服器上的診斷，或透過 [**設定**  >  **更新] & 安全性**  >   **疑難排解**  >   **Windows Update**，在 hololens 上收集的追蹤。
 
-您可以使用 [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) 將您的 HoloLens 重設為較舊的版本，以復原更新並返回舊版的 HoloLens 2。
+## <a name="manually-check-for-updates"></a>手動檢查更新
+
+雖然 HoloLens 會定期檢查系統更新，但在某些情況下，您可能會想要手動檢查。
+
+若要手動檢查更新，請移至 [**設定**  >  **更新 & 安全性**  >  **檢查更新**]。 如果設定應用程式指出您的裝置為最新狀態，則會有所有目前可用的更新。
+
+## <a name="manually-roll-back-an-update"></a>手動復原更新
+
+在某些情況下，您可能會想要還原為先前版本的 HoloLens 軟體。 執行此作業的程式取決於您是使用 HoloLens 2 或 HoloLens (第1代) 。
+
+### <a name="revert-to-a-previous-version-hololens-2"></a>還原為先前的版本 (HoloLens 2) 
+
+您可以復原更新，並回到舊版的 HoloLens 2，方法是使用 [Advanced Recovery 隨附](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) 的，將 HoloLens 重設為較舊版本。
 
 > [!NOTE]
-> 還原為較舊的版本會刪除您的個人檔案和設定。
+> 還原為較早的版本會刪除您的個人檔案和設定。
 
-若要還原為先前版本的 HoloLens 2，請遵循下列步驟：
+若要還原為舊版 HoloLens 2，請遵循下列步驟：
 
-1. 請確認您沒有任何手機或 Windows 裝置插入電腦。
-1. 在您的電腦上，從 Microsoft Store下載 [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab)。
-1. 下載[最新的 HoloLens 2 發行版本](https://aka.ms/hololens2download)。
-1. 下載完成後，請開啟**檔案總管** > [下載]****，以滑鼠右鍵按一下您剛下載的壓縮 (.zip) 資料夾，然後選取 [解壓全部]**** > [解壓縮]**** 來展開檔案。
-1. 使用 USB-A 轉 USB-C 纜線將您的 HoloLens 裝置連線至電腦。 (即使您過去一直是使用其他纜線來連接 HoloLens，以上仍是最適合的纜線)。
-1. Advanced Recovery Companion 會自動偵測您的 HoloLens 裝置。 選取 [Microsoft HoloLens]**** 動態磚。
-1. 在下一個畫面中，選取 [手動套件選取]****，然後開啟先前展開的資料夾。
-1. 選取安裝 (.ffu) 檔案。
-1. 選取 [安裝軟體]****，然後依照指示進行。
+1. 確定您的電腦未插入任何電話或 Windows 裝置。
+1. 在您的電腦上，下載 Microsoft Store 的 [Advanced Recovery 附隨](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) 。
+1. 下載 [最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
+1. 完成這些下載之後，請開啟 [檔案 **瀏覽器**  >  **下載**]，以滑鼠右鍵按一下您剛剛下載的壓縮 ( .zip) 資料夾，然後選取 [**解壓縮所有**  >  **解壓縮**] 以展開檔案。
+1. 使用 USB-A 至 USB-C 纜線將 HoloLens 裝置連接到電腦。 即使您已使用其他纜線連接 HoloLens，這種纜線的效果最好。
+1. Advanced Recovery 隨附會自動偵測您的 HoloLens 裝置。 選取 **Microsoft HoloLens** 圖格。
+1. 在下一個畫面中，選取 [ **手動封裝選取**]，然後開啟您先前展開的資料夾。
+1. 選取安裝 ( ffu) 檔。
+1. 選取 [ **安裝軟體**]，然後依照指示進行。
 
-### 還原為先前版本 (HoloLens (第1代))
+### <a name="revert-to-a-previous-version-hololens-1st-gen"></a>還原為先前的版本 (HoloLens (第1代) ) 
 
-您可以使用 [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379) 將您的 HoloLens 重設為較舊的版本，以便復原更新並返回舊版 HoloLens (第 1 代)。
+您可以使用 [Windows 裝置復原工具 (WDRT) ](https://support.microsoft.com/help/12379) 將 hololens 重設為較早的版本，以回復更新並回到先前版本的 HoloLens (第1代) 。
 
 > [!NOTE]
-> 還原為較舊的 HoloLens 版本會刪除您的個人檔案和設定。
+> 還原為較早的 HoloLens 版本會刪除您的個人檔案和設定。
 
-若要還原為先前版本 HoloLens (第1代) ，請遵循下列步驟：
+若要還原為舊版 HoloLens (第1代) ，請遵循下列步驟：
 
-1. 請確認您沒有任何手機或 Windows 裝置插入電腦。
-1. 在您的電腦上，下載 [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379)。
-1. 下載 [HoloLens 年度更新版復原套件](https://aka.ms/hololensrecovery)。
-1. 下載完成後，請開啟**檔案總管** > [下載]****，以滑鼠右鍵按一下您剛下載的壓縮 (.zip) 資料夾，然後選取 [解壓全部]**** > [解壓縮]**** 來展開檔案。
-1. 使用隨附於 HoloLens 裝置的 micro-USB 纜線，將您的 HoloLens 裝置連線至電腦。 即使您已使用其他纜線來連接 HoloLens 裝置，這仍是最適合的纜線。
-1. WDRT 會自動偵測您的 HoloLens 裝置。 選取 [Microsoft HoloLens]**** 動態磚。
-1. 在下一個畫面中，選取 [手動套件選取]****，然後開啟先前展開的資料夾。
-1. 選取安裝 (.ffu) 檔案。
-1. 選取 [安裝軟體]****，然後依照指示進行。
+1. 確定您沒有任何電話或 Windows 裝置插入電腦。
+1. 在您的電腦上，下載 [Windows 裝置修復工具 (WDRT) ](https://support.microsoft.com/help/12379)。
+1. 下載 [HoloLens 年度更新修復套件](https://aka.ms/hololensrecovery)。
+1. 下載完成之後，請開啟 [檔案 **瀏覽器**  >  **下載**]，以滑鼠右鍵按一下您剛剛下載的壓縮 ( .zip) 資料夾，然後選取 [**解壓縮所有**  >  **解壓縮**] 以展開檔案。
+1. 使用與 HoloLens 裝置一起提供的微型 USB 纜線，將 HoloLens 裝置連接到您的電腦。 即使您已使用其他纜線來連接 HoloLens 裝置，但這種方式的效果最佳。
+1. WDRT 會自動偵測您的 HoloLens 裝置。 選取 **Microsoft HoloLens** 圖格。
+1. 在下一個畫面中，選取 [ **手動封裝選取**]，然後開啟您先前展開的資料夾。
+1. 選取安裝 ( ffu) 檔。
+1. 選取 [ **安裝軟體**]，然後依照指示進行。
 
-**如果 WDRT 不會偵測您的裝置**
+**如果 WDRT 未偵測到您的裝置**
 
-如果 WDRT 不會偵測您的 HoloLens 裝置，請嘗試重新啟動電腦。 如果仍然無法解決問題，請選取 [沒有偵測到我的裝置]****，選取 **Microsoft HoloLens**，然後按照指示進行。
+如果 WDRT 未偵測到 HoloLens 裝置，請嘗試重新開機電腦。 如果無法運作，請選取 [ **未偵測到我的裝置**]，選取 [ **Microsoft HoloLens**]，然後依照指示進行。
 
-## 相關文章
+## <a name="related-articles"></a>相關文章
 
 - [HoloLens 2 版本資訊](https://docs.microsoft.com/hololens/hololens-release-notes)
-- [什麼是商務用 Windows Update?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [什麼是商務用 Windows Update？](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
 - [指派裝置到維護通道進行 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)

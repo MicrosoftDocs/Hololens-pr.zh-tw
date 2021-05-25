@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3041a31e6a4f8b51385fa02dfddc21d56993721d
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308933"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397193"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>部署指南-使用 Dynamics 365 指南的公司連線 HoloLens 2-總覽
 
@@ -52,9 +52,11 @@ ms.locfileid: "108308933"
 - Power BI Desktop
 - 網路連線
 
-![Corp 連接的網狀圖表](./images/corpconnected-diagHL2-guides.png)
+[![Corp 連接的網狀圖表，第 1 ](./images/deployment-guides-revised-scenario-b-01-1.png) 階段](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-## <a name="stages-of-deployment"></a>部署階段
+[![Corp 連接的網狀圖表，第 2 ](./images/deployment-guides-revised-scenario-b-02-1.png) 階段](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+## <a name="in-this-guide-you-will"></a>在本指南中，您將會：
 ### <a name="prepare"></a>準備
 > [!div class="checklist"]
 >- [瞭解 HoloLens 2 裝置的基礎結構基本資訊。](hololens2-corp-connected-prepare.md#infrastructure-essentials)

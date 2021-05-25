@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: cf2abe249e40e522b4d8993449b9f19033a64744
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308966"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397399"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>使用布建套件來設定 HoloLens
 
@@ -106,7 +106,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 1. 在 Windows 設定設計工具開始頁面中，選取 **\[進階佈建\]**。
 2. 在 **\[輸入專案詳細資料\]** 視窗中，指定您的專案名稱以及專案的位置。 (選用) 請輸入您專案的簡述。
 
-3. 選取 [下一步] 。
+3. 選取 [下一步]  。
 
 4. 在 [ **選擇要查看和設定的設定** ] 視窗中，選取 [ **Windows 10 全像攝影版**]，然後選取 **[下一步**]。
 
@@ -126,7 +126,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
     
 9. 選取 [**匯出** 布建  >  **套件**]。
 
-10. 將 **擁有** 者變更為 **IT 管理員**。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。 選取 [下一步] 。
+10. 將 **擁有** 者變更為 **IT 管理員**。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。 選取 [下一步]  。
 
 11. 設定 \[套件版本\] 的值。
 
@@ -142,7 +142,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 
     （選擇性）您可以選取 **[流覽]** 來變更預設的輸出位置。
 
-14. 選取 [下一步] 。
+14. 選取 [下一步]  。
 
 15. 選取 [ **建立** ] 以開始建立套件。 專案資訊會顯示在建置頁面，進度列可指示建置狀態。
 
@@ -212,10 +212,10 @@ Windows 全像 [20H2 版](hololens-release-notes.md#windows-holographic-version-
 
 現在已設定您的裝置，並會顯示布建成功畫面。
 
-## <a name="apply-a-provisioning-package-to-hololens-after-setup"></a>在安裝後將布建套件套用至 HoloLens
+## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>在安裝後將布建套件套用/移除至 HoloLens
 
 > [!NOTE]
-> 這些步驟僅適用于 Windows 10 版本1809。
+> 這些步驟適用于 Windows 全像1809版和更新版本上的所有 HoloLens 2 裝置和 HoloLens (第1代) 裝置。
 
 在您的電腦上，遵循下列步驟：
 1. 建立布建套件，如 [使用 hololens Wizard 建立 hololens 的布建套件](hololens-provisioning.md)中所述。
@@ -237,7 +237,7 @@ Windows 全像 [20H2 版](hololens-release-notes.md#windows-holographic-version-
 
 ![HoloLens 的通用執行階段設定](images/icd-settings.png)
 
-| 設定 | Description |
+| 設定 | 描述 |
 | --- | --- |
 | **憑證** | 將憑證部署至 HoloLens。  |
 | **ConnectivityProfiles** | 將 Wi-Fi 設定檔部署至 HoloLens。   |

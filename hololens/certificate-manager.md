@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9d221321adcb8062206695e3e610d35dee14523e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f9dcf98cbd200ac54cd786648fdfe286bff1aa00
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308342"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397449"
 ---
 # <a name="certificate-manager"></a>憑證管理員
 
@@ -46,6 +46,8 @@ ms.locfileid: "108308342"
 憑證現在應該會安裝在裝置上。
 
 ## <a name="to-remove-a-certificate"></a>若要移除憑證： 
+>[!WARNING]
+> 雖然您可以在 [憑證管理員] 中查看 MDM 部署的憑證，但無法在 [憑證管理員] 中將其卸載。 您必須透過 MDM 將其卸載。
 1. 流覽至 [ **設定] 應用程式 > 更新和安全性 > 憑證**。
 1. 在搜尋方塊中搜尋憑證（依名稱）。
 1. 選取憑證。
@@ -53,6 +55,7 @@ ms.locfileid: "108308342"
 1. 系統提示您確認時，請選取 [是]。
 
 
-![Ceritifcates 下的 [設定] 應用程式中的憑證檢視器](images/certificate-viewer-device.jpg)
+
+![憑證檢視器設定應用程式中的憑證檢視器](images/certificate-viewer-device.jpg)
 
 ![顯示如何使用憑證 UI 在設定中安裝憑證的圖片。](images/certificate-device-install.jpg)
