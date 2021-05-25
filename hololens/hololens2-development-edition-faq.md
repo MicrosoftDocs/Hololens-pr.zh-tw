@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f7ee1849e51132f0e3d30585cfed6a89ecfee2a9
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308294"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397629"
 ---
 # <a name="hololens-2-development-edition-faq"></a>HoloLens 2 開發版常見問題
 
@@ -31,7 +31,7 @@ HoloLens 2 的開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Un
 
 ### <a name="what-is-the-difference-between-hololens-2-and-hololens-2-development-edition"></a>HoloLens 2 與 HoloLens 2 開發版之間有何差異？
 
-您只能使用 HoloLens 2 開發版來建立和測試內部企業應用程式，以便與生產環境設定中的 HoloLens 2 (商用版本) 搭配使用。 在購買開發版的過程中，Microsoft 可能會自行決定是否要在結帳過程中提供您特定的權利。 這些權利包括在有限期間內兌換特定 Microsoft 或協力廠商服務或工具的特定折扣點數或試用版存取權。 [深入了解](hololens2-options.md#learn-about-the-development-edition)
+您只能使用 HoloLens 2 開發版來建立和測試內部企業應用程式，以便與生產環境設定中的 HoloLens 2 (商用版本) 搭配使用。 在購買開發版的過程中，Microsoft 可能會自行決定是否要在結帳過程中提供您特定的權利。 這些權利包括在有限期間內兌換特定 Microsoft 或協力廠商服務或工具的特定折扣點數或試用版存取權。 [深入了解](hololens2-options-dev-edition.md)
 
 ### <a name="can-any-edition-of-hololens-2-be-used-to-develop"></a>是否可以使用任何版本的 HoloLens 2 來進行開發？
 
@@ -53,9 +53,9 @@ Unity Pro 是適用于小型/中型工作室/公司的即時3D 平臺。 它是�
 
 Pixyz 外掛程式會讀取及轉換幾乎任何格式、將其優化並放在 Unity 中，並將其階段提供給即時應用程式的立即可用資產。 [深入了解](https://unity.com/products/pixyz)
 
-### <a name="when-will-financing-for-the-hololens-2-development-edition-be-available"></a>何時會提供 HoloLens 2 開發版的融資？
+### <a name="is-financing-for-the-hololens-2-development-edition--available"></a>是否有 HoloLens 2 開發版的融資？
 
-HoloLens 2 開發版的融資將于2021年初推出。
+是的， [HoloLens 2 開發版的融資](https://ms.liftforward.com/hololens?product=hololens-development-edition) 現在僅適用于美國地區。 
 
 ### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>誰可以聯絡 HoloLens 2 開發版權利的相關問題？
 

@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308720"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397689"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>重新開機、重設或復原 HoloLens (第1代) 
 
@@ -121,7 +121,7 @@ HoloLens 針對重設所需的資料封裝在完整的 Flash 更新 (FFU) ，類
 
 1. 從任何電源線拔下裝置。
 1. 如果裝置已開啟，請按住 **電源** 按鈕，直到完全關閉為止。
-2. 按住 **音量** 按鈕，並短暫地點一下 **電源** 按鈕。 裝置應該會啟動，並只顯示中間 LED 燈。
+2. 按住 **音量** 按鈕，並短暫地點一下 **電源** 按鈕。 裝置應該會啟動，而且只會顯示中間 LED。
 3. 將裝置插入您的電腦。
 4. 開啟 Windows 裝置修復工具。
 5. 選取 [ **我的裝置未偵測到** ]，然後選取 [ **HoloLens**]。 

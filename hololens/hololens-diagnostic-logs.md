@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4a360e99a45b855957e36dd6ba31ede3da9631ba
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: c1d5205d4faa4384600c489167c9581de8e4b62c
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308913"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397839"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>收集和使用 HoloLens 裝置的診斷資訊
 
@@ -46,7 +46,7 @@ HoloLens 使用者和系統管理員可以從四種不同的方法中進行選�
 |[DiagnosticLog CSP](#diagnosticlog-csp) |網路連線<br /><br />支援 DiagnosticLog CSP 的 MDM 環境 |系統管理員設定儲存位置 |在受管理的環境中，使用者會以隱含的方式同意資料的系統管理員存取權。<br /><br />系統管理員設定存取角色和許可權。 | 資料會保留在雲端儲存體中，而且系統管理員會設定保留原則。 |
 |[離線診斷](#offline-diagnostics) |裝置設定：<ul><li>開啟電源並連接到電腦</li><li>電源和音量按鈕正常運作</li></ul> |HoloLens 裝置<br /><br />連接的電腦 |使用者會儲存資料，而且只有使用者會 (存取資料，除非使用者與其他使用者) 明確共用資料。 |資料會保留在裝置上，直到使用者刪除為止。 |
 
-- 終端使用者負責以負責任的方式與他人共用記錄。 這些檔案在聯繫客戶服務和支援時，主要很有用。  
+* 終端使用者負責以負責任的方式與他人共用記錄。 這些檔案在聯繫客戶服務和支援時，主要很有用。  
 
 ## <a name="feedback-hub"></a>意見反應中樞
 
@@ -55,6 +55,8 @@ HoloLens 使用者可以使用 Microsoft 意見反應中樞 desktop 應用程式
 > [!NOTE]  
 > **商業或企業使用者：** 如果您使用意見反應中樞應用程式來報告與 MDM、布建或任何其他裝置管理方面相關的問題，請將應用程式類別變更為 **企業管理**  >  **裝置類別**。
 
+>[!IMPORTANT]
+> 為了提供修正問題的最佳可能資料，強烈建議您將裝置遙測設定為 **選擇性**。 您可以在 (OOBE) 的全新體驗期間，或使用 [ **設定** ] 應用程式來設定此值。 若要使用設定來完成這項操作，請選取 [ **開始 > 設定] > [> 應用程式診斷 >**]。
 ### <a name="prerequisites"></a>必要條件
 
 - 裝置已連線到網路。
@@ -67,6 +69,7 @@ HoloLens 使用者可以使用 Microsoft 意見反應中樞 desktop 應用程式
 意見反應中樞提供兩個位置讓使用者儲存診斷資訊：
 
 - **Microsoft 雲端**。 使用者使用意見反應中樞應用程式上傳的資料會儲存在與下一代隱私權一致 (NGP) 需求的天數內。 Microsoft 員工可以使用 NGP 相容的檢視器來存取這段期間的資訊。
+
    > [!NOTE]  
    > 這些需求適用于所有意見反應中樞類別中的資料。
 
@@ -74,16 +77,23 @@ HoloLens 使用者可以使用 Microsoft 意見反應中樞 desktop 應用程式
 
 ## <a name="settings-troubleshooter"></a>設定疑難排解員
 
-HoloLens 使用者可以使用裝置上的 [設定] 應用程式，針對問題進行疑難排解，並收集診斷資訊。 若要這樣做，請遵循下列步驟：
+HoloLens 使用者可以使用裝置上的 [ **設定** ] 應用程式，針對問題進行疑難排解，並收集診斷資訊。 若要這樣做，請遵循下列步驟：
 
 1. 開啟 [設定] 應用程式，然後選取 [**更新 & 安全性**  >  **疑難排解**] 頁面。
 1. 選取適當的區域，然後選取 [ **開始**]。
 1. 重現問題。
 1. 重現問題之後，請返回 [設定]，然後選取 [ **停止**]。
 
+使用者也可以從 [ **設定** ] 應用程式設定回溯診斷的行為。 流覽至 [ **隱私權-> 疑難排解** ] 頁面，以設定此設定。
+> [!NOTE]
+> 如果裝置已設定 MDM 原則，使用者將無法覆寫該行為。
+
+### <a name="os-update-troubleshooter"></a>作業系統更新疑難排解員
+組建 Windows 全像 [21H1 版 ](hololens-release-notes.md#windows-holographic-version-21h1) 和更新版本：
+- 除了「設定」應用程式內的先前疑難排解工具之外，還新增了新的疑難排解員，新增了新的「設定」應用程式以進行 OS 更新。 流覽至 [ **設定]-> 更新 & 安全性-> 疑難排解-> Windows Update** ，然後選取 [ **啟動**]。 這可讓您在使用作業系統更新重現問題時收集追蹤，以協助您更妥善地針對 IT 或支援進行疑難排解。
 ### <a name="prerequisites"></a>必要條件
 
-- [設定] 應用程式會安裝在裝置上，並可供使用者使用。
+- [ **設定** ] 應用程式會安裝在裝置上，並可供使用者使用。
 
 ### <a name="data-locations-access-and-retention"></a>資料位置、存取和保留期
 
@@ -152,4 +162,4 @@ Windows 全像 [版本20H2 之前的](hololens-release-notes.md#windows-holograp
 7.  複製診斷 ZIP 檔案，並與 Microsoft 支援小組分享。
 
 > [!NOTE]
-> 某些診斷 ZIP 檔案可能包含個人識別資訊。
+> 某些診斷 ZIP 檔案可能包含 PII。

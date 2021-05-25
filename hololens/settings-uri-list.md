@@ -1,11 +1,11 @@
 ---
 title: 頁面設定可見度
-description: 在 HoloLens 混合實境裝置上，使用 PageVisibilityList 和 [指南] 的支援 URI 清單，以隨時掌握最新資訊。。
+description: 隨時掌握最新支援的 Uri 清單，以取得 HoloLens 混合現實裝置的 PageVisibilityList 和指南。
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
 ms.topic: article
-keywords: hololens, hololens 2, 指定存取, kiosk, 設定頁面
+keywords: hololens、hololens 2、指派的存取、kiosk、設定頁面
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -13,124 +13,156 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f004f39f4b69748e8c36ad93111f4423d14c40f3
-ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
-ms.translationtype: HT
+ms.openlocfilehash: b5779ffa1de1700b4fcd17fc17b8ae3a82a45c22
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327387"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397869"
 ---
-# 頁面設定可見度
+# <a name="page-settings-visibility"></a>頁面設定可見度
 
-HoloLens 裝置易管理的其中一項功能是使用 [設定/PageVisibilityList 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) 來限制 [設定] 應用程式中可看到的頁面。 PageVisibilityList 為一種原則，可讓 IT 系統管理員禁止顯示或存取 [系統設定] 應用程式中的特定頁面，或對特定頁面外的所有頁面執行此動作。
-
-> [!NOTE]
-> 此功能僅適用于 HoloLens 2 裝置的 [Windows 全息版，版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)。 請確定您想要使用此功能的裝置已更新。
+HoloLens 裝置的其中一個可管理功能是使用 [settings/PageVisibilityList 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) 來限制在 [設定] 應用程式中看到的頁面。 PageVisibilityList 是一項原則，可讓 IT 系統管理員防止顯示或存取系統設定應用程式中的特定頁面，或針對所有頁面（除了指定的頁面以外）進行設定。
 
 > [!NOTE]
-> 即將新增 20 多個新 SettingsURIs。 如果您有興趣在 [HoloLens Insider](hololens-insider.md) build 上預覽此設定，請檢視 [Windows Insider 頁面 - 頁面設定可見度的新 SettingsURIs](hololens-insider.md#new-settingsuris-for-page-settings-visibility)。
+> 這項功能僅適用于 HoloLens 2 裝置的 Windows 全像20H2 或更高 [版本](hololens-release-notes.md#windows-holographic-version-20h2) 的 avalible。 請確定您想要使用此裝置的裝置已更新。
 
-下列範例說明只允許存取 [關於] 和 [藍牙] 頁面的原則，其中分別有 [ms-settings:network-wifi] 和 [ms-settings:bluetooth] 等 URI:
+下列範例說明只允許存取 about 和 bluetooth 頁面的原則，其分別具有 URI "ms-settings： network-wifi" 和 "ms settings： bluetooth"：
 - `showonly:network-wifi;network-proxy;bluetooth`
 
-若要透過 [佈建套件] 進行此設定：
+若要透過布建套件進行設定：
 
-1. 在 [Windows 設定設計工具] 中建立套件時，瀏覽至 **[原則] > [設定] > [PageVisibilityList]**
-1. 輸入字串：**`showonly:network-wifi;network-proxy;bluetooth`**
-1. 匯出您的佈建套件。
-1. 將套件套用到您的裝置。
-若要瞭解如何建立及套用佈建套件的完整詳細資料，請造訪 [此頁面](hololens-provisioning.md)。
+1. 在 Windows 設定設計工具中建立封裝時，請流覽至 **原則 > 設定 > PageVisibilityList**
+1. 輸入字串： **`showonly:network-wifi;network-proxy;bluetooth`**
+1. 匯出布建套件。
+1. 將套件套用至您的裝置。
+如需有關如何建立及套用布建套件的完整詳細資訊，請造訪 [此頁面](hololens-provisioning.md)。
 
-這可以使用 OMA-URI 透過 Intune 完成：
+這可以透過使用 OMA-URI 的 Intune 來完成：
 
 1. 建立 **自訂原則**。
-1. 設定 OMA-URI 時，請使用字串：**`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
-1. 選取 [資料挑選] 時，請選擇：**字串**
-1. 輸入值時，請使用：**`showonly:network-wifi;network-proxy;bluetooth`**
-1. 請務必將自訂裝置設定指派給裝置預定的群組。
+1. 設定 OMA URI 時，請使用下列字串： **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
+1. 選取資料選擇時，請選擇： **String**
+1. 輸入值時，請使用： **`showonly:network-wifi;network-proxy;bluetooth`**
+1. 請務必將自訂裝置設定指派給裝置所要使用的群組。
 
-如需有關 Intune 群組和裝置設定的詳細資訊，請參閱 [HoloLens MDM 設定](hololens-mdm-configure.md)。
+如需 Intune 群組和裝置設定的詳細資訊，請參閱 [HOLOLENS MDM](hololens-mdm-configure.md) 設定。
 
-無論您選擇哪種方法，您的裝置現在應該都會收到變更，使用者會看到下列 [設定] 應用程式。
+不論選擇何種方法，您的裝置現在應該都會收到變更，而使用者會看到下列設定應用程式。
 
-![在 [設定] 應用程式中修改的使用時間的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
+![在 [設定] 應用程式中修改使用中時數的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
 
-若要設定 [設定] 應用程式頁面以顯示或隱藏您自己選取的頁面，請看看 HoloLens 上提供的 [設定 URI]。
+若要設定應用程式頁面顯示或隱藏您自己選取的頁面，請查看 HoloLens 提供的設定 Uri。
 
-## 設定 URI
+## <a name="settings-uris"></a>設定 Uri
 
-HoloLens 裝置和 Windows 10 裝置在 [設定] 應用程式中有不同的頁面選取範圍。 在此頁面上，您只會找到 HoloLens 上存在的設定。
+HoloLens 裝置和 Windows 10 裝置在 [設定] 應用程式中有不同的頁面選擇。 在此頁面上，您只會看到 HoloLens 上存在的設定。
 
-### 帳戶
+### <a name="accounts"></a>帳戶
 | 設定頁面           | URI                                            |
 |-------------------------|------------------------------------------------|
+| 存取公司或學校資源 | `ms-settings:workplace`                         |
+| 鳶尾花註冊       | `ms-settings:signinoptions-launchirisenrollment` |
 | 登入選項         | ` ms-settings:signinoptions `                   |
-| Iris 註冊       | `ms-settings:signinoptions-launchirisenrollment` |
-| 存取工作或學校帳戶 | `ms-settings:workplace`                         |
 
-### 裝置
+### <a name="apps"></a>應用程式
+| 設定頁面 | URI                          |
+|---------------|------------------------------|
+| 應用程式 & 功能<sup>2</sup>     | `ms-settings:appsfeatures` <br> |
+| 應用程式 & 功能 > Advanced Options <sup>2</sup>     | `ms-settings::appsfeatures-app` <br> |
+| 應用程式 & 功能 > 離線地圖 <sup>2</sup>     | `ms-settings:maps-maps` <br> |
+| 應用程式 & 功能 > 離線地圖 > 下載地圖 <sup>2</sup>     | `ms-settings:maps-downloadmaps` <br> |
+
+### <a name="devices"></a>裝置
 | 設定頁面 | URI                          |
 |---------------|------------------------------|
 | 藍牙     | `ms-settings:bluetooth` <br> `ms-settings:connecteddevices` |
+| 滑鼠 <sup>2</sup>      | `ms-settings:mouse` <br>  |
+| USB <sup>2</sup>      | `ms-settings:usb` <br>  |
 
-### 隱私權
+### <a name="privacy"></a>隱私權
 | 設定頁面            | URI                                             |
 |--------------------------|-------------------------------------------------|
 | 帳戶資訊             | `ms-settings:privacy-accountinfo`              |
-| 應用程式診斷        | `ms-settings:privacy-appdiagnostics`              |
+| App 診斷        | `ms-settings:privacy-appdiagnostics`              |
 | 背景應用程式        | `ms-settings:privacy-backgroundapps`              |
-| 使用者移動           | `ms-settings:privacy-backgroundspatialperception` |
-| 檔案系統              | `ms-settings:privacy-broadfilesystemaccess`       |
-| 行事曆                 | `ms-settings:privacy-calendar`                    |
+| Calendar                 | `ms-settings:privacy-calendar`                    |
 | 通訊記錄             | `ms-settings:privacy-callhistory`                 |
+| 相機                   | `ms-settings:privacy-webcam`                      |
 | 連絡人                 | `ms-settings:privacy-contacts`                    |
-| 其他裝置            | `ms-settings:privacy-customdevices`               |
+| 診斷 & 意見反應 | `ms-settings:privacy-feedback`                    |
 | 文件                | `ms-settings:privacy-documents`                   |
 | 電子郵件                    | `ms-settings:privacy-email`                       |
-| 診斷與意見反應 | `ms-settings:privacy-feedback`                    |
+| 檔案系統              | `ms-settings:privacy-broadfilesystemaccess`       |
+| 一般 <sup>2</sup>             | `ms-settings:privacy-general`       |
+| 筆墨 & 輸入個人化 <sup>2</sup>             | `ms-settings:privacy-speechtyping`       |
 | 位置                 | `ms-settings:privacy-location`                    |
-| 訊息傳送                | `ms-settings:privacy-messaging`                   |
+| 傳訊                | `ms-settings:privacy-messaging`                   |
 | 麥克風               | `ms-settings:privacy-microphone`                  |
+| 動作 <sup>2</sup>               | `ms-settings:privacy-motion`                  |
 | 通知            | `ms-settings:privacy-notifications`               |
+| 其他裝置            | `ms-settings:privacy-customdevices`               |
 | 圖片                 | `ms-settings:privacy-pictures`                    |
 | 無線通訊                   | `ms-settings:privacy-radios`                      |
+| 螢幕擷取畫面：框線 <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureWithoutBorder`       |
+| 螢幕擷取畫面和應用程式 <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureProgrammatic`       |
 | 語音                   | `ms-settings:privacy-speech`                      |
 | 工作                    | `ms-settings:privacy-tasks`                       |
+| 使用者移動           | `ms-settings:privacy-backgroundspatialperception` |
 | 影片                   | `ms-settings:privacy-videos`                      |
-| 語音啟動       | `ms-settings:privacy-voiceactivation`             |
-| 相機                   | `ms-settings:privacy-webcam`                      |
+| 語音啟用       | `ms-settings:privacy-voiceactivation`             |
 
-### 網路和網際網路
+### <a name="network--internet"></a>網路和網際網路
 | 設定頁面 | URI                              |
 |---------------|----------------------------------|
-| Wi-Fi  | `ms-settings:network-wifi`<br>`ms-settings:network-wifisettings`<br>`ms-settings:network-status`<br>`ms-settings:wifi-provisioning`    |
-| VPN   | `ms-settings:network-vpn`          |
+| 飛機模式 <sup>2</sup> | `ms-settings:network-airplanemode`        |
 | Proxy | `ms-settings:network-proxy`        |
+| VPN   | `ms-settings:network-vpn`          |
+| Wi-Fi  | `ms-settings:network-wifi`<br>`ms-settings:network-wifisettings`<br>`ms-settings:network-status`<br>`ms-settings:wifi-provisioning`    |
 
-### 系統
+
+
+### <a name="system"></a>系統
 | 設定頁面      | URI                                |
 |--------------------|------------------------------------|
-| 共用體驗 | `ms-settings:crossdevice`            |
+| 電池 <sup>2</sup>           | `ms-settings:batterysaver`<br>|
+| 電池 <sup>2</sup>           | `ms-settings:batterysaver-settings`<br>|
 | 色彩             | `ms-settings:colors`<br>`ms-settings:personalization-colors` |
+| 全像影像 <sup>2</sup>  |  `ms-settings:holograms`  |
+| 校正 <sup>2</sup> |  `ms-settings:calibration` |
 | 通知與動作  | `ms-settings:notifications`          |
-| 儲存空間            | `ms-settings:storagesense`           |
+| 共用體驗 | `ms-settings:crossdevice` 
+| 音效 <sup>2</sup>           | `ms-settings:sound`<br>|
+| 音效 > 應用程式磁片區和裝置喜好設定 <sup>2</sup>           | `ms-settings:apps-volume`<br>|
+| 音效 > 管理音效裝置 <sup>2</sup>           | `ms-settings:sound-devices`<br>|
+| 儲存體            | `ms-settings:storagesense`           |
+| 儲存體 > 設定儲存空間感知器 <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
 
-### 時間與語言
+### <a name="time--language"></a>Time & 語言
 | 設定頁面 | URI                                           |
 |---------------|-----------------------------------------------|
-| 地區        | `ms-settings:regionformatting`                  |
+| 日期 & 時間 <sup>2</sup> | `ms-settings:dateandtime`                  |
+| 鍵盤 <sup>2</sup> | `ms-settings:keyboard`                  |
+| 語言 <sup>2</sup> | `ms-settings:language`                  |
+| 語言 <sup>2</sup> | `ms-settings:regionlanguage-languageoptions`                  |
 | 語言      | `ms-settings:regionlanguage`<br>`ms-settings:regionlanguage-adddisplaylanguage`<br>`ms-settings:regionlanguage-setdisplaylanguage` |
+| 區域        | `ms-settings:regionformatting`                  |
 
-### 更新與安全性
+### <a name="update--security"></a>更新 & 安全性
 | 設定頁面                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
+| 進階選項                    | `ms-settings:windowsupdate-options`         |
+| 重設 & 復原 <sup>2</sup>      | `ms-settings:reset`         |
 | Windows 測試人員計畫               | `ms-settings:windowsinsider` <br>`ms-settings:windowsinsider-optin`          |
 | Windows Update                        | `ms-settings:windowsupdate`<br> `ms-settings:windowsupdate-activehours`  <br> `ms-settings:windowsupdate-history` <br> `ms-settings:windowsupdate-optionalupdates` <br><sup>1</sup>`ms-settings:windowsupdate-options`<br><sup>1</sup>`ms-settings:windowsupdate-restartoptions` |
-| Windows Update - 檢查更新 | `ms-settings:windowsupdate-action`          |
-| 進階選項                    | `ms-settings:windowsupdate-options`         |
+| Windows Update-檢查是否有更新 | `ms-settings:windowsupdate-action`          |
 
->  <sup>1 </sup>以下兩個 URI 實際上並不會帶您到 **[進階選項]** 或 **[選項]** 頁面，它們只會封鎖或顯示 Windows Update 主頁面。
+
+>  <sup>1</sup> 在 Windows 全像21H1 版之前的版本中，下列兩個 uri 實際上不會帶您前往 [ **Advanced options** ] 或 [ **options** ] 頁面;它們只會封鎖或顯示主 Windows Update 頁面。
 > - ms-settings:windowsupdate-options
-> - ms-settings:windowsupdate-restartoptions 
+> - ms-settings:windowsupdate-restartoptions
+ 
+> <sup>2</sup> -在 Windows 全像21H1 或更高版本中提供。
 
-如需 Windows 10 設定 URI 的完整清單，請造訪[啟動設定](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) 文件。
+
+如需 Windows 10 設定 Uri 的完整清單，請流覽 [啟動設定](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) 檔。

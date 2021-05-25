@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eb084d3de222581fd2b97eaa1c1e2812310810c
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308300"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397879"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>常見案例–離線安全 HoloLens 2
 
@@ -32,6 +32,8 @@ ms.locfileid: "108308300"
 -   停用麥克風。
 -   防止新增或移除布建套件。
 -   沒有使用者可以啟用上述任何一個受限的元件。
+
+[![離線安全案例 ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## <a name="prepare"></a>準備
 
@@ -58,12 +60,12 @@ Windows 10 電腦設定
 
    此布建套件中設定的設定：
    
-   |     項目                                                |     設定                       |     Description                                                                                                                    |
+   |     項目                                                |     設定                       |     描述                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     帳戶/使用者                                    |     本機使用者名稱 & 密碼    |     針對這些離線裝置，裝置的所有使用者都必須設定並共用單一使用者名稱和密碼。          |
-   |     First Experience/HoloLens/SkipCalibration       |     對                          |     僅在初始裝置設定期間略過校正                                                                             |
-   |     First Experience/HoloLens/SkipTraining          |     對                          |     初始裝置設定期間略過裝置訓練                                                                              |
-   |     第一個經驗/HoloLens/WiFi                  |     對                          |     初始裝置設定期間略過 Wi-Fi config                                                                                 |
+   |     First Experience/HoloLens/SkipCalibration       |     是                          |     僅在初始裝置設定期間略過校正                                                                             |
+   |     First Experience/HoloLens/SkipTraining          |     是                          |     初始裝置設定期間略過裝置訓練                                                                              |
+   |     第一個經驗/HoloLens/WiFi                  |     是                          |     初始裝置設定期間略過 Wi-Fi config                                                                                 |
    |     原則/連線能力/AllowBluetooth                |     No                            |     停用藍牙                                                                                                             |
    |     原則/經驗/AllowCortana                    |     No                            |     停用 Cortana (，以消除自麥克風停用後的潛在問題)                                           |
    |     原則/MixedReality/MicrophoneDisabled            |     Yes                           |     停用麥克風                                                                                                            |

@@ -15,16 +15,16 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 54bc090352983e814c64deea8f1f401c24e3261b
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: bc1d399a07a6a0622c953178cad7be1b8a018fdb
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308846"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397779"
 ---
 # <a name="known-issues-for-hololens"></a>HoloLens 的已知問題
 
-這是目前的 HoloLens 裝置已知問題清單。 如果您看到奇怪的行為，請先檢查此處。 這份清單會在探索或回報新問題時保持更新狀態，或在未來的 HoloLens 軟體更新中解決問題。
+以下是 HoloLens 裝置已知問題的目前清單。 如果您看到奇怪的行為，請先檢查此處。 這份清單會在探索或回報新問題時保持更新狀態，或在未來的 HoloLens 軟體更新中解決問題。
 
 >[!NOTE]
 > - 如果您發現未封鎖的問題，請透過 [意見反應中樞](hololens-feedback.md)在 HoloLens 裝置上報告。
@@ -46,7 +46,7 @@ ms.locfileid: "108308846"
 
 - Mixed Reality capture 中的即時預覽功能可能會顯示幾秒鐘的延遲時間。
 
-- 在 [虛擬輸入] 頁面上，[虛擬手勢] 區段底下的手勢和 Scroll 控制項無法運作。 使用這些專案將不會有任何作用。 相同頁面上的虛擬鍵盤可以正常運作。
+- 在 [虛擬輸入] 頁面上，[虛擬手勢] 區段底下的手勢和 Scroll 控制項無法運作。 使用這些專案將不會有任何作用。 虛擬輸入頁面上的虛擬鍵盤可正常運作。
 
 - 在設定中啟用開發人員模式之後，可能需要幾秒鐘的時間，才會啟用裝置入口網站的開啟。
 
@@ -62,7 +62,29 @@ ms.locfileid: "108308846"
 
 ## <a name="known-issues-for-hololens-2-devices"></a>HoloLens 2 裝置的已知問題
 
+### <a name="device-using-auto-login-asks-for-log-in"></a>使用自動登入的裝置要求登入
+
+HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **入選項** 登入->，而且在 **必要** 時，將值設為 [**永不**]。 使用重大更新（例如功能更新）更新裝置時，某些使用者可能需要再次登入裝置。
+
+發生這種情況的範例：
+
+- 將裝置從 Windows 全像2004版 (組建) 19041）更新為 Windows 全像21H1 版， (組建 20346. xxxx) 
+- 將裝置更新為在相同的主要組建上進行大量更新，例如 Windows 全像 Windows 全像，2004版到 Windows 全像20H2 版
+- 將裝置從原廠映射更新為最新影像
+
+這應該不會在下列情況中發生：
+
+- 取得每月服務更新的裝置
+
+解決方法：
+
+- 登入方法，例如 PIN、密碼、鳶尾花、Web 驗證或 FIDO2 金鑰。
+- 如果無法記住裝置 PIN，而且無法使用其他驗證方法，則使用者可以使用 [手動 reflashing 模式](hololens-recovery.md#manual-procedure)。
+
 ### <a name="microsoft-edge-fails-to-launch"></a>無法啟動 Microsoft Edge
+
+> [!NOTE]
+> 此問題原本是使用 Microsoft Edge 的出貨版本所建立。 此問題可在 [新的 Microsoft Edge](hololens-new-edge.md)中解決。 如果不是，請提出意見反應。
 
 少數客戶回報了 Microsoft Edge 無法啟動的問題。 針對這些客戶，問題會透過重新開機持續存在，而且無法透過 Windows 或應用程式更新解決。 如果您遇到此問題，而且已確認 [Windows 是最](hololens-updates.md#manually-check-for-updates)新狀態，請從 [意見反應中樞應用程式](hololens-feedback.md) 提出 bug，並列出下列類別和子類別：安裝和更新 > 下載、安裝和設定 Windows Update。
 
@@ -70,39 +92,39 @@ ms.locfileid: "108308846"
 
 ### <a name="keyboard-does-not-switch-to-special-characters"></a>鍵盤未切換為特殊字元
 
-在 OOBE 期間發生問題，當使用者選擇了工作或學校帳戶，並輸入其密碼時，藉由使用 [123] &按鈕並不會變更為特殊字元，藉以嘗試切換至鍵盤上的特殊字元。 
+在 OOBE 期間發生問題，當使用者選擇了工作或學校帳戶，並輸入其密碼時，藉由使用 [123] &按鈕並不會變更為特殊字元，藉以嘗試切換至鍵盤上的特殊字元。
 
 解決辦法：
 -   關閉鍵盤，然後藉由點擊文字欄位將它重新開啟。
 -   輸入您的密碼不正確。 下一次 relaunched 鍵盤時，它會如預期般運作。
-- Web 驗證，關閉鍵盤，然後選取 [ **從另一部裝置登入**]。 
+- Web 驗證，關閉鍵盤，然後選取 [ **從另一部裝置登入**]。
 -   如果只輸入數位，使用者可以按住某些按鍵以開啟展開的功能表。
 -   使用 USB 鍵盤。
 
 這不會影響：
 - 選擇使用個人帳戶的使用者。
 
-### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build"></a>在具有 Insider 組建的裝置 reflashed 上取消註冊 Insider preview 組建之後，顯示藍色畫面
+### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-an-insider-build"></a>在具有 Insider 組建的裝置 reflashed 上取消註冊 Insider preview 組建之後，顯示藍色畫面
 
-這是影響的問題，它會影響屬於 Insider preview 組建的使用者、使用新的 insider preview 組建 reflashed 其 HoloLens 2，然後從 Insider 計畫取消註冊。 
+這是影響的問題，它會影響屬於 Insider preview 組建的使用者、使用新的 insider preview 組建 reflashed 其 HoloLens 2，然後從 Insider 計畫取消註冊。
 
 這不會影響：
 - 未註冊 Windows 測試人員中的使用者 
 - 業內 人士：
     - 如果裝置已註冊，因為 Insider build 是 version 18362. x
-    - 如果他們將 Insider 已簽署的19041建立並在測試人員計畫中保持註冊， 
+    - 如果他們將 Insider 已簽署的19041建立並在測試人員計畫中保持註冊，
 
 解決辦法： 
 - 避免此問題 
-    - Flash 非 insider build。 其中一個一般的每月更新。 
+    - Flash 非 insider build。 其中一個一般的每月更新。
     - 掌握 Insider Preview
 - 重新刷新裝置
 
     1. 請在未連線的情況下完全關閉，以手動方式將 [HoloLens 2 進入閃爍模式](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) 。 然後按住音量，然後按一下 [電源] 按鈕。
     
-    1. 連接到電腦並開啟 Advanced Recovery 隨附。 
+    1. 連接到電腦並開啟 Advanced Recovery 隨附。
     
-    1. 將 HoloLens 2 快閃至預設組建。   
+    1. 將 HoloLens 2 快閃至預設組建。
 
 ## <a name="known-issues-for-hololens-1st-gen"></a>HoloLens (第一代) 的已知問題
 
@@ -113,7 +135,7 @@ ms.locfileid: "108308846"
 
 Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建議您更新為此最新版本，以避免發生此錯誤。
 
-問題根本原因：使用 Visual Studio 2015 或舊版 Visual Studio 2017 的使用者，在其 HoloLens 上部署和偵測應用程式，之後再使用相同 HoloLens 的最新版本 Visual Studio 2017 或 Visual Studio 2019 將會受到影響。 較新版本的 Visual Studio 會部署新版的元件，但較舊版本的檔案會留在裝置上，使較新的版本失敗。  這會導致下列錯誤訊息： DEP0100：請確認目標裝置已啟用開發人員模式。 由於錯誤80004005，無法取得開發人員授權 \<ip\> 。
+問題根本原因：使用 Visual Studio 2015 或舊版 Visual Studio 2017 的使用者，在其 HoloLens 上部署和偵測應用程式，之後再使用相同 HoloLens 的最新版本 Visual Studio 2017 或 Visual Studio 2019 將會受到影響。 較新版本的 Visual Studio 會部署新版的元件，但較舊版本的檔案會留在裝置上，使較新的版本失敗。  這會導致下列錯誤訊息： DEP0100：確定目標裝置已啟用開發人員模式。 由於錯誤80004005，無法取得開發人員授權 \<ip\> 。
 
 #### <a name="workaround"></a>因應措施
 
@@ -178,21 +200,21 @@ Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建
 ### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>在 HoloLens 上啟動 Microsoft Store 和應用程式的問題
 
 > [!NOTE]
-> 上次更新： 4/2 @ 上午10點-問題已解決。 
+> 上次更新： 4/2 @ 上午10點-問題已解決。
 
-當您嘗試在 HoloLens 上啟動 Microsoft Store 和應用程式時，可能會遇到問題。 我們已判斷當背景應用程式更新在特定序列中部署較新版本的 framework 套件，且其中一或多個相依的應用程式仍在執行時，就會發生此問題。 在此情況下，自動應用程式更新將新版本的 .NET Native Framework (10.0.25531 版本傳遞至 10.0.27413) 導致執行的應用程式不會針對所有使用舊版 Framework 的執行中應用程式正確更新。  架構更新的流程如下所示： 
+當您嘗試在 HoloLens 上啟動 Microsoft Store 和應用程式時，可能會遇到問題。 我們已判斷當背景應用程式更新在特定序列中部署較新版本的 framework 套件，且其中一或多個相依的應用程式仍在執行時，就會發生此問題。 在此情況下，自動應用程式更新將新版本的 .NET Native Framework (10.0.25531 版本傳遞至 10.0.27413) 導致執行的應用程式不會針對所有使用舊版 Framework 的執行中應用程式正確更新。  架構更新的流程如下所示：
 
 1. 新的架構套件會從存放區下載並安裝。
 
 1. 使用較舊架構的所有應用程式會「更新」以使用較新的版本。
 
-如果步驟2在完成之前中斷，則不會註冊任何較新架構的應用程式將無法從 [開始] 功能表啟動。  我們相信 HoloLens 上的任何應用程式可能會受到此問題影響。
+如果步驟2在完成之前中斷，則不會註冊新 framework 的任何應用程式都將無法從 [開始] 功能表啟動。  我們相信 HoloLens 上的任何應用程式可能會受到此問題影響。
 
-有些使用者回報關閉無回應的應用程式，並啟動其他應用程式（例如意見反應中樞、3D 檢視器或相片）來解決問題 &mdash; ，不過這在100% 的時間內無法運作。
+有些使用者回報關閉無回應的應用程式，並啟動其他應用程式（例如意見反應中樞、3D 檢視器或相片）來解決問題，不過，這在100% 的時間內無法正常運作。
 
 我們的根本原因是這個問題不是由更新本身所造成，而是作業系統中造成 .NET Native framework 更新處理錯誤的錯誤。 我們很高興宣佈我們已找出修正程式，並已發行更新 (OS 17763.380 版) 包含修正。  
 
-若要查看您的裝置是否可以進行更新，請：
+若要查看您的裝置是否可以進行更新：
 
 1. 移至 [設定] 應用程式，並開啟 [ **更新 & 安全性**]。
 

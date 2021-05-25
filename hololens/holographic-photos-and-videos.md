@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 86ef4328869c15517732eedf3dfb9e2a8252e713
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 178dff5d8a30fdd9c5012e2d14f5d4683d6cc23e
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308312"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397499"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>建立混合的現實照片和影片
 
@@ -121,7 +121,7 @@ Mixed reality capture 使用第一個人的觀點，讓其他人可以看到您�
 
 ## <a name="view-your-mixed-reality-photos-and-videos"></a>觀看您的混合現實照片和影片
 
-混合現實照片和影片會儲存至裝置的「相機變換」。 您可以使用檔案總管應用程式在 HoloLens 上流覽此資料夾的內容， (流覽至 [圖片] > 相機滾動) 。
+混合現實照片和影片會儲存至裝置的「相機變換」。 您可以使用檔案總管應用程式在 HoloLens 上流覽此資料夾的內容， (流覽至 [ **圖片] > 相機滾動**) 。
 
 您也可以在已預先安裝 HoloLens 的相片應用程式中，查看您的混合現實照片和影片。 若要釘選您世界中的相片，請在相片應用程式中選取該相片，然後選擇 [ **在混合式環境中放置**]。 放在世界各地之後，您就可以在世界各地移動相片。
 
@@ -145,9 +145,12 @@ Mixed reality capture 使用第一個人的觀點，讓其他人可以看到您�
 
 ## <a name="share-your-mixed-reality-photos-and-videos"></a>分享您的混合現實照片和影片
 
-在捕捉到混合現實照片或影片之後，將會顯示預覽。 選取預覽上方的 **共用** 圖示，以顯示共用助理。 從該處，您可以選取您想要與該相片或影片共用的結束點。
+在 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)之前，在捕捉到混合現實照片或影片之後，將會顯示預覽。 選取預覽上方的 **共用** 圖示，以顯示共用助理。 從該處，您可以選取您想要與該相片或影片共用的結束點。
 
-您也可以透過自動上傳您的混合現實照片和影片，從 OneDrive 共用混合現實照片和影片。 開啟 HoloLens 上的 OneDrive 應用程式，並使用個人 [Microsoft 帳戶](https://account.microsoft.com) 登入（如果您尚未登入）。 選取 **設定** 圖示，然後選擇 [ **相機上傳**]。 開啟相機上傳。 您的混合現實照片和影片現在會在您每次於 HoloLens 上啟動應用程式時上傳至 OneDrive。
+在 Windows 全像21H1 版中，當您在捕捉到混合現實照片或影片之後，將會出現預覽。 選取預覽上方的 **共用** 圖示，以顯示共用助理。 從該處，您可以選取要與照片或影片共用的結束點 (Mail、OneDrive 等 ) 。 您也可以前往 [ **設定]-> 系統 > 共用體驗**，讓 HoloLens 與附近裝置共用。 如需詳細資訊，請參閱 [Windows 10 中附近裝置的共用內容](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)。
+
+> [!TIP] 
+> 您也可以透過自動上傳您的混合現實照片和影片，從 OneDrive 共用混合現實照片和影片。 在 HoloLens 上開啟 OneDrive 應用程式，並使用 **個人 [Microsoft 帳戶](https://account.microsoft.com)**（如果您尚未登入）登入。 選取 **設定** 圖示，然後選擇 [ **相機上傳**]。 開啟相機上傳。 您的混合現實照片和影片現在會在您每次於 HoloLens 上啟動應用程式時上傳至 OneDrive。
 
 > [!NOTE]
 > 如果您已使用個人 Microsoft 帳戶登入 OneDrive，則只能在 OneDrive 中啟用相機上傳。 如果您使用工作或學校帳戶設定 HoloLens，您可以在 OneDrive 應用程式中新增個人 Microsoft 帳戶，以啟用這項功能。
@@ -159,7 +162,7 @@ Mixed reality capture 使用第一個人的觀點，讓其他人可以看到您�
 
 ### <a name="maximum-recording-length"></a>錄製長度上限
 
-HoloLens 2 在 Windows 全像20H2 之前的裝置上，裝置上錄製的版本影片受限於五分鐘的最大長度。
+HoloLens 2 在 Windows 全像20H2 版之前的裝置上，裝置上錄製的影片受限於五分鐘的最大長度。
 
 由於客戶的意見反應，我們增加了 [混合現實捕捉](holographic-photos-and-videos.md)的錄製長度。 依預設，混合現實捕獲將不再受限於5分鐘，但會根據可用的磁碟空間來計算最大錄製長度。 裝置會根據可用的磁碟空間（最高達80% 的總磁碟空間）來預估錄影最大持續時間。
 
@@ -172,14 +175,14 @@ HoloLens 2 在 Windows 全像20H2 之前的裝置上，裝置上錄製的版本�
 
 ### <a name="default-photo-format-and-resolution"></a>預設相片格式與解析度
 
-|  裝置  |  格式  |  分機  |  解決方案  |
+|  裝置  |  格式  |  延伸模組  |  解決方案  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
 | HoloLens (第 1 代) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### <a name="recorded-video-format-and-resolution"></a>錄製的影片格式與解析度
 
-| 裝置 | 格式 | 分機 | 解決方案 | 速度 | 音訊 |
+| 裝置 | 格式 | 延伸模組 | 解決方案 | 速度 | 音訊 |
 |----------|----------|----------|----------|----------|----------|
 | HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px<br> | 30fps | 48kHz 身歷聲 |
 | HoloLens (第 1 代) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz 身歷聲 |

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 43fbcc3a841f6c3f15006f285188e55d22f10599
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308297"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397649"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>部署指南–與遠端協助的雲端連線 HoloLens 2 –總覽
 
@@ -27,8 +27,7 @@ ms.locfileid: "108308297"
 
 在本指南中，我們將討論如何將您的裝置註冊到您的裝置管理、視需要套用授權，以及驗證您的終端使用者是否能夠在裝置設定時立即使用遠端協助。 為了達成此目的，我們將探討設定和執行所需的重要基礎結構，也就是使用 HoloLens 2 來大規模部署。
 
-![雲端連線橫幅](./images/cloud-connected-hololens-large.png)
-
+[![雲端連線案例 ](./images/deployment-guides-revised-scenario-a.png)](./images/deployment-guides-revised-scenario-a.png#lightbox)
 ## <a name="in-this-guide"></a>在本指南中
 
 本指南的特定目標是在您的 HoloLens 裝置上設定組織內的遠端協助。 我們將討論達成此目標所需的必要條件。 為了將焦點放在此目標上，某些準備工作和設定將會預先選取，以針對此部署進行優化，或減少設定所需的專案。 您將會收到這些選擇的通知，並可根據您的業務需求自訂您的部署。
@@ -41,7 +40,7 @@ ms.locfileid: "108308297"
   - 每個裝置支援的單一或多個使用者
 - 不同層級的裝置鎖定設定會根據特定使用案例套用，從完全開放到單一應用程式 Kiosk
 
-![雲端連線案例](./images/cloud-connected-guide-diagram.png)
+
 
 本指南不會再套用任何其他裝置限制或設定，不過我們建議您在完成後探索這些選項。
 

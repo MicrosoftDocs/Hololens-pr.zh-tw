@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2d84658ef76ff2c5d8ef7dabe857892e7129a965
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308977"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397829"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
@@ -71,6 +71,20 @@ HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用
 
 > [!NOTE]
 > **HoloLens (第1代)** 開始支援 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 中的多個 Azure AD 使用者，作為 [Windows Holographic for Business](hololens-upgrade-enterprise.md)的一部分。
+
+### <a name="multiple-users-listed-on-sign-in-screen"></a>登入畫面上列出多個使用者
+
+先前的 [登入] 畫面只會顯示最近登入的使用者，以及「其他使用者」進入點。 如果有多位使用者登入裝置，就會收到客戶的意見反應。 他們仍然需要重新輸入使用者名稱等。
+
+在 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)中引進，當選取 [釘選輸入] 欄位右邊的 **其他使用者** 時，[登入] 畫面會顯示多個先前已登入裝置的使用者。 這可讓使用者選取其使用者設定檔，然後使用其 Windows Hello 認證進行登入。 您也可以透過 [新增 **帳戶** ] 按鈕，從 [其他使用者] 頁面將新的使用者新增至裝置。
+
+在 [其他使用者] 功能表中，[其他使用者] 按鈕會顯示上次登入裝置的使用者。 選取此按鈕，返回此使用者的登入畫面。
+
+![登入畫面預設](./images/multiusers1.jpg)
+
+<br>
+
+![其他使用者的登入畫面](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>移除使用者
 

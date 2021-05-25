@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a043b2f96bec6127d52622b4662279c777df6f8f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 347501c3ac8f1b115b0d537332a17938a99d3257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308850"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397799"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>將 HoloLens 設定為 kiosk
 
@@ -70,8 +70,8 @@ ms.locfileid: "108308850"
 下表列出不同 kiosk 模式中的功能功能。
 
 | &nbsp; |開始功能表 |快速動作功能表 |攝影機和影片 |Miracast |Cortana |內建語音命令 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|單一應用程式 kiosk |已停用 |已停用   |已停用 |已停用   |已停用 |已啟用<sup>1</sup> |
+| --- | --- | --- | --- | --- | --- | --- | 
+|單一應用程式 kiosk |已停用 |已停用 |已停用 |已停用   |已停用 |已啟用<sup>1</sup> |
 |多應用程式 kiosk |已啟用 |已啟用<sup>2</sup> |可用<sup>2</sup> |可用<sup>2</sup> |可用<sup>2，3</sup>  |已啟用<sup>1</sup> |
 
 > <sup>1</sup> 與停用功能相關的語音命令無法運作。  
@@ -119,14 +119,16 @@ ms.locfileid: "108308850"
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \_ 8Wekyb3d8bbwe \! RemoteAssist |
 |意見反應 &nbsp; 中樞 |Microsoft. WindowsFeedbackHub \_ 8wekyb3d8bbwe \! 應用程式 |
 |檔案總管 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe！ microsoft windowslive. mail |
-|Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe！X-MSEDGE-CLIENTID |
+|電子郵件 |microsoft.windowscommunicationsapps_8wekyb3d8bbwe！ microsoft windowslive. mail |
+|舊 Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
+|新增 Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe！X-MSEDGE-CLIENTID |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> |&nbsp; |
 |電影與電視 |Microsoft. ZuneVideo \_ 8Wekyb3d8bbwe \! ZuneVideo |
 |OneDrive |microsoft. microsoftskydrive \_ 8wekyb3d8bbwe \! 應用程式 |
 |照片 |\_8wekyb3d8bbwe \! 應用程式 |
-|設定 |HolographicSystemSettings \_ cw5n1h2txyewy \! 應用程式 |
+|舊設定 |HolographicSystemSettings_cw5n1h2txyewy！應用程式 |
+|新設定 |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy！應用程式 |
 |提示 |Microsoft. HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
 
 > <sup>1</sup> 若要啟用相片或影片捕獲，您必須將相機應用程式啟用為 kiosk 應用程式。  
@@ -245,8 +247,9 @@ ms.locfileid: "108308850"
 - 您可以選擇性地使用自訂開始配置搭配 Intune 或其他 MDM 服務。 如需詳細資訊，請參閱 [開始 (Intune 和其他) 的 MDM 設定檔 ](#start-layout-file-for-mdm-intune-and-others)。
 
 1. 選取 [ **S 模式裝置] 中的 [目標 Windows 10]**  >  ****。  
-   >[!NOTE]  
-   > Windows Holographic for Business 不支援 S 模式。
+>[!NOTE]  
+> Windows Holographic for Business 不支援 S 模式。
+
 1. 選取 [**使用者登入類型**]  >  **Azure AD 使用者或群組** 或 **使用者登入類型**  >  **HoloLens 訪客**，然後新增一或多個使用者群組或帳戶。  
 
    只有屬於您在 [ **使用者登入類型** ] 中指定之群組或帳戶的使用者，才可以使用 kiosk 體驗。
@@ -324,6 +327,31 @@ ms.locfileid: "108308850"
   </Config>  
 </Configs>  
 ```
+#### <a name="enable-visitor-autologon"></a>啟用訪客自動登入
+
+組建 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1) 和更新版本：
+- AAD 和非新增設定都支援在 Kiosk 模式中啟用自動登入的訪客帳戶。
+
+##### <a name="non-aad-configuration"></a>非 AAD 設定
+
+1. 建立提供者的布建套件：
+    1. 設定執行時間設定/>assignedaccess，以允許訪客帳戶。
+    1. 您可以選擇性地在 MDM 中註冊裝置 (執行時間設定/工作場所/註冊) ，以便稍後進行管理。
+    1. 請勿建立本機帳戶
+2. 套用布建[套件](https://docs.microsoft.com/hololens/hololens-provisioning)。
+
+##### <a name="aad-configuration"></a>AAD 設定
+
+針對 kiosk 模式設定的已加入 AAD 裝置，可以透過單一按鈕，從登入畫面登入造訪者帳戶。 登入訪客帳戶之後，裝置將不會再次提示您登入，直到造訪者明確登出 [開始] 功能表或重新開機裝置為止。
+
+您可以透過 [自訂 oma-uri 原則](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)來管理訪客自動登入：
+
+- URI 值：./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
+
+
+| 原則 |描述 |設定 
+| --------------------------- | ------------- | -------------------- |
+| MixedReality/VisitorAutoLogon | 允許訪客自動登入 Kiosk。 | 1 (是) ，0 (否，預設值。 )  |
 
 #### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>HoloLens 的預留位置開始配置
 
@@ -397,14 +425,14 @@ ms.locfileid: "108308850"
 1. **選擇項**。  (如果您在 kiosk 裝置上已經有非系統管理員帳戶，請略過此步驟。 ) 選取 [ **執行時間設定** &gt; **帳戶** &gt; **使用者**]，然後建立本機使用者帳戶。 請確定使用者名稱與您在設定 XML 中指定的帳號相同。 選取 [ **UserGroup**  >  **標準使用者**]。
 1. 選取 **[**  >  **儲存** 盤案]。
 1. 選取 [**匯出** 布建  >  **套件**]，然後選取 [**擁有** 者  >  **IT 系統管理員**]。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。
-1. 選取 [下一步] 。
+1. 選取 [下一步]  。
 1. 在 [布建 **套件安全性** ] 頁面上，選取安全性選項。
    > [!IMPORTANT]  
    > 如果您選取 [ **啟用套件簽署**]，則也必須選取要用於簽署封裝的有效憑證。 若要這樣做，請選取 **[流覽]** ，然後選取您要用來簽署封裝的憑證。
    
    > [!CAUTION]  
    > 請勿選取 [ **啟用套件加密**]。 在 HoloLens 裝置上，此設定會導致布建失敗。
-1. 選取 [下一步] 。
+1. 選取 [下一步]  。
 1. 指定您要在建立布建套件的輸出位置。 Windows 設定設計工具預設會使用專案資料夾做為輸出位置。 如果您想要變更輸出位置，請選取 **[流覽]**。 完成後，選取 [下一步] 。
 1. 選取 [ **建立** ] 以開始建立套件。 建置佈建套件並不需要很長的時間。 [組建] 頁面會顯示專案資訊，而進度列會指出組建狀態。
 
@@ -414,7 +442,7 @@ ms.locfileid: "108308850"
 
 - 您一開始可以在 [安裝期間將布建套件套用到 HoloLens](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
 
-- 您也可以 [在安裝之後，將布建套件套用至 HoloLens](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup)。
+- 您也可以 [在安裝之後，將布建套件套用至 HoloLens](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)。
 
 ## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>使用 Windows 裝置入口網站來設定單一應用程式 kiosk
 
@@ -470,13 +498,19 @@ ms.locfileid: "108308850"
 
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>處理失敗的 Kiosk 模式行為變更
-- 在 Kiosk 模式失敗時排除可用的應用程式，以獲得更安全的 Kiosk 模式。 
+在套用 kiosk 模式失敗時，會出現下列行為：
 
-在先前遇到套用 kiosk 模式失敗的情況下，HoloLens 用來在 [開始] 功能表中顯示所有應用程式。 現在在 Windows 全像20H2 版中，如果發生失敗，則 [開始] 功能表中將不會顯示任何應用程式，如下所示： 
+- 在 Windows 全像前版本 20H2-HoloLens 將會顯示 [開始] 功能表中的所有應用程式。
+- Windows 全像20H2 版-如果裝置的 kiosk 設定是全域指派的存取權和 AAD 群組成員指派的存取權，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [開始] 功能表中顯示 [沒有任何內容]。
 
 ![Kiosk 模式在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
+
+- 從 Windows 全像 [21H1](hololens-release-notes.md#windows-holographic-version-21h1)，Kiosk 模式在顯示空的 [開始] 功能表之前，會先尋找全域指派的存取權。 如果在 AAD 群組 kiosk 模式期間發生失敗，則 kiosk 體驗將會回復為全域 kiosk 設定 (如果有) 。
+
 ### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>離線 Kiosk 的快取 Azure AD 群組成員資格
+
+- 在 Kiosk 模式失敗時排除可用的應用程式，以獲得更安全的 Kiosk 模式。
 - 啟用可搭配 Azure AD 群組使用的離線 Kiosk，最多可達60天。
 
 此原則可控制將 Azure AD 群組成員資格快取用於指派給已登入使用者 Azure AD 群組之存取設定的天數。 一旦此原則值設定為大於0的值，則不會使用快取。  
