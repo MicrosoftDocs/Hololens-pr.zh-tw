@@ -1,10 +1,10 @@
 ---
-title: HoloLens 的已知問題
+title: HoloLens (第一代) 的已知問題
 description: 隨時掌握已知問題和因應措施的清單，這些問題可能會影響使用 Unity 和 Windows 裝置入口網站的 HoloLens 客戶和開發人員。
 keywords: 疑難排解、已知問題、協助
 author: mattzmsft
 ms.author: mazeller
-ms.date: 11/30/2020
+ms.date: 6/15/2021
 ms.topic: article
 ms.custom:
 - CI 111456
@@ -14,15 +14,14 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-- HoloLens 2
-ms.openlocfilehash: bc1d399a07a6a0622c953178cad7be1b8a018fdb
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 558eba8c2260b24a228e957b27927d508a077ec4
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397779"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923545"
 ---
-# <a name="known-issues-for-hololens"></a>HoloLens 的已知問題
+# <a name="known-issues-for-hololens-1st-gen"></a>HoloLens (第一代) 的已知問題
 
 以下是 HoloLens 裝置已知問題的目前清單。 如果您看到奇怪的行為，請先檢查此處。 這份清單會在探索或回報新問題時保持更新狀態，或在未來的 HoloLens 軟體更新中解決問題。
 
@@ -30,10 +29,9 @@ ms.locfileid: "110397779"
 > - 如果您發現未封鎖的問題，請透過 [意見反應中樞](hololens-feedback.md)在 HoloLens 裝置上報告。
 > - 如果您遇到的問題正在封鎖您，除了提出意見反應之外，請提出 [支援要求](https://aka.ms/hlsupport)。
 
+
 - [所有 HoloLens 世代的已知問題](#known-issues-for-all-hololens-generations)
-- [HoloLens 2 裝置的已知問題](#known-issues-for-hololens-2-devices)
 - [HoloLens (第一代) 的已知問題 ](#known-issues-for-hololens-1st-gen)
-- [HoloLens 模擬器的已知問題](#known-issues-for-hololens-emulator)
 
 ## <a name="known-issues-for-all-hololens-generations"></a>所有 HoloLens 世代的已知問題
 
@@ -59,72 +57,6 @@ ms.locfileid: "110397779"
 - 如果您的企業可以使用，則在取用者 Microsoft 帳戶上可支援自動相機上傳。 除了您的工作或學校帳戶之外，您還可以登入 Microsoft 帳戶 (OneDrive 應用程式支援雙重登入) 。 從 OneDrive 內的 Microsoft 帳戶設定檔，您可以啟用自動的背景相機滾動上傳。
 
 - 如果您無法安全地使用取用者 Microsoft 帳戶自動上傳您的相片，您可以從 OneDrive 應用程式手動將相片上傳至您的工作或學校帳戶。 若要這樣做，請確定您已登入 OneDrive 應用程式中的公司或學校帳戶。 選取 **+** 按鈕，然後選擇 [ **上傳**]。 藉由流覽至 [ **圖片] > 相機滾動** 圖，尋找您想要上傳的相片或影片。 選取您要上傳的相片或影片，然後選取 [ **開啟** ] 按鈕。
-
-## <a name="known-issues-for-hololens-2-devices"></a>HoloLens 2 裝置的已知問題
-
-### <a name="device-using-auto-login-asks-for-log-in"></a>使用自動登入的裝置要求登入
-
-HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **入選項** 登入->，而且在 **必要** 時，將值設為 [**永不**]。 使用重大更新（例如功能更新）更新裝置時，某些使用者可能需要再次登入裝置。
-
-發生這種情況的範例：
-
-- 將裝置從 Windows 全像2004版 (組建) 19041）更新為 Windows 全像21H1 版， (組建 20346. xxxx) 
-- 將裝置更新為在相同的主要組建上進行大量更新，例如 Windows 全像 Windows 全像，2004版到 Windows 全像20H2 版
-- 將裝置從原廠映射更新為最新影像
-
-這應該不會在下列情況中發生：
-
-- 取得每月服務更新的裝置
-
-解決方法：
-
-- 登入方法，例如 PIN、密碼、鳶尾花、Web 驗證或 FIDO2 金鑰。
-- 如果無法記住裝置 PIN，而且無法使用其他驗證方法，則使用者可以使用 [手動 reflashing 模式](hololens-recovery.md#manual-procedure)。
-
-### <a name="microsoft-edge-fails-to-launch"></a>無法啟動 Microsoft Edge
-
-> [!NOTE]
-> 此問題原本是使用 Microsoft Edge 的出貨版本所建立。 此問題可在 [新的 Microsoft Edge](hololens-new-edge.md)中解決。 如果不是，請提出意見反應。
-
-少數客戶回報了 Microsoft Edge 無法啟動的問題。 針對這些客戶，問題會透過重新開機持續存在，而且無法透過 Windows 或應用程式更新解決。 如果您遇到此問題，而且已確認 [Windows 是最](hololens-updates.md#manually-check-for-updates)新狀態，請從 [意見反應中樞應用程式](hololens-feedback.md) 提出 bug，並列出下列類別和子類別：安裝和更新 > 下載、安裝和設定 Windows Update。
-
-沒有任何已知的因應措施，因為我們目前無法解決問題的根本原因。 透過意見反應中樞提出 bug 將有助於進行調查！
-
-### <a name="keyboard-does-not-switch-to-special-characters"></a>鍵盤未切換為特殊字元
-
-在 OOBE 期間發生問題，當使用者選擇了工作或學校帳戶，並輸入其密碼時，藉由使用 [123] &按鈕並不會變更為特殊字元，藉以嘗試切換至鍵盤上的特殊字元。
-
-解決辦法：
--   關閉鍵盤，然後藉由點擊文字欄位將它重新開啟。
--   輸入您的密碼不正確。 下一次 relaunched 鍵盤時，它會如預期般運作。
-- Web 驗證，關閉鍵盤，然後選取 [ **從另一部裝置登入**]。
--   如果只輸入數位，使用者可以按住某些按鍵以開啟展開的功能表。
--   使用 USB 鍵盤。
-
-這不會影響：
-- 選擇使用個人帳戶的使用者。
-
-### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-an-insider-build"></a>在具有 Insider 組建的裝置 reflashed 上取消註冊 Insider preview 組建之後，顯示藍色畫面
-
-這是影響的問題，它會影響屬於 Insider preview 組建的使用者、使用新的 insider preview 組建 reflashed 其 HoloLens 2，然後從 Insider 計畫取消註冊。
-
-這不會影響：
-- 未註冊 Windows 測試人員中的使用者 
-- 業內 人士：
-    - 如果裝置已註冊，因為 Insider build 是 version 18362. x
-    - 如果他們將 Insider 已簽署的19041建立並在測試人員計畫中保持註冊，
-
-解決辦法： 
-- 避免此問題 
-    - Flash 非 insider build。 其中一個一般的每月更新。
-    - 掌握 Insider Preview
-- 重新刷新裝置
-
-    1. 請在未連線的情況下完全關閉，以手動方式將 [HoloLens 2 進入閃爍模式](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) 。 然後按住音量，然後按一下 [電源] 按鈕。
-    
-    1. 連接到電腦並開啟 Advanced Recovery 隨附。
-    
-    1. 將 HoloLens 2 快閃至預設組建。
 
 ## <a name="known-issues-for-hololens-1st-gen"></a>HoloLens (第一代) 的已知問題
 
@@ -158,7 +90,7 @@ Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建
     ```
 
     > [!NOTE]
-    > 如果您尚未安裝10.0.18362.0，請使用您擁有的最新版本。 
+    > 如果您尚未安裝10.0.18362.0，請使用您擁有的最新版本。
 
 1. 以滑鼠右鍵按一下方案總管中的專案，然後選取 [**加入**  >  **現有專案**]。
 
@@ -189,7 +121,7 @@ Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建
 
 1. 選取 [建置] > [建置方案]。
 
-1. 開啟 [命令提示字元] 視窗，並將 cd 放至包含已編譯 .exe 檔的資料夾 (例如，C:\MyProjects\HoloLensDeploymentFix\bin\Debug) 。
+1. 開啟 [命令提示字元] 視窗，並將 cd 放至包含已編譯之 .exe 檔案的資料夾 (例如，C:\MyProjects\HoloLensDeploymentFix\bin\Debug) 。
 
 1. 執行可執行檔，並提供裝置的 IP 位址做為命令列引數。  (如果使用 USB 連接，您可以使用127.0.0.1，否則請使用裝置的 Wi-Fi IP 位址。 ) 例如 "HoloLensDeploymentFix 127.0.0.1"。
 
@@ -247,10 +179,10 @@ Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建
 1. 然後，您會看到類似下面的畫面。  您想要移至「 **安裝應用程式** 」一節，然後流覽至您解壓縮這兩個 APPX 檔案的位置。 您一次只能執行一次，因此選取第一個，然後按一下 [部署] 區段下的 [執行]。 然後對第二個 APPX 檔案進行此動作。
 
    ![Windows 裝置入口網站安裝 Side-Loaded 應用程式](images/20190322-DevicePortal.png)
-   
+
 1. 至此，我們相信您的應用程式應該會再次開始運作，而且您也可以前往存放區。
 
-1. 在某些情況下，必須先執行額外的步驟來啟動3D 檢視器應用程式，才會啟動受影響的應用程式。 
+1. 在某些情況下，必須先執行額外的步驟來啟動3D 檢視器應用程式，才會啟動受影響的應用程式。
 
 我們非常感謝您的耐心等候，因為我們已完成解決此問題的程式，我們期待繼續與我們的小組合作，以建立成功的混合現實體驗。
 
@@ -276,8 +208,3 @@ Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建
 
 - 如果您的 HoloLens 在 Xbox 無線控制器連線時進入待命狀態，控制器上的任何輸入將會喚醒 HoloLens。 您可以在使用控制器時關閉控制器來防止這種情況。
 
-## <a name="known-issues-for-hololens-emulator"></a>HoloLens 模擬器的已知問題
-
-- 並非 Microsoft Store 中的所有應用程式都與模擬器相容。 例如，在模擬器上無法播放年輕 Conker 和片段。
-- 您無法在模擬器中使用電腦網路攝影機。
-- Windows 裝置入口網站的即時預覽功能無法與模擬器搭配使用。 您仍然可以捕獲混合的現實影片和影像。

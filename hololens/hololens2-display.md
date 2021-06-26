@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 顯示
+title: HoloLens 2 顯示疑難排解
 description: HoloLens 2 顯示的期望。 設定最佳影像品質顯示器的指引。
 author: BrandonBray
 ms.author: branbray
@@ -12,25 +12,26 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 71dff00ff75feea4408979d2ce69fb14bf9bf3b7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397619"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923613"
 ---
-# <a name="hololens-2-display"></a>HoloLens 2 顯示
+# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 顯示疑難排解
 
+## <a name="overview"></a>概觀
 HoloLens 2 顯示器是 waveguides 和燈光投影機的組合。 使用者會在佩戴耳機時，查看 waveguides （面板內的鏡頭）。 燈光投影機位於 brow 上方的主機殼內。 HoloLens 2 使用鐳射燈來照亮顯示器。
 
 ## <a name="troubleshooting"></a>疑難排解
 
-針對 HoloLens 2，請執行下列步驟，以確保顯示的影像最高視覺效果品質：
+請採取下列步驟，以確保顯示的影像最高視覺效果品質：
 
-* **增加顯示的亮度。** 當顯示器處於最高階的層級時，全像是最適合的。
+* **增加顯示的亮度。** 當顯示器處於最高階的層級時，全像是最適合的。 當您佩戴 HoloLens 時，亮度按鈕會在聖殿附近的面板左側。
 * **讓面板更接近您的眼睛。** 將面板向下旋轉至眼睛的最接近位置。
 * **向下移動面板。** 請嘗試將 brow pad 移至您的冷汗下，這會導致面板更接近您的鼻子。
-* **執行眼睛校正。** 顯示器會使用您的 interpupillary 距離 (IPD) 和眼睛來優化顯示器上的影像。 如果您未執行眼睛校正，影像品質可能會變得更糟。 若要執行眼睛校正，請移至 [**設定**  >  **系統**  >  **校正**]  >  **執行眼睛校正**。
+* **[執行眼睛校正。](hololens-calibration.md#calibrating-your-hololens-2)** 顯示器會使用您的 interpupillary 距離 (IPD) 和眼睛來優化顯示器上的影像。 如果您未執行眼睛校正，影像品質可能會變得更糟。 若要執行眼睛校正，請移至 [**設定**  >  **系統**  >  **校正**]  >  **執行眼睛校正**。
 * **執行顯示器色彩校正**。 在 [Windows 全像21H1 版](hololens-release-notes.md#windows-holographic-version-21h1) 和更新版本上，您可以為您的 HoloLens 2 顯示器 **選取替代色彩設定檔** 。 這可能有助於更精確地顯示色彩，特別是在較低的顯示器亮度等級。 您可以在 [ **設定** ] 應用程式的 [ **系統 > 校正** ] 頁面中找到顯示色彩校正。
 
     > [!NOTE]

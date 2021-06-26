@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308355"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924123"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>透過應用程式安裝程式在 HoloLens 2 上安裝應用程式
 
@@ -107,8 +107,6 @@ ms.locfileid: "108308355"
 
 ## <a name="sample-apps"></a>範例應用程式
 
-若要嘗試使用一些範例應用程式來應用程式安裝程式，請查看一些可用的範例：
-
-- [MRTK 範例中樞](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [表面](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [可用於測試的 UWP 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+使用其中一個可用的範例應用程式來嘗試應用程式安裝程式。 
+> [!div class="nextstepaction"]
+> [範例應用程式](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

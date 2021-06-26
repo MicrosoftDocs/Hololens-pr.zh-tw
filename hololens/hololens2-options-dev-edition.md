@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2df71baf36d45f0f4737b9c3b6f4eabb1e5e8c4c
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398946"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924463"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 開發版
 
@@ -78,15 +78,16 @@ HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity
 
 ## <a name="developer-edition-additional-resources"></a>Developer Edition 其他資源
 
+- [HoloLens 2 開發版常見問題](hololens2-development-edition-faq.md)
 - [請務必安裝適用于 HoloLens 開發的工具。](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [瞭解如何使用 Unity 進行 HoloLens 2 的開發](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
 - [瞭解如何將 MRTK 與 Unity 合併](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)。
-- [瞭解如何部署您的已建立應用程式](https://docs.microsoft.com/hololens/app-deploy-overview)。
+- [瞭解如何部署您的已建立應用程式](app-deploy-overview.md)。
 - [探索混合現實的所有可能性](https://docs.microsoft.com/windows/mixed-reality/)。
 - [瞭解如何使用 Unreal 進行 HoloLens 2 的開發。](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [在我們的 HoloDevelopers 時差頻道與您的開發人員聯繫](https://holodevelopersslack.azurewebsites.net/)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 1. 立即開始與混合現實互動，並在 HoloLens 上流覽 Windows 10-查看 **秘訣** 應用程式，以取得實際操作教學課程。 使用開始手勢移至 [開始]，或說 [移至開始]，然後選取 [提示]。
 1. 按一下下方以繼續閱讀有關 HoloLens 2 的資訊。

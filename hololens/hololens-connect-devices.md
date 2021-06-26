@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ffae65a6e1c096242ae7a28c488896c65df1c62d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397849"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924174"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>連接到 Bluetooth 和 USB-C 裝置
 
@@ -44,7 +44,7 @@ HoloLens (第1代) 支援下列藍牙裝置類別：
 - [HoloLens (第1代) clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> 其他類型的藍牙裝置，例如喇叭、耳機、智慧型手機和遊戲台，可能會列為 HoloLens 設定中的可用。 不過，HoloLens (第一代) 不支援這些裝置。 如需詳細資訊，請參閱 [HoloLens 設定會列出可用的裝置，但裝置無法運作](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)。
+> 其他類型的藍牙裝置，例如喇叭、耳機、智慧型手機和遊戲台，可能會列為 HoloLens 設定中的可用。 不過，HoloLens (第一代) 不支援這些裝置。 如需詳細資訊，請參閱 [HoloLens 設定會列出可用的裝置，但裝置無法運作](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)。
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>配對藍牙鍵盤或滑鼠
 
@@ -112,13 +112,6 @@ HoloLens 2 支援下列 USB-C 裝置類別：
 
 可惜的是，HoloLens 2 目前仍不支援藍牙麥克風。
 
-#### <a name="troubleshooting-usb-c-microphones"></a>疑難排解 USB-C 麥克風
-
-請注意，某些 USB C 麥克風錯誤地將本身視為麥克風 *和* 說話者。 這是麥克風的問題，而不是 HoloLens。 將其中一個麥克風插入 HoloLens 時，可能會遺失音效。 幸運的是，有一個簡單的修正程式。  
-
-在 [**設定**  ->  **系統**  ->  **音效**] 中，將內建的喇叭明確設定 **(類比功能音訊驅動程式)** 作為 **預設裝置**。 HoloLens 應該記得這項設定，即使已移除麥克風，稍後再重新連線也是如此。
-
-![疑難排解 USB-C 麥克風](images/usbc-mic-4.png)
 ### <a name="usb-c-hubs"></a>USB-C 中樞
 
 有些使用者可能需要一次連接多個裝置。 如果使用者想要使用 [usb 麥克風](#usb-c-external-microphone-support) 以及另一部連線的裝置，則可能符合客戶的需求。 Microsoft 尚未測試這些裝置，也不能建議任何特定品牌。

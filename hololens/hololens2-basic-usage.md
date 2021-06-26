@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 33382edfdd1f15a165921a3495290b85913cf445
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397679"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924582"
 ---
 # <a name="getting-around-hololens-2"></a>瀏覽 HoloLens 2
 
@@ -226,3 +226,5 @@ HoloLens 具有可看到您的幾英尺的感應器。 當您使用手時，您�
 
 > [!TIP]
 > 試用設計全像 [影像](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab) 應用程式。
+
+如果您是 IT 系統管理員，請參閱 [常見的部署案例](hololens-requirements.md) ，以瞭解如何將 HoloLens 2 部署到您的組織。

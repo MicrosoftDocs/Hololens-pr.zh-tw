@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5779ffa1de1700b4fcd17fc17b8ae3a82a45c22
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: d28994d911532a940d82756aa45609571ee80ac3
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397869"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924327"
 ---
 # <a name="page-settings-visibility"></a>頁面設定可見度
 
@@ -96,7 +96,7 @@ HoloLens 裝置和 Windows 10 裝置在 [設定] 應用程式中有不同的頁�
 | 檔案系統              | `ms-settings:privacy-broadfilesystemaccess`       |
 | 一般 <sup>2</sup>             | `ms-settings:privacy-general`       |
 | 筆墨 & 輸入個人化 <sup>2</sup>             | `ms-settings:privacy-speechtyping`       |
-| 位置                 | `ms-settings:privacy-location`                    |
+| Location                 | `ms-settings:privacy-location`                    |
 | 傳訊                | `ms-settings:privacy-messaging`                   |
 | 麥克風               | `ms-settings:privacy-microphone`                  |
 | 動作 <sup>2</sup>               | `ms-settings:privacy-motion`                  |
@@ -158,11 +158,11 @@ HoloLens 裝置和 Windows 10 裝置在 [設定] 應用程式中有不同的頁�
 | Windows Update-檢查是否有更新 | `ms-settings:windowsupdate-action`          |
 
 
->  <sup>1</sup> 在 Windows 全像21H1 版之前的版本中，下列兩個 uri 實際上不會帶您前往 [ **Advanced options** ] 或 [ **options** ] 頁面;它們只會封鎖或顯示主 Windows Update 頁面。
-> - ms-settings:windowsupdate-options
-> - ms-settings:windowsupdate-restartoptions
- 
-> <sup>2</sup> -在 Windows 全像21H1 或更高版本中提供。
+- <sup>1</sup> -針對 Windows 全像21H1 版之前的版本，下列兩個 uri 實際上不會帶您前往 [ **Advanced options** ] 或 [ **options** ] 頁面;它們只會封鎖或顯示主 Windows Update 頁面。
+  -  ms-settings:windowsupdate-options
+  -  ms-settings:windowsupdate-restartoptions
+
+- <sup>2</sup> -在 Windows 全像21H1 或更高版本中提供。
 
 
 如需 Windows 10 設定 Uri 的完整清單，請流覽 [啟動設定](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) 檔。

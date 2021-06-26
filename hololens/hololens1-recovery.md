@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397689"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923511"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>重新開機、重設或復原 HoloLens (第1代) 
 
 如果您的 HoloLens 遇到問題，您可能會想要嘗試重新開機或重設，或甚至使用裝置復原來重新刷新裝置。 本文將逐步引導您完成依序執行的建議復原步驟。
 
-如果您想要復原 HoloLens 2，請參閱 [復原 HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery)，因為該進程不同。
+如果您想要復原 HoloLens 2，請參閱 [復原 HoloLens 2](hololens-recovery.md)，因為該進程不同。
 
 > [!NOTE]
 > 本文著重于 HoloLens 裝置和軟體。 如果您的全像是看不到，請參閱 **[HoloLens 環境考慮](hololens-environment-considerations.md)** ，以取得改善全像影像品質之因素的相關資訊。
@@ -79,6 +79,27 @@ ms.locfileid: "110397689"
 1. 放開按鈕並等候2-3 秒。
 1. 按住 **電源** 按鈕的1秒。
 1. 如果您仍然遇到問題，請按 [ **電源** ] 按鈕4秒，直到所有電池指示器淡出，而螢幕停止顯示全像全像。 等候1分鐘，然後再按一次 **電源** 按鈕來開啟裝置。
+
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>返回為先前的版本-HoloLens (第1代) 
+
+在某些情況下，您可能會想要回到先前版本的 HoloLens 軟體。 若要這麼做，您可以使用 Windows 裝置復原工具將 HoloLens 重設為較早的版本。
+
+> [!NOTE]
+> 回到較舊的版本會刪除您的個人檔案和設定。
+
+若要返回之前的 HoloLens 1 版本，請遵循下列步驟：
+
+1. 確定您的電腦未插入任何電話或 Windows 裝置。
+1. 在您的電腦上，下載 [Windows 裝置修復工具 (WDRT) ](https://support.microsoft.com/help/12379)。
+1. 下載 [HoloLens 年度更新修復套件](https://aka.ms/hololensrecovery)。
+1. 當下載完成時，開啟 [檔案 **瀏覽器**  >  **下載**]。 在您剛剛下載的壓縮資料夾上按一下滑鼠右鍵，然後選取 [**解壓縮全部**  >  **解壓縮**] 將它解壓縮。
+1. 使用隨附的微型 USB 纜線將 HoloLens 連接到您的電腦。  (即使您已經使用其他纜線連接 HoloLens，這項功能的效果最好。 ) 
+1. WDRT 會自動偵測您的 HoloLens。 選取 **Microsoft HoloLens** 圖格。
+1. 在下一個畫面中，選取 [ **手動封裝選取專案** ]，然後選擇您在步驟4解壓縮的資料夾中所包含的安裝檔案。  (尋找副檔名為 ffu 的檔案 ) 
+1. 選取 [ **安裝軟體**]，並遵循指示進行。
+
+> [!NOTE]
+> 如果 WDRT 未偵測到 HoloLens，請嘗試重新開機您的電腦。 如果無法運作，請選取 [ **未偵測到我的裝置**]，選取 [ **Microsoft HoloLens**]，然後依照指示進行。
 
 ## <a name="reset-to-factory-settings"></a>重設為原廠設定
 

@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: d68c75dcb2249a67f2e07c77cb1b69997eb0ae72
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397769"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923596"
 ---
 # <a name="connect-hololens-to-a-network"></a>將 HoloLens 連接到網路
 
@@ -47,16 +47,10 @@ ms.locfileid: "110397769"
 1. 查看 [ **開始** ] 功能表左上方的 Wi-Fi 狀態。 將會顯示 Wi-Fi 的狀態以及連線網路的 SSID。
 
 > [!TIP]
-> 如果無法使用 Wi-Fi，您也可以連線 [至行動資料和5G 網路](https://docs.microsoft.com/hololens/hololens-cellular)。
+> 如果無法使用 Wi-Fi，您也可以連線 [至行動資料和5G 網路](hololens-cellular.md)。
 
 > [!IMPORTANT]
 > 根據設計，使用者無法微調 HoloLens 2 的 Wi-Fi 漫遊行為-重新整理 **Wi-Fi 清單的唯一方法，就是將 Wi-Fi 切換為 [關閉] 和 [開啟**]。 這可防止許多問題，例如裝置在超出範圍的情況下，可能會保持「卡在 AP」。
-
-## <a name="troubleshooting-your-connection-to-wi-fi"></a>針對您的 Wi-Fi 連線進行疑難排解
-
-如果您在連線到 Wi-fi 時遇到問題，請參閱 [我無法連線到 wi-fi](./hololens-faq.md#i-cant-connect-to-wi-fi)。
-
-當您登入裝置上的企業或組織帳戶時，如果您的 IT 系統管理員已設定原則，也可以將行動裝置管理 (MDM) 原則。
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>將 HoloLens 連線至企業 Wi-Fi 網路
 
@@ -64,7 +58,7 @@ ms.locfileid: "110397769"
 
 針對受 Microsoft Intune 管理的裝置，請參閱 [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) 以取得設定指示。
 
-若要在 WCD 中建立 Wi-Fi 布建套件，則需要預先設定的 Wi-Fi 設定檔 .xml 檔案。 以下是使用 EAP-TLS 驗證 WPA2-Enterprise 的範例 Wi-Fi 設定檔：
+若要在 WCD 中建立 Wi-Fi 布建套件，則需要預先設定的 Wi-Fi 設定檔 .xml 檔。 以下是使用 EAP-TLS 驗證 WPA2-Enterprise 的範例 Wi-Fi 設定檔：
 
 ``` xml
 <?xml version="1.0"?> 
@@ -133,23 +127,7 @@ ms.locfileid: "110397769"
 - WLANv1Profile 架構： [[MS-GPWL]：無線局域網路設定檔 V1 架構 |Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS 架構： [[GPWL]： MICROSOFT EAP TLS 架構 |Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-## <a name="eap-troubleshooting"></a>EAP 疑難排解
-> [!TIP]
-> 大部分的網路問題是因為在 Wi-fi 設定檔中有下列3個設定不正確的結果。 
-1. 雙檢查 Wi-Fi 設定檔有正確的設定：
-   1. EAP 類型已正確設定，常見的 EAP 類型： EAP-TLS (13) 、EAP-TTLS (21) 和 PEAP (25) 。
-   1. Wi-Fi SSID 名稱是正確的，且符合十六進位字串。
-   1. 對於 EAP-TLS，TrustedRootCA 包含伺服器&#39;信任的根 CA 憑證的 SHA-1 雜湊。 在 Windows 電腦上 &quot;certutil.exe-傾印 \_ 憑證檔案名] \_ &quot; 命令會顯示憑證&#39;sha-1 雜湊字串。
-
-2. 收集存取點或控制器或 AAA 伺服器記錄上的網路封包捕獲，找出 EAP 會話失敗的位置。
-   1. 如果未預期 HoloLens 提供的 EAP 身分識別，請檢查是否已透過 Wi-Fi 設定檔或用戶端憑證正確布建身分識別。
-   1. 如果伺服器拒絕 HoloLens 用戶端憑證，請檢查是否已在裝置上布建必要的用戶端憑證。
-   1. 如果 HoloLens 拒絕伺服器憑證，請檢查是否已在 HoloLens 上布建伺服器根 CA 憑證。
-1. 如果透過 Wi-Fi 布建套件布建企業設定檔，請考慮將布建套件套用到 Windows 10 電腦上。 如果 Windows 10 電腦上也失敗，請遵循《 [Windows 用戶端 802.1 x 驗證疑難排解指南》](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)。
-1. 根據您的組建) 將遙測設定為 [完整] 或 [選擇性] (，然後透過 [意見反應中樞](https://docs.microsoft.com/hololens/hololens-feedback)傳送意見反應給我們。
-
-### <a name="additional-resources"></a>其他資源：
-- [從 Windows 裝置匯出 Wi-Fi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+如果您在連接到 Wi-fi 時遇到問題，請查看我們的 [疑難排解](hololens2-enterprise-troubleshooting.md#) 頁面。
 
 ## <a name="configure-network-proxy"></a>設定網路 Proxy
 
@@ -195,7 +173,7 @@ ms.locfileid: "110397769"
     1. 輸入 Wi-Fi 網路的 SSID，然後按一下 [新增]。
     1. 在左側視窗中選取您的 Wi-Fi 網路，然後輸入所需的自訂。 啟用的自訂會以粗體顯示在左側功能表中。
     1. 按一下 [儲存並結束]。
-    1. [將](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) 布建套件套用到 HoloLens。
+    1. [將](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) 布建套件套用到 HoloLens。
 
 [Csp](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 在許多管理工作和原則的背後，適用于 Microsoft Intune 和非 Microsoft MDM 服務提供者中的 Windows 10。 您也可以使用 [Windows 設定設計](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) 工具來建立布建 [套件](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) ，並將它套用至 HoloLens 2。
 最可能會套用至您 HoloLens 2 的 Csp 如下：

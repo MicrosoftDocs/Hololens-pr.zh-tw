@@ -8,23 +8,98 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 554dc796ee793a3f7e81108c6eb614a9555f10d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 16aec0e60fde40f0a2bffefa871a7a3774b1eb2e
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397339"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924531"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
 為了確保您的 HoloLens 裝置有生產力的體驗，我們會繼續發行功能、bug 和安全性更新。 在此頁面上，您可以看到每月 HoloLens 的新功能。 若要取得最新的 HoloLens 2 更新，您可以 [檢查是否有更新，並以手動方式更新](hololens-update-hololens.md#check-for-updates-and-manually-update) 或取得完整 Flash 更新， (FFU) 透過 [Advanced Recovery 隨附將裝置閃爍](hololens-recovery.md#clean-reflash-the-device)。 [下載](https://aka.ms/hololens2download)會保持最新狀態，並提供最新正式推出的組建。
+
+> [!NOTE]
+> 最新的 Windows 11 公告著重于電腦版本的 Windows。 我們最近在2021年5月推出了 HoloLens 2 的 [重大作業系統更新](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) ，我們正努力根據客戶對此秋季的意見反應，來處理即將推出的版本。
+
+> [!IMPORTANT]
+> 由於我們的 [21H1 組建中有一個會影響遠端協助使用者的已知問題](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)，我們目前正在暫停 Windows 全像版本21H1 更新的提供。 我們也將預設的 Advanced Recovery 附屬組建變更為 Windows 全像 [20H2 版–2021年6月更新](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)，這是最新的20H2 版本。
+>
+> 雖然我們會減少21H1 的可用性以減輕此問題的影響，但我們瞭解某些客戶可能仍希望更新至21H1。 如果客戶想要更新至21H1，有兩個不同的路徑可用：
+>
+> - 將 [您的裝置 () 註冊為 Windows](hololens-insider.md#start-receiving-insider-builds)測試人員，並選取 **Beta 通道**，這可讓這些裝置更新至21H1，並擁有可靠的組建。
+> - [在您的電腦上下載最新的 FFU](https://aka.ms/hololens2download) ，然後透過 [Advanced Recovery 附隨您的裝置閃爍](hololens-recovery.md#clean-reflash-the-device)。
+
+## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows 全像21H1 版-2021 年6月更新
+- 組建20348.1007
+
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive for work 或學校相機滾動上傳
+
+我們已將新功能新增至 [HoloLens 2 設定] 應用程式，可讓客戶自動將混合的現實照片和影片從裝置的 > 圖片中上傳到對應的 [OneDrive for work] 或 [學校] 資料夾。 這項功能可解決 HoloLens 2 上 [OneDrive 應用程式內的功能差距](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) ，而此功能只支援將相機上傳至客戶的個人 Microsoft 帳戶 (，而不是) 的公司或學校帳戶。
+
+**運作方式**
+
+- 造訪 **> 系統 > 混合實境相機的設定** ，以啟用「相機上傳」。
+- 藉由將這項功能設定為 [ **開啟** ] 位置，將會自動將任何與您的裝置相關的混合現實照片或影片上傳至您的 OneDrive for work 或學校帳戶的 [圖片] > 相機滾動資料夾。
+    >[!NOTE]
+    >在啟用這項功能之前所捕獲到的相片和影片， *將不* 會排入上傳佇列，也將需要手動上傳。
+- [設定] 頁面上的狀態訊息會顯示暫止上傳 (的檔案數目，或在所有暫止的檔案) 上傳時，讀取「OneDrive 是最新的」。
+- 如果您擔心頻寬，或是基於任何原因而想要「暫停」上傳，您可以將功能切換到 **Off** 位置。 暫時停用此功能，可確保當您將新檔案新增至相機暫存資料夾時，上傳佇列會繼續增加，但在您重新啟用功能之前，將不會上傳檔案。
+- 最新的檔案會先上傳 (最後一個) 。
+- 如果您的 OneDrive 帳戶有問題 (例如，您的密碼變更之後) [ **立即修正** ] 按鈕將會出現在 [設定] 頁面上。
+- 檔案大小沒有上限，但請注意，大型檔案需要較長的時間才能上傳 (特別是當您的上傳頻寬受限於) 時。 如果您在上傳大型檔案時「暫停」或關閉上傳，則會保留部分上傳。 如果上傳在數小時內被「暫停」或「關閉」，則上傳會從中斷的位置繼續進行。 但是，如果在數小時後重新啟用上傳，則會從頭開始重新開機大型檔案的上傳。
+
+**已知問題和警告**
+
+- 這項設定不會根據目前的頻寬使用量進行內建的節流。 如果您需要將其他案例的頻寬最大化，請手動關閉設定。 上傳將會暫停，但功能會繼續監視新增至攝影機的檔案。 當您準備好要繼續進行上傳時，請重新啟用上傳。
+- 您必須針對裝置上的每個使用者帳戶啟用這項功能，而且只能主動上傳目前登入裝置之使用者的檔案。
+- 如果您在 [設定] 頁面上即時監看上傳計數，請注意，在目前的檔案完成上傳之前，暫止的檔案計數可能不會變更。
+- 如果您的裝置處於睡眠狀態或已關閉，則上傳將會暫停。 若要確保您的暫止上傳完成，請在 [設定] 頁面顯示 [OneDrive 為最新狀態] 之前主動使用裝置，或調整您的 **電源 & 睡眠** 設定。
+### <a name="added-support-for-some-telemetry-policies"></a>已新增某些遙測原則的支援
+
+HoloLens 2 現在支援下列遙測原則：
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一起使用，以在「設定」應用程式中擁有遙測和行為的完整控制。
+
+更新中的增強功能和修正：
+- 使用色彩校正來修正主要的視頻損毀。
+- 解決可能會在 [電源] 功能表中截斷文字的問題。
+- 啟用 RequirePrivateStoreOnly 原則的支援。
+
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows 全像20H2 版–2021年6月更新
+- 組建19041.1154
+
+### <a name="added-support-for-some-telemetry-policies"></a>已新增某些遙測原則的支援
+
+HoloLens 2 現在支援下列遙測原則：
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一起使用，以在「設定」應用程式中擁有遙測和行為的完整控制。
+
+我們建議您試用最新的組建，也就是 Windows 全像21H1 版。
+
+## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows 全像1903版-2021 年6月更新
+- 組建18362.1116
+
+更新中的增強功能和修正：
+- 此每月品質更新不包含任何值得注意的變更，建議您試用最新的組建，也就是 Windows 全像21H1 版。
+
+>[!IMPORTANT]
+> 此組建將不再提供服務。
 
 ## <a name="windows-holographic-version-21h1"></a>Windows 全像21H1 版
 - 組建20346.1002
@@ -309,9 +384,9 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 現在在此 Windows 組建中，使用者可以手動調整每個應用程式的磁片區層級。 這可讓使用者更專注于所需的應用程式，或在使用多個應用程式時更容易聽到。 例如，需要在另一個應用程式中呼叫另一個應用程式來提供遠端協助時，關閉其中一個應用程式的容量。
 
-若要設定個別應用程式的音量，請流覽至 [**設定**  ->  **系統**  ->  **音效**]，然後在 [Advanced 音效選項] 下選取 [**應用程式音量和裝置喜好** 設定]。
+若要設定個別應用程式的音量，請流覽至 [**設定**  ->  **系統**  ->  **音效**]，然後在 [Advanced 音效選項] 下選取 [**應用程式音量和裝置喜好** 設定]。<br/><br/>
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### <a name="swipe-to-type"></a>滑動至類型
 
@@ -327,13 +402,13 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 1. 使用 [開始手勢](hololens2-basic-usage.md#start-gesture) 開啟 HoloLens 開始畫面，或說「移至開始」。
 
-2. 請注意，[使用者設定檔] 圖片旁的省略號圖示 ( ... ) ：
+2. 請注意，[使用者設定檔] 圖片旁的省略號圖示 ( ... ) ：<br/><br/>
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. 使用您的手或語音命令「電源」來選取使用者個人資料圖片。
 
-4. 隨即出現一個功能表，其中包含登出、重新開機或關閉裝置的選項：
+4. 隨即出現一個功能表，其中包含登出、重新開機或關閉裝置的選項：<br/><br/>
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 

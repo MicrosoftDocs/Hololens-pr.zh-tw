@@ -2,7 +2,7 @@
 title: 設定您的 HoloLens 2
 description: 瞭解如何使用 Microsoft (MSA) 或 Azure Active Directory (AAD) 帳戶，透過 Wi-Fi 的網路，第一次設定您的 HoloLens 2。
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
-ms.date: 9/17/2019
+ms.date: 6/09/2021
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d46deaf4048e6a649345dc1676a7f8b94d3ad2fc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397569"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923680"
 ---
 # <a name="set-up-your-hololens-2"></a>設定您的 HoloLens 2
 
 當您第一次開啟 HoloLens 時，系統會引導您設定裝置、使用使用者帳戶登入，以及向您的眼睛校準 HoloLens。  本節將逐步解說 HoloLens 2 初始安裝體驗。
 
-在下一節中，您將瞭解如何使用 HoloLens 並與全息全像互動。 若要直接跳到這篇文章，請參閱 [開始使用 HoloLens 2](hololens2-basic-usage.md)。
+在下一節中，您將瞭解如何使用 HoloLens 並與全息全像互動。 若要直接跳到這篇文章，請參閱 [HoloLens 2](hololens2-basic-usage.md)。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 開始之前，請確定您有下列可用：
 
@@ -53,13 +53,19 @@ HoloLens 2 將逐步引導您完成下列步驟：
 
     ![選取區域](images/05-region.png)
 
-1. 將 HoloLens 校正到您的眼睛。  如果您選擇略過校正，系統會在您下次登入時提示您。
+1. 將 HoloLens 校正到您的眼睛。  如果您選擇略過校正，系統會在您下次登入時提示您。 
 
-    為了進行校正，您將會看到一組目標 (稱為 gem) 。 如果您在校正期間閃爍或關閉您的眼睛，但不想 stare 空間或實體空間中的其他物件，則可正常運作。 HoloLens 會使用此程式來瞭解您的眼睛位置，以便更妥善地轉譯您的全像世界。 在校正之後，即使面板在您的頭上轉移，還是會正確顯示全像投影。
+    1. 首先，您將會調整您的面板。
+    
+        ![校正選取畫面](images/06-et-corners.png)
 
-    校正資訊會儲存在本機裝置上，而且不會與任何帳戶資訊相關聯。 如需詳細資訊，請參閱 [校正資料和安全性](hololens-calibration.md#calibration-data-and-security)。
+    2. 為了進行校正，您將會看到一組目標 (稱為 gem) 。 如果您在校正期間閃爍或關閉您的眼睛，但不想 stare 空間或實體空間中的其他物件，則可正常運作。 HoloLens 會使用此程式來瞭解您的眼睛位置，以便更妥善地轉譯您的全像世界。 
 
-    ![校正選取畫面](images/06-et-corners.png)
+        ![調整您的眼睛](images/07-adjust-eyes.png)
+
+        在校正之後，即使面板在您的頭上轉移，還是會正確顯示全像投影。 校正資訊會儲存在本機裝置上，而且不會與任何帳戶資訊相關聯。 如需詳細資訊，請參閱 [校正資料和安全性](hololens-calibration.md#calibration-data-and-security)。
+
+        ![校正已完成](images/calibration-complete.png)
 
 1. 連線到網際網路 (選取 Wi-Fi 或您的乙太網路連接) 。
 
@@ -71,6 +77,14 @@ HoloLens 2 將逐步引導您完成下列步驟：
     > 如果您的進度超過 Wi-Fi 步驟，而且之後需要切換到不同的網路，但仍在安裝程式中，則如果您執行2019年10月或更新版本的 OS 版本，則可以同時按 **下音量** 和 **電源** 按鈕來返回此步驟。 針對較舊的版本，您可能需要 [重設裝置](hololens-recovery.md) ，或在 Wi-Fi 網路無法使用的位置中重新開機，以防止它自動連接。
     > 
     > 也請注意，在 HoloLens 設定期間，有兩分鐘的認證超時。 使用者名稱/密碼必須在兩分鐘內輸入，否則會自動清除使用者名稱欄位。
+
+1. HoloLens 2 會搜尋並套用 Autopilot 設定檔（如果有的話）。 此畫面上不需要採取任何動作。
+ 
+    ![Autopilot 設定檔搜尋](images/autopilot-profile-search.png) 
+
+1. 在授權畫面上按一下 [ **接受** ]。
+
+    ![Windows 授權合約](images/windows-license-agreement.png)
 
 1. 登入您的使用者帳戶。 您可以選擇 **我的工作或學校擁有它** ，而 **我擁有它**。
 
@@ -88,25 +102,44 @@ HoloLens 2 將逐步引導您完成下列步驟：
 
     ![設定使用者](images/13-device-owner.png)
 
-1. 選取是否要在 HoloLens 2 上啟用語音，以及是否要傳送診斷遙測。
+1. 選取 **[下一步]** 以安裝鳶尾花登入。 您將會經歷類似的視覺校正體驗。 當掃描完成時，請選取 [ **完成** ]。 您也可以選取 [ **略過** ] 略過此步驟。
+    
+    ![鳶尾花安裝 ](images/setup-iris.png) ![ 鳶尾花安裝程式完成](images/iris-setup-complete.png) 
+     
+  
+1. 您將設定 PIN 以登入裝置。 此 PIN 是裝置特定的。 
+
+    ![安裝 Windows Hello](images/setup-windows-hello.png)
+
+    ![設定 Windows Hello 釘選](images/windows-hello-pin.png)
+
+    ![Windows Hello 安裝成功](images/windows-hello-successful.png) 
+    
+1. 選取是否要在 HoloLens 2 上啟用語音。
 
     ![啟用 Cortana](images/22-do-more-with-voice.png)
 
-1. 選取您的遙測層級。 如果可以，請啟用完整的遙測。 這種資訊真的有助於 HoloLens 工程團隊。
+1. 選取是否要在 HoloLens 2 上啟用位置。
+    
+    ![啟用定位服務](images/setup-location-services.png)
+
+1. 選取您的遙測層級。 如果可以，請啟用選用的遙測。 這種資訊真的有助於 HoloLens 工程團隊。
 
      ![遙測層級](images/24-telemetry.png)
 
 1. 瞭解如何在 HoloLens 2 上使用開始手勢。
 
-     ![瞭解如何使用開始手勢、影像 1 ](images/26-01-startmenu-learning.png) ![ 學習如何使用開始手勢、影像2](images/26-02-startmenu-learning.png)
+     ![瞭解如何使用開始手勢，圖1](images/26-01-startmenu-learning.png)
+
+     ![瞭解如何使用開始手勢，圖2](images/26-02-startmenu-learning.png)
 
 恭喜！  安裝程式已完成，而且您已準備好使用 HoloLens！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 1. 立即開始與混合現實互動，並在 HoloLens 上流覽 Windows 10-查看 **秘訣** 應用程式，以取得實際操作教學課程。 使用開始手勢移至 [開始]，或說 [移至開始]，然後選取 [提示]。
 
 1. 按一下下方以繼續閱讀有關 HoloLens 2 的資訊。
 
 > [!div class="nextstepaction"]
-> [開始使用 HoloLens 2](hololens2-basic-usage.md)
+> [瀏覽 HoloLens 2](hololens2-basic-usage.md)

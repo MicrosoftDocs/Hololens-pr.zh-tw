@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: fbef357053900f6495cb59f52cba8669f0d0a3db
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397829"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924412"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
@@ -36,20 +36,22 @@ HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多�
 
 | 身分識別類型 | 每一裝置的帳戶 | 驗證選項 |
 | --- | --- | --- |
-| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (需要 Azure AD Premium)  | 64 | <ul><li>Azure web 認證提供者</li><li>Azure 驗證器應用程式</li><li>生物特徵辨識 (鳶尾花) &ndash; 只 HoloLens 2<sup>1</sup> </li><li>將 &ndash; HOLOLENS 釘選 (第1代) ，HoloLens 2 所需</li><li>密碼</li></ul> |
+| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web 認證提供者</li><li>Azure 驗證器應用程式</li><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2<sup>2</sup> </li><li>將 &ndash; HOLOLENS 釘選 (第1代) ，HoloLens 2 所需</li><li>密碼</li></ul> |
 | [Microsoft 帳戶 (MSA) ](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2</li><li>將 &ndash; HOLOLENS 釘選 (第1代) ，HoloLens 2 所需</li><li>密碼</li></ul> |
 | [本機帳戶](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | 密碼 |
 
 雲端連線的帳戶 (Azure AD 和 MSA) 提供更多功能，因為它們可以使用 Azure 服務。  
+> [!IMPORTANT]
+> 1-Azure AD Premium 不需要登入裝置。 不過，低觸控雲端式部署的其他功能（例如自動註冊和 Autopilot）需要此功能。
 
 > [!NOTE]
-> 1-雖然 HoloLens 2 裝置最多可支援 64 Azure AD 帳戶，但只有10個帳戶可以註冊鳶尾花 Authentication。 這與其他 [Windows Hello 企業版的生物特徵辨識驗證選項](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)一致。
+> 2-雖然 HoloLens 2 裝置最多可支援 64 Azure AD 帳戶，但只有10個帳戶可以註冊鳶尾花 Authentication。 這與其他 [Windows Hello 企業版的生物特徵辨識驗證選項](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)一致。
 
 ## <a name="setting-up-users"></a>設定使用者
 
 設定新使用者的最常見方式是在 HoloLens 現成體驗 (OOBE) 。 在安裝期間，HoloLens 會提示使用者使用他們想要在裝置上使用的帳戶來登入。 此帳戶可以是已在 Azure 中設定的取用者 Microsoft 帳戶或企業帳戶。 請參閱設定 [HoloLens (第1代) ](hololens1-start.md) 或 [HoloLens 2](hololens2-start.md)。
 
-如同其他裝置上的 Windows，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 相同的帳戶也會使用 Windows 帳戶管理員 Api，為 Edge 或 Skype 等應用程式提供單一登入。  
+如同其他裝置上的 Windows，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 相同的帳戶也提供應用程式的單一登入，例如 Edge 或 Microsoft Store，方法是使用 Windows 帳戶管理員 Api。  
 
 如果您使用企業或組織帳戶來登入 HoloLens，HoloLens 會在組織的 IT 基礎結構中註冊。 此註冊可讓您的 IT 系統管理員設定行動裝置管理 (MDM) 以將群組原則傳送到 HoloLens。
 

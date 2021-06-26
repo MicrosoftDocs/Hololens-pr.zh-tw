@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 6c9d1551b2a3348a6ff9962180c2d5552eb100f1
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: faa6bb2b095d69c3538063b1c042c5ce5e215d33
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397229"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924072"
 ---
 # <a name="manage-hololens-updates"></a>管理 HoloLens 更新
 
@@ -77,20 +77,20 @@ Windows Holographic for Business 可以使用 [商務用 Windows Update](https:/
   - 預設值： **0** (每天) 
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - 值：0– 23 (0 = 午夜，23 = 11 PM) 
-  - 預設值： 3 PM
+  - 預設值：上午3點
 
 #### <a name="configure-active-hours"></a>設定使用時間
 從 Windows 全像攝影 [版開始，20H2](hololens-release-notes.md#windows-holographic-version-20h2) IT 系統管理員可以指定 HoloLens 2 裝置的使用中時數範圍。
 
 [使用時間] 會識別您預期裝置處於使用中的一段時間。 更新之後的自動重新啟動會在使用時間之外發生。 指定的範圍將會從使用時間的開始時間來計算。 您可以如,[使用時間設定 MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) 中所述來使用 MDM。 MDM 會使用原則 CSP 中的 Update/ActiveHoursStart 和 Update/ActiveHoursEnd 和 Update/ActiveHoursMaxRange 設定來設定使用中的時數。
 
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) -此值會設定結束時間。 從開始時間最多可有12小時的時間。
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) -此值會設定結束時間。 開始時間最多可達12小時。
     -   支援的值為0-23，其中0是上午12點，1是上午1點，依此類推。
     -   預設值為 17 (下午5點) 。
 -   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) -此值會設定從開始時間起的最大作用中時數。
     -   支援的值為8-18。
     -   預設值為 18 (小時) 。
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) -此值會設定開始時間。 結束時間最多可達12個小時。
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) -此值會設定開始時間。 結束時間最多可達12小時。
     -   支援的值為0-23，其中0是上午12點，1是上午1點，依此類推。
     -   預設值為 8 (上午8點) 。
 
@@ -112,7 +112,7 @@ HoloLens 2 支援比 HoloLens (第一代) 更多的更新自動化功能。 尤�
 
 例如，假設有一個具有1000裝置的組織，而且必須在五個波內更新裝置。 組織可以建立五個更新響鈴，如下表所示。
 
-|Group |裝置數目 |延遲 (天)  |
+|群組 |裝置數目 |延遲 (天)  |
 | ---| :---: | :---: |
 |Grp 1 (IT 人員)  |5 |0 |
 |Grp 2 (早期採用者)  |50 |60 |
@@ -137,7 +137,7 @@ HoloLens 2 支援比 HoloLens (第一代) 更多的更新自動化功能。 尤�
 
 #### <a name="pause-updates-via-device"></a>透過裝置暫停更新
 
-如果使用者沒有 MDM 的存取權，他們可以在組建 Windows 全像 [2004 版](hololens-release-notes.md#windows-holographic-version-2004) 或更新版本的 HoloLens 2 裝置上，手動暫停最多35天的更新。 使用者可以藉由流覽至 [ **設定]-[設定] > [更新] & [安全性] > [Advanced options** ] 向下滾動以 **暫停更新** ，然後選取要暫停更新的日期。 一旦使用者達到暫停限制，裝置將需要取得新的更新，因為它們可以再次暫停。 
+如果使用者沒有 MDM 的存取權，他們可以在組建 Windows 全像 [2004 版](hololens-release-notes.md#windows-holographic-version-2004) 或更新版本的 HoloLens 2 裝置上，手動暫停最多35天的更新。 使用者可以藉由流覽至 [設定] 來觸達此設定 **> 更新 & 安全性 > [Advanced options** ] 會向下滾動以 **暫停更新** ，然後選取要暫停更新的日期。 一旦使用者達到暫停限制，裝置將需要取得新的更新，才能再次暫停。 
 
 從 Windows 全像 [20H2 版](hololens-release-notes.md#windows-holographic-version-20h2)開始，可針對 HoloLens 2 裝置管理此暫停更新功能。 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)。
@@ -207,7 +207,7 @@ HoloLens 2 支援比 HoloLens (第一代) 更多的更新自動化功能。 尤�
 1. 確定您的電腦未插入任何電話或 Windows 裝置。
 1. 在您的電腦上，下載 Microsoft Store 的 [Advanced Recovery 附隨](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) 。
 1. 下載 [最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
-1. 完成這些下載之後，請開啟 [檔案 **瀏覽器**  >  **下載**]，以滑鼠右鍵按一下您剛剛下載的壓縮 ( .zip) 資料夾，然後選取 [**解壓縮所有**  >  **解壓縮**] 以展開檔案。
+1. 完成這些下載之後，請開啟 [檔案 **瀏覽器**  >  **下載**]，以滑鼠右鍵按一下您剛剛下載的壓縮 (.zip) 資料夾，然後選取 [**解壓縮所有**  >  **解壓縮**] 以展開檔案。
 1. 使用 USB-A 至 USB-C 纜線將 HoloLens 裝置連接到電腦。 即使您已使用其他纜線連接 HoloLens，這種纜線的效果最好。
 1. Advanced Recovery 隨附會自動偵測您的 HoloLens 裝置。 選取 **Microsoft HoloLens** 圖格。
 1. 在下一個畫面中，選取 [ **手動封裝選取**]，然後開啟您先前展開的資料夾。
@@ -226,7 +226,7 @@ HoloLens 2 支援比 HoloLens (第一代) 更多的更新自動化功能。 尤�
 1. 確定您沒有任何電話或 Windows 裝置插入電腦。
 1. 在您的電腦上，下載 [Windows 裝置修復工具 (WDRT) ](https://support.microsoft.com/help/12379)。
 1. 下載 [HoloLens 年度更新修復套件](https://aka.ms/hololensrecovery)。
-1. 下載完成之後，請開啟 [檔案 **瀏覽器**  >  **下載**]，以滑鼠右鍵按一下您剛剛下載的壓縮 ( .zip) 資料夾，然後選取 [**解壓縮所有**  >  **解壓縮**] 以展開檔案。
+1. 下載完成之後，請開啟 [檔案 **瀏覽器**  >  **下載**]，以滑鼠右鍵按一下您剛剛下載的壓縮 (.zip) 資料夾，然後選取 [**解壓縮所有**  >  **解壓縮**] 以展開檔案。
 1. 使用與 HoloLens 裝置一起提供的微型 USB 纜線，將 HoloLens 裝置連接到您的電腦。 即使您已使用其他纜線來連接 HoloLens 裝置，但這種方式的效果最佳。
 1. WDRT 會自動偵測您的 HoloLens 裝置。 選取 **Microsoft HoloLens** 圖格。
 1. 在下一個畫面中，選取 [ **手動封裝選取**]，然後開啟您先前展開的資料夾。

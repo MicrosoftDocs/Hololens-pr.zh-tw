@@ -12,18 +12,23 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 75e30960717502fb6cfb3234742bae799dc6f19d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397609"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924514"
 ---
 # <a name="about-hololens-2"></a>關於 HoloLens 2
 
 ![HoloLens 2 側邊視圖](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (第一代) 所開始的全像電腦運算旅程，提供更舒適且更豐富的體驗，並搭配更多可在混合現實中共同作業的選項。 需要使用者帳戶才能使用 HoloLens 2。
+Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (第一代) 所開始的全像電腦運算旅程，提供更舒適且更豐富的體驗，並搭配更多可在混合現實中共同作業的選項。 HoloLens 2 是以 Windows 10 的「類別」為基礎，可讓使用者、系統管理員和開發人員使用強大、高效能且安全的平臺，在 Windows 全像的 [作業系統](hololens-release-notes.md)上執行。 
+
+> [!NOTE]
+> 最新的 Windows 11 公告著重于電腦版本的 Windows。 我們最近在2021年5月推出了 HoloLens 2 的 [重大作業系統更新](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) ，我們正努力根據客戶對此秋季的意見反應，來處理即將推出的版本。
+
+需要使用者帳戶才能使用 HoloLens 2。
 
 ## <a name="hololens-components"></a>HoloLens 元件
 
@@ -133,7 +138,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 
 |   |   |
 | - | - |
-| Windows 全像作業系統 | 使用 Windows 全像攝影版，Windows 10 使用者將能夠透過 HoloLens 2，在混合現實環境中使用部分的應用程式和遊戲。
+| Windows 全像作業系統 | 有了 Windows 全像 [作業系統](hololens-release-notes.md)，Windows 10 使用者將能夠透過 HoloLens 2，在混合現實環境中使用部分的應用程式和遊戲。
 | 3D 檢視器 | [3D 檢視器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) 可讓您輕鬆地即時觀看3d 模型和動畫。|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)是您的個人生產力小幫手，可協助您掌握重要性，並節省時間找出您所需的內容。  |
 | Dynamics 365 Guides |  [Dynamics 365 指南](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 將協助員工以 HoloLens 裝置更快學習新技能。 |
@@ -208,7 +213,10 @@ HoloLens 2 裝置的序號會列印在面板底下。
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-steps"></a>下一步 (s) 
+
+> [!div class="nextstepaction"]
+> [比較 HoloLens 2 版本](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 > [設定並啟動您的 HoloLens 2](hololens2-setup.md)

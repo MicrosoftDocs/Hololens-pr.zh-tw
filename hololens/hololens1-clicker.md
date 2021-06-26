@@ -13,12 +13,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 83e5a746b6900c547778c71a0855426563458032
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309022"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924055"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>使用 HoloLens (第1代) clicker
 
@@ -75,6 +75,15 @@ Clicker 手勢是很小的手腕旋轉，而不是用於 HoloLens 手勢的較�
 > [!TIP]
 > 若要在使用 Microsoft Edge 時放大或縮小，請在頁面上按一下，然後按兩下。
 
+## <a name="im-having-problems-using-the-hololens-clicker"></a>我在使用 HoloLens clicker 時發生問題
+
+使用 [clicker](hololens1-clicker.md) 來選取、滾動、移動及調整全像大尺寸。 個別的應用程式可能支援額外的 clicker 手勢。
+
+如果您在使用 clicker 時遇到問題，請確定其已向您的 HoloLens 收費並與您的 HoloLens 配對。 如果電池偏低，指標燈會閃爍琥珀色。 若要確認 clicker 是否成對，請移至 [**設定**  >  **裝置**]，並查看它是否顯示在該處。 如需詳細資訊，請參閱 [將 Clicker 配對](hololens1-clicker.md)。
+
+如果 clicker 已收費且配對，而您仍然遇到問題，請按住 [主要] 按鈕和 [配對] 按鈕15秒來重設。 然後再次將 clicker 與您的 HoloLens 配對。
+
+如果重設 clicker 沒有説明，請參閱 [重新開機或復原 HoloLens clicker](hololens1-clicker.md#restart-or-recover-the-clicker)。
 ## <a name="restart-or-recover-the-clicker"></a>重新開機或復原 clicker
 
 以下是 HoloLens clicker 沒有回應或無法正常運作時，應嘗試的一些事項。
@@ -100,3 +109,4 @@ Clicker 手勢是很小的手腕旋轉，而不是用於 HoloLens 手勢的較�
 1. 執行 Windows 裝置修復工具，並遵循指示進行。
 
 如果未自動偵測到 clicker，請選取 [ **我的裝置** 未偵測到]，並遵循指示將裝置進入修復模式。
+

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dfa3096f40dab02357409b05c1fc4c0d44a46a6d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397549"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923494"
 ---
 # <a name="compare-hololens-2-options"></a>比較 HoloLens 2 選項
 
@@ -85,12 +85,12 @@ HoloLens 是一種混合現實裝置， *由* 全像全像全像投影，並提�
 |  [混合現實的 Azure 雲端服務](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | 瞭解如何使用 Azure 雲端服務開發解決方案。                                       |
 |  [開始開發 HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | 打造混合的現實解決方案，以符合您的需求。                                                 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-針對裝置終端使用者，請參閱 [基本使用方式總覽](hololens2-setup.md) 以開始使用。
+針對裝置終端使用者，請參閱「 [讓您的 HoloLens 2 準備好開始使用](hololens2-setup.md) 」。
 
 > [!div class="nextstepaction"]
-> [基本使用方式總覽](hololens2-setup.md)
+> [開始使用您的 HoloLens 2](hololens2-setup.md)
 
 對於 IT 系統管理員來說，將裝置部署到您的組織會解除強大的混合現實體驗。 請在一系列的 IT 基礎結構設定中審視 HoloLens 2 部署需求和案例，以開始著手。
 

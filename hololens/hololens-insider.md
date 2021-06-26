@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8545b5f23dc81c194b68ea8b40feb83e525dfdf7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397819"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924361"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -31,30 +31,47 @@ ms.locfileid: "110397819"
 
 我們很高興能再次開始試驗 Windows 測試人員的新功能。 新組建將會試驗至開發和搶鮮版（Beta）通道，以取得最新的更新。 當我們在 Windows 測試人員組建中新增更多功能和更新時，我們會繼續更新此頁面。 取得驚喜，並準備好將這些更新混合到您的現實中。 
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive for work 或學校相機滾動上傳
+### <a name="csp-changes-on-hololens"></a>HoloLens 上的 CSP 變更
+ 
+- 在 Windows 測試人員組建20348.1403 中引進
 
-*組建20346.1402 中引進*
+#### <a name="devdetail-csp"></a>DevDetail CSP
 
-我們已將新功能新增至 [HoloLens 2 設定] 應用程式，可讓客戶自動將混合的現實照片和影片從裝置的 > 圖片中上傳到對應的 [OneDrive for work] 或 [學校] 資料夾。 這項功能可解決 HoloLens 2 上 [OneDrive 應用程式內的功能差距](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) ，而此功能只支援將相機上傳至客戶的個人 Microsoft 帳戶 (，而不是) 的公司或學校帳戶。
+DevDetail CSP 現在也會報告 HoloLens 裝置上的可用儲存空間。 這應該與 [設定] 應用程式的 [儲存體] 頁面中顯示的值大約相符。 以下是包含這項資訊的特定節點。
 
-**運作方式**
+- 。/DevDetail/Ext/Microsoft/FreeStorage (僅取得作業) 
 
-- 造訪 **> 系統 > 混合實境相機的設定** ，以啟用「相機上傳」。
-- 藉由將這項功能設定為 [ **開啟** ] 位置，將會自動將任何與您的裝置相關的混合現實照片或影片上傳至您的 OneDrive for work 或學校帳戶的 [圖片] > 相機滾動資料夾。
-    >[!NOTE]
-    >在啟用這項功能之前所捕獲到的相片和影片， *將不* 會排入上傳佇列，也將需要手動上傳。
-- [設定] 頁面上的狀態訊息會顯示暫止上傳 (的檔案數目，或在所有暫止的檔案) 上傳時，讀取「OneDrive 是最新的」。
-- 如果您擔心頻寬，或是基於任何原因而想要「暫停」上傳，您可以將功能切換到 **Off** 位置。 暫時停用此功能，可確保當您將新檔案新增至相機暫存資料夾時，上傳佇列會繼續增加，但在您重新啟用功能之前，將不會上傳檔案。
-- 最新的檔案會先上傳 (最後一個) 。
-- 如果您的 OneDrive 帳戶有問題 (例如，您的密碼變更之後) [ **立即修正** ] 按鈕將會出現在 [設定] 頁面上。
-- 檔案大小沒有上限，但請注意，大型檔案需要較長的時間才能上傳 (特別是當您的上傳頻寬受限於) 時。 如果您在上傳大型檔案時「暫停」或關閉上傳，則會立即取消上傳。 當您重新啟用此功能時，上傳將會重新開機;您不會遺失任何檔案，但會捨棄部分上傳。
+#### <a name="devicestatus-csp"></a>DeviceStatus CSP
 
-**已知問題和警告**
+DeviceStatus CSP 現在也會報告與 HoloLens 主動連線的 Wifi 網路的 SSID 和 BSSID。 以下是包含這項資訊的特定節點。
 
-- 這項設定不會根據目前的頻寬使用量進行內建的節流。 如果您需要將其他案例的頻寬最大化，請手動關閉設定。 上傳將會暫停，但功能會繼續監視新增至攝影機的檔案。 當您準備好要繼續進行上傳時，請重新啟用上傳。
-- 您必須針對裝置上的每個使用者帳戶啟用這項功能，而且只能主動上傳目前登入裝置之使用者的檔案。
-- 如果您在 [設定] 頁面上即時監看上傳計數，請注意，在目前的檔案完成上傳之前，暫止的檔案計數可能不會變更。
-- 如果您的裝置處於睡眠狀態或已關閉，則上傳將會暫停。 若要確保您的暫止上傳完成，請在 [設定] 頁面顯示 [OneDrive 為最新狀態] 之前主動使用裝置，或調整您的 **電源 & 睡眠** 設定。
+- /Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*介面卡的 mac 位址/SSID Wi-Fi*
+- /Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*介面卡的 mac 位址/BSSID Wi-Fi*
+
+MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
+
+```xml
+<SyncML>
+<SyncBody>
+    <Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+            </LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### <a name="fixes-and-improvements"></a>修正和改善：
+
+- 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- 已修正檔案 [上傳和下載超時的裝置入口網站已知問題。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build
 > [!NOTE]
@@ -94,7 +111,7 @@ Windows insider 現在正在移至頻道。 **快速** 環形會成為 **開發�
 ## <a name="stop-receiving-insider-builds"></a>停止接收 Insider 組建
 如果您不想再收到 Windows 全像攝影版，您可以選擇在 HoloLens 執行生產組建時退出，也可以使用先進的復原功能來 [復原您](hololens-recovery.md) 的裝置，以將裝置復原到非 Insider 版本的 windows 電腦。
 > [!CAUTION]
-> 有一個已知問題，就是在手動重新安裝全新的預覽組建之後，從 Insider Preview 組建中取消註冊的使用者會遇到藍色畫面。 之後，他們必須手動復原其裝置。 如需受影響的完整詳細資訊，請參閱此 [已知問題](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)的詳細資訊。
+> 有一個已知問題，就是在手動重新安裝全新的預覽組建之後，從 Insider Preview 組建中取消註冊的使用者會遇到藍色畫面。 之後，他們必須手動復原其裝置。 如需受影響的完整詳細資訊，請參閱此 [已知問題](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)的詳細資訊。
 若要確認 HoloLens 正在執行生產組建：
 1. 移至 [ **設定] > 系統 > 的相關資訊**，並尋找組建編號。
 1. [請參閱生產組建編號的版本](hololens-release-notes.md)資訊。

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9a1d9eaccb212474f47fd277c77fb41784f9ddc5
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397559"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924429"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>開始使用您的 HoloLens 2
 
@@ -34,7 +34,7 @@ ms.locfileid: "110397559"
 - 當您只開啟五個燈的其中一個時，電池計量低於20%。
 - 如果電池計量偏低，而您嘗試開啟裝置，則會短暫閃爍一次，然後移出。
 
-如果需要詳細資訊， [可以在這裡閱讀有關裝置充電的完整詳細資料](hololens-recovery.md#charge-the-device) 。 
+如果需要詳細資訊， [可以在這裡閱讀有關裝置充電的完整詳細資料](hololens2-charging.md#charging-the-device) 。 
 
 ## <a name="adjust-fit"></a>調整大小
 
@@ -69,7 +69,7 @@ ms.locfileid: "110397559"
 | 進入睡眠狀態 | 按下按鈕。 | 全部五個燈開啟，然後一次淡出一個。 燈關閉之後，就會播放音效，螢幕會顯示「再見」。 |
 | 從睡眠狀態喚醒 | 按下按鈕。 | 所有五個燈開啟，然後變更以表示電池計量。 立即播放音效。 |
 | 若要關閉 | 按住5秒。 |  全部五個燈開啟，然後一次淡出一個。 燈關閉之後，就會播放音效，螢幕會顯示「再見」。 |
-| 強制 Hololens 重新開機（如果沒有回應） | 按住10s。 | 全部五個燈開啟，然後一次淡出一個。 燈關閉之後。 |
+| 強制 HoloLens 重新開機（如果沒有回應） | 按住10s。 | 全部五個燈開啟，然後一次淡出一個。 燈關閉之後。 |
 
 ## <a name="hololens-behavior-reference"></a>HoloLens 行為參考
 
@@ -125,4 +125,4 @@ ms.locfileid: "110397559"
 請參閱 [產品安全警告和指示](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)。
 
 > [!div class="nextstepaction"]
-> [啟動並設定您的 HoloLens 2](hololens2-start.md)
+> [設定您的 HoloLens 2](hololens2-start.md)

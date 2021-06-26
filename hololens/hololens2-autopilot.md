@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: jarrettr
-ms.openlocfilehash: 9625f3fd1cd6a928f6bd20ba809c750c625143cf
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 10a577cf77a5c6faf0e7e07fa2fd5ad8603ec5ae
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397739"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923647"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -128,7 +128,7 @@ ms.locfileid: "110397739"
     1. 在電腦上，開啟檔案總管]。 開啟 **此電腦的 \\ \<*HoloLens device name*> \\ 內部 \\ 儲存體** 檔，並找出 AutopilotDiagnostics.zip 的檔案。  
 
        > [!NOTE]  
-       > .Zip 檔案可能無法立即使用。 如果檔案尚未就緒，您可能會在 [檔] 資料夾中看到 HoloLensDiagnostics。 若要更新檔案清單，請重新整理視窗。
+       > .zip 的檔案可能無法立即使用。 如果檔案尚未就緒，您可能會在 [檔] 資料夾中看到 HoloLensDiagnostics。 若要更新檔案清單，請重新整理視窗。
     
     1. 將 AutopilotDiagnostics.zip 檔案的內容解壓縮。
 
@@ -210,7 +210,7 @@ ms.locfileid: "110397739"
 1. 在 [ **審核 + 建立** ] 頁面上，檢查設定，然後選取 [ **建立** ] 以建立設定檔。  
 
    > [!div class="mx-imgBorder"]
-   > ![檢閱 + 建立](./images/hololens-ap-profile-summ.png)
+   > ![審核 + 建立](./images/hololens-ap-profile-summ.png)
 
 ### <a name="6-verify-the-esp-configuration"></a>6. 確認 ESP 設定
 
@@ -312,13 +312,6 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 - 透過 Wi-fi 設定 Autopilot 時，可能會有一個實例，在第一次建立網際網路連線時，不會下載 Autopilot 設定檔。 在此情況下，會顯示使用者授權合約 (EULA) ，而且使用者可以選擇是否要繼續進行非 Autopilot 安裝體驗。 若要使用 Autopilot 重試設定，請讓裝置進入睡眠狀態，然後重新開機裝置，然後再試一次。
 - 目前在 HoloLens 上不支援「將所有目標裝置轉換為 Autopilot」功能。  
 
-### <a name="troubleshooting"></a>疑難排解
-
-下列文章可能是您瞭解詳細資訊和針對 Autopilot 問題進行疑難排解的實用資源，但請注意，這些文章是以 Windows 10 Desktop 為基礎，而且並非所有資訊都適用于 HoloLens：
-
-- [Windows Autopilot-已知問題](https://docs.microsoft.com/mem/autopilot/known-issues)
-- [針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
-- [Windows Autopilot 原則衝突](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot 的意見反應與支援
 
