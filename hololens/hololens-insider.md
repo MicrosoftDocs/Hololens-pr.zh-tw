@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924361"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977234"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -29,10 +29,14 @@ ms.locfileid: "112924361"
 
 ## <a name="windows-insider-release-notes"></a>Windows 測試人員版本資訊
 
-我們很高興能再次開始試驗 Windows 測試人員的新功能。 新組建將會試驗至開發和搶鮮版（Beta）通道，以取得最新的更新。 當我們在 Windows 測試人員組建中新增更多功能和更新時，我們會繼續更新此頁面。 取得驚喜，並準備好將這些更新混合到您的現實中。 
+我們很高興能再次開始試驗 Windows 測試人員的新功能。 新組建將會試驗至開發和搶鮮版（Beta）通道，以取得最新的更新。 當我們在 Windows 測試人員組建中新增更多功能和更新時，我們會繼續更新此頁面。 取得驚喜，並準備好將這些更新混合到您的現實中。
+
+| 功能                 | 描述                | 目標使用者 | 引進的組建 |
+|-------------------------|----------------------------|--------------|------------------|
+| HoloLens 上的 CSP 變更 | 用於查詢資料的新 Csp | IT 系統管理員    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>HoloLens 上的 CSP 變更
- 
+
 - 在 Windows 測試人員組建20348.1403 中引進
 
 #### <a name="devdetail-csp"></a>DevDetail CSP
