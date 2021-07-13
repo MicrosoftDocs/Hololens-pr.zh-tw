@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 73d89619498c61f2809702d788ffafc532afa67e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1de9687174bf9c1de2e2b15ee03aa841254b0b82
+ms.sourcegitcommit: 2988afb1d7792c9e4bae15485cd52d6eff7e27c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640027"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113685043"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -31,6 +31,27 @@ ms.locfileid: "113640027"
 
 > [!IMPORTANT]
 > 由於[21H1 組建中已解決的已知問題會影響遠端協助使用者](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)，我們暫時暫停了 Windows 全像版本21H1 更新的供應專案。 我們也已將預設的 Advanced Recovery 附隨 (ARC) 組建變更為 Windows 全像[20H2 版–2021年6月更新](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)。 ARC 組建現在會繼續以21H1 組建為目標。
+
+## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows全像21H1 版-2021 年7月更新
+- 組建20348.1010
+
+更新中的增強功能和修正：
+
+- 裝置入口網站在檔案總管遇到開啟鎖定檔案的問題時，有增強的方法可以通知客戶。
+- 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。  先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。  在某些情況下，模擬器無法順利開機，但現在將會。
+- 在所有支援的瀏覽器中使用 HTTPs 時，現在都會修正檔案上傳、下載、重新命名及刪除。
+- 已修正 Wi-Fi 屬性 UI 從設定 > 的網路啟動時，Wi-Fi proxy 無法儲存的問題 **& > 的狀態 > 屬性**。
+- 解決跨作業系統更新移除 eSIM 憑證的問題。 此修正可確保更新至21H1 版本時，會移除 eSIM 憑證和相關元件。
+- 修正在作業系統重設期間影響預先安裝應用程式的問題。 
+- 調整電池充電效能，以增加 CPU 載入時增加執行時間。
+
+## <a name="windows-holographic-version-20h2--july-2021-update"></a>Windows全像20H2 版-2021 年7月更新
+- 組建19041.1157
+
+更新中的增強功能和修正：
+- 裝置入口網站在檔案總管遇到開啟鎖定檔案的問題時，有增強的方法可以通知客戶。 
+- 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。  先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。  在某些情況下，模擬器無法順利開機，但現在將會。
+- 在所有支援的瀏覽器中使用 HTTPs 時，現在都會修正檔案上傳、下載、重新命名及刪除。
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows全像21H1 版-2021 年6月更新
 - 組建20348.1007
