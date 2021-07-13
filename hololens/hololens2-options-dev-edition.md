@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 開發版
+title: HoloLens 2開發版
 description: 瞭解 HoloLens 2 開發版，以及取得您自己的版本之後該怎麼做。
 keywords: HoloLens 2 購買選項、HoloLens 選項、Developer Edition
 author: bogenera
@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 268e338ad6734b2d951e72dbf8af4d2edf569aae
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924463"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636362"
 ---
-# <a name="hololens-2-development-edition"></a>HoloLens 2 開發版
+# <a name="hololens-2-development-edition"></a>HoloLens 2開發版
 
 使用此供應專案開始打造混合現實，此供應專案結合了 HoloLens 2 與 Unity 軟體的免費試用與雲端服務的 Azure 點數。 瞭解如何超越基本概念，並開始開發混合現實。
 
@@ -36,14 +36,14 @@ HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity
 |---|---|
 |  [Unity](https://unity.com/) | 即時3D 開發平臺。   |
 |  [適用于 Unity 的 Pixyz 外掛程式](https://www.pixyz-software.com/plugin/) | 用來連接工程 &amp; CAD 世界與開發世界的橋樑。   |
-| [Azure 服務的 Azure 信用額度 $500](https://azure.microsoft.com/resources/) | HoloLens 2 開發版隨附的 Azure 點數，是快速開始在 Azure 上建立及測試混合現實應用程式。 |
+| [Azure 服務的 Azure 信用額度 $500](https://azure.microsoft.com/resources/) | HoloLens 2 開發版隨附的 azure 點數，是快速開始在 azure 上建立及測試混合現實應用程式。 |
 
-![HoloLens 2 開發版](./images/hololens-2-dev-ed.png)
+![HoloLens 2開發版](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>兌換您的點數
 
 ### <a name="unity"></a>Unity
-您將收到唯一的程式碼。 兌換 Unity Pro 試用的指示：
+您將收到唯一的程式碼。 兌換 Unity 的指示 Pro 試用版：
 1. 造訪 [id.unity.com](http://id.unity.com/)
 1. 使用您的 Unity ID 登入，或建立一個
 1. 按一下 [**兌換產品代碼**]
@@ -61,7 +61,7 @@ HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity
 
 ### <a name="azure"></a>Azure
 以下是一些常見 [的混合現實 azure 產品](https://azure.microsoft.com/topic/mixed-reality/) ，您可能會想要兌換 azure 點數。
-如何兌換 Azure 點數：若要兌換您的 $500 Azure 點數，請兌換您的 Azure Pass 促銷代碼，並啟用您的訂用帳戶。 [深入了解。](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+如何兌換 Azure 點數：若要兌換您的 $500 Azure 點數，請兌換您的 Azure Pass 促銷代碼，並啟用您的訂用帳戶。 [深入了解。](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [瞭解 Azure 空間錨點如何協助您建立應用程式，以對應、共用和保存3D 內容](https://azure.microsoft.com/services/spatial-anchors/)
 - [瞭解 Azure 遠端轉譯如何轉譯高品質的互動式3D 內容，並將它即時串流到您的裝置](https://azure.microsoft.com/services/remote-rendering/)
@@ -72,24 +72,24 @@ HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity
 
 |     Checkpoint                              |     結果                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [開始設計和原型設計](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     開始在核心概念、互動模型和 UX 元素之間設計混合現實應用程式。     |
-|     [開始開發混合現實](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     選擇您的引擎、下載工具、新增核心構成要素，並立即開始建立。                                  |
-|     [探索 Azure 雲端服務](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     使用 Azure 遠端轉譯和 Azure 空間錨點打造吸引人的沉浸式體驗。                                 |
+|     [開始設計和原型設計](/windows/mixed-reality/design/design)         |     開始在核心概念、互動模型和 UX 元素之間設計混合現實應用程式。     |
+|     [開始開發混合現實](/windows/mixed-reality/develop/development?tabs=unity)    |     選擇您的引擎、下載工具、新增核心構成要素，並立即開始建立。                                  |
+|     [探索 Azure 雲端服務](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     使用 Azure 遠端轉譯和 Azure 空間錨點打造吸引人的沉浸式體驗。                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Developer Edition 其他資源
 
-- [HoloLens 2 開發版常見問題](hololens2-development-edition-faq.md)
-- [請務必安裝適用于 HoloLens 開發的工具。](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [瞭解如何使用 Unity 進行 HoloLens 2 的開發](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
-- [瞭解如何將 MRTK 與 Unity 合併](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)。
+- [HoloLens 2開發版常見問題](hololens2-development-edition-faq.yml)
+- [請務必安裝適用于 HoloLens 開發的工具。](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [瞭解如何使用 Unity 進行 HoloLens 2 的開發](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
+- [瞭解如何將 MRTK 與 Unity 合併](/windows/mixed-reality/develop/unity/mrtk-getting-started)。
 - [瞭解如何部署您的已建立應用程式](app-deploy-overview.md)。
-- [探索混合現實的所有可能性](https://docs.microsoft.com/windows/mixed-reality/)。
-- [瞭解如何使用 Unreal 進行 HoloLens 2 的開發。](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [探索混合現實的所有可能性](/windows/mixed-reality/)。
+- [瞭解如何使用 Unreal 進行 HoloLens 2 的開發。](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [在我們的 HoloDevelopers 時差頻道與您的開發人員聯繫](https://holodevelopersslack.azurewebsites.net/)。
 
 ## <a name="next-steps"></a>下一步
 
-1. 立即開始與混合現實互動，並在 HoloLens 上流覽 Windows 10-查看 **秘訣** 應用程式，以取得實際操作教學課程。 使用開始手勢移至 [開始]，或說 [移至開始]，然後選取 [提示]。
+1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 1. 按一下下方以繼續閱讀有關 HoloLens 2 的資訊。
 
 > [!div class="nextstepaction"]

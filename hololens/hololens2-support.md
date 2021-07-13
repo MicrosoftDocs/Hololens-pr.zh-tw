@@ -7,12 +7,12 @@ description: 適用于小型至大型企業客戶的混合現實支援選項
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 18178e35e93005f386c3d6f2fa6c637694bc60cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398756"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636209"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>有哪些混合現實支援和協助選項？
 
@@ -20,50 +20,52 @@ ms.locfileid: "110398756"
 
 在這裡，您會找到下列選項的支援選項，以確保您已連接到正確的位置。 此外，我們也涵蓋了可供您探索的 [社區資源] 和 [自助內容] 選項：
 
-- [適用于開發人員的社區説明選項](#community-help-options)
+- [適用于開發人員的 Community 説明選項](#community-help-options)
 - [取得使用和設定 HoloLens 2 裝置的協助](#help-with-technical-support-for-your-hololens-2)
 - [取得購買 HoloLens 2 裝置的協助](#help-with-commercial-store-support-for-your-hololens-2)
 - [取得 HoloLens 2 裝置或沉浸式耳機程式設計的協助](#help-with-technical-support-for-your-hololens-2) 
 - [取得 Azure mixed reality 服務的協助](#azure-mixed-reality-services-support)
 
-## <a name="community-help-options"></a>社區說明選項
+## <a name="community-help-options"></a>Community 説明選項
 
 ### <a name="post-a-question-on-microsoft-qa"></a>在 Microsoft 問與答頁面上張貼問題
 <div class='icon is-large'>
-    <img alt='Azure Q&A' src='https://docs.microsoft.com/media/logos/logo_azure.svg'>
+    <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
-針對您的 Azure Mixed Reality 提供快速且可靠的解答，以及 Microsoft 工程師的 HoloLens 2 程式設計問題、最有價值的專家 (Mvp) 或我們的專家團體，請與我們分享 microsoft Q&A Microsoft 針對社區支援的慣用目的地。
+針對您的 Azure Mixed Reality 提供快速且可靠的解答，以及 microsoft 工程師的 HoloLens 2 程式設計問題、最有價值的專家 (mvp) 或我們的專家團體，請與我們分享 microsoft Q&A microsoft 針對社區支援的慣用目的地。
 
 如果您使用搜尋找不到問題的解答，請將新問題提交至 Microsoft 問與答頁面。 當您提出問題時，請使用下列其中一個標籤：
-- [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
-- [Azure 遠端轉譯](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
-- [Azure 物件錨點](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
-- [HoloLens 程式設計](https://docs.microsoft.com/answers/topics/hololens-development.html)
-- [Windows 產品](https://docs.microsoft.com/answers/products/windows)
+
+- [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
+- [Azure 遠端轉譯](/answers/topics/azure-remote-rendering.html)
+- [Azure 物件錨點](/answers/topics/azure-object-anchors.html)
+- [HoloLens程式設計](/answers/topics/hololens-development.html)
+- [Windows產品](/answers/products/windows)
 
 
 ### <a name="post-a-question-on-stack-overflow"></a>在 Stack Overflow 張貼問題
 <div class='icon is-large'>
-    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+    <img alt='Stack Overflow' src='/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
 若要讓最大的社群開發人員生態系統為您解答開發人員問題，請在 Stack Overflow 提出您的問題。
 
 如果您將新問題提交至 Stack Overflow，請在建立問題時使用下列一或多個標籤：
 
-- [HoloLens 程式設計](https://stackoverflow.com/questions/tagged/hololens)
+- [HoloLens程式設計](https://stackoverflow.com/questions/tagged/hololens)
 - [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 - [Azure Spatial Anchors](https://stackoverflow.com/questions/tagged/azure-spatial-anchors)
 - [Azure 遠端轉譯](https://stackoverflow.com/questions/tagged/azure-remote-rendering)
 - [Azure 物件錨點](https://stackoverflow.com/questions/tagged/azure-object-anchors)
 - [混合實境工具組 (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
-#### <a name="other-communities"></a>其他團體： 
-- [HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/)
-- [Windows Mixed Reality 耳機 Reddit](https://www.reddit.com/r/WindowsMR/)
-- [HoloLens Reddit](https://www.reddit.com/r/HoloLens/)
+#### <a name="other-communities"></a>其他團體：
 
-## <a name="hololens-2-support"></a>HoloLens 2 支援
+- [HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/)
+- [Windows Mixed Reality耳機 Reddit](https://www.reddit.com/r/WindowsMR/)
+- [HoloLensReddit](https://www.reddit.com/r/HoloLens/)
+
+## <a name="hololens-2-support"></a>HoloLens 2支援
 
 ### <a name="help-with-technical-support-for-your-hololens-2"></a>協助您 HoloLens 2 的技術支援
 
@@ -75,7 +77,7 @@ ms.locfileid: "110398756"
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>協助您 HoloLens 2 的商業商店支援
 
-- [購買 HoloLens 2](https://www.microsoft.com/hololens/buy) 使用此選項可深入瞭解 HoloLens 2 定價和選項
+- [購買 HoloLens 2](https://www.microsoft.com/hololens/buy)使用此選項可深入瞭解 HoloLens 2 定價和選項
 - 如果您需要透過電話支援提供協助，請參閱下方的商務服務中心號碼，以支援同事的商業商店
 
 ### <a name="commercial-store-support-numbers"></a>商業商店支援編號
@@ -142,7 +144,7 @@ ms.locfileid: "110398756"
 
 ### <a name="provide-documentation-content-feedback"></a>提供檔內容意見反應
 
-在每個內容文章的底部，有機會開啟 GitHub 問題，並提供任何混合現實檔存放庫中的內容意見反應。 
+在每篇內容文章的底部，有機會開啟 GitHub 問題，並提供任何混合現實檔存放庫中的內容意見反應。 
 
 ### <a name="provide-product-feedback"></a>提供產品意見反應
 
@@ -151,15 +153,15 @@ ms.locfileid: "110398756"
 
 若要提供意見反應、分享 Microsoft mixed reality 服務的想法或建議，或投票給其他人所提交的構想，請造訪： 
 
-- [HoloLens 2 產品意見反應](https://docs.microsoft.com/hololens/hololens-feedback)
-- [Microsoft 網格應用程式產品意見反應](https://docs.microsoft.com/hololens/hololens-feedback)
+- [HoloLens 2產品意見反應](/hololens/hololens-feedback)
+- [Microsoft 網格應用程式產品意見反應](/hololens/hololens-feedback)
 - [Azure 遠端轉譯意見反應](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure 空間錨點意見反應](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
 ### <a name="faqs--troubleshooting"></a>常見問題 & 疑難排解
 
-- HoloLens 2，請參閱 [HoloLens 疑難排解](../hololens/hololens-troubleshooting.md) 頁面
-- Windows Mixed Reality，請參閱 [常見問題](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) 頁面
-- Azure 遠端轉譯，請參閱 [常見問題](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot) 頁面
-- Azure 空間錨點，請參閱 [常見問題](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) 頁面
-- Azure 物件錨點，請參閱 [常見問題](https://docs.microsoft.com/azure/object-anchors/faq) 頁面
+- HoloLens 2，請參閱[HoloLens 疑難排解](../hololens/hololens-troubleshooting.md)頁面
+- Windows Mixed Reality，請參閱[常見問題](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)頁面
+- Azure 遠端轉譯，請參閱 [常見問題](/azure/remote-rendering/resources/troubleshoot) 頁面
+- Azure 空間錨點，請參閱 [常見問題](/azure/spatial-anchors/spatial-anchor-faq) 頁面
+- Azure 物件錨點，請參閱 [常見問題](/azure/object-anchors/faq) 頁面

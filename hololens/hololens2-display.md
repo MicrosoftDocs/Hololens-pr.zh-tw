@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 顯示疑難排解
+title: HoloLens 2顯示疑難排解
 description: HoloLens 2 顯示的期望。 設定最佳影像品質顯示器的指引。
 author: BrandonBray
 ms.author: branbray
@@ -12,14 +12,14 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 548f484043f2b1cb62ce0e0cfb6450a956d412b3
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923613"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636923"
 ---
-# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 顯示疑難排解
+# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2顯示疑難排解
 
 ## <a name="overview"></a>概觀
 HoloLens 2 顯示器是 waveguides 和燈光投影機的組合。 使用者會在佩戴耳機時，查看 waveguides （面板內的鏡頭）。 燈光投影機位於 brow 上方的主機殼內。 HoloLens 2 使用鐳射燈來照亮顯示器。
@@ -28,17 +28,17 @@ HoloLens 2 顯示器是 waveguides 和燈光投影機的組合。 使用者會�
 
 請採取下列步驟，以確保顯示的影像最高視覺效果品質：
 
-* **增加顯示的亮度。** 當顯示器處於最高階的層級時，全像是最適合的。 當您佩戴 HoloLens 時，亮度按鈕會在聖殿附近的面板左側。
+* **增加顯示的亮度。** 當顯示器的最高階等級時，全像投影看起來最好。 當 HoloLens 時，亮度按鈕會在聖殿附近的面板左側。
 * **讓面板更接近您的眼睛。** 將面板向下旋轉至眼睛的最接近位置。
 * **向下移動面板。** 請嘗試將 brow pad 移至您的冷汗下，這會導致面板更接近您的鼻子。
-* **[執行眼睛校正。](hololens-calibration.md#calibrating-your-hololens-2)** 顯示器會使用您的 interpupillary 距離 (IPD) 和眼睛來優化顯示器上的影像。 如果您未執行眼睛校正，影像品質可能會變得更糟。 若要執行眼睛校正，請移至 [**設定**  >  **系統**  >  **校正**]  >  **執行眼睛校正**。
-* **執行顯示器色彩校正**。 在 [Windows 全像21H1 版](hololens-release-notes.md#windows-holographic-version-21h1) 和更新版本上，您可以為您的 HoloLens 2 顯示器 **選取替代色彩設定檔** 。 這可能有助於更精確地顯示色彩，特別是在較低的顯示器亮度等級。 您可以在 [ **設定** ] 應用程式的 [ **系統 > 校正** ] 頁面中找到顯示色彩校正。
+* **[執行眼睛校正。](hololens-calibration.md#calibrating-your-hololens-2)** 顯示器會使用您的 interpupillary 距離 (IPD) 和眼睛來優化顯示器上的影像。 如果您未執行眼睛校正，影像品質可能會變得更糟。 若要執行眼睛校正，請移至 **設定**  >  **系統**  >  **校正** 的  >  **執行眼睛校正**。
+* **執行顯示器色彩校正**。 在 Windows 的全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)和更新版本上，您可以選取 HoloLens 2 顯示的 **替代色彩設定檔**。 這可能有助於更精確地顯示色彩，特別是在較低的顯示器亮度等級。 您可以在 [**系統 > 校正**] 頁面上的 **設定** 應用程式中找到顯示器色彩校正。
 
     > [!NOTE]
     > 因為此設定會將新的色彩設定檔儲存到您的顯示器固件，所以會有每個裝置的設定 (而且不是每個使用者帳戶) 的唯一設定。
 
 ### <a name="how-to-use-display-color-calibration"></a>如何使用顯示器色彩校正
-1. 啟動 [ **設定** ] 應用程式，並流覽至 [ **系統 > 校正**]。
+1. 啟動 **設定** 應用程式，並流覽至 [**系統 > 校正**]。
 1. 在 [ **顯示色彩校正**] 下，選取 [ **執行顯示器色彩校正** ] 按鈕。
 1. 顯示色彩校正體驗將會啟動，並建議您確認您的面板是否位於正確的位置。
 1. 在您繼續進行 [指示] 對話方塊之後，您的顯示器會自動呈現為30% 的亮度。
@@ -53,22 +53,22 @@ HoloLens 2 顯示器是 waveguides 和燈光投影機的組合。 使用者會�
 
 > [!TIP]
 > 以下是使用顯示色彩校正設定時要牢記在心的一些實用秘訣：
-> - 您可以視需要從設定重新執行顯示色彩校正
-> - 如果裝置上的任何人先前已使用設定來變更色彩設定檔，則最新變更的日期/時間會反映在 [設定] 頁面上。
+> - 您可以視需要從設定重新執行顯示器色彩校正
+> - 如果裝置上的任何人先前使用設定來變更色彩設定檔，則最近變更的日期/時間會反映在設定頁面上。
 > - 當您重新執行顯示器色彩校正時，會反白顯示先前儲存的色彩設定檔，而且不會出現設定檔 0 (因為設定檔0代表顯示器的原始色彩設定檔) 
-> - 如果您想要還原成顯示器的原始色彩設定檔，您可以從 [設定] 頁面 (查看 [如何重設色彩設定檔](#how-to-reset-color-profile)) 
+> - 如果您想要還原成顯示器的原始色彩設定檔，您可以從設定頁面 (查看[如何重設色彩設定檔](#how-to-reset-color-profile)) 
 
 ### <a name="how-to-reset-color-profile"></a>如何重設色彩設定檔
 
 如果您不滿意將自訂色彩設定檔儲存到您的 HoloLens 2，您可以還原裝置的原始色彩設定檔：
-1. 啟動 [ **設定** ] 應用程式，並流覽至 [ **系統 > 校正**]。
+1. 啟動 **設定** 應用程式，並流覽至 [**系統 > 校正**]。
 1. 在 [ **顯示色彩校正**] 下，選取 [ **重設為預設色彩設定檔** ] 按鈕。
-1. 當對話方塊開啟時，如果您已準備好重新開機 HoloLens 2 並套用變更，請選取 [ **重新開機** ]。
+1. 當對話方塊開啟時，如果您已準備好重新開機 HoloLens 2 並套用變更，請選取 [**重新開機**]。
 
 ### <a name="top-display-color-calibration-known-issues"></a>最常見的顯示器色彩校正已知問題
 
-- 在 [設定] 頁面上，顯示上次變更色彩設定檔的狀態字串會過期，直到您重載該頁面的 [設定] 頁面為止 
-    - 因應 **措施：選取** 其他設定頁面，然後重新選取 [校正] 頁面。
+- 在 [設定] 頁面上，當您重載 [色彩設定檔] 的狀態字串時，會顯示其狀態字串，直到您重載該頁面設定 
+    - 因應 **措施：選取** 另一個設定頁面，然後重新選取 [校正] 頁面。
 - 如果您的 HoloLens 2 在執行顯示器色彩校正時進入睡眠狀態，則會在稍後繼續進行混合實境首頁，而您的顯示器亮度層級仍會呈現暗灰色。
 - 您可能需要嘗試在裝置的左側按下或下移幾次，然後才會如預期般運作。
 - 所有市場的當地語系化都不完整
@@ -88,7 +88,7 @@ HoloLens 2 顯示是設計來供人眼觀看。 裝置的作用中色彩校正�
 * **眼睛位置。** HoloLens 2 顯示是特別針對使用者的眼睛位置所設計。 HoloLens 2 採用眼睛追蹤技術來適應使用者的眼睛位置。 以數個毫米 mispositioned 的相機可能會導致影像失真。 使用相機的正確定位很困難，需要符合裝置正在執行色彩校正的確切位置和眼睛起伏。
 * **目視移動。** 此顯示可適應使用者的眼睛移動以調整色彩。 顯示在顯示器上的內容可能會因使用者查看的是中央、邊緣或顯示的角落而有所不同。 單一影像捕捉最適合只顯示符合眼睛外觀之軸的顯示外觀。
 * **Binocular 的觀賞。** HoloLens 2 顯示是設計來以兩種眼睛來查看。 大腦會調整以查看兩個影像，並將它們 e-fuses 在一起。 只有一個顯示器的影像會忽略其他顯示的資訊。
-* **攝影機曝光時間。** 攝影機的曝光時間必須是 1/120th 秒的精確倍數。 HoloLens 顯示畫面播放速率是 120 Hz。 由於 HoloLens 2 繪製影像的方式，捕捉單一畫面格也不足以符合人類的視覺體驗。 同時，如果裝置完全移動（甚至是 micromovements），系統會將顯示器上的影像 reprojects 到穩定的全像投影。 在保持 HoloLens 的移動時捕捉多個畫面通常需要進行實驗室設定。
+* **攝影機曝光時間。** 攝影機的曝光時間必須是 1/120th 秒的精確倍數。 HoloLens 顯示畫面播放速率為 120 Hz。 由於 HoloLens 2 繪製影像的方式，捕捉單一畫面格也不足以符合人類的視覺體驗。 同時，如果裝置完全移動（甚至是 micromovements），系統會將顯示器上的影像 reprojects 到穩定的全像投影。 在保持移動 HoloLens 時，捕捉多個框架通常需要進行實驗室設定。
 * **攝影機光圈大小。** 相機的光圈大小必須至少為 3 mm，才能捕捉精確的影像。 使用 small apertures 的蜂窩電話攝影機，相較于人類眼，從較小的區域整合燈光。 裝置會針對較大 apertures 所觀察到的模式套用色彩校正。 使用 small apertures，一致性模式更清晰，而且儘管系統所套用的色彩更正，仍保持可見。
 * **攝影機進入小學生。** 攝影機的進入小學生應該至少有 3 mm 的直徑，才能捕捉精確的影像。 否則，攝影機會捕捉一些很高的頻率模式，而不是眼睛可見的。 進入小學生的位置必須位於相機前方，並且定位於眼睛起伏距離，以避免 aberrations 和其他各種形式的已捕捉映射。
 * **攝影機位置。** 符合觀看 HoloLens 2 顯示器需求的攝影機較大，因此很難將相機放置於足以觀察已校正色彩之影像的 HoloLens 2 顯示器上。 如果相機的位置不正確，色彩更正可能會對 HoloLens 2 顯示的捕捉造成負面影響。
@@ -100,11 +100,11 @@ HoloLens 2 顯示是設計來供人眼觀看。 裝置的作用中色彩校正�
 
 HoloLens 2 會根據使用者的眼睛位置顯示主動色彩校正影像。 [眼睛校正](hololens-calibration.md) 提供兩個重要的輸入： (1) 使用者的 interpupillary 距離 (IPD) ，而 (2) 每個眼睛的方向。 如果沒有眼睛校正，系統就會預設為無眼睛移動的名義眼睛。 作用中色彩更正與沒有更正之間的差異，取決於使用者的生理學本身。 例如，具有與系統預設值相同的 IPD 的使用者，將會看到較少的色彩更正改進。 雖然具有比系統預設值更窄或更寬的 IPD 使用者會看到更多的顯示影像變更。
 
-請注意，Windows 全像 [20H2 版](hololens-release-notes.md#windows-holographic-version-20h2) 中的一項新功能，將會 [自動偵測眼睛的位置](hololens-calibration.md#auto-eye-position-support)。 
+請注意， [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2)中的一項新功能，將會開始[自動偵測眼睛的位置](hololens-calibration.md#auto-eye-position-support)。 
 
 ### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>HoloLens (第一代) 和 HoloLens 2 之間的顯示差異為何？
 
-客戶在發生 HoloLens 1 之後提供 Microsoft 的最高要求 (1) 提高觀賞的現場和 (2) 提高亮度。 技術發展能讓 Microsoft 產生一倍的 waveguides，讓現場觀賞的區域加倍，並以最多三倍的顯示器來產生燈光投影機。 硬體會為顯示影像品質的取捨三個設定基準： (1) 視圖、 (2) 亮度，以及 (3) 色彩一致性。 持續的技術改進可在所有區域中進行改進，而不會犧牲其他領域。 在過渡期間，現有的技術會為這些取捨設定可用的限制。
+在 HoloLens 1 (1 之後，客戶提供給 Microsoft 的最高要求會 1) 提高視野， (2) 增加亮度。 技術發展能讓 Microsoft 產生一倍的 waveguides，讓現場觀賞的區域加倍，並以最多三倍的顯示器來產生燈光投影機。 硬體會為顯示影像品質的取捨三個設定基準： (1) 視圖、 (2) 亮度，以及 (3) 色彩一致性。 持續的技術改進可在所有區域中進行改進，而不會犧牲其他領域。 在過渡期間，現有的技術會為這些取捨設定可用的限制。
 
 ### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>即將推出哪些增強功能，可改善 HoloLens 2 影像品質？
 
@@ -118,15 +118,15 @@ HoloLens 2 會根據使用者的眼睛位置顯示主動色彩校正影像。 [�
 
 ### <a name="what-guidance-is-available-for-developers-to-apply-dark-mode-design-principles"></a>開發人員可以使用哪些指引來套用深色模式設計原則？
 
-使用者在避免白色背景時，會有最佳體驗。 深色模式是應用程式用來使用黑色或深色背景的設計原則。 系統設定會預設為深色模式，並可透過 [**設定**  >  **系統**  >  **色彩**] 來調整。
+使用者在避免白色背景時，會有最佳體驗。 深色模式是應用程式用來使用黑色或深色背景的設計原則。 系統設定預設為 [深色] 模式，並可透過 [**設定**  >  **系統**  >  **色彩**] 來調整。
 
 建議開發人員遵循深色模式設計指引：
 
-* [HoloLens 顯示器的開發人員設計指導方針](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
-* [建議的字型大小](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+* [HoloLens 顯示的開發人員設計指導方針](/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [建議的字型大小](/windows/mixed-reality/typography#recommended-font-size)
 
 當全像是需要白色的背景時，請讓全像顯示器的大小保持不變，而不是顯示的完整欄位。 此大小可讓使用者將全息圖放在顯示器的中央。
 
 ### <a name="how-do-you-clean-a-hololens-2-display"></a>如何清除 HoloLens 2 顯示？
 
-使用 microfiber 抹布來輕擦面板。 若要淨化面板，請使用 70% isopropyl 酒精來輕微 moisten 抹布，然後抹除面板。 閱讀 [HoloLens 2 清理常見問題](hololens2-maintenance.md)中的完整指引。
+使用 microfiber 抹布來輕擦面板。 若要淨化面板，請使用 70% isopropyl 酒精來輕微 moisten 抹布，然後抹除面板。 閱讀[HoloLens 2 清理常見問題](hololens2-maintenance.md)中的完整指引。

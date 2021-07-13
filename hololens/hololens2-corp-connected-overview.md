@@ -1,7 +1,7 @@
 ---
-title: 部署指南–與 Dynamics 365 的公司連線 HoloLens 2 指南-總覽
-description: 瞭解如何透過公司連接的網路，使用 Dynamics 365 指南註冊 HoloLens 2 裝置。
-keywords: HoloLens、管理、公司連線、Dynamics 365 指南、AAD、Azure AD、MDM、Mobile 裝置管理
+title: 部署指南–企業連線 HoloLens 2 與 Dynamics 365 Guides-總覽
+description: 瞭解如何透過公司連線的網路 Dynamics 365 Guides 註冊 HoloLens 2 裝置。
+keywords: HoloLens、管理、公司連線、Dynamics 365 Guides、AAD、Azure AD、MDM、行動裝置管理
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397193"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637008"
 ---
-# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>部署指南-使用 Dynamics 365 指南的公司連線 HoloLens 2-總覽
+# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>部署指南-Dynamics 365 Guides 的公司連線 HoloLens 2-總覽
 
-本指南可協助 IT 專業人員規劃及部署 Microsoft HoloLens 2 裝置，並使用 Dynamics 365 指南 (指南) 其組織。 本指南適用于試驗和生產環境部署，類似于 [案例 B：在組織的網路指南中部署](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) 。 測試您的概念證明之後，請使用本指南將 HoloLens 整合到您的組織中。
+本指南可協助 IT 專業人員規劃和部署 Microsoft HoloLens 2 裝置，並 Dynamics 365 Guides (指南) 到其組織。 本指南適用于試驗和生產環境部署，類似于 [案例 B：在組織的網路指南中部署](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) 。 測試您的概念證明之後，請使用本指南將 HoloLens 整合到您的組織中。
 
 在本指南中，我們將討論如何將您的裝置註冊到現有的裝置管理、視需要套用授權，以及驗證您的終端使用者在裝置設定之後，是否能夠操作 Dynamics 365 指南，以及使用自訂的企業營運應用程式。 
 
@@ -33,7 +33,7 @@ ms.locfileid: "110397193"
 - Wi-Fi
     - 具有內部資源存取權的內部公司網路，以及網際網路或雲端服務的有限存取權
     - 以裝置為基礎的憑證驗證。
-- Azure Active Directory (Azure AD) 加入 MDM 自動註冊 (Azure AD [P1 訂](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 用帳戶) 
+- Azure Active Directory (Azure AD) 加入 MDM 自動註冊 (Azure AD [P1 訂](/azure/active-directory/fundamentals/active-directory-whatis)用帳戶) 
 - MDM (Intune) 受控
     - 透過 MDM 部署一或多個應用程式。
 - 網路 
@@ -43,10 +43,11 @@ ms.locfileid: "110397193"
     - 支援每個裝置的單一或多個使用者。
 - 根據特定使用案例套用的各種裝置鎖定設定層級，從完全開放到單一應用程式 Kiosk。
 
-## <a name="guides-licensing-and-requirements"></a>[引導授權和需求](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+## <a name="guides-licensing-and-requirements"></a>[引導授權和需求](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+
 - Azure AD 帳戶
-- Dynamics 365 會引導應用程式 PC 和 HoloLens
-- Dynamics 365 指南訂用帳戶
+- Dynamics 365 Guides 的應用程式電腦和 HoloLens
+- Dynamics 365 Guides 訂用帳戶
     - Microsoft Dataverse (包含) 
     - Power Apps (包含) 
 - Power BI Desktop
@@ -72,8 +73,8 @@ ms.locfileid: "110397193"
 >- [如何建立使用者和群組。](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [如何設定自動註冊。](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
 >- [如何設定 Wi-Fi 的憑證和設定檔，以進行公司 Wi-Fi 的連線能力。](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [上傳並指派企業營運 (LOB) 應用程式套件。](hololens2-corp-connected-configure.md#app-deployment)
->- [設定 Dynamics 365 指南。](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
+>- [Upload 並指派企業營運 (LOB) 應用程式套件。](hololens2-corp-connected-configure.md#app-deployment)
+>- [設定 Dynamics 365 Guides。](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [如何設定 Kiosk 模式 (選擇性) 。](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [如何設定 WDAC (選擇性) 。](hololens2-corp-connected-configure.md#optional-wdac)
 ### <a name="deploy"></a>部署

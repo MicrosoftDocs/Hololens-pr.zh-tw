@@ -1,6 +1,6 @@
 ---
 title: 授權需求
-description: 保持您所需的行動裝置管理、HoloLens 和遠端協助的所有授權需求與指導方針在最新狀態。
+description: 隨時掌握行動裝置管理、HoloLens 和遠端協助所需的所有授權需求與指導方針。
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -12,49 +12,102 @@ ms.date: 1/23/2020
 ms.reviewer: ''
 manager: bradke
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: d0d8aa648df7901dec8636942e43aa549e626d7e
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283964"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635886"
 ---
-# 授權需求
+# <a name="license-requirements"></a>授權需求
 
-## 行動裝置管理 (MDM) 授權指導方針
+## <a name="hololens-2-device-managed"></a>HoloLens 2裝置 (受控) 
 
-如果您打算管理您的 HoloLens 裝置，您將需要 Azure AD 和 MDM。 無法使用 Active Director (AD) 來管理 HoloLens 裝置。
-如果您計劃使用 Intune 以外的 MDM，則需要 [Azure Active Directory 授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)。
-如果您打算使用 Intune 做為 MDM，請參閱包含 Intune 授權之[套件清單](https://docs.microsoft.com/intune/fundamentals/licenses)。 **請注意，大多數套件中都包含 Azure AD。**
+[Azure AD 帳戶](https://docs.microsoft.com/azure/active-directory/)
 
-## 識別您的案例和產品所需的授權
+> [!IMPORTANT]
+> Active Directory (AD) 不能用來管理 HoloLens 的裝置。
 
-### HoloLens (第1代) 授權需求
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)或另一個 MDM。
+- [適用于 HoloLens 2 的 Windows Autopilot](hololens2-autopilot.md)可簡化 IT 系統管理員和終端使用者的布建體驗。 IT 系統管理員可以預先設定 HoloLens 2 原則，並在第一次開機時，將裝置部署為無終端使用者互動的商務就緒狀態。 
 
-您可能需要將 HoloLens (第1代) 裝置升級至 Windows Holographic for Business。 (請參閱 [HoloLens 商業功能](holoLens-commercial-features.md#feature-comparison-between-editions)，判斷您是否需要升級)。
+  > [!NOTE]
+  > WindowsAutopilot 需要先針對低觸控 Autopilot 流程和裝置部署設定[Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)和[自動註冊](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。 
 
- 若是如此，您需要執行下列動作：
+### <a name="business-use-case"></a>商務使用案例： 
 
-- 取得 HoloLens 企業授權 XML 檔案
-- 將 XML 檔案套用到 HoloLens。 您可以透過[佈建套件](hololens-provisioning.md)或透過[行動裝置管理員](https://docs.microsoft.com/intune/configuration/holographic-upgrade)來執行此動作
+- [部署案例](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) ：概念證明或試驗部署。
 
-### 遠端協助授權需求
+- [部署案例 B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) -大規模部署。
 
-請確定您擁有所需的授權和裝置，您可以在[需求](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)文件中查看。
+## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2僅限裝置 (非受控) 
 
-1. [遠端協助授權](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. 或嘗試使用 [[遠端協助] 試用版](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
-1. [Teams 免費增值版/Teams](https://products.office.com/microsoft-teams/free)
-1. [Azure Active Directory (Azure AD) 授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+使用 Microsoft 帳戶 (MSA) 或本機帳戶時，這些帳戶不需要額外的授權。
 
-如果您打算實施**[此跨租用戶案例](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)**，您可能需要資訊屏障授權。 請參閱[本文](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary)，判斷是否需要資訊屏障授權。
+[本機帳戶](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
 
-### 授權需求指南
+- 您必須預先布[建](hololens-provisioning.md#provisioning-package-hololens-wizard)此帳戶，Windows 設定設計工具 (WCD) 。
 
-請查看[更新的授權與裝置需求](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements)。
+[Microsoft 帳戶 (MSA) ](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
-1. [Azure Active Directory (Azure AD) 授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [Power BI](https://powerbi.microsoft.com/desktop/)
-1. [指南](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+> [!WARNING]
+> 使用上述任一帳戶的裝置不支援多個使用者。
+
+### <a name="business-use-case"></a>商務使用案例： 
+
+- [部署案例 C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) -離線或安全的部署。
+ 
+## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365 授權和需求
+
+### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
+
+#### <a name="admin"></a>管理
+
+- 購買訂用帳戶和指派授權所需的 Azure AD 帳戶 () 
+- [遠端協助訂閱](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (或 [遠端協助試用](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)) 
+    
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist 使用者
+
+- Azure AD 帳戶
+
+- 遠端協助授權 
+
+  > [!NOTE]
+  > Microsoft Teams 隨附于遠端協助
+
+- 網路連線
+
+#### <a name="microsoft-teams-user"></a>Microsoft Teams 使用者
+
+- Azure AD 帳戶
+
+- Microsoft Teams 或[Teams 免費增值](https://products.office.com/microsoft-teams/free)。
+
+- 網路連線
+
+如果您打算執行此 [跨租使用者案例](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)，您可能需要資訊障礙授權。 請參閱 [這篇文章](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) ，以判斷是否需要資訊屏障授權。
+
+### <a name="dynamics-365-guides"></a>Dynamics 365 Guides 
+
+#### <a name="admin"></a>管理
+
+- 購買訂用帳戶和指派授權所需的 Azure AD 帳戶 () 
+- Dynamics 365 [指南訂用帳戶或免費試用](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
+
+#### <a name="guides-author"></a>手冊作者
+
+1. Azure AD 帳戶
+1. [Dynamics 365 Guides 授權](/dynamics365/mixed-reality/guides/requirements)
+1. Dynamics 365 Guides 安裝在電腦或 HoloLens 上的應用程式
+1. 用來查看分析儀表板的[Power BI Desktop](https://powerbi.microsoft.com/desktop/) () 
+1. 建立指南的作者角色 () 
+1. 網路連線
+
+#### <a name="guides-user"></a>引導使用者
+
+1. Azure AD 帳戶
+1. [Dynamics 365 Guides 授權](/dynamics365/mixed-reality/guides/requirements)
+1. HoloLens 上安裝的 Dynamics 365 Guides 應用程式
+1. 用於測試或使用指南的操作員角色 () 
+1. 網路連線

@@ -1,6 +1,6 @@
 ---
-title: HoloLens BitLocker 加密
-description: 瞭解如何啟用 BitLocker 裝置加密，以保護您 HoloLens 混合現實裝置上儲存的檔案。
+title: HoloLensBitLocker 加密
+description: 瞭解如何啟用 BitLocker 裝置加密，以保護 HoloLens 混合現實裝置上儲存的檔案。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,26 +13,26 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397279"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635240"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (第1代) BitLocker 加密
 
-HoloLens (第1代) 和 HoloLens 2 都支援使用 BitLocker 的裝置加密，但在 HoloLens 2 上一律會啟用 BitLocker。
+HoloLens (第1代) 和 HoloLens 2 都支援使用 bitlocker 的裝置加密，但在 HoloLens 2 上一律會啟用 bitlocker。
 
 本文將協助您在 HoloLens (第一代) 上啟用和管理 BitLocker。
 
-在 HoloLens (第1代) 您可以手動啟用 BitLocker 裝置加密，或使用行動裝置管理 (MDM) 。 遵循這些指示來啟用 [BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) ，以保護儲存在 HoloLens 上的檔案和資訊。 裝置加密可使用 AES-CBC 128 加密方法來協助保護您的資料，這相當於 BitLocker 設定服務提供者 (CSP) 中的 [EncryptionMethodByDriveType 方法 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 。 具有正確加密金鑰的人員 (例如密碼) 可將其解密或執行資料復原。
+在 HoloLens (第1代) 您可以手動啟用 BitLocker 裝置加密，或使用行動裝置管理 (MDM) 。 遵循這些指示來啟用[BitLocker 裝置加密](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)，以保護儲存在 HoloLens 上的檔案和資訊。 裝置加密可使用 AES-CBC 128 加密方法來協助保護您的資料，這相當於 BitLocker 設定服務提供者 (CSP) 中的 [EncryptionMethodByDriveType 方法 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 。 具有正確加密金鑰的人員 (例如密碼) 可將其解密或執行資料復原。
 
 ## <a name="enable-device-encryption-using-mdm"></a>使用 MDM 啟用裝置加密
 
-您可以使用行動裝置管理 (MDM) 提供者套用需要裝置加密的原則。 要使用的原則是原則 CSP 中的 [安全性/RequireDeviceEncryption 設定](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 。
+您可以使用行動裝置管理 (MDM) 提供者套用需要裝置加密的原則。 要使用的原則是原則 CSP 中的 [安全性/RequireDeviceEncryption 設定](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 。
 
-[請參閱使用 Microsoft Intune 啟用裝置加密的指示。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[請參閱使用 Microsoft Intune 啟用裝置加密的指示。](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 如需其他 MDM 工具，請參閱 MDM 提供者文件中的指示。 如果您的 MDM 提供者需要自訂 URI 以進行裝置加密，請使用下列設定：
 
@@ -46,7 +46,7 @@ HoloLens (第1代) 和 HoloLens 2 都支援使用 BitLocker 的裝置加密，�
 
 佈建套件是 Windows 設定設計工具所建立的檔案，會將指定的設定套用到裝置。 
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>建立可升級 Windows 全像攝影版並啟用加密的布建套件
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>建立可升級 Windows 全像攝影版的布建套件，並啟用加密
 
 1. [建立 HoloLens 的布建套件。](hololens-provisioning.md)
 1. 移至 [**執行時間設定**  >  **原則**  >  **安全性**]，然後選取 [ **RequireDeviceEncryption**]。

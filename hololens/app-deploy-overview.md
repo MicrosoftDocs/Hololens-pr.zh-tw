@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308359"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635546"
 ---
 # <a name="app-management-overview"></a>應用程式管理：總覽
 
@@ -27,7 +27,7 @@ ms.locfileid: "108308359"
 
 ## <a name="mobile-device-management-mdm"></a>行動裝置管理 (MDM)
 
-MDM 解決方案可讓 IT 決策者和系統管理員私下自動安裝 (推送) 其內部、企業營運應用程式，或透過使用者群組的商店購買應用程式。 HoloLens 裝置最適合搭配 Microsoft 端點管理員 (Intune) 來 [管理應用程式](app-deploy-intune.md)。 透過公司入口網站可下載體驗，Intune 也可讓使用者更精細地控制 IT 管理的應用程式。
+MDM 解決方案可讓 IT 決策者和系統管理員私下自動安裝 (推送) 其內部、企業營運應用程式，或透過使用者群組的商店購買應用程式。 HoloLens 裝置最適用于 Microsoft 端點管理員 (Intune) 以進行[應用程式管理](app-deploy-intune.md)。 透過公司入口網站可下載體驗，Intune 也可讓使用者更精細地控制 IT 管理的應用程式。
 
 > [!NOTE]
 > 下列指示適用于想要使用 Intune 管理應用程式的使用者。 Microsoft 建議使用 Intune 進行應用程式和裝置管理。
@@ -42,7 +42,7 @@ MDM 解決方案可讓 IT 決策者和系統管理員私下自動安裝 (推送)
 
 ## <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
 
-[商務用 Microsoft Store](app-deploy-store-business.md)在企業中提供 IT 決策者和系統管理員，以尋找、取得、管理及散發免費和付費應用程式。 IT 系統管理員可以在單一清查中管理 Microsoft Store apps 和私用企業營運應用程式，並視需要指派和重複使用授權。 如需詳細資訊，請參閱 [使用商務用 Microsoft Store 的必要條件](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)。
+[商務用 Microsoft Store](app-deploy-store-business.md)在企業中提供 IT 決策者和系統管理員，以尋找、取得、管理及散發免費和付費應用程式。 IT 系統管理員可以在單一清查中管理 Microsoft Store apps 和私用企業營運應用程式，並視需要指派和重複使用授權。 如需詳細資訊，請參閱[使用商務用 Microsoft Store 的必要條件](/microsoft-store/prerequisites-microsoft-store-for-business)。
 
 商務用 Microsoft Store 適用于：
 
@@ -61,7 +61,7 @@ Microsoft Store 在企業中提供 IT 決策者和系統管理員來尋找、取
 * 使用者手動下載應用程式
 * 如果連線到網際網路，則自動更新
 
-如需詳細資訊，請造訪全像 [店 Store 應用程式](https://docs.microsoft.com/hololens/holographic-store-apps)。
+如需詳細資訊，請造訪全像 [店 Store 應用程式](/hololens/holographic-store-apps)。
 
 ## <a name="install-via-provisioning-packages"></a>透過布建套件安裝
 
@@ -76,7 +76,7 @@ Microsoft Store 在企業中提供 IT 決策者和系統管理員來尋找、取
 
 ## <a name="install-apps-on-hololens-2-via-app-installer"></a>透過應用程式安裝程式在 HoloLens 2 上安裝應用程式
 
-使用 [應用程式安裝程式](app-deploy-app-installer.md) 使用者可能會有很簡單的體驗，可在本機裝置上安裝應用程式，或與其他不熟悉 HoloLens 上其他應用程式安裝方法的其他人共用應用程式。 這可以在不需要啟用開發人員模式或使用裝置入口網站的情況下完成。 這是散發完全建立之應用程式的簡單方法。 無論您是否只是想要向 HoloLens 示範您的應用程式，或是想要部署應用程式，這個方法都可以輕鬆地運作。
+使用[應用程式安裝程式](app-deploy-app-installer.md)使用者的體驗，可讓您輕鬆將應用程式安裝在本機裝置上，或與其他不熟悉其他應用程式在 HoloLens 上安裝方法的人共用應用程式。 這可以在不需要啟用開發人員模式或使用裝置入口網站的情況下完成。 這是散發完全建立之應用程式的簡單方法。 無論您是否只是想要使用 HoloLens 向另一位使用者示範您的應用程式，或是想要部署應用程式，這個方法都可以輕鬆地運作。
 
 透過應用程式安裝程式安裝適用于：
 

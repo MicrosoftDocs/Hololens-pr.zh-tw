@@ -12,30 +12,30 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308780"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635189"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>解除鎖定 Windows Holographic for Business 功能
 
 > [!IMPORTANT]
 > 此頁面僅適用于 HoloLens 第1代。
 
-Microsoft HoloLens 可在 *開發版* 中使用，這會執行 Windows 全像設計版的 Windows 10 版本， (為 HoloLens) 和 [商用套件](hololens-commercial-features.md)所設計的版本，以提供專為企業設計的額外功能。
+Microsoft HoloLens 可在 *開發版* 中使用，該版本 (Windows 的全像是針對 HoloLens) 設計的 Windows 10 版本，也可以在 [商業套件](hololens-commercial-features.md)中執行，以提供專為企業設計的額外功能。
 
 當您購買商業套件時，您會收到可將 Windows 全像攝影版升級至 Windows Holographic for Business 的授權。 您可以將此授權套用至裝置，方法是使用組織的行動 [裝置管理 (MDM) 提供者](#edition-upgrade-by-using-mdm) 或布建 [套件](#edition-upgrade-by-using-a-provisioning-package)。
 
 > [!TIP]
-> 在 Windows 10 1803 版中，您可以選取 [**設定** 系統] 來檢查 HoloLens 是否已升級為 business edition  >  ****。
+> 在 Windows 10 1803 版中，您可以選取 [**設定** System]，確認 HoloLens 已升級為 business edition  >  ****。
 
 ## <a name="edition-upgrade-by-using-mdm"></a>使用 MDM 升級版本
 
 企業版的授權可由支援 [WindowsLicensing 設定服務提供者 (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) 的任何 MDM 提供者套用。 最新版的 Microsoft MDM API 支援 WindowsLicensing CSP。
 
-如需使用 Microsoft Intune 進行 HoloLens 升級的逐步指示，請參閱將執行 [Windows 全息版的裝置升級為 Windows Holographic for Business](https://docs.microsoft.com/intune/holographic-upgrade)。
+如需使用 Microsoft Intune 升級 HoloLens 的逐步指示，請參閱將執行 Windows 全像的[裝置升級為 Windows Holographic for Business](/intune/holographic-upgrade)。
 
  在其他 MDM 提供者上，設定和部署原則的特定步驟可能有所不同。
 
@@ -85,14 +85,14 @@ Microsoft HoloLens 可在 *開發版* 中使用，這會執行 Windows 全像設
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>將佈建套件套用到 HoloLens
 
-1. 使用 USB 纜線將裝置連接到電腦。 啟動裝置，但不要繼續進行初始安裝體驗的 [ **符合** ] 頁面， (第一個具有藍色方塊的頁面) 。 在電腦上，HoloLens 會顯示為檔案總管中的裝置。
+1. 使用 USB 纜線將裝置連接到電腦。 啟動裝置，但不要繼續進行初始安裝體驗的 [ **符合** ] 頁面， (第一個具有藍色方塊的頁面) 。 在電腦上，HoloLens 在檔案總管中顯示為裝置。
 
     > [!NOTE]
-    > 如果 HoloLens 裝置正在執行 Windows 10、1607版或更早版本，請在裝置上短暫地按下並放開 [ **音量降低** ] 和 [ **電源** ] 按鈕，以開啟檔案總管。
+    > 如果 HoloLens 裝置執行 Windows 10 1607 版或更早版本，請在裝置上短暫按下再放開 [**音量**] 和 [**電源**] 按鈕，以開啟檔案總管。
 
 1. 在 \[檔案總管\] 中拖放佈建套件 (.ppkg) 到裝置儲存空間。
 
-1. 雖然 HoloLens 仍在 [ **調整** ] 頁面上，但請短暫地按下，然後再同時放開 **音量** 和 **電源** 按鈕。
+1. 當 HoloLens 仍在 [**調整**] 頁面上時，請短暫地按下並同時釋放 **音量** 和 **電源** 按鈕。
 
 1. HoloLens 會詢問您是否信任套件，並想要加以套用。 確認您信任套件。
 

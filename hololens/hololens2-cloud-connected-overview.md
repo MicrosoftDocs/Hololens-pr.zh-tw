@@ -1,6 +1,6 @@
 ---
 title: 使用遠端協助來瞭解雲端連線的 HoloLens 2
-description: 瞭解如何使用 Dynamics 365 遠端協助，在連線到雲端的網路上註冊 HoloLens 2 裝置。
+description: 瞭解如何使用 Dynamics 365 Remote Assist 透過雲端連線網路註冊 HoloLens 2 裝置。
 keywords: HoloLens、管理、雲端連線、遠端協助、AAD、Azure AD、MDM、Mobile 裝置管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a44247b4afea747e4b75c974fcae344380909989
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923528"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635121"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>部署指南–與遠端協助的雲端連線 HoloLens 2 –總覽
 
@@ -31,11 +31,10 @@ ms.locfileid: "112923528"
 
 下列基礎結構應該已準備好部署 HoloLens 2。 如果不是，則本指南包含設定 Azure 和 Intune：
 
-- Wi-Fi
-    - 網路通常會開放給網際網路和雲端服務
-- Azure Active Directory (Azure AD) 加入 MDM 自動註冊 (Azure AD [P1 訂](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 用帳戶) 
-- MDM (Intune) 受控
-    - 透過 MDM 部署一或多個應用程式。
+這是類似于 [案例 a 的設定：部署到雲端連線裝置](/hololens/common-scenarios#scenario-a)，對於許多概念證明部署而言，這是很好的選擇，其中包括：
+
+- Wi-Fi 的網路通常完全開放到網際網路和雲端服務
+- 使用 MDM 自動註冊 Azure AD 聯結--MDM (Intune) 受控
 - 使用者以自己的公司帳戶登入 (Azure AD) 
     - 支援每個裝置的單一或多個使用者。
 
@@ -44,7 +43,7 @@ ms.locfileid: "112923528"
 
 ## <a name="learn-about-remote-assist"></a>深入瞭解遠端協助
 
-遠端協助可讓您進行共同維護和修復、遠端檢查，以及知識共用和定型。 藉由連接不同角色和位置的人員，使用遠端協助的技術人員可以與 Microsoft 團隊的遠端共同作業者聯繫。 它們可以結合影片、螢幕擷取畫面和注釋來即時解決問題，即使它們不在相同的位置&#39;t 也一樣。 遠端共同作業者可以在技術人員&#39;的實體空間中插入參考影像、圖解和其他實用資訊，讓他們可以參考此示意性，同時也能在 HoloLens 上運作並無人參與。
+遠端協助可讓您進行共同維護和修復、遠端檢查，以及知識共用和定型。 藉由連接不同角色和位置的人員，使用遠端協助的技術人員可以與 Microsoft Teams 上的遠端共同作業者連接。 它們可以結合影片、螢幕擷取畫面和注釋來即時解決問題，即使它們不在相同的位置&#39;t 也一樣。 遠端共同作業者可以在技術人員&#39;的實體空間中插入參考影像、圖解和其他實用資訊，讓他們可以參考示意性，同時也能在 HoloLens 上自由操作。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -53,14 +52,14 @@ ms.locfileid: "112923528"
 - 購買訂用帳戶和指派授權所需的 Azure AD 帳戶 () 
 - [遠端協助訂閱](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (或 [遠端協助試用](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)) 
     
-#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 遠端協助使用者
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist 使用者
 
 - 遠端協助授權
 - 網路連線
 
-#### <a name="microsoft-teams-user"></a>Microsoft 小組使用者
+#### <a name="microsoft-teams-user"></a>Microsoft Teams 使用者
 
-- Microsoft 小組或 [團隊免費增值](https://products.office.com/microsoft-teams/free)。
+- Microsoft Teams 或[Teams 免費增值](https://products.office.com/microsoft-teams/free)。
 - 網路連線
 
 如果您打算執行此 [跨租使用者案例](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)，您可能需要資訊障礙授權。 請參閱 [這篇文章](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) ，以判斷是否需要資訊屏障授權。

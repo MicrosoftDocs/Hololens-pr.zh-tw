@@ -12,22 +12,22 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 684059b1ab91860dc6af63cbd6f0927876fefb8c
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 2fb58345f623a0b70c1fda10b9fb550de70f4c6d
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112961402"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635784"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>在商業環境中規劃 HoloLens 2 部署
 
 ## <a name="overview"></a>概觀
 > [!NOTE]
-> 本總覽旨在協助 IT 專業人員瞭解部署及管理組織內 Microsoft HoloLens 2 裝置的考慮。 針對裝置終端使用者，請參閱 [基本概念](hololens2-setup.md) 以開始著手。
+> 本總覽旨在協助 IT 專業人員瞭解部署及管理組織內 Microsoft HoloLens 2 裝置的考慮。 針對裝置終端使用者，請參閱[讓您的 HoloLens 2 準備好開始使用](hololens2-setup.md)。
 
 HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強大、有彈性、內建的行動裝置和應用程式管理技術。 Windows 10 全像攝影版支援端對端裝置生命週期管理，讓公司控制其裝置、資料和應用程式。 您可以使用全方位的行動裝置管理解決方案，輕鬆地將 HoloLens 2 併入標準生命週期實務中，從裝置註冊、設定和應用程式管理到維護和淘汰。
 
-下列步驟可協助引導您完成在組織內 HoloLens 2 採用的流程。
+下列步驟和影片可協助引導您完成在貴組織內 HoloLens 2 採用的流程。
 
 | | |
 |--|--|
@@ -36,6 +36,8 @@ HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強
 | ![步驟 3](images/3green.png) | <br/> **[設定](#configure)**：瞭解如何設定雲端式部署的基本元件。 |
 | ![步驟 4](images/4green.png) | <br/> **[部署](#deploy)**：探索如何部署您的裝置，並安全且有效率地散發您的應用程式。 |
 | ![步驟 5](images/5green.png) | <br/> **[維護](#maintain)**：找出適當維護您 HoloLens 2 裝置狀態所需的內容，並確保符合公司原則。 |
+
+> [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
 ## <a name="prepare"></a>準備
 
@@ -63,7 +65,7 @@ HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強
 
 | 元件 | 描述 |
 |-----------|------------|
-| [註冊驗證](hololens2-corp-connected-deploy.md#enrollment-validation) | 驗證裝置已從設定或 Azure 入口網站加入 Azure AD |
+| [註冊驗證](hololens2-corp-connected-deploy.md#enrollment-validation) | 驗證裝置已 Azure AD 從設定或 Azure 入口網站加入 |
 | [憑證驗證](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | 檢查設定並驗證它們是否已正確散發 |
 | [驗證應用程式安裝](hololens2-corp-connected-deploy.md#validate-lob-app-install) | 確認應用程式存在且正在 HoloLens 2 |
 
@@ -73,5 +75,5 @@ HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強
 
 | 元件 | 描述 |
 |-----------|------------|
-| [更新 HoloLens 2](hololens-updates.md) | 視需要透過商務用 Windows Update 設定更新 |
+| [更新 HoloLens 2](hololens-updates.md) | 視需要透過商務 Windows 更新來設定更新 |
 | [更新應用程式](app-deploy-overview.md) | 透過您的 MDM 系統或 Microsoft Store 設定

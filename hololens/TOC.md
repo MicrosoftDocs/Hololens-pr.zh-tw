@@ -2,27 +2,28 @@
 
 # 裝置總覽
 ## [關於 HoloLens 2](hololens2-hardware.md)
+## [HoloLens 2 能為您做什麼？](hololens-commercial-features.md)
 ## 探索 HoloLens 2 版本
 ### [比較 HoloLens 2 選項](hololens2-options.md)
 ### [僅限裝置版本](hololens2-options-device-only.md)
 ### [遠端協助版本](hololens2-options-remote-assist.md)
 ### [工業版](hololens2-options-industrial-edition.md)
-#### [HoloLens 2 產業版本常見問題](hololens2-industrial-edition-faq.md)
+#### [HoloLens 2工業版常見問題](hololens2-industrial-edition-faq.md)
 ### [開發版](hololens2-options-dev-edition.md)
-#### [HoloLens 2 開發版常見問題](hololens2-development-edition-faq.md)
+#### [HoloLens 2開發版常見問題](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [商業功能](hololens-commercial-features.md)
 
-# 使用 HoloLens
+# 使用您的 HoloLens
 ## 首次使用
 ### [開始使用您的 HoloLens 2](hololens2-setup.md)
 ### [設定您的 HoloLens 2](hololens2-start.md)
 ### [瀏覽 HoloLens 2](hololens2-basic-usage.md)
 ### [更新 HoloLens](hololens-update-hololens.md)
 ## 每日使用量
-### 流覽 Windows 全像攝影介面
+### 流覽 Windows 全息型介面
 #### [使用 [開始] 功能表並混合實境首頁](holographic-home.md)
-#### [使用您的語音操作 HoloLens](hololens-cortana.md)
+#### [使用您的語音來操作 HoloLens](hololens-cortana.md)
 #### [在 HoloLens 上尋找、開啟及儲存檔案](holographic-data.md)
 #### [建立混合的現實照片和影片](holographic-photos-and-videos.md)
 ### 管理應用程式
@@ -32,10 +33,10 @@
 #### [改善視覺品質和緩和](hololens-calibration.md)
 #### [使用 HoloLens 對應實體空間](hololens-spaces.md)
 #### [HoloLens 環境考慮](hololens-environment-considerations.md)
-### 連接您的 HoloLens 2
-#### [將 HoloLens 連接到網路](hololens-network.md)
-#### [連接到 Bluetooth 和 USB-C 裝置](hololens-connect-devices.md)
-#### [連接至行動資料和5G](hololens-cellular.md)
+### 連線您的 HoloLens 2
+#### [連線 HoloLens 網路](hololens-network.md)
+#### [連線至藍牙和 USB-C 裝置](hololens-connect-devices.md)
+#### [連線行動電話和5G](hololens-cellular.md)
 ### [HoloLens 2 電池和充電](hololens2-charging.md)
 ### [HoloLens 2 符合和緩和的常見問題](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 清理常見問題](hololens2-maintenance.md)
@@ -72,7 +73,7 @@
 ### [加密和資料保護](security-encryption-data-protection.md)
 ### [網路安全性](security-network-security.md)
 ### [安全性工程 ](security-engineering.md)
-### [HoloLens 2 隱私權聲明](hololens2-compliance.md)
+### [HoloLens 2隱私權聲明](hololens2-compliance.md)
 ## 裝置管理
 ### [使用 MDM 來管理 HoloLens 裝置](hololens-mdm-configure.md)
 ## 註冊裝置
@@ -87,12 +88,12 @@
 ### [應用程式安裝程式](app-deploy-app-installer.md)
 ##  (Csp 的原則) 
 ### [設定 Csp 和裝置管理總覽](hololens-csp-policy-overview.md)
-### [使用布建套件來設定 HoloLens](hololens-provisioning.md)
+### [使用布建套件設定 HoloLens](hololens-provisioning.md)
 ### [常見的裝置限制](hololens-common-device-restrictions.md)
 ### [將 HoloLens 設定為 kiosk](hololens-kiosk.md)
 ### [全域指派的存取-Kiosk](hololens-global-assigned-access-kiosk.md)
-### [Windows Defender 應用程式控制-WDAC](windows-defender-application-control-wdac.md)
-### [HoloLens 的頁面設定 CSP 和 Uri](settings-uri-list.md)
+### [Windows Defender應用程式控制-WDAC](windows-defender-application-control-wdac.md)
+### [HoloLens 設定 CSP 和 Uri 的頁面](settings-uri-list.md)
 ## 網路 & 連線能力
 ### [設定您的網路以進行 HoloLens](hololens-commercial-infrastructure.md)
 ### [準備 HoloLens 2 的憑證和網路設定檔](hololens-certificates-network.md)
@@ -102,7 +103,7 @@
 
 # 疑難排解
 ## [裝置](hololens-troubleshooting.md)
-## [全像影像和互動](hololens-faq.md)
+## [全像投影和互動](hololens-faq.md)
 ## [顯示器](hololens2-display.md)
 ## [執行和受管理的裝置](hololens2-enterprise-troubleshooting.md#)
 ## [啟用診斷記錄](hololens-diagnostic-logs.md)
@@ -118,21 +119,21 @@
 ## HoloLens (第 1 代)
 ### 首次使用
 #### [關於 HoloLens (第1代) ](hololens1-hardware.md)
-#### [HoloLens (第1代) 符合和緩和](hololens1-fit-comfort-faq.md)
+#### [HoloLens (第1代) 符合並緩和](hololens1-fit-comfort-faq.md)
 #### [基本使用方式總覽](hololens1-setup.md)
-#### [設定 HoloLens (第1代) ](hololens1-start.md)
+#### [將您的 HoloLens 設定 (第1代) ](hololens1-start.md)
 ### 每日使用量
 #### [使用 HoloLens (第1代) clicker](hololens1-clicker.md)
-#### [在 HoloLens (第1代) 上使用3D 檢視器 ](holographic-3d-viewer-beta.md)
+#### [在 HoloLens (第1代) 上使用3D 檢視器](holographic-3d-viewer-beta.md)
 #### [取得 HoloLens (第1代) ](hololens1-basic-usage.md)
-#### [管理適用于 HoloLens 的自訂應用程式](holographic-custom-apps.md)
-#### [安裝當地語系化版本的 HoloLens (第1代) ](hololens1-install-localized.md)
+#### [管理 HoloLens 的自訂應用程式](holographic-custom-apps.md)
+#### [將當地語系化版本的 HoloLens 安裝 (第1代) ](hololens1-install-localized.md)
 #### [解除鎖定 Windows Holographic for Business 功能](hololens1-upgrade-enterprise.md)
-#### [重設 HoloLens (第1代) ](hololens1-recovery.md)
+#### [ (第1代) 重設 HoloLens](hololens1-recovery.md)
 ### HoloLens (第1代) 安全性
-#### [常見的 HoloLens (第一代) 安全性問題](hololens1-faq-security.md)
+#### [常見問題 HoloLens (第一代) 安全性問題](hololens1-faq-security.yml)
 #### [HoloLens (第1代) BitLocker 加密](hololens1-encryption.md)
-### [HoloLens (第一代) 的已知問題和因應措施 ](hololens-known-issues.md)
+### [HoloLens (第1代) 的已知問題和因應措施](hololens-known-issues.md)
 ### [HoloLens (第1代) 版本資訊](hololens1-release-notes.md)
 
 # 提供意見反應

@@ -11,12 +11,12 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: 52036b9e17fe6685bd05693b06e3120b4655c863
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308351"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635529"
 ---
 # <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
 
@@ -30,11 +30,12 @@ ms.locfileid: "108308351"
 > 商務用 Microsoft Store 不會自動下載 (將) 應用程式推送至裝置。 不過，來自商務用 Microsoft Store 的應用程式可與您的裝置管理 (MDM) 伺服器相關聯，並將應用程式同步至裝置。
 
 請流覽下列頁面，以深入瞭解如何使用商務用 Microsoft Store：
-* [用來安裝應用程式的許可權層級](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
-* [如何將應用程式新增至您的商務商店](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
-* [如何將應用程式指派給員工群組](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)
 
-若要建立商務用 Microsoft Store 的關聯，請造訪 [您的商務用 Microsoft Store 與 Intune 之間的](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)關聯。
+* [用來安裝應用程式的許可權層級](/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
+* [如何將應用程式新增至您的商務商店](/mem/intune/apps/store-apps-windows)
+* [如何將應用程式指派給員工群組](/mem/intune/apps/windows-store-for-business)
 
-> [!Tip] 
-> 深入瞭解使用高階復原隨附的應用程式（例如 Advanced Recovery 隨附 (ARC) 和 Windows 設定設計工具 (WCD) ）來 [發佈離線應用程式](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 。
+若要建立商務用 Microsoft Store 的關聯，請造訪[您的商務用 Microsoft Store 與 Intune 之間的](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)關聯。
+
+> [!Tip]
+> 深入瞭解如何在使用高階復原隨附的應用程式時散發[離線應用程式](/microsoft-store/distribute-offline-apps) (ARC) 和 Windows 設定設計工具 (WCD) 。

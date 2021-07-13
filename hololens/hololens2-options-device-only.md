@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c4dd6e751c5f178b31bf86c0c8a98c52a1e781a3
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 9c2ef3c71ad7c67da66391c68f302983e876cef4
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398945"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636277"
 ---
-# <a name="hololens-2-device-only-edition"></a>HoloLens 2 僅限裝置版本
+# <a name="hololens-2-device-only-edition"></a>HoloLens 2僅限裝置版本
 
 HoloLens 2 提供最舒適、更好用的混合現實體驗，並由 Microsoft 的雲端和 AI 服務的可靠性、安全性及擴充性所增強。
 
@@ -32,15 +32,15 @@ HoloLens 2 提供最舒適、更好用的混合現實體驗，並由 Microsoft �
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2"></a>以下是接下來要使用 HoloLens 2
 
-1. 觀看這段影片以 [HoloLens 2 使用和在意](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)。
-1. [讓您的裝置可供使用](https://docs.microsoft.com/hololens/hololens2-setup) ，然後 [開始設定](https://docs.microsoft.com/hololens/hololens2-start)
-1. [瞭解如何 HoloLens 2](https://docs.microsoft.com/hololens/holographic-home)。
-1. 一旦您滿意，請 [參加一些混合的現實照片或](https://docs.microsoft.com/hololens/holographic-photos-and-videos)影片。
-1. 查看 [Microsoft app store 上 HoloLens 2](https://docs.microsoft.com/hololens/holographic-store-apps)的所有可用應用程式。
+1. 觀看這段影片以[HoloLens 2 使用和在意](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)。
+1. [讓您的裝置可供使用](/hololens/hololens2-setup) ，然後 [開始設定](/hololens/hololens2-start)
+1. [瞭解如何 HoloLens 2](/hololens/holographic-home)。
+1. 一旦您滿意，請 [參加一些混合的現實照片或](/hololens/holographic-photos-and-videos)影片。
+1. 查看[Microsoft app store 上 HoloLens 2](/hololens/holographic-store-apps)的所有可用應用程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-1. 立即開始與混合現實互動，並在 HoloLens 上流覽 Windows 10-查看 **秘訣** 應用程式，以取得實際操作教學課程。 使用開始手勢移至 [開始]，或說 [移至開始]，然後選取 [提示]。
+1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 1. 按一下下方以繼續閱讀有關 HoloLens 2 的資訊。
 
 > [!div class="nextstepaction"]

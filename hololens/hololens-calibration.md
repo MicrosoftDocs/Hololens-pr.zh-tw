@@ -1,6 +1,6 @@
 ---
 title: 改善視覺品質和緩和
-description: 瞭解如何 (IPD) 校正您的 interpupillary 距離，以改善您在 HoloLens 裝置上的視覺效果品質。
+description: 瞭解如何 (IPD) 校準 interpupillary 距離，以改善 HoloLens 裝置上的視覺效果品質。
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
@@ -14,18 +14,18 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 校正、舒適、視覺效果、品質、ipd、HoloLens、Windows Mixed Reality、VR 耳機
-ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924140"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635971"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善視覺品質和緩和
 
-HoloLens 2 和 HoloLens (第1代) 都能更妥善地校正為您獨特的眼睛。
+HoloLens 2 和 HoloLens (第1代) 在向您的獨特眼睛校正時，都能更妥善地運作。
 
-雖然這兩個裝置都需要校正以獲得最佳的全像全像觀賞體驗，但它們使用不同的校正技術和技巧。  跳至 [HoloLens 2 校正](#calibrating-your-hololens-2) 或 [HoloLens (第一代) 校正](#calibrating-your-hololens-1st-gen)。
+雖然這兩個裝置都需要校正以獲得最佳的全像全像觀賞體驗，但它們使用不同的校正技術和技巧。  跳至[HoloLens 2 校正](#calibrating-your-hololens-2)或[HoloLens (第一代) 校正](#calibrating-your-hololens-1st-gen)。
 
 ## <a name="calibrating-your-hololens-2"></a>校正您的 HoloLens 2
 
@@ -42,7 +42,7 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 ![調整為眼睛的校正提示。](./images/07-et-adjust-for-your-eyes.png)
 
-在這個過程中，您將會看到一組目標 (gem) 。 如果您在校正期間閃爍，但試著將焦點放在 gem 上，而不是在房間內的其他物件，則會有問題。  將焦點放在 gem 上，可讓 HoloLens 學習呈現您的全像世界的眼睛。
+在這個過程中，您將會看到一組目標 (gem) 。 如果您在校正期間閃爍，但試著將焦點放在 gem 上，而不是在房間內的其他物件，則會有問題。  將焦點放在 gem 上，可讓 HoloLens 瞭解您的眼睛位置，以呈現您的全像世界。
 
 ![校正提示會告知使用者保持不進入，並遵循其眼睛的點。](./images/07-et-hold-head-still.png)
 
@@ -60,11 +60,11 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 ### <a name="manually-starting-the-calibration-process"></a>手動啟動校正程式
 
-1. 使用 [開始] 手勢開啟 [ [**開始** ] 功能表](hololens2-basic-usage.md#start-gesture)。
-1. 如果設定應用程式未釘選到 **開始**，請選取 [ **所有應用程式**]。
-1. 選取 [**設定**]，然後選取 [**系統**  >  **校正**  >  **視覺校正**]  >  **執行眼睛校正**。
+1. 使用 [開始] 手勢來開啟 [**[開始] 功能表**](hololens2-basic-usage.md#start-gesture)。
+1. 如果設定應用程式未釘選到 **開始**，請選取 [**所有應用程式**]。
+1. 選取 [**設定**]，然後選取 [**系統**  >  **校正**  >  **視覺校正**] 的 [  >  **執行眼睛校正**]。
 
-   ![[設定] 應用程式，顯示 [執行眼睛校正] 選項](./images/C-Settings.Calibration.png)
+   ![設定應用程式，顯示 [執行眼睛校正] 選項](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>自動眼睛位置支援
 
@@ -74,7 +74,7 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 當 uncalibrated 使用者放在裝置上時，會有一些系統行為變更，以及自動眼睛位置功能。 在此內容中，uncalibrated 使用者是指未曾在裝置上經歷過眼睛追蹤校正程式的人。
 
-| 作用中的應用程式 | 先前的行為 | Windows 全像版本 20H2 Update 的行為 |
+| 作用中的應用程式 | 先前的行為 | 來自 Windows 全像20H2 版更新的行為 |
 |:-------------------|:-----------------|:-----------------------------------|
 | 未啟用的應用程式或全息式 Shell |隨即顯示 [眼睛追蹤校正提示] 對話方塊。 | 不會顯示任何提示。 |
 | 啟用注視的應用程式 | 隨即顯示 [眼睛追蹤校正提示] 對話方塊。 | 只有當應用程式存取眼睛眼的串流時，才會顯示眼睛追蹤校正提示。 |
@@ -83,7 +83,7 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 所有其他系統行為會類似于目前的使用者沒有使用中的眼睛追蹤校正。 例如，將不會啟用單次開始手勢。 初始設定的全新體驗將不會有任何變更。
 
-針對需要眼睛資料或精確全息圖定位的體驗，建議 uncalibrated 使用者執行眼睛追蹤校正。 您可以從眼睛追蹤校正提示字元，或從 [開始] 功能表啟動 [設定] 應用程式，然後選取 [ **系統 > 校正] > 眼睛校正 > 執行眼睛校正**] 來存取它。
+針對需要眼睛資料或精確全息圖定位的體驗，建議 uncalibrated 使用者執行眼睛追蹤校正。 您可以從眼睛追蹤校正提示字元進行存取，或從 [開始] 功能表啟動設定應用程式，然後選取 [**系統 > 校正] > 眼睛校正 > 執行眼睛校正**。
 
 #### <a name="deferred-calibration-prompt"></a>延後校正提示
 
@@ -100,17 +100,20 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 裝置可在本機儲存高達50的校正設定檔。 到達這個號碼之後，裝置會自動刪除最舊的未使用設定檔。
 
-您一律可以從裝置的 [**設定**  >  **隱私權**  >  **留意追蹤**] 中刪除校正資訊。  
+您一律可以在 **設定** 的  >  **隱私權**  >  **留意追蹤** 程式中，從裝置中刪除校正資訊。  
 
 ### <a name="disable-calibration"></a>停用校正
 
 您也可以遵循下列步驟來停用校正提示：
 
-1. 選取 [**設定**  >  **系統**  >  **校正**]。
+1. 選取 **設定**  >  **系統**  >  **校正**。
 1. **當新的人員使用此 HoloLens 時，請關閉，自動要求執行眼睛校正**。
 
-> [!IMPORTANT]
-> 這種設定可能會對全像影像轉譯品質和緩和造成負面影響。  當您關閉這項設定時，與眼睛追蹤 (的功能（例如文字滾動）) 無法再于沉浸式應用程式中運作。
+   > [!IMPORTANT]
+   > 這種設定可能會對全像影像轉譯品質和緩和造成負面影響。  當您關閉這項設定時，與眼睛追蹤 (的功能（例如文字滾動）) 無法再于沉浸式應用程式中運作。
+
+> [!NOTE]
+> 從 Windows 全像20H2 版開始，已移除設定參數，並開始[自動眼睛位置支援](hololens-release-notes.md#auto-eye-position-support)。 只有當 uncalibrated 使用者正在使用支援追蹤的應用程式時，才會自動顯示校正提示。
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 眼睛追蹤技術
 
@@ -118,21 +121,21 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 > [!NOTE]
 > 設定 IPD 並非適用于 Hololens 2，因為眼睛的位置是由系統所計算。
 
-HoloLens 應用程式會使用眼睛追蹤來追蹤您即時查看的位置。 這是開發人員可使用的主要功能，可讓您在全像全像的環境中，啟用全新的內容層級、人類理解以及互動。 開發人員不需要執行任何動作，即可使用這項功能。
+HoloLens 的應用程式會使用眼睛追蹤來追蹤您即時查看的位置。 這是開發人員可使用的主要功能，可讓您在全像全像的環境中，啟用全新的內容層級、人類理解以及互動。 開發人員不需要執行任何動作，即可使用這項功能。
 
-## <a name="calibrating-your-hololens-1st-gen"></a> (第1代) 校準 HoloLens
+## <a name="calibrating-your-hololens-1st-gen"></a> (第1代) 校準您的 HoloLens
 
-HoloLens (第1代) 會根據您的 [interpupillary 距離](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD) 來調整全像顯示器。 如果 IPD 不正確，可能會顯示不穩定或距離不穩定的全像。 您可以藉由將裝置校準至 interpupillary 距離 (IPD) ，來改善視覺效果的品質。
+HoloLens (第1代) 會根據您的[interpupillary 距離](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD) 來調整全像顯示器。 如果 IPD 不正確，可能會顯示不穩定或距離不穩定的全像。 您可以藉由將裝置校準至 interpupillary 距離 (IPD) ，來改善視覺效果的品質。
 
-當您將 HoloLens (第1代) 裝置時，它會在 Cortana 引進您的視覺效果之後，提示您進行校正。 建議您在此設定階段完成校正步驟。 不過，您可以等候 Cortana 提示您，然後說「略過」來略過。
+當您將 HoloLens 設定 (第1代) 裝置時，它會在 Cortana 引進您的視覺效果之後，提示您校正視覺效果。 建議您在此設定階段完成校正步驟。 不過，您可以等到 Cortana 提示您，然後說「略過」來略過。
 
-在校正程式進行期間，HoloLens 會要求您將手指與每一系列的六個目標對齊。 HoloLens 會使用此程式，為您的眼睛正確設定 IPD。
+在校正過程中，HoloLens 會要求您將手指與每一系列的六個目標對齊。 HoloLens 使用此程式，為您的眼睛正確設定 IPD。
 
 ![第二個步驟中的 IPD 手指對齊畫面](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>手動啟動校正程式
 
-如果您需要更新校正，或如果新使用者需要調整，您可以在任何時間手動執行校正應用程式。 預設會安裝校正應用程式。 您可以使用 [ **開始** ] 功能表或 [設定] 應用程式來存取它。
+如果您需要更新校正，或如果新使用者需要調整，您可以在任何時間手動執行校正應用程式。 預設會安裝校正應用程式。 您可以使用 [**開始**] 功能表或設定應用程式來存取它。
 
 若要使用 [ **開始** ] 功能表來執行校正應用程式，請遵循下列步驟：
 
@@ -140,23 +143,23 @@ HoloLens (第1代) 會根據您的 [interpupillary 距離](https://en.wikipedia.
 1. 若要查看所有應用程式，請選取 [] **+** 。
 1. 選取 [ **校正**]。
 
-![從 shell 存取校正應用程式](./images/calibration-shell.png)
+   ![從 shell 存取校正應用程式](./images/calibration-shell.png)
 
-![在啟動後，會顯示為即時 Cube 的校正應用程式](./images/calibration-livecube-200px.png)
+   ![在啟動後，會顯示為即時 Cube 的校正應用程式](./images/calibration-livecube-200px.png)
 
-若要使用 [設定] 應用程式來執行校正應用程式，請遵循下列步驟：
+若要使用設定應用程式來執行校正應用程式，請遵循下列步驟：
 
 1. 使用 [bloom](hololens1-basic-usage.md) 手勢開啟 [ **開始** ] 功能表。
 1. 如果 **設定** 未釘選到 **開始**，請選取 **+** 以查看所有應用程式。
 1. 選取 [設定]。
 1. 選取 [**系統**  >  **公用程式**]  >  **開啟校正**。
 
-![從設定應用程式啟動校正應用程式](./images/calibration-settings-500px.jpg)
+   ![從設定應用程式啟動校正應用程式](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>沉浸式頭戴裝置
 
-有些沉浸式耳機提供自訂 IPD 設定的能力。 若要變更耳機的 IPD，請開啟 [設定] 應用程式並選取 [**混合現實**  >  **耳機顯示**]，然後移動滑杆控制項。 您將會在耳機中即時看到變更。 如果您知道您的 IPD，或許可以造訪 optometrist，也可以直接輸入。
+有些沉浸式耳機提供自訂 IPD 設定的能力。 若要變更耳機的 IPD，請開啟設定應用程式，並選取 [**混合現實**  >  **耳機顯示**]，然後移動滑杆控制項。 您將會在耳機中即時看到變更。 如果您知道您的 IPD，或許可以造訪 optometrist，也可以直接輸入。
 
-您也可以選取 [**設定**  >  **混合現實**  >  **耳機顯示**] 來調整電腦上的這項設定。
+您也可以選取 **設定**  >  **Mixed reality**  >  **耳機顯示** 來調整電腦上的這項設定。
 
 如果您的耳機不支援 IPD 自訂，則會停用此設定。

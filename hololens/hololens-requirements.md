@@ -1,5 +1,5 @@
 ---
-title: 在商業環境中規劃 HoloLens 2 部署
+title: 常見部署案例
 description: 深入瞭解如何在企業環境中部署和管理 HoloLens，包括基礎結構、Azure Active Directory 和行動裝置管理。
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a0933bb754043934621a22ffa7764c9c88d93da
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 72b9e61c52d6f4f08cf5a29baf7b01c29fae7489
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924599"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635461"
 ---
 # <a name="common-deployment-scenarios"></a>常見部署案例
 
@@ -25,7 +25,7 @@ ms.locfileid: "112924599"
 
 本頁面提供在部署及管理企業內 Microsoft HoloLens 2 裝置時，三個常見案例的高階架構總覽。
 
-通常，您管理裝置及存取組織資源的方式，主要取決於已有的因素。 根據您現有的基礎結構，我們邀請您在下列案例中查看一般裝置管理樣式 (MDM) ，然後閱讀在 [商業環境中規劃 HoloLens 2 部署](hololens-core-components.md) ，以判斷哪一個案例符合您的需求。 此外，您也可以在部署期間使用三個對應的指南。
+通常，您管理裝置及存取組織資源的方式，主要取決於已有的因素。 根據您現有的基礎結構，我們邀請您在下列案例中查看一般裝置管理樣式 (MDM) ，然後閱讀在[商業環境中規劃 HoloLens 2 部署](hololens-core-components.md)，以判斷哪一個案例符合您的需求。 此外，您也可以在部署期間使用三個對應的指南。
 
 
  1. [雲端連線環境部署指南](hololens2-cloud-connected-overview.md)
@@ -71,7 +71,7 @@ ms.locfileid: "112924599"
    * 透過 MDM 部署一或多個應用程式
 
  * 常見的挑戰
-   * HoloLens 2 不支援內部部署 AD 聯結或 SCCM。 僅 Azure AD 與 MDM 聯結。 現今許多公司仍在此案例中部署 Windows 10 的電腦，就像內部部署 AD 加入的裝置一樣，由 System Center 設定管理員 (SCCM) 管理，而且可能不會部署/設定基礎結構，以透過雲端式 MDM 解決方案來管理內部 Windows 10 裝置。
+   * HoloLens 2 不支援內部部署 AD 聯結或 SCCM。 僅 Azure AD 與 MDM 聯結。 現今許多公司仍在此案例中部署 Windows 10 的電腦，作為內部部署 AD 加入的裝置（由 System Center Configuration Manager (SCCM) 管理，而且可能不會部署/設定基礎結構，以透過雲端式 MDM 解決方案來管理內部 Windows 10 裝置。
    * 由於 HoloLens 2 是雲端的第一部裝置，因此其高度依賴網際網路和雲端聯機服務來進行使用者驗證、作業系統更新、MDM 管理等等。 連線到公司網路時，可能需要調整 Proxy/防火牆規則，才能啟用 HoloLens 2 的存取，以及對其執行的應用程式。
    * 公司 Wi-Fi 連線通常需要憑證來向網路驗證裝置或使用者。 透過 MDM 將憑證部署到 Windows 10 裝置所需的基礎結構或設定，可能是設定的挑戰。
 

@@ -16,19 +16,19 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923630"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635937"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重新開機、重設或復原 HoloLens 2
 
 >[!IMPORTANT]
 > 在開始進行任何疑難排解程式之前，請確定您的裝置必須支付 **20% 到 40%** 的電池容量（如果可能的話）。 位於 [電源] 按鈕下的 [電池指標燈](hololens2-setup.md#lights-that-indicate-the-battery-level) 是快速驗證電池容量，而不需要登入裝置的方式。
 
-使用 HoloLens 2 隨附的 [充電器和 USB 類型 C 纜線](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) ，因為這是向裝置收費的最佳方式。 充電器在 2A) 提供 power (9V 的18W。 在裝置處於待命狀態的情況下，HoloLens 2 裝置可使用所提供的牆充電器，在65分鐘內將電池充電以填滿。 如果無法使用這些附屬應用程式，請確定提供的充電可支援至少15W 的電源。
+使用 HoloLens 2 隨附的[充電器和 USB 類型 C 纜線](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1)，因為這是向裝置收費的最佳方式。 充電器在 2A) 提供 power (9V 的18W。 在裝置處於待命狀態的情況下，HoloLens 2 裝置可使用所提供的牆充電器，在65分鐘內將電池充電以填滿。 如果無法使用這些附屬應用程式，請確定提供的充電可支援至少15W 的電源。
 
 > [!NOTE]
 > 可能的話，請避免使用電腦透過 USB 收取裝置的費用，這會很慢。
@@ -38,10 +38,10 @@ ms.locfileid: "112923630"
 - 從 HoloLens 裝置 UI 的主功能表。
 - 查看電源按鈕 (接近電源按鈕有40% 的費用，您應該會看到至少兩個穩固的 Led) 。
     - 當裝置充電時，電池指示燈會亮起以指出目前的收費層級。  最後一個光線會淡入和淡出以表示主動充電。
-    - 當 HoloLens 開啟時，電池指示器會以五個增量顯示電池計量。
+    - 當您的 HoloLens 開啟時，電池指示器會以五個增量顯示電池計量。
     - 當您只開啟五個燈的其中一個時，電池計量低於20%。
     - 如果電池計量偏低，而您嘗試開啟裝置，則會短暫閃爍一次，然後移出。
-- 在您的主機電腦上，開啟 **檔案總管** ，然後在這部 **電腦** 的左側尋找您的 HoloLens 2 裝置。 在裝置上按一下滑鼠右鍵，然後選取 [ **屬性**]。 對話方塊會顯示電池計量的等級。
+- 在您的主機電腦上，開啟 **檔案總管**，然後在這部 **電腦** 的左側尋找您的 HoloLens 2 裝置。 在裝置上按一下滑鼠右鍵，然後選取 [ **屬性**]。 對話方塊會顯示電池計量的等級。
 
    ![顯示電池變更層級的 HoloLens 2 屬性畫面](images/ResetRecovery2.png)
 
@@ -59,9 +59,9 @@ ms.locfileid: "112923630"
 
 3. 等候2-3 秒，然後按下 **電源** 按鈕。 接近電源按鈕的 Led 會亮起，且裝置將開始啟動。
 
-4. 將裝置連接到主機電腦，然後開啟裝置管理員。 針對 Windows 10 的 (，按下 **Windows** 鍵，然後按 **X** 鍵，然後選取 [ **裝置管理員**]。 ) 確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
+4. 連線裝置到主機電腦，然後開啟裝置管理員。 針對 Windows 10 (，請按下 **Windows** 鍵，然後按 **X** 鍵，然後選取 [**裝置管理員**]。 ) 確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery devive manager](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery devive 管理員](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-reset-procedure"></a>硬重設程式
 
@@ -71,11 +71,12 @@ ms.locfileid: "112923630"
 
 2. 按住音量的  +  **電源** 按鈕15秒。 裝置會自動重新開機。
 
-4. 將裝置連線到主機電腦。
+4. 連線裝置到主機電腦。
 
-5. 開啟裝置管理員 (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [ **裝置管理員**) ]。 請確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
+5. 開啟裝置管理員 (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**) ]。 請確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
+
+   ![HoloLens 2MicrosoftHoloLensRecovery 裝置 maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>清除重新刷新裝置
 
@@ -86,14 +87,14 @@ ms.locfileid: "112923630"
 - [過熱](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - 作業系統損毀 (與應用程式損毀不同) 
 
-重新刷新裝置的方式有兩種。 針對這兩種情況，您必須先 [從 Windows 市集中安裝 Advanced Recovery 附隨](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
+重新刷新裝置的方式有兩種。 針對這兩種情況，您必須先[從 Windows 存放區安裝 Advanced Recovery 附隨](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
 
 >[!WARNING]
 >如果您重新刷新您的裝置，將會清除您的所有個人資料、應用程式和設定，包括 TPM 重設資訊。
 
-根據預設，Advanced Recovery 附屬設定為下載最新的功能發行組建，請參閱這裡以閱讀我們的 [版本](hololens-release-notes.md#) 資訊，以瞭解最新的功能版本。 若要取得最新的 HoloLens 2 Full Flash Update (FFU) 套件以透過 Advanced Recovery 隨附重新刷新您的裝置，請 [按一下這裡下載最新的每月 HoloLens 2 映射](https://aka.ms/hololens2download)。 此版本是最新正式推出的組建。
+根據預設，Advanced Recovery 附屬設定為下載最新的功能發行組建，請參閱這裡以閱讀我們的 [版本](hololens-release-notes.md#) 資訊，以瞭解最新的功能版本。 若要取得最新的 HoloLens 2 Full Flash Update (FFU) 套件以透過 Advanced Recovery 隨附重新刷新您的裝置，請[按一下這裡下載最新的每月 HoloLens 2 映射](https://aka.ms/hololens2download)。 此版本是最新正式推出的組建。
 
-開始重新刷新程式之前，請確定已在 Windows 10 電腦上安裝並執行應用程式，並已準備好偵測裝置。 此外，也請確定您的 HoloLens 最少支付40% 的費用。
+開始重新刷新程式之前，請確定已在 Windows 10 電腦上安裝並執行應用程式，並已準備好偵測裝置。 也請確定您的 HoloLens 是以最少40% 的費率計費。
 
 ![HoloLens 2 乾淨重新刷新螢幕擷取畫面](images/ARC1.png)
 
@@ -117,9 +118,9 @@ ms.locfileid: "112923630"
 
 3. 按下 **音量** 按鈕時，請按下並放開 **電源** 按鈕以啟動裝置。 等候15秒，然後放開 **音量** 按鈕。 只有五個 Led 的中間 LED 會亮著。
 
-4. 將裝置連接到主機電腦，然後開啟裝置管理員。  (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [ **裝置管理員**]。 ) 確認裝置已正確列舉為 Microsoft HoloLens，如下圖所示：
+4. 連線裝置到主機電腦，然後開啟裝置管理員。  (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**]。 ) 確定裝置已正確列舉為 Microsoft HoloLens，如下圖所示：
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
    系統會自動偵測裝置，而且 Advanced Recovery 附屬應用程式 UI 將會啟動更新程式：
 
@@ -133,7 +134,13 @@ ms.locfileid: "112923630"
 
 2. 檢查您的裝置是否已解除鎖定。
 
-3. 如果 ARC 偵測不到您的裝置，請確定您可以透過電腦上的檔案總管連接到您的裝置。 如果您無法;
+1. 檢查您的裝置是否直接插入主機電腦，而不是中樞。
+
+1. 如果您的裝置未在通用序列匯流排驅動程式下顯示為 HoloLens/HoloLens 復原裝置，請檢查：
+    1. 作為 Qualcomm HS-USB 裝置的 **埠**
+    1.   **其他裝置**（作為 QUSB_BULK 裝置）-您的主機電腦缺少偵測 HoloLens 所需的驅動程式。 以滑鼠右鍵按一下並選取 [更新驅動程式]，並在線上搜尋驅動程式，或[在 Windows Update 設定中檢查選用的更新](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 下載驅動程式之後，ARC 應該可以偵測到它。
+ 
+1. 如果 ARC 偵測不到您的裝置，請確定您可以透過電腦上的檔案總管連接到您的裝置。 如果您無法;
 
     1.  您的裝置可能會有停用該連線的 USB 原則。 若是如此，請嘗試 [手動閃爍模式](hololens-recovery.md#manual-procedure)。
     2.  如果沒有原則，請嘗試不同的 USB 纜線。
@@ -142,17 +149,17 @@ ms.locfileid: "112923630"
 
 ## <a name="download-arc-without-using-the-app-store"></a>下載 ARC 而不使用 app store
 
-如果 IT 環境防止使用 Windows Store 應用程式或限制零售商店的存取權，IT 系統管理員可以透過「離線」部署路徑，讓此應用程式可供使用。
+如果 it 環境防止使用 Windows Store 應用程式或限制零售商店的存取權，it 系統管理員可以透過「離線」部署路徑來提供此應用程式。
 
  >[!NOTE]
- > - IT 系統管理員也可以透過 System Center 設定管理員 (SCCM) 或 Intune 發佈此應用程式。
+ > - IT 系統管理員也可以透過 System Center Configuration Manager (SCCM) 或 Intune 來散發此應用程式。
  > - 本指南著重于先進的復原，但此程式也可以用於其他「離線」應用程式。
 
 遵循下列步驟來啟用部署路徑：
 
-1. 移至 [商務用 Microsoft Store](https://businessstore.microsoft.com) ，並使用 Azure Active Directory 身分識別登入。
+1. 移至[商務用 Microsoft Store](https://businessstore.microsoft.com) ，並使用 Azure Active Directory 身分識別登入。
 
-1. 移至 [ **管理-設定**]。 開啟 [在 **購物體驗** 時 **顯示離線應用程式**]。
+1. 移至 [**管理–設定**]。 開啟 [在 **購物體驗** 時 **顯示離線應用程式**]。
 
 1. 移至 [ **為我的群組購物**]，並搜尋 [**_Advanced Recovery 附屬_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
 

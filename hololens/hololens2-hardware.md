@@ -12,39 +12,39 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: cfe4206790b12d77a7f5be4267387cdd0299c3fe
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924514"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636855"
 ---
 # <a name="about-hololens-2"></a>關於 HoloLens 2
 
 ![HoloLens 2 側邊視圖](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (第一代) 所開始的全像電腦運算旅程，提供更舒適且更豐富的體驗，並搭配更多可在混合現實中共同作業的選項。 HoloLens 2 是以 Windows 10 的「類別」為基礎，可讓使用者、系統管理員和開發人員使用強大、高效能且安全的平臺，在 Windows 全像的 [作業系統](hololens-release-notes.md)上執行。 
+Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (第一代) 所開始的全像電腦運算旅程調整，以提供更舒適和沉浸式的體驗，並搭配更多可在混合現實中共同作業的選項。 HoloLens 2 在[Windows](hololens-release-notes.md)全像 Windows 10 的「類別」上執行，可為使用者、系統管理員和開發人員提供強大、高效能且安全的平臺。 
 
 > [!NOTE]
-> 最新的 Windows 11 公告著重于電腦版本的 Windows。 我們最近在2021年5月推出了 HoloLens 2 的 [重大作業系統更新](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) ，我們正努力根據客戶對此秋季的意見反應，來處理即將推出的版本。
+> 最新的 Windows 11 公告著重于電腦版本的 Windows。 我們最近在2021年5月推出了 HoloLens 2 的[重大作業系統更新](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067)，我們正努力根據客戶對此秋季的意見反應，來處理即將推出的版本。
 
 需要使用者帳戶才能使用 HoloLens 2。
 
 ## <a name="hololens-components"></a>HoloLens 元件
 
-- **面板**。 包含 HoloLens 感應器和顯示器。 您可以在佩戴 HoloLens 時旋轉面板。
-- **Headband**。 若要進入 HoloLens，請使用「調整」滾輪來展開 headband。 備妥 HoloLens 之後，請在 headband 熟悉之前，藉由向右轉換來將調整滾輪調到最右邊。
-- **亮度按鈕**。 當您佩戴 HoloLens 時，亮度按鈕會在聖殿附近的面板左側。
-- **音量按鈕**。 當您佩戴 HoloLens 時，音量按鈕會在聖殿附近的面板右側。
-- **電源按鈕**。 當您佩戴 HoloLens 時，電源按鈕位於後方外部封面的右側。
-- **USB-C 埠**。 當您佩戴 HoloLens 時，USB 埠位於 [電源] 按鈕下方的後方外部邊蓋右邊。
+- **面板**。 包含 HoloLens 感應器和顯示器。 您可以在戴 HoloLens 時旋轉面板。
+- **Headband**。 若要放在 HoloLens 上，請使用「調整」滾輪來展開 headband。 當 HoloLens 備妥時，請在 headband 熟悉之前，將調整輪子調到右邊。
+- **亮度按鈕**。 當 HoloLens 時，亮度按鈕會在聖殿附近的面板左側。
+- **音量按鈕**。 當 HoloLens 時，音量按鈕會在聖殿附近的面板右側。
+- **電源按鈕**。 當 HoloLens 時，電源按鈕位於後方外部封面的右側。
+- **USB-C 埠**。 當 HoloLens 時，會將 USB 埠放在電源按鈕下方的後方外部蓋右邊。
 
 ## <a name="in-the-box"></a>在 box 中
 
 - **[Brow pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**。 您可以視需要移除並取代 brow pad。
-- **[額外負荷](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**。 當您四處移動 HoloLens 時，請使用腕帶的額外負荷來協助保持裝置的位置。 在短期內佩戴 HoloLens 時，額外負荷可能會讓裝置更容易磨損。
-- **[USB-C 充電器和纜線](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**。 電源供應器會插入電源插座。 使用 USB 纜線將 HoloLens 連接到電源供應器以進行充電，或將 HoloLens 連接到您的電腦。
-- **Microfiber 抹布**。 用來清理 HoloLens 面板。
+- **[額外負荷](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**。 當您四處四處移動 HoloLens 時，請使用腕帶的額外負荷來協助保持裝置的位置。 當您在長時間內佩戴 HoloLens 時，可能會導致裝置更容易磨損的額外負荷。
+- **[USB-C 充電器和纜線](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**。 電源供應器會插入電源插座。 使用 USB 纜線將您的 HoloLens 連接到電源供應器以進行充電，或將您的 HoloLens 連接到您的電腦。
+- **Microfiber 抹布**。 用來清除您的 HoloLens 面板。
 
 ### <a name="power-supply-details"></a>電源供應器詳細資料
 
@@ -75,7 +75,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 | 慣性度量單位 (IMU)  | 加速計、陀螺儀、磁力計 |
 | 相機 | 8個 MP 靜止、1080p30 影片 |
 
-![HoloLens 2 感應器](images/hololens2-front-view.png)
+![HoloLens 2感應器](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 請勿涵蓋在圖片中所呼叫的任何感應器。 前端追蹤攝影機有很大的 FOV，除了不涵蓋它們之外，還沒有任何內容。
@@ -124,7 +124,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 | - | - |
 | 手勢追蹤 | 雙用完整的雙用模型，直接操作 |
 | 眼球追蹤 | 即時追蹤 |
-| 語音 | 命令與控制裝置;具有網際網路連線能力的 Cortana 自然語言 |
+| 語音 | 命令與控制裝置;以網際網路連線 Cortana 自然語言 |
 
 ### <a name="environment-understanding"></a>環境理解
 
@@ -138,21 +138,21 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 
 |   |   |
 | - | - |
-| Windows 全像作業系統 | 有了 Windows 全像 [作業系統](hololens-release-notes.md)，Windows 10 使用者將能夠透過 HoloLens 2，在混合現實環境中使用部分的應用程式和遊戲。
+| Windows全息版作業系統 | 有了 Windows 的全像[作業系統](hololens-release-notes.md)，Windows 10 的使用者就可以透過 HoloLens 2，在混合現實環境中使用部分的應用程式和遊戲。
 | 3D 檢視器 | [3D 檢視器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) 可讓您輕鬆地即時觀看3d 模型和動畫。|
-| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)是您的個人生產力小幫手，可協助您掌握重要性，並節省時間找出您所需的內容。  |
-| Dynamics 365 Guides |  [Dynamics 365 指南](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 將協助員工以 HoloLens 裝置更快學習新技能。 |
-| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 遠端協助](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 可讓技術人員使用 Microsoft 小組或 Dynamics 365 遠端協助來共同作業及解決遠端共同作業者的問題。  |
-| 意見反應中樞 | [意見反應中樞](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) 可讓您藉由分享您的建議或問題，提供有關 Windows 和應用程式的意見反應。  |
+| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)，您的個人生產力小幫手可協助您掌握重要性，並節省時間找出您所需的內容。  |
+| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab)可協助員工在 HoloLens 裝置上更快速地學習新技能。 |
+| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab)讓技術人員能夠使用 Microsoft Teams 或 Dynamics 365 Remote Assist 來共同作業和解決遠端共同作業者的問題。  |
+| 意見反應中樞 | [意見反應中樞](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)可讓您分享您的建議或問題，以提供有關 Windows 和應用程式的意見反應。  |
 | 檔案總管 | 檔案總管提供圖形化使用者介面來存取檔案系統。 |
-| 郵件與行事曆 | [郵件和行事曆](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)應用程式可協助您掌握電子郵件的最新狀態、管理您的排程，並與您的連絡人保持聯繫。 |  
+| 郵件與行事曆 | [郵件和行事曆](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)應用程式可協助您掌握電子郵件的最新狀態、管理您的排程，並與您的連絡人保持聯繫。 |
 | Microsoft Edge | 當您流覽時，Microsoft Edge 可讓您以更高的隱私權、更多生產力和更高的價值提供世界級的效能。 |
-| Microsoft Store | [Microsoft Store](https://www.microsoft.com)是適用于 HoloLens 的應用程式和遊戲的進入來源。|
+| Microsoft Store | [Microsoft Store](https://www.microsoft.com)是與 HoloLens 搭配使用的應用程式和遊戲的進入來源。|
 | 電影與電視 | [影片 & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) 在一個簡單、快速且簡潔的應用程式中，提供您最新的娛樂。 |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) 可讓您從所有裝置存取和編輯您的檔案。  |
-| 照片| [相片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) 可讓您查看和編輯您的相片和影片、製作電影和建立專輯。  |
-| 設定 | 您可以在 [設定] 應用程式中，自訂 Windows 全息版的運作方式。  |
-| 提示 | [秘訣](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) 可讓您在 Windows 全像攝影中，掌握令人驚訝和較少的已知事物。 |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab)可讓您在任何地方從所有裝置存取和編輯您的檔案。  |
+| 照片 | [相片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) 可讓您查看和編輯您的相片和影片、製作電影和建立專輯。  |
+| 設定 | 設定的應用程式，您可以在其中自訂 Windows 全息版的運作方式。  |
+| 提示 | [提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)可讓您在 Windows 全息版中，掌握您可以進行的令人驚訝和較不重要的事情。 |
 
 ## <a name="device-certifications"></a>裝置認證
 
@@ -160,7 +160,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 
 * [產品安全性](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [產品安全警告和指示](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* 眼睛安全： HoloLens 2 已經過測試，並符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本影響保護需求。
+* 眼睛安全： HoloLens 2 已經過測試，並符合 ANSI z 87.1、CSA z 94.3 和 EN 166 的基本影響保護需求。
 * [SAR 資訊](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>法規資訊
@@ -168,12 +168,12 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 
 ## <a name="warranty-information"></a>擔保資訊
 
-Microsoft HoloLens 2 會隨附標準的有限瑕疵 [擔保](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)。 
+Microsoft HoloLens 2 會隨附標準的有限瑕疵[擔保](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)。 
 
 
-購買受 [Microsoft Store 的使用規定和銷售條款約束](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)。 所有銷售都是最終的。 沒有退款。
+購買受[Microsoft Store 的使用規定和銷售條款約束](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)。 所有銷售都是最終的。 沒有退款。
 
-購買 HoloLens 2 即表示您同意 [軟體授權合約](https://www.microsoft.com/Useterms/)。
+購買 HoloLens 2 即表示您同意[軟體授權合約](https://www.microsoft.com/Useterms/)。
 
 不適用於小於13的兒童使用。
 

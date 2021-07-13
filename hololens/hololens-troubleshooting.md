@@ -1,6 +1,6 @@
 ---
-title: HoloLens 裝置疑難排解
-description: 隨時掌握最新的 HoloLens 裝置問題和疑難排解技術最常見的解決方案。
+title: HoloLens裝置疑難排解
+description: 隨時掌握最新的解決方案，以 HoloLens 裝置問題和疑難排解技術。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
@@ -13,16 +13,16 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: b69dddf04ac31b69f0b2f8759d095806189f33ab
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: b07514e73e43d267aa856c0fb9a256448e565000
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924616"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635444"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
-本文說明如何解決數個常見的 HoloLens 問題。
+本文說明如何解決許多常見的 HoloLens 問題。
 
 >[!IMPORTANT]
 > 在開始進行任何疑難排解程式之前，請確定您的裝置必須支付 **20% 到 40%** 的電池容量（如果可能的話）。 位於 [電源] 按鈕下的 [電池指標燈](hololens2-setup.md#lights-that-indicate-the-battery-level) 是快速驗證電池容量，而不需要登入裝置的方式。
@@ -43,10 +43,10 @@ ms.locfileid: "112924616"
 - [HoloLens 沒有回應或無法啟動](#hololens-is-unresponsive-or-wont-start)
 - [「磁碟空間不足」錯誤](#low-disk-space-error)
 - [校正失敗](#calibration-fails)
-- [無法登入，因為先前已為他人設定過 HoloLens](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [無法登入，因為先前為其他人設定了我的 HoloLens](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [Unity 無法運作](#unity-isnt-working)
-- [Windows 裝置入口網站無法正常運作](#windows-device-portal-isnt-working-correctly)
-- [HoloLens 模擬器無法運作](#the-hololens-emulator-isnt-working)
+- [Windows裝置入口網站無法正常運作](#windows-device-portal-isnt-working-correctly)
+- [HoloLens Emulator 無法運作](#the-hololens-emulator-isnt-working)
 
 **輸入**
 - [語音命令無法運作](#voice-commands-arent-working)
@@ -63,44 +63,33 @@ ms.locfileid: "112924616"
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>遠端協助影片在20分鐘後凍結
 
 > [!NOTE]
-> 由於這個已知問題的嚴重性，我們目前已暫停 Windows 全像21H1 版的可用性。 如果您仍想要將裝置更新為21H1，請參閱 [頁面頂端的版本資訊中的指示。](hololens-release-notes.md)
+> 有較新版本的遠端協助可解決此問題。 請將 [遠端協助更新](holographic-store-apps.md#update-apps) 為最新版本，以避免發生此問題。
 
-在最新版的 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)中，某些遠端協助的使用者在呼叫期間會有20分鐘的影片凍結。 這是 **已知的問題**。
+> [!NOTE]
+> 由於此已知問題的嚴重性，我們已暫時暫停 Windows 全像21H1 版的可用性。 21H1 組建現在已再次可供使用，因此裝置可能會再次更新至最新的21H1 組建。
+
+在 Windows 全像[21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)的最新版本中，遠端協助的某些使用者在呼叫超過20分鐘時都有經歷過的影片凍結。 這是 **已知的問題**。
 
 ### <a name="workarounds"></a>因應措施
+
+如果您無法更新遠端協助至較新的組建，請嘗試下列解決辦法。
 
 #### <a name="restart-in-between-calls"></a>在呼叫之間重新開機
 
 如果您的呼叫超過20分鐘的時間，而您遇到此問題，請嘗試重新開機您的裝置。 在遠端協助電話之間重新開機裝置，將會重新整理您的裝置，並讓裝置恢復正常狀態。
 
-若要在 Windows 全像攝影版上快速重新開機裝置 [，版本 21H1](hololens-release-notes.md#windows-holographic-version-21h1) 開啟 [開始] 功能表，並選取 [使用者] 圖示，然後選取 [ **重新開機**]。
-
-#### <a name="revert-to-an-older-build"></a>還原為較舊的組建
-
-某些客戶發現，在還原至舊版的作業系統版本時，他們不再遇到此問題。 如果您發現您的裝置遇到此問題，請嘗試下列步驟：
-
-
-因應措施：
-
-- 如果您的企業可以使用，則在取用者 Microsoft 帳戶上可支援自動相機上傳。 除了您的工作或學校帳戶之外，您還可以登入 Microsoft 帳戶 (OneDrive 應用程式支援雙重登入) 。 從 OneDrive 內的 Microsoft 帳戶設定檔，您可以啟用自動的背景相機滾動上傳。
-
-- 如果您無法安全地使用取用者 Microsoft 帳戶自動上傳您的相片，您可以從 OneDrive 應用程式手動將相片上傳至您的工作或學校帳戶。 若要這樣做，請確定您已登入 OneDrive 應用程式中的公司或學校帳戶。 選取 **+** 按鈕，然後選擇 [ **上傳**]。 藉由流覽至 [ **圖片] > 相機滾動** 圖，尋找您想要上傳的相片或影片。 選取您要上傳的相片或影片，然後選取 [ **開啟** ] 按鈕。
-
-
-1. [下載適用于 Windows 全像20H2 版的組建-5 月2021更新](https://aka.ms/hololens2download/10.0.19041.1146)
-1. 遵循 [指示回到先前的作業系統版本](hololens-update-hololens.md#go-back-to-a-previous-version)
-1. 請手動或針對許多裝置 [暫停裝置上的作業系統更新](hololens-updates.md#pause-updates-via-device) ，以使用 [延遲至 MDM](hololens-updates.md#configure-an-update-deferral-policy)。
+若要快速重新開機 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)的裝置，請開啟 [開始] 功能表，並選取 [使用者] 圖示，然後選取 [**重新開機**]。
 
 [返回清單](#list)
 
 ## <a name="auto-login-asks-for-log-in"></a>自動登入要求登入
 
-HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **入選項** 登入->，而且在 **必要** 時，將值設為 [**永不**]。 使用重大更新（例如功能更新）更新裝置時，某些使用者可能需要再次登入裝置。 這是 **已知的問題**。
+HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選項** 自動登入-> 並在 **必要** 時，將值設為 [**永不**]。 使用重大更新（例如功能更新）更新裝置時，某些使用者可能需要再次登入裝置。 這是 **已知的問題**。
 
 發生這種情況的範例：
 
-- 將裝置從 Windows 全像2004版 (組建) 19041）更新為 Windows 全像21H1 版， (組建 20346. xxxx) 
-- 將裝置更新為在相同的主要組建上進行大量更新，例如 Windows 全像 Windows 全像，2004版到 Windows 全像20H2 版
+- 將裝置從 Windows 全像2004版 (build) 19041）更新為 Windows 全像 21H1 (build 20346. xxxx) 
+- 更新裝置以在相同的主要組建上進行大量更新，例如 Windows 全像2004版，以 Windows 全像20H2 版
 - 將裝置從原廠映射更新為最新影像
 
 這應該不會在下列情況中發生：
@@ -117,9 +106,9 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 ## <a name="microsoft-edge-fails-to-launch"></a>無法啟動 Microsoft Edge
 
 > [!NOTE]
-> 此問題原本是使用 Microsoft Edge 的出貨版本所建立。 此問題可在 [新的 Microsoft Edge](hololens-new-edge.md)中解決。 如果不是，請提出意見反應。
+> 此問題原本是使用 Microsoft Edge 的出貨版本所建立。 此問題可在[新的 Microsoft Edge](hololens-new-edge.md)中解決。 如果不是，請提出意見反應。
 
-少數客戶回報了 Microsoft Edge 無法啟動的問題。 針對這些客戶，問題會透過重新開機持續存在，而且無法透過 Windows 或應用程式更新解決。 如果您遇到此問題，而且已確認 [Windows 是最](hololens-updates.md#manually-check-for-updates)新狀態，請從 [意見反應中樞應用程式](hololens-feedback.md) 提出 bug，並列出下列類別和子類別：安裝和更新 > 下載、安裝和設定 Windows Update。
+少數客戶回報了 Microsoft Edge 無法啟動的問題。 針對這些客戶，問題會透過重新開機持續存在，而且不會透過 Windows 或應用程式更新解決。 如果您遇到此問題，且已確認[Windows 為最](hololens-updates.md#manually-check-for-updates)新狀態，請從[意見反應中樞應用程式](hololens-feedback.md)提出 bug，並列出下列類別和子類別：安裝和更新 > 下載、安裝和設定 Windows Update。
 
 沒有任何已知的因應措施，因為我們目前無法解決問題的根本原因。 透過意見反應中樞提出 bug 將有助於進行調查！ 這是 **已知的問題**。
 
@@ -141,20 +130,21 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 
 [返回清單](#list)
 
-
 ## <a name="downloading-locked-files-doesnt-error"></a>下載鎖定的檔案並不會發生錯誤
-> !請注意，這是 Windows 測試人員 build，version 20348.1403 中已修正的 **已知問題** 。
 
+> [!NOTE]
+> 這是 Windows 測試人員組建20348.1403 版中已修正的 **已知問題**。
 
-在先前的 Windows 全像組建中，嘗試下載鎖定的檔案時，結果會是 HTTP 錯誤網頁。 在 Windows 全像版本21H1 更新中，嘗試下載鎖定的檔案會導致看不到任何東西，也就是檔案不會下載，也不會發生錯誤。 
+在舊版 Windows 全息版中，當您嘗試下載鎖定的檔案時，結果會是 HTTP 錯誤網頁。 在 Windows 的全像21H1 更新版本中，如果您嘗試下載鎖定的檔案，就不會有任何可見的情況—檔案不會下載，也不會發生錯誤。
 
 [返回清單](#list)
 
 ## <a name="device-portal-file-uploaddownload-times-out"></a>裝置入口網站檔案上傳/下載超時
-> !請注意，這是 Windows 測試人員 build，version 20348.1403 中已修正的 **已知問題** 。 如果您先前已在因應措施中停用 SSL 連線，強烈建議您重新啟用 SSL 連線。
+> [!NOTE]
+> 這是 Windows 測試人員組建20348.1403 版中已修正的 **已知問題**。 如果您先前已在因應措施中停用 SSL 連線，強烈建議您重新啟用 SSL 連線。
 
 
-某些客戶在嘗試上傳或下載檔案時，該作業可能會似乎停止回應，而不會完成時間。 這與「檔案鎖定」的[已知問題](#downloading-locked-files-doesnt-error) 不同，這會影響 Windows 全像版本2004、20H2 和21H1 的市場內建。 問題的根本原因是裝置入口網站處理某些要求時發生錯誤，而且在使用 HTTPs （預設值）時，最常受到持續的點擊。 
+某些客戶在嘗試上傳或下載檔案時，該作業可能會似乎停止回應，而不會完成時間。 這與「檔案鎖定」的[已知問題](#downloading-locked-files-doesnt-error)不同，這會影響 Windows 全像全像版本2004、20H2 和21H1 的市場組建。 問題的根本原因是裝置入口網站處理某些要求時發生錯誤，而且在使用 HTTPs （預設值）時，最常受到持續的點擊。 
 
 ### <a name="workaround"></a>因應措施
 
@@ -180,9 +170,9 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
     - 掌握 Insider Preview
 - 重新刷新裝置
 
-    1. 請在未連線的情況下完全關閉，以手動方式將 [HoloLens 2 進入閃爍模式](hololens-recovery.md) 。 然後按住音量，然後按一下 [電源] 按鈕。
+    1. 請在未連線的情況下完全關閉，以手動方式將[HoloLens 2 進入閃爍模式](hololens-recovery.md)。 然後按住音量，然後按一下 [電源] 按鈕。
     
-    1. 連接到電腦並開啟 Advanced Recovery 隨附。
+    1. 連線電腦並開啟 [Advanced Recovery]。
     
     1. 將 HoloLens 2 快閃至預設組建。
 
@@ -194,24 +184,24 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 
 因應措施：
 
-- 如果您的企業可以使用，則在取用者 Microsoft 帳戶上可支援自動相機上傳。 除了您的工作或學校帳戶之外，您還可以登入 Microsoft 帳戶 (OneDrive 應用程式支援雙重登入) 。 從 OneDrive 內的 Microsoft 帳戶設定檔，您可以啟用自動的背景相機滾動上傳。
+- 如果您的企業可以使用，則在取用者 Microsoft 帳戶上可支援自動相機上傳。 除了您的工作或學校帳戶之外，您還可以登入 Microsoft 帳戶 (OneDrive 應用程式支援雙重登入) 。 從 OneDrive 內的 Microsoft 帳戶設定檔中，您可以啟用自動、背景相機的向前移上傳。
 
-- 如果您無法安全地使用取用者 Microsoft 帳戶自動上傳您的相片，您可以從 OneDrive 應用程式手動將相片上傳至您的工作或學校帳戶。 若要這樣做，請確定您已登入 OneDrive 應用程式中的公司或學校帳戶。 選取 **+** 按鈕，然後選擇 [ **上傳**]。 藉由流覽至 [ **圖片] > 相機滾動** 圖，尋找您想要上傳的相片或影片。 選取您要上傳的相片或影片，然後選取 [ **開啟** ] 按鈕。
+- 如果您無法安全地使用取用者 Microsoft 帳戶自動上傳您的相片，您可以從 OneDrive 應用程式手動將相片上傳到您的公司或學校帳戶。 若要這樣做，請確定您已在 OneDrive 應用程式中登入公司或學校帳戶。 選取 **+** 按鈕，然後選擇 [ **Upload**]。 藉由流覽至 [ **圖片] > 相機滾動** 圖，尋找您想要上傳的相片或影片。 選取您要上傳的相片或影片，然後選取 [ **開啟** ] 按鈕。
 
 [返回清單](#list)
 
 ## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens 沒有回應或無法啟動
 
-如果您的 HoloLens 無法啟動：
+如果您的 HoloLens 將不會啟動：
 
-- 如果電源按鈕旁的 Led 沒有亮，或只有一個 LED 短暫閃爍，您可能需要向 [HoloLens 收費。](hololens2-charging.md#charging-the-device)
+- 如果電源按鈕旁的 Led 沒有亮，或只有一個 LED 短暫閃爍，您可能需要向[HoloLens 收費。](hololens2-charging.md#charging-the-device)
 - 當您按下電源按鈕時，如果 Led 亮起，但看不到顯示器上的任何事物，請 [進行裝置的硬重設](hololens-recovery.md#hard-reset-procedure)。
 
 如果您的 HoloLens 變成凍結或沒有回應：
 
-- 藉由按下電源按鈕，直到所有五個 Led 關閉，或15秒（如果 Led 沒有回應），關閉 HoloLens。 若要開始 HoloLens，請再次按下電源按鈕。
+- 藉由按下電源按鈕，將您的 HoloLens 關閉，直到所有五個 led 都變成關閉狀態，或15秒（如果 led 沒有回應）。 若要啟動您的 HoloLens，請再按一次 [電源] 按鈕。
 
-如果這些步驟都沒有作用，您可以嘗試 [復原 HoloLens 2 裝置](hololens-recovery.md) 或 [HoloLens (第一代) 裝置。](hololens1-recovery.md)
+如果這些步驟無法運作，您可以嘗試[復原 HoloLens 2 裝置](hololens-recovery.md)，或[HoloLens (第一代) 裝置。](hololens1-recovery.md)
 
 [返回清單](#list)
 
@@ -219,10 +209,10 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 
 您必須執行下列一或多個動作，以釋出一些儲存空間：
 
-- 刪除一些未使用的空間。 移至 [**設定**  >  **系統**  >  **空間**]，選取您不再需要的空間，然後選取 [**移除**]。
+- 刪除一些未使用的空間。 移至 **設定**  >  **系統**  >  **空間**]，選取您不再需要的空間，然後選取 [**移除**]。
 - 移除您所放置的一些全息。
 - 從相片應用程式刪除部分圖片和影片。
-- 從 HoloLens 卸載一些應用程式。 在 **所有應用程式** 清單中，按住您要卸載的應用程式，然後選取 [ **卸載**]。
+- 從您的 HoloLens 卸載一些應用程式。 在 **所有應用程式** 清單中，按住您要卸載的應用程式，然後選取 [ **卸載**]。
 
 [返回清單](#list)
 
@@ -248,7 +238,7 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 - 將面板中的物件移出 (例如頭髮) 
 - 開啟房間內的燈光或移出直接的直射
 
-如果您遵循所有指導方針，而且校正仍失敗，您可以在 [設定] 中停用校正提示。 也請在 [意見反應中樞](hololens-feedback.md)中提出意見反應，讓我們知道。
+如果您遵循所有指導方針，而且校正仍失敗，您可以在設定中停用校正提示。 也請在 [意見反應中樞](hololens-feedback.md)中提出意見反應，讓我們知道。
 
 另請參閱[影像色彩或亮度疑難排解](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)的相關資訊。
 
@@ -256,7 +246,7 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 
 [返回清單](#list)
 
-## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>無法登入，因為先前已為他人設定過 HoloLens
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>無法登入，因為先前為其他人設定了我的 HoloLens
 
 您可以 [讓裝置進入 **閃爍模式** ，並使用先進](hololens-recovery.md#clean-reflash-the-device) 的復原輔助來復原裝置。
 
@@ -265,60 +255,53 @@ HoloLens 2 裝置可設定為自動透過 **設定**  ->  **帳戶** 登  ->  **
 
 ## <a name="unity-isnt-working"></a>Unity 無法運作
 
-- 請參閱安裝適用于最新版本之 Unity 的 [工具](/windows/mixed-reality/install-the-tools) ，建議用於 HoloLens 開發。
-- 有關 Unity HoloLens Technical Preview 的已知問題記載于 [HoloLens Unity 論壇](https://forum.unity3d.com/threads/known-issues.394627/)中。
+- 如需 HoloLens 開發建議，請參閱安裝最新版 Unity 的[工具](/windows/mixed-reality/install-the-tools)。
+- unity HoloLens Technical Preview 的已知問題記載于[HoloLens unity 論壇](https://forum.unity3d.com/threads/known-issues.394627/)中。
 
 [返回清單](#list)
 
-## <a name="windows-device-portal-isnt-working-correctly"></a>Windows 裝置入口網站無法正常運作
+## <a name="windows-device-portal-isnt-working-correctly"></a>Windows裝置入口網站無法正常運作
 
 - Mixed Reality capture 中的即時預覽功能可能會顯示幾秒鐘的延遲時間。
 
 - 在 [虛擬輸入] 頁面上，[虛擬手勢] 區段底下的手勢和 Scroll 控制項無法運作。 使用這些專案將不會有任何作用。 虛擬輸入頁面上的虛擬鍵盤可正常運作。
 
-- 在設定中啟用開發人員模式之後，可能需要幾秒鐘的時間，才會啟用裝置入口網站的開啟。
+- 啟用設定中的開發人員模式之後，可能需要幾秒鐘的時間才能開啟裝置入口網站。
 
 [返回清單](#list)
 
-## <a name="emulator"></a>模擬器
-### <a name="the-hololens-emulator-isnt-working"></a>HoloLens 模擬器無法運作
+## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator 無法運作
 
-HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭解 [HoloLens 模擬器的疑難排解](/windows/mixed-reality/using-the-hololens-emulator#troubleshooting)。
+HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭解[HoloLens 模擬器的疑難排解](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)。
 
 
 - 並非 Microsoft Store 中的所有應用程式都與模擬器相容。 例如，在模擬器上無法播放年輕 Conker 和片段。
-- 您無法在模擬器中使用電腦網路攝影機。
+- 您無法使用 Emulator 中的電腦網路攝影機。
 - Windows 裝置入口網站的即時預覽功能無法與模擬器搭配使用。 您仍然可以捕獲混合的現實影片和影像。
-
-[返回清單](#list)
-
-## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>我找不到或無法使用鍵盤來輸入 HoloLens 2 模擬器
-
-*即將推出*
 
 [返回清單](#list)
 
 ## <a name="voice-commands-arent-working"></a>語音命令無法運作
 
-如果 Cortana 未回應您的語音命令，請確定已開啟 Cortana。 在所有應用程式清單中，選取 [ **Cortana**  >  **功能表**  >  **筆記本**  >  **設定**] 以進行變更。 若要深入瞭解您可以說的內容，請參閱搭配 [HoloLens 使用您的語音](hololens-cortana.md)。
+如果 Cortana 沒有回應您的語音命令，請確定 Cortana 已開啟。 在所有應用程式清單中，選取 **Cortana**  >  **功能表**  >  **筆記本**  >  **設定** 以進行變更。 若要深入瞭解您可以說的內容，請參閱搭配[HoloLens 使用您的語音](hololens-cortana.md)。
 
-在 HoloLens (第1代) 中，內建的語音辨識無法設定。 它一定會開啟。 在 HoloLens 2 上，您可以選擇是否要在裝置設定期間開啟語音辨識和 Cortana。
+在 HoloLens (第1代) 上，無法設定內建的語音辨識。 它一定會開啟。 在 HoloLens 2 上，您可以選擇是否要在裝置設定期間開啟語音辨識和 Cortana。
 
-如果您的 HoloLens 2 沒有回應您的聲音，請確定已開啟 [語音辨識]。 移至 [**開始**  >  **設定**  >  **隱私權**  >  **語音**]，然後開啟 [**語音辨識**]。
+如果您的 HoloLens 2 沒有回應您的聲音，請確定已開啟 [語音辨識]。 移至 [**開始**]  >  **設定**  >  **隱私權**  >  **語音**]，然後開啟 [**語音辨識**]。
 
 [返回清單](#list)
 
 ## <a name="hand-input-isnt-working"></a>手輸入無法運作
 
-為了確保 HoloLens 可以看到您的手，您需要將它們保留在手勢框架中。  Mixed Reality Home 提供的意見反應可讓您知道何時追蹤您的手。  不同的 HoloLens 版本上的意見反應不同：
-- 在 HoloLens (第1代) 中，注視游標會從點變更為環形
+為了確保 HoloLens 可以看到您的手，您需要將它們保留在手勢框架中。  Mixed Reality Home 提供的意見反應可讓您知道何時追蹤您的手。  不同 HoloLens 版本的意見反應不同：
+- 在 HoloLens (第1代) 上，注視游標會從點變更為環形
 - 在 HoloLens 2 上，當您的手接近某個平板電腦時，會出現 fingertip 游標，而且當平板不再出現時，會出現一張光線
 
-許多沉浸式應用程式都遵循類似于混合現實首頁的輸入模式。  深入瞭解如何在 [HoloLens (第1代) ](hololens1-basic-usage.md#use-hololens-with-your-hands) 和 [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用手動輸入。
+許多沉浸式應用程式都遵循類似于混合現實首頁的輸入模式。  深入瞭解如何在[HoloLens (第1代) ](hololens1-basic-usage.md#use-hololens-with-your-hands)和[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用「手動輸入」。
 
 如果您有佩戴手套，請注意某些類型的手套無法與手動追蹤搭配使用。  常見的範例是黑色橡膠手套，其通常會吸收紅外線燈，且深度相機不會挑選。  如果您的工作牽涉到橡膠手套，建議您嘗試較淺的色彩，例如藍色或灰色。  另一個例子是大型 baggy 手套，這通常會遮蔽您手的形狀。 建議您盡可能使用可作為表單調整的手套以獲得最佳結果。
 
-如果您的面板有指紋或塗抹，請使用 HoloLens 隨附的 microfiber 清潔抹布，以輕輕地清除面板。
+如果您的面板有指紋或塗抹，請使用 HoloLens 隨附的 microfiber 清潔抹布，以輕輕清除面板。
 
 [返回清單](#list)
 
@@ -326,26 +309,27 @@ HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭
 
 如果您無法將 HoloLens 連接到 Wi-Fi 網路，請嘗試下列一些事項：
 
-- 請確定 Wi-Fi 已開啟。 若要檢查，請使用開始手勢，然後選取 [**設定**  >  **網路 &amp; 網際網路**  >  **wi-fi**]。 如果 Wi-Fi 是開啟的，請嘗試關閉它，然後再重新開啟。
+- 請確定 Wi-Fi 已開啟。 若要檢查，請使用開始手勢，然後選取 [**設定**  >  **Network &amp; Internet**  >  **wi-fi**]。 如果 Wi-Fi 是開啟的，請嘗試關閉它，然後再重新開啟。
 - 移到較靠近路由器或存取點的位置。
-- 重新開機 Wi-Fi 路由器，然後 [重新開機 HoloLens](hololens-recovery.md)。 請嘗試重新連線。
+- 重新開機 Wi-Fi 路由器，然後[重新開機 HoloLens](hololens-recovery.md)。 請嘗試重新連線。
 - 如果上述專案都無法運作，請檢查以確定您的路由器使用的是最新的固件。 您可以在製造商網站上找到此資訊。
 
 [返回清單](#list)
+
 ## <a name="bluetooth-devices-arent-pairing"></a>藍牙裝置未配對
 
-如果您在 [配對藍牙裝置](hololens-connect-devices.md)時遇到問題，請嘗試下列動作：
+如果您在[配對藍牙裝置](hololens-connect-devices.md)時發生問題，請嘗試下列動作：
 
-- 移至 [**設定**  >  **裝置**]，並確定已開啟藍牙。 如果是，請將它關閉，然後再重新開啟。
+- 移至 **設定**  >  **裝置**，並確定藍牙已開啟。 如果是，請將它關閉，然後再重新開啟。
 - 請確定您的藍牙裝置已完全收費，或有全新的電池。
-- 如果您仍然無法連線，請 [重新開機 HoloLens](hololens-recovery.md)。
+- 如果您仍然無法連線，請[重新開機 HoloLens](hololens-recovery.md)。
 
 [返回清單](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C 麥克風無法運作
 請注意，某些 USB C 麥克風錯誤地將本身視為麥克風 *和* 說話者。 這是麥克風的問題，而不是 HoloLens。 將其中一個麥克風插入 HoloLens 時，可能會遺失音效。 幸運的是，有一個簡單的修正程式。  
 
-在 [**設定**  ->  **系統**  ->  **音效**] 中，將內建的喇叭明確設定 **(類比功能音訊驅動程式)** 作為 **預設裝置**。 HoloLens 應該記得這項設定，即使已移除麥克風，稍後再重新連線也是如此。
+在 **設定**  ->  **系統**  ->  **音效** 中，將內建的喇叭 **(模擬功能音訊驅動程式)** 明確設定為 **預設裝置**。 HoloLens 應該記得這項設定，即使稍後移除並重新連線麥克風也是如此。
 
 ![疑難排解 USB-C 麥克風](images/usbc-mic-4.png)
 
@@ -353,14 +337,14 @@ HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭
 
 HoloLens (第1代) 不支援藍牙音訊設定檔。 藍牙音訊裝置（例如喇叭和耳機）在 HoloLens 設定中可能會顯示為可用，但不受支援。
 
-HoloLens 2 支援適用于身歷聲播放的藍牙 A2DP 音訊設定檔。 HoloLens 2 不支援可從藍牙周邊啟用麥克風捕捉的藍牙手入設定檔。
+HoloLens 2 支援藍牙 A2DP 音訊設定檔以進行身歷聲播放。 HoloLens 2 不支援從藍牙周邊啟用麥克風捕捉的藍牙手入免費設定檔。
 
 如果您在使用藍牙裝置時遇到問題，請確定它是支援的裝置。 支援的裝置包括下列各項：
 
-- 英文版的繁體中文藍牙鍵盤 (您可以在使用全像全像鍵盤) 的任何地方使用這些鍵盤。
-- 藍牙滑鼠。
+- 以英文為標準的語言藍牙鍵盤 (您可以在使用全像全像鍵盤) 的任何地方使用這些鍵盤。
+- 藍牙老鼠。
 - [HoloLens clicker](hololens1-clicker.md)。
 
-您可以將其他 Bluetooth 的 HID 和 GATT 裝置與 HoloLens 配對在一起。 不過，您可能必須從 Microsoft Store 安裝對應的附屬應用程式，才能實際使用裝置。
+您可以將其他藍牙的 HID 和 GATT 裝置與您的 HoloLens 配對在一起。 不過，您可能必須從 Microsoft Store 安裝對應的附屬應用程式，才能實際使用裝置。
 
 [返回清單](#list)

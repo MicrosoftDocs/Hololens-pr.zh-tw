@@ -6,18 +6,18 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308327"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635665"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>參與 HoloLens 檔
 
-歡迎使用 [HoloLens 檔](https://github.com/MicrosoftDocs/Hololens)！ 您在此存放庫中建立或編輯 **的任何文章都將可在公用中看到。** 
+歡迎使用[HoloLens 檔](https://github.com/MicrosoftDocs/Hololens)！ 您在此存放庫中建立或編輯 **的任何文章都將可在公用中看到。** 
 
-HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 功能的 GitHub flavored Markdown。 您在此存放庫中編輯的內容會格式化為顯示在上的樣式頁面 https://docs.microsoft.com/hololens 。 
+HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 功能的 GitHub flavored Markdown。 您在此存放庫中編輯的內容會格式化為顯示于/hololens. 的樣式頁面
 
 本頁面涵蓋參與和連結至 Markdown 基本概念的基本步驟和指導方針。 感謝您的投稿！
 
@@ -26,15 +26,15 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 | 儲存機制名稱 | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| 混合實境 | [MicrosoftDocs/mixed-事實](https://docs.microsoft.com/windows/mixed-reality) |
+| 混合實境 | [MicrosoftDocs/mixed-事實](/windows/mixed-reality) |
 | VR 愛好者指南 | [MicrosoftDocs/mixed-現實/愛好者指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-如果您還沒有帳戶，則必須 [建立一個 GitHub 帳戶](https://github.com/join)。
+如果您還沒有帳戶，則必須[建立 GitHub 帳戶](https://github.com/join)。
 
 >[!NOTE]
->如果您是 Microsoft 員工，請將您的 GitHub 帳戶連結到 [Microsoft 開放原始碼入口網站](https://repos.opensource.microsoft.com/)上的 microsoft 別名。 加入「 **Microsoft** 」和「 **MicrosoftDocs** 」組織。
+>如果您是 microsoft 員工，請將您的 GitHub 帳戶連結到[microsoft 開放原始碼入口網站](https://repos.opensource.microsoft.com/)上的 microsoft 別名。 加入「 **Microsoft** 」和「 **MicrosoftDocs** 」組織。
 
 設定您的 GitHub 帳戶時，我們也建議這些安全性預防措施：
 - [為您的 GitHub 帳戶建立強式密碼](https://github.com/settings/admin)。
@@ -43,13 +43,13 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 - 更新您的 [公用設定檔設定](https://github.com/settings/profile)。
    - 設定您的名稱，並考慮將您的 *公用電子郵件* 設定為 *不顯示我的電子郵件地址*。
    - 建議您上傳個人資料圖片，因為您所參與的檔頁面上會顯示縮圖。
-- 如果您打算使用命令列，請考慮設定 [適用于 Windows 的 Git 認證管理員](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)。 如此一來，您就不需要在每次進行投稿時輸入您的密碼。
+- 如果您打算使用命令列，請考慮[為 Windows 設定 Git 認證管理員](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)。 如此一來，您就不需要在每次進行投稿時輸入您的密碼。
 
-發佈系統系結至 GitHub，因此這些步驟非常重要。 您將會使用您的 GitHub 別名，列為每篇文章的作者或參與者。
+發佈系統系結至 GitHub，因此這些步驟都很重要。 您將會使用您的 GitHub 別名，列為每篇文章的作者或參與者。
 
 ## <a name="editing-an-existing-article"></a>編輯現有文章
 
-使用下列工作流程，在網頁瀏覽器中透過 GitHub 更新 *現有文章* ：
+您可以使用下列工作流程，透過 web 瀏覽器中的 GitHub 來更新 *現有文章*：
 
 1. 流覽至您想要在「混合式事實檔」資料夾中編輯的文章。
 
@@ -100,7 +100,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 ## <a name="creating-a-new-article"></a>建立新文章
 
-使用下列工作流程，在網頁瀏覽器中透過 GitHub 建立檔儲存機制中的 *新文章* ：
+使用下列工作流程，透過 web 瀏覽器中的 GitHub 在檔存放庫中 *建立新文章*：
 
 1. 使用右上方的 [ **分叉** ] 按鈕) ，在 MicrosoftDocs/mixed 事實 ' master ' 分支 (建立分支。
 
@@ -146,20 +146,20 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 下列資源將協助您瞭解如何使用 Markdown 語言來編輯檔：
 
 - [Markdown 基本概念](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [針對 docs.microsoft.com 撰寫 Markdown 的其他資源](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [針對 docs.microsoft.com 撰寫 Markdown 的其他資源](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>加入資料表
 
 由於 docs.microsoft.com 樣式表的方式，即使您嘗試內嵌 CSS，它們也不會有框線或自訂樣式。 這項作業會在一小段時間內正常運作，但最終平臺會從資料表中去除樣式。 所以事先規劃，讓您的資料表保持簡單明瞭。 [以下是讓 Markdown 資料表更簡單的網站](https://www.tablesgenerator.com/markdown_tables)。
 
-如果您使用 Visual Studio Code， [適用于 Visual Studio Code 的檔 Markdown 延伸](https://docs.microsoft.com/teamblog/docs-extension) 模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code) 以編輯檔。
+如果您使用 Visual Studio Code，[適用于 Visual Studio Code 的檔 Markdown 延伸](/teamblog/docs-extension)模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code)以編輯檔。
 
 ### <a name="adding-images"></a>新增影像
 
 您必須將映射上傳至存放庫中的「混合式事實-檔/映射」資料夾，然後在文章中適當地參考它們。 影像會自動以完整大小顯示，這表示大型影像將會填滿整篇文章的寬度。 建議您先預先調整映射大小，然後再上傳。 建議的寬度介於600到700圖元之間，不過如果是更大的螢幕擷取畫面或螢幕擷取畫面的一部分，您應該相應增加或減少。
 
 >[!IMPORTANT]
->在合併之前，您只能將影像上傳至您的分支存放庫。 因此，如果您打算將影像加入至文章，則必須先 [使用 Visual Studio Code](#using-visual-studio-code) 將影像新增至分叉的 "images" 資料夾，或確定您已在網頁瀏覽器中完成下列動作：
+>在合併之前，您只能將影像上傳至您的分支存放庫。 因此，如果您打算將影像加入至文章，則必須先[使用 Visual Studio Code](#using-visual-studio-code)將影像新增至分叉的 "images" 資料夾，或確定您已在網頁瀏覽器中完成下列動作：
 >
 >1. 派生 MicrosoftDocs/mixed 事實存放庫。
 >2. 已在您的分叉中編輯文章。
@@ -170,12 +170,12 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 ## <a name="previewing-your-work"></a>預覽您的工作
 
-透過網頁瀏覽器在 GitHub 中進行編輯時，您可以選取接近頁面頂端的 [ **預覽** ] 索引標籤，以在認可之前預覽您的工作。 
+當您透過網頁瀏覽器編輯 GitHub 時，您可以選取接近頁面頂端的 [**預覽**] 索引標籤，以在認可之前預覽您的工作。 
 
 >[!NOTE]
 >在 review.docs.microsoft.com 上預覽您的變更只適用于 Microsoft 員工
 
-Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就可以在內容公開之前，先進行審核 https://review.docs.microsoft.com/hololens?branch=master 。 使用左邊資料行中的目錄來尋找您的文章。
+Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就可以在 </hololens？ branch = master> 之前，先複習內容。 使用左邊資料行中的目錄來尋找您的文章。
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>在瀏覽器中編輯和使用桌面用戶端編輯
 
@@ -185,13 +185,13 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 - 您不會在其他文章中取得任何智慧連結 (您必須手動輸入文章的檔案名) 。
 - 上傳和參考影像可能很麻煩。
 
-如果您不想處理這些問題，請使用桌面用戶端（例如 [Visual Studio Code](https://code.visualstudio.com/) ），並在參與時提供一些 [實用的擴充](#useful-extensions) 功能。
+如果您不想處理這些問題，請使用桌面用戶端（例如[Visual Studio Code](https://code.visualstudio.com/) ），並在參與時提供一些[實用的擴充](#useful-extensions)功能。
 
 ## <a name="using-visual-studio-code"></a>使用 Visual Studio Code
 
-基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用 [Visual Studio Code](https://code.visualstudio.com/)。
+基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用[Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>設定
+### <a name="setup"></a>安裝程式
 
 請依照下列步驟設定 Visual Studio Code，以使用此存放庫：
 
@@ -212,7 +212,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 您可以使用下列工作流程，利用 Visual Studio Code 對檔進行變更：
 
 >[!NOTE]
->使用 Visual Studio Code 也適用于 [編輯](#editing-an-existing-article) 和 [建立](#creating-a-new-article) 文章的所有指導方針，以及 [編輯 Markdown 的基本概念](#markdown-basics)。
+>使用 Visual Studio Code 也適用于[編輯](#editing-an-existing-article)和[建立](#creating-a-new-article)文章的所有指導方針，以及[編輯 Markdown 的基本概念](#markdown-basics)。
 
 1. 請確定您複製的分支是最新的官方存放庫。
 
@@ -236,7 +236,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
    
       ![在原始檔控制中選擇 [全部認可]](images/source-control-commit.png)
       
-   4. 選取 [ **同步** 處理] 按鈕，將您的變更同步至 GitHub) 上 (您的原始來源。
+   4. 選取 [**同步** 處理] 按鈕，將您的變更同步處理回您在 GitHub) 上的分支 (來源。
       
       ![按一下 [同步] 按鈕](images/sync-back.png)
       
@@ -248,7 +248,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 
 編輯檔時，下列 Visual Studio Code 擴充功能很有用：
 
-- [Visual Studio Code 的檔 Markdown 延伸](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) 模組：使用 **Alt + M** 來顯示檔撰寫選項的功能表，例如：
+- [Visual Studio Code 的檔 Markdown 延伸](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)模組：使用 **Alt + M** 來顯示檔撰寫選項的功能表，例如：
    - 搜尋及參考您已上傳的影像。
    - 新增像這樣的格式：清單、資料表和檔特定的呼叫 `>[!NOTE]` 。
    - 搜尋和參考內部連結和書簽 (頁面) 中特定區段的連結。
