@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 97f3bbdfec85e64d2895dfb5482ee9dc692c5e4c
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637258"
+  ms.locfileid: "113639687"
 title: HoloLens 2開發版常見問題
 summary: ''
 sections:
@@ -93,15 +93,15 @@ sections:
   - question: >
       我可以在哪裡進一步瞭解 HoloLens 2 開發版？
     answer: >
-      造訪 HoloLens 2 開發版的檔頁面。 [深入了解](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      造訪 HoloLens 2 開發版的檔頁面。 [深入了解](hololens2-options.md?tabs=device)
   - question: >
       哪裡可以深入瞭解如何開發混合現實解決方案？
     answer: >
-      請造訪混合現實開發檔的簡介。 [深入了解](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+      請造訪混合現實開發檔的簡介。 [深入了解](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
       哪裡可以深入瞭解如何設計混合的現實解決方案？
     answer: >
-      請流覽混合現實設計檔的簡介。 [深入了解](https://docs.microsoft.com/windows/mixed-reality/design/design)
+      請流覽混合現實設計檔的簡介。 [深入了解](/windows/mixed-reality/design/design)
   - question: >
       我可以在哪裡取得 HoloLens Developer Edition 的支援？
     answer: >
@@ -130,7 +130,7 @@ sections:
       4. 輸入產品代碼，然後選取 &#39;兌換產品代碼&#39;
 
 
-      若要[深入瞭解](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)，請造訪 HoloLens 2 開發版檔
+      若要[深入瞭解](hololens2-options.md?tabs=device)，請造訪 HoloLens 2 開發版檔
   - question: >
       我可以使用 PRO 授權以外的 Unity 版本來建立應用程式嗎？
     answer: >
@@ -163,7 +163,7 @@ sections:
       4. 輸入產品代碼，然後按一下 [&#39;兌換產品代碼]&#39;
 
 
-      若要[深入瞭解](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)，請造訪 HoloLens 2 開發版檔
+      若要[深入瞭解](hololens2-options.md?tabs=device)，請造訪 HoloLens 2 開發版檔
   - question: >
       如何? contact Pixyz 支援？
     answer: >
@@ -190,4 +190,4 @@ sections:
       透過您的 Azure 點數，您可以開始使用 Microsoft&#39;一組不斷擴充的雲端服務來建立。 HoloLens 2 開發版隨附的 Azure 點數，可讓客戶快速開始在 azure 上建立及測試混合現實應用程式。 如需在 Azure 上建立的完整詳細資料，請造訪 [azure 資源](https://azure.microsoft.com/en-us/resources/)
   - question: >
       哪裡可以深入瞭解 Azure mixed reality 服務？
-    answer: Microsoft 提供一組混合現實服務，讓開發人員能夠建立並測試混合現實解決方案。 [深入了解](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+    answer: Microsoft 提供一組混合現實服務，讓開發人員能夠建立並測試混合現實解決方案。 [深入了解](/windows/mixed-reality/develop/mixed-reality-cloud-services)
