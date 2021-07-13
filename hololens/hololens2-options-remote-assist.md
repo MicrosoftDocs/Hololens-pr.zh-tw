@@ -2,7 +2,7 @@
 title: HoloLens 2遠端協助
 description: 瞭解 HoloLens 2 遠端協助，以及取得您自己的資訊之後該怎麼做。
 keywords: HoloLens 2 購買選項、HoloLens 選項、遠端協助
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a9f04315c59fba72aaae1545a02f16f1068433b4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636260"
+ms.locfileid: "113639466"
 ---
 # <a name="hololens-2-with-remote-assist"></a>具有遠端協助的 HoloLens 2
 

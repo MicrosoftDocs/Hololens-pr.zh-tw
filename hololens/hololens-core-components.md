@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2fb58345f623a0b70c1fda10b9fb550de70f4c6d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 43162389eae82bc09135c62acd40d71048d14db1
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635784"
+ms.locfileid: "113639075"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>在商業環境中規劃 HoloLens 2 部署
 
 ## <a name="overview"></a>概觀
+
 > [!NOTE]
 > 本總覽旨在協助 IT 專業人員瞭解部署及管理組織內 Microsoft HoloLens 2 裝置的考慮。 針對裝置終端使用者，請參閱[讓您的 HoloLens 2 準備好開始使用](hololens2-setup.md)。
 
@@ -29,7 +30,7 @@ HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強
 
 下列步驟和影片可協助引導您完成在貴組織內 HoloLens 2 採用的流程。
 
-| | |
+| &nbsp; | &nbsp; |
 |--|--|
 | ![步驟 1](images/1green.png)| <br/> **[常見的部署案例](hololens-requirements.md)**：瞭解部署案例，並探索部署 HoloLens 2 裝置所需的核心元件。 |
 | ![步驟 2](images/2green.png)| <br/> **[準備](#prepare)**：熟悉 HoloLens 2 所需的基礎結構基本架構。 |
@@ -37,11 +38,13 @@ HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強
 | ![步驟 4](images/4green.png) | <br/> **[部署](#deploy)**：探索如何部署您的裝置，並安全且有效率地散發您的應用程式。 |
 | ![步驟 5](images/5green.png) | <br/> **[維護](#maintain)**：找出適當維護您 HoloLens 2 裝置狀態所需的內容，並確保符合公司原則。 |
 
+<br/>
+
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
 ## <a name="prepare"></a>準備
 
-瞭解支援一組完整的 HoloLens 2 功能所需的基本基礎結構服務。 
+瞭解支援一組完整的 HoloLens 2 功能所需的基本基礎結構服務。
 
 | 元件 | 描述 |
 |-----------|------------|

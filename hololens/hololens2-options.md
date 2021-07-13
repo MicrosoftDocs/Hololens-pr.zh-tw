@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5bb534020fe037576ce1caa3d9cee978dac778d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636294"
+ms.locfileid: "113640469"
 ---
 # <a name="compare-hololens-2-options"></a>比較 HoloLens 2 選項
 
@@ -31,17 +31,17 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 
 |                                                      | HoloLens 2 | 具有遠端協助的 HoloLens 2 | HoloLens 2工業版 | HoloLens 2具有遠端協助的工業版 | 具有 HoloLens 2 的 Trimble XR10 | HoloLens 2開發版 |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 裝置 (一部裝置)                        |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist (一個座位)                 |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| ISO 14644-1 類別5清除室分類           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| UL 類別 I、除法 2-分組 A、B、C 和 D HAZLOC 環境                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| 在40個以上的國家/地區中，PPE 符合規範的硬性 hat 整合 ()  |            |                               |                               |                                                  |               ✔️              |                                |
-| 雜訊-取消音訊輸出                        |            |                               |                               |                                                  |               ✔️              |                                |
-| 開發人員權利 <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| 快速更換程式 <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| 商業使用權                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [保修](hololens2-hardware.md#warranty-information)                                             |   1年   |             1年            |             2年            |                      2年                      |            1-年 <sup>3</sup>            |             1年             |
-| 裝置購買限制                                |    無    |              無             |              無             |                       無                       |             無             |       每筆交易一個      |
+| **HoloLens 2 裝置 (一部裝置)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist (一個座位)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **ISO 14644-1 類別5清除室分類**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **UL 類別 I、除法 2-分組 A、B、C 和 D HAZLOC 環境**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **在40個以上的國家/地區中，PPE 符合規範的硬性 hat 整合 ()** |            |                               |                               |                                                  |               ✔️              |                                |
+| **雜訊-取消音訊輸出**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **開發人員權利 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **快速更換程式 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **商業使用權**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**保修**](hololens2-hardware.md#warranty-information)                                             |   1年   |             1年            |             2年            |                      2年                      |            1-年 <sup>3</sup>            |             1年             |
+| **裝置購買限制**                                |    無    |              無             |              無             |                       無                       |             無             |       每筆交易一個      |
 
 - <sup>1</sup> -包含 $500 Azure 點數和3個月的 Unity Pro 和 Pixyz 外掛程式試用版。
 - <sup>2</sup> -在 Microsoft 收到瑕疵裝置之前，在夜間或加速傳送 (，可) 更快的可用選項來取得更換裝置。

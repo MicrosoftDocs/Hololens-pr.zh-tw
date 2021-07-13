@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e0dd7d02ad923438134f2a45812db67f73fdcd8d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 73d89619498c61f2809702d788ffafc532afa67e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637178"
+ms.locfileid: "113640027"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -136,9 +136,9 @@ System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一�
 
 查看相關版本資訊：
 
-- [造訪 HoloLens Emulator 封存](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)
-- [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
-- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+- [造訪 HoloLens Emulator 封存](/windows/mixed-reality/hololens-emulator-archive)
+- [Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+- [Dynamics 365 Guides](/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
 ### <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
 
@@ -164,13 +164,13 @@ System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一�
 
 以下是一些實用的資源，可讓您深入瞭解如何管理新 Microsoft Edge 的原則設定：
 
-- [使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [舊版 Microsoft Edge Microsoft Edge 原則對應](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome Microsoft Edge 原則對應](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
-- 完整[Microsoft Edge Enterprise 檔](https://docs.microsoft.com/deployedge/)
+- [使用 Microsoft Intune 設定 Microsoft Edge 原則設定](/deployedge/configure-edge-with-intune)
+- [舊版 Microsoft Edge Microsoft Edge 原則對應](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome Microsoft Edge 原則對應](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- 完整[Microsoft Edge Enterprise 檔](/deployedge/)
 
 > [!IMPORTANT]
-> 由於新 Microsoft Edge 支援的瀏覽器原則數量，我們的小組無法保證每個新原則都能在 HoloLens 2 上運作。 不過，我們已經過測試並確認，與先前在 HoloLens 2 如預期般支援的每個舊版 Microsoft Edge 原則相等的新 Microsoft Edge。 請參閱[舊版 Microsoft Edge Microsoft Edge 原則對應](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)，以找出與 HoloLens 2 使用的每個舊版 Microsoft Edge 瀏覽器原則相等的新 Microsoft Edge。
+> 由於新 Microsoft Edge 支援的瀏覽器原則數量，我們的小組無法保證每個新原則都能在 HoloLens 2 上運作。 不過，我們已經過測試並確認，與先前在 HoloLens 2 如預期般支援的每個舊版 Microsoft Edge 原則相等的新 Microsoft Edge。 請參閱[舊版 Microsoft Edge Microsoft Edge 原則對應](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)，以找出與 HoloLens 2 使用的每個舊版 Microsoft Edge 瀏覽器原則相等的新 Microsoft Edge。
 >
 > 至少有兩個新的 Microsoft Edge 原則，我們知道 *將無法* 與 HoloLens 2 搭配使用：
 > - EnterpriseModeSiteList
@@ -222,12 +222,12 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
   1. 選取 [安裝] 按鈕。
   1. 成功安裝之後，您會在 [開始] 功能表的 **所有應用程式** 清單中找到 Microsoft Edge Beta、開發或全像是個別專案。
 
-**透過具有 Windows 裝置入口網站的電腦安裝 (需要在 HoloLens 2 上啟用 [開發人員模式](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal))**
+**透過具有 Windows 裝置入口網站的電腦安裝 (需要在 HoloLens 2 上啟用 [開發人員模式](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal))**
   1. 在您的電腦上，流覽 [Edge Insider 下載頁面](https://www.microsoftedgeinsider.com/download)。
   1. 針對您想要安裝的 Edge Insider 頻道，選取 [下載 Windows 10] 按鈕旁的 **下拉箭號按鈕**。
   1. 在下拉式功能表中選取 **HoloLens 2** 。
   1. 將 msix 檔案儲存到您電腦的 [下載] 資料夾 (或您可以輕鬆找到) 的另一個資料夾。
-  1. 在您的電腦上使用[Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)，在 HoloLens 2 上安裝下載的 msix 檔案。
+  1. 在您的電腦上使用[Windows 裝置入口網站](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)，在 HoloLens 2 上安裝下載的 msix 檔案。
   1. 成功安裝之後，您會在 [開始] 功能表的 **所有應用程式** 清單中找到 Microsoft Edge Beta、開發或全像是個別專案。
 
 #### <a name="using-wdac-to-block-new-microsoft-edge"></a>使用 WDAC 封鎖新的 Microsoft Edge
@@ -238,7 +238,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 #### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>管理新 Microsoft Edge 的端點
 
-某些環境可能會有網路限制，以考慮考慮。 若要確保新的邊緣有順暢的體驗，請 [啟用這些 Microsoft 端點。](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+某些環境可能會有網路限制，以考慮考慮。 若要確保新的邊緣有順暢的體驗，請 [啟用這些 Microsoft 端點。](/deployedge/microsoft-edge-security-endpoints)
 
 深入瞭解目前可用的[端點以進行 HoloLens](hololens-offline.md)。
 
@@ -322,7 +322,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 **已知問題**
 - 先前放置設定 windows 將會移除 (請參閱上述) 的附注。
-- 您無法再使用設定應用程式重新命名您的裝置。 IT 系統管理員可以使用 HoloLens 2 裝置名稱範本的[Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot)或 MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 節點來重新命名裝置。
+- 您無法再使用設定應用程式重新命名您的裝置。 IT 系統管理員可以使用 HoloLens 2 裝置名稱範本的[Windows Autopilot](hololens2-autopilot.md)或 MDM [DevDetail CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 節點來重新命名裝置。
 - [乙太網路] 頁面會 ( [UsbNcm] ) 隨時顯示虛擬乙太網路裝置。
 - 新 Microsoft Edge 的電池使用量可能不准確，因為它的本質是 UWP 介面卡層所支援的 Win32 桌面應用程式 (不會在) 中預期任何修正。
 
@@ -481,7 +481,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 針對 AAD 設定，使用者現在可以在沒有這項變更的情況下，達成與此類似的內容。 針對 kiosk 模式設定的已加入 AAD 裝置，可以透過單一按鈕，從登入畫面登入造訪者帳戶。 登入訪客帳戶之後，裝置將不會再次提示您登入，直到造訪者明確登出 [開始] 功能表或重新開機裝置為止。
 
-您可以透過 [自訂 oma-uri](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) 原則來管理訪客自動登入：
+您可以透過 [自訂 oma-uri](/mem/intune/configuration/custom-settings-windows-10) 原則來管理訪客自動登入：
 
 - URI 值：./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
@@ -504,13 +504,13 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>處理失敗的 Kiosk 模式行為變更
 
-在較舊的組建中，如果裝置的 kiosk 設定是全域指派的存取權和 AAD 群組成員指派的存取權，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [[開始] 功能表中顯示 [沒有任何內容](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)]。
+在較舊的組建中，如果裝置的 kiosk 設定是全域指派的存取權和 AAD 群組成員指派的存取權，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [[開始] 功能表中顯示 [沒有任何內容](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)]。
 
 從這個 Windows 版本開始，如果在 AAD 群組 kiosk 模式期間發生失敗，則 kiosk 體驗將會回復為全域 kiosk 設定 (（如果有) 的話）。
 
 ### <a name="new-settings-uris-for-page-settings-visibility"></a>頁面設定可見度的新設定 uri
 
-在[Windows 全像20H2 版中，](hololens-release-notes.md#windows-holographic-version-20h2)我們新增了[設定/PageVisibilityList 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)，以限制在設定應用程式中看到的頁面。 PageVisibilityList 是一項原則，可讓 IT 系統管理員防止系統設定應用程式中的特定頁面被顯示或存取，或針對所有頁面（除了指定的頁面以外）進行。
+在[Windows 全像20H2 版中，](hololens-release-notes.md#windows-holographic-version-20h2)我們新增了[設定/PageVisibilityList 原則](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)，以限制在設定應用程式中看到的頁面。 PageVisibilityList 是一項原則，可讓 IT 系統管理員防止系統設定應用程式中的特定頁面被顯示或存取，或針對所有頁面（除了指定的頁面以外）進行。
 
 如果您造訪[頁面設定可見度](settings-uri-list.md)，您可以找到使用此 CSP 的指示，以及先前版本中可用的 uri 清單。
 
@@ -567,7 +567,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案。 您可以在 **設定**  ->  **系統**  ->  **共用體驗** 中試用，以從 HoloLens 共用檔案或 url 至電腦。 如需詳細資訊，請閱讀更多有關如何[在 Windows 10 中與附近裝置共用內容](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)的詳細資訊。
 
-這項功能可以透過 [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)管理。
+這項功能可以透過 [Connectivity/AllowConnectedDevices](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)管理。
 
 ### <a name="new-os-diagnostic-traces"></a>新的作業系統診斷追蹤
 
@@ -575,26 +575,26 @@ Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案
 
 ### <a name="delivery-optimization-preview"></a>傳遞最佳化預覽
 
-透過此 HoloLens 更新，Windows Holographic for Business 可啟用傳遞優化設定，以減少從多個 HoloLens 裝置下載的頻寬耗用量。 您可以在這裡找到這項功能的完整說明，以及建議的網路設定： [Windows 10 更新的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。
+透過此 HoloLens 更新，Windows Holographic for Business 可啟用傳遞優化設定，以減少從多個 HoloLens 裝置下載的頻寬耗用量。 您可以在這裡找到這項功能的完整說明，以及建議的網路設定： [Windows 10 更新的傳遞最佳化](/windows/deployment/update/waas-delivery-optimization)。
 
-下列設定會在管理介面中啟用，並且 [可從 Intune 設定](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)：
+下列設定會在管理介面中啟用，並且 [可從 Intune 設定](/mem/intune/configuration/delivery-optimization-settings)：
 
-- [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
-- [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
-- [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
-- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
-- [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
-- [DOMaxBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
-- [DOMaxForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
-- [>dopercentagemaxbackgroundbandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
-- [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
-- [>dosethourstolimitforegrounddownloadbandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+- [DOCacheHost](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
+- [DOCacheHostSource](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
+- [DODelayCacheServerFallbackBackground](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
+- [DODelayCacheServerFallbackForeground](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
+- [DODownloadMode](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
+- [DOMaxBackgroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
+- [DOMaxForegroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
+- [>dopercentagemaxbackgroundbandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+- [DOPercentageMaxForegroundBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+- [>dosethourstolimitforegrounddownloadbandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+- [DOSetHoursToLimitBackgroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 
 關於此預覽供應專案的一些注意事項：
 
 - 只有在此預覽版本中，才會將 HoloLens 支援限制為 OS 更新。
-- Windows Holographic for Business 僅支援來自[Microsoft 網內快取端點](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache)的 HTTP 下載模式和下載;目前不支援對等下載模式和群組指派的 HoloLens 裝置。
+- Windows Holographic for Business 僅支援來自[Microsoft 網內快取端點](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache)的 HTTP 下載模式和下載;目前不支援對等下載模式和群組指派的 HoloLens 裝置。
 - HoloLens 不支援 Windows Server Update Services 端點的部署或傳遞優化。
 - 疑難排解將需要網內快取伺服器上的診斷，或透過 **設定**  >  **Update & 安全性**  >   **疑難排解**  >   **Windows Update**，在 HoloLens 上 HoloLens 收集追蹤。
 
@@ -715,7 +715,7 @@ Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案
 更新中的增強功能和修正：
 
 - 在裝置上有許多使用者時，改善啟動、繼續和使用者切換期間的效能。
-- 已新增 [研究模式](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)的 arm32 支援。
+- 已新增 [研究模式](/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)的 arm32 支援。
 
 ## <a name="windows-holographic-version-1903---january-2021-update"></a>Windows全像版本 1903-1 月2021更新
 - 組建18362.1091
@@ -734,7 +734,7 @@ Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案
 - 已設定布建 [套件](hololens-provisioning.md)
 - 使用者身分 [識別](hololens-identity.md) 為 Azure AD
 
-您現在可以安裝應用程式，而不需要啟用開發人員模式或使用裝置入口網站。  只要將 (透過 USB 或 Edge) Appx 套件組合下載到您的裝置，並流覽至檔案總管中的 Appx 套件組合，系統就會提示您開始安裝。  或者， [從網頁起始安裝](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  就像您使用 MDM 的 LOB 應用程式部署功能從 Microsoft Store 或側載安裝的應用程式，應用程式必須使用[簽署工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)進行數位簽署，而[用來簽署的憑證必須](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)由 HoloLens 裝置信任，才能部署應用程式。
+您現在可以安裝應用程式，而不需要啟用開發人員模式或使用裝置入口網站。  只要將 (透過 USB 或 Edge) Appx 套件組合下載到您的裝置，並流覽至檔案總管中的 Appx 套件組合，系統就會提示您開始安裝。  或者， [從網頁起始安裝](/windows/msix/app-installer/installing-windows10-apps-web)。  就像您使用 MDM 的 LOB 應用程式部署功能從 Microsoft Store 或側載安裝的應用程式，應用程式必須使用[簽署工具](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)進行數位簽署，而[用來簽署的憑證必須](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)由 HoloLens 裝置信任，才能部署應用程式。
 
 **應用程式安裝指示。**
 
@@ -756,7 +756,7 @@ Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案
 
 ### <a name="improvements-and-fixes-in-the-update"></a>更新中的增強功能和修正：
 
-- 手動追蹤現在可在許多新的情況下持續追蹤，這些案例之前的手將會遺失。  在這些新的某些情況下，只有掌上的位置會根據使用者的真實手進行更新，而其他接點則是根據先前的姿勢來推斷。  這項變更有助於改善工匠、擲回、scooping 和鼓掌等移動中的追蹤一致性。  如果手接近表面或保存物件，它也會有所説明。  當推斷出手接點時， [每個聯合精確度](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 值會設定為「近似」而不是「高」。
+- 手動追蹤現在可在許多新的情況下持續追蹤，這些案例之前的手將會遺失。  在這些新的某些情況下，只有掌上的位置會根據使用者的真實手進行更新，而其他接點則是根據先前的姿勢來推斷。  這項變更有助於改善工匠、擲回、scooping 和鼓掌等移動中的追蹤一致性。  如果手接近表面或保存物件，它也會有所説明。  當推斷出手接點時， [每個聯合精確度](/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 值會設定為「近似」而不是「高」。
 - 修正 Azure AD 帳戶的 PIN 重設會顯示錯誤「發生錯誤」的問題。
 - 當啟動 ET、鳶尾花 from settings 應用程式、新使用者或通知快顯時，使用者應該會看到較少的開機後 OOBE 損毀。
 - 使用者應該有從 OOBE 推出的正確時區。
@@ -772,7 +772,7 @@ Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案
 
 Windows現已推出全像20H2 版，並為 HoloLens 2 使用者和 IT 專業人員帶來一組絕佳的新功能。 從自動眼睛定位到設定中的憑證管理員，到改良的 Kiosk 模式功能，以及新的 Autopilot 設定功能。 這種新的更新可讓 IT 小組更細微地控制 HoloLens 裝置的設定與管理，並提供使用者更流暢的全像攝影體驗。 
 
-此最新版本是2004版的每月更新，但這次我們會包含新功能。 主要組建編號會維持不變，Windows Update 將表示2004版 (組建 19041) 的每月版本。 您可以在設定 > 有關畫面中查看組建編號，以確認您位於最新的可用組建 19041.1128 +。 若要更新為最新版本，請開啟設定應用程式，移至 [更新 & 安全性]，然後按一下 [檢查更新]。 如需有關如何管理 HoloLens 更新的詳細資訊，請造訪[此頁面](https://docs.microsoft.com/hololens/hololens-updates)。
+此最新版本是2004版的每月更新，但這次我們會包含新功能。 主要組建編號會維持不變，Windows Update 將表示2004版 (組建 19041) 的每月版本。 您可以在設定 > 有關畫面中查看組建編號，以確認您位於最新的可用組建 19041.1128 +。 若要更新為最新版本，請開啟設定應用程式，移至 [更新 & 安全性]，然後按一下 [檢查更新]。 如需有關如何管理 HoloLens 更新的詳細資訊，請造訪[管理 HoloLens 更新](hololens-updates.md)。
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>Windows 全像20H2 版的新功能  
 
@@ -903,7 +903,7 @@ Windows現已推出全像20H2 版，並為 HoloLens 2 使用者和 IT 專業人�
 
 HoloLens 2 裝置現在支援 Windows 全像[20H2](hololens-release-notes.md#windows-holographic-version-20h2)的 TenantLockdown CSP。 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)CSP 可讓 HoloLens 2 只能使用 Autopilot 系結至 MDM 註冊。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (初始在 HoloLens 2 上設定) 值時，即使重新閃爍、OS 更新等，該值仍會保留在裝置上。 
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp)CSP 可讓 HoloLens 2 只能使用 Autopilot 系結至 MDM 註冊。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (初始在 HoloLens 2 上設定) 值時，即使重新閃爍、OS 更新等，該值仍會保留在裝置上。 
 
 在 HoloLens 2 上將 TenantLockdown csp 的 RequireNetworkInOOBE 節點設為 true 之後，OOBE 會無限期等候 Autopilot 設定檔在網路連線之後成功下載及套用。 
 
@@ -1011,15 +1011,15 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 - 可讓使用者管理特定的裝置管理原則，例如封鎖新增或移除布建套件。
 
 新啟用的原則，允許 HoloLens 2 裝置的更多管理選項。 
-- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
-- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [AllowAddProvisioningPackage](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](/windows/client-management/mdm/remotelock-csp)
 
 這兩個 AllowAddProvisioningPackage 和 AllowRemoveProvisioningPackage 的新原則已新增至我們的 [一般裝置限制](hololens-common-device-restrictions.md)。
 
 > [!NOTE]
-> 就[RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)而言，HoloLens 只支援/Vendor/MSFT/RemoteLock/Lock 設定。 不支援處理 PIN 的設定，例如重設和復原。
+> 就[RemoteLock](/windows/client-management/mdm/remotelock-csp)而言，HoloLens 只支援/Vendor/MSFT/RemoteLock/Lock 設定。 不支援處理 PIN 的設定，例如重設和復原。
 
 ### <a name="new-power-policies-for-hololens-2"></a>HoloLens 2 的新電源原則
 - 透過電源原則 HoloLens 睡眠或鎖定的更多選項。 
@@ -1028,26 +1028,26 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 |     原則檔連結                |     備註                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  要在 Windows 設定設計工具中使用的範例值，亦即100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     要在 Windows 設定設計工具中使用的範例值，亦即100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+|     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  要在 Windows 設定設計工具中使用的範例值，亦即100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     要在 Windows 設定設計工具中使用的範例值，亦即100                                                                          |
+|     [StandbyTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
 這兩個 DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的新原則已新增至我們的 [一般裝置限制](hololens-common-device-restrictions.md)。
 
 > [!NOTE]
-> 如需 HoloLens 2 的一致體驗，請確認 DisplayOffTimeoutOnBattery 和 StandbyTimeoutOnBattery 的值都設定為相同的值。 同樣適用于 DisplayOffTimeoutPluggedIn 和 StandbyTimeoutPluggedIn。 如需新式待命的詳細資訊，請參閱 [顯示器、睡眠和休眠閒置計時器](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) 。
+> 如需 HoloLens 2 的一致體驗，請確認 DisplayOffTimeoutOnBattery 和 StandbyTimeoutOnBattery 的值都設定為相同的值。 同樣適用于 DisplayOffTimeoutPluggedIn 和 StandbyTimeoutPluggedIn。 如需新式待命的詳細資訊，請參閱 [顯示器、睡眠和休眠閒置計時器](/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) 。
 
 ### <a name="newly-enabled-update-policies-for-hololens"></a>新啟用 HoloLens 的更新原則
 - 安裝更新或停用 [暫停更新] 按鈕以確保更新的選項更多。
 
 這些更新原則現在已在 HoloLens 2 裝置上啟用：
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+-   [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 如需這些更新原則的完整詳細資料，以及如何將它們用於 HoloLens 裝置，請參閱[管理 HoloLens 更新](hololens-updates.md)。
 
@@ -1056,7 +1056,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 我們現在已啟用原則，可讓 IT 系統管理員防止系統設定應用程式中的特定頁面可見或無法存取，或針對所有頁面（除了指定的頁面以外）進行。 若要瞭解如何完全自訂此功能，請按一下下面的連結。
 
-- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+- [PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
 
 若要瞭解您可以在 HoloLens 2 上自訂哪些頁面設定，請流覽我們的[設定 uri 頁面](settings-uri-list.md)。 
  
@@ -1069,7 +1069,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 研究人員現在可以選擇在其 HoloLens 裝置上啟用 Research 模式，以存取所有對外的原始影像感應器串流。 HoloLens 2 的研究模式也提供加速計、陀螺儀和磁力計讀數的存取權。 為了保護使用者的隱私權，不會透過研究模式提供未經處理的眼睛追蹤相機影像，但您可以透過現有的 Api 使用眼睛的方向。
 
-請參閱 [研究模式檔](https://docs.microsoft.com/windows/mixed-reality/research-mode) 以取得進一步的技術詳細資料。
+請參閱 [研究模式檔](/windows/mixed-reality/research-mode) 以取得進一步的技術詳細資料。
 
 ### <a name="recording-length-increased"></a>錄製長度增加
 由於客戶的意見反應，我們增加了 [混合現實捕捉](holographic-photos-and-videos.md)的錄製長度。 依預設，混合現實捕獲將不再受限於5分鐘，但會根據可用的磁碟空間來計算最大錄製長度。 裝置會根據可用的磁碟空間（最高達80% 的總磁碟空間）來預估錄影最大持續時間。
@@ -1087,7 +1087,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 - 解決了使用者無法透過布建套件布建 VPN 設定檔的問題。
 - 已修正 VPN 連線的 proxy 設定問題。
 - 已更新原則，以停用透過 MDM for NCM for AllowUsbConnection 列舉 USB 函式的功能。
-- 解決了當裝置設定為[單一應用程式 kiosk](hololens-kiosk.md)時，防止 HoloLens 裝置顯示在檔案總管 over Media Transfer Protocol (MTP) 的問題。 請注意，在一般情況下，您仍可使用 [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 原則停用 MTP (和 USB 連線) 。
+- 解決了當裝置設定為[單一應用程式 kiosk](hololens-kiosk.md)時，防止 HoloLens 裝置顯示在檔案總管 over Media Transfer Protocol (MTP) 的問題。 請注意，在一般情況下，您仍可使用 [AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 原則停用 MTP (和 USB 連線) 。
 - 修正了 [開始] 功能表中的圖示在 Kiosk 模式中正確調整的問題。
 - 修正因 HTTP 快取干擾以 Azure AD 群組為目標的 kiosk 模式時發生的問題。
 - 已修正使用者在啟用開發人員模式時，無法使用 [配對] 按鈕的問題，除非他們已停用並重新啟用開發人員模式。
@@ -1233,7 +1233,7 @@ Windows適用于 HoloLens 2 的 Autopilot 可讓裝置銷售通路預先註冊 H
 1. 布建裝置。
 1. 向使用者顯示登入畫面。
 
-若要深入瞭解[HoloLens 2 評估指南的 Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot)。
+若要深入瞭解[HoloLens 2 評估指南的 Windows Autopilot](hololens2-autopilot.md)。
 
 *請洽詢您的帳戶管理員，立即加入 AutoPilot preview。Autopilot 就緒的裝置即將開始寄出。*
 
@@ -1243,7 +1243,7 @@ Windows適用于 HoloLens 2 的 Autopilot 可讓裝置銷售通路預先註冊 H
 
 FIDO2 安全性金鑰是以標準為基礎的無密碼驗證方法，可採用任何外型規格。 FIDO 是無密碼 authentication 的開放標準。 它可讓使用者和組織在沒有使用者名稱或密碼的情況下登入其資源。 相反地，他們會使用裝置內建的外部安全性金鑰或平臺金鑰。
 
-若要開始使用，請參閱 [啟用無密碼安全性金鑰登入](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)。
+若要開始使用，請參閱 [啟用無密碼安全性金鑰登入](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)。
 
 ### <a name="improved-mdm-enrollment-via-provisioning-package"></a>透過布建套件改進 MDM 註冊
 
@@ -1262,13 +1262,13 @@ FIDO2 安全性金鑰是以標準為基礎的無密碼驗證方法，可採用�
 
 ### <a name="additional-csps-and-policies"></a>其他 Csp 和原則
 
-設定 [服務提供者 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) 是一個介面，可讀取、設定、修改或刪除裝置上的配置設定。 在此版本中，我們新增了更多原則的支援，以提高系統管理員部署 HoloLens 裝置的控制權。 如需 HoloLens 所支援的 csp 清單，請參閱[NetworkQoSPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)。
+設定 [服務提供者 (CSP) ](/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) 是一個介面，可讀取、設定、修改或刪除裝置上的配置設定。 在此版本中，我們新增了更多原則的支援，以提高系統管理員部署 HoloLens 裝置的控制權。 如需 HoloLens 所支援的 csp 清單，請參閱[NetworkQoSPolicy CSP](/windows/client-management/mdm/networkqospolicy-csp)。
 
 此版本新增內容：
 
 **原則 CSP** 
 
-原則設定服務提供者可讓企業在 Windows 裝置上設定原則。 在此版本中，我們新增了 HoloLens 的新原則，如下所示。 若要深入瞭解，請參閱[HoloLens 2 所支援的原則 csp](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2)。  
+原則設定服務提供者可讓企業在 Windows 裝置上設定原則。 在此版本中，我們新增了 HoloLens 的新原則，如下所示。 若要深入瞭解，請參閱[HoloLens 2 所支援的原則 csp](/windows/client-management/mdm/policies-supported-by-hololens2)。  
 
 - LetAppsAccessCamera_ForceAllowTheseApps  
 - LetAppsAccessCamera_ForceDenyTheseApps  
@@ -1284,11 +1284,11 @@ FIDO2 安全性金鑰是以標準為基礎的無密碼驗證方法，可採用�
 
 **NetworkQoSPolicy CSP**
 
-NetworkQoSPolicy 設定服務提供者會建立網路服務品質 (QoS) 原則。 QoS 原則會根據一組符合的條件在網路流量上執行一組動作。 若要深入瞭解，請參閱 [NETWORKQOSPOLICY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)。
+NetworkQoSPolicy 設定服務提供者會建立網路服務品質 (QoS) 原則。 QoS 原則會根據一組符合的條件在網路流量上執行一組動作。 若要深入瞭解，請參閱 [NETWORKQOSPOLICY CSP](/windows/client-management/mdm/networkqospolicy-csp)。
 
 ### <a name="expanded-usb-ethernet-support-for-5glte-tethered-devices"></a>5G/LTE 行動網卡裝置的擴充 USB 乙太網路支援
 
-已新增支援，可讓特定行動寬頻裝置（例如 5G/LTE 電話和 Wi-Fi 熱點）行動網卡至透過 USB 的 HoloLens 2。 這些裝置現在會在 [ **網路設定** ] 中顯示為另一個乙太網路連接。 不支援需要外部驅動程式 (行動寬頻裝置。 ) 這項功能會在 Wi-Fi 無法使用且 Wi-Fi 的網際網路連線不夠佳的情況下，啟用高頻寬的連線。 若要深入瞭解支援的 usb 裝置，請參閱[藍牙和 USB-C 裝置的連線](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
+已新增支援，可讓特定行動寬頻裝置（例如 5G/LTE 電話和 Wi-Fi 熱點）行動網卡至透過 USB 的 HoloLens 2。 這些裝置現在會在 [ **網路設定** ] 中顯示為另一個乙太網路連接。 不支援需要外部驅動程式 (行動寬頻裝置。 ) 這項功能會在 Wi-Fi 無法使用且 Wi-Fi 的網際網路連線不夠佳的情況下，啟用高頻寬的連線。 若要深入瞭解支援的 usb 裝置，請參閱[藍牙和 USB-C 裝置的連線](hololens-connect-devices.md)。  
 
 ### <a name="hand-tracking-improvements"></a>手動追蹤改進
 
@@ -1321,7 +1321,7 @@ NetworkQoSPolicy 設定服務提供者會建立網路服務品質 (QoS) 原則�
 
 ### <a name="system-voice-commands"></a>系統聲音命令
 
-您現在可以在裝置上使用語音命令搭配任何應用程式。 如需詳細資訊，請參閱[使用語音操作 HoloLens](https://docs.microsoft.com/hololens/hololens-cortana)。 另請參閱[HoloLens 2 支援的語言](https://docs.microsoft.com/hololens/hololens2-language-support)。  
+您現在可以在裝置上使用語音命令搭配任何應用程式。 如需詳細資訊，請參閱[使用語音操作 HoloLens](hololens-cortana.md)。 另請參閱[HoloLens 2 支援的語言](hololens2-language-support.md)。  
 
 ### <a name="cortana-updates"></a>Cortana 更新
 
@@ -1331,7 +1331,7 @@ NetworkQoSPolicy 設定服務提供者會建立網路服務品質 (QoS) 原則�
 
 更新中的增強功能和修正：  
 - 引進了使用中的顯示器校正系統。 這項功能可改善全像影像的穩定性和對齊方式。 它們現在會在您從側邊移到側時保持不變。
-- 修正了 Wi-Fi 串流至 HoloLens 會定期中斷的 bug。 如果應用程式指出它需要低延遲的資料流程，請呼叫 [SetSocketMediaStreamingMode 函數](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)來執行修正。
+- 修正了 Wi-Fi 串流至 HoloLens 會定期中斷的 bug。 如果應用程式指出它需要低延遲的資料流程，請呼叫 [SetSocketMediaStreamingMode 函數](/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)來執行修正。
 - 修正在研究模式中串流處理期間發生的裝置停止回應。
 - 修正了錯誤，在某些情況下，當使用者繼續會話時，不會在登入畫面上顯示正確的使用者。
 - 修正使用者無法透過 **設定** 匯出 MDM 記錄檔的問題。

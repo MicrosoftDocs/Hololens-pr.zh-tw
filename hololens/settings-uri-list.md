@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637161"
+ms.locfileid: "113639228"
 ---
 # <a name="page-settings-visibility"></a>頁面設定可見度
 
-HoloLens 裝置可管理的其中一項功能，是使用[設定/PageVisibilityList 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)來限制設定應用程式內顯示的頁面。 PageVisibilityList 是一項原則，可讓 IT 系統管理員防止系統設定應用程式中的特定頁面被顯示或存取，或針對所有頁面（除了指定的頁面以外）進行。
+HoloLens 裝置可管理的其中一項功能，是使用[設定/PageVisibilityList 原則](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)來限制設定應用程式內顯示的頁面。 PageVisibilityList 是一項原則，可讓 IT 系統管理員防止系統設定應用程式中的特定頁面被顯示或存取，或針對所有頁面（除了指定的頁面以外）進行。
 
 > [!NOTE]
 > 這項功能僅適用于 HoloLens 2 裝置 Windows 全像20H2 或更高[版本](hololens-release-notes.md#windows-holographic-version-20h2)的 avalible。 請確定您想要使用此裝置的裝置已更新。
@@ -189,4 +189,4 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 - <sup>2</sup> -在 Windows 全像21H1 或更高版本中提供。
 
 
-如需 Windows 10 設定 uri 的完整清單，請流覽[啟動設定](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)檔。
+如需 Windows 10 設定 uri 的完整清單，請流覽[啟動設定](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)檔。

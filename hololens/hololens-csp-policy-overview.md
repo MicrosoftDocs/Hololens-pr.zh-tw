@@ -13,29 +13,29 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308910"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640452"
 ---
 # <a name="configure-csps-and-device-management-overview"></a>設定 Csp 和裝置管理總覽
 
 IT 系統管理員可以在 HoloLens 2 上定義和執行原則設定。 您要使用哪些組態設定將根據部署案例而不同，而公司裝置將為 IT 提供範圍更廣泛的控制權。 在 Windows 10 中， (CSP) 的設定服務提供者是在裝置上讀取、設定、修改或刪除設定設定的介面。 這些設定會對應到登錄機碼或檔案。 某些設定服務提供者支援 WAP 格式、某些支援 SyncML，以及兩者的支援。
 
-如需 Windows 10 全像攝影版裝置管理 Csp 的詳細資訊，請參閱 [HoloLens 裝置支援的 csp](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)完整清單。
-IT 系統管理員也可以管理裝置上的原則 CSP，請參閱 [HoloLens 2 所支援之原則 csp](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2)的完整清單。
+如需 Windows 10 全像攝影版裝置管理 csp 的詳細資訊，請參閱[HoloLens 裝置所支援](/windows/client-management/mdm/configuration-service-provider-reference#hololens)的完整 csp 清單。
+IT 系統管理員也可以管理裝置上的原則 CSP，請參閱[HoloLens 2 所支援之原則 csp](/windows/client-management/mdm/policy-csps-supported-by-hololens2)的完整清單。
 
 ## <a name="configuration-methods"></a>設定方法
 
 ### <a name="configure-with-mdm"></a>使用 MDM 設定
 
-在 MDM 系統中註冊的任何個人或公司裝置上，都可以輕鬆地管理 Csp 和原則。 在您的 MDM 解決方案中註冊裝置之後，您就能夠使用裝置設定來管理該裝置或裝置的集合。 深入瞭解如何 [透過 MDM 管理 HoloLens 裝置](hololens-mdm-configure.md)。
+在 MDM 系統中註冊的任何個人或公司裝置上，都可以輕鬆地管理 Csp 和原則。 在您的 MDM 解決方案中註冊裝置之後，您就能夠使用裝置設定來管理該裝置或裝置的集合。 深入瞭解如何[透過 MDM 管理您的 HoloLens 裝置](hololens-mdm-configure.md)。
 
 ### <a name="configure-with-provisioning-packages"></a>使用布建套件進行設定
 
-HoloLens 2 也支援透過自訂布建套件，為 HoloLens 2 裝置設定一組有限的 CSP 設定。 布建套件通常用於非 MDM 管理的裝置，且需要手動套用至每部裝置。 閱讀建立 HoloLens 自訂布建 [套件的](https://docs.microsoft.com/hololens/hololens-provisioning)相關資訊。
+HoloLens 2 也支援透過自訂布建套件，為 HoloLens 2 裝置設定一組有限的 CSP 設定。 布建套件通常用於非 MDM 管理的裝置，且需要手動套用至每部裝置。 請參閱為 HoloLens 建立自訂布建[套件的](hololens-provisioning.md)相關資訊。
 
 ## <a name="configurations"></a>設定
 
@@ -49,9 +49,9 @@ HoloLens 2 也支援透過自訂布建套件，為 HoloLens 2 裝置設定一組
 
 ### <a name="settings-page-visibility"></a>設定頁面可見度
 
-您可以使用 [設定] 應用程式原則來控制哪些身分識別可以存取設定的預設值。 使用此原則，設定應用程式可以設定為只顯示選取的頁面，或隱藏所有選取的頁面。 瞭解[如何設定可用的頁面](settings-uri-list.md)。
+使用設定應用程式原則來控制哪些身分識別可以存取設定。 您可以使用此原則，將設定應用程式設定為只顯示選取的頁面，或隱藏所有選取的頁面。 瞭解[如何設定可用的頁面](settings-uri-list.md)。
 
-這項功能目前僅適用于 [Windows 測試人員組建](hololens-insider.md)。 確定您想要使用這項功能的裝置位於 build 19041.1349 +。
+這項功能目前僅適用于[Windows 測試人員組建](hololens-insider.md)。 確定您想要使用這項功能的裝置位於 build 19041.1349 +。
 
 ### <a name="wdac"></a>WDAC
 

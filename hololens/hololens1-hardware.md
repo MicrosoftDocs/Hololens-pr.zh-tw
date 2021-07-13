@@ -13,45 +13,45 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f2c1add9e30467f62833640ea212eb2fcd72ce13
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 02496d90f2dee320e62a99e07527f32b7a209a69
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308998"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639959"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (第1代) 硬體
 
 ![Microsoft HoloLens (第1代) ](images/see-through-400px.jpg)
 
-Microsoft HoloLens (第1代) 是世界上最非網路共用的全像全像全電腦。 HoloLens 透過全像攝影體驗來重新定義個人運算，讓您以新的方式實現。 HoloLens 混合了最尖端的光學和感應器，提供釘選到真實世界的3D 全息。
+Microsoft HoloLens (第1代) 是世界上最非網路共用的全像全像全電腦。 HoloLens 透過全像攝影體驗來重新定義個人運算，讓您以新的方式實現。 HoloLens 融合著最尖端的光學和感應器，以提供釘選到真實世界的立體全像全球的影像。
 
 ## <a name="hololens-components"></a>HoloLens 元件
 
 ![顯示 box 內容的影像](images/hololens-box-contents.png)
 
-HoloLens 包含下列功能：
+您的 HoloLens 包含下列功能：
 
-- **面板**。 包含 HoloLens 感應器和顯示器。 您可以在佩戴 HoloLens 時旋轉面板。
-- **Headband**。 若要將 HoloLens 放在上，請使用「調整」滾輪來展開 headband。 備妥 HoloLens 之後，請將調整輪子擰下，直到 headband 習慣為止。
+- **面板**。 包含 HoloLens 感應器和顯示器。 當您佩戴 HoloLens 時，可以旋轉面板。
+- **Headband**。 若要將 HoloLens 放在上，請使用「調整」滾輪來展開 headband。 HoloLens 準備好之後，請將調整輪子擰下，直到 headband 習慣為止。
 - **亮度按鈕**。 當您佩戴 HoloLens 時，亮度按鈕會在裝置的左邊。
 - **音量按鈕**。 當您佩戴 HoloLens 時，音量按鈕會在裝置的右側。
-- **裝置 arm**。 當您挑選、放入或取出 HoloLens 時，請一律抓住或抓住裝置 arm。
+- **裝置 arm**。 當您挑選、放入或關閉 HoloLens 時，請一律抓住或按住裝置 arm。
 
 ## <a name="in-the-box"></a>在 box 中
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c7ceb904-9d5f-4194-9e10-e8a949dbad7d]  
 
-HoloLens 方塊包含下列專案：
+HoloLens box 包含下列專案：
 
 - **鼻子板**。 選取適合您的鼻子形狀的鼻子板，並配合您的 eyewear。
-- **額外負荷**。 當您在四處四處移動時，請使用腕帶的額外負荷來協助保持裝置的位置。 此外，如果您在短期內佩戴 HoloLens，使用的額外負荷可能會讓裝置更容易磨損。
-- **微型 USB 纜線**。 使用微型 USB 纜線將 HoloLens 連接到電源供應器以進行收費，或使用它將 HoloLens 連接到您的電腦。
+- **額外負荷**。 當您四處移動 HoloLens 時，請使用腕帶的額外負荷來協助保持裝置的位置。 此外，如果您有延長的期間 HoloLens，使用腕帶可能會讓裝置更容易磨損。
+- **微型 USB 纜線**。 使用微型 USB 纜線將您的 HoloLens 連接到電源供應器以進行充電，或使用它將您的 HoloLens 連接到您的電腦。
 - **電源供應** 器。 插入電源插座。
-- **Microfiber 抹布**。 使用抹布來清理 HoloLens 面板。
+- **Microfiber 抹布**。 使用抹布來清理您的 HoloLens 面板。
 
 >[!TIP]
->[Clicker](hololens1-clicker.md)隨附于 HoloLens (第一代) 在另一個方塊中。
+>[clicker](hololens1-clicker.md)隨附于個別方塊中 HoloLens (第一代) 。
 
 ### <a name="power-supply-details"></a>電源供應器詳細資料
 
@@ -65,10 +65,10 @@ HoloLens 方塊包含下列專案：
 
 ### <a name="display"></a>顯示
 
-![HoloLens 可以看到-透過全像全像鏡頭](images/displays-400px.jpg)
+![HoloLens 有觀看全像全像鏡頭](images/displays-400px.jpg)
 
-|   |   |
-| - | - |
+| &nbsp; | &nbsp; |
+|---|---|
 | **光學** | 查看-透過全像鏡頭 (waveguides)  |
 | **全像解決方案** | 2個 HD 16:9 light 引擎產生2.3 個光線總點數 |
 | **全像密度** | \>2.5 k radiants (每個弧度的照明點)  |
@@ -120,8 +120,8 @@ HoloLens 方塊包含下列專案：
 
 ### <a name="fit"></a>適用
 
-|   |   |
-| - | - |
+|   | &nbsp; |
+|---|---|
 | **調整大小** | 具有可調帶的單一大小。 符合眼鏡 |
 | **Weight** | 579元 |
 
@@ -153,24 +153,24 @@ HoloLens 方塊包含下列專案：
 
 ### <a name="safety"></a>安全性
 
-HoloLens 已經過測試，並符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本影響保護需求。
+HoloLens 已經過測試，併發現符合 ANSI z 87.1、CSA z 94.3 和 EN 166 的基本影響保護需求。
 - [SAR 資訊](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## <a name="care-and-cleaning"></a>護理和清除
 
-小心處理 HoloLens。 若要隨即轉移、攜帶及調整 HoloLens，請使用裝置 arm &mdash; 而不是額外負荷。 將不會有灰塵和指紋的面板保持可用，並避免觸及。 重複清除可能會損毀面板，因此請試著讓您的裝置保持乾淨。
+請小心處理您的 HoloLens。 若要隨即轉移、攜帶及調整您的 HoloLens，請使用裝置 arm &mdash; 而不是額外負荷。 將不會有灰塵和指紋的面板保持可用，並避免觸及。 重複清除可能會損毀面板，因此請試著讓您的裝置保持乾淨。
 
-請勿在 HoloLens 上使用任何的清除程式或 solvents，也不要以水 submerge，或直接將水套用至該檔案。
+請勿在您的 HoloLens 上使用任何清除或 solvents，且不會以水 submerge，或直接將水套用至該檔案。
 
 若要清除面板，請使用 camel 或 goat 頭髮鏡頭筆刷或燈泡樣式的鏡頭風扇來移除任何灰塵。 使用少量的經過微 moisten 的 microfiber 抹布來輕量，然後用它來在迴圈的動作中輕輕抹除面板。
 
-若要清除裝置的其餘部分（包括 headband 和裝置 arm），請使用不起毛的軟軟 moistened，並提供輕度的 soap 和水。 請讓您的 HoloLens 完全完成，再使用它。
+若要清除裝置的其餘部分（包括 headband 和裝置 arm），請使用不起毛的軟軟 moistened，並提供輕度的 soap 和水。 請讓您的 HoloLens 先完成，再使用它。
 
 ![顯示如何清除面板的影像](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>尋找序號
 
-HoloLens (第1代) 裝置的序號會列印在正確的鏡頭下方。
+HoloLens (第1代) 裝置的序號會列印在正確的鏡頭下。
 1. 將裝置放在您的前方，如同您要在您的頭部磨損一樣。 裝置朝前與直立。
 1. 當鏡頭仍在正面時，請將裝置反轉，讓您看到下方。
 1. 右邊的鏡頭現在會在左邊，並列印在帶狀的鏡頭下，就是序號。 
@@ -185,4 +185,4 @@ HoloLens (第1代) 裝置的序號會列印在正確的鏡頭下方。
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [設定並啟動 HoloLens (第1代) ](hololens1-setup.md)
+> [設定並啟動您的 HoloLens (第1代) ](hololens1-setup.md)
