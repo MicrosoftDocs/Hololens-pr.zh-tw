@@ -11,21 +11,23 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
-  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/25/2021
-  ms.locfileid: "112924310"
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637144"
 landingContent:
 - title: 瞭解 HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: 關於 HoloLens 2 硬體
-      url: hololens2-hardware.md
-    - text: 比較 HoloLens 2 選項
+    - text: HoloLens 2 的功能與解決方案
+      url: hololens-commercial-features.md
+    - text: HoloLens 2 選項
       url: hololens2-options.md
+    - text: HoloLens 2 硬體
+      url: hololens2-hardware.md
   - linkListType: overview
     links:
     - text: Device-only
@@ -62,7 +64,7 @@ landingContent:
       url: hololens2-cloud-connected-overview.md
     - text: 部署指南- (雲端連線) 的外部用戶端
       url: hololens2-deployment-guide.md
-    - text: 部署指南-使用 Dynamics 365 指南的公司連線 HoloLens 2 部署
+    - text: 部署指南-使用 Dynamics 365 Guides 的公司連線 HoloLens 2 部署
       url: hololens2-corp-connected-overview.md
     - text: 部署指南-離線安全
       url: hololens-common-scenarios-offline-secure.md
@@ -72,7 +74,7 @@ landingContent:
     links:
     - text: 裝置
       url: hololens-troubleshooting.md
-    - text: 全像影像和互動
+    - text: 全像投影和互動
       url: hololens-faq.md
     - text: 顯示
       url: hololens2-display.md
@@ -114,7 +116,7 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Dynamics 365 遠端協助檔
+    - text: Dynamics 365 Remote Assist文檔
       url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
     - text: Dynamics 365 Guides
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/

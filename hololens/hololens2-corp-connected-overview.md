@@ -1,7 +1,7 @@
 ---
-title: 部署指南–與 Dynamics 365 的公司連線 HoloLens 2 指南-總覽
-description: 瞭解如何透過公司連接的網路，使用 Dynamics 365 指南註冊 HoloLens 2 裝置。
-keywords: HoloLens、管理、公司連線、Dynamics 365 指南、AAD、Azure AD、MDM、Mobile 裝置管理
+title: 部署指南–企業連線 HoloLens 2 與 Dynamics 365 Guides-總覽
+description: 瞭解如何透過公司連線的網路 Dynamics 365 Guides 註冊 HoloLens 2 裝置。
+keywords: HoloLens、管理、公司連線、Dynamics 365 Guides、AAD、Azure AD、MDM、行動裝置管理
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,83 +14,84 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397193"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637008"
 ---
-# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a><span data-ttu-id="af91d-104">部署指南-使用 Dynamics 365 指南的公司連線 HoloLens 2-總覽</span><span class="sxs-lookup"><span data-stu-id="af91d-104">Deployment Guide - Corporate Connected HoloLens 2 with Dynamics 365 Guides - Overview</span></span>
+# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a><span data-ttu-id="f3da7-104">部署指南-Dynamics 365 Guides 的公司連線 HoloLens 2-總覽</span><span class="sxs-lookup"><span data-stu-id="f3da7-104">Deployment Guide - Corporate Connected HoloLens 2 with Dynamics 365 Guides - Overview</span></span>
 
-<span data-ttu-id="af91d-105">本指南可協助 IT 專業人員規劃及部署 Microsoft HoloLens 2 裝置，並使用 Dynamics 365 指南 (指南) 其組織。</span><span class="sxs-lookup"><span data-stu-id="af91d-105">This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Dynamics 365 Guides (Guides) to their organization.</span></span> <span data-ttu-id="af91d-106">本指南適用于試驗和生產環境部署，類似于 [案例 B：在組織的網路指南中部署](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) 。</span><span class="sxs-lookup"><span data-stu-id="af91d-106">This guide is great for pilots as well as production deployments and is similar to the [Scenario B: Deploy inside your organization's network](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) guide.</span></span> <span data-ttu-id="af91d-107">測試您的概念證明之後，請使用本指南將 HoloLens 整合到您的組織中。</span><span class="sxs-lookup"><span data-stu-id="af91d-107">After testing your proof-of-concept, use this guide to move forward with integrating HoloLens into your organization.</span></span>
+<span data-ttu-id="f3da7-105">本指南可協助 IT 專業人員規劃和部署 Microsoft HoloLens 2 裝置，並 Dynamics 365 Guides (指南) 到其組織。</span><span class="sxs-lookup"><span data-stu-id="f3da7-105">This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Dynamics 365 Guides (Guides) to their organization.</span></span> <span data-ttu-id="f3da7-106">本指南適用于試驗和生產環境部署，類似于 [案例 B：在組織的網路指南中部署](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) 。</span><span class="sxs-lookup"><span data-stu-id="f3da7-106">This guide is great for pilots as well as production deployments and is similar to the [Scenario B: Deploy inside your organization's network](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) guide.</span></span> <span data-ttu-id="f3da7-107">測試您的概念證明之後，請使用本指南將 HoloLens 整合到您的組織中。</span><span class="sxs-lookup"><span data-stu-id="f3da7-107">After testing your proof-of-concept, use this guide to move forward with integrating HoloLens into your organization.</span></span>
 
-<span data-ttu-id="af91d-108">在本指南中，我們將討論如何將您的裝置註冊到現有的裝置管理、視需要套用授權，以及驗證您的終端使用者在裝置設定之後，是否能夠操作 Dynamics 365 指南，以及使用自訂的企業營運應用程式。</span><span class="sxs-lookup"><span data-stu-id="af91d-108">In this guide, we will cover how to enroll your devices into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.</span></span> 
+<span data-ttu-id="f3da7-108">在本指南中，我們將討論如何將您的裝置註冊到現有的裝置管理、視需要套用授權，以及驗證您的終端使用者在裝置設定之後，是否能夠操作 Dynamics 365 指南，以及使用自訂的企業營運應用程式。</span><span class="sxs-lookup"><span data-stu-id="f3da7-108">In this guide, we will cover how to enroll your devices into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.</span></span> 
 
-## <a name="prerequisites"></a><span data-ttu-id="af91d-109">必要條件</span><span class="sxs-lookup"><span data-stu-id="af91d-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f3da7-109">必要條件</span><span class="sxs-lookup"><span data-stu-id="f3da7-109">Prerequisites</span></span>
 
-<span data-ttu-id="af91d-110">下列基礎結構應該已準備就緒：</span><span class="sxs-lookup"><span data-stu-id="af91d-110">The following infrastructure should already be in place:</span></span>
-- <span data-ttu-id="af91d-111">Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="af91d-111">Wi-Fi</span></span>
-    - <span data-ttu-id="af91d-112">具有內部資源存取權的內部公司網路，以及網際網路或雲端服務的有限存取權</span><span class="sxs-lookup"><span data-stu-id="af91d-112">Internal corporate network with access to internal resources and limited access to the internet or Cloud services</span></span>
-    - <span data-ttu-id="af91d-113">以裝置為基礎的憑證驗證。</span><span class="sxs-lookup"><span data-stu-id="af91d-113">Device-based certificate authentication.</span></span>
-- <span data-ttu-id="af91d-114">Azure Active Directory (Azure AD) 加入 MDM 自動註冊 (Azure AD [P1 訂](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 用帳戶) </span><span class="sxs-lookup"><span data-stu-id="af91d-114">Azure Active Directory (Azure AD) Join with MDM Auto Enrollment ([Azure AD P1 subscription](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) needed)</span></span>
-- <span data-ttu-id="af91d-115">MDM (Intune) 受控</span><span class="sxs-lookup"><span data-stu-id="af91d-115">MDM (Intune) Managed</span></span>
-    - <span data-ttu-id="af91d-116">透過 MDM 部署一或多個應用程式。</span><span class="sxs-lookup"><span data-stu-id="af91d-116">One or more applications are deployed via MDM.</span></span>
-- <span data-ttu-id="af91d-117">網路</span><span class="sxs-lookup"><span data-stu-id="af91d-117">Network</span></span> 
-    - <span data-ttu-id="af91d-118"> (SCEP 或 PKCS) 的憑證</span><span class="sxs-lookup"><span data-stu-id="af91d-118">Certificates (SCEP or PKCS)</span></span>
-    - <span data-ttu-id="af91d-119">Proxy 組態</span><span class="sxs-lookup"><span data-stu-id="af91d-119">Proxy configuration</span></span>
-- <span data-ttu-id="af91d-120">使用者以自己的公司帳戶登入 (Azure AD) </span><span class="sxs-lookup"><span data-stu-id="af91d-120">Users sign in with their own corporate account (Azure AD)</span></span>
-    - <span data-ttu-id="af91d-121">支援每個裝置的單一或多個使用者。</span><span class="sxs-lookup"><span data-stu-id="af91d-121">Single or multiple users per device is supported.</span></span>
-- <span data-ttu-id="af91d-122">根據特定使用案例套用的各種裝置鎖定設定層級，從完全開放到單一應用程式 Kiosk。</span><span class="sxs-lookup"><span data-stu-id="af91d-122">Varying levels of device lockdown configurations applied based on specific use cases, from Fully Open to Single App Kiosk.</span></span>
+<span data-ttu-id="f3da7-110">下列基礎結構應該已準備就緒：</span><span class="sxs-lookup"><span data-stu-id="f3da7-110">The following infrastructure should already be in place:</span></span>
+- <span data-ttu-id="f3da7-111">Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="f3da7-111">Wi-Fi</span></span>
+    - <span data-ttu-id="f3da7-112">具有內部資源存取權的內部公司網路，以及網際網路或雲端服務的有限存取權</span><span class="sxs-lookup"><span data-stu-id="f3da7-112">Internal corporate network with access to internal resources and limited access to the internet or Cloud services</span></span>
+    - <span data-ttu-id="f3da7-113">以裝置為基礎的憑證驗證。</span><span class="sxs-lookup"><span data-stu-id="f3da7-113">Device-based certificate authentication.</span></span>
+- <span data-ttu-id="f3da7-114">Azure Active Directory (Azure AD) 加入 MDM 自動註冊 (Azure AD [P1 訂](/azure/active-directory/fundamentals/active-directory-whatis)用帳戶) </span><span class="sxs-lookup"><span data-stu-id="f3da7-114">Azure Active Directory (Azure AD) Join with MDM Auto Enrollment ([Azure AD P1 subscription](/azure/active-directory/fundamentals/active-directory-whatis) needed)</span></span>
+- <span data-ttu-id="f3da7-115">MDM (Intune) 受控</span><span class="sxs-lookup"><span data-stu-id="f3da7-115">MDM (Intune) Managed</span></span>
+    - <span data-ttu-id="f3da7-116">透過 MDM 部署一或多個應用程式。</span><span class="sxs-lookup"><span data-stu-id="f3da7-116">One or more applications are deployed via MDM.</span></span>
+- <span data-ttu-id="f3da7-117">網路</span><span class="sxs-lookup"><span data-stu-id="f3da7-117">Network</span></span> 
+    - <span data-ttu-id="f3da7-118"> (SCEP 或 PKCS) 的憑證</span><span class="sxs-lookup"><span data-stu-id="f3da7-118">Certificates (SCEP or PKCS)</span></span>
+    - <span data-ttu-id="f3da7-119">Proxy 組態</span><span class="sxs-lookup"><span data-stu-id="f3da7-119">Proxy configuration</span></span>
+- <span data-ttu-id="f3da7-120">使用者以自己的公司帳戶登入 (Azure AD) </span><span class="sxs-lookup"><span data-stu-id="f3da7-120">Users sign in with their own corporate account (Azure AD)</span></span>
+    - <span data-ttu-id="f3da7-121">支援每個裝置的單一或多個使用者。</span><span class="sxs-lookup"><span data-stu-id="f3da7-121">Single or multiple users per device is supported.</span></span>
+- <span data-ttu-id="f3da7-122">根據特定使用案例套用的各種裝置鎖定設定層級，從完全開放到單一應用程式 Kiosk。</span><span class="sxs-lookup"><span data-stu-id="f3da7-122">Varying levels of device lockdown configurations applied based on specific use cases, from Fully Open to Single App Kiosk.</span></span>
 
-## <a name="guides-licensing-and-requirements"></a>[<span data-ttu-id="af91d-123">引導授權和需求</span><span class="sxs-lookup"><span data-stu-id="af91d-123">Guides Licensing and Requirements</span></span>](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
-- <span data-ttu-id="af91d-124">Azure AD 帳戶</span><span class="sxs-lookup"><span data-stu-id="af91d-124">Azure AD account</span></span>
-- <span data-ttu-id="af91d-125">Dynamics 365 會引導應用程式 PC 和 HoloLens</span><span class="sxs-lookup"><span data-stu-id="af91d-125">Dynamics 365 Guides applications PC and HoloLens</span></span>
-- <span data-ttu-id="af91d-126">Dynamics 365 指南訂用帳戶</span><span class="sxs-lookup"><span data-stu-id="af91d-126">Dynamics 365 Guides subscription</span></span>
-    - <span data-ttu-id="af91d-127">Microsoft Dataverse (包含) </span><span class="sxs-lookup"><span data-stu-id="af91d-127">Microsoft Dataverse (included)</span></span>
-    - <span data-ttu-id="af91d-128">Power Apps (包含) </span><span class="sxs-lookup"><span data-stu-id="af91d-128">Power Apps (included)</span></span>
-- <span data-ttu-id="af91d-129">Power BI Desktop</span><span class="sxs-lookup"><span data-stu-id="af91d-129">Power BI Desktop</span></span>
-- <span data-ttu-id="af91d-130">網路連線</span><span class="sxs-lookup"><span data-stu-id="af91d-130">Network Connectivity</span></span>
+## <a name="guides-licensing-and-requirements"></a>[<span data-ttu-id="f3da7-123">引導授權和需求</span><span class="sxs-lookup"><span data-stu-id="f3da7-123">Guides Licensing and Requirements</span></span>](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
-<span data-ttu-id="af91d-131">[![Corp 連接的網狀圖表，第 1 ](./images/deployment-guides-revised-scenario-b-01-1.png) 階段](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="af91d-131">[ ![Corp connected network diagram, stage 1](./images/deployment-guides-revised-scenario-b-01-1.png) ](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)</span></span>
+- <span data-ttu-id="f3da7-124">Azure AD 帳戶</span><span class="sxs-lookup"><span data-stu-id="f3da7-124">Azure AD account</span></span>
+- <span data-ttu-id="f3da7-125">Dynamics 365 Guides 的應用程式電腦和 HoloLens</span><span class="sxs-lookup"><span data-stu-id="f3da7-125">Dynamics 365 Guides applications PC and HoloLens</span></span>
+- <span data-ttu-id="f3da7-126">Dynamics 365 Guides 訂用帳戶</span><span class="sxs-lookup"><span data-stu-id="f3da7-126">Dynamics 365 Guides subscription</span></span>
+    - <span data-ttu-id="f3da7-127">Microsoft Dataverse (包含) </span><span class="sxs-lookup"><span data-stu-id="f3da7-127">Microsoft Dataverse (included)</span></span>
+    - <span data-ttu-id="f3da7-128">Power Apps (包含) </span><span class="sxs-lookup"><span data-stu-id="f3da7-128">Power Apps (included)</span></span>
+- <span data-ttu-id="f3da7-129">Power BI Desktop</span><span class="sxs-lookup"><span data-stu-id="f3da7-129">Power BI Desktop</span></span>
+- <span data-ttu-id="f3da7-130">網路連線</span><span class="sxs-lookup"><span data-stu-id="f3da7-130">Network Connectivity</span></span>
 
-<span data-ttu-id="af91d-132">[![Corp 連接的網狀圖表，第 2 ](./images/deployment-guides-revised-scenario-b-02-1.png) 階段](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="af91d-132">[ ![Corp connected network diagram, stage 2](./images/deployment-guides-revised-scenario-b-02-1.png) ](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)</span></span>
+<span data-ttu-id="f3da7-131">[![Corp 連接的網狀圖表，第 1 ](./images/deployment-guides-revised-scenario-b-01-1.png) 階段](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="f3da7-131">[ ![Corp connected network diagram, stage 1](./images/deployment-guides-revised-scenario-b-01-1.png) ](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)</span></span>
 
-## <a name="in-this-guide-you-will"></a><span data-ttu-id="af91d-133">在本指南中，您將會：</span><span class="sxs-lookup"><span data-stu-id="af91d-133">In this guide you will:</span></span>
-### <a name="prepare"></a><span data-ttu-id="af91d-134">準備</span><span class="sxs-lookup"><span data-stu-id="af91d-134">Prepare</span></span>
+<span data-ttu-id="f3da7-132">[![Corp 連接的網狀圖表，第 2 ](./images/deployment-guides-revised-scenario-b-02-1.png) 階段](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="f3da7-132">[ ![Corp connected network diagram, stage 2](./images/deployment-guides-revised-scenario-b-02-1.png) ](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)</span></span>
+
+## <a name="in-this-guide-you-will"></a><span data-ttu-id="f3da7-133">在本指南中，您將會：</span><span class="sxs-lookup"><span data-stu-id="f3da7-133">In this guide you will:</span></span>
+### <a name="prepare"></a><span data-ttu-id="f3da7-134">準備</span><span class="sxs-lookup"><span data-stu-id="f3da7-134">Prepare</span></span>
 > [!div class="checklist"]
->- [<span data-ttu-id="af91d-135">瞭解 HoloLens 2 裝置的基礎結構基本資訊。</span><span class="sxs-lookup"><span data-stu-id="af91d-135">Learn about the infrastructure essentials for HoloLens 2 devices.</span></span>](hololens2-corp-connected-prepare.md#infrastructure-essentials)
->- [<span data-ttu-id="af91d-136">如果您沒有 Azure AD，請進一步瞭解，並設定一個。</span><span class="sxs-lookup"><span data-stu-id="af91d-136">Learn more about Azure AD and set up one if you don't have it.</span></span>](hololens2-corp-connected-prepare.md#azure-active-directory)
->- [<span data-ttu-id="af91d-137">瞭解身分識別管理，以及如何以最佳方式設定 Azure AD 帳戶。</span><span class="sxs-lookup"><span data-stu-id="af91d-137">Learn about Identity management and how to best set up Azure AD accounts.</span></span>](hololens2-corp-connected-prepare.md#identity-management)
->- [<span data-ttu-id="af91d-138">如果您還沒準備好，請深入瞭解 MDM 並設定 Intune。</span><span class="sxs-lookup"><span data-stu-id="af91d-138">Learn more about MDM and set up with Intune if you don't already have one ready.</span></span>](hololens2-corp-connected-prepare.md#mobile-device-management)
->- [<span data-ttu-id="af91d-139">熟悉以憑證為基礎的 Wi-fi。</span><span class="sxs-lookup"><span data-stu-id="af91d-139">Familiarize yourself with certificate-based Wi-Fi.</span></span>](hololens2-corp-connected-prepare.md#certificates)
->- [<span data-ttu-id="af91d-140">熟悉 Proxy。</span><span class="sxs-lookup"><span data-stu-id="af91d-140">Familiarize yourself with Proxy.</span></span>](hololens2-corp-connected-prepare.md#proxy)
->- [<span data-ttu-id="af91d-141">瞭解您可以如何使用企業營運應用程式。</span><span class="sxs-lookup"><span data-stu-id="af91d-141">Understand how you can use Line of Business Apps.</span></span>](hololens2-corp-connected-prepare.md#line-of-business-apps)
->- [<span data-ttu-id="af91d-142">深入瞭解您的組織可以使用指南的方式。</span><span class="sxs-lookup"><span data-stu-id="af91d-142">Learn more about the way you can use Guides for your organization.</span></span>](hololens2-corp-connected-prepare.md#guides-playbook)
-### <a name="configure"></a><span data-ttu-id="af91d-143">設定</span><span class="sxs-lookup"><span data-stu-id="af91d-143">Configure</span></span>
+>- [<span data-ttu-id="f3da7-135">瞭解 HoloLens 2 裝置的基礎結構基本資訊。</span><span class="sxs-lookup"><span data-stu-id="f3da7-135">Learn about the infrastructure essentials for HoloLens 2 devices.</span></span>](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [<span data-ttu-id="f3da7-136">如果您沒有 Azure AD，請進一步瞭解，並設定一個。</span><span class="sxs-lookup"><span data-stu-id="f3da7-136">Learn more about Azure AD and set up one if you don't have it.</span></span>](hololens2-corp-connected-prepare.md#azure-active-directory)
+>- [<span data-ttu-id="f3da7-137">瞭解身分識別管理，以及如何以最佳方式設定 Azure AD 帳戶。</span><span class="sxs-lookup"><span data-stu-id="f3da7-137">Learn about Identity management and how to best set up Azure AD accounts.</span></span>](hololens2-corp-connected-prepare.md#identity-management)
+>- [<span data-ttu-id="f3da7-138">如果您還沒準備好，請深入瞭解 MDM 並設定 Intune。</span><span class="sxs-lookup"><span data-stu-id="f3da7-138">Learn more about MDM and set up with Intune if you don't already have one ready.</span></span>](hololens2-corp-connected-prepare.md#mobile-device-management)
+>- [<span data-ttu-id="f3da7-139">熟悉以憑證為基礎的 Wi-fi。</span><span class="sxs-lookup"><span data-stu-id="f3da7-139">Familiarize yourself with certificate-based Wi-Fi.</span></span>](hololens2-corp-connected-prepare.md#certificates)
+>- [<span data-ttu-id="f3da7-140">熟悉 Proxy。</span><span class="sxs-lookup"><span data-stu-id="f3da7-140">Familiarize yourself with Proxy.</span></span>](hololens2-corp-connected-prepare.md#proxy)
+>- [<span data-ttu-id="f3da7-141">瞭解您可以如何使用企業營運應用程式。</span><span class="sxs-lookup"><span data-stu-id="f3da7-141">Understand how you can use Line of Business Apps.</span></span>](hololens2-corp-connected-prepare.md#line-of-business-apps)
+>- [<span data-ttu-id="f3da7-142">深入瞭解您的組織可以使用指南的方式。</span><span class="sxs-lookup"><span data-stu-id="f3da7-142">Learn more about the way you can use Guides for your organization.</span></span>](hololens2-corp-connected-prepare.md#guides-playbook)
+### <a name="configure"></a><span data-ttu-id="f3da7-143">設定</span><span class="sxs-lookup"><span data-stu-id="f3da7-143">Configure</span></span>
 > [!div class="checklist"]
->- [<span data-ttu-id="af91d-144">如何建立使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="af91d-144">How to create users and groups.</span></span>](hololens2-corp-connected-configure.md#azure-users-and-groups)
->- [<span data-ttu-id="af91d-145">如何設定自動註冊。</span><span class="sxs-lookup"><span data-stu-id="af91d-145">How to set up Auto Enrollment.</span></span>](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
->- [<span data-ttu-id="af91d-146">如何設定 Wi-Fi 的憑證和設定檔，以進行公司 Wi-Fi 的連線能力。</span><span class="sxs-lookup"><span data-stu-id="af91d-146">How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity.</span></span>](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [<span data-ttu-id="af91d-147">上傳並指派企業營運 (LOB) 應用程式套件。</span><span class="sxs-lookup"><span data-stu-id="af91d-147">Upload and Assign Line of Business (LOB) App packages.</span></span>](hololens2-corp-connected-configure.md#app-deployment)
->- [<span data-ttu-id="af91d-148">設定 Dynamics 365 指南。</span><span class="sxs-lookup"><span data-stu-id="af91d-148">Setup Dynamics 365 Guides.</span></span>](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
->- [<span data-ttu-id="af91d-149">如何設定 Kiosk 模式 (選擇性) 。</span><span class="sxs-lookup"><span data-stu-id="af91d-149">How to configure Kiosk Mode (optional).</span></span>](hololens2-corp-connected-configure.md#optional-kiosk-mode)
->- [<span data-ttu-id="af91d-150">如何設定 WDAC (選擇性) 。</span><span class="sxs-lookup"><span data-stu-id="af91d-150">How to configure WDAC (optional).</span></span>](hololens2-corp-connected-configure.md#optional-wdac)
-### <a name="deploy"></a><span data-ttu-id="af91d-151">部署</span><span class="sxs-lookup"><span data-stu-id="af91d-151">Deploy</span></span>
+>- [<span data-ttu-id="f3da7-144">如何建立使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="f3da7-144">How to create users and groups.</span></span>](hololens2-corp-connected-configure.md#azure-users-and-groups)
+>- [<span data-ttu-id="f3da7-145">如何設定自動註冊。</span><span class="sxs-lookup"><span data-stu-id="f3da7-145">How to set up Auto Enrollment.</span></span>](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
+>- [<span data-ttu-id="f3da7-146">如何設定 Wi-Fi 的憑證和設定檔，以進行公司 Wi-Fi 的連線能力。</span><span class="sxs-lookup"><span data-stu-id="f3da7-146">How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity.</span></span>](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
+>- [<span data-ttu-id="f3da7-147">Upload 並指派企業營運 (LOB) 應用程式套件。</span><span class="sxs-lookup"><span data-stu-id="f3da7-147">Upload and Assign Line of Business (LOB) App packages.</span></span>](hololens2-corp-connected-configure.md#app-deployment)
+>- [<span data-ttu-id="f3da7-148">設定 Dynamics 365 Guides。</span><span class="sxs-lookup"><span data-stu-id="f3da7-148">Setup Dynamics 365 Guides.</span></span>](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
+>- [<span data-ttu-id="f3da7-149">如何設定 Kiosk 模式 (選擇性) 。</span><span class="sxs-lookup"><span data-stu-id="f3da7-149">How to configure Kiosk Mode (optional).</span></span>](hololens2-corp-connected-configure.md#optional-kiosk-mode)
+>- [<span data-ttu-id="f3da7-150">如何設定 WDAC (選擇性) 。</span><span class="sxs-lookup"><span data-stu-id="f3da7-150">How to configure WDAC (optional).</span></span>](hololens2-corp-connected-configure.md#optional-wdac)
+### <a name="deploy"></a><span data-ttu-id="f3da7-151">部署</span><span class="sxs-lookup"><span data-stu-id="f3da7-151">Deploy</span></span>
 > [!div class="checklist"]
->-  [<span data-ttu-id="af91d-152">透過裝置和 MDM 驗證註冊。</span><span class="sxs-lookup"><span data-stu-id="af91d-152">Validate enrollment via device and MDM.</span></span>](hololens2-corp-connected-deploy.md#enrollment-validation)
->-  [<span data-ttu-id="af91d-153">驗證 Wi-Fi 憑證。</span><span class="sxs-lookup"><span data-stu-id="af91d-153">Validate Wi-Fi certificates.</span></span>](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
->-  [<span data-ttu-id="af91d-154">驗證 LOB 應用程式安裝。</span><span class="sxs-lookup"><span data-stu-id="af91d-154">Validate LOB app install.</span></span>](hololens2-corp-connected-deploy.md#validate-lob-app-install)
->-  [<span data-ttu-id="af91d-155">透過撰寫和操作驗證輔助線。</span><span class="sxs-lookup"><span data-stu-id="af91d-155">Validate Guides via authoring and operating.</span></span>](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
-### <a name="maintain"></a><span data-ttu-id="af91d-156">維護</span><span class="sxs-lookup"><span data-stu-id="af91d-156">Maintain</span></span>
+>-  [<span data-ttu-id="f3da7-152">透過裝置和 MDM 驗證註冊。</span><span class="sxs-lookup"><span data-stu-id="f3da7-152">Validate enrollment via device and MDM.</span></span>](hololens2-corp-connected-deploy.md#enrollment-validation)
+>-  [<span data-ttu-id="f3da7-153">驗證 Wi-Fi 憑證。</span><span class="sxs-lookup"><span data-stu-id="f3da7-153">Validate Wi-Fi certificates.</span></span>](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
+>-  [<span data-ttu-id="f3da7-154">驗證 LOB 應用程式安裝。</span><span class="sxs-lookup"><span data-stu-id="f3da7-154">Validate LOB app install.</span></span>](hololens2-corp-connected-deploy.md#validate-lob-app-install)
+>-  [<span data-ttu-id="f3da7-155">透過撰寫和操作驗證輔助線。</span><span class="sxs-lookup"><span data-stu-id="f3da7-155">Validate Guides via authoring and operating.</span></span>](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
+### <a name="maintain"></a><span data-ttu-id="f3da7-156">維護</span><span class="sxs-lookup"><span data-stu-id="f3da7-156">Maintain</span></span>
 > [!div class="checklist"]
->- [<span data-ttu-id="af91d-157">更新 HoloLens 2。</span><span class="sxs-lookup"><span data-stu-id="af91d-157">Update HoloLens 2.</span></span>](hololens2-corp-connected-maintain.md#update-hololens)
->- [<span data-ttu-id="af91d-158">如何更新 (儲存應用程式) 的指南。</span><span class="sxs-lookup"><span data-stu-id="af91d-158">How to update Guides (store apps).</span></span>](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
->- [<span data-ttu-id="af91d-159">如何更新 LOB 應用程式。</span><span class="sxs-lookup"><span data-stu-id="af91d-159">How to update LOB apps.</span></span>](hololens2-corp-connected-maintain.md#how-to-update-lob-apps) 
->- [<span data-ttu-id="af91d-160">開發計畫。</span><span class="sxs-lookup"><span data-stu-id="af91d-160">Development plan.</span></span>](hololens2-corp-connected-maintain.md#development-plan) 
->- [<span data-ttu-id="af91d-161">提出支援方案。</span><span class="sxs-lookup"><span data-stu-id="af91d-161">Making a support plan.</span></span>](hololens2-corp-connected-maintain.md#support-plan)
->- [<span data-ttu-id="af91d-162">裝置管理選項。</span><span class="sxs-lookup"><span data-stu-id="af91d-162">Device management options.</span></span>](hololens2-corp-connected-maintain.md#device-management)
+>- [<span data-ttu-id="f3da7-157">更新 HoloLens 2。</span><span class="sxs-lookup"><span data-stu-id="f3da7-157">Update HoloLens 2.</span></span>](hololens2-corp-connected-maintain.md#update-hololens)
+>- [<span data-ttu-id="f3da7-158">如何更新 (儲存應用程式) 的指南。</span><span class="sxs-lookup"><span data-stu-id="f3da7-158">How to update Guides (store apps).</span></span>](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
+>- [<span data-ttu-id="f3da7-159">如何更新 LOB 應用程式。</span><span class="sxs-lookup"><span data-stu-id="f3da7-159">How to update LOB apps.</span></span>](hololens2-corp-connected-maintain.md#how-to-update-lob-apps) 
+>- [<span data-ttu-id="f3da7-160">開發計畫。</span><span class="sxs-lookup"><span data-stu-id="f3da7-160">Development plan.</span></span>](hololens2-corp-connected-maintain.md#development-plan) 
+>- [<span data-ttu-id="f3da7-161">提出支援方案。</span><span class="sxs-lookup"><span data-stu-id="f3da7-161">Making a support plan.</span></span>](hololens2-corp-connected-maintain.md#support-plan)
+>- [<span data-ttu-id="f3da7-162">裝置管理選項。</span><span class="sxs-lookup"><span data-stu-id="f3da7-162">Device management options.</span></span>](hololens2-corp-connected-maintain.md#device-management)
 
-## <a name="next-step"></a><span data-ttu-id="af91d-163">後續步驟</span><span class="sxs-lookup"><span data-stu-id="af91d-163">Next step</span></span> 
+## <a name="next-step"></a><span data-ttu-id="f3da7-163">後續步驟</span><span class="sxs-lookup"><span data-stu-id="f3da7-163">Next step</span></span> 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="af91d-164">公司連線部署-準備</span><span class="sxs-lookup"><span data-stu-id="af91d-164">Corporate connected deployment - Prepare</span></span>](hololens2-corp-connected-prepare.md)
+> [<span data-ttu-id="f3da7-164">公司連線部署-準備</span><span class="sxs-lookup"><span data-stu-id="f3da7-164">Corporate connected deployment - Prepare</span></span>](hololens2-corp-connected-prepare.md)
