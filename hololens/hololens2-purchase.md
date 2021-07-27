@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f294f391186219ff14158bbb62759e44e28420
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
+ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659620"
+ms.locfileid: "114661724"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 的購買位置
 
@@ -30,9 +30,9 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 
 | HoloLens 2版| 支援的市場 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港特別行政區、臺灣和南非 |
+| HoloLens 2 | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港、臺灣、泰國、越南、馬來西亞和南韓國 |
 | 具有遠端協助的 HoloLens 2 | 澳大利亞、日本、加拿大、US、奧地利、比利時、丹麥、芬蘭、法國、德國、義大利、荷蘭、挪威、西班牙、瑞典、瑞士、英國和愛爾蘭 <sup>1</sup> 
-| HoloLens 2工業版 *(啟動)* | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港特別行政區、臺灣和南非 |
+| HoloLens 2工業版 *(啟動)* | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港、臺灣、泰國、越南、馬來西亞和南韓國 |
 | HoloLens 2開發版 | 加拿大、德國、法國、英國、愛爾蘭、日本、澳大利亞、義大利、瑞士和紐西蘭 |
 - <sup>1</sup> 這份清單是動態的，請回來查看更新
 
@@ -46,13 +46,14 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 | **澳大利亞** | 深入瞭解企業澳大利亞 Pty 公司 | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>哥斯大黎加 Aligianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [購買 HoloLens 2 見解企業澳大利亞 Pty 公司](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [購買 HoloLens 2 產業版本-深入解析企業澳大利亞 Pty 公司](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra 紫色 | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **中國** | 高度資訊 (HII) 翰林匯資訊產業股份有限公司 | We feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [購買 HoloLens 2-高度資訊](http://www.ehighly.com.cn/productList.html?key=hololens) | [購買 HoloLens 2 產業版本-高度資訊](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | | |
-| | Tuomeng黑龍江拓盟科技有限公司、CN、哈爾濱  | Zhaowen Qiu<br>[qiuzw@hljtmkj.com](mailto:qiuzw@hljtmkj.com)<br> 利 膽<br>[lidan@hljtmkj.com](mailto:lidan@hljtmkj.com) | [購買 HoloLens 2 四川長虹佳華資訊產品有限責任公司/changhong IT 資訊產品 Co，公司](http://hljtmkj.com/buy.html) | [購買 HoloLens 2 產業版本-四川長虹佳華資訊產品有限責任公司/changhong IT 資訊產品 Co](http://47.92.113.150:8080/sjtbtm/a/sjtb) |
+| | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [購買 HoloLens 2 產業版本-Changhong IT 資訊產品 Co](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [購買 HoloLens 2 產業版本-Changhong IT 資訊產品 Co](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
+| | Tuomeng黑龍江拓盟科技有限公司、CN、哈爾濱  | Zhaowen Qiu<br>[qiuzw@hljtmkj.com](mailto:qiuzw@hljtmkj.com)<br> 利 膽<br>[lidan@hljtmkj.com](mailto:lidan@hljtmkj.com) | [購買 HoloLens 2-Tuomeng](http://hljtmkj.com/buy.html) | [購買 HoloLens 2 產業版本-Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
+| | 英施艾特（上海）軟體貿易有限公司深入解析企業 (上海) 有限公司 | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [ (上海) 購買 HoloLens 2 的深入解析企業](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [ (上海) 購買 HoloLens 2 產業版本的深入解析企業](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **香港** | GO (UFO) 的 VR | Howard Tian <howard.tian@govrimmersive.com> | [購買 HoloLens 2-GO 的沉浸式公司。](https://www.govrimmersive.com/hololens2) | [購買 HoloLens 2 產業版本-GO VR 沉浸式公司](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | 瞭解企業的香港 | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [購買 HoloLens 2 的企業香港的見解](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [購買 HoloLens 2 產業版本深入解析企業的香港](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
-| **日本** | 日本商務系統 (JBS)  | | [購買 HoloLens 2-日本商務系統](https://www.jbs.co.jp/solution/list/microsofthololens) | [購買 HoloLens 2 產業版本-日本商務系統](https://www.jbs.co.jp/solution/list/microsofthololens) |
-| | Otsuka Shokai 有限公司，公司。 | | [購買 HoloLens 2 Otsuka Shokai 有限公司，公司。](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [購買 HoloLens 2 產業版本-Otsuka Shokai 有限公司，公司。](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
-| | SB C&S | | [購買 HoloLens 2-SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | [購買 HoloLens 2 產業版本-SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | 
+| **日本** | 日本商務系統 (JBS)  | kazunori.miyauchi@jbs.com | [購買 HoloLens 2-日本商務系統](https://www.jbs.co.jp/solution/list/microsofthololens) | [購買 HoloLens 2 產業版本-日本商務系統](https://www.jbs.co.jp/solution/list/microsofthololens) |
+| | Otsuka Shokai 有限公司，公司。 | Kenta.Fujita@otsuka-shokai.co.jp | [購買 HoloLens 2 Otsuka Shokai 有限公司，公司。](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [購買 HoloLens 2 產業版本-Otsuka Shokai 有限公司，公司。](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
+| | SB C&S | fumiaki.endo01@g.softbank.co.jp | [購買 HoloLens 2-SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | [購買 HoloLens 2 產業版本-SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | 
 | **馬來西亞** | ST 工程 Land Systems (Studio 249)  | 先生 Pei 的 Shan <lee.peishan@stengg.com> | [購買 HoloLens 2-ST 工程 Land 系統](http://www.studio249.my/) | [購買 HoloLens 2 產業版本-聖工程 Land 系統](http://www.studio249.my/) |
 | **紐西蘭** | Datacom | Husain Al-Badry <husaina@datacom.co.nz><br>Dr. Hazel Bradshaw <hazel.bradshaw@datacom.co.nz> |  |  | 
 | |  (NZ) Pty 公司的深入解析企業 | Jenny Southon <jenny.southon@insight.com><br>Dean Graham <dean.graham@insight.com> | [購買 HoloLens 2 的深入解析企業 (NZ) Pty 公司](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | [購買 HoloLens 2 產業版本-深入解析企業 (NZ) Pty 公司](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
+ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659194"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114693714"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -39,6 +39,7 @@ ms.locfileid: "114659194"
 | [在 HoloLens 上設定 View advanced 診斷報表](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看裝置上的 MDM 診斷記錄 | 疑難排解 | 20348.1405 |
 | [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
 | [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
+| [修正和改善](hololens-insider.md#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 變更報告 HoloLens 詳細資料
 
