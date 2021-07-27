@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1de9687174bf9c1de2e2b15ee03aa841254b0b82
-ms.sourcegitcommit: 2988afb1d7792c9e4bae15485cd52d6eff7e27c8
+ms.openlocfilehash: b7ce9f94fb6d3074f8b7f517af6bd70c78462ddc
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113685043"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659534"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -38,7 +38,6 @@ ms.locfileid: "113685043"
 更新中的增強功能和修正：
 
 - 裝置入口網站在檔案總管遇到開啟鎖定檔案的問題時，有增強的方法可以通知客戶。
-- 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。  先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。  在某些情況下，模擬器無法順利開機，但現在將會。
 - 在所有支援的瀏覽器中使用 HTTPs 時，現在都會修正檔案上傳、下載、重新命名及刪除。
 - 已修正 Wi-Fi 屬性 UI 從設定 > 的網路啟動時，Wi-Fi proxy 無法儲存的問題 **& > 的狀態 > 屬性**。
 - 解決跨作業系統更新移除 eSIM 憑證的問題。 此修正可確保更新至21H1 版本時，會移除 eSIM 憑證和相關元件。
@@ -49,8 +48,8 @@ ms.locfileid: "113685043"
 - 組建19041.1157
 
 更新中的增強功能和修正：
+
 - 裝置入口網站在檔案總管遇到開啟鎖定檔案的問題時，有增強的方法可以通知客戶。 
-- 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。  先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。  在某些情況下，模擬器無法順利開機，但現在將會。
 - 在所有支援的瀏覽器中使用 HTTPs 時，現在都會修正檔案上傳、下載、重新命名及刪除。
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows全像21H1 版-2021 年6月更新
@@ -996,7 +995,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 針對 Windows 全像20H2 版的 HoloLens 2 裝置，已建立新的混合現實原則。 新的可控設定包括：設定亮度、設定音量、停用混合式事實中的錄音記錄、可以收集診斷的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 描述                                                                               | 注意                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | 允許停用亮度按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設值)                                                 |
 | MixedReality\VolumeButtonDisabled                  | 允許停用音量按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設值)                                                 |
@@ -1047,7 +1046,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 這些新增的原則可讓系統管理員控制電源狀態，例如閒置的超時時間。 若要閱讀更多個別原則的詳細資訊，請按一下該原則的連結。
 
-|     原則檔連結                |     備註                                                                                                                                       |
+|     原則檔連結                |     注意                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 |     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
 |     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640469"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659024"
 ---
 # <a name="compare-hololens-2-options"></a>比較 HoloLens 2 選項
 
@@ -47,17 +47,6 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 - <sup>2</sup> -在 Microsoft 收到瑕疵裝置之前，在夜間或加速傳送 (，可) 更快的可用選項來取得更換裝置。
 - <sup>3</sup> -針對 Trimble XR10 搭配 HoloLens 2 版的擔保、支援和認證問題，請[洽詢 Trimble](https://fieldtech.trimble.com/en/contact-support)。
 
-## <a name="countries-where-hololens-2-is-available"></a>有 HoloLens 2 的國家/地區
-
-<br>
-
-| HoloLens 2版                  | 支援的市場               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港特別行政區、臺灣和南非 |
-| 具有遠端協助的 HoloLens 2 | 澳大利亞、日本、加拿大、US、奧地利、比利時、丹麥、芬蘭、法國、德國、義大利、荷蘭、挪威、西班牙、瑞典、瑞士、英國和愛爾蘭 <sup>1</sup> 
-| HoloLens 2工業版 *(啟動)* | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港特別行政區、臺灣和南非 |
-| HoloLens 2開發版 | 加拿大、德國、法國、英國、愛爾蘭、日本、澳大利亞、義大利、瑞士和紐西蘭 |
-- <sup>1</sup> 這份清單是動態的，請回來查看更新
 
 ## <a name="options-overview"></a>選項總覽
 
@@ -85,7 +74,7 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 |  [混合現實的 Azure 雲端服務](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | 瞭解如何使用 Azure 雲端服務開發解決方案。                                       |
 |  [開始開發 HoloLens 2](/windows/mixed-reality/develop/development?tabs=unity)         | 打造混合的現實解決方案，以符合您的需求。                                                 |
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 針對裝置終端使用者，請參閱「[讓您的 HoloLens 2 準備好開始使用](hololens2-setup.md)」。
 

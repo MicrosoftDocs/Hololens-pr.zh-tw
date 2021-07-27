@@ -12,7 +12,6 @@
 ### [開發版](hololens2-options-dev-edition.md)
 #### [HoloLens 2開發版常見問題](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
-### [商業功能](hololens-commercial-features.md)
 
 # 使用您的 HoloLens
 ## 首次使用
@@ -22,7 +21,7 @@
 ### [更新 HoloLens](hololens-update-hololens.md)
 ## 每日使用量
 ### 流覽 Windows 全息型介面
-#### [使用 [開始] 功能表並混合實境首頁](holographic-home.md)
+#### [使用 [開始] 功能表和混合實境首頁](holographic-home.md)
 #### [使用您的語音來操作 HoloLens](hololens-cortana.md)
 #### [在 HoloLens 上尋找、開啟及儲存檔案](holographic-data.md)
 #### [建立混合的現實照片和影片](holographic-photos-and-videos.md)
@@ -110,6 +109,7 @@
 ## [重設 HoloLens 2](hololens-recovery.md)
 
 # 資源
+## [HoloLens 2 的購買位置](hololens2-purchase.md)
 ## [支援和協助選項](hololens2-support.md)
 ## [Autopilot 支援要求](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 版本資訊](hololens-release-notes.md)

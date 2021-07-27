@@ -7,12 +7,12 @@ description: 適用于小型至大型企業客戶的混合現實支援選項
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636209"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659092"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>有哪些混合現實支援和協助選項？
 
@@ -79,6 +79,7 @@ ms.locfileid: "113636209"
 
 - [購買 HoloLens 2](https://www.microsoft.com/hololens/buy)使用此選項可深入瞭解 HoloLens 2 定價和選項
 - 如果您需要透過電話支援提供協助，請參閱下方的商務服務中心號碼，以支援同事的商業商店
+- 針對 Microsoft Store 之外的購買，請參考這份已[授權的 HoloLens 2 轉銷商](hololens2-purchase.md)和國家/地區，其中提供 HoloLens 2。
 
 ### <a name="commercial-store-support-numbers"></a>商業商店支援編號
 >[!Note]
@@ -105,10 +106,10 @@ ms.locfileid: "113636209"
 | 芬蘭 | + 358 800526136 |    週一到週五，09AM 到下午6點 |
 | 葡萄牙 |    + 351 800600087 |    週一到週五，09AM 到下午6點 |
 | US |  866-425-4709 |  週一到週五，上午6點至下午6： PST |
-| 加拿大 |  877-345-2661 |  週一到週五，上午6點至下午6： PST |
+| Canada |  877-345-2661 |  週一到週五，上午6點至下午6： PST |
 | 中國 |   400-805-6783 |  週一到週五，上午9點到下午6點 |
 | 日本 |   0120-03-5241 |  週一到週五，上午9點到5：30PM |
-| 澳洲 |   1800-217-709 |  週一到週五，上午8點至8PM |
+| 澳大利亞 |   1800-217-709 |  週一到週五，上午8點至8PM |
 | 新加坡 |   1800 622-1816 | 週一到週五，8：30AM 至5：30PM |
 | 紐西蘭 | 0800 471 640 |  週一到週五，上午8點到下午6點 |
 

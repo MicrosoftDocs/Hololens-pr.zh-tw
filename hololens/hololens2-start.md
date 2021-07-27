@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636516"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659229"
 ---
 # <a name="set-up-your-hololens-2"></a>設定您的 HoloLens 2
 
@@ -25,7 +25,7 @@ ms.locfileid: "113636516"
 
 在下一節中，您將瞭解如何使用 HoloLens 並與全像的互動。 若要直接跳到這篇文章，請參閱[HoloLens 2](hololens2-basic-usage.md)。
 
-## <a name="before-you-start"></a>在您開始使用 Intune 之前
+## <a name="before-you-start"></a>開始之前
 
 開始之前，請確定您有下列可用：
 
@@ -39,41 +39,44 @@ ms.locfileid: "113636516"
 
 ## <a name="set-up-windows"></a>設定 Windows
 
-當您第一次開始 HoloLens 2 時，您的第一個工作是設定 Windows 全像全像）。  當您啟動 HoloLens 時，您會聽到音樂並查看 Windows 標誌。
+當您第一次開始 HoloLens 2 時，您的第一個工作是設定 Windows 全像全像）。  當您啟動 HoloLens 時，您會聽到音樂並查看 Microsoft 標誌。
 
-![第一次開機期間的第一個畫面](images/01-magic-moment.png)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
+<br/>
+<img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 您將會看到 hummingbird 的四處飛行。
 
-![Hummingbird 飛行](images/hummingbird-1.png)
+<img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-跟您手。
+它會跟著您手。
 
-![Hummingbird 飛行特寫](images/hummingbird-2.png)
+<img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-HoloLens 2 將逐步引導您完成下列步驟：
+將會顯示具有 Microsoft 標誌的按鈕。 按下按鈕，HoloLens 2 將會逐步引導您完成下列步驟：
 
 1. 選取您的語言。
 
-    ![選取語言](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. 選取您的區域。
 
-    ![選取區域](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. HoloLens 您的眼睛校正。  如果您選擇略過校正，系統會在您下次登入時提示您。 
 
     1. 首先，您將會調整您的面板。
     
-        ![校正選取畫面](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. 為了進行校正，您將會看到一組目標 (稱為 gem) 。 如果您在校正期間閃爍或關閉您的眼睛，但不想 stare 空間或實體空間中的其他物件，則可正常運作。 HoloLens 使用此程式來瞭解您的眼睛位置，讓它能夠更妥善地呈現您的全像世界。 
 
-        ![調整您的眼睛](images/07-adjust-eyes.png)
+        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
         在校正之後，即使面板在您的頭上轉移，還是會正確顯示全像投影。 校正資訊會儲存在本機裝置上，而且不會與任何帳戶資訊相關聯。 如需詳細資訊，請參閱 [校正資料和安全性](hololens-calibration.md#calibration-data-and-security)。
 
-        ![校正已完成](images/calibration-complete.png)
+        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. 連線至網際網路 (選取 Wi-Fi 或您的乙太網路連接) 。
 
@@ -112,7 +115,10 @@ HoloLens 2 將逐步引導您完成下列步驟：
         
 1. 選取 **[下一步]** 以安裝鳶尾花登入。 您將會經歷類似的視覺校正體驗。 當掃描完成時，請選取 [ **完成** ]。 您也可以選取 [ **略過** ] 略過此步驟。
     
-    ![鳶尾花安裝 ](images/setup-iris.png) ![ 鳶尾花安裝程式完成](images/iris-setup-complete.png) 
+    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
      
   
 1. 您將設定 PIN 以登入裝置。 此 PIN 是裝置特定的。 
@@ -122,28 +128,32 @@ HoloLens 2 將逐步引導您完成下列步驟：
     ![設定 Windows Hello 釘選](images/windows-hello-pin.png)
 
     ![Windows Hello安裝成功](images/windows-hello-successful.png) 
+
     
 1. 選取是否要在 HoloLens 2 上啟用語音。
 
-    ![啟用 Cortana](images/22-do-more-with-voice.png)
+    <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
 1. 選取是否要在 HoloLens 2 上啟用位置。
     
-    ![啟用定位服務](images/setup-location-services.png)
+    <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
 1. 選取您的遙測層級。 如果可以，請啟用選用的遙測。 這種資訊真的有助於 HoloLens 工程團隊。
 
-     ![遙測層級](images/24-telemetry.png)
+    <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
 
 1. 瞭解如何在 HoloLens 2 上使用開始手勢。
 
-     ![瞭解如何使用開始手勢，圖1](images/26-01-startmenu-learning.png)
+    <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
-     ![瞭解如何使用開始手勢，圖2](images/26-02-startmenu-learning.png)
+    <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
+    
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+    
+    恭喜！  安裝程式已完成，而且您已準備好使用 HoloLens！
 
-恭喜！  安裝程式已完成，而且您已準備好使用 HoloLens！
-
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 

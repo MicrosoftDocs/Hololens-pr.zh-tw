@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 87b606e634d4035da02802ddd1a8e1a980f1f1d6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636079"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659194"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -38,7 +38,7 @@ ms.locfileid: "113636079"
 | [憑證管理員的 PFX 檔案支援](#pfx-file-support-for-certificate-manager) | 透過設定 UI 新增 PFX 憑證 | 使用者 | 20348.1405 |
 | [在 HoloLens 上設定 View advanced 診斷報表](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看裝置上的 MDM 診斷記錄 | 疑難排解 | 20348.1405 |
 | [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
-
+| [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 變更報告 HoloLens 詳細資料
 
@@ -123,12 +123,18 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 
 我們希望有這項較新的視聽意見反應，更容易收集診斷資料，並更快速地針對您的問題進行疑難排解。
 
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>僅使用私人存放區應用程式進行 Microsoft Store
 
+已針對 HoloLens 啟用 RequirePrivateStoreOnly 原則。 此原則可讓 Microsoft Store 應用程式設定為只顯示為您的組織設定的私人存放區。 限制只能存取您所提供的應用程式。
+
+深入瞭解 [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
 ### <a name="fixes-and-improvements"></a>修正和改善：
 
 - 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 已修正檔案 [上傳和下載超時的裝置入口網站已知問題。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- 解決從 HoloLens 裝置報告合規性屬性的相關問題;可能需要重新開機，才能在 Insider build 上觸發正確的報告。  
+- 更新全新閃爍時所安裝的現成版本遠端協助。
 
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build

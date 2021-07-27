@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635665"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659109"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>參與 HoloLens 檔
 
@@ -29,7 +29,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 | 混合實境 | [MicrosoftDocs/mixed-事實](/windows/mixed-reality) |
 | VR 愛好者指南 | [MicrosoftDocs/mixed-現實/愛好者指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
-## <a name="before-you-start"></a>在您開始使用 Intune 之前
+## <a name="before-you-start"></a>開始之前
 
 如果您還沒有帳戶，則必須[建立 GitHub 帳戶](https://github.com/join)。
 
@@ -53,11 +53,16 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 1. 流覽至您想要在「混合式事實檔」資料夾中編輯的文章。
 
-2. 選取右上方的 [編輯] 按鈕 (鉛筆圖示) ，它會自動將可處置分支從 ' master ' 分支中分叉。
+2. 選取右上方的 [編輯] 按鈕 (鉛筆圖示) 。
 
    ![編輯文章。](images/editpage.png)
+
+   這會自動將可處置分支從預設分支（ _master_）分叉。
+
+   > [!NOTE]
+   > 本文包含對 _master_ 的參考，這是 Microsoft 不再使用的詞彙。 從軟體中移除該字詞時，我們也會將其從本文中移除。
    
-3. 根據「 [Markdown 基本概念](#markdown-basics)」編輯文章的內容。
+3. 根據 [Markdown 基本概念](#markdown-basics)編輯文章的內容。
 
 4. 更新每篇文章頂端的中繼資料：
 
@@ -70,7 +75,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
    
 5. 當您完成文章編輯之後，請向下滾動並選取 [ **建議檔案變更**]。
 
-6. 在下一個頁面上，選取 [ **建立提取要求** ]，將自動建立的分支合併至 [master]。
+6. 在下一個頁面上，選取 [ **建立提取要求** ]，將自動建立的分支合併至預設分支 _master_。
 
 7. 針對您要編輯的下一篇文章重複上述步驟。
 
@@ -102,9 +107,12 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 使用下列工作流程，透過 web 瀏覽器中的 GitHub 在檔存放庫中 *建立新文章*：
 
-1. 使用右上方的 [ **分叉** ] 按鈕) ，在 MicrosoftDocs/mixed 事實 ' master ' 分支 (建立分支。
+1. 使用右上方的 [**分叉**] 按鈕，從預設分支 _master_（MicrosoftDocs/mixed）建立分支。
 
-   ![分叉 master 分支。](images/forkbranch.png)
+   ![派生預設分支，目前名為 "master"。](images/forkbranch.png)
+
+   > [!NOTE]
+   > 本文包含對 _master_ 的參考，這是 Microsoft 不再使用的詞彙。 從軟體中移除該字詞時，我們也會將其從本文中移除。
    
 2. 在 [mixed---檔] 資料夾中，選取右上方的 [ **建立新** 檔案]。
 
@@ -129,7 +137,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
    ---
    ```
 
-5. 根據 [上一節](#editing-an-existing-article)中的指示，填寫相關的元資料欄位。
+5. 填入相關的元資料欄位，如稍早在 [編輯現有文章](#editing-an-existing-article)中所述。
 
 6. 使用 [Markdown 基本概念](#markdown-basics)來撰寫文章內容。
 
@@ -137,7 +145,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 8. 完成時，選取 [ **認可新** 檔案]。
 
-9. 選取 [ **新增提取要求** ]，並將分叉的「主要」分支合併至 MicrosoftDocs/mixed 事實 ' master ' (確定箭號指向) 的正確方式。
+9. 選取 [ **新增提取要求** ]，並將您的分支 _主要_ 分支合併至 MicrosoftDocs/mixed-reality _master_ (確定箭號指向正確的目的地) 。
 
    ![從您的分支建立提取要求至 MicrosoftDocs/mixed-事實](images/pr-to-master.png)
 
@@ -150,7 +158,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 ### <a name="adding-tables"></a>加入資料表
 
-由於 docs.microsoft.com 樣式表的方式，即使您嘗試內嵌 CSS，它們也不會有框線或自訂樣式。 這項作業會在一小段時間內正常運作，但最終平臺會從資料表中去除樣式。 所以事先規劃，讓您的資料表保持簡單明瞭。 [以下是讓 Markdown 資料表更簡單的網站](https://www.tablesgenerator.com/markdown_tables)。
+由於 docs.microsoft.com 樣式表的方式，即使您嘗試內嵌 CSS，它們也不會有框線或自訂樣式。 這項作業會在一小段時間內正常運作，但最終平臺會從資料表中去除樣式。 所以事先規劃，讓您的資料表保持簡單明瞭。 以下是讓 Markdown 資料表變得簡單的網站： [資料表產生器]] (https://www.tablesgenerator.com/markdown_tables) 。
 
 如果您使用 Visual Studio Code，[適用于 Visual Studio Code 的檔 Markdown 延伸](/teamblog/docs-extension)模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code)以編輯檔。
 
@@ -164,7 +172,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 >1. 派生 MicrosoftDocs/mixed 事實存放庫。
 >2. 已在您的分叉中編輯文章。
 >3. 將您在文章中參考的影像上傳至您分叉中的「混合式事實-檔/影像」資料夾。
->4. 建立 **提取要求** ，以將您的分支合併至 MicrosoftDocs/mixed 事實 ' master ' 分支。
+>4. 建立 **提取要求** ，以將您的分支合併至 MicrosoftDocs/mixed reality _master_ 分支。
 >
 >若要瞭解如何設定您自己的分支存放庫，請依照指示來 [建立新的文章](#creating-a-new-article)。
 
@@ -175,14 +183,14 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 >[!NOTE]
 >在 review.docs.microsoft.com 上預覽您的變更只適用于 Microsoft 員工
 
-Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就可以在 </hololens？ branch = master> 之前，先複習內容。 使用左邊資料行中的目錄來尋找您的文章。
+Microsoft 員工：當您的投稿合併到預設分支（ _master_）時，您可以在 </hololens？ branch = master> 之前，先審核內容。 使用左邊資料行中的目錄來尋找您的文章。
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>在瀏覽器中編輯和使用桌面用戶端編輯
 
 在瀏覽器中編輯是進行快速變更的最簡單方式，不過，有幾個缺點：
 
 - 您不會收到拼寫檢查。
-- 您不會在其他文章中取得任何智慧連結 (您必須手動輸入文章的檔案名) 。
+- 您不會在其他文章中取得任何智慧型連結 (您必須手動輸入文章的檔案名) 。
 - 上傳和參考影像可能很麻煩。
 
 如果您不想處理這些問題，請使用桌面用戶端（例如[Visual Studio Code](https://code.visualstudio.com/) ），並在參與時提供一些[實用的擴充](#useful-extensions)功能。
@@ -191,7 +199,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 
 基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用[Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>安裝程式
+### <a name="setup"></a>設定
 
 請依照下列步驟設定 Visual Studio Code，以使用此存放庫：
 
@@ -216,7 +224,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 
 1. 請確定您複製的分支是最新的官方存放庫。
 
-   1. 在網頁瀏覽器中，建立提取要求，以將最近的變更從 MicrosoftDocs/mixed 事實 ' master ' 中的其他參與者同步至您的分支 (確定箭號指向正確的) 方式。
+   1. 在網頁瀏覽器中，建立提取要求，以將最近的變更從 MicrosoftDocs/mixed 事實、 _master_ 的預設分支同步至您的分叉 (確定箭號指向正確的目的地) 。
       
       ![將 MicrosoftDocs/mixed 的變更同步至您的分叉](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
       
       ![按一下 [同步] 按鈕](images/sync-back.png)
       
-3. 在網頁瀏覽器中，建立提取要求，將您分支中的新變更同步處理回 MicrosoftDocs/mixed 事實 ' master ' (確定箭號指向正確的) 方式。
+3. 在網頁瀏覽器中，建立提取要求，以將您分支中的新變更同步處理回 MicrosoftDocs/mixed reality _master_ (確定箭號指向正確的目的地) 。
 
    ![從您的分支建立提取要求至 MicrosoftDocs/mixed-事實](images/pr-to-master.png)
 

@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9d9e521f3e337b3a48a60c19e52bfeb3186507af
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640350"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659585"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>將 HoloLens 設定為 kiosk
 
@@ -82,7 +82,7 @@ ms.locfileid: "113640350"
 
 | &nbsp; |支援的使用者類型 | 自動登入 | 多個存取層級 |
 | --- | --- | --- | --- |
-|單一應用程式 kiosk |Azure Active Directory (Azure AD) 或本機帳戶中的受管理服務帳戶 (MSA)  |是 |否 |
+|單一應用程式 kiosk | Azure Active Directory (Azure AD) 或本機帳戶中的 Microsoft 帳戶 (MSA)  |是 |否 |
 |多應用程式 kiosk |Azure AD 帳戶 |否 |是 |
 
 如需如何使用這些功能的範例，請參閱下表。

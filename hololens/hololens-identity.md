@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4d959d99b65085aea2a776725abdb36e27b43b81
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640384"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659177"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
@@ -45,7 +45,7 @@ HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多�
 > 1-Azure AD Premium 不需要登入裝置。 不過，低觸控雲端式部署的其他功能（例如自動註冊和 Autopilot）需要此功能。
 
 > [!NOTE]
-> 2-雖然 HoloLens 2 裝置最多可支援 64 Azure AD 帳戶，但只有10個帳戶可以註冊鳶尾花 Authentication。 這與其他適用于[商務 Windows Hello 的生物識別驗證選項](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)一致。
+> 2-雖然 HoloLens 2 裝置最多可支援 64 Azure AD 帳戶，但只有31個帳戶可能會註冊鳶尾花 Authentication。 這與其他適用于[商務 Windows Hello 的生物識別驗證選項](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)一致。
 
 ## <a name="setting-up-users"></a>設定使用者
 
