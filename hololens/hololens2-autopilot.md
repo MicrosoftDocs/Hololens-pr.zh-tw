@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: jarrettr
-ms.openlocfilehash: cc73f5cbb438119f4c626ae76db9c91373e19aff
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ca50a4b0ec2e3687a350ca654aaa60c144c4c78a
+ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635359"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991435"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -210,7 +210,7 @@ ms.locfileid: "113635359"
 1. 在 [ **審核 + 建立** ] 頁面上，檢查設定，然後選取 [ **建立** ] 以建立設定檔。  
 
    > [!div class="mx-imgBorder"]
-   > ![審核 + 建立](./images/hololens-ap-profile-summ.png)
+   > ![檢閱 + 建立](./images/hololens-ap-profile-summ.png)
 
 ### <a name="6-verify-the-esp-configuration"></a>6. 確認 ESP 設定
 
@@ -329,3 +329,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 - 如果您的裝置已註冊至 Autopilot 服務，而且設定檔已在記憶體入口網站上指派，請聯絡 HoloLens[支援](/hololens/) (請參閱「支援」卡片) 。 請開啟支援票證，並在適用時，藉由在 (OOBE) 的全新體驗期間捕捉 [離線診斷記錄](hololens-diagnostic-logs.md#offline-diagnostics) 來包含螢幕擷取畫面和記錄。
 - 若要從裝置回報問題，請在您的 HoloLens 上使用意見反應中樞應用程式。 在意見反應中樞中，選取 [ **Enterprise 管理**  >  **裝置**] 類別。
 - 若要提供 HoloLens Autopilot 的一般意見反應，您可以提交這[份問卷](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)
+
+## <a name="delete-autopilot-devices"></a>刪除 Autopilot 裝置
+
+您可能不想再使用裝置進行 Autopilot，或向不同的租使用者註冊您的裝置。 如果您想要這樣做，請閱讀 h[允許來刪除 Autopilot 裝置。](/mem/autopilot/add-devices#delete-autopilot-devices)

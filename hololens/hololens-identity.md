@@ -18,25 +18,25 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e2c5c98eb62f9e8ec19306b2cb460004eb8ae8dd
+ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659177"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991418"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
 > [!NOTE]
 > 本文是 IT 專業人員和技術愛好者的技術參考。 如果您要尋找 HoloLens 設定指示，請參閱「[設定您的 HoloLens (第一代) ](hololens1-start.md)」或「[設定您的 HoloLens 2](hololens2-start.md)」。
 
-就像其他 Windows 裝置一樣，HoloLens 一律會在使用者內容下運作。 一律會有使用者身分識別。 HoloLens 處理身分識別的方式幾乎與其他 Windows 10 裝置一樣。 本文將深入探討 HoloLens 上的身分識別，並著重于 HoloLens 與其他 Windows 10 裝置有何不同。
+就像其他 Windows 裝置一樣，HoloLens 一律會在使用者內容下運作。 一律會有使用者身分識別。 HoloLens 處理身分識別的方式幾乎與其他 Windows 裝置一樣。 本文將深入探討 HoloLens 上的身分識別，並著重于 HoloLens 與其他 Windows 裝置有何不同。
 
 HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多個使用者帳戶來登入。 以下概述 HoloLens 的身分識別類型和驗證選項：
 
 | 身分識別類型 | 每一裝置的帳戶 | 驗證選項 |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web 認證提供者</li><li>Azure Authenticator 應用程式</li><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2<sup>2</sup> </li><li>針對 &ndash; HoloLens (第1代) 釘選，HoloLens 2</li><li>密碼</li></ul> |
+| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web 認證提供者</li><li>Azure Authenticator 應用程式</li><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2<sup>2</sup> </li><li>FIDO2 安全性金鑰</li><li>針對 &ndash; HoloLens (第1代) 釘選，HoloLens 2</li><li>密碼</li></ul> |
 | [Microsoft 帳戶 (MSA) ](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2</li><li>針對 &ndash; HoloLens (第1代) 釘選，HoloLens 2</li><li>密碼</li></ul> |
 | [本機帳戶](/windows/security/identity-protection/access-control/local-accounts) | 1 | 密碼 |
 
@@ -49,11 +49,11 @@ HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多�
 
 ## <a name="setting-up-users"></a>設定使用者
 
-設定新使用者的最常見方式，是在 HoloLens 的全新體驗 (OOBE) 。 在安裝期間，HoloLens 會提示使用者使用他們想要在裝置上使用的帳戶登入。 此帳戶可以是已在 Azure 中設定的取用者 Microsoft 帳戶或企業帳戶。 請參閱將[HoloLens 設定 (第1代) ](hololens1-start.md)或[HoloLens 2](hololens2-start.md)。
-
-如同其他裝置上的 Windows，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 相同的帳戶也會使用 Windows 的帳戶管理員 api，為應用程式提供單一登入，例如 Edge 或 Microsoft Store。  
+有兩種方式可以在 HoloLens 上設定新的使用者。 最常見的方式是在 HoloLens 的 (OOBE) 期間內體驗。 如果使用 Azure Active Directory，[其他使用者可以](#setting-up-multi-user-support-azure-ad-only)使用其 Azure AD 認證在 OOBE 之後登入。 在 OOBE 期間，使用 MSA 或本機帳戶設定的 HoloLens 裝置，將不會支援多個使用者。 請參閱將[HoloLens 設定 (第1代) ](hololens1-start.md)或[HoloLens 2](hololens2-start.md)。
 
 如果您使用企業或組織帳戶來登入 HoloLens，HoloLens 在組織的 IT 基礎結構中進行註冊。 此註冊可讓您的 IT 系統管理員設定行動裝置管理 (MDM) 以將群組原則傳送至您的 HoloLens。
+
+如同其他裝置上的 Windows，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 相同的帳戶也會使用 Windows 的帳戶管理員 api，為應用程式提供單一登入，例如 Edge 或 Microsoft Store。 
 
 根據預設，和其他 Windows 10 裝置一樣，當 HoloLens 重新開機或從待命模式恢復時，您必須再次登入。 您可以使用設定應用程式來變更此行為，或可由群組原則控制該行為。
 
@@ -65,7 +65,10 @@ HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多�
 
 ### <a name="setting-up-multi-user-support-azure-ad-only"></a>設定多使用者支援 (只 Azure AD) 
 
-HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用此功能，您必須使用屬於組織的帳戶來設定裝置。 接著，相同租使用者中的其他使用者可以從登入畫面登入裝置，或在 [開始] 面板上，藉由使用 [使用者] 磚來登入裝置。 一次只能有一位使用者登入。 當使用者登入時，HoloLens 登出先前的使用者。 裝置上的第一個使用者會被視為裝置擁有者，但 Azure AD 加入的情況下，請 [深入瞭解裝置擁有](security-adminless-os.md#device-owner)者。
+HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用此功能，您必須使用屬於組織的帳戶來設定裝置。 接著，相同租使用者中的其他使用者可以從登入畫面登入裝置，或在 [開始] 面板上，藉由使用 [使用者] 磚來登入裝置。 一次只能有一位使用者登入。 當使用者登入時，HoloLens 登出先前的使用者。 
+
+>[!IMPORTANT]
+> 裝置上的第一個使用者會被視為裝置擁有者，但 Azure AD 加入的情況下，請 [深入瞭解裝置擁有](security-adminless-os.md#device-owner)者。
 
 所有使用者都可以使用安裝在裝置上的應用程式。 不過，每個使用者都有自己的應用程式資料和喜好設定。 從裝置移除應用程式，會為所有使用者移除應用程式。  
 
@@ -123,9 +126,24 @@ HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用
 
 ### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>如何在 HoloLens 2 上實施鳶尾花生物識別驗證？
 
-HoloLens 2 支援鳶尾花 authentication。 鳶尾花是以 Windows Hello 技術為基礎，並支援 Azure Active Directory 和 Microsoft 帳戶使用。 鳶尾花的執行方式與其他 Windows Hello 技術相同，並可達成最多 1/10 萬的生物特徵辨識安全性。
+HoloLens 2 支援鳶尾花 authentication。 鳶尾花是以 Windows Hello 技術為基礎，並支援 Azure Active Directory 和 Microsoft 帳戶使用。 鳶尾花的執行方式與其他 Windows Hello 技術相同，並可達成最多[1/10 萬的生物特徵辨識安全性](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello)。
 
 如需詳細資訊，請參閱[Windows Hello 的生物特徵辨識需求和規格](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)。 深入瞭解商務[Windows Hello](/windows-hardware/design/device-experiences/windows-hello)和[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
+
+### <a name="where-is-iris-biometric-information-stored"></a>鳶尾花生物特徵辨識資訊儲存在哪裡？
+
+鳶尾花生物特徵辨識資訊會儲存在本機每個[Windows Hello 規格](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored)的 HoloLens。 它不會共用，而且會受到兩層加密的保護。 其他使用者（甚至是系統管理員）無法存取，因為 HoloLens 上沒有系統管理員帳戶。
+
+### <a name="do-i-have-to-use-iris-authentication"></a>我必須使用鳶尾花 authentication 嗎？
+否，您可以在安裝期間略過此步驟。 
+
+![設定鳶尾花](./images/setup-iris.png)
+
+HoloLens 2 提供許多不同的驗證選項，包括 FIDO2 安全性金鑰。
+
+### <a name="can-iris-information-be-removed-from-the-hololens"></a>是否可以從 HoloLens 移除鳶尾花資訊？
+是，您可以在設定中手動移除。
+
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>帳戶類型如何影響登入行為？
 
