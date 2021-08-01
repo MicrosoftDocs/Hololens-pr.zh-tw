@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
-ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
+ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114696326"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009335"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -39,7 +39,8 @@ ms.locfileid: "114696326"
 | [在 HoloLens 上設定 View advanced 診斷報表](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看裝置上的 MDM 診斷記錄 | 疑難排解 | 20348.1405 |
 | [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
 | [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
-| [修正和改善](hololens-insider.md#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1408 |
+| [低儲存體記錄收集改進](#low-storage-log-collection-improvements) | 在低儲存情況下，記錄收集案例的改進。 | IT 管理員 | 20348.1412 |
+| [修正和改善](hololens-insider.md#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 變更報告 HoloLens 詳細資料
 
@@ -130,13 +131,16 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 
 深入瞭解 [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
+### <a name="low-storage-log-collection-improvements"></a>低儲存體記錄收集改進
+
+在收集診斷記錄檔時，裝置似乎磁碟空間不足的情況，將會建立名為 **StorageDiagnostics.zip** 的額外報告。 低儲存體的閾值是由 Windows[儲存體的意義](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)自動決定。
+
 ### <a name="fixes-and-improvements"></a>修正和改善
 
 - 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 已修正檔案 [上傳和下載超時的裝置入口網站已知問題。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - 解決從 HoloLens 裝置報告合規性屬性的相關問題;可能需要重新開機，才能在 Insider build 上觸發正確的報告。  
 - 更新全新閃爍時所安裝的現成版本遠端協助。
-
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build
 

@@ -13,21 +13,23 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: jarrettr
-ms.openlocfilehash: ca50a4b0ec2e3687a350ca654aaa60c144c4c78a
-ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
+ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991435"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009352"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
+
+> [!NOTE]
+> Microsoft 端點管理員中 HoloLens 的 Autopilot 設定會從 **公開預覽** 轉換為 **正式** 運作。 所有租使用者都可以在記憶體系統管理中心設定 Autopilot。
 
 從 Windows 全像2004版開始，HoloLens 2 支援 Windows Autopilot 的[自我部署模式](/mem/autopilot/self-deploying)，Microsoft Intune (不支援協力廠商 MDMs。 系統管理員可以在 Microsoft 端點管理員中設定 (OOBE) 的全新體驗，並讓終端使用者在幾乎不需要互動的情況之下，準備裝置以供商務使用。 這可減少庫存管理的額外負荷、實際操作裝置準備的成本，以及員工在安裝體驗期間的支援電話。 若要深入瞭解，請參閱[Windows Autopilot](/mem/autopilot/windows-autopilot)檔。
 
 如同 Surface 裝置，建議客戶與 Microsoft[雲端解決方案提供者](https://partner.microsoft.com/cloud-solution-provider) (轉銷商或散發者) 合作，以透過合作夥伴中心取得向 Autopilot 服務註冊的裝置。 裝置註冊的其他方法會在「 [新增裝置](/mem/autopilot/add-devices) 」檔中列出，但利用 Microsoft 的通路合作夥伴可確保最有效的端對端路徑。
 
-> [!NOTE]
-> 從 11/20/2020 Autopilot 設定，Microsoft 端點管理員中的 HoloLens 正在轉換為 **公開預覽**。 客戶不再需要註冊個人預覽版，而且所有租使用者都可以在記憶體系統管理中心設定 Autopilot。
+
 
 當使用者啟動 Autopilot 自我部署程式時，Autopilot 會完成下列步驟：
 
