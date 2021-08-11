@@ -2,10 +2,10 @@
 title: HoloLens 2 的購買位置
 description: 可用的全球 ADR 連絡人和國家/地區清單。
 keywords: HoloLens 2 購買選項、國際購買、國際轉銷商、ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658826"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 的購買位置
 
@@ -30,11 +30,12 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 
 | HoloLens 2版| 支援的市場 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港、臺灣、泰國、越南、馬來西亞和南韓國 |
-| 具有遠端協助的 HoloLens 2 | 澳大利亞、日本、加拿大、US、奧地利、比利時、丹麥、芬蘭、法國、德國、義大利、荷蘭、挪威、西班牙、瑞典、瑞士、英國和愛爾蘭 <sup>1</sup> 
-| HoloLens 2工業版 *(啟動)* | 美國、加拿大、德國、法國、英國、愛爾蘭、中國、日本、澳大利亞、義大利、紐西蘭、荷蘭、瑞士、西班牙、奧地利、瑞典、芬蘭、挪威、丹麥、比利時、葡萄牙、波蘭、新加坡、香港、臺灣、泰國、越南、馬來西亞和南韓國 |
-| HoloLens 2開發版 | 加拿大、德國、法國、英國、愛爾蘭、日本、澳大利亞、義大利、瑞士和紐西蘭 |
-- <sup>1</sup> 這份清單是動態的，請回來查看更新
+| HoloLens 2 | 澳大利亞、奧地利、比利時、加拿大、中國、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、馬來西亞、荷蘭、紐西蘭、挪威、波蘭、葡萄牙、新加坡、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  |
+| 具有遠端協助的 HoloLens 2 | 澳大利亞、奧地利、比利時、加拿大、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、韓國、馬來西亞、荷蘭、紐西蘭、挪威、新加坡、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  <sup>1</sup> 
+| HoloLens 2工業版 *(啟動)* | 澳大利亞、奧地利、比利時、加拿大、中國、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、馬來西亞、荷蘭、紐西蘭、挪威、波蘭、葡萄牙、新加坡、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  |
+| HoloLens 2開發版 | 澳大利亞、加拿大、法國、德國、愛爾蘭、義大利、日本、紐西蘭、瑞士和 UK |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> 這份清單是動態的，請回來查看更新
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>尋找授權的 HoloLens 2 轉銷商
 請參閱下表，以取得依區域 HoloLens 2 可用性和購買選項。

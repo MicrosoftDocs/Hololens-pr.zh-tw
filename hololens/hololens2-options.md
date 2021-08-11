@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 4ba759dfa491725011977c39d6e51ed583a21919ea271f0c3d6482c0847938fb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658931"
 ---
 # <a name="compare-hololens-2-options"></a>比較 HoloLens 2 選項
 
@@ -74,7 +74,7 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 |  [混合現實的 Azure 雲端服務](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | 瞭解如何使用 Azure 雲端服務開發解決方案。                                       |
 |  [開始開發 HoloLens 2](/windows/mixed-reality/develop/development?tabs=unity)         | 打造混合的現實解決方案，以符合您的需求。                                                 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 針對裝置終端使用者，請參閱「[讓您的 HoloLens 2 準備好開始使用](hololens2-setup.md)」。
 

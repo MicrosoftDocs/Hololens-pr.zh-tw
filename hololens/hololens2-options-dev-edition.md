@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658893"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2開發版
 
@@ -32,7 +32,7 @@ ms.locfileid: "113639670"
 
 HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity Pro 試用版，以及3個月的 PiXYZ 外掛程式試用版：
 
-| 套件組合功能 | 描述 |
+| 套件組合功能 | Description |
 |---|---|
 |  [Unity](https://unity.com/) | 即時3D 開發平臺。   |
 |  [適用于 Unity 的 Pixyz 外掛程式](https://www.pixyz-software.com/plugin/) | 用來連接工程 &amp; CAD 世界與開發世界的橋樑。   |

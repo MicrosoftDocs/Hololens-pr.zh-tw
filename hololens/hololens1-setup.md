@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: f5b16e579eca725158ed99ef7a912b72a7cab7ab
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662190"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>取得您的 HoloLens (第1代) 可供使用
 

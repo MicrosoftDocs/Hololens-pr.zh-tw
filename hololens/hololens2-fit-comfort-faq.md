@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2 適合和舒適性常見問題集
-description: 隨時關注有關如何適應 HoloLens 2 的常見問題解答回覆，並在混合實境體驗中保持舒適。
+title: HoloLens 2 符合和緩和的常見問題
+description: 隨時掌握有關如何配合您的 HoloLens 2，並掌握混合現實體驗的最新相關常見問題的解答。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,57 +13,57 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 9edcf4e49d92bbdcab523206e4685f2d7a8d8b0e2c2ccf8391ea2b32e304201f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659787"
 ---
-# HoloLens 2 適合和舒適性常見問題
+# <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>HoloLens 2 符合並緩和常見問題
 
-以下是一些在使用 HoloLens 時保持舒適並獲得最佳經驗的提示。
+以下是一些有關如何使用您的 HoloLens 來保持熟悉並獲得最佳體驗的秘訣。
 
-如需戴上和調整裝置的逐步說明和影片，請參閱[讓您的 HoloLens 2 準備好可供使用](hololens2-setup.md)。
+如需逐步指示及如何調整裝置的相關影片，請參閱[讓您的 HoloLens 2 準備好使用](hololens2-setup.md)。
 
 > [!NOTE]
-> 本主題中的適合和舒適性提示僅作為一般指導&mdash;它們無法取代任何法律或法規，也無法取代您在使用 HoloLens 時的自我判斷力。 保持安全，玩得開心！
+> 本主題中的「配合」和「緩和」秘訣僅適用于一般指導方針 &mdash; ，其不會取代任何法律或法規，或您在使用 HoloLens 時的良好判斷。 保持安全，而且樂趣很有趣！
 
-以下是一些在使用 HoloLens 時保持舒適並獲得最佳經驗的提示。
+以下是一些有關如何使用您的 HoloLens 來保持熟悉並獲得最佳體驗的秘訣。
 
-## 當我使用裝置時，感到不適。 我該怎麼做？
+## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>我在使用裝置時遇到不適感。 我該怎麼辦？
 
-如果您感到不舒服，請休息直到感覺好些為止。 請坐在光線充足的房間裡放鬆一下。 下次使用 HoloLens 時，一開始請先嘗試使用較短的時間。
+如果您遇到不適感，請先中斷，直到您感覺更好。 試著坐在一個好用的房間，然後放鬆一點。 下次使用您的 HoloLens 時，請先嘗試使用較短的一段時間。
 
-如需詳細資訊，請參閱 [HoloLens 健康與安全](https://go.microsoft.com/fwlink/p/?LinkId=746661)。
+如需詳細資訊，請參閱[HoloLens 的健全狀況和安全性](https://go.microsoft.com/fwlink/p/?LinkId=746661)。
 
-## 我看不到整個全像畫面，或者我的全像投影被截斷
+## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>我看不到全全像全像的框架，或我的全像是剪下
 
-若想看到全像畫面的頂端邊緣，請移動裝置，使其位於頭部較高處，或讓頭帶稍微向上傾斜。 若想看到底部邊緣，請移動裝置，使其位於頭部較低處，或將頭帶稍微向下傾斜。 如果看不到檢視畫面的左邊緣或右邊緣，請確保 HoloLens 面板位於前額正中央。
+若要查看全像攝影框架的上邊緣，請移動裝置，使其在您的頭部較高，或將 headband 的角度稍微放在前方。 若要查看下邊緣，請將裝置移至您的前端上，或將 headband 的角度稍微放在前方。 如果看不到視圖框架的左邊或右邊，請確定 HoloLens 面板的中心冷汗。
 
-## 我需要向上看或向下看才看得到全像投影
+## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>我需要查閱或向下查看全像影像
 
-請嘗試調整裝置面板的位置，使全像畫面符合您的自然目光。 方法如下：
+請嘗試調整裝置面板的位置，讓全像攝影框架符合您的自然注視。 方式如下：
 
-- **如果您需要向上看才看得到全像投影**。 首先，將頭帶的背面移高一點。 然後，用一隻手握住頭帶保持在原位，另一隻手輕輕旋轉面板，讓您能夠獲得良好的全像畫面視野。
-- **如果您需要向下看才看得到全像投影**。 首先，將頭帶的背面移低一點。 然後，將拇指放在裝置臂下、將食指放在頭帶頂端，然後用拇指輕輕擠壓以旋轉面板，讓您能夠獲得良好的全像畫面視野。
+- **如果您需要查閱以查看全像影像**。 首先，將 headband 的背面移至您的頭上更高的位置。 然後使用一手勢來將 headband 放在原處，另一個用來將面板輕輕旋轉，讓您有絕佳的全像攝影框架。
+- **如果您需要向下查看全像影像**。 首先，將 headband 的背面向下移一點。 然後，將您的拇指放在裝置 arm 下，並將您的索引手指放在 headband 上方，然後以您的拇指輕輕地捏住面板來旋轉面板，讓您有很大的全像攝影框架。
 
-## 全像投影影像色彩或亮度看起來不對勁
+## <a name="hologram-image-color-or-brightness-does-not-look-right"></a>全像影像色彩或亮度看起來不正確
 
-請參閱 HoloLens 2 [顯示器的疑難排解步驟](hololens2-display.md)。
+請參閱 HoloLens 2[顯示疑難排解步驟](hololens2-display.md)。
 
-## 裝置在使用時向下滑，或者我需要把頭帶調到過緊才能固定
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>當裝置使用時，裝置會向下滑下，或者我需要讓 headband 太過嚴格以保持安全
 
-頭頂綁帶可以協助保持 HoloLens 固定在您的頭上，特別是如果您的移動量很大時。 綁帶也可以讓您稍微鬆開頭帶。 [了解如何使用頭頂綁帶](hololens2-setup.md#adjust-fit)。
+附帶的額外負荷有助於確保您的 HoloLens 安全，特別是當您四處移動時。 腕帶也可讓您 headband 一點。 [瞭解如何使用它](hololens2-setup.md#adjust-fit)。
 
-您還可以根據自己的頭部大小和形狀嘗試調整頭帶的位置&mdash;您可能需要向上或向下滑動，以便將它重新放置在前額上。
+您也可以根據您的前端大小和形狀來試驗 headband 的定位 &mdash; ，您可能需要將它向上或向下滑動，以將它重新置放到冷汗上。
 
-## 如何調整 HoloLens 以適合我的眼鏡？
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>我要如何調整 HoloLens，使其符合我的眼鏡？
 
-為了適應眼鏡，您可以傾斜面板。
+為了配合 eyewear，您可以傾斜面板。
 
-## 當我使用手勢時，我的手臂感到疲倦。 我該怎麼做？
+## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>當我使用手勢時，我的 arm 會感到厭倦。 我該怎麼處理？
 
-使用手勢時，無需將手臂伸出遠離身體。 保持手臂靠近您的身體，這樣您的手臂會更舒適，也不會那麼累。 您也可以使用手射線與全像投影互動，而無需抬起手臂。[深入了解手勢和手部射線](hololens2-basic-usage.md#the-hand-tracking-frame)。
+使用手勢時，不需要從您的主體延伸您的 arm。 讓它更接近您的位置，讓它更習慣，而且會較不厭倦。 您也可以使用手放射片來與全像影像互動，而不會讓您 [深入瞭解筆勢和手光線](hololens2-basic-usage.md#the-hand-tracking-frame)。
 
-也請務必嘗試[語音命令](hololens-cortana.md)。
+並請務必試用 [語音命令](hololens-cortana.md)。

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659219"
 ---
 # <a name="set-up-your-hololens-2"></a>設定您的 HoloLens 2
 
@@ -25,7 +25,7 @@ ms.locfileid: "114659229"
 
 在下一節中，您將瞭解如何使用 HoloLens 並與全像的互動。 若要直接跳到這篇文章，請參閱[HoloLens 2](hololens2-basic-usage.md)。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 開始之前，請確定您有下列可用：
 
@@ -153,7 +153,7 @@ ms.locfileid: "114659229"
     
     恭喜！  安裝程式已完成，而且您已準備好使用 HoloLens！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 
