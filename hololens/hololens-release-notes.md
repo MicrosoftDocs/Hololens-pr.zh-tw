@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c0beed39fa6b4642a581da6baac44c732642e74d8b2c41ebca1b6d3f24b127d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
+ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663321"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "116975490"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -33,6 +33,7 @@ ms.locfileid: "115663321"
 > 由於[21H1 組建中已解決的已知問題會影響遠端協助使用者](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)，我們暫時暫停了 Windows 全像版本21H1 更新的供應專案。 我們也已將預設的 Advanced Recovery 附隨 (ARC) 組建變更為 Windows 全像[20H2 版–2021年6月更新](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)。 ARC 組建現在會繼續以21H1 組建為目標。
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows全像21H1 版-2021 年7月更新
+
 - 組建20348.1010
 
 更新中的增強功能和修正：
@@ -41,18 +42,20 @@ ms.locfileid: "115663321"
 - 在所有支援的瀏覽器中使用 HTTPs 時，現在都會修正檔案上傳、下載、重新命名及刪除。
 - 已修正 Wi-Fi 屬性 UI 從設定 > 的網路啟動時，Wi-Fi proxy 無法儲存的問題 **& > 的狀態 > 屬性**。
 - 解決跨作業系統更新移除 eSIM 憑證的問題。 此修正可確保更新至21H1 版本時，會移除 eSIM 憑證和相關元件。
-- 修正在作業系統重設期間影響預先安裝應用程式的問題。 
-- 調整電池充電效能，以增加 CPU 載入時增加執行時間。
+- 修正在作業系統重設期間影響預先安裝應用程式的問題。
+- 調整電池充電效能，以增加 CPU 載入時增加執行時間。 在 HoloLens 2 裝置充電時，如果偵測到裝置正在執行經常性存取，則內部電池會以較慢的速度收取較慢的溫度。 正面的取捨是裝置較不可能因熱問題而關閉，其影響在於裝置的執行時間較長。 如果裝置執行很酷，則不會影響費用。
 
 ## <a name="windows-holographic-version-20h2--july-2021-update"></a>Windows全像20H2 版-2021 年7月更新
+
 - 組建19041.1157
 
 更新中的增強功能和修正：
 
-- 裝置入口網站在檔案總管遇到開啟鎖定檔案的問題時，有增強的方法可以通知客戶。 
+- 裝置入口網站在檔案總管遇到開啟鎖定檔案的問題時，有增強的方法可以通知客戶。
 - 在所有支援的瀏覽器中使用 HTTPs 時，現在都會修正檔案上傳、下載、重新命名及刪除。
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows全像21H1 版-2021 年6月更新
+
 - 組建20348.1007
 
 ### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>適用于公司或學校相機的 OneDrive 滾動上傳
@@ -77,9 +80,11 @@ ms.locfileid: "115663321"
 - 您必須針對裝置上的每個使用者帳戶啟用這項功能，而且只能主動上傳目前登入裝置之使用者的檔案。
 - 如果您在觀看設定頁面上的上傳計數時拍攝相片或影片，請注意，在目前的檔案完成上傳之前，暫止的檔案計數可能不會變更。
 - 如果您的裝置處於睡眠或關閉電源，Upload 將會暫停。 若要確保您的暫止上傳完成，請主動使用裝置，直到設定頁面閱讀「OneDrive 為最新狀態」或調整您的 **電源 & 睡眠** 設定。
+
 ### <a name="added-support-for-some-telemetry-policies"></a>已新增某些遙測原則的支援
 
 HoloLens 2 現在支援下列遙測原則：
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
@@ -88,16 +93,19 @@ HoloLens 2 現在支援下列遙測原則：
 System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一起使用，以在設定應用程式中擁有遙測和行為的完整控制。
 
 更新中的增強功能和修正：
+
 - 使用色彩校正來修正主要的視頻損毀。
 - 解決可能會在 [電源] 功能表中截斷文字的問題。
 - 啟用 RequirePrivateStoreOnly 原則的支援。
 
 ## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows全像版本20H2 –2021年6月更新
+
 - 組建19041.1154
 
 ### <a name="added-support-for-some-telemetry-policies"></a>已新增某些遙測原則的支援
 
 HoloLens 2 現在支援下列遙測原則：
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
@@ -108,9 +116,11 @@ System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一�
 我們建議您試用最新的組建，Windows 全像21H1 版。
 
 ## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows全像1903版-2021 年6月更新
+
 - 組建18362.1116
 
 更新中的增強功能和修正：
+
 - 此每月品質更新不包含任何值得注意的變更，建議您試用最新的組建，Windows 全像21H1 版。
 
 >[!IMPORTANT]
@@ -127,9 +137,9 @@ System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一�
 >目前，Microsoft HoloLens 2 支援 (錯誤和安全性修正的每月服務更新) 適用于下列版本：
 >- Windows全像20H2 版 (Build 19041.1128 +) 
 >- Windows全像2004版 (Build 19041.1103 +) 
->- Windows全像1903版 (Build 18362 +)  
+>- Windows全像1903版 (Build 18362 +) 
 >
-> 隨著 Windows 的全像21H1 版，**我們會停止全像1903版的每月服務 Windows 更新**。 這可讓我們專注于較新的版本，並持續提供重要的改良功能。 
+> 隨著 Windows 的全像21H1 版，**我們會停止全像1903版的每月服務 Windows 更新**。 這可讓我們專注于較新的版本，並持續提供重要的改良功能。
 
 
 | 功能名稱                                              | 簡短描述                                                                      | 目標對象 | 
