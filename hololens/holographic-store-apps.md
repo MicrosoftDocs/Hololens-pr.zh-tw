@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635852"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664762"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>從 Microsoft Store 尋找、安裝和卸載應用程式
 
@@ -113,9 +113,9 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 
 ### <a name="uninstall-from-the-start-menu"></a>從 [開始] 功能表解除安裝
 
-在 [ **開始** ] 功能表或 **所有應用程式** 清單中，瀏覽至應用程式。 選取並按住直到功能表出現，然後選取 [ **解除安裝**]。
+在 [開始] 功能表或 [所有應用程式] 清單中，瀏覽至應用程式。 選取並按住直到功能表出現，然後選取 [解除安裝]。
 
 ### <a name="uninstall-from-settings"></a>從 [設定] 解除安裝
-在 [**開始**] 功能表上，選取 [**設定 > 應用程式]。** 從清單中尋找應用程式，選取該應用程式，然後按一下 [ **解除安裝**]。
+在 [**開始**] 功能表上，選取 [**設定 > 應用程式]。** 從清單中尋找應用程式，選取該應用程式，然後按一下 [解除安裝]。
 
 如果您無法卸載應用程式，請使用意見反應中樞 [提出意見](/hololens/hololens-feedback) 反應。

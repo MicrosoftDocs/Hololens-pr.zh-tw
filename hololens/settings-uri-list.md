@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665619"
 ---
 # <a name="page-settings-visibility"></a>頁面設定可見度
 
@@ -121,7 +121,7 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 一般 <sup>2</sup>             | `privacy-general`       |
 | 筆墨 & 輸入個人化 <sup>2</sup>             | `privacy-speechtyping`       |
 | Location                 | `privacy-location`                    |
-| 傳訊                | `privacy-messaging`                   |
+| Messaging (傳訊)                | `privacy-messaging`                   |
 | 麥克風               | `privacy-microphone`                  |
 | 動作 <sup>2</sup>               | `privacy-motion`                  |
 | 通知            | `privacy-notifications`               |

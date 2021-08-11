@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5aa554f9e7fdc09c3112b628e0978ac3332bc57d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2cb497d850ff7ba2de66f69e8ec53e6dd36b773cc13d01b038def8d539e3b0c1
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665211"
 ---
 # <a name="provisioning-package"></a>布建套件
 
@@ -38,7 +38,7 @@ ms.locfileid: "113635512"
 > [!NOTE]
 > HoloLens (第1代) 對於使用布建套件 (**UniversalAppInstall**) 安裝應用程式的支援有限。 HoloLens (第1代) 裝置僅支援在 OOBE 期間透過 PPKG 安裝應用程式，且只支援在使用者內容安裝中安裝應用程式。
 
-## <a name="setup"></a>安裝程式
+## <a name="setup"></a>設定
 
 在[Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22)的設定設計工具中，請執行下列四個步驟。
 

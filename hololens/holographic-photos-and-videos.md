@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635954"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664854"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>建立混合的現實照片和影片
 
@@ -175,14 +175,14 @@ Mixed reality capture 使用第一個人的觀點，讓其他人可以看到您�
 
 ### <a name="default-photo-format-and-resolution"></a>預設相片格式與解析度
 
-|  裝置  |  格式  |  分機  |  解決方案  |
+|  裝置  |  格式  |  延伸模組  |  解決方法  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
 | HoloLens (第 1 代) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### <a name="recorded-video-format-and-resolution"></a>錄製的影片格式與解析度
 
-| 裝置 | 格式 | 分機 | 解決方案 | 速度 | 音訊 |
+| 裝置 | 格式 | 延伸模組 | 解決方法 | 速度 | 音訊 |
 |----------|----------|----------|----------|----------|----------|
 | HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px<br> | 30fps | 48kHz 身歷聲 |
 | HoloLens (第 1 代) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz 身歷聲 |

@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7f712c571df1170badf3bfc832e43881278eec90
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663837"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>使用布建套件來設定 HoloLens
 
@@ -106,7 +106,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 1. 在 Windows 設定設計工具開始頁面中，選取 **\[進階佈建\]**。
 2. 在 **\[輸入專案詳細資料\]** 視窗中，指定您的專案名稱以及專案的位置。 (選用) 請輸入您專案的簡述。
 
-3. 選取 [下一步] 。
+3. 選取 [下一步]。
 
 4. 在 [**選擇要查看和設定的設定**] 視窗中，選取 [ **Windows 10 全像攝影版**]，然後選取 **[下一步**]。
 
@@ -126,7 +126,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
     
 9. 選取 [**匯出** 布建  >  **套件**]。
 
-10. 將 **擁有** 者變更為 **IT 管理員**。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。 選取 [下一步] 。
+10. 將 **擁有** 者變更為 **IT 管理員**。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。 選取 [下一步]。
 
 11. 設定 \[套件版本\] 的值。
 
@@ -142,7 +142,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 
     （選擇性）您可以選取 **[流覽]** 來變更預設的輸出位置。
 
-14. 選取 [下一步] 。
+14. 選取 [下一步]。
 
 15. 選取 [ **建立** ] 以開始建立套件。 專案資訊會顯示在建置頁面，進度列可指示建置狀態。
 
@@ -237,7 +237,7 @@ Windows 全像[20H2 版](hololens-release-notes.md#windows-holographic-version-2
 
 ![HoloLens 的通用執行階段設定](images/icd-settings.png)
 
-| 設定 | 描述 |
+| 設定 | Description |
 | --- | --- |
 | **憑證** | 將憑證部署至 HoloLens。  |
 | **ConnectivityProfiles** | 將 Wi-Fi 設定檔部署至 HoloLens。   |

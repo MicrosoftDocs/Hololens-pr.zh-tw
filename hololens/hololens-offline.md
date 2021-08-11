@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662931"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>管理 HoloLens 的連接端點
 
@@ -53,7 +53,7 @@ HoloLens 針對擁有網路環境限制的客戶支援一組有限的離線體�
 | Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |
 |                                                     | ris-prod-atm.trafficmanager.net                                     |
 |                                                     | validation-v2.sls.trafficmanager.net                                |
-| Azure AD 多重要素驗證                | https://secure.aadcdn.microsoftonline-p.com                         |
+| Azure AD Multi-Factor Authentication                | https://secure.aadcdn.microsoftonline-p.com                         |
 | Intune 和 MDM 設定                       | activation-v2.sls.microsoft.com/*                                   |
 |                                                     | cdn.onenote.net                                                     |
 |                                                     | client.wns.windows.com                                              |

@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665025"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>參與 HoloLens 檔
 
@@ -29,7 +29,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 | 混合實境 | [MicrosoftDocs/mixed-事實](/windows/mixed-reality) |
 | VR 愛好者指南 | [MicrosoftDocs/mixed-現實/愛好者指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 如果您還沒有帳戶，則必須[建立 GitHub 帳戶](https://github.com/join)。
 

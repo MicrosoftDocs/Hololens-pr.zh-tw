@@ -7,12 +7,12 @@ description: 適用于小型至大型企業客戶的混合現實支援選項
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658743"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>有哪些混合現實支援和協助選項？
 
@@ -38,7 +38,7 @@ ms.locfileid: "114659092"
 
 - [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
 - [Azure 遠端轉譯](/answers/topics/azure-remote-rendering.html)
-- [Azure 物件錨點](/answers/topics/azure-object-anchors.html)
+- [Azure Object Anchors](/answers/topics/azure-object-anchors.html)
 - [HoloLens程式設計](/answers/topics/hololens-development.html)
 - [Windows產品](/answers/products/windows)
 
@@ -56,7 +56,7 @@ ms.locfileid: "114659092"
 - [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 - [Azure Spatial Anchors](https://stackoverflow.com/questions/tagged/azure-spatial-anchors)
 - [Azure 遠端轉譯](https://stackoverflow.com/questions/tagged/azure-remote-rendering)
-- [Azure 物件錨點](https://stackoverflow.com/questions/tagged/azure-object-anchors)
+- [Azure Object Anchors](https://stackoverflow.com/questions/tagged/azure-object-anchors)
 - [混合實境工具組 (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
 #### <a name="other-communities"></a>其他團體：
@@ -106,10 +106,10 @@ ms.locfileid: "114659092"
 | 芬蘭 | + 358 800526136 |    週一到週五，09AM 到下午6點 |
 | 葡萄牙 |    + 351 800600087 |    週一到週五，09AM 到下午6點 |
 | US |  866-425-4709 |  週一到週五，上午6點至下午6： PST |
-| Canada |  877-345-2661 |  週一到週五，上午6點至下午6： PST |
+| 加拿大 |  877-345-2661 |  週一到週五，上午6點至下午6： PST |
 | 中國 |   400-805-6783 |  週一到週五，上午9點到下午6點 |
 | 日本 |   0120-03-5241 |  週一到週五，上午9點到5：30PM |
-| 澳大利亞 |   1800-217-709 |  週一到週五，上午8點至8PM |
+| 澳洲 |   1800-217-709 |  週一到週五，上午8點至8PM |
 | 新加坡 |   1800 622-1816 | 週一到週五，8：30AM 至5：30PM |
 | 紐西蘭 | 0800 471 640 |  週一到週五，上午8點到下午6點 |
 

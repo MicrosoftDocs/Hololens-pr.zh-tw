@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: aae4e1dbbf28906c1f93ac7f29620260023f596bb96fc23a3ee78442e70585fa
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663303"
 ---
 # <a name="license-requirements"></a>授權需求
 
@@ -56,7 +56,7 @@ ms.locfileid: "114661707"
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
 
-#### <a name="admin"></a>管理
+#### <a name="admin"></a>Admin
 
 - 購買訂用帳戶和指派授權所需的 Azure AD 帳戶 () 
 - [遠端協助訂閱](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (或 [遠端協助試用](/dynamics365/mixed-reality/remote-assist/try-remote-assist)) 
@@ -84,7 +84,7 @@ ms.locfileid: "114661707"
 
 ### <a name="dynamics-365-guides"></a>Dynamics 365 Guides 
 
-#### <a name="admin"></a>管理
+#### <a name="admin"></a>Admin
 
 1. 購買訂用帳戶和指派授權所需的 Azure AD 帳戶 () 
 2. Dynamics 365 [指南訂用帳戶或免費試用](/dynamics365/mixed-reality/guides/setup-step-one)

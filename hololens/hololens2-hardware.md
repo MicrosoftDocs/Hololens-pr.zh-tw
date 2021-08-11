@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660006"
 ---
 # <a name="about-hololens-2"></a>關於 HoloLens 2
 
@@ -94,7 +94,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 | **晶片上的系統** | Qualcomm Snapdragon 850 計算平臺 [詳細資料](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
 | **全像處理單位** | 第二代自訂內建的全像攝影處理單位 |
 | **記憶體** | 4 GB LPDDR4x 系統 DRAM |
-| **存放裝置** | 64-GB 的 UFS 2。1 |
+| **儲存體** | 64-GB 的 UFS 2。1 |
 | **Wi-Fi** | 802.11 ac 2x2 |
 | **Bluetooth** | 5.0 |
 | **USB** | USB 類型-C DRP |

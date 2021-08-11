@@ -1,7 +1,7 @@
 ---
 title: 更新 HoloLens 2
 description: 瞭解如何檢查您的 HoloLens 組建編號、掌握最新的裝置更新、加入測試人員計畫，以及回復更新。
-keywords: 作法、更新、復原、HoloLens、檢查組建、組建編號
+keywords: 作法、更新、回復、HoloLens、檢查組建、組建編號
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -14,18 +14,18 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a27eb1d5eb32a6654f60aac98090cba1aab529d3
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 7e63fcab4c64f151684a634bb24d9fc31826f6805d52b23c5672add0b6269430
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662845"
 ---
 # <a name="update-hololens-2"></a>更新 HoloLens 2
 
-HoloLens 使用 Windows Update，就像其他 Windows 10 裝置一樣。 當您的 HoloLens 進入電源並聯機到網際網路時，您的 HoloLens 將會自動下載並安裝系統更新，即使它處於待命狀態也一樣。
+HoloLens 使用 Windows Update，就像其他 Windows 10 裝置一樣。 您的 HoloLens 將會自動下載並安裝系統更新（無論電源是否已進入電源並聯機到網際網路），即使它處於待命狀態也一樣。
 
-本文將逐步解說 HoloLens 工具：
+本文將逐步解說 HoloLens 的工具：
 
 - 查看您目前的作業系統版本 (組建編號) 
 - 檢查更新
@@ -34,7 +34,7 @@ HoloLens 使用 Windows Update，就像其他 Windows 10 裝置一樣。 當您�
 
 ## <a name="check-your-operating-system-version-build-number"></a>檢查您的作業系統版本 (組建編號) 
 
-您可以開啟 [設定] 應用程式並選取 [**系統**]，以確認系統版本號碼 (組建編號)  >  ****。
+您可以開啟設定應用程式並選取 [**系統**]，以確認系統版本號碼 (組建編號)  >  ****。
 
 ## <a name="check-for-updates-and-manually-update"></a>檢查更新並手動更新
 
@@ -46,28 +46,28 @@ HoloLens 使用 Windows Update，就像其他 Windows 10 裝置一樣。 當您�
 
 如果有可用的更新，則會開始下載新的版本。 下載完成之後，請選取 [ **立即重新開機** ] 按鈕來觸發安裝。 如果您的裝置低於40% 且未插入，則重新開機不會開始安裝更新。
 
-當 HoloLens 正在安裝更新時，它會顯示旋轉的齒輪和進度指標。 在這段期間，請勿關閉 HoloLens。 它會在安裝完成後自動重新開機。
+當您的 HoloLens 正在安裝更新時，它會顯示旋轉的齒輪和進度指標。 在這段期間，請勿關閉您的 HoloLens。 它會在安裝完成後自動重新開機。
 
-HoloLens 一次只會套用一項更新。  如果 HoloLens 超過最新版本，您可能需要多次執行更新程式，才能讓它完全保持在最新狀態。
+HoloLens 一次套用一個更新。  如果您的 HoloLens 是一個以上的版本，您可能需要多次執行更新程式，才能讓它完全保持在最新狀態。
 
 ## <a name="go-back-to-a-previous-version"></a>返回為先前的版本
 
-在某些情況下，您可能會想要回到先前版本的 HoloLens 軟體。 建議的步驟如下：
+在某些情況下，您可能想要回到舊版的 HoloLens 軟體。 建議的步驟如下：
 
 1. 請聯絡支援人員，看看他們是否可以修正您的問題。
     1. 確定已啟用 **選擇性** 或 **完整** 遙測，如此可讓您的 bug 更具可操作，而且更容易讓工程師進行診斷。
     1. 檔案[意見](hololens-feedback.md)反應應盡可能描述。 記下標題或使用「共用」功能，讓您可以與支援人員分享您的 bug。
     1. 請聯絡 [支援](https://aka.ms/hlsupport)人員。 如果您的問題是因為回到先前的版本而需要解決的問題，他們可以提供 FFU 來讓您的裝置閃爍。
 
-1. 如果無法運作，請 [使用 Advanced Recovery 隨附的方式重設或重新刷新您的 HoloLens 2](hololens-recovery.md)。
-    1. 在您的電腦上，下載 Microsoft Store 的 [Advanced Recovery 附隨](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) 。
-    1. 確定您的電腦未插入任何電話或 Windows 裝置。
+1. 如果無法運作，請[使用 Advanced Recovery 隨附的方式重設或重新刷新您的 HoloLens 2](hololens-recovery.md)。
+    1. 在您的電腦上，下載 Microsoft Store 的[Advanced Recovery 附隨](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab)。
+    1. 請確定您沒有任何電話或 Windows 裝置插入電腦。
     1. 選擇您想要閃爍的版本：
-        1. 您可以下載 [最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
+        1. 您可以下載[最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
         1. 您可以使用 ARC 主機的預設組建。  (如果您選擇此選項，請略過下一個步驟。 ) 
         1. 您可以使用所提供的組建支援。
     1. 當您完成這些下載時，請開啟 **檔案總管**  >  **下載**。 在您剛剛下載的壓縮資料夾上按一下滑鼠右鍵，然後選取 [**解壓縮全部**  >  **解壓縮**] 將它解壓縮。
-    1. 使用 USB-A 至 USB-C 纜線將 HoloLens 連接到您的電腦。  (即使您已經使用其他纜線連接 HoloLens，這項功能的效果最好。 ) 
+    1. 使用 usb-a 至 usb-C 纜線連線您的電腦 HoloLens。  (即使您已經使用其他纜線來連接 HoloLens，這項功能的效果最好。 ) 
     1. Advanced Recovery 隨附會自動偵測您的 HoloLens。 選取 **Microsoft HoloLens** 圖格。
     1. 在下一個畫面中，選取 [ **手動封裝選取** ]，然後選取您在步驟4解壓縮的資料夾中所包含的安裝檔案。  (尋找副檔名為 ffu 的檔案 ) 
     1. 選取 [ **安裝軟體**]，並遵循指示進行。
@@ -77,8 +77,8 @@ HoloLens 一次只會套用一項更新。  如果 HoloLens 超過最新版本�
 
 此外，如果您想要保留目前安裝的版本，您也可以手動 [暫停更新](hololens-updates.md#pause-updates-via-device)。 這可讓工程小組時間修正問題。
 
-## <a name="windows-insider-program-on-hololens"></a>HoloLens 上的 Windows 測試人員計畫
+## <a name="windows-insider-program-on-hololens"></a>WindowsHoloLens 上的測試人員計畫
 
-想要查看 HoloLens 中的最新功能嗎？  如果是，請加入 Windows 測試人員計畫;您將可在正式運作之前，存取 HoloLens 軟體更新的預覽組建。
+想要查看 HoloLens 的最新功能嗎？  如果是，請加入 Windows 測試人員計畫;您將可在正式運作之前，存取 HoloLens 軟體更新的預覽組建。
 
 [取得 Microsoft HoloLens 的 Windows 測試人員預覽](hololens-insider.md)。

@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661905"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>解除鎖定 Windows Holographic for Business 功能
 
@@ -77,7 +77,7 @@ Microsoft HoloLens 可在 *開發版* 中使用，該版本 (Windows 的全像�
 
     （選擇性）您可以選取 **[流覽]** 來變更預設的輸出位置。
 
-1. 選取 [下一步] 。
+1. 選取 [下一步]。
 
 1. 選取 [ **建立** ] 以開始建立套件。 [組建] 頁面會顯示專案資訊，而進度列會指出組建狀態。
 

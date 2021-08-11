@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d25a87bd210535e36e18f165b5461141c40aa292a07c560018ba7c0cbf76f6ba
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664922"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>在 HoloLens (第1代) 上使用3D 檢視器 Beta
 
@@ -50,7 +50,7 @@ ms.locfileid: "113635478"
 - 最少 5 KB
 - 最大 500 MB
 
-### <a name="geometry"></a>幾何
+### <a name="geometry"></a>幾何形狀
 
 - 僅限多邊形模型。 沒有任何細分表面或 NURBs
 - 右手座標系統

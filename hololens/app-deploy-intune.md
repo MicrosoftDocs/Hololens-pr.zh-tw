@@ -17,18 +17,18 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665245"
 ---
 # <a name="intune--company-portal"></a>Intune & 公司入口網站
 
 使用裝置管理 (MDM) 的行動裝置，您可以透過[Microsoft 端點管理員 (Intune) ](/intune/windows-holographic-for-business)使用您自己的自訂應用程式，將其直接部署到您的 HoloLens 裝置。 Microsoft Intune 是以雲端為基礎的服務，著重於行動裝置管理 (MDM) 和行動應用程式管理 (MAM)。 Intune 包含在 Microsoft 的 [Enterprise Mobility + Security (EMS) 套件](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)中，可讓使用者提高生產力，同時保護您的組織資料。 若要深入瞭解 Intune，請閱讀 [什麼是 intune](/mem/intune/fundamentals/what-is-intune)。
 
-## <a name="setup"></a>安裝程式
+## <a name="setup"></a>設定
 
 1. Upload 應用程式連線到企業營運，或將自訂應用程式上傳至您的 Intune 租使用者。 另請參閱： [Enterprise 應用程式管理](/windows/client-management/mdm/enterprise-app-management)。
 

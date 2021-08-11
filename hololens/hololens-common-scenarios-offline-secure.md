@@ -1,6 +1,6 @@
 ---
 title: 常見案例–離線安全 HoloLens 2
-description: 瞭解如何設定搭配 HoloLens 裝置布建的離線安全部署和應用程式部署案例。
+description: 瞭解如何使用 HoloLens 裝置的布建，來設定離線的安全部署和應用程式部署案例。
 keywords: HoloLens、管理、離線、離線安全
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664509"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>常見案例–離線安全 HoloLens 2
 
@@ -37,11 +37,11 @@ ms.locfileid: "110397879"
 
 ## <a name="prepare"></a>準備
 
-Windows 10 電腦設定
-1. 將[最新的 HOLOLENS 2 OS](https://aka.ms/hololens2download)檔案直接下載至電腦。 
+Windows 10電腦設定
+1. 將[最新的 HoloLens 2 OS](https://aka.ms/hololens2download)檔案直接下載至電腦。 
    1. 此設定的支援包含在組建19041.1117 和更新版本中。
 1. [從 Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8)下載/安裝 Advanced Recovery 附屬 (ARC) 工具到電腦
-1. 從 Microsoft Store 下載/安裝最新的 [Windows 設定設計工具 (WCD) ](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) 工具到您的電腦。
+1. 從 Microsoft Store 下載/安裝最新的[Windows 設定設計工具 (WCD) ](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab)工具到您的電腦。
 1. [下載 OfflineSecureHL2_Sample 資料夾與專案檔案](https://aka.ms/HoloLensDocs-SecureOfflineSample) ，以建立 PPKG。
 1. 準備離線 [企業營運應用程式以進行 PPKG 部署](app-deploy-provisioning-package.md)。 
 
@@ -60,14 +60,14 @@ Windows 10 電腦設定
 
    此布建套件中設定的設定：
    
-   |     項目                                                |     設定                       |     描述                                                                                                                    |
+   |     項目                                                |     設定                       |     Description                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     帳戶/使用者                                    |     本機使用者名稱 & 密碼    |     針對這些離線裝置，裝置的所有使用者都必須設定並共用單一使用者名稱和密碼。          |
-   |     First Experience/HoloLens/SkipCalibration       |     是                          |     僅在初始裝置設定期間略過校正                                                                             |
-   |     First Experience/HoloLens/SkipTraining          |     是                          |     初始裝置設定期間略過裝置訓練                                                                              |
+   |     第一個經驗/HoloLens/SkipCalibration       |     是                          |     僅在初始裝置設定期間略過校正                                                                             |
+   |     第一個經驗/HoloLens/SkipTraining          |     是                          |     初始裝置設定期間略過裝置訓練                                                                              |
    |     第一個經驗/HoloLens/WiFi                  |     是                          |     初始裝置設定期間略過 Wi-Fi config                                                                                 |
    |     原則/連線能力/AllowBluetooth                |     No                            |     停用藍牙                                                                                                             |
-   |     原則/經驗/AllowCortana                    |     No                            |     停用 Cortana (，以消除自麥克風停用後的潛在問題)                                           |
+   |     原則/經驗/AllowCortana                    |     No                            |     停用 Cortana (在停用麥克風之後消除潛在的問題)                                           |
    |     原則/MixedReality/MicrophoneDisabled            |     Yes                           |     停用麥克風                                                                                                            |
    |     原則/隱私權/LetAppsAccessLocation              |     強制拒絕                    |     防止應用程式嘗試存取位置資料 (，以在停用位置追蹤之後消除潛在問題)     |
    |     原則/隱私權/LetAppsAccessMicrophone            |     強制拒絕                    |     防止應用程式嘗試存取麥克風 (來消除自麥克風停用後的潛在問題)            |
@@ -76,7 +76,7 @@ Windows 10 電腦設定
    |     原則/系統/AllowLocation                       |     No                            |     防止裝置嘗試追蹤位置資料。                                                                        |
    |     原則/WiFi/AllowWiFi                             |     No                            |     停用 Wi-Fi                                                                                                                 |
 
-1. 在 [執行時間設定] 下，選取 [ **帳戶/使用者/使用者名稱： hololens/密碼**]。
+1. 在 [執行時間設定] 下，選取 [**帳戶/使用者/使用者名稱： hololens/密碼**]。
 
    請記下密碼，並視需要重設。
 
@@ -92,19 +92,19 @@ Windows 10 電腦設定
 
 ## <a name="deploy"></a>部署
 
-1. 透過 USB 纜線將 HL2 連接到您的 Windows 10 PC。
+1. 透過 USB 纜線連線 HL2 至 Windows 10 PC。
 1. 啟動 ARC 工具並選取 **HoloLens 2**
 
    ![HoloLens 2 clean 重新刷新初始畫面](images/ARC2.png)
 
 1. 在下一個畫面中，選取 [ **手動選取套件**]。
 
-   ![HoloLens 2 ARC 資訊畫面](images/arc_device_info.png)
+   ![HoloLens 2弧線資訊畫面](images/arc_device_info.png)
 
 1. 流覽至先前下載的 ffu 檔案，然後選取 [ **開啟**]。
 1. 選取 [警告] 頁面上的 [ **繼續**]。
 
-   ![HoloLens 2 弧形警告畫面](images/arc_warning.png)
+   ![HoloLens 2弧線警告畫面](images/arc_warning.png)
 
 1. 等候 ARC 工具完成 HoloLens 2 作業系統安裝。
 1. 裝置完成安裝並重新啟動後，您的電腦會流覽至檔案總管，並將先前儲存的 PPKG 檔案複製到裝置資料夾。
@@ -112,7 +112,7 @@ Windows 10 電腦設定
    > [!div class="mx-imgBorder"]
    > ![檔案總管視窗中的電腦上的 PPKG 檔案。](images/offline-secure-file-explorer.png)
 
-1. 在 [HoloLens 2 上，按下列按鈕下拉式清單，以執行布建套件：同時按一下 [ **音量向下** ] 和 [ **電源] 按鈕** 。
+1. 在 [HoloLens 2 上，按下列按鈕下拉式清單，以執行布建套件：同時按一下 [**音量向下**] 和 [**電源] 按鈕**。
 1. 系統會提示您套用布建套件，請選取 [**確認**]
 1. 布建封裝完成後，請選取 **[確定]**。
 1. 接著，系統應該會提示您使用共用的本機帳戶和密碼登入裝置。

@@ -12,25 +12,25 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658949"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>開始使用您的 HoloLens 2
 
 下列程式將協助您第一次設定 HoloLens 2。
 
-## <a name="charge-your-hololens"></a>向 HoloLens 收費
+## <a name="charge-your-hololens"></a>為 HoloLens 充電
 
-使用 (內含) 的 USB 纜線，將電源供應器連接至充電埠。 將電源供應器插入電源插座。 裝置隨附的電源供應器和 USB-C + + C 纜線是向 HoloLens 2 收費的最佳方式。 充電器在 2A) 提供 power (9V 的18W。 在裝置處於待命狀態的情況下，HoloLens 2 裝置可使用所提供的牆充電器，在65分鐘內將電池充電以填滿。
+使用 USB 纜線 (包含) ，連線電源供應器充電埠。 將電源供應器插入電源插座。 裝置隨附的電源供應器和 USB-C + + C 纜線是為 HoloLens 2 充電的最佳方式。 充電器在 2A) 提供 power (9V 的18W。 在裝置處於待命狀態的情況下，HoloLens 2 裝置可使用所提供的牆充電器，在65分鐘內將電池充電以填滿。
 
 根據裝置執行的環境而定，充電率和速度可能會有所不同。
 
-- 當裝置充電時，電池指示燈會亮起以指出目前的收費層級。  最後一個光線會淡入和淡出以表示主動充電。
-- 當 HoloLens 開啟時，電池指示器會以遞增方式顯示電池計量。
+- 當裝置充電時，電池指示燈會亮起以指出目前的充電層級。  最後一個光線會淡入和淡出以表示主動充電。
+- 當您的 HoloLens 開啟時，電池指示器會以遞增方式顯示電池計量。
 - 當您只開啟五個燈的其中一個時，電池計量低於20%。
 - 如果電池計量偏低，而您嘗試開啟裝置，則會短暫閃爍一次，然後移出。
 
@@ -69,13 +69,13 @@ ms.locfileid: "112924429"
 | 進入睡眠狀態 | 按下按鈕。 | 全部五個燈開啟，然後一次淡出一個。 燈關閉之後，就會播放音效，螢幕會顯示「再見」。 |
 | 從睡眠狀態喚醒 | 按下按鈕。 | 所有五個燈開啟，然後變更以表示電池計量。 立即播放音效。 |
 | 若要關閉 | 按住5秒。 |  全部五個燈開啟，然後一次淡出一個。 燈關閉之後，就會播放音效，螢幕會顯示「再見」。 |
-| 強制 HoloLens 重新開機（如果沒有回應） | 按住10s。 | 全部五個燈開啟，然後一次淡出一個。 燈關閉之後。 |
+| 若要強制 HoloLens 重新開機（如果沒有回應） | 按住10s。 | 全部五個燈開啟，然後一次淡出一個。 燈關閉之後。 |
 
 ## <a name="hololens-behavior-reference"></a>HoloLens 行為參考
 
-不確定 HoloLens 上的燈燈是什麼意思？ 想知道 HoloLens 在充電時的行為？  以下是一些協助！
+不確定您的 HoloLens 上的指標燈是什麼意思？ 想知道 HoloLens 在充電時的行為為何？  以下是一些協助！
 
-### <a name="charging-behavior"></a>收費行為
+### <a name="charging-behavior"></a>充電行為
 
 | 裝置的狀態 | 動作 | HoloLens 2 將會這麼做 |
 | - | - | - |
@@ -90,7 +90,7 @@ ms.locfileid: "112924429"
 
 | 燈光數目 | 電池音量 |
 | - | - |
-| 四個穩固的燈，一個淡入和放大 | 介於100% 和 81% () 完全收費 |
+| 四個穩固的燈，一個淡入和放大 | 介於100% 和 81% () 完全充電 |
 | 三個穩固的燈，一個淡入和放大 | 介於80% 到61% 之間 |
 | 兩個穩固的燈，一個淡入和放大 | 介於60% 到41% 之間 |
 | 一個穩固的輕量，輕量淡入和縮小 | 介於40% 到21% 之間 |
@@ -108,19 +108,19 @@ ms.locfileid: "112924429"
 
 | 當您這樣做時 | 燈光 | 這表示 |
 | - | - | - |
-| 您按下電源按鈕。 | 一個燈光閃爍五次，然後關閉。 | HoloLens 電池極為低。 收取 HoloLens 費用。 |
-| 您按下電源按鈕。 | 全部五個燈閃爍五次，然後關閉。 |  HoloLens 無法正常啟動，而且處於錯誤狀態。 [重新安裝作業系統](hololens-recovery.md) 以復原您的裝置。 |
+| 您按下電源按鈕。 | 一個燈光閃爍五次，然後關閉。 | HoloLens 電池極為低。 為 HoloLens 充電。 |
+| 您按下電源按鈕。 | 全部五個燈閃爍五次，然後關閉。 |  HoloLens 無法正確啟動，而且處於錯誤狀態。 [重新安裝作業系統](hololens-recovery.md) 以復原您的裝置。 |
 | 您按下電源按鈕。 | 第1、第三和第5個燈會持續閃爍。 |  HoloLens 可能會發生硬體故障。 請聯絡 [支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)人員。 |
 
 ## <a name="safety-and-comfort"></a>安全且舒適
 
 ### <a name="use-hololens-in-safe-surroundings"></a>在安全的環境中使用 HoloLens
 
-在安全的空間中使用 HoloLens、無障礙物和往返的風險。 當您需要清楚的觀賞欄位或無法完全注意時（例如，當您操作車輛或執行其他潛在的危險活動）時，請不要使用它。
+在安全的空間中使用您的 HoloLens、無障礙物和往返的風險。 當您需要清楚的觀賞欄位或無法完全注意時（例如，當您操作車輛或執行其他潛在的危險活動）時，請不要使用它。
 
 ### <a name="stay-comfortable"></a>保持舒適
 
-讓您的前幾個會話保持 HoloLens 簡短，並請務必中斷。 如果您遇到不適感，請停止並 rest，直到您感覺更好。 這可能包括 nausea、運動 sickness、dizziness、disorientation、麻煩、疲勞、眼睛或試眼等的暫時感覺。
+請 HoloLens 簡短的前幾個會話，並務必加以中斷。 如果您遇到不適感，請停止並 rest，直到您感覺更好。 這可能包括 nausea、運動 sickness、dizziness、disorientation、麻煩、疲勞、眼睛或試眼等的暫時感覺。
 
 請參閱 [產品安全警告和指示](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)。
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: af116578dbbeec1d364c2c04f2827a4b7df43efe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 1363920182107137ce3441990e429e71f7533923e066cdeaa8f9c105e453c757
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659868"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 產業版本常見問題
 
@@ -47,7 +47,7 @@ HoloLens 2 產業版已通過認證，可用於 UL Class I、除法 2-群組 A�
 
 ### <a name="does-the-hololens-2-industrial-edition-hold-an-atex-certification"></a>HoloLens 2 產業版本是否持有 ATEX 認證？
 
-否。 HoloLens 2 產業版本並未包含 ATEX 認證。 HoloLens 2 產業版本保有 US/CAN 類別 I、除法 2-a a、B、C 和 D 認證。
+不會。 HoloLens 2 產業版本並未包含 ATEX 認證。 HoloLens 2 產業版本保有 US/CAN 類別 I、除法 2-a a、B、C 和 D 認證。
 
 ### <a name="can-the-device-be-used-in-semiconductor-and-pharmaceutical-environments"></a>裝置是否可用於半導體和製藥環境？
 

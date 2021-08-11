@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e7f1efa99cc16b1003bd7063817451013ed2ec2661dbdf02edcd89c7984d0980
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663974"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>將 HoloLens 設定為 kiosk
 
@@ -425,14 +425,14 @@ ms.locfileid: "114659585"
 1. **選擇項**。  (如果您在 kiosk 裝置上已經有非系統管理員帳戶，請略過此步驟。 ) 選取 [ **執行時間設定** &gt; **帳戶** &gt; **使用者**]，然後建立本機使用者帳戶。 請確定使用者名稱與您在設定 XML 中指定的帳號相同。 選取 [ **UserGroup**  >  **標準使用者**]。
 1. 選取 **[**  >  **儲存** 盤案]。
 1. 選取 [**匯出** 布建  >  **套件**]，然後選取 [**擁有** 者  >  **IT 系統管理員**]。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。
-1. 選取 [下一步] 。
+1. 選取 [下一步]。
 1. 在 [布建 **套件安全性** ] 頁面上，選取安全性選項。
    > [!IMPORTANT]  
    > 如果您選取 [ **啟用套件簽署**]，則也必須選取要用於簽署封裝的有效憑證。 若要這樣做，請選取 **[流覽]** ，然後選取您要用來簽署封裝的憑證。
    
    > [!CAUTION]  
    > 請勿選取 [ **啟用套件加密**]。 在 HoloLens 裝置上，此設定會導致布建失敗。
-1. 選取 [下一步] 。
+1. 選取 [下一步]。
 1. 指定您要在建立布建套件的輸出位置。 Windows 設定設計工具預設會使用專案資料夾做為輸出位置。 如果您想要變更輸出位置，請選取 **[流覽]**。 完成後，選取 [下一步] 。
 1. 選取 [ **建立** ] 以開始建立套件。 建置佈建套件並不需要很長的時間。 [組建] 頁面會顯示專案資訊，而進度列會指出組建狀態。
 
@@ -472,7 +472,7 @@ ms.locfileid: "114659585"
 > [!NOTE]
 > 您可以透過裝置入口網站的 REST API 來設定 Kiosk 模式，方法是使用一個必要的查詢字串參數來設定 "kioskModeEnabled&quot; ( &quot;&quot; 的值為 &quot;true&quot; 或 &quot;false" ) 以及一個選擇性參數 ( "startupApp" 值為套件名稱) 。 請記住，裝置入口網站僅適用于開發人員，不應在非開發人員裝置上啟用。 在未來的更新/發行中，REST API 可能會變更。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>更多資訊
 
 ### <a name="watch-how-to-configure-a-kiosk-by-using-a-provisioning-package"></a>觀看如何使用布建套件來設定 kiosk。  
 

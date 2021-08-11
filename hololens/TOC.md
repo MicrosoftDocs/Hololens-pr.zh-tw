@@ -25,6 +25,8 @@
 #### [使用您的語音來操作 HoloLens](hololens-cortana.md)
 #### [在 HoloLens 上尋找、開啟及儲存檔案](holographic-data.md)
 #### [建立混合的現實照片和影片](holographic-photos-and-videos.md)
+#### [新增設定應用程式](hololens-new-settings.md)
+#### [新增 Microsoft Edge](hololens-new-edge.md)
 ### 管理應用程式
 #### [尋找、安裝和卸載應用程式](holographic-store-apps.md)
 #### [管理 HoloLens 2 的自訂應用程式](hololens2-holographic-custom-apps.md)
