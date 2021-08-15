@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/17/2021
+ms.date: 08/10/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
-ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
+ms.openlocfilehash: ca821c5229ba9d6d8fff0f1ed22a7df139120ab99e64c2bb3502effac7049f31
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "116975490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364297"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -31,6 +31,23 @@ ms.locfileid: "116975490"
 
 > [!IMPORTANT]
 > 由於[21H1 組建中已解決的已知問題會影響遠端協助使用者](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)，我們暫時暫停了 Windows 全像版本21H1 更新的供應專案。 我們也已將預設的 Advanced Recovery 附隨 (ARC) 組建變更為 Windows 全像[20H2 版–2021年6月更新](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)。 ARC 組建現在會繼續以21H1 組建為目標。
+
+## <a name="windows-holographic-version-21h1---august-2021-update"></a>Windows全像21H1 版-2021 年8月更新
+
+- 組建20348.1014
+
+更新中的增強功能和修正：
+
+- 修正導致 Xbox 控制器無法在具有控制器支援的沉浸式應用程式中工作的問題。
+- 改進裝置更新失敗的診斷。
+
+## <a name="windows-holographic-version-20h2---august-2021-update"></a>Windows全像20H2 版-2021 年8月更新
+
+- 組建19041.1161
+
+更新中的增強功能和修正：
+
+- 此每月品質更新不包含任何值得注意的變更，建議您試用最新的組建，Windows 全像21H1 版。
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows全像21H1 版-2021 年7月更新
 

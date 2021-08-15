@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364280"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -40,7 +40,8 @@ ms.locfileid: "115664103"
 | [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
 | [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
 | [低儲存體記錄收集改進](#low-storage-log-collection-improvements) | 在低儲存情況下，記錄收集案例的改進。 | IT 管理員 | 20348.1412 |
-| [修正和改善](hololens-insider.md#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1411 |
+| [移動平臺模式](#moving-platform-mode) | 介紹移動平臺模式搶鮮版（若已設定），可讓您在遇到低動態動作的大型航海船隻上使用 HoloLens 2。 | 全部 | 20348.1411 |
+| [修正和改善](#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 變更報告 HoloLens 詳細資料
 
@@ -135,11 +136,18 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 
 在收集診斷記錄檔時，裝置似乎磁碟空間不足的情況，將會建立名為 **StorageDiagnostics.zip** 的額外報告。 低儲存體的閾值是由 Windows[儲存體的意義](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)自動決定。
 
+### <a name="moving-platform-mode"></a>移動平臺模式
+
+在測試人員 **組建 20348.1411** 中，我們已新增在 HoloLens 2 上追蹤低動態移動移動平臺的 Beta 支援。 在安裝組建並啟用移動平臺模式之後，您將能夠在先前無法存取的環境中使用您的 HoloLens 2，例如大型隨附和大型航海船隻。 目前，此功能的目標是要啟用這些特定的移動平臺。 雖然不會讓您嘗試在其他環境中使用此功能，但這項功能的重點是先新增對這些環境的支援。
+
+若要深入瞭解支援的內容以及如何啟用這項新功能，請 [造訪移動平臺頁面。](hololens2-moving-platform.md)
+
 ### <a name="fixes-and-improvements"></a>修正和改善
 
 - 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 已修正檔案 [上傳和下載超時的裝置入口網站已知問題。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - 解決從 HoloLens 裝置報告合規性屬性的相關問題;可能需要重新開機，才能在 Insider build 上觸發正確的報告。  
+- 啟用[指派的存取 API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) ，讓應用程式現在可以判斷 HoloLens 是否以 Kiosk 模式執行，以供使用者登入 HoloLens。
 - 更新全新閃爍時所安裝的現成版本遠端協助。
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build

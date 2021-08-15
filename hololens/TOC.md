@@ -34,6 +34,7 @@
 #### [改善視覺品質和緩和](hololens-calibration.md)
 #### [使用 HoloLens 對應實體空間](hololens-spaces.md)
 #### [HoloLens 環境考慮](hololens-environment-considerations.md)
+#### [移動平臺](hololens2-moving-platform.md)
 ### 連線您的 HoloLens 2
 #### [連線 HoloLens 網路](hololens-network.md)
 #### [連線至藍牙和 USB-C 裝置](hololens-connect-devices.md)

@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ceb2416ec96db1bdd363e9164ec39eed9247fe37095a52e7f02bafc74416e4f2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c19f01fc502a32c7f40a9296f0ddd9651d92284f3550908b1a5b7bbbef7b639a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364263"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
@@ -38,7 +38,7 @@ HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多�
 | --- | --- | --- |
 | [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web 認證提供者</li><li>Azure Authenticator 應用程式</li><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2<sup>2</sup> </li><li>FIDO2 安全性金鑰</li><li>針對 &ndash; HoloLens (第1代) 釘選，HoloLens 2</li><li>密碼</li></ul> |
 | [Microsoft 帳戶 (MSA) ](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生物特徵辨識 (鳶尾花) &ndash; 僅 HoloLens 2</li><li>針對 &ndash; HoloLens (第1代) 釘選，HoloLens 2</li><li>密碼</li></ul> |
-| [本機帳戶](/windows/security/identity-protection/access-control/local-accounts) | 1 | 密碼 |
+| [本機帳戶](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | 密碼 |
 
 雲端連線的帳戶 (Azure AD 和 MSA) 提供更多功能，因為它們可以使用 Azure 服務。  
 > [!IMPORTANT]
@@ -47,13 +47,16 @@ HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多�
 > [!NOTE]
 > 2-雖然 HoloLens 2 裝置最多可支援 64 Azure AD 帳戶，但只有31個帳戶可能會註冊鳶尾花 Authentication。 這與其他適用于[商務 Windows Hello 的生物識別驗證選項](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)一致。
 
+> [!IMPORTANT]
+> 3-在 [OOBE 期間](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)，只能透過布建套件在裝置上設定本機帳戶，稍後無法在 [設定] 應用程式中新增。 如果您想要在已設定的裝置上使用本機帳戶，您需要 [重新刷新或重設裝置。](hololens-recovery.md)
+
 ## <a name="setting-up-users"></a>設定使用者
 
 有兩種方式可以在 HoloLens 上設定新的使用者。 最常見的方式是在 HoloLens 的 (OOBE) 期間內體驗。 如果使用 Azure Active Directory，[其他使用者可以](#setting-up-multi-user-support-azure-ad-only)使用其 Azure AD 認證在 OOBE 之後登入。 在 OOBE 期間，使用 MSA 或本機帳戶設定的 HoloLens 裝置，將不會支援多個使用者。 請參閱將[HoloLens 設定 (第1代) ](hololens1-start.md)或[HoloLens 2](hololens2-start.md)。
 
 如果您使用企業或組織帳戶來登入 HoloLens，HoloLens 在組織的 IT 基礎結構中進行註冊。 此註冊可讓您的 IT 系統管理員設定行動裝置管理 (MDM) 以將群組原則傳送至您的 HoloLens。
 
-如同其他裝置上的 Windows，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 相同的帳戶也會使用 Windows 的帳戶管理員 api，為應用程式提供單一登入，例如 Edge 或 Microsoft Store。 
+如同其他裝置上的 Windows，在安裝期間登入會在裝置上建立使用者設定檔。 使用者設定檔會儲存應用程式和資料。 相同的帳戶也會使用 Windows 的帳戶管理員 api，為應用程式提供單一登入，例如 Edge 或 Microsoft Store。
 
 根據預設，和其他 Windows 10 裝置一樣，當 HoloLens 重新開機或從待命模式恢復時，您必須再次登入。 您可以使用設定應用程式來變更此行為，或可由群組原則控制該行為。
 
