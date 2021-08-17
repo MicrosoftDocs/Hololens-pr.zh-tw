@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cbe196f8ad76a157933223d3d440716c17cd0332
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 0c110f332337e58f2b1be11057c7564edfd17a1f
+ms.sourcegitcommit: 9c3e1d29a5381c33a385ec33585e3466a10642d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858453"
+ms.locfileid: "122176883"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 的購買位置
 
@@ -48,7 +48,7 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 | | Telstra 紫色 | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **中國** | 高度資訊 (HII) 翰林匯資訊產業股份有限公司 | We feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [購買 HoloLens 2-高度資訊](http://www.ehighly.com.cn/productList.html?key=hololens) | [購買 HoloLens 2 產業版本-高度資訊](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
 | | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [購買 HoloLens 2 產業版本-Changhong IT 資訊產品 Co](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [購買 HoloLens 2 產業版本-Changhong IT 資訊 Product7890-= s Co、公司](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | [購買 HoloLens 2-Tuomeng](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [購買 HoloLens 2 產業版本-Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
+| | Tuomeng 黑龍江拓盟科技有限公司、CN、哈爾濱 |利 膽 lidan@hljtmkj.com | http://hljtmkj.com/buy.html | http://47.92.113.150:8080/sjtbtm/a/sjtb | 
 | | 英施艾特（上海）軟體貿易有限公司深入解析企業 (上海) 有限公司 | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [ (上海) 購買 HoloLens 2 的深入解析企業](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [ (上海) 購買 HoloLens 2 產業版本的深入解析企業](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **香港** | GO (UFO) 的 VR | Howard Tian <howard.tian@govrimmersive.com> | [購買 HoloLens 2-GO 的沉浸式公司。](https://www.govrimmersive.com/hololens2) | [購買 HoloLens 2 產業版本-GO VR 沉浸式公司](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | 瞭解企業的香港 | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [購買 HoloLens 2 的企業香港的見解](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [購買 HoloLens 2 產業版本深入解析企業的香港](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
