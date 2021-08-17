@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ca821c5229ba9d6d8fff0f1ed22a7df139120ab99e64c2bb3502effac7049f31
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: a8d1f9b8d04324236cb610b6018880891bdabdd1
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364297"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858682"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 

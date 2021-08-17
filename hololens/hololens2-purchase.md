@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cbe196f8ad76a157933223d3d440716c17cd0332
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658826"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858453"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 的購買位置
 
@@ -42,13 +42,13 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 
 ### <a name="apac"></a>**亞太**
 
-| 國家/地區 | Adr | 銷售連絡人 | HoloLens 2產品連結 |  HoloLens 2工業版產品連結 |
+| 國家/地區 | ADR | 銷售連絡人 | HoloLens 2產品連結 |  HoloLens 2工業版產品連結 |
 |---------|-----|---------|----------------|----------|
 | **澳大利亞** | 深入瞭解企業澳大利亞 Pty 公司 | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>哥斯大黎加 Aligianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [購買 HoloLens 2 見解企業澳大利亞 Pty 公司](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [購買 HoloLens 2 產業版本-深入解析企業澳大利亞 Pty 公司](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra 紫色 | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **中國** | 高度資訊 (HII) 翰林匯資訊產業股份有限公司 | We feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [購買 HoloLens 2-高度資訊](http://www.ehighly.com.cn/productList.html?key=hololens) | [購買 HoloLens 2 產業版本-高度資訊](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [購買 HoloLens 2 產業版本-Changhong IT 資訊產品 Co](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [購買 HoloLens 2 產業版本-Changhong IT 資訊產品 Co](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | Tuomeng黑龍江拓盟科技有限公司、CN、哈爾濱  | Zhaowen Qiu<br>[qiuzw@hljtmkj.com](mailto:qiuzw@hljtmkj.com)<br> 利 膽<br>[lidan@hljtmkj.com](mailto:lidan@hljtmkj.com) | [購買 HoloLens 2-Tuomeng](http://hljtmkj.com/buy.html) | [購買 HoloLens 2 產業版本-Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
+| | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [購買 HoloLens 2 產業版本-Changhong IT 資訊產品 Co](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [購買 HoloLens 2 產業版本-Changhong IT 資訊 Product7890-= s Co、公司](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
+| | 四川長虹佳華資訊產品有限責任公司/Changhong IT 資訊產品，有限公司 | [購買 HoloLens 2-Tuomeng](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [購買 HoloLens 2 產業版本-Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
 | | 英施艾特（上海）軟體貿易有限公司深入解析企業 (上海) 有限公司 | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [ (上海) 購買 HoloLens 2 的深入解析企業](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [ (上海) 購買 HoloLens 2 產業版本的深入解析企業](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **香港** | GO (UFO) 的 VR | Howard Tian <howard.tian@govrimmersive.com> | [購買 HoloLens 2-GO 的沉浸式公司。](https://www.govrimmersive.com/hololens2) | [購買 HoloLens 2 產業版本-GO VR 沉浸式公司](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | 瞭解企業的香港 | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [購買 HoloLens 2 的企業香港的見解](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [購買 HoloLens 2 產業版本深入解析企業的香港](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
@@ -68,7 +68,7 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 
 ### <a name="north-america"></a>**北美洲**
 
-| 國家/地區 | Adr | 銷售連絡人 | HoloLens 2產品連結 |  HoloLens 2工業版產品連結 |
+| 國家/地區 | ADR | 銷售連絡人 | HoloLens 2產品連結 |  HoloLens 2工業版產品連結 |
 |---------|-----|---------|----------------|----------|
 | **加拿大** | 加拿大見解 | Trish O'Keeffe <trish.okeeffe@insight.com> | [購買 HoloLens 2-加拿大的見解](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [購買 HoloLens 2 產業版本-加拿大的見解](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 | **美國** | 深入解析北美洲 | Jake Poirier <jake.poirier@insight.com> | [購買 HoloLens 2 深入解析北美洲](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [購買 HoloLens 2 產業版本-深入解析北美洲](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
@@ -77,7 +77,7 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 
 ### <a name="emea"></a>**歐洲、中東與非洲**
 
-| 國家/地區 | Adr | 銷售連絡人 | HoloLens 2產品連結 |  HoloLens 2工業版產品連結 |
+| 國家/地區 | ADR | 銷售連絡人 | HoloLens 2產品連結 |  HoloLens 2工業版產品連結 |
 |---------|-----|---------|----------------|----------|
 | **奧地利** | Bechtle | Kurt Wiesauer <kurt.wiesauer@bechtle.com> | [購買 HoloLens 2-Bechtle](https://www.bechtle.com/at/aktionen-sh/microsoft-hololens-2) | [購買 HoloLens 2 產業版本-Bechtle](https://www.bechtle.com/at/shop/microsoft-hololens-2-ind-ed-datenbrille--4525629--p) | 
 | | 見解 | Siegfried Halfmann <siegfried.halfmann@insight.com> |  |  | 

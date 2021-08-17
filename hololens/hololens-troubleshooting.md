@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c634b90b03468073887397b59f072258ad7a3ccc
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662883"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858566"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -119,13 +119,15 @@ HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選
 在 OOBE 期間發生問題，當使用者選擇了工作或學校帳戶，並輸入其密碼時，藉由使用 [123] &按鈕並不會變更為特殊字元，藉以嘗試切換至鍵盤上的特殊字元。 這是 **已知的問題**。
 
 解決辦法：
--   關閉鍵盤，然後藉由點擊文字欄位將它重新開啟。
--   輸入您的密碼不正確。 下一次 relaunched 鍵盤時，它會如預期般運作。
+
+- 關閉鍵盤，然後藉由點擊文字欄位將它重新開啟。
+- 輸入您的密碼不正確。 下一次 relaunched 鍵盤時，它會如預期般運作。
 - Web 驗證，關閉鍵盤，然後選取 [ **從另一部裝置登入**]。
--   如果只輸入數位，使用者可以按住某些按鍵以開啟展開的功能表。
--   使用 USB 鍵盤。
+- 如果只輸入數位，使用者可以按住某些按鍵以開啟展開的功能表。
+- 使用 USB 鍵盤。
 
 這不會影響：
+
 - 選擇使用個人帳戶的使用者。
 
 [返回清單](#list)
@@ -133,7 +135,7 @@ HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選
 ## <a name="downloading-locked-files-doesnt-error"></a>下載鎖定的檔案並不會發生錯誤
 
 > [!NOTE]
-> 這是 Windows 測試人員組建20348.1403 版中已修正的 **已知問題**。
+> 這是 [Windows 全像21H1 版-2021 年7月更新](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)中已修正的 **已知問題**。
 
 在舊版 Windows 全息版中，當您嘗試下載鎖定的檔案時，結果會是 HTTP 錯誤網頁。 在 Windows 的全像21H1 更新版本中，如果您嘗試下載鎖定的檔案，就不會有任何可見的情況—檔案不會下載，也不會發生錯誤。
 
@@ -141,10 +143,9 @@ HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選
 
 ## <a name="device-portal-file-uploaddownload-times-out"></a>裝置入口網站檔案上傳/下載超時
 > [!NOTE]
-> 這是 Windows 測試人員組建20348.1403 版中已修正的 **已知問題**。 如果您先前已在因應措施中停用 SSL 連線，強烈建議您重新啟用 SSL 連線。
+> 這是 [Windows 全像21H1 版-2021 年7月更新](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)中已修正的 **已知問題**。 如果您先前已在因應措施中停用 SSL 連線，強烈建議您重新啟用 SSL 連線。
 
-
-某些客戶在嘗試上傳或下載檔案時，該作業可能會似乎停止回應，而不會完成時間。 這與「檔案鎖定」的[已知問題](#downloading-locked-files-doesnt-error)不同，這會影響 Windows 全像全像版本2004、20H2 和21H1 的市場組建。 問題的根本原因是裝置入口網站處理某些要求時發生錯誤，而且在使用 HTTPs （預設值）時，最常受到持續的點擊。 
+某些客戶在嘗試上傳或下載檔案時，該作業可能會似乎停止回應，而不會完成時間。 這與「檔案鎖定」的[已知問題](#downloading-locked-files-doesnt-error)不同，這會影響 Windows 全像全像版本2004、20H2 和21H1 的市場組建。 問題的根本原因是裝置入口網站處理某些要求時發生錯誤，而且在使用 HTTPs （預設值）時，最常受到持續的點擊。
 
 ### <a name="workaround"></a>因應措施
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364280"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858574"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -35,7 +35,9 @@ ms.locfileid: "120364280"
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP 變更報告 HoloLens 詳細資料](#csp-changes-for-reporting-hololens-details) | 用於查詢資料的新 Csp | IT 系統管理員    | 20348.1403                 |
 | [由 CSP 控制的自動登入原則](#auto-login-policy-controlled-by-csp) | 用來自動登入帳戶 | IT 系統管理員 | 20348.1405 |
+| [改進更新重新開機偵測和通知](#improved-update-restart-detection-and-notifications) | 新啟用的原則和 UX 以進行更新。 | IT 系統管理員 | 20348.1405 |
 | [憑證管理員的 PFX 檔案支援](#pfx-file-support-for-certificate-manager) | 透過設定 UI 新增 PFX 憑證 | 使用者 | 20348.1405 |
+| [應用程式更新的智慧型重試](#smart-retry-for-app-updates) | 允許 IT 系統管理員排程更新應用程式的重試。 | IT 系統管理員 | 20348.1405 |
 | [在 HoloLens 上設定 View advanced 診斷報表](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看裝置上的 MDM 診斷記錄 | 疑難排解 | 20348.1405 |
 | [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
 | [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
@@ -95,13 +97,34 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 在設定此原則的裝置上，原則中指定的使用者至少需要登入一次。 在第一次登入之後，裝置的後續重新開機將會讓指定的使用者自動登入。 僅支援單一自動登入使用者。 啟用後，自動登入的使用者將無法以手動方式登出。 若要以不同的使用者登入，必須先停用此原則。
 
 > [!NOTE]
-> - 某些事件（例如主要 OS 更新）可能會要求指定的使用者重新登入裝置，以繼續進行自動登入行為。 
+>
+> - 某些事件（例如主要 OS 更新）可能會要求指定的使用者重新登入裝置，以繼續進行自動登入行為。
 > - 只有 MSA 和 AAD 使用者才支援自動登入。
+
+### <a name="improved-update-restart-detection-and-notifications"></a>改進更新重新開機偵測和通知
+
+在使用中的時數與安裝時間原則之間，可以避免在使用中 HoloLens 裝置時將其重新開機。 但是，如果不需要重新開機就能完成安裝必要的更新，它也會延遲採用更新。 我們現在已新增原則，以允許它強制執行期限和必要的重新開機，並確保及時完成更新的安裝。 使用者可以在啟動重新開機之前收到通知，而且可以根據 IT 原則延遲重新開機。
+
+已新增下列更新原則：
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>憑證管理員的 PFX 檔案支援
 
 在 Windows 測試人員組建20348.1405 中引進。 我們已新增對 [憑證管理員](certificate-manager.md) 的支援，現在使用 .pfx 憑證。 當使用者流覽至 **設定**  >  **更新 & 安全性**  >  **憑證**，然後選取 [**安裝憑證**] 時，UI 現在支援 .pfx 憑證檔案。
 使用者可以將 .pfx 憑證（具有私密金鑰）匯入使用者存放區或電腦存放區。
+
+### <a name="smart-retry-for-app-updates"></a>應用程式更新的智慧型重試
+
+現在已啟用 HoloLens 的新原則，可讓 IT 系統管理員設定週期性或一段時間，以重新開機因為應用程式正在使用中而更新失敗的應用程式，允許套用更新。 您可以根據一些不同的觸發程式來設定這些觸發程式，例如排程時間或登入。 若要深入瞭解如何使用此原則，請參閱 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在 HoloLens 上設定 View advanced 診斷報表
 
@@ -119,7 +142,7 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 ![用於收集記錄的快顯通知。](./images/logcollection1.jpg)
 
 ![記錄收集完成時的快顯通知。](./images/logcollection2.jpg)
- 
+
 由於使用者通常會使用離線診斷做為無法存取顯示器、無法登入或仍在 OOBE 中的回溯記錄檔收集機制，因此當收集記錄時，也會有音訊提示播放。 除了快顯通知之外，還會播放這個音效。
 
 當您的裝置更新，且不需要啟用或管理時，會啟用這項新功能。 在無法顯示或聽到這項新意見反應的任何情況下，仍會產生離線診斷。
@@ -154,7 +177,8 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 
 > [!NOTE]
 > 如果您最近未更新，請重新開機您的裝置以更新狀態並取得最新組建。
-> - 「重新開機裝置」聲音命令也可以正常運作。 
+>
+> - 「重新開機裝置」聲音命令也可以正常運作。
 > - 您也可以在設定/Windows 測試人員計畫中選擇 [重新開機] 按鈕。
 >
 > 您可能遇到的後端有錯誤，這會讓您回到進度。
@@ -175,9 +199,9 @@ Windows insider 現在移至頻道。 **快速** 環形會成為 **開發通道*
 
 #### <a name="stage-one---release-preview"></a>階段 1-發行預覽
 
-1.  設定，更新 & 安全性，Windows 測試人員計畫，選取 [**發行預覽通道**]。
+1. 設定，更新 & 安全性，Windows 測試人員計畫，選取 [**發行預覽通道**]。
 
-2.  設定，更新 & 安全性，Windows Update，**檢查是否有更新**。 更新之後，請繼續進行第二階段。
+2. 設定，更新 & 安全性，Windows Update，**檢查是否有更新**。 更新之後，請繼續進行第二階段。
 
 #### <a name="stage-two---dev-channel"></a>第二階段-開發通道
 
@@ -191,9 +215,9 @@ Windows insider 現在移至頻道。 **快速** 環形會成為 **開發通道*
 
 1. 在電腦上：
     1. 從下載 ffu 到您的電腦 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
-    
+
     1. 從 Microsoft Store 安裝 ARC (Advanced Recovery 隨附) ： [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 。
-    
+
 1. 在 HoloLens 飛行解除鎖定：開啟 **設定**  >  **更新 & 安全性**  >  **Windows 測試人員計畫** 然後註冊、重新開機裝置。
 
 1. Flash FFU-現在您可以使用弧線來閃爍飛行簽署的 FFU。
