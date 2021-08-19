@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2c0e6e285b2eb86342450e8f05876e0cc3bccfe8
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 9c37baa6fb63e9b049378799515ef107ed0ea7a8
+ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858609"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122401153"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>移動低動態動作移動平臺上的平臺模式
 
 在 **Insider build 20348.1411** 中，我們新增了在 HoloLens 2 上追蹤低動態移動移動平臺的 Beta 支援。 在安裝組建並啟用移動平臺模式之後，您將能夠在先前無法存取的環境中使用您的 HoloLens 2，例如大型隨附和大型航海船隻。 目前，此功能的目標是要啟用這些特定的移動平臺。 雖然不會讓您嘗試在其他環境中使用此功能，但這項功能的重點是先新增對這些環境的支援。
 
 > [!NOTE]
-> 這項功能目前僅可[透過 Windows 測試](hololens-insider.md)人員使用。
+> 這項功能目前僅可透過[Windows](hololens-insider.md)測試人員使用。
 
 本文將說明：
 
@@ -71,14 +71,16 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 1. 選取左側功能表上的 [ **系統** ] 可折疊
 2. 選取 [ **移動平臺模式** ] 頁面，然後選取 [ **移動平臺模式** ] 核取方塊
 
-![第一個影像](.\images\moving-platform-1.png) ![第二個影像](.\images\moving-platform-2.png)
+   ![第一個影像](.\images\moving-platform-1x.png)
+ 
+     ![第二個影像](.\images\moving-platform-2x.png)
 
 3. 出現警告的提示時，請選取 **[確定]**
 
-![第三個影像](.\images\moving-platform-3.png)
+   ![第三個影像](.\images\moving-platform-3x.png)
 
 4. 重新開機您的裝置，您可以透過右上方的裝置入口網站 **電源** 功能表，或發出下列語音命令將 &quot; 裝置重新開機， &quot; 然後選取 &quot; [是] &quot; 來完成。
 
-![第四個映射](.\images\moving-platform-4.png)
+   ![第四個映射](.\images\moving-platform-4x.png)
 
 如果您在裝置入口網站中看不到 [移動平臺模式] 選項，可能表示您還沒有在適當的組建上。 請參閱 [必要條件](#prerequisites) 一節。

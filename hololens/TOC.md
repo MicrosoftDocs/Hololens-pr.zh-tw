@@ -75,7 +75,7 @@
 ### [加密和資料保護](security-encryption-data-protection.md)
 ### [網路安全性](security-network-security.md)
 ### [安全性工程 ](security-engineering.md)
-### [HoloLens 2隱私權聲明](hololens2-compliance.md)
+### [HoloLens 2隱私權與資料保護](hololens2-privacy.md)
 ## 裝置管理
 ### [使用 MDM 來管理 HoloLens 裝置](hololens-mdm-configure.md)
 ## 註冊裝置

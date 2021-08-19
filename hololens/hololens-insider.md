@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/19/2021
+ms.date: 08/16/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
-ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
+ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
+ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "122213905"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122277149"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -31,19 +31,67 @@ ms.locfileid: "122213905"
 
 我們很高興能開始試驗新功能，Windows 測試人員。 新組建將會試驗至開發和搶鮮版（Beta）通道，以取得最新的更新。 當我們在 Windows 測試人員組建中新增更多功能和更新時，我們會繼續更新此頁面。 取得驚喜，並準備好將這些更新混合到您的現實中。
 
+這一項關於改良的疑難排解和裝置報告、kiosk 模式和憑證檢視器中的一些已修正錯誤、擴充的管理性介面，以及增加的更新可靠性。 這項功能更新的新旗艦功能即將 HoloLens 是我們的移動平臺模式。 查看 HoloLens 2 的所有新絕佳功能！
+
 | 功能                 | 描述                | 使用者或案例 | 引進的組建 |
 |-------------------------|----------------------------|--------------|------------------|
+| [移動平臺模式](#moving-platform-mode) | 介紹移動平臺模式搶鮮版（若已設定），可讓您在遇到低動態動作的大型航海船隻上使用 HoloLens 2。 | 全部 | 20348.1411 |
+| [憑證管理員的 PFX 檔案支援](#pfx-file-support-for-certificate-manager) | 透過設定 UI 新增 PFX 憑證 | 使用者 | 20348.1405 |
+| [在 HoloLens 上設定 View advanced 診斷報表](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看裝置上的 MDM 診斷記錄 | 疑難排解 | 20348.1405 |
+| [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
+| [低儲存體記錄收集改進](#low-storage-log-collection-improvements) | 在低儲存情況下，記錄收集案例的改進。 | 疑難排解 | 20348.1412 |
 | [CSP 變更報告 HoloLens 詳細資料](#csp-changes-for-reporting-hololens-details) | 用於查詢資料的新 Csp | IT 系統管理員    | 20348.1403                 |
 | [由 CSP 控制的自動登入原則](#auto-login-policy-controlled-by-csp) | 用來自動登入帳戶 | IT 系統管理員 | 20348.1405 |
 | [改進更新重新開機偵測和通知](#improved-update-restart-detection-and-notifications) | 新啟用的原則和 UX 以進行更新。 | IT 系統管理員 | 20348.1405 |
-| [憑證管理員的 PFX 檔案支援](#pfx-file-support-for-certificate-manager) | 透過設定 UI 新增 PFX 憑證 | 使用者 | 20348.1405 |
 | [應用程式更新的智慧型重試](#smart-retry-for-app-updates) | 允許 IT 系統管理員排程更新應用程式的重試。 | IT 系統管理員 | 20348.1405 |
-| [在 HoloLens 上設定 View advanced 診斷報表](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看裝置上的 MDM 診斷記錄 | 疑難排解 | 20348.1405 |
-| [離線診斷通知](#offline-diagnostics-notifications) | 視聽記錄收集的意見反應 | 疑難排解 | 20348.1405 |
 | [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
-| [低儲存體記錄收集改進](#low-storage-log-collection-improvements) | 在低儲存情況下，記錄收集案例的改進。 | IT 管理員 | 20348.1412 |
-| [移動平臺模式](#moving-platform-mode) | 介紹移動平臺模式搶鮮版（若已設定），可讓您在遇到低動態動作的大型航海船隻上使用 HoloLens 2。 | 全部 | 20348.1411 |
 | [修正和改善](#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1411 |
+
+### <a name="it-admin-insider-feature-checklist"></a>IT 管理 Insider 功能檢查清單
+
+✔️如果您想要將單一 Azure AD 帳戶設定為自動登入，請設定 [這個新的 CSP。](#auto-login-policy-controlled-by-csp) <br>
+✔️如果您想要將應用程式設定為在無法更新之後自動嘗試更新，請 [設定這個新的 CSP 以進行智慧型重試。](#smart-retry-for-app-updates) <br>
+✔️如果您想要更充分掌控 OS 更新，請參閱這些 [新啟用的更新原則。](#improved-update-restart-detection-and-notifications) <br>
+✔️如果您需要讓組織的應用程式透過 Microsoft Store 在公司商店上提供，但只想要允許存取您組織的應用程式，而不是完整的存放區，請[設定此原則。](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️如果您想知道可用的儲存空間、HoloLens 裝置的 SSID 或 BSSID，請參閱這些[報告 csp。](#csp-changes-for-reporting-hololens-details)
+
+### <a name="moving-platform-mode"></a>移動平臺模式
+
+在測試人員 **組建 20348.1411** 中，我們已新增在 HoloLens 2 上追蹤低動態移動移動平臺的 Beta 支援。 在安裝組建並啟用移動平臺模式之後，您將能夠在先前無法存取的環境中使用您的 HoloLens 2，例如大型隨附和大型航海船隻。 目前，此功能的目標是要啟用這些特定的移動平臺。 雖然不會讓您嘗試在其他環境中使用此功能，但這項功能的重點是先新增對這些環境的支援。
+
+若要深入瞭解支援的內容以及如何啟用這項新功能，請 [造訪移動平臺頁面。](hololens2-moving-platform.md)
+
+### <a name="pfx-file-support-for-certificate-manager"></a>憑證管理員的 PFX 檔案支援
+
+在 Windows 測試人員組建20348.1405 中引進。 我們已新增對 [憑證管理員](certificate-manager.md) 的支援，現在使用 .pfx 憑證。 當使用者流覽至 **設定**  >  **更新 & 安全性**  >  **憑證**，然後選取 [**安裝憑證**] 時，UI 現在支援 .pfx 憑證檔案。
+使用者可以將 .pfx 憑證（具有私密金鑰）匯入使用者存放區或電腦存放區。
+
+### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在 HoloLens 上設定 View advanced 診斷報表
+
+針對受管理的裝置進行疑難排解時，確認套用了預期的原則設定是很重要的步驟。 先前在這項新功能中，必須在匯出透過 mdm 的裝置，或在匯出透過 **設定** 帳戶所收集的 MDM 診斷記錄之後，  ->    >  透過 **存取公司或學校** 的裝置，然後選取 [**匯出您的記錄管理** 檔]，然後在附近的電腦上查看。
+
+現在可以使用 Edge 瀏覽器在裝置上查看 MDM 診斷。 若要更輕鬆地查看 MDM 診斷報表，請流覽至 [存取工作或學校] 頁面，然後選取 [ **view advanced 診斷報告**]。 這會產生並在新的邊緣視窗中開啟報表。
+
+![在設定應用程式中查看 advanced 診斷報告。](./images/view-advanced-diagnostic-report.jpg)
+
+### <a name="offline-diagnostics-notifications"></a>離線診斷通知
+
+這是現有功能的更新，稱為 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。 之前，使用者已觸發診斷收集或已完成的明確指標。
+現在已新增 Windows 測試人員組建中，有兩種形式的視聽意見反應可進行離線診斷。 當收集開始和完成時，會顯示第一個快顯通知的通知。 這些會在使用者登入並具有視覺效果時顯示。
+
+![用於收集記錄的快顯通知。](./images/logcollection1.jpg)
+
+![記錄收集完成時的快顯通知。](./images/logcollection2.jpg)
+
+由於使用者通常會使用離線診斷做為無法存取顯示器、無法登入或仍在 OOBE 中的回溯記錄檔收集機制，因此當收集記錄時，也會有音訊提示播放。 除了快顯通知之外，還會播放這個音效。
+
+當您的裝置更新，且不需要啟用或管理時，會啟用這項新功能。 在無法顯示或聽到這項新意見反應的任何情況下，仍會產生離線診斷。
+
+我們希望有這項較新的視聽意見反應，更容易收集診斷資料，並更快速地針對您的問題進行疑難排解。
+
+### <a name="low-storage-log-collection-improvements"></a>低儲存體記錄收集改進
+
+在收集診斷記錄檔時，裝置似乎磁碟空間不足的情況，將會建立名為 **StorageDiagnostics.zip** 的額外報告。 低儲存體的閾值是由 Windows[儲存體的意義](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)自動決定。
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 變更報告 HoloLens 詳細資料
 
@@ -117,53 +165,15 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 - [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
-### <a name="pfx-file-support-for-certificate-manager"></a>憑證管理員的 PFX 檔案支援
-
-在 Windows 測試人員組建20348.1405 中引進。 我們已新增對 [憑證管理員](certificate-manager.md) 的支援，現在使用 .pfx 憑證。 當使用者流覽至 **設定**  >  **更新 & 安全性**  >  **憑證**，然後選取 [**安裝憑證**] 時，UI 現在支援 .pfx 憑證檔案。
-使用者可以將 .pfx 憑證（具有私密金鑰）匯入使用者存放區或電腦存放區。
-
 ### <a name="smart-retry-for-app-updates"></a>應用程式更新的智慧型重試
 
 現在已啟用 HoloLens 的新原則，可讓 IT 系統管理員設定週期性或一段時間，以重新開機因為應用程式正在使用中而更新失敗的應用程式，允許套用更新。 您可以根據一些不同的觸發程式來設定這些觸發程式，例如排程時間或登入。 若要深入瞭解如何使用此原則，請參閱 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
-
-### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在 HoloLens 上設定 View advanced 診斷報表
-
-針對受管理的裝置進行疑難排解時，確認套用了預期的原則設定是很重要的步驟。 先前在這項新功能中，必須在匯出透過 mdm 的裝置，或在匯出透過 **設定** 帳戶所收集的 MDM 診斷記錄之後，  ->    >  透過 **存取公司或學校** 的裝置，然後選取 [**匯出您的記錄管理** 檔]，然後在附近的電腦上查看。
-
-現在可以使用 Edge 瀏覽器在裝置上查看 MDM 診斷。 若要更輕鬆地查看 MDM 診斷報表，請流覽至 [存取工作或學校] 頁面，然後選取 [ **view advanced 診斷報告**]。 這會產生並在新的邊緣視窗中開啟報表。
-
-![在設定應用程式中查看 advanced 診斷報告。](./images/view-advanced-diagnostic-report.jpg)
-
-### <a name="offline-diagnostics-notifications"></a>離線診斷通知
-
-這是現有功能的更新，稱為 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。 之前，使用者已觸發診斷收集或已完成的明確指標。
-現在已新增 Windows 測試人員組建中，有兩種形式的視聽意見反應可進行離線診斷。 當收集開始和完成時，會顯示第一個快顯通知的通知。 這些會在使用者登入並具有視覺效果時顯示。
-
-![用於收集記錄的快顯通知。](./images/logcollection1.jpg)
-
-![記錄收集完成時的快顯通知。](./images/logcollection2.jpg)
-
-由於使用者通常會使用離線診斷做為無法存取顯示器、無法登入或仍在 OOBE 中的回溯記錄檔收集機制，因此當收集記錄時，也會有音訊提示播放。 除了快顯通知之外，還會播放這個音效。
-
-當您的裝置更新，且不需要啟用或管理時，會啟用這項新功能。 在無法顯示或聽到這項新意見反應的任何情況下，仍會產生離線診斷。
-
-我們希望有這項較新的視聽意見反應，更容易收集診斷資料，並更快速地針對您的問題進行疑難排解。
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>僅使用私人存放區應用程式進行 Microsoft Store
 
 已針對 HoloLens 啟用 RequirePrivateStoreOnly 原則。 此原則可讓 Microsoft Store 應用程式設定為只顯示為您的組織設定的私人存放區。 限制只能存取您所提供的應用程式。
 
 深入瞭解 [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
-
-### <a name="low-storage-log-collection-improvements"></a>低儲存體記錄收集改進
-
-在收集診斷記錄檔時，裝置似乎磁碟空間不足的情況，將會建立名為 **StorageDiagnostics.zip** 的額外報告。 低儲存體的閾值是由 Windows[儲存體的意義](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)自動決定。
-
-### <a name="moving-platform-mode"></a>移動平臺模式
-
-在測試人員 **組建 20348.1411** 中，我們已新增在 HoloLens 2 上追蹤低動態移動移動平臺的 Beta 支援。 在安裝組建並啟用移動平臺模式之後，您將能夠在先前無法存取的環境中使用您的 HoloLens 2，例如大型隨附和大型航海船隻。 目前，此功能的目標是要啟用這些特定的移動平臺。 雖然不會讓您嘗試在其他環境中使用此功能，但這項功能的重點是先新增對這些環境的支援。
-
-若要深入瞭解支援的內容以及如何啟用這項新功能，請 [造訪移動平臺頁面。](hololens2-moving-platform.md)
 
 ### <a name="fixes-and-improvements"></a>修正和改善
 
