@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c37baa6fb63e9b049378799515ef107ed0ea7a8
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: 64aaf726fab27c997eea26208f17daae4fa3179d
+ms.sourcegitcommit: 938fa78e1b6c59626e12399c9babc277eb30c29c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401153"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122448664"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>移動低動態動作移動平臺上的平臺模式
 
@@ -35,7 +35,7 @@ ms.locfileid: "122401153"
 
 ## <a name="why-moving-platform-mode-is-necessary"></a>為何需要移動平臺模式
 
-HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_degrees_of_freedom)來追蹤您的頭部位置 (X、Y、Z 轉譯和變換、音調、偏擺旋轉) ，以顯示穩定的全像。 若要這樣做，HoloLens 會從兩個不同的來源追蹤兩個類似的資訊片段：
+HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_degrees_of_freedom)來追蹤您的頭部位置 (X、Y、Z、轉譯和變換、音調、偏擺旋轉) ，以便顯示穩定的全像。 若要這樣做，HoloLens 會從兩個不同的來源追蹤兩個類似的資訊片段：
 
 1. 可見的攝影機-可追蹤環境，例如，您使用 HoloLens 的實體房間
 1. 慣性度量單位 (IMU) ，其中包含加速計、陀螺儀和磁力計，可追蹤您與地球相關的 head 運動和方向
@@ -44,7 +44,7 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 
 不過，這種方法會依賴重要的假設。攝影機所追蹤的環境 () 會維持在相對於地球 (的位置，而 IMU 可) 其進行測量。 如果不是這種情況（例如水線上的船），這兩個來源的資訊可能會彼此衝突，導致追蹤器遺失。 這項衝突會產生不正確的位置資訊，並導致 swimmy 的全像或甚至追蹤遺失。
 
-移動平臺模式會彌補這個問題。 當您啟用移動平臺模式時，這就是我們的追蹤器提示，我們無法依賴感應器輸入，隨時完全同意彼此。 相反地，我們需要更高的視覺效果追蹤，並快速找出 incongruous 的慣性運動資料，並在我們&#39;能夠使用 IMU 輸入之前，據此進行篩選。
+移動平臺模式會彌補這個問題。 當您啟用移動平臺模式時，這就是我們的追蹤器提示，我們無法依賴感應器輸入，隨時完全同意彼此。 相反地，我們需要依賴視覺效果追蹤，並快速找出 incongruous 的慣性運動資料並據以篩選出，然後才可以使用 IMU 輸入。
 
 ## <a name="supported-environments-and-known-limitations"></a>支援的環境和已知的限制
 
@@ -54,14 +54,17 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 
 - 將平臺模式移 (MPM) 的唯一支援環境，是大型的航海船隻遇到低動態動作。 換句話說，許多常見的環境/情況都 **不** 受支援，因為其高頻率的動作和高階的加速和 [直覺式](https://en.wikipedia.org/wiki/Jerk_(physics))。 例如：平面、訓練、汽車、自行車、匯流排、small boats、電梯等。
 - 當啟用 MPM 時，全像投影可能會稍微 wobble 一點，特別是在不連貫的水上。
-- 無需防止使用者嘗試在不支援的環境中使用 MPM，不過，如果裝置能夠在不支援的空間中維護追蹤，使用者可能會遇到不必要的副作用。 例如，使用 MPM 時，使用者可能會發現它&#39;可以在電梯中使用，而不是因為這種情況是不可能的。 可惜的是，雖然 MPM 允許裝置維護追蹤，但目前不會處理地圖管理。 因此，使用者會發現變更電梯中的樓層會導致裝置混淆最上層和下限，並對地圖品質造成負面影響。
+- 無需防止使用者嘗試在不支援的環境中使用 MPM，不過，如果裝置能夠在不支援的空間中維護追蹤，使用者可能會遇到不必要的副作用。 例如，使用 MPM 時，使用者可能會發現，在變更樓層時，可能會在電梯中使用，而不是先前可能的情況。 可惜的是，雖然 MPM 允許裝置維護追蹤，但目前不會處理地圖管理。 使用者會發現變更電梯中的樓層會導致裝置混淆最上層和下限，並對地圖品質造成負面影響。
 
 ## <a name="prerequisites"></a>必要條件
 
 移動平臺模式的 Beta 支援只需要一些必要條件：
 
 1. 藉 [由透過 ARC 閃爍最新的](hololens-insider.md#ffu-download-and-flash-directions) 測試人員組建或 [註冊和更新您的裝置](hololens-insider.md#start-receiving-insider-builds)，來安裝組建20348.1411 或更新版本。
-   - 注意：此組建目前僅適用于 [Insider 開發通道](hololens-insider.md#start-receiving-insider-builds)。
+
+   > [!NOTE]
+   > 此組建目前僅適用于 [Insider Dev 通道](hololens-insider.md#start-receiving-insider-builds)。
+
 2. 啟用 [開發人員模式和裝置入口網站](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## <a name="enabling-moving-platform-mode"></a>啟用移動平臺模式
@@ -69,18 +72,28 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 若要啟用移動平臺模式，請先 [啟用裝置入口網站](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
 
 1. 選取左側功能表上的 [ **系統** ] 可折疊
+
+   ![第一個影像](.\images\moving-platform-1z.png)
+
 2. 選取 [ **移動平臺模式** ] 頁面，然後選取 [ **移動平臺模式** ] 核取方塊
 
-   ![第一個影像](.\images\moving-platform-1x.png)
- 
-     ![第二個影像](.\images\moving-platform-2x.png)
+    ![第二個影像](.\images\moving-platform-2z.png)
 
 3. 出現警告的提示時，請選取 **[確定]**
 
-   ![第三個影像](.\images\moving-platform-3x.png)
+   ![第三個影像](.\images\moving-platform-3z.png)
 
 4. 重新開機您的裝置，您可以透過右上方的裝置入口網站 **電源** 功能表，或發出下列語音命令將 &quot; 裝置重新開機， &quot; 然後選取 &quot; [是] &quot; 來完成。
 
-   ![第四個映射](.\images\moving-platform-4x.png)
+   ![第四個映射](.\images\moving-platform-4z.png)
 
 如果您在裝置入口網站中看不到 [移動平臺模式] 選項，可能表示您還沒有在適當的組建上。 請參閱 [必要條件](#prerequisites) 一節。
+
+## <a name="reporting-issues"></a>報告問題
+
+如上所述，這項功能僅適用于開發人員模式的 Beta 版功能，這表示您可能會遇到問題。 如果發生這種情況，我們可以調查並改進產品，請
+
+1. 透過「全像」、「**穩定性」和「可靠性**」類別下的 [意見反應中樞](hololens-feedback.md)來回報問題，並包括：
+    1. 問題的描述，包括預期的行為和有經驗的行為
+    1. 問題的混合現實[影片捕獲](holographic-photos-and-videos.md#capture-a-mixed-reality-video)
+2.  在中開啟支援案例， [https://aka.ms/hlsupport](https://aka.ms/hlsupport) 並共用意見反應中樞的 URL，因此我們可以在有後續問題的情況下找出問題
