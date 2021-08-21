@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: jarrettr
-ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
+ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662356"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122620806"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -250,7 +250,12 @@ ms.locfileid: "115662356"
        >
        > 針對使用乙太網路介面卡的裝置，您必須先將裝置連線到網路，才能使用 (OOBE) 啟動的現成體驗。 裝置會在第一個 OOBE 畫面上判斷其是否以 Autopilot 裝置的形式布建。 如果裝置無法連線到網路，或如果您選擇不將裝置布建為 Autopilot 裝置，您將無法在稍後變更為 Autopilot 布建。 相反地，您必須先啟動此程式，才能將裝置布建為 Autopilot 裝置。
 
-1. 裝置應該會自動啟動 OOBE。 請勿與 OOBE 互動。 取而代之的是，回頭和放寬！ 讓 HoloLens 2 偵測網路連線能力，並自動讓它完成 OOBE。 裝置可能會在 OOBE 期間重新開機。 OOBE 畫面應該如下所示。
+1. 裝置應該會自動啟動 OOBE。 請勿與 OOBE 互動。
+
+    > [!IMPORTANT]
+    > 請勿與 OOBE 互動或按下電源按鈕，讓系統進入待命/關機，而 autopilot 正在進行中。 這可能會導致 autopilot 流程無法完成。
+
+   讓 HoloLens 2 偵測網路連線能力，並自動讓它完成 OOBE。 裝置可能會在 OOBE 期間重新開機。 OOBE 畫面應該如下所示。
 
    ![OOBE 步驟 1 ](./images/autopilot-welcome.jpg)
     ![ oobe 步驟 2 ](./images/autopilot-step-complete.jpg)
