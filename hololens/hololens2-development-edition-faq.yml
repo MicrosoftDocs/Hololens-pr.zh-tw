@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
+  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115659756"
+  ms.lasthandoff: 08/20/2021
+  ms.locfileid: "122610245"
 title: HoloLens 2開發版常見問題
 summary: ''
 sections:
@@ -37,11 +37,11 @@ sections:
   - question: >
       是否可以使用任何版本的 HoloLens 2 來進行開發？
     answer: >
-      是。 您可以使用任何版本的 HoloLens 2 來開發應用程式。
+      可以。 您可以使用任何版本的 HoloLens 2 來開發應用程式。
   - question: >
       如何和將會收到我的 $500 （Azure 點數）、3個月 Unity Pro 試用版和3個月的 Pixyz 外掛程式試用版？
     answer: >
-      您的折扣點數或試用版的存取權將會傳送到在產品出貨的2個工作天內，于購買時使用的電子郵件。
+      您的 HoloLens 2 開發版將包含您的折扣點數或試用版的存取權。
   - question: >
       我可以將我的 HoloLens 2 (裝置僅) 裝置升級為 HoloLens 2 開發版以取得試用版點數嗎？
     answer: >
@@ -85,7 +85,7 @@ sections:
   - question: >
       HoloLens 2 開發版的作業系統版本與 HoloLens 2 相同嗎？
     answer: >
-      是。
+      可以。
   - question: >
       我可以在我的 HoloLens 2 開發版裝置上執行 (側載或儲存) 的應用程式嗎？
     answer: >

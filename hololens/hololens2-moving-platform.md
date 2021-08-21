@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64aaf726fab27c997eea26208f17daae4fa3179d
-ms.sourcegitcommit: 938fa78e1b6c59626e12399c9babc277eb30c29c
+ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
+ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122448664"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122610113"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>移動低動態動作移動平臺上的平臺模式
 
@@ -56,7 +56,7 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 - 當啟用 MPM 時，全像投影可能會稍微 wobble 一點，特別是在不連貫的水上。
 - 無需防止使用者嘗試在不支援的環境中使用 MPM，不過，如果裝置能夠在不支援的空間中維護追蹤，使用者可能會遇到不必要的副作用。 例如，使用 MPM 時，使用者可能會發現，在變更樓層時，可能會在電梯中使用，而不是先前可能的情況。 可惜的是，雖然 MPM 允許裝置維護追蹤，但目前不會處理地圖管理。 使用者會發現變更電梯中的樓層會導致裝置混淆最上層和下限，並對地圖品質造成負面影響。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 移動平臺模式的 Beta 支援只需要一些必要條件：
 
@@ -73,7 +73,7 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 
 1. 選取左側功能表上的 [ **系統** ] 可折疊
 
-   ![第一個影像](.\images\moving-platform-1z.png)
+   ![第一個影像](.\images\moving-platform-1w.png)
 
 2. 選取 [ **移動平臺模式** ] 頁面，然後選取 [ **移動平臺模式** ] 核取方塊
 
@@ -81,7 +81,7 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 
 3. 出現警告的提示時，請選取 **[確定]**
 
-   ![第三個影像](.\images\moving-platform-3z.png)
+   ![第三個影像](.\images\moving-platform-3w.png)
 
 4. 重新開機您的裝置，您可以透過右上方的裝置入口網站 **電源** 功能表，或發出下列語音命令將 &quot; 裝置重新開機， &quot; 然後選取 &quot; [是] &quot; 來完成。
 
