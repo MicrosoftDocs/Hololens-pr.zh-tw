@@ -13,21 +13,21 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: jarrettr
-ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
-ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
+ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
+ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122620806"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122782802"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
 > [!NOTE]
 > Microsoft 端點管理員中 HoloLens 的 Autopilot 設定會從 **公開預覽** 轉換為 **正式** 運作。 所有租使用者都可以在記憶體系統管理中心設定 Autopilot。
 
-從 Windows 全像2004版開始，HoloLens 2 支援 Windows Autopilot 的[自我部署模式](/mem/autopilot/self-deploying)，Microsoft Intune (不支援協力廠商 MDMs。 系統管理員可以在 Microsoft 端點管理員中設定 (OOBE) 的全新體驗，並讓終端使用者在幾乎不需要互動的情況之下，準備裝置以供商務使用。 這可減少庫存管理的額外負荷、實際操作裝置準備的成本，以及員工在安裝體驗期間的支援電話。 若要深入瞭解，請參閱[Windows Autopilot](/mem/autopilot/windows-autopilot)檔。
+從 Windows 全像2004版開始，HoloLens 2 支援 Windows Autopilot 的[自我部署模式](/mem/autopilot/self-deploying)，Microsoft Intune (不支援協力廠商 MDMs。 系統管理員可以在 Microsoft 端點管理員中設定 (OOBE) 的全新體驗，並讓終端使用者在幾乎不需要互動的情況之下，準備裝置以供企業使用。 藉由設定這項功能，可降低庫存管理額外負荷、實際操作裝置準備的成本，以及員工在安裝體驗期間的支援電話。 若要深入瞭解，請參閱[Windows Autopilot](/mem/autopilot/windows-autopilot)檔。
 
-如同 Surface 裝置，建議客戶與 Microsoft[雲端解決方案提供者](https://partner.microsoft.com/cloud-solution-provider) (轉銷商或散發者) 合作，以透過合作夥伴中心取得向 Autopilot 服務註冊的裝置。 裝置註冊的其他方法會在「 [新增裝置](/mem/autopilot/add-devices) 」檔中列出，但利用 Microsoft 的通路合作夥伴可確保最有效的端對端路徑。
+如同 Surface 裝置，建議客戶與 Microsoft[雲端解決方案提供者](https://partner.microsoft.com/cloud-solution-provider) (轉銷商或散發者) 合作，以透過合作夥伴中心取得向 Autopilot 服務註冊的裝置。 [ [新增裝置](/mem/autopilot/add-devices) ] 檔中概述其他裝置註冊方法，不過使用 Microsoft 的通路合作夥伴可確保最有效的端對端路徑。
 
 
 
@@ -51,15 +51,17 @@ ms.locfileid: "122620806"
 
 1. [啟用自動 MDM 註冊](#2-enable-automatic-mdm-enrollment)
 
-1. [在 Windows Autopilot 中註冊裝置。](#3-register-devices-in-windows-autopilot)
+1.  (僅適用于 Intune) [請確定未封鎖 Windows 裝置的 MDM 註冊。](/mem/intune/enrollment/enrollment-restrictions-set)
 
-1. [建立裝置群組。](#4-create-a-device-group)
+1. [在 Windows Autopilot 中註冊裝置。](#4-register-devices-in-windows-autopilot)
 
-1. [建立部署設定檔。](#5-create-a-deployment-profile)
+1. [建立裝置群組。](#5-create-a-device-group)
 
-1. [確認 [註冊狀態] 頁面 (ESP) 設定]。](#6-verify-the-esp-configuration)
+1. [建立部署設定檔。](#6-create-a-deployment-profile)
 
-1. [確認 HoloLens 裝置的設定檔狀態。](#7-verify-the-profile-status-of-the-hololens-devices)
+1. [確認 [註冊狀態] 頁面 (ESP) 設定]。](#7-verify-the-esp-configuration)
+
+1. [確認 HoloLens 裝置的設定檔狀態。](#8-verify-the-profile-status-of-the-hololens-devices)
 
 ### <a name="1-review-requirements-for-windows-autopilot-for-hololens-2"></a>1. 審核 HoloLens 2 的 Windows Autopilot 需求
 
@@ -71,11 +73,11 @@ ms.locfileid: "122620806"
 
 **請參閱 Windows Autopilot Self-Deploying 模式文章的「[需求](/windows/deployment/windows-autopilot/self-deploying#requirements)」一節。** 您的環境必須符合這些需求以及標準 Windows Autopilot 需求。 您不必複習本文的「逐步執行」和「驗證」章節。 本文稍後的程式會提供 HoloLens 特定的對應步驟。
 
-如需如何註冊裝置和設定設定檔的詳細資訊，請參閱[2。在 Windows Autopilot 和4中註冊裝置](#3-register-devices-in-windows-autopilot) [。在本文中建立部署設定檔](#5-create-a-deployment-profile)。 若要設定及管理 Autopilot 的自我部署模式設定檔，請確定您有 Microsoft 端點管理員系統[管理中心](https://endpoint.microsoft.com)的存取權。
+如需如何註冊裝置和設定設定檔的詳細資訊，請參閱[4。在 Windows Autopilot 和6中註冊裝置](#4-register-devices-in-windows-autopilot) [。在本文中建立部署設定檔](#6-create-a-deployment-profile)。 若要設定及管理 Autopilot 的自我部署模式設定檔，請確定您有 Microsoft 端點管理員系統[管理中心](https://endpoint.microsoft.com)的存取權。
 
 #### <a name="review-hololens-os-requirements"></a>複習 HoloLens 作業系統需求：
 
-- 裝置必須位於 Windows 全像[2004 版](hololens-release-notes.md#windows-holographic-version-2004) (組建 19041.1103) 或更新版本。 若要確認裝置上的組建版本，或重新快閃到最新的作業系統，請使用 [Advanced Recovery 附屬 (ARC) ](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 和我們的 [裝置重新快閃指示](/hololens/hololens-recovery#clean-reflash-the-device)。 請注意，在2020年9月之前提供的裝置已預先安裝 Windows 全像版本1903。 請洽詢您的轉銷商，以確保 Autopilot 就緒的裝置會寄送給您。
+- 裝置必須位於 Windows 全像[2004 版](hololens-release-notes.md#windows-holographic-version-2004) (組建 19041.1103) 或更新版本。 若要確認裝置上的組建版本或重新刷新到最新的作業系統，請使用 [Advanced Recovery 隨附 (ARC) ](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 和我們的 [裝置重新刷新指示](/hololens/hololens-recovery#clean-reflash-the-device)。 請注意，在2020年9月之前提供的裝置已預先安裝 Windows 全像版本1903。 請洽詢您的轉銷商，以確保 Autopilot 就緒的裝置會寄送給您。
 
 - Windows全像2004版僅支援透過乙太網路連接的 Autopilot。 **開啟之前**，請確定 HoloLens 已使用「USB 至 ethernet」介面卡連線到乙太網路。 在裝置開機時，不需要使用者互動。 如果您打算 Autopilot 推出許多 HoloLens 裝置，建議您規劃介面卡基礎結構。 我們不建議 USB 集線器，因為它們通常需要安裝額外的協力廠商驅動程式，但 HoloLens 不支援這些驅動程式。
 
@@ -98,7 +100,11 @@ ms.locfileid: "122620806"
 
 請參閱下列 [有關啟用 MDM 自動註冊](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) 或 [自動註冊快速入門手冊](/mem/intune/enrollment/quickstart-setup-auto-enrollment) 的簡短指南，以取得設定的詳細資訊。
 
-### <a name="3-register-devices-in-windows-autopilot"></a>3. 在 Windows Autopilot 中註冊裝置
+### <a name="3-ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>3. 確定未封鎖 Windows 裝置的 MDM 註冊。
+
+為了讓 Autopilot 成功，您必須確定您的 HoloLens 裝置可以註冊。 由於 HoloLens 被視為 Windows 裝置，因此不會有可能封鎖部署的註冊限制。 請[檢查這份限制清單](/mem/intune/enrollment/enrollment-restrictions-set)，並確定您可以註冊您的裝置。
+
+### <a name="4-register-devices-in-windows-autopilot"></a>4. 在 Windows Autopilot 中註冊裝置
 
 在第一次安裝之前，您的裝置必須先在 Windows Autopilot 中註冊。 針對裝置註冊的記憶體檔，請參閱 [將裝置新增至 Autopilot](/mem/autopilot/add-devices)。  
 
@@ -107,7 +113,7 @@ ms.locfileid: "122620806"
  - **轉銷商可以在您下訂單時，在合作夥伴中心中註冊裝置。**
 
    > [!NOTE]  
-   > 這是將裝置新增至 Autopilot 服務的建議路徑。 [深入了解](/mem/autopilot/partner-registration)。  
+   > 這是將裝置新增至 Autopilot 服務的建議路徑。 [深入了解](/mem/autopilot/partner-registration)   
 
  - **您可以直接向 Microsoft [提交支援要求](hololens2-autopilot-registration-support.md) 。**
  - **取出硬體雜湊 (也稱為硬體識別碼) ，並以手動方式在記憶體管理中心註冊裝置**。
@@ -123,7 +129,7 @@ ms.locfileid: "122620806"
 
     1. 在裝置上，同步選取 **電源** 和 **音量** 按鈕，然後放開它們。 裝置會收集診斷記錄和硬體雜湊，並將它們儲存在一組 .zip 檔案中。
 
-   1. 如需有關如何執行的完整詳細資料及教學影片，請參閱 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。
+   1. 如需完整的詳細資料，以及如何執行此內容的教學影片，請閱讀 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。
 
     1. 使用 USB 纜線將裝置連接到電腦。
 
@@ -156,7 +162,7 @@ ms.locfileid: "122620806"
    > [!div class="mx-imgBorder"]
    > ![使用 Sync 和 Refresh 命令來查看裝置清單。](./images/hololens-ap-devices-sync.png)  
 
-### <a name="4-create-a-device-group"></a>4. 建立裝置群組
+### <a name="5-create-a-device-group"></a>5. 建立裝置群組
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com)，選取 [**群組**  >  **新群組**]。
 
@@ -176,7 +182,7 @@ ms.locfileid: "122620806"
      > 這些規則會以 Autopilot 裝置特有的屬性為目標。
 1. 選取 [ **儲存**]，然後選取 [ **建立**]。
 
-### <a name="5-create-a-deployment-profile"></a>5. 建立部署設定檔
+### <a name="6-create-a-deployment-profile"></a>6. 建立部署設定檔
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com)中，選取 [**裝置**]  >  **Windows**  >  **Windows 註冊**  >  **Windows Autopilot 部署配置** 檔]  >  **建立設定檔**  >  **HoloLens**。
    ![[建立設定檔] 下拉式清單包含 HoloLens 專案。](./images/hololens-ap-enrollment-profiles.png)
@@ -214,14 +220,14 @@ ms.locfileid: "122620806"
    > [!div class="mx-imgBorder"]
    > ![檢閱 + 建立](./images/hololens-ap-profile-summ.png)
 
-### <a name="6-verify-the-esp-configuration"></a>6. 確認 ESP 設定
+### <a name="7-verify-the-esp-configuration"></a>7. 確認 ESP 設定
 
 [註冊狀態] 頁面 (ESP) 會顯示當 MDM 受管理的使用者第一次登入裝置時，所執行的完整裝置設定流程狀態。 確定您的 ESP 設定類似下列內容，並確認指派是否正確。  
 
 > [!div class="mx-imgBorder"]
 > ![ESP 設定](./images/hololens-ap-profile-settings.png)
 
-### <a name="7-verify-the-profile-status-of-the-hololens-devices"></a>7. 確認 HoloLens 裝置的設定檔狀態
+### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. 確認 HoloLens 裝置的設定檔狀態
 
 1. 在 Microsoft 端點管理員系統管理中心，選取 [**裝置**]  >  **Windows**  >  **Windows 註冊**  >  **裝置**]。
 
@@ -237,13 +243,13 @@ ms.locfileid: "122620806"
 
 完成上述指示之後，您的 HoloLens 2 使用者將會經歷下列體驗，以布建其 HoloLens 裝置：  
 
-1. Autopilot 體驗需要網際網路存取。 請使用下列其中一個選項來提供網際網路存取：
+1. Autopilot 體驗需要網際網路存取。 使用下列其中一個選項來提供網際網路存取：
 
-    - 在 OOBE 中連線您的裝置到 Wi-Fi 網路，然後讓它自動偵測 Autopilot 體驗。 這是您在 Autopilot 經驗自行完成之前，必須與 OOBE 互動的唯一時間。 請注意，根據預設 HoloLens 2 會在偵測到網際網路之後等候10秒偵測 Autopilot。 如果在10秒內未偵測到任何 autopilot 設定檔，OOBE 將會顯示 EULA。 如果您遇到這種情況，請重新開機您的裝置，以進行另一次嘗試以偵測 Autopilot。 另請注意，只有在裝置上設定 TenantLockdown 原則時，OOBE 才能無限期等候 Autopilot。
+    - 在 OOBE 中連線您的裝置到 Wi-Fi 網路，然後讓它自動偵測 Autopilot 體驗。 這是您在 Autopilot 經驗自行完成之前，必須與 OOBE 互動的唯一時間。 請注意，根據預設 HoloLens 2 會在偵測到網際網路之後等候10秒偵測 Autopilot。 如果在10秒內未偵測到任何 autopilot 設定檔，OOBE 將會顯示 EULA。 如果您遇到這種情況，請重新開機您的裝置，以進行另一次嘗試以偵測 Autopilot。 另請注意，只有在裝置上設定 TenantLockdown 原則時，OOBE 才能無限期等待 Autopilot。
 
     - 使用「USB 到乙太網路」的乙太網路介面卡連線您的裝置，以進行有線網際網路連線，並讓 HoloLens 2 自動完成 Autopilot 體驗。
 
-    - 使用「USB 至 Wifi」介面卡連線您的裝置，以進行無線網際網路連線，並讓 HoloLens 2 自動完成 Autopilot 體驗。
+    - 使用「USB 至 wi-fi」介面卡連線您的裝置，以進行無線網際網路連線，並讓 HoloLens 2 自動完成 Autopilot 體驗。
 
         > [!IMPORTANT]  
        > 嘗試在 Autopilot 的 OOBE 中使用 Wi-Fi 網路的裝置，必須在 Windows 全像[20H2 版](hololens-release-notes.md#windows-holographic-version-20h2)。
@@ -269,7 +275,7 @@ ms.locfileid: "122620806"
 
 HoloLens 2 的裝置支援 Windows 全像版本20H2 的 TenantLockdown CSP。 此 CSP 會透過裝置重設或重新刷新，將裝置鎖定至該租使用者，藉此將裝置保持在組織的租使用者上。
 
-[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp)CSP 可讓 HoloLens 2 只能使用 Autopilot 系結至 MDM 註冊。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (初始在 HoloLens 2 上設定) 值時，即使重新閃爍、OS 更新等，該值仍會保留在裝置上。
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp)CSP 可讓 HoloLens 2 只能使用 Autopilot 系結至 MDM 註冊。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 節點設定為 true 或 false (初始設定 HoloLens 2 上的) 值時，即使 reflashing、OS 更新等，該值仍會保留在裝置上。
 
 在 HoloLens 2 上將 TenantLockdown csp 的 RequireNetworkInOOBE 節點設為 true 之後，OOBE 會無限期等候 Autopilot 設定檔在網路連線之後成功下載及套用。
 
