@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
-ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
+ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122277149"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859012"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -33,7 +33,7 @@ ms.locfileid: "122277149"
 
 這一項關於改良的疑難排解和裝置報告、kiosk 模式和憑證檢視器中的一些已修正錯誤、擴充的管理性介面，以及增加的更新可靠性。 這項功能更新的新旗艦功能即將 HoloLens 是我們的移動平臺模式。 查看 HoloLens 2 的所有新絕佳功能！
 
-| 功能                 | 描述                | 使用者或案例 | 引進的組建 |
+| 功能                 | 說明                | 使用者或案例 | 引進的組建 |
 |-------------------------|----------------------------|--------------|------------------|
 | [移動平臺模式](#moving-platform-mode) | 介紹移動平臺模式搶鮮版（若已設定），可讓您在遇到低動態動作的大型航海船隻上使用 HoloLens 2。 | 全部 | 20348.1411 |
 | [憑證管理員的 PFX 檔案支援](#pfx-file-support-for-certificate-manager) | 透過設定 UI 新增 PFX 憑證 | 使用者 | 20348.1405 |
@@ -45,15 +45,17 @@ ms.locfileid: "122277149"
 | [改進更新重新開機偵測和通知](#improved-update-restart-detection-and-notifications) | 新啟用的原則和 UX 以進行更新。 | IT 系統管理員 | 20348.1405 |
 | [應用程式更新的智慧型重試](#smart-retry-for-app-updates) | 允許 IT 系統管理員排程更新應用程式的重試。 | IT 系統管理員 | 20348.1405 |
 | [僅針對 Microsoft Store 使用私人存放區應用程式](#use-only-private-store-apps-for-microsoft-store) | 將 store 應用程式設定為只顯示來自組織的應用程式 | IT 管理員 | 20348.1408 |
+| [使用 WDAC 和 LOB 應用程式](#use-wdac-and-lob-apps) | 允許 IT 系統管理員使用自己的應用程式，但仍使用 WDAC 來封鎖其他應用程式。 | IT 系統管理員 | 20348.1405 |
 | [修正和改善](#fixes-and-improvements) | HoloLens 的修正和改善。 | 全部 | 20348.1411 |
 
 ### <a name="it-admin-insider-feature-checklist"></a>IT 管理 Insider 功能檢查清單
 
-✔️如果您想要將單一 Azure AD 帳戶設定為自動登入，請設定 [這個新的 CSP。](#auto-login-policy-controlled-by-csp) <br>
+✔️如果您要設定單一 Azure AD 帳戶以自動登入，請設定 [這個新的 CSP。](#auto-login-policy-controlled-by-csp) <br>
 ✔️如果您想要將應用程式設定為在無法更新之後自動嘗試更新，請 [設定這個新的 CSP 以進行智慧型重試。](#smart-retry-for-app-updates) <br>
 ✔️如果您想要更充分掌控 OS 更新，請參閱這些 [新啟用的更新原則。](#improved-update-restart-detection-and-notifications) <br>
 ✔️如果您需要讓組織的應用程式透過 Microsoft Store 在公司商店上提供，但只想要允許存取您組織的應用程式，而不是完整的存放區，請[設定此原則。](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️如果您想知道可用的儲存空間、HoloLens 裝置的 SSID 或 BSSID，請參閱這些[報告 csp。](#csp-changes-for-reporting-hololens-details)
+✔️如果您想知道可用的儲存空間、HoloLens 裝置的 SSID 或 BSSID，請參閱這些[報告 csp。](#csp-changes-for-reporting-hololens-details) <br>
+✔️如果您想要使用 WDAC 來封鎖應用程式或進程啟動，但也需要使用自己的 bushiness 應用程式行，您現在可以 [在 WDAC 原則中允許 LOB](#use-wdac-and-lob-apps)。
 
 ### <a name="moving-platform-mode"></a>移動平臺模式
 
@@ -68,7 +70,7 @@ ms.locfileid: "122277149"
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在 HoloLens 上設定 View advanced 診斷報表
 
-針對受管理的裝置進行疑難排解時，確認套用了預期的原則設定是很重要的步驟。 先前在這項新功能中，必須在匯出透過 mdm 的裝置，或在匯出透過 **設定** 帳戶所收集的 MDM 診斷記錄之後，  ->    >  透過 **存取公司或學校** 的裝置，然後選取 [**匯出您的記錄管理** 檔]，然後在附近的電腦上查看。
+針對受管理的裝置進行疑難排解時，確認套用了預期的原則設定是很重要的步驟。 先前在這項新功能中，您必須在匯出透過 mdm 的裝置，或在匯出透過 **設定** 帳戶收集的 MDM 診斷記錄之後，在裝置上完成裝置  ->    >  **存取公司或學校**，然後選取 [**匯出您的記錄管理** 檔]，然後在附近的電腦上查看。
 
 現在可以使用 Edge 瀏覽器在裝置上查看 MDM 診斷。 若要更輕鬆地查看 MDM 診斷報表，請流覽至 [存取工作或學校] 頁面，然後選取 [ **view advanced 診斷報告**]。 這會產生並在新的邊緣視窗中開啟報表。
 
@@ -167,13 +169,17 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 
 ### <a name="smart-retry-for-app-updates"></a>應用程式更新的智慧型重試
 
-現在已啟用 HoloLens 的新原則，可讓 IT 系統管理員設定週期性或一段時間，以重新開機因為應用程式正在使用中而更新失敗的應用程式，允許套用更新。 您可以根據一些不同的觸發程式來設定這些觸發程式，例如排程時間或登入。 若要深入瞭解如何使用此原則，請參閱 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
+現在已啟用 HoloLens 的新原則，可讓 IT 系統管理員設定週期性或一段時間，以重新開機因為應用程式正在使用中而更新失敗的應用程式，允許套用更新。 您可以根據一些不同的觸發程式來設定這些觸發程式，例如排程時間或登入。 若要深入瞭解如何使用此原則視圖 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>僅使用私人存放區應用程式進行 Microsoft Store
 
 已針對 HoloLens 啟用 RequirePrivateStoreOnly 原則。 此原則可讓 Microsoft Store 應用程式設定為只顯示為您的組織設定的私人存放區。 限制只能存取您所提供的應用程式。
 
 深入瞭解 [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+### <a name="use-wdac-and-lob-apps"></a>使用 WDAC 和 LOB 應用程式
+
+您現在可以使用 WDAC 來封鎖應用程式或進程，使其無法啟動並繼續使用您自己的 bushiness 應用程式行。 您現在可以在 WDAC 原則中允許它們。 使用此原則時，需要在建立 WDAC 原則時于 PowerShell 中執行額外的程式程式碼。 [請參閱此處的步驟。](/mem/intune/configuration/custom-profile-hololens)
 
 ### <a name="fixes-and-improvements"></a>修正和改善
 

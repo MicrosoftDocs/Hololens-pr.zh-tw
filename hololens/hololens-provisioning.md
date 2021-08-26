@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663837"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859029"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>使用布建套件來設定 HoloLens
 
@@ -34,7 +34,7 @@ ms.locfileid: "115663837"
 - 設定 Wi-Fi 連線
 - 將憑證套用至裝置
 - 啟用開發人員模式
-- 遵循我們的 [詳細指示](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)來設定 Kiosk 模式。
+- 遵循我們的 [詳細指示](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)來設定 Kiosk 模式。
 
 ## <a name="provisioning-package-hololens-wizard"></a>HoloLens wizard 提供封裝
 
@@ -50,7 +50,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 - 在 Azure Active Directory 中註冊裝置，或建立本機帳戶
 - 新增憑證
 - 啟用開發人員模式
-- 遵循) 的 [詳細指示](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) ，以設定 kiosk 模式。
+- 遵循 [詳細指示](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)來設定 kiosk 模式。
 
 > [!WARNING]
 > 您必須在 Windows 10 上執行 Windows 設定設計工具，才能使用任何一個精靈設定 Azure Active Directory 註冊。
@@ -106,7 +106,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 1. 在 Windows 設定設計工具開始頁面中，選取 **\[進階佈建\]**。
 2. 在 **\[輸入專案詳細資料\]** 視窗中，指定您的專案名稱以及專案的位置。 (選用) 請輸入您專案的簡述。
 
-3. 選取 [下一步]。
+3. 選取 [下一步] 。
 
 4. 在 [**選擇要查看和設定的設定**] 視窗中，選取 [ **Windows 10 全像攝影版**]，然後選取 **[下一步**]。
 
@@ -123,10 +123,10 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 
     > [!IMPORTANT]
     > 當您建置佈建套件時，您可能會在專案檔案與佈建套件 (.ppkg) 檔案中包含機密資訊。 雖然您可以選擇加密 .ppkg 檔案，但專案檔案不會加密。 您應該將專案檔案儲存在安全的位置，當專案檔案不再需要時將它刪除。
-    
+
 9. 選取 [**匯出** 布建  >  **套件**]。
 
-10. 將 **擁有** 者變更為 **IT 管理員**。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。 選取 [下一步]。
+10. 將 **擁有** 者變更為 **IT 管理員**。這會設定此布建套件的優先順序，高於從其他來源套用到此裝置的布建套件。 選取 [下一步] 。
 
 11. 設定 \[套件版本\] 的值。
 
@@ -142,7 +142,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 
     （選擇性）您可以選取 **[流覽]** 來變更預設的輸出位置。
 
-14. 選取 [下一步]。
+14. 選取 [下一步] 。
 
 15. 選取 [ **建立** ] 以開始建立套件。 專案資訊會顯示在建置頁面，進度列可指示建置狀態。
 
@@ -160,11 +160,11 @@ Windows 全像[20H2 版](hololens-release-notes.md#windows-holographic-version-2
 - [在 OOBE 中自動確認布建套件](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [自動布建而不使用 UI](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. 使用 USB 纜線將裝置連接到電腦 (或 usb 磁片磁碟機，以進行如上) 所述的 HoloLens 2，然後啟動裝置。 請勿繼續進行 OOBE 的 **第一個互動時間** 頁面。   
-    - 在 HoloLens (第1代) 上，此頁面包含藍色方塊。 
+1. 使用 USB 纜線將裝置連接到電腦 (或 usb 磁片磁碟機，以進行如上) 所述的 HoloLens 2，然後啟動裝置。 請勿繼續進行 OOBE 的 **第一個互動時間** 頁面。
+    - 在 HoloLens (第1代) 上，此頁面包含藍色方塊。
     - 在 HoloLens 2 上，此頁面包含 hummingbird。
 
-2. 同時快速按下再放開 **\[音量降低\]** 和 **\[電源\]** 按鈕。 
+2. 同時快速按下再放開 **\[音量降低\]** 和 **\[電源\]** 按鈕。
 
 3. HoloLens 會顯示為電腦檔案總管中的裝置。
 
@@ -183,10 +183,10 @@ Windows 全像[20H2 版](hololens-release-notes.md#windows-holographic-version-2
 
 - 在 OOBE 期間使用具有布建套件的 USB 磁片磁碟機時，可讓使用者互動的自動化程式更少。
 
-在此版本之前，使用者必須在 OOBE 期間以手動方式啟動布建畫面，才能使用按鈕組合進行布建。 現在使用者可以使用 USB 存放磁片磁碟機上的布建套件，略過按鈕組合。 
+在此版本之前，使用者必須在 OOBE 期間以手動方式啟動布建畫面，才能使用按鈕組合進行布建。 現在使用者可以使用 USB 存放磁片磁碟機上的布建套件，略過按鈕組合。
 
 1. 在 OOBE 的第一個互動時刻插入 USB 磁片磁碟機與布建套件
-1. 當裝置準備好要布建時，會自動開啟 [布建] 頁面的提示。 
+1. 當裝置準備好要布建時，會自動開啟 [布建] 頁面的提示。
 
 注意：如果在裝置開機時，將 USB 磁片磁碟機插入電源，則 OOBE 將會列舉現有的 USB 存放裝置，並監看是否有其他裝置進入電源。
 

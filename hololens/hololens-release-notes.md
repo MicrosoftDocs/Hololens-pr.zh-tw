@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a8d1f9b8d04324236cb610b6018880891bdabdd1
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 4aa0ea03850277e528b134c9686633a140c64721
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858682"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859437"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -551,7 +551,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>處理失敗的 Kiosk 模式行為變更
 
-在較舊的組建中，如果裝置的 kiosk 設定是全域指派的存取權和 AAD 群組成員指派的存取權，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [[開始] 功能表中顯示 [沒有任何內容](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)]。
+在較舊的組建中，如果裝置的 kiosk 設定是全域指派的存取權和 AAD 群組成員指派的存取權，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [[開始] 功能表中顯示 [沒有任何內容](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)]。
 
 從這個 Windows 版本開始，如果在 AAD 群組 kiosk 模式期間發生失敗，則 kiosk 體驗將會回復為全域 kiosk 設定 (（如果有) 的話）。
 
@@ -823,7 +823,7 @@ Windows現已推出全像20H2 版，並為 HoloLens 2 使用者和 IT 專業人�
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>Windows 全像20H2 版的新功能  
 
-| 功能                                              | 描述                                                                                                                                     |
+| 功能                                              | 說明                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [自動眼睛位置支援](hololens-release-notes.md#auto-eye-position-support) | 主動計算眼睛的位置，而不需要使用者經歷眼睛追蹤校正。   |
 | [憑證管理員](hololens-release-notes.md#certificate-manager)   | 允許更簡單的方法，從設定應用程式安裝和移除憑證。     |
@@ -980,14 +980,14 @@ OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
    > [!div class="mx-imgBorder"]
    > ![透過 Intune 中的 OMA-URI URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
 
-1. 建立群組，並將裝置設定檔指派給該裝置群組。 
+1. 建立群組，並將裝置設定檔指派給該裝置群組。
 
 1. 將在上一個步驟中建立之群組的 HoloLens 2 裝置成員，並觸發同步處理。
 
-在 Intune 入口網站中確認已成功套用裝置設定。 一旦此裝置設定成功套用到 HoloLens 2 裝置上，TenantLockdown 的效果就會變成非使用中狀態。 
+在 Intune 入口網站中確認已成功套用裝置設定。 一旦此裝置設定成功套用到 HoloLens 2 裝置上，TenantLockdown 的效果就會變成非使用中狀態。
 
 #### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>當 TenantLockdown 設定為 true 之後，如果 HoloLens 未指派 Autopilot 設定檔，在 OOBE 期間會發生什麼事？ 
-OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話方塊。 為了移除 TenantLockdown 的影響，裝置必須先使用 Autopilot 向其原始的租使用者註冊，而且 RequireNetworkInOOBE 必須取消設定（如先前步驟所述），才能移除 TenantLockdown CSP 所引進的限制。 
+OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話方塊。 為了移除 TenantLockdown 的影響，裝置必須先使用 Autopilot 向其原始的租使用者註冊，而且 RequireNetworkInOOBE 必須取消設定（如先前步驟所述），才能移除 TenantLockdown CSP 所引進的限制。
 
 ![裝置上強制執行原則時的裝置上視圖。](images/hololens-autopilot-lockdown.png)
 
@@ -996,14 +996,14 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 ### <a name="global-assigned-access--kiosk-mode"></a>全域指派的存取– Kiosk 模式
 - 藉由啟用在系統層級套用 Kiosk 模式的新 Kiosk 方法，來減少 Kiosk 的身分識別管理。
 
-這項新功能可讓 IT 系統管理員針對多個應用程式 kiosk 模式設定適用于系統層級的 HoloLens 2 裝置，與系統上的任何身分識別沒有任何親和性，並適用于所有登入裝置的人。 深入瞭解這項新功能在[HoloLens 全域指派的存取 kiosk](hololens-global-assigned-access-kiosk.md)中的詳細資訊。
+這項新功能可讓 IT 系統管理員針對多個應用程式 kiosk 模式設定適用于系統層級的 HoloLens 2 裝置，與系統上的任何身分識別沒有任何親和性，並適用于所有登入裝置的人。 詳細閱讀這項新功能， [HoloLens kiosk 模式](hololens-kiosk.md)。
 
 ### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>以多應用程式 kiosk 模式自動啟動應用程式 
 - 自動啟動應用程式的專注體驗，進一步增加為 Kiosk 模式體驗選擇的 UI 和應用程式選擇。
 
-只適用于多個應用程式 kiosk 模式，而只有1個應用程式可以指定為在指派的存取設定中使用下方反白顯示的屬性自動啟動。 
+只適用于多個應用程式 kiosk 模式，而只有1個應用程式可以指定為在指派的存取設定中使用下方反白顯示的屬性自動啟動。
 
-當使用者登入時，應用程式會自動啟動。 
+當使用者登入時，應用程式會自動啟動。
 
 ```xml
 <AllowedApps>                     
@@ -1013,16 +1013,17 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>處理失敗的 Kiosk 模式行為變更
 - 在 Kiosk 模式失敗時排除可用的應用程式，以獲得更安全的 Kiosk 模式。 
 
-稍早遇到套用 kiosk 模式的失敗時，HoloLens 用來在 [開始] 功能表中顯示所有應用程式。 現在在 Windows 的全像20H2 版中，如果發生失敗，就不會在 [開始] 功能表中顯示任何應用程式，如下所示： 
+稍早遇到套用 kiosk 模式的失敗時，HoloLens 用來在 [開始] 功能表中顯示所有應用程式。 現在在 Windows 的全像20H2 版中，如果發生失敗，就不會在 [開始] 功能表中顯示任何應用程式，如下所示：
 
 ![Kiosk 模式在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
 ### <a name="hololens-policies"></a>HoloLens政策
+
 - 專門針對用來管理裝置的 HoloLens 所建立的裝置管理選項。 
 
 針對 Windows 全像20H2 版的 HoloLens 2 裝置，已建立新的混合現實原則。 新的可控設定包括：設定亮度、設定音量、停用混合式事實中的錄音記錄、可以收集診斷的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | 允許停用亮度按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設值)                                                 |
 | MixedReality\VolumeButtonDisabled                  | 允許停用音量按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設值)                                                 |
@@ -1255,7 +1256,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 2020版的 HoloLens 2 主要軟體更新（Windows 全像全像 *），2004版* 提供了一套絕佳的新功能，例如支援 Windows Autopilot、應用程式深模式、5G/LTE 熱點的 USB 乙太網路支援等等。 若要更新為最新版本，請開啟 **設定**   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          描述                                                                                              |
+|             功能                              |          說明                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 預先設定並順暢地設定生產環境的新裝置                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全性金鑰，以啟用對共用裝置的快速安全驗證            |

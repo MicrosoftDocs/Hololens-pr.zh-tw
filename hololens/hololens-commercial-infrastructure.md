@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664448"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122858995"
 ---
 # <a name="configure-your-network-for-hololens"></a>設定您的網路以進行 HoloLens
 
@@ -180,7 +180,7 @@ Intune 包含一項稱為「更新通道」 Windows 10 裝置的功能，包括 
 
 ![顯示 Intune 中 Kiosk 模式設定的影像](images/aad-kioskmode.png)
 
-如需其他 MDM 服務，請參閱提供者的檔以取得指示。 如果您需要使用自訂設定和完整 XML 設定來設定 MDM 服務中的 kiosk，請參閱[HoloLens kiosk](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)指示。
+如需其他 MDM 服務，請參閱提供者的檔以取得指示。 如果您需要使用自訂設定和完整 XML 設定來設定 MDM 服務中的 kiosk，請參閱[HoloLens kiosk](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)指示。
 
 ## <a name="certificates-and-authentication"></a>憑證和驗證
 

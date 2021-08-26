@@ -93,7 +93,7 @@
 ### [使用布建套件設定 HoloLens](hololens-provisioning.md)
 ### [常見的裝置限制](hololens-common-device-restrictions.md)
 ### [將 HoloLens 設定為 kiosk](hololens-kiosk.md)
-### [全域指派的存取-Kiosk](hololens-global-assigned-access-kiosk.md)
+### [HoloLensKiosk 參考資訊](hololens-kiosk-reference.md)
 ### [Windows Defender應用程式控制-WDAC](windows-defender-application-control-wdac.md)
 ### [HoloLens 設定 CSP 和 Uri 的頁面](settings-uri-list.md)
 ## 網路 & 連線能力

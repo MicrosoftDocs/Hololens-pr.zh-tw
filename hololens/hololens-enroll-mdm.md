@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5ded375d88740b9367eec87e4e902c423f131689
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664225"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122858978"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中註冊 HoloLens
 
@@ -31,17 +31,17 @@ ms.locfileid: "115664225"
 ## <a name="requirements"></a>規格需求
 
  您的組織必須設定行動裝置管理 (MDM) ，才能管理 HoloLens 的裝置。 您的 MDM 提供者可能是 Microsoft Intune，或是使用 Microsoft MDM API 的協力廠商提供者。
- 
+
 ## <a name="different-ways-to-enroll"></a>不同的註冊方式
 
 根據在 OOBE 或 post 登入期間選擇的身分 [識別](hololens-identity.md) 類型，有不同的註冊方法。
 
 - 如果身分識別是 Azure AD，則在 OOBE 期間或 **設定應用程式**  ->  **存取工作或學校**  ->  **連線** 按鈕。
     - 針對 Azure AD，只有在 Azure AD 已設定註冊 Url 時，才會進行 [自動 MDM 註冊](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 。
-     
+
 - 如果身分識別是 Azure AD，且已在 Intune MDM 伺服器預先註冊裝置並指派特定的設定檔，則會在 OOBE 期間進行 Azure AD-Join 和 [自動 MDM 註冊](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 。
     - 也稱為 [Autopilot flow](hololens2-autopilot.md) ，可在 [19041.1103 + 組建](hololens-release-notes.md#windows-holographic-version-2004)中使用。
-    
+
 
 - 如果身分識別為 MSA，則使用 **設定應用程式**  ->  **存取工作或學校**  ->  **連線** 按鈕。
     - 也稱為「新增工作帳戶」 (AWA) 流程。
@@ -65,3 +65,7 @@ ms.locfileid: "115664225"
 如果您的裝置已向 Azure AD 帳戶或 Autopilot 註冊，則無法從 Intune 取消註冊。 如果您想要從 Azure AD 退出 HoloLens，或將其重新加入至不同的 Azure AD 租使用者，您必須[重設/重新刷新](hololens-recovery.md#reset-the-device)裝置。
 
 如果您的裝置已從新增工作帳戶的 MSA 帳戶註冊，或從只在裝置管理中註冊的本機帳戶註冊，則您可以取消註冊該裝置。 開啟 [開始] 功能表，然後選取 [**應用程式**  ->  **存取工作或學校**  ->  *您帳戶*  ->  **中斷連線]** 按鈕設定。
+
+## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>確定未封鎖 Windows 裝置的 MDM 註冊
+
+為了讓 Autopilot 成功，您必須確定您的 HoloLens 裝置可以註冊。 由於 HoloLens 被視為 Windows 裝置，因此不會有可能封鎖部署的註冊限制。 請[檢查這份限制清單](/mem/intune/enrollment/enrollment-restrictions-set)，並確定您可以註冊您的裝置。
