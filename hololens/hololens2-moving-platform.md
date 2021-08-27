@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
-ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
+ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122610113"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989190"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>移動低動態動作移動平臺上的平臺模式
 
@@ -27,6 +27,8 @@ ms.locfileid: "122610113"
 
 > [!NOTE]
 > 這項功能目前僅可透過[Windows](hololens-insider.md)測試人員使用。
+
+![移動平臺範例。](./images/mpm-compare.gif)
 
 本文將說明：
 
@@ -56,7 +58,7 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 - 當啟用 MPM 時，全像投影可能會稍微 wobble 一點，特別是在不連貫的水上。
 - 無需防止使用者嘗試在不支援的環境中使用 MPM，不過，如果裝置能夠在不支援的空間中維護追蹤，使用者可能會遇到不必要的副作用。 例如，使用 MPM 時，使用者可能會發現，在變更樓層時，可能會在電梯中使用，而不是先前可能的情況。 可惜的是，雖然 MPM 允許裝置維護追蹤，但目前不會處理地圖管理。 使用者會發現變更電梯中的樓層會導致裝置混淆最上層和下限，並對地圖品質造成負面影響。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 移動平臺模式的 Beta 支援只需要一些必要條件：
 
