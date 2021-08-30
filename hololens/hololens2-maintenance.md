@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308672"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189438"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 清理常見問題
 
 > [!IMPORTANT]  
 > Microsoft 無法判斷任何指定 disinfectant 產品在對抗 pathogens （例如 COVID-19-19）的效率。 請參閱當地公開健康授權單位的指引，以瞭解如何抵禦潛在感染的安全。  
 
-## <a name="hololens-2-use-and-care"></a>HoloLens 2 使用和在意
+## <a name="hololens-2-use-and-care"></a>HoloLens 2使用和在意
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -37,7 +37,7 @@ ms.locfileid: "108308672"
 
 1. 使用乾燥且不起毛的 microfiber 抹布來移除任何灰塵，以輕輕抹除裝置的表面。
 
-   ![從 brow pad 中保持乾淨](images/hl2-cleaning.png)
+   ![從 brow pad 中保持整潔。](images/hl2-cleaning.png)
 
 2. 使用醫療 "70%" isopropyl 的酒精來輕微 moisten 抹布，然後使用 moistened 抹布來輕輕抹除裝置的表面。
 
@@ -48,7 +48,7 @@ ms.locfileid: "108308672"
 1. 使用水和輕微 antibiotic 的 soap 來 moisten 抹布，然後使用 moistened 抹布抹除 brow pad。
 1. 讓 brow pad 完全乾燥。
 
-## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>是否可以使用任何鏡頭清除程式來清理 HoloLens 面板？
+## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>是否可以使用任何鏡頭清理工具來清除 HoloLens 面板？
 
 不會。 您可以將鏡頭清除 abrasive 至面板上的 coatings。 若要清除面板，請遵循下列步驟：  
 
@@ -58,10 +58,10 @@ ms.locfileid: "108308672"
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>我可以使用 disinfecting 抹除來清除裝置嗎？
 
-是，如果抹除不包含漂白劑。 您可以使用非漂白劑 disinfecting 抹除來 [輕輕抹除 HoloLens 表面](#hololens-2-use-and-care)。  
+是，如果抹除不包含漂白劑。 您可以使用非漂白劑 disinfecting 抹除，以[輕輕抹除 HoloLens 的表面](#hololens-2-use-and-care)。  
 
 > [!CAUTION]  
-> 避免使用包含漂白劑的 disinfecting 抹除來清理 HoloLens 表面。 在重大情況下，如果沒有其他可用的專案，就可以使用漂白劑清除。 不過，漂白劑可能會損毀 HoloLens 面板或其他表面。
+> 避免使用包含漂白劑的 disinfecting 抹除來清除 HoloLens 表面。 在重大情況下，如果沒有其他可用的專案，就可以使用漂白劑清除。 不過，漂白劑可能會損毀 HoloLens 面板或其他表面。
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>我可以使用喝酒來清除裝置嗎？
 
@@ -71,7 +71,7 @@ ms.locfileid: "108308672"
 
 是。 Brow pad 以磁性連接裝置。 若要將它卸離，請從 headband 中輕輕地拉出它。 若要取代它，請將它貼回原位。
 
-![移除或取代 brow pad](images/hololens2-remove-browpad.png)
+![移除或取代 brow pad。](images/hololens2-remove-browpad.png)
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>如何清理 brow pad？
 

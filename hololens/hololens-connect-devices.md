@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664300"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189081"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>連線至藍牙和 USB-C 裝置
 
@@ -93,7 +93,7 @@ HoloLens 2 支援下列 USB-C 裝置類別：
 
 開啟 **設定** 應用程式，然後選取 [**系統**  >  **音效**]。
 
-![音效設定](images/usbc-mic-1.jpg)
+![音效設定。](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > 若要搭配使用外部麥克風與 **遠端協助**，使用者必須按一下 [管理音效裝置] 超連結。
@@ -102,11 +102,11 @@ HoloLens 2 支援下列 USB-C 裝置類別：
 >
 > 選擇 [**通訊預設值**] 表示外部麥克風將用於遠端協助和其他通訊應用程式，但 HoloLens mic 陣列仍可用於其他工作。
 
-![管理音效裝置](images/usbc-mic-2.png)
+![管理音效裝置。](images/usbc-mic-2.png)
 
 <br>
 
-![設定麥克風預設值](images/usbc-mic-3.jpg)
+![設定麥克風預設值。](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>藍牙麥克風支援呢？
 

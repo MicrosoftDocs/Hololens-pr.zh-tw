@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665025"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188979"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>參與 HoloLens 檔
 
@@ -147,7 +147,7 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 9. 選取 [ **新增提取要求** ]，並將您的分支 _主要_ 分支合併至 MicrosoftDocs/mixed-reality _master_ (確定箭號指向正確的目的地) 。
 
-   ![從您的分支建立提取要求至 MicrosoftDocs/mixed-事實](images/pr-to-master.png)
+   ![從您的分支建立提取要求至 MicrosoftDocs/mixed 事實。](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Markdown 基本概念
 
@@ -199,7 +199,7 @@ Microsoft 員工：當您的投稿合併到預設分支（ _master_）時，您�
 
 基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用[Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>設定
+### <a name="setup"></a>安裝程式
 
 請依照下列步驟設定 Visual Studio Code，以使用此存放庫：
 
@@ -226,11 +226,11 @@ Microsoft 員工：當您的投稿合併到預設分支（ _master_）時，您�
 
    1. 在網頁瀏覽器中，建立提取要求，以將最近的變更從 MicrosoftDocs/mixed 事實、 _master_ 的預設分支同步至您的分叉 (確定箭號指向正確的目的地) 。
       
-      ![將 MicrosoftDocs/mixed 的變更同步至您的分叉](images/sync-repos.png)
+      ![將 MicrosoftDocs/mixed 的變更同步處理到您的分支。](images/sync-repos.png)
       
    2. 在 Visual Studio Code 中，選取 [同步處理] 按鈕，將新的已更新分支同步至本機複製。
       
-      ![按一下 [同步處理] 按鈕影像](images/sync-clone.png)
+      ![按一下 [同步處理] 按鈕影像。](images/sync-clone.png)
       
 2. 使用 Visual Studio Code 在複製的存放庫中建立或編輯文章。
 
@@ -246,11 +246,11 @@ Microsoft 員工：當您的投稿合併到預設分支（ _master_）時，您�
       
    4. 選取 [**同步** 處理] 按鈕，將您的變更同步處理回您在 GitHub) 上的分支 (來源。
       
-      ![按一下 [同步] 按鈕](images/sync-back.png)
+      ![按一下 [同步處理] 按鈕。](images/sync-back.png)
       
 3. 在網頁瀏覽器中，建立提取要求，以將您分支中的新變更同步處理回 MicrosoftDocs/mixed reality _master_ (確定箭號指向正確的目的地) 。
 
-   ![從您的分支建立提取要求至 MicrosoftDocs/mixed-事實](images/pr-to-master.png)
+   ![從您的分支建立提取要求至 MicrosoftDocs/mixed 事實。](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>有用的延伸模組
 

@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a4ceaa1a741ec63153cd9112d04547165b46b0fa72c32ee7f9580f15368a2f88
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 24cd9b81d0d99afaa0479787b846b423310c6739
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665438"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190458"
 ---
 # <a name="limiting-password-use"></a>限制密碼使用
 
@@ -52,7 +52,7 @@ HoloLens 2 在初始裝置設定和使用者登入期間提供 Azure Active Dire
 
 如需詳細資訊，請參閱下列資訊圖：
 
-  ![Windows Hello登入](images/security-hello-sign-in.png)
+  ![Windows Hello登入。](images/security-hello-sign-in.png)
   
 在上圖中，請注意，nonce 代表「數位一次」，而是隨機或半隨機產生的數位。 一旦設定了 Windows Hello 生物特徵辨識或 PIN 認證，它就不會離開布建的裝置。 即使使用者的 Windows Hello PIN 遭竊（例如透過網路釣魚攻擊），也不會有[使用者的實體裝置](/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password)。
 
@@ -68,7 +68,7 @@ HoloLens 2 在初始裝置設定和使用者登入期間提供 Azure Active Dire
 
 如需有關如何執行 Web 帳戶管理員 Api 的詳細資訊，請移至 [執行 Web 帳戶管理員 api](/windows/uwp/security/web-account-manager)。
 
-  ![安全性 API](images/security-api-img.png)
+  ![安全性 API。](images/security-api-img.png)
   
 針對具有特殊驗證需求的應用程式套件，Web 帳戶管理員 (WAM) 架構可延伸至自訂身分識別提供者。 使用者可以下載自訂身分識別提供者，此提供者會從 Microsoft Store 封裝成通用 Windows 平臺的 (UWP) 應用程式，以在與該身分識別提供者整合的其他應用程式上啟用 SSO。
 
@@ -91,7 +91,7 @@ Windows Hello 和 FIDO2 裝置會根據 HoloLens 裝置（特別是內建的信�
 
 ### <a name="strong-authentication-with-fido2-security-key"></a>具有 FIDO2 安全性金鑰的增強式驗證
 
-  ![FIDO img](images/security-fido2-whfb-smaller.png)
+  ![FIDO img。](images/security-fido2-whfb-smaller.png)
 
 1. 使用者將 FIDO2 安全性金鑰插入 HoloLens 2
 1. Windows 偵測 FIDO2 安全性金鑰

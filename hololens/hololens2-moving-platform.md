@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
-ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
+ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989190"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190390"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>移動低動態動作移動平臺上的平臺模式
 
@@ -75,19 +75,19 @@ HoloLens 必須能夠以[6 度的自由度](https://en.wikipedia.org/wiki/Six_de
 
 1. 選取左側功能表上的 [ **系統** ] 可折疊
 
-   ![第一個影像](.\images\moving-platform-1w.png)
+   ![第一個映射。](.\images\moving-platform-1w.png)
 
 2. 選取 [ **移動平臺模式** ] 頁面，然後選取 [ **移動平臺模式** ] 核取方塊
 
-    ![第二個影像](.\images\moving-platform-2z.png)
+    ![第二個影像。](.\images\moving-platform-2z.png)
 
 3. 出現警告的提示時，請選取 **[確定]**
 
-   ![第三個影像](.\images\moving-platform-3w.png)
+   ![第三個映射。](.\images\moving-platform-3w.png)
 
 4. 重新開機您的裝置，您可以透過右上方的裝置入口網站 **電源** 功能表，或發出下列語音命令將 &quot; 裝置重新開機， &quot; 然後選取 &quot; [是] &quot; 來完成。
 
-   ![第四個映射](.\images\moving-platform-4z.png)
+   ![第四個映射。](.\images\moving-platform-4z.png)
 
 如果您在裝置入口網站中看不到 [移動平臺模式] 選項，可能表示您還沒有在適當的組建上。 請參閱 [必要條件](#prerequisites) 一節。
 

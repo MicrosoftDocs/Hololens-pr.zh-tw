@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1f59c76fa760710d1b1333e1318784f5a488851b640c1cbd4ed6f673ae60029a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664215"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189421"
 ---
 # <a name="feedback-for-hololens"></a>HoloLens 的意見反應
 
@@ -40,7 +40,7 @@ ms.locfileid: "115664215"
 
 1. 使用 [ **開始** ] 手勢開啟 [ **開始** ] 功能表，然後選取 [ **意見反應中樞**]。 應用程式會在您的環境中開啟。
 
-   ![HoloLens [開始] 功能表上的意見反應應用程式](./images/hololens2-feedbackhub-tile.png)
+   ![HoloLens [開始] 功能表上的意見反應應用程式。](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > 如果您沒有看到 **意見反應中樞**，請選取 [ **所有應用程式** ] 以查看裝置上的完整應用程式清單。
 
@@ -48,7 +48,7 @@ ms.locfileid: "115664215"
 1. 如果您找到類似的意見反應，請選取它，然後在 [ **撰寫批註** ] 方塊中加入任何其他資訊，然後選取 [ **附議**]。
 1. 如果您找不到任何類似的意見反應，請選取 [ **新增意見** 反應]。
 
-   ![新增意見反應](./images/hololens-feedback-1.png)
+   ![新增意見反應。](./images/hololens-feedback-1.png)
 
 1. 摘要 **說明您** 的意見反應，請輸入簡短的意見反應摘要。 然後，在 [ **詳細說明** ] 方塊中新增詳細資料。 您所提供的更多詳細資料，例如如何重現此問題及其帶來的影響，您的意見反應越有用。 完成之後，選取 [下一步]。
 

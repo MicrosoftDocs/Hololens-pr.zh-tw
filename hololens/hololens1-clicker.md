@@ -13,12 +13,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6e98918c89da7e74157d8fc003e6997f1e44b8538e9006a835707e85c5fd3307
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 98ec5795974fa242225bb1048ead41892d8296e4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662719"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189948"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>使用 HoloLens (第1代) clicker
 
@@ -30,7 +30,7 @@ clicker 是特別針對 HoloLens (第一代) 所設計，可讓您以另一種�
 
 HoloLens (第1代) clicker 有一個手指迴圈，可讓您更輕鬆地保存和指標燈。
 
-![HoloLens Clicker](images/use-hololens-clicker-1.png)
+![HoloLens Clicker。](images/use-hololens-clicker-1.png)
 
 ### <a name="clicker-indicator-lights"></a>Clicker 指標燈
 
@@ -58,7 +58,7 @@ HoloLens (第1代) clicker 有一個手指迴圈，可讓您更輕鬆地保存�
 
 若要放在 clicker 上，請將迴圈滑到環形或中間手指，讓微型 USB 埠朝向手腕。 將您的 thumb 放在縮排中。
 
-![如何保存 Clicker](images/use-hololens-clicker-2.png)
+![如何保存 Clicker。](images/use-hololens-clicker-2.png)
 
 ### <a name="clicker-gestures"></a>Clicker 手勢
 

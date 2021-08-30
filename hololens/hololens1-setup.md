@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662190"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189251"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>取得您的 HoloLens (第1代) 可供使用
 
@@ -27,7 +27,7 @@ ms.locfileid: "115662190"
 
 若要向 HoloLens 收費，請使用隨附的微型 USB 纜線將電源供應器連接至充電埠。 然後將電源供應器插入電源插座。 當裝置充電時，電池指示器會在 wave 模式中亮起。
 
-![顯示如何將微型 USB 纜線連接到 HoloLens 的影像](./images/hololens-charging.png)
+![顯示如何將微型 USB 纜線連接到 HoloLens 的影像。](./images/hololens-charging.png)
 
 當您的 HoloLens 開啟時，電池指示器會以遞增方式顯示電池計量。 當您只開啟五個燈的其中一個時，電池計量低於20%。 如果電池計量偏低，而您嘗試開啟裝置，則會短暫閃爍一次，然後移出。
 
@@ -44,17 +44,17 @@ ms.locfileid: "115662190"
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. 將 headband 旋轉最多約20-30 度。|![第一步，旋轉 headband](./images/FitGuideStep1.png)|
-|2. 將 headband 推回。 請勿將它拉回，或操控轉軸後方的頻外，因為這可能會中斷頻外。|![步驟2：將 headband 推回](./images/FitGuideStep2.png)|
-|3. 開啟調整輪子以將 headband 全部延伸。 |![步驟3：使用調整輪子擴充 headband](./images/FitGuideStep3.png)|
-|4. 以裝置 arm 來保存裝置，並將它放在您的頭部。 確定 headband 位於您的冷汗頂端，然後將調整輪子擰下。|![步驟四，放在裝置上，然後調整 headband](./images/FitGuideStep4.png)|
-|5. 將面板滑回，然後檢查裝置的大小。 Headband 應該放在您的冷汗頂端，並放在您的耳上方的喇叭上方。 鏡頭應以您的眼睛為中心。|![步驟5：將面板滑回來並檢查是否符合](./images/FitGuideSetep5.png)|
+|1. 將 headband 旋轉最多約20-30 度。|![第一步，旋轉 headband。](./images/FitGuideStep1.png)|
+|2. 將 headband 推回。 請勿將它拉回，或操控轉軸後方的頻外，因為這可能會中斷頻外。|![步驟2：將 headband 推回。](./images/FitGuideStep2.png)|
+|3. 開啟調整輪子以將 headband 全部延伸。 |![步驟3：使用調整滾輪來擴充 headband。](./images/FitGuideStep3.png)|
+|4. 以裝置 arm 來保存裝置，並將它放在您的頭部。 確定 headband 位於您的冷汗頂端，然後將調整輪子擰下。|![步驟四，放在裝置上，並調整 headband。](./images/FitGuideStep4.png)|
+|5. 將面板滑回，然後檢查裝置的大小。 Headband 應該放在您的冷汗頂端，並放在您的耳上方的喇叭上方。 鏡頭應以您的眼睛為中心。|![步驟5：將面板滑回來並檢查是否符合。](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>開啟您的 HoloLens
 
 使用電源按鈕開啟和關閉 HoloLens，或將其置於待命模式。
 
-![顯示 HoloLens 電源按鈕的影像](./images/hololens-power.png)
+![顯示 HoloLens 電源按鈕的影像。](./images/hololens-power.png)
 
 如果您的裝置沒有回應或無法啟動，請參閱[重新開機、重設或復原 HoloLens](hololens-restart-recover.md)。
 
@@ -79,15 +79,15 @@ HoloLens 在閒置3分鐘後自動進入待命狀態。 當它處於待命狀態
 
 亮度和音量按鈕位於裝置 arm 音量的最上方，而您左邊的亮度也是最 &mdash; 右邊。
 
-![顯示 HoloLens 按鈕的影像](./images/hololens-buttons.jpg)
+![顯示 HoloLens 按鈕的影像。](./images/hololens-buttons.jpg)
 
 ## <a name="hololens-indicator-lights"></a>HoloLens 指標燈
 
-![顯示 HoloLens 指標燈的影像](./images/hololens-lights.png)
+![顯示 HoloLens 指標燈的影像。](./images/hololens-lights.png)
 
 不確定您的 HoloLens 上的指標燈是什麼意思？ 以下是一些協助。
 
-|當燈光完成時 |這表示 |
+|當燈光完成時 |則表示 |
 |---|---|
 |從中央向外滾動。 |HoloLens 正在啟動中。 |
 | (全部或部分) 保持亮。 |HoloLens 已開啟並可供使用。 電池壽命以20% 的遞增顯示。 |

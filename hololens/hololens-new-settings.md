@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bcde697b5887573826a3a1a61e8c3707b4d0337a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663052"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189659"
 ---
 # <a name="new-settings-app"></a>新增設定應用程式
 
@@ -23,7 +23,7 @@ ms.locfileid: "115663052"
 > [!NOTE]
 > 因為新的設定應用程式與舊版設定應用程式不同，所以您先前在環境中放置的任何設定視窗將會在更新時移除。
 
-![新的設定應用程式首頁](images/new-settings-app.png)
+![新的設定應用程式首頁。](images/new-settings-app.png)
 
 **新功能與設定**
 - 設定搜尋：使用關鍵字或設定的名稱，從設定首頁搜尋設定。

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658893"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190339"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2開發版
 
@@ -38,7 +38,7 @@ HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity
 |  [適用于 Unity 的 Pixyz 外掛程式](https://www.pixyz-software.com/plugin/) | 用來連接工程 &amp; CAD 世界與開發世界的橋樑。   |
 | [Azure 服務的 Azure 信用額度 $500](https://azure.microsoft.com/resources/) | HoloLens 2 開發版隨附的 azure 點數，是快速開始在 azure 上建立及測試混合現實應用程式。 |
 
-![HoloLens 2開發版](./images/hololens-2-dev-ed.png)
+![HoloLens 2開發版。](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>兌換您的點數
 
@@ -87,7 +87,7 @@ HoloLens 2 開發版包含 HoloLens 2、$500 的 Azure 點數、3個月的 Unity
 - [瞭解如何使用 Unreal 進行 HoloLens 2 的開發。](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [在我們的 HoloDevelopers 時差頻道與您的開發人員聯繫](https://holodevelopersslack.azurewebsites.net/)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 1. 按一下下方以繼續閱讀有關 HoloLens 2 的資訊。

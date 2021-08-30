@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b117542704968150639a47956a8142d7232fcc66d696feb61ec4fffdaa49df59
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660569"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189795"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2電池和充電
 
@@ -35,13 +35,13 @@ ms.locfileid: "115660569"
 
 - 從 HoloLens 裝置 UI 的主功能表。
 - 查看電源按鈕 (接近電源按鈕有40% 的費用，您應該會看到至少兩個穩固的 Led) 。
-    - 當裝置充電時，電池指示燈會亮起以指出目前的收費層級。  最後一個光線會淡入和淡出以表示主動充電。
+    - 當裝置充電時，電池指示燈會亮起以指出目前的充電層級。  最後一個光線會淡入和淡出以表示主動充電。
     - 當您的 HoloLens 開啟時，電池指示器會以五個增量顯示電池計量。
     - 當您只開啟五個燈的其中一個時，電池計量低於20%。
     - 如果電池計量偏低，而您嘗試開啟裝置，則會短暫閃爍一次，然後移出。
 - 在您的主機電腦上，開啟 **檔案總管**，然後在這部 **電腦** 的左側尋找您的 HoloLens 2 裝置。 在裝置上按一下滑鼠右鍵，然後選取 [ **屬性**]。 對話方塊會顯示電池計量的等級。
 
-   ![顯示電池變更層級的 HoloLens 2 屬性畫面](images/ResetRecovery2.png)
+   ![HoloLens 2 屬性] 畫面會顯示電池變更層級。](images/ResetRecovery2.png)
 
 ## <a name="alternative-charging-specifications"></a>替代收費規格
 

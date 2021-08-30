@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665619"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190424"
 ---
 # <a name="page-settings-visibility"></a>頁面設定可見度
 
@@ -74,7 +74,7 @@ HoloLens 裝置可管理的其中一項功能，是使用[設定/PageVisibilityL
 
 不論選擇何種方法，您的裝置現在應該都會收到變更，而使用者會看到下列設定應用程式。
 
-![在設定應用程式中修改使用中時數的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
+![在設定應用程式中修改使用中時數的螢幕擷取畫面。](images/hololens-page-visibility-list.jpg)
 
 若要將設定的應用程式頁面設定為顯示或隱藏您自己的頁面選取範圍，請查看 HoloLens 上可用的設定 uri。
 
@@ -120,8 +120,8 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 檔案系統              | `privacy-broadfilesystemaccess`       |
 | 一般 <sup>2</sup>             | `privacy-general`       |
 | 筆墨 & 輸入個人化 <sup>2</sup>             | `privacy-speechtyping`       |
-| Location                 | `privacy-location`                    |
-| Messaging (傳訊)                | `privacy-messaging`                   |
+| 位置                 | `privacy-location`                    |
+| 傳訊                | `privacy-messaging`                   |
 | 麥克風               | `privacy-microphone`                  |
 | 動作 <sup>2</sup>               | `privacy-motion`                  |
 | 通知            | `privacy-notifications`               |
@@ -169,7 +169,7 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 鍵盤 <sup>2</sup> | `keyboard`                  |
 | 語言 <sup>2</sup> | `language`                  |
 | 語言 <sup>2</sup> | `regionlanguage-languageoptions`                  |
-| 語言      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
+| Language      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
 | 區域        | `regionformatting`                  |
 
 ### <a name="update--security"></a>更新 & 安全性

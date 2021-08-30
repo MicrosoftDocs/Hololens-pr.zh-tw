@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663964"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189285"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>HoloLens (第1代) 的已知問題
 
@@ -178,7 +178,7 @@ Visual Studio 已發行 VS 2019 16.2 版，其中包含此問題的修正。 建
 
 1. 然後，您會看到類似下面的畫面。  您想要移至「 **安裝應用程式** 」一節，然後流覽至您解壓縮這兩個 APPX 檔案的位置。 您一次只能執行一次，因此選取第一個，然後按一下 [部署] 區段下的 [執行]。 然後對第二個 APPX 檔案進行此動作。
 
-   ![Windows裝置入口網站安裝 Side-Loaded 應用程式](images/20190322-DevicePortal.png)
+   ![Windows裝置入口網站安裝 Side-Loaded 應用程式。](images/20190322-DevicePortal.png)
 
 1. 至此，我們相信您的應用程式應該會再次開始運作，而且您也可以前往存放區。
 

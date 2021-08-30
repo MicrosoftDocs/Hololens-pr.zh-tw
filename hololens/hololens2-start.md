@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659219"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189761"
 ---
 # <a name="set-up-your-hololens-2"></a>設定您的 HoloLens 2
 
@@ -82,7 +82,7 @@ ms.locfileid: "115659219"
 
      HoloLens 會根據從 Wi-Fi 網路取得的資訊自動設定您的時區。 安裝程式完成之後，您可以使用設定應用程式來變更時區。
 
-    ![連線到 Wi-Fi](images/11-network.png)
+    ![連線至 Wi-fi。](images/11-network.png)
 
     > [!NOTE] 
     > 如果您的進度超過 Wi-Fi 步驟，而且之後需要切換到不同的網路，但仍在安裝程式中，則如果您執行2019年10月或更新版本的 OS 版本，則可以同時按 **下音量** 和 **電源** 按鈕來返回此步驟。 針對較舊的版本，您可能需要 [重設裝置](hololens-recovery.md) ，或在 Wi-Fi 網路無法使用的位置中重新開機，以防止它自動連接。
@@ -91,15 +91,15 @@ ms.locfileid: "115659219"
 
 1. HoloLens 2 會搜尋並套用 Autopilot 設定檔（如果有的話）。 此畫面上不需要採取任何動作。
  
-    ![Autopilot 設定檔搜尋](images/autopilot-profile-search.png) 
+    ![Autopilot 設定檔搜尋。](images/autopilot-profile-search.png) 
 
 1. 在授權畫面上按一下 [ **接受** ]。
 
-    ![Windows 授權合約](images/windows-license-agreement.png)
+    ![Windows 授權合約。](images/windows-license-agreement.png)
 
 1. 登入您的使用者帳戶。 您可以選擇 **我的工作或學校擁有它** ，而 **我擁有它**。
 
-    ![設定使用者](images/13-device-owner.png)
+    ![設定使用者。](images/13-device-owner.png)
     - 當您選擇 \[我的公司或學校擁有它\]，您可使用 Azure AD 帳戶登入。 如果您的組織使用 Azure AD Premium 並已設定自動 mdm 註冊，HoloLens 會自動在 mdm 中註冊。 如果您的組織未使用 Azure AD Premium，則無法使用自動 MDM 註冊。 在此情況下，您需要[在裝置管理中手動註冊 HoloLens](hololens-enroll-mdm.md#different-ways-to-enroll)。
 
         1. 輸入您的組織帳戶資訊。
@@ -123,11 +123,11 @@ ms.locfileid: "115659219"
   
 1. 您將設定 PIN 以登入裝置。 此 PIN 是裝置特定的。 
 
-    ![安裝 Windows Hello](images/setup-windows-hello.png)
+    ![設定 Windows Hello。](images/setup-windows-hello.png)
 
-    ![設定 Windows Hello 釘選](images/windows-hello-pin.png)
+    ![設定 Windows Hello 釘選。](images/windows-hello-pin.png)
 
-    ![Windows Hello安裝成功](images/windows-hello-successful.png) 
+    ![Windows Hello安裝成功。](images/windows-hello-successful.png) 
 
     
 1. 選取是否要在 HoloLens 2 上啟用語音。
@@ -153,7 +153,7 @@ ms.locfileid: "115659219"
     
     恭喜！  安裝程式已完成，而且您已準備好使用 HoloLens！
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 

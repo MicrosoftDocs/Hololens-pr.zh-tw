@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664509"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189115"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>常見案例–離線安全 HoloLens 2
 
@@ -33,7 +33,7 @@ ms.locfileid: "115664509"
 -   防止新增或移除布建套件。
 -   沒有使用者可以啟用上述任何一個受限的元件。
 
-[![離線安全案例 ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![離線安全案例。 ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## <a name="prepare"></a>準備
 
@@ -56,7 +56,7 @@ Windows 10電腦設定
 1. 專案應該會開啟，而且您現在應該會有一份可用的自訂清單：
 
    > [!div class="mx-imgBorder"]
-   > ![在 WCD 中開啟之設定套件的螢幕擷取畫面](images/offline-secure-sample-wcd.png)
+   > ![在 WCD 中開啟之設定套件的螢幕擷取畫面。](images/offline-secure-sample-wcd.png)
 
    此布建套件中設定的設定：
    
@@ -95,16 +95,16 @@ Windows 10電腦設定
 1. 透過 USB 纜線連線 HL2 至 Windows 10 PC。
 1. 啟動 ARC 工具並選取 **HoloLens 2**
 
-   ![HoloLens 2 clean 重新刷新初始畫面](images/ARC2.png)
+   ![HoloLens 2 clean 重新刷新初始畫面。](images/ARC2.png)
 
 1. 在下一個畫面中，選取 [ **手動選取套件**]。
 
-   ![HoloLens 2弧線資訊畫面](images/arc_device_info.png)
+   ![HoloLens 2弧線資訊畫面。](images/arc_device_info.png)
 
 1. 流覽至先前下載的 ffu 檔案，然後選取 [ **開啟**]。
 1. 選取 [警告] 頁面上的 [ **繼續**]。
 
-   ![HoloLens 2弧線警告畫面](images/arc_warning.png)
+   ![HoloLens 2弧線警告畫面。](images/arc_warning.png)
 
 1. 等候 ARC 工具完成 HoloLens 2 作業系統安裝。
 1. 裝置完成安裝並重新啟動後，您的電腦會流覽至檔案總管，並將先前儲存的 PPKG 檔案複製到裝置資料夾。

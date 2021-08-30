@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659919"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190356"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2顯示疑難排解
 
@@ -46,7 +46,7 @@ HoloLens 2 顯示器是 waveguides 和燈光投影機的組合。 使用者會�
     > 如果您在環境中看到灰色的場景時發生問題，您可以使用裝置左邊的亮度按鈕，手動調整 HoloLens 2 的亮度等級。
 1. 選取按鈕1-6 以立即試用每個色彩設定檔，並找出看起來最適合您的眼睛 (這通常表示可協助場景顯示最中性的設定檔，且灰階模式和外觀色調會如預期般顯示。 ) 
 
-    ![顯示色彩校正場景](images/color-cal-ui.png)
+    ![顯示色彩校正場景。](images/color-cal-ui.png)
     
 6. 當您對選取的設定檔感到滿意時，請選取 [ **儲存 &** 結束] 按鈕
 1. 如果您不想要進行變更，請選取 [ **取消 &** 結束] 按鈕，您的變更將會還原
@@ -79,7 +79,7 @@ HoloLens 2 顯示器是 waveguides 和燈光投影機的組合。 使用者會�
 
 有時候，您的 HoloLens 2 將會在顯示的左下角和右下角顯示不同的模式。 範例如下所示 (的動畫 Gif) 。 此模式是 HoloLens 2 裝置一般作業的一部分，可校正顯示器以獲得最佳體驗。
 
-![Biphase 模式](./images/DAT-Biphase-Fiducial.gif) ![地區模式](./images/DAT-GEO-Fiducial.gif)
+![Biphase 模式。](./images/DAT-Biphase-Fiducial.gif) ![地區模式](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>為什麼我無法制作 HoloLens 2 顯示器的精確相片？
 

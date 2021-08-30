@@ -13,22 +13,22 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662051"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189897"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (第1代) 硬體
 
-![Microsoft HoloLens (第1代) ](images/see-through-400px.jpg)
+![Microsoft HoloLens (第1代) 。](images/see-through-400px.jpg)
 
 Microsoft HoloLens (第1代) 是世界上最非網路共用的全像全像全電腦。 HoloLens 透過全像攝影體驗來重新定義個人運算，讓您以新的方式實現。 HoloLens 融合著最尖端的光學和感應器，以提供釘選到真實世界的立體全像全球的影像。
 
 ## <a name="hololens-components"></a>HoloLens 元件
 
-![顯示 box 內容的影像](images/hololens-box-contents.png)
+![顯示 box 內容的影像。](images/hololens-box-contents.png)
 
 您的 HoloLens 包含下列功能：
 
@@ -65,7 +65,7 @@ HoloLens box 包含下列專案：
 
 ### <a name="display"></a>顯示
 
-![HoloLens 有觀看全像全像鏡頭](images/displays-400px.jpg)
+![HoloLens 可以查看全像全像全像鏡頭。](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -76,7 +76,7 @@ HoloLens box 包含下列專案：
 
 ### <a name="sensors"></a>感應器
 
-![HoloLens 具有感應器，可瞭解其環境和使用者動作](images/sensor-bar-400px.jpg)
+![HoloLens 具有感應器，可瞭解其環境和使用者動作。](images/sensor-bar-400px.jpg)
 
 - 1個慣性度量單位 (IMU) 
 - 4環境瞭解攝影機
@@ -108,7 +108,7 @@ HoloLens box 包含下列專案：
 
 ### <a name="processors"></a>處理器
 
-![Microsoft HoloLens 的主機板](images/motherboard-400px.jpg)
+![Microsoft HoloLens 的主機板。](images/motherboard-400px.jpg)
 
 - 具有 TPM 2.0 支援的 Intel 32 位架構
 - 自訂建立的 Microsoft 全像 HPU 1.0)  (
@@ -166,7 +166,7 @@ HoloLens 已經過測試，併發現符合 ANSI z 87.1、CSA z 94.3 和 EN 166 �
 
 若要清除裝置的其餘部分（包括 headband 和裝置 arm），請使用不起毛的軟軟 moistened，並提供輕度的 soap 和水。 請讓您的 HoloLens 先完成，再使用它。
 
-![顯示如何清除面板的影像](images/hololens-cleaning-visor.png)
+![顯示如何清除面板的影像。](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>尋找序號
 

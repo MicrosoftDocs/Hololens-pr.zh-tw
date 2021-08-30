@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660240"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189676"
 ---
 # <a name="deploy---corporate-connected-guide"></a>部署-公司連接指南
 
@@ -49,14 +49,14 @@ ms.locfileid: "115660240"
 
 7. 記下此名稱。
 
-    ![HoloLens 2 設定畫面](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 設定畫面。](./images/hololens2-settings-about.jpg)
 
 8. 確認您的裝置已成功聯結至 Azure AD。 有兩種方式：
 
     1.  設定應用程式。 從 **設定** 選取[  ->  **存取公司或學校** 帳戶]。 在此畫面中，您可以看到 &quot; 連線到 nameofAAD&#39;s Azure AD，以確認您已成功註冊。 連接者 *yourusername@nameofAAD.onmicrosoft.com* 。 這會確認您的裝置已加入您的組織&#39;s Azure AD。
 
     1. [Azure 入口網站](https://portal.azure.com/#home)。 移至 **Azure Active Directory**  ->  **裝置**  ->  **所有裝置**]，並搜尋裝置名稱。 在 [聯結類型] 下，它會顯示為「Azure AD 聯結」。
-        ![確認 Azure AD 中的聯結類型](./images/hololens2-devices-all-devices.png)
+        ![確認 Azure AD 中的聯結類型。](./images/hololens2-devices-all-devices.png)
 
 9. 確認您的裝置已向 MDM 註冊。 有兩種方式：
 
@@ -64,7 +64,7 @@ ms.locfileid: "115660240"
 
     1. [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com/#home)。 登入並選取 [  **裝置**  ]，然後選取 [  **所有裝置**]。 您可以從這裡搜尋 HoloLens 裝置&#39;的名稱。 您應該能夠看到您的 HoloLens 列在 Intune 上。
 
-        ![確認 Azure AD 中的 Intune 管理](./images/hololens2-devices-all-devices2.png)
+        ![在 Azure AD 中驗證由 Intune 管理。](./images/hololens2-devices-all-devices2.png)
 
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi 憑證驗證

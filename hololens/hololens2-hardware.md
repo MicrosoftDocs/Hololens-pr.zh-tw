@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660006"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190373"
 ---
 # <a name="about-hololens-2"></a>關於 HoloLens 2
 
-![HoloLens 2 側邊視圖](images/hololens2-breakdown.png)
+![HoloLens 2 並排顯示。](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (第一代) 所開始的全像電腦運算旅程調整，以提供更舒適和沉浸式的體驗，並搭配更多可在混合現實中共同作業的選項。 HoloLens 2 在[Windows](hololens-release-notes.md)全像 Windows 10 的「類別」上執行，可為使用者、系統管理員和開發人員提供強大、高效能且安全的平臺。 
 
@@ -75,7 +75,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 | **慣性度量單位 (IMU)** | 加速計、陀螺儀、磁力計 |
 | **相機** | 8個 MP 靜止、1080p30 影片 |
 
-![HoloLens 2感應器](images/hololens2-front-view.png)
+![HoloLens 2感應器。](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 請勿涵蓋在圖片中所呼叫的任何感應器。 前端追蹤攝影機有很大的 FOV，除了不涵蓋它們之外，還沒有任何內容。
@@ -94,7 +94,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 | **晶片上的系統** | Qualcomm Snapdragon 850 計算平臺 [詳細資料](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
 | **全像處理單位** | 第二代自訂內建的全像攝影處理單位 |
 | **記憶體** | 4 GB LPDDR4x 系統 DRAM |
-| **儲存體** | 64-GB 的 UFS 2。1 |
+| **存放裝置** | 64-GB 的 UFS 2。1 |
 | **Wi-Fi** | 802.11 ac 2x2 |
 | **Bluetooth** | 5.0 |
 | **USB** | USB 類型-C DRP |
@@ -105,7 +105,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 |---|---|
 | **電池壽命** | 使用中的2-3 小時。 最多兩周的待命時間。 |
 | **電池技術** | [鋰電池](https://www.microsoft.com/download/details.aspx?id=43388) |
-| **收費行為** | 在充電時完整運作 |
+| **充電行為** | 在充電時完整運作 |
 | **冷卻類型** | 被動冷卻 (沒有風扇)  |
 | **Power draw** | 若要在裝置開啟時維持/提前內部電池計量百分比，必須將其連接到最小至15W 的充電。 |
 

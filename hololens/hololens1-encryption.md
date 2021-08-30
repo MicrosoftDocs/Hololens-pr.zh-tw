@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662686"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189931"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (第1代) BitLocker 加密
 
@@ -51,7 +51,7 @@ HoloLens (第1代) 和 HoloLens 2 都支援使用 bitlocker 的裝置加密，�
 1. [建立 HoloLens 的布建套件。](hololens-provisioning.md)
 1. 移至 [**執行時間設定**  >  **原則**  >  **安全性**]，然後選取 [ **RequireDeviceEncryption**]。
 
-    ![需要將裝置加密設定設為 \[是\]](images/device-encryption.png)
+    ![裝置加密設定必須設定為 [是]。](images/device-encryption.png)
 
 1. 尋找您購買商用套件時所提供的 XML 授權檔案。
 
@@ -101,4 +101,4 @@ HoloLens (第1代) 和 HoloLens 2 都支援使用 bitlocker 的裝置加密，�
 
 - 在 HoloLens 上，移至 **設定**  >  **系統** 的  >  **相關資訊**。 如果裝置已加密，則會 **啟用** **BitLocker** 。 
 
-    ![關於顯示已啟用 BitLocker 的畫面](images/about-encryption.png)
+    ![關於顯示啟用 BitLocker 的畫面。](images/about-encryption.png)

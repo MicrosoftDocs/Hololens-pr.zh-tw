@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660061"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190203"
 ---
 # <a name="prepare---corporate-connected-guide"></a>準備-公司連接指南
 ## <a name="infrastructure-essentials"></a>基礎結構基本概念
@@ -73,7 +73,7 @@ Dynamics 365 Guides 是以雲端為基礎的應用程式。 如果您的網路�
 
 您也必須使用 [Azure AD 應用程式 proxy 或 Web 存取 proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application)，將 NDES URL 發佈至公司網路外部。 您也可以使用其他自選的反向 Proxy。
 
-![SCEP 資料流程](./images/hololens2-scep-info-flow.png)
+![SCEP 資料流程。](./images/hololens2-scep-info-flow.png)
 
 如果您的網路尚未支援 SCEP，或您不確定您的網路是否已正確設定 Intune 的 SCEP，請參閱  [設定基礎結構以支援 scep 與 intune](/mem/intune/protect/certificates-scep-configure)。
 

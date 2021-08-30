@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663126"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189098"
 ---
 # <a name="connect-hololens-to-a-network"></a>連線 HoloLens 網路
 
@@ -39,7 +39,7 @@ ms.locfileid: "115663126"
 1. 選取網路，然後選取 [**連線**]。
 1. 如果系統提示您輸入網路密碼，請輸入該密碼，然後選取 **[下一步]**。
 
-![HoloLens Wi-Fi 設定](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi 設定。](./images/hololens-2-wifi-settings.jpg)
 
 若要確認您已連線到 Wi-Fi 網路，請在 [ **開始** ] 功能表中檢查 Wi-Fi 狀態：
 
@@ -144,7 +144,7 @@ Enterprise Wi-Fi 設定檔使用可延伸的驗證通訊協定 (EAP) 來驗證 W
 
  
 
-1.  **設定Ui：** 
+1.  **設定UI：** 
     1. 每一使用者 proxy (20H2 或更早的) ：
         1. 開啟 [開始] 功能表，然後選取 \[設定\]。
         2. 選取 [網路 & 網際網路]，然後選取左側功能表上的 [Proxy]。
@@ -211,7 +211,7 @@ VPN 連線可協助提供更安全的連線，以及對公司網路和網際網�
 1. 選擇性地加入使用者名稱和密碼。
 1. 套用 VPN 設定。 
 
-![HoloLensVPN 設定](./images/vpn-settings-ui.jpg)
+![HoloLensVPN 設定。](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>透過布建套件設定 VPN
 
@@ -354,7 +354,7 @@ VPN 連線可協助提供更安全的連線，以及對公司網路和網際網�
 1. 選取 [ **網路 & 網際網路**]。
 1. 向下滾動至可用 Wi-Fi 網路清單下方，然後選取 [ **硬體** 內容]。
 
-    ![Wi-Fi 設定中的硬體屬性](./images/wifi-hololens-hwdetails.jpg)
+    ![Wi-Fi 設定中的硬體屬性。](./images/wifi-hololens-hwdetails.jpg)
 
    IP 位址會出現在 [ **IPv4 位址**] 旁。
 

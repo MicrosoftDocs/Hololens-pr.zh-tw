@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662924"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189234"
 ---
 # <a name="common-deployment-scenarios"></a>常見部署案例
 
@@ -39,7 +39,7 @@ ms.locfileid: "115662924"
 
 此案例相當於在公司內部署受管理的行動裝置。 HoloLens 2 部署為主要用於公司網路外部的環境。 公司資源無法存取，或可能會透過 VPN 來限制。
 
-[![案例圖](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+[![情節圖。](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>使用時機
 
@@ -75,9 +75,9 @@ ms.locfileid: "115662924"
 
 此案例與大多數 Windows 10 電腦的傳統部署完全相同。 HoloLens 2 部署在公司網路上，可存取內部公司資源。 網際網路和雲端服務可能會受到限制。 
 
-[![案例 B1 圖表](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![案例 B1 圖表。](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![案例 B2 圖表](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![案例 B2 圖表。](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ### <a name="when-to-use"></a>使用時機
 
@@ -111,7 +111,7 @@ ms.locfileid: "115662924"
 
 這是高度安全或機密位置的一般部署。 部署 HoloLens 2，主要用於離線且無法存取網路或網際網路。
 
-[![離線安全圖1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![離線安全圖1。](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ### <a name="when-to-use"></a>使用時機
 

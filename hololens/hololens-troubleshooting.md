@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: c634b90b03468073887397b59f072258ad7a3ccc
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858566"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190016"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -332,7 +332,7 @@ HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭
 
 在 **設定**  ->  **系統**  ->  **音效** 中，將內建的喇叭 **(模擬功能音訊驅動程式)** 明確設定為 **預設裝置**。 HoloLens 應該記得這項設定，即使稍後移除並重新連線麥克風也是如此。
 
-![疑難排解 USB-C 麥克風](images/usbc-mic-4.png)
+![疑難排解 USB-C 麥克風。](images/usbc-mic-4.png)
 
 ## <a name="devices-listed-as-available-in-settings-dont-work"></a>在設定中列為可用的裝置無法運作
 

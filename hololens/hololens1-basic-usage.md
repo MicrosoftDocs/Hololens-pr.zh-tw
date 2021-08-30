@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662824"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190067"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>取得 HoloLens (第1代) 
 
@@ -45,7 +45,7 @@ ms.locfileid: "115662824"
 
 HoloLens 的感應器可看到您的兩個英尺。 當您使用手時，您必須將其保留在該框架內，否則 HoloLens 不會看到它們。 當您四處移動時，畫面會隨您移動。  
 
-![顯示 HoloLens 手追蹤框架的影像](./images/hololens-2-gesture-frame.png)
+![顯示 HoloLens 手追蹤框架的影像。](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>使用 bloom 開啟 [開始] 功能表
 
@@ -53,7 +53,7 @@ HoloLens 的感應器可看到您的兩個英尺。 當您使用手時，您必�
 
 1. 將您的手放在您的前方，讓它位於手勢框架中。
 1. Bloom：讓所有手指合在一起，然後開啟您的手。
-  ![顯示 bloom 手勢的動畫](./images/hololens-bloom.gif)
+  ![顯示 bloom 手勢的動畫。](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>選取以注視和點擊的全像影像
 
@@ -62,7 +62,7 @@ HoloLens 的感應器可看到您的兩個英尺。 當您使用手時，您必�
 1. 注視您要選取的全像
 1. 將您的索引指向最接近上限的指標。
 1. 點擊：降低手指，然後快速地引發。
-   ![點一下手勢動畫](./images/hololens-air-tap.gif)
+   ![輕量點一下手勢動畫。](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>使用您的聲音選取全息圖
 

@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: jarrettr
-ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
-ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
+ms.openlocfilehash: 4782b5d4d3c51038f7810c57d2144758ce0dc1ac
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122782802"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190186"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -191,7 +191,7 @@ ms.locfileid: "122782802"
    您應該會看到包含 **HoloLens** 的清單。 如果此選項不存在，請使用其中一個 [意見](hololens2-autopilot.md#feedback-and-support-for-autopilot) 反應選項來聯繫我們。
 
    > [!div class="mx-imgBorder"]
-   > ![新增設定檔名稱和描述](./images/hololens-ap-profile-name.png)
+   > ![新增設定檔名稱和描述。](./images/hololens-ap-profile-name.png)
 
 1. 在 **全新體驗 (OOBE)** ] 頁面上，大部分的設定都已預先設定為簡化此評估的 OOBE。 （選擇性）您可以設定下列設定：  
 
@@ -202,7 +202,7 @@ ms.locfileid: "122782802"
      > 如果您使用裝置名稱範本，OOBE 進程會在套用裝置名稱之後，以及將裝置加入 Azure AD 之前，重新開機裝置一次。 此重新開機可讓新名稱生效。  
 
    > [!div class="mx-imgBorder"]
-   > ![設定 OOBE 設定](./images/hololens-ap-profile-oobe.png)
+   > ![設定 OOBE 設定。](./images/hololens-ap-profile-oobe.png)
 
 1. 設定之後，請選取 **[下一步]**。
 1. 在 [ **範圍** 標籤] 頁面上，選擇性地新增要套用到此設定檔的範圍標籤。 如需範圍標籤的詳細資訊，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](/mem/intune/fundamentals/scope-tags.md)。 完成後，選取 [下一步]。
@@ -218,14 +218,14 @@ ms.locfileid: "122782802"
 1. 在 [ **審核 + 建立** ] 頁面上，檢查設定，然後選取 [ **建立** ] 以建立設定檔。  
 
    > [!div class="mx-imgBorder"]
-   > ![檢閱 + 建立](./images/hololens-ap-profile-summ.png)
+   > ![複習 + 建立。](./images/hololens-ap-profile-summ.png)
 
 ### <a name="7-verify-the-esp-configuration"></a>7. 確認 ESP 設定
 
 [註冊狀態] 頁面 (ESP) 會顯示當 MDM 受管理的使用者第一次登入裝置時，所執行的完整裝置設定流程狀態。 確定您的 ESP 設定類似下列內容，並確認指派是否正確。  
 
 > [!div class="mx-imgBorder"]
-> ![ESP 設定](./images/hololens-ap-profile-settings.png)
+> ![ESP 設定。](./images/hololens-ap-profile-settings.png)
 
 ### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. 確認 HoloLens 裝置的設定檔狀態
 
@@ -263,9 +263,9 @@ ms.locfileid: "122782802"
 
    讓 HoloLens 2 偵測網路連線能力，並自動讓它完成 OOBE。 裝置可能會在 OOBE 期間重新開機。 OOBE 畫面應該如下所示。
 
-   ![OOBE 步驟 1 ](./images/autopilot-welcome.jpg)
-    ![ oobe 步驟 2 ](./images/autopilot-step-complete.jpg)
-    ![ oobe 步驟3](./images/autopilot-device-setup.jpg)
+   ![OOBE 步驟1。 ](./images/autopilot-welcome.jpg)
+    ![OOBE 步驟2。 ](./images/autopilot-step-complete.jpg)
+    ![OOBE 步驟3。](./images/autopilot-device-setup.jpg)
 
 1. 在 OOBE 結束時，您可以使用您的使用者名稱和密碼來登入裝置。
 
@@ -290,7 +290,7 @@ HoloLens 2 的裝置支援 Windows 全像版本20H2 的 TenantLockdown CSP。 �
 OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![透過 OMA URI 設定租使用者鎖定](images/hololens-tenant-lockdown.png)
+   > ![透過 OMA URI 設定租使用者鎖定。](images/hololens-tenant-lockdown.png)
 
 1. 建立群組，並將裝置設定檔指派給該裝置群組。
 
@@ -306,7 +306,7 @@ OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![透過 Intune 中的 OMA-URI URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
+   > ![透過 Intune 中的 OMA-URI URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面。](images/hololens-tenant-lockdown-false.png)
 
 1. 建立群組，並將裝置設定檔指派給該裝置群組。 
 

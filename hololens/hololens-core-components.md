@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664395"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188894"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>在商業環境中規劃 HoloLens 2 部署
 
@@ -32,11 +32,11 @@ HoloLens 2 會在 Windows 10 全像攝影版上執行，這可為組織提供強
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![步驟 1](images/1green.png)| <br/> **[常見的部署案例](hololens-requirements.md)**：瞭解部署案例，並探索部署 HoloLens 2 裝置所需的核心元件。 |
-| ![步驟 2](images/2green.png)| <br/> **[準備](#prepare)**：熟悉 HoloLens 2 所需的基礎結構基本架構。 |
-| ![步驟 3](images/3green.png) | <br/> **[設定](#configure)**：瞭解如何設定雲端式部署的基本元件。 |
-| ![步驟 4](images/4green.png) | <br/> **[部署](#deploy)**：探索如何部署您的裝置，並安全且有效率地散發您的應用程式。 |
-| ![步驟 5](images/5green.png) | <br/> **[維護](#maintain)**：找出適當維護您 HoloLens 2 裝置狀態所需的內容，並確保符合公司原則。 |
+| ![步驟 1：](images/1green.png)| <br/> **[常見的部署案例](hololens-requirements.md)**：瞭解部署案例，並探索部署 HoloLens 2 裝置所需的核心元件。 |
+| ![步驟 2：](images/2green.png)| <br/> **[準備](#prepare)**：熟悉 HoloLens 2 所需的基礎結構基本架構。 |
+| ![步驟 3：](images/3green.png) | <br/> **[設定](#configure)**：瞭解如何設定雲端式部署的基本元件。 |
+| ![步驟 4：](images/4green.png) | <br/> **[部署](#deploy)**：探索如何部署您的裝置，並安全且有效率地散發您的應用程式。 |
+| ![步驟 5。](images/5green.png) | <br/> **[維護](#maintain)**：找出適當維護您 HoloLens 2 裝置狀態所需的內容，並確保符合公司原則。 |
 
 <br/>
 

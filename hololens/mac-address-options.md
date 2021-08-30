@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665572"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189523"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Enterprise以 MAC 位址限制的 HoloLens 裝置註冊 Wi-Fi 環境
 
@@ -45,7 +45,7 @@ ms.locfileid: "115665572"
 
 有許多方法可以改善這種情況，視環境內的可用基礎結構而定。
 
-| 解決方法 | 優點 | 規格需求 |
+| 解決方案 | 優點 | 規格需求 |
 | --- | --- | --- |
 | 使用乙太網路介面卡布建套件 | 改善 OOBE 體驗，並讓技術人員體驗更快。 | HoloLens 相容的 USB-C 中樞 + 乙太網路介面卡，且技術人員仍需要與裝置互動，以進行 MAC 捕獲和 OOBE 最終處理 |
 | 透過乙太網路進行 Intune 註冊的 Autopilot | 這是對客戶環境進行的單一步驟連接和註冊裝置。 MAC capture 可以完成，而不需要與裝置互動 | 已針對客戶 AAD 租使用者啟用 Intune，並 HoloLens 相容的 USB-C 乙太網路介面卡 |
@@ -126,7 +126,7 @@ ms.locfileid: "115665572"
 
 6. 在 Intune 入口網站中會顯示 Wi-Fi MAC 位址。
 
-   ![透過 Intune 的 MAC 位址](images/mac-address-intune.jpg)
+   ![透過 Intune 的 MAC 位址。](images/mac-address-intune.jpg)
 
 7. 技術人員會將此 MAC 位址新增為允許的裝置。
 
@@ -155,7 +155,7 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 這會傳回在過去30天內註冊之任何 HoloLens 裝置的名稱和 MAC 位址。
 
-![透過 PowerShell 的 MAC 位址](images/mac-address-powershell.jpg)
+![經由 PowerShell 的 MAC 位址。](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>處理序
 

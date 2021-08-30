@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664943"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188843"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>管理適用于 HoloLens (第1代) 的自訂應用程式
 
@@ -55,7 +55,7 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 1. 選取 [執行]。
 
    > [!div class="mx-imgBorder"]
-   > ![在 Microsoft HoloLens 的 Windows 裝置入口網站中安裝應用程式表單](images/deviceportal-appmanager.jpg)
+   > ![在 Microsoft HoloLens 上 Windows 裝置入口網站安裝應用程式表單。](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>從 Microsoft Visual Studio 2015 部署
 
@@ -73,7 +73,7 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 
 1. 若要將應用程式從您的開發電腦部署到 HoloLens，請選取 [**遠端電腦**]。 如果您已經有 HoloLens 上的現有組建，請選取 **[是]** 安裝此較新的版本。  
 
-   ![在 Visual Studio 中 Microsoft HoloLens 應用程式的遠端電腦部署](images/vs2015-remotedeployment.jpg)  
+   ![在 Visual Studio 中 Microsoft HoloLens 應用程式的遠端電腦部署。](images/vs2015-remotedeployment.jpg)  
    
 1. 應用程式將會在您的 HoloLens 上安裝和自動啟動。
 

@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661905"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189183"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>解除鎖定 Windows Holographic for Business 功能
 
@@ -48,7 +48,7 @@ Microsoft HoloLens 可在 *開發版* 中使用，該版本 (Windows 的全像�
 1. [建立 HoloLens 的布建套件。](hololens-provisioning.md)
 1. 移至 [**執行時間設定**  >  **EditionUpgrade**]，然後選取 [ **EditionUpgradeWithLicense**]。
 
-    ![使用所選的授權設定升級版本](images/icd1.png)
+    ![已選取授權設定的升級版本。](images/icd1.png)
 
 1. 尋找您購買商用套件時所提供的 XML 授權檔案。
 
@@ -77,7 +77,7 @@ Microsoft HoloLens 可在 *開發版* 中使用，該版本 (Windows 的全像�
 
     （選擇性）您可以選取 **[流覽]** 來變更預設的輸出位置。
 
-1. 選取 [下一步]。
+1. 選取 [下一步] 。
 
 1. 選取 [ **建立** ] 以開始建立套件。 [組建] 頁面會顯示專案資訊，而進度列會指出組建狀態。
 

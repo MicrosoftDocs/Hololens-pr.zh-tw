@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 635e2cc274101fcf08fd05f2b3b54ce6c2f79182011d76409a51c722ea47ecc7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662778"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190033"
 ---
 # <a name="manage-hololens-updates"></a>管理 HoloLens 更新
 
@@ -122,7 +122,7 @@ Windows商務更新支援延遲原則。 Microsoft 發行更新之後，您可�
 
 以下是在一段時間內首度推出到整個組織的方式。
 
-![部署更新的時程表](./images/hololens-updates-timeline.png)
+![部署更新的時程表。](./images/hololens-updates-timeline.png)
 
 #### <a name="configure-an-update-deferral-policy"></a>設定更新延遲原則
 

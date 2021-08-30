@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9547545fee4b1e0c8bacf258fa9bea081dec2445
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663028"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189710"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重新開機、重設或復原 HoloLens 2
 
@@ -37,13 +37,13 @@ ms.locfileid: "115663028"
 
 - 從 HoloLens 裝置 UI 的主功能表。
 - 查看電源按鈕 (接近電源按鈕有40% 的費用，您應該會看到至少兩個穩固的 Led) 。
-    - 當裝置充電時，電池指示燈會亮起以指出目前的收費層級。  最後一個光線會淡入和淡出以表示主動充電。
+    - 當裝置充電時，電池指示燈會亮起以指出目前的充電層級。  最後一個光線會淡入和淡出以表示主動充電。
     - 當您的 HoloLens 開啟時，電池指示器會以五個增量顯示電池計量。
     - 當您只開啟五個燈的其中一個時，電池計量低於20%。
     - 如果電池計量偏低，而您嘗試開啟裝置，則會短暫閃爍一次，然後移出。
 - 在您的主機電腦上，開啟 **檔案總管**，然後在這部 **電腦** 的左側尋找您的 HoloLens 2 裝置。 在裝置上按一下滑鼠右鍵，然後選取 [ **屬性**]。 對話方塊會顯示電池計量的等級。
 
-   ![顯示電池變更層級的 HoloLens 2 屬性畫面](images/ResetRecovery2.png)
+   ![HoloLens 2 屬性] 畫面會顯示電池變更層級。](images/ResetRecovery2.png)
 
 如果裝置無法開機至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置列舉。 然後遵循 [疑難排解指南](hololens-troubleshooting.md)。 如果裝置的狀態不符合疑難排解指南中所列的任何狀態，請執行 [硬重設](hololens-recovery.md#hard-reset-procedure) 程式，將裝置連接到電源供應器，而不是您的主機電腦。 請等候至少一小時讓裝置向您收費。
 
@@ -61,7 +61,7 @@ ms.locfileid: "115663028"
 
 4. 連線裝置到主機電腦，然後開啟裝置管理員。 針對 Windows 10 (，請按下 **Windows** 鍵，然後按 **X** 鍵，然後選取 [**裝置管理員**]。 ) 確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
-   ![HoloLens 2MicrosoftHoloLensRecovery devive 管理員](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery devive 管理員。](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-reset-procedure"></a>硬重設程式
 
@@ -76,7 +76,7 @@ ms.locfileid: "115663028"
 
 5. 開啟裝置管理員 (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**) ]。 請確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
-   ![HoloLens 2MicrosoftHoloLensRecovery 裝置 maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery device maanger 2。](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>清除重新刷新裝置
 
@@ -96,7 +96,7 @@ ms.locfileid: "115663028"
 
 開始重新刷新程式之前，請確定已在 Windows 10 電腦上安裝並執行應用程式，並已準備好偵測裝置。 也請確定您的 HoloLens 是以最少40% 的費率計費。
 
-![HoloLens 2 乾淨重新刷新螢幕擷取畫面](images/ARC1.png)
+![HoloLens 2 清除重新刷新螢幕擷取畫面。](images/ARC1.png)
 
 ### <a name="normal-procedure"></a>一般程式
 
@@ -104,7 +104,7 @@ ms.locfileid: "115663028"
  
    系統會自動偵測裝置，而且 Advanced Recovery 附屬應用程式 UI 將會啟動更新程式：
 
-   ![HoloLens 2 clean 重新刷新初始畫面](images/ARC2.png)
+   ![HoloLens 2 clean 重新刷新初始畫面。](images/ARC2.png)
 
 3. 在 Advanced Recovery 附屬應用程式 UI 中選取 HoloLens 2 裝置，並遵循指示來完成重新刷新。
 
@@ -120,11 +120,11 @@ ms.locfileid: "115663028"
 
 4. 連線裝置到主機電腦，然後開啟裝置管理員。  (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**]。 ) 確定裝置已正確列舉為 Microsoft HoloLens，如下圖所示：
 
-   ![HoloLens 2MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
    系統會自動偵測裝置，而且 Advanced Recovery 附屬應用程式 UI 將會啟動更新程式：
 
-   ![HoloLens 2 clean 重新刷新畫面](images/ARC2.png)
+   ![HoloLens 2 [清除重新刷新] 畫面。](images/ARC2.png)
 
 6. 在 Advanced Recovery 附屬應用程式 UI 中選取 HoloLens 2 裝置，然後遵循指示來完成重新刷新。
 

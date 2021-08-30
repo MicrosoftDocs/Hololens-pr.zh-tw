@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
-ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
+ms.openlocfilehash: f717a0323d1b141423fab52e49a38407ba617d02
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122979367"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189336"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>將 HoloLens 設定為 kiosk
 
@@ -78,6 +78,16 @@ Kiosk 模式不應視為安全性方法，而是用來控制使用者登入的�
 
 ### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>適用于以本機帳戶或 MSA 登入的使用者
 
+### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>箴。 封裝，步驟 2 &ndash; 將 kiosk 設定 XML 檔案新增至布建套件
+
+1. 開啟[Windows 設定設計](https://www.microsoft.com/store/apps/9nblggh4tx22)工具]。
+1. 選取 [ **Advanced** 布建]，輸入專案的名稱，然後選取 **[下一步]**。
+1. 選取 **Windows 10 全像攝影版**，然後選取 **[下一步]**。
+1. 選取 [完成]。 套件的工作區就會開啟。
+1. 選取 [**執行時間設定**  >  **>assignedaccess**  >  **MultiAppAssignedAccessSettings**]。
+1. 在中央窗格中，選取 **[流覽]** 以找出並選取您建立的 KIOSK 設定 XML 檔案。
+
+   ![Windows 設定設計工具中 [MultiAppAssignedAccessSettings] 欄位的螢幕擷取畫面。](./images/multiappassignedaccesssettings.png)
 | **所需的 kiosk 體驗** | **建議的 kiosk 設定** | **設定方式**  | **備註** |
 | --- | --- | --- | --- |
 | 每位登入的使用者都會取得 kiosk 體驗。 | [設定多個應用程式全域指派的存取設定檔](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全域指派的存取權需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |

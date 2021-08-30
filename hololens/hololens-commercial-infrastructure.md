@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122858995"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189064"
 ---
 # <a name="configure-your-network-for-hololens"></a>設定您的網路以進行 HoloLens
 
@@ -96,8 +96,8 @@ HoloLens 支援一組有限的雲端中斷連線體驗。
 **設定使用者可能會將裝置加入 Azure AD *全部***
 
     1. **選項2：** 為選取的使用者/群組授與裝置的許可權，以將裝置加入 Azure AD 以系統管理員 Azure Active Directory 裝置裝置的身分登 **入 Azure 入口網站**  >    >    >  **設定**  >
- **設定使用者可能會將裝置加入** 至 
- ![ 顯示 Azure AD 已加入裝置設定的影像](images/azure-ad-image.png)
+ **設定的使用者可能會將裝置加入 Azure AD，以** 
+ ![ 顯示 Azure AD 已加入裝置的設定。](images/azure-ad-image.png)
 
     1. **選項3：** 您可以封鎖所有使用者將其裝置加入網域。 這表示所有裝置都需要手動註冊。
 
@@ -178,7 +178,7 @@ Intune 包含一項稱為「更新通道」 Windows 10 裝置的功能，包括 
 > [!NOTE]
 > 您可以使用 "Azure AD" 作為「使用者登入類型」，將不同的使用者設定為具有不同的 Kiosk 模式體驗。 不過，此選項僅適用于多應用程式 kiosk 模式。 多應用程式 kiosk 模式只適用于一個應用程式和多個應用程式。
 
-![顯示 Intune 中 Kiosk 模式設定的影像](images/aad-kioskmode.png)
+![顯示 Intune 中 Kiosk 模式設定的影像。](images/aad-kioskmode.png)
 
 如需其他 MDM 服務，請參閱提供者的檔以取得指示。 如果您需要使用自訂設定和完整 XML 設定來設定 MDM 服務中的 kiosk，請參閱[HoloLens kiosk](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)指示。
 

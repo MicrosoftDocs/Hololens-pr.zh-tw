@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 11a5680ea2b27a277bc4eb5b1dc0e62a2c602312
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858449"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189540"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
@@ -88,11 +88,11 @@ HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用
 
 在 [其他使用者] 功能表中，[其他使用者] 按鈕會顯示上次登入裝置的使用者。 選取此按鈕，返回此使用者的登入畫面。
 
-![登入畫面預設](./images/multiusers1.jpg)
+![登入畫面預設值。](./images/multiusers1.jpg)
 
 <br>
 
-![其他使用者的登入畫面](./images/multiusers2.jpg)
+![其他使用者的登入畫面。](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>移除使用者
 
@@ -140,7 +140,7 @@ HoloLens 2 支援鳶尾花 authentication。 鳶尾花是以 Windows Hello 技�
 ### <a name="do-i-have-to-use-iris-authentication"></a>我必須使用鳶尾花 authentication 嗎？
 否，您可以在安裝期間略過此步驟。 
 
-![設定鳶尾花](./images/setup-iris.png)
+![設定鳶尾花。](./images/setup-iris.png)
 
 HoloLens 2 提供許多不同的驗證選項，包括 FIDO2 安全性金鑰。
 

@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859029"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188996"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>使用布建套件來設定 HoloLens
 
@@ -76,7 +76,7 @@ HoloLens wizard 可協助您在布建套件中設定下列設定：
 
 2. 選取 [布建 **HoloLens 裝置**]。
 
-   ![ICD 啟動選項](images/icd-create-options-1703.png)
+   ![ICD 啟動選項。](images/icd-create-options-1703.png)
 
 3. 命名您的專案，然後選取 **[完成]**。
 
@@ -235,7 +235,7 @@ Windows 全像[20H2 版](hololens-release-notes.md#windows-holographic-version-2
 
 在 Windows 設定設計工具中，當您建立 Windows 全像攝影版適用的佈建套件時，**\[可用的自訂項目\]** 以 [Windows 全像攝影中所支援的雲端解決方案提供者](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)為基礎。 下表描述您可能想要為 HoloLens 設定的設定值。
 
-![HoloLens 的通用執行階段設定](images/icd-settings.png)
+![HoloLens 的一般執行時間設定。](images/icd-settings.png)
 
 | 設定 | Description |
 | --- | --- |

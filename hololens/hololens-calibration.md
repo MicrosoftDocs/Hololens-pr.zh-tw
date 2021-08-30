@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 校正、舒適、視覺效果、品質、ipd、HoloLens、Windows Mixed Reality、VR 耳機
-ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664651"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189200"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善視覺品質和緩和
 
@@ -64,7 +64,7 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 1. 如果設定應用程式未釘選到 **開始**，請選取 [**所有應用程式**]。
 1. 選取 [**設定**]，然後選取 [**系統**  >  **校正**  >  **視覺校正**] 的 [  >  **執行眼睛校正**]。
 
-   ![設定應用程式，顯示 [執行眼睛校正] 選項](./images/C-Settings.Calibration.png)
+   ![設定應用程式，顯示 [執行眼睛校正] 選項。](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>自動眼睛位置支援
 
@@ -131,7 +131,7 @@ HoloLens (第1代) 會根據您的[interpupillary 距離](https://en.wikipedia.o
 
 在校正過程中，HoloLens 會要求您將手指與每一系列的六個目標對齊。 HoloLens 使用此程式，為您的眼睛正確設定 IPD。
 
-![第二個步驟中的 IPD 手指對齊畫面](./images/ipd-finger-alignment-300px.jpg)
+![第二個步驟中的 IPD 手指對齊畫面。](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>手動啟動校正程式
 
@@ -143,9 +143,9 @@ HoloLens (第1代) 會根據您的[interpupillary 距離](https://en.wikipedia.o
 1. 若要查看所有應用程式，請選取 [] **+** 。
 1. 選取 [ **校正**]。
 
-   ![從 shell 存取校正應用程式](./images/calibration-shell.png)
+   ![從 shell 存取校正應用程式。](./images/calibration-shell.png)
 
-   ![在啟動後，會顯示為即時 Cube 的校正應用程式](./images/calibration-livecube-200px.png)
+   ![在啟動後，校正應用程式會顯示為即時 Cube。](./images/calibration-livecube-200px.png)
 
 若要使用設定應用程式來執行校正應用程式，請遵循下列步驟：
 
@@ -154,7 +154,7 @@ HoloLens (第1代) 會根據您的[interpupillary 距離](https://en.wikipedia.o
 1. 選取 [設定]。
 1. 選取 [**系統**  >  **公用程式**]  >  **開啟校正**。
 
-   ![從設定應用程式啟動校正應用程式](./images/calibration-settings-500px.jpg)
+   ![從 [設定] 應用程式啟動校正應用程式。](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>沉浸式頭戴裝置
 

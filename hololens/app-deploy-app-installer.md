@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b0de9039ce4d0c1eeab968b0f7c2f5eee8cdc34739391b6022b409325955350
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665262"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188911"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>透過應用程式安裝程式在 HoloLens 2 上安裝應用程式
 
@@ -73,7 +73,7 @@ ms.locfileid: "115665262"
 
 已安裝的應用程式會在安裝完成時自動啟動。
 
-![透過應用程式安裝程式安裝 MRTK 範例](images/hololens-app-installer-picture.jpg)
+![透過應用程式安裝程式安裝 MRTK 範例。](images/hololens-app-installer-picture.jpg)
 
 ### <a name="troubleshooting-installs"></a>安裝疑難排解
 

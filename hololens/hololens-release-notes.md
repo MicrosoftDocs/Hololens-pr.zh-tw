@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4aa0ea03850277e528b134c9686633a140c64721
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: be2fde329293b89698c0f6dd5d92df1c6260f1be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859437"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190220"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -189,18 +189,18 @@ System\AllowTelemetry 和 System\ConfigureTelemetryOptInSettingsUx 都應該一�
 
 ### <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
 
-![舊版 Microsoft Edge 標誌至新 Microsoft Edge 標誌的動畫](images/new-edge.gif)
+![舊版 Microsoft Edge 標誌至新 Microsoft Edge 標誌的動畫。](images/new-edge.gif)
 
 新的 Microsoft Edge[採用 Chromium 的開放原始碼專案](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)，為客戶建立更好的相容性，並為 網頁程式開發人員提供較少的 web 片段。
 
 > [!IMPORTANT]
 > 這個新的 Microsoft Edge 會自動取代新版本不再[支援](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/)的舊版 Microsoft Edge。
 
-![新的 Microsoft Edge 螢幕擷取畫面](images/new-edge-ui.png)
+![新的 Microsoft Edge 螢幕擷取畫面。](images/new-edge-ui.png)
 
 #### <a name="launching-the-new-microsoft-edge"></a>啟動新的 Microsoft Edge
 
-新的 Microsoft Edge ![新增 Microsoft Edge 圖示](images/new_edge_logo.png) 以藍色和綠色的紋圖示表示的 () 會釘選到 [開始] 功能表，並且會在您啟用 web 連結時自動啟動。
+新的 Microsoft Edge ![新的 Microsoft Edge 圖示。](images/new_edge_logo.png) 以藍色和綠色的紋圖示表示的 () 會釘選到 [開始] 功能表，並且會在您啟用 web 連結時自動啟動。
 
 > [!NOTE]
 > 當您第一次在 HoloLens 2 上啟動新的 Microsoft Edge 時，將會從舊版 Microsoft Edge 匯入您的設定和資料。 如果您在啟動新的 Microsoft Edge 之後繼續使用舊版 Microsoft Edge，新的資料將不會從舊版 Microsoft Edge 同步至新的 Microsoft Edge。
@@ -309,7 +309,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 1. 流覽至具有 WebXR 支援的網站。
 1. 選取網站上的 [ **輸入 VR** ] 按鈕。 此按鈕的位置和視覺標記法可能會因網站而異，但看起來可能類似：
 
-    ![輸入 VR 按鈕範例](images/75px-enter-vr.png)
+    ![輸入 VR 按鈕範例。](images/75px-enter-vr.png)
 
 1. 當您第一次嘗試在特定網域上啟動 WebXR 經驗時，瀏覽器會要求同意進入沉浸式觀賞，請選取 [ **允許**]。
 1. 使用[HoloLens 2 手勢](hololens2-basic-usage.md#the-hand-tracking-frame)來操作體驗。
@@ -326,7 +326,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 1. 流覽至 YouTube 上的360度影片。
 1. 在影片畫面中，選取 [混合現實耳機] 按鈕：
 
-    ![啟用360檢視器的按鈕](images/enter-360-viewer.jpg)
+    ![按鈕以啟用360檢視器。](images/enter-360-viewer.jpg)
 
 1. 當您第一次嘗試在特定網域上啟動360檢視器時，瀏覽器會要求同意進入沉浸式觀看。 選取 [允許]。
 1. [點擊](hololens2-basic-usage.md#select-using-air-tap) 以顯示播放控制項。 使用 [光線和空中](hololens2-basic-usage.md#select-using-air-tap) 點來播放/暫停、向前/向後跳過、開啟/關閉字幕，或停止 (的體驗，以) 離開沉浸式視圖。 播放控制項將會在幾秒鐘的非使用狀態後消失。
@@ -347,7 +347,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 > [!NOTE]
 > 因為新的設定應用程式與舊版設定應用程式不同，所以您先前在環境中放置的任何設定視窗將會在更新時移除。
 
-![新的設定應用程式首頁](images/new-settings-app.png)
+![新的設定應用程式首頁。](images/new-settings-app.png)
 
 **新功能與設定**
 - 設定搜尋：使用關鍵字或設定的名稱，從設定首頁搜尋設定。
@@ -392,7 +392,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
     > 如果您在環境中看到灰色的場景時發生問題，您可以使用裝置左邊的亮度按鈕，手動調整 HoloLens 2 的亮度等級。
 1. 選取按鈕1-6 以立即試用每個色彩設定檔，並找出看起來最適合您的眼睛 (這通常表示可協助場景顯示最中性的設定檔，且灰階模式和外觀色調會如預期般顯示。 ) 
 
-    ![顯示色彩校正場景](images/color-cal-ui.png)
+    ![顯示色彩校正場景。](images/color-cal-ui.png)
     
 1. 當您對選取的設定檔感到滿意時，請選取 [ **儲存 &** 結束] 按鈕
 1. 如果您不想要進行變更，請選取 [ **取消 &** 結束] 按鈕，您的變更將會還原
@@ -472,11 +472,11 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 在 [其他使用者] 功能表中，[其他使用者] 按鈕會顯示上次登入裝置的使用者。 選取此按鈕，返回此使用者的登入畫面。
 
-![登入畫面預設](./images/multiusers1.jpg)
+![登入畫面預設值。](./images/multiusers1.jpg)
 
 <br>
 
-![其他使用者的登入畫面](./images/multiusers2.jpg)
+![其他使用者的登入畫面。](./images/multiusers2.jpg)
 
 ### <a name="usb-c-external-microphone-support"></a>USB-C 外部麥克風支援
 
@@ -487,7 +487,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 開啟 **設定** 應用程式，然後選取 [**系統**  >  **音效**]。
 
-![音效設定](images/usbc-mic-1.jpg)
+![音效設定。](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > 若要搭配使用外部麥克風與 **遠端協助**，使用者必須按一下 [管理音效裝置] 超連結。
@@ -496,11 +496,11 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 >
 > 選擇 [**通訊預設值**] 表示外部麥克風將用於遠端協助和其他通訊應用程式，但 HoloLens mic 陣列仍可用於其他工作。
 
-![管理音效裝置](images/usbc-mic-2.png)
+![管理音效裝置。](images/usbc-mic-2.png)
 
 <br>
 
-![設定麥克風預設值](images/usbc-mic-3.jpg)
+![設定麥克風預設值。](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>藍牙麥克風支援呢？
 
@@ -512,7 +512,7 @@ Microsoft Edge 團隊提供三個預覽頻道給 Edge Insider 車隊：搶鮮版
 
 在 **設定**  ->  **系統**  ->  **音效** 中，將內建的喇叭 **(模擬功能音訊驅動程式)** 明確設定為 **預設裝置**。 HoloLens 應該記得這項設定，即使稍後移除並重新連線麥克風也是如此。
 
-![疑難排解 USB-C 麥克風](images/usbc-mic-4.png)
+![疑難排解 USB-C 麥克風。](images/usbc-mic-4.png)
 
 ### <a name="visitor-auto-logon-for-kiosks"></a>Kiosk 的訪客自動登入
 
@@ -799,7 +799,7 @@ Windows 10 裝置（包括電腦和其他 HoloLens 2 裝置）分享相關專案
 
 瞭解在[應用程式安裝程式 HoloLens 2 上安裝應用程式](app-deploy-app-installer.md)的完整程式。  
 
-![透過應用程式安裝程式安裝 MRTK 範例](images/hololens-app-installer-picture.jpg)
+![透過應用程式安裝程式安裝 MRTK 範例。](images/hololens-app-installer-picture.jpg)
 
 ### <a name="improvements-and-fixes-in-the-update"></a>更新中的增強功能和修正：
 
@@ -823,7 +823,7 @@ Windows現已推出全像20H2 版，並為 HoloLens 2 使用者和 IT 專業人�
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>Windows 全像20H2 版的新功能  
 
-| 功能                                              | 說明                                                                                                                                     |
+| 功能                                              | 描述                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [自動眼睛位置支援](hololens-release-notes.md#auto-eye-position-support) | 主動計算眼睛的位置，而不需要使用者經歷眼睛追蹤校正。   |
 | [憑證管理員](hololens-release-notes.md#certificate-manager)   | 允許更簡單的方法，從設定應用程式安裝和移除憑證。     |
@@ -899,9 +899,9 @@ Windows現已推出全像20H2 版，並為 HoloLens 2 使用者和 IT 專業人�
 1. 按一下 [**移除**]
 1. 系統提示您確認時，請選取 [是]。
 
-![設定應用程式中的憑證檢視器](images/certificate-viewer-device.jpg)
+![設定應用程式中的憑證檢視器。](images/certificate-viewer-device.jpg)
 
-![顯示如何使用憑證 UI 來安裝憑證的圖片](images/certificate-device-install.jpg)
+![顯示如何使用憑證 UI 來安裝憑證的圖片。](images/certificate-device-install.jpg)
 
 您可以稍後 [在新的 [憑證管理員] 頁面上](certificate-manager.md)找到此資訊。
 
@@ -964,7 +964,7 @@ HoloLens 2 裝置現在支援 Windows 全像[20H2](hololens-release-notes.md#win
 OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![透過 OMA URI 設定租使用者鎖定](images/hololens-tenant-lockdown.png)
+   > ![透過 OMA URI 設定租使用者鎖定。](images/hololens-tenant-lockdown.png)
 
 1. 建立群組，並將裝置設定檔指派給該裝置群組。 
 
@@ -978,7 +978,7 @@ OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 1. 建立自訂 OMA URI 型裝置設定檔，並為 RequireNetworkInOOBE 指定 false，如下所示。 OMA-URI 值應為./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![透過 Intune 中的 OMA-URI URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面](images/hololens-tenant-lockdown-false.png)
+   > ![透過 Intune 中的 OMA-URI URI 將 RequireNetworkInOOBE 設定為 false 的螢幕擷取畫面。](images/hololens-tenant-lockdown-false.png)
 
 1. 建立群組，並將裝置設定檔指派給該裝置群組。
 
@@ -1023,7 +1023,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 針對 Windows 全像20H2 版的 HoloLens 2 裝置，已建立新的混合現實原則。 新的可控設定包括：設定亮度、設定音量、停用混合式事實中的錄音記錄、可以收集診斷的設定，以及 AAD 群組成員資格快取。  
 
-| 新的 HoloLens 原則                                | 說明                                                                               | 附註                                                                |
+| 新的 HoloLens 原則                                | 描述                                                                               | 附註                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | 允許停用亮度按鈕，因此按下不會變更亮度。       | 1是，0沒有 (預設值)                                                 |
 | MixedReality\VolumeButtonDisabled                  | 允許停用音量按鈕，因此按下不會變更音量。               | 1是，0沒有 (預設值)                                                 |
@@ -1108,7 +1108,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 若要瞭解您可以在 HoloLens 2 上自訂哪些頁面設定，請流覽我們的[設定 uri 頁面](settings-uri-list.md)。 
  
-![在設定應用程式中修改使用中時數的螢幕擷取畫面](images/hololens-page-visibility-list.jpg)
+![在設定應用程式中修改使用中時數的螢幕擷取畫面。](images/hololens-page-visibility-list.jpg)
 
 ### <a name="research-mode"></a>研究模式
 在研究模式中，HoloLens 2 會成為電腦視覺研究的強大工具。 相較于先前的版本，HoloLens 2 的研究模式有下列優點：
@@ -1256,7 +1256,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 2020版的 HoloLens 2 主要軟體更新（Windows 全像全像 *），2004版* 提供了一套絕佳的新功能，例如支援 Windows Autopilot、應用程式深模式、5G/LTE 熱點的 USB 乙太網路支援等等。 若要更新為最新版本，請開啟 **設定**   應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新**]   按鈕。 
 
-|             功能                              |          說明                                                                                              |
+|             功能                              |          描述                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 預先設定並順暢地設定生產環境的新裝置                 |
 |       FIDO 2 支援                             |          支援 FIDO2 安全性金鑰，以啟用對共用裝置的快速安全驗證            |
@@ -1365,7 +1365,7 @@ NetworkQoSPolicy 設定服務提供者會建立網路服務品質 (QoS) 原則�
 - 3D 檢視器 
 - 電影與電視 
 
-![深色強制回應視窗並排顯示](images/DarkMode.jpg)
+![深色強制回應視窗並排顯示。](images/DarkMode.jpg)
 
 ### <a name="system-voice-commands"></a>系統聲音命令
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859012"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189472"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -33,7 +33,7 @@ ms.locfileid: "122859012"
 
 這一項關於改良的疑難排解和裝置報告、kiosk 模式和憑證檢視器中的一些已修正錯誤、擴充的管理性介面，以及增加的更新可靠性。 這項功能更新的新旗艦功能即將 HoloLens 是我們的移動平臺模式。 查看 HoloLens 2 的所有新絕佳功能！
 
-| 功能                 | 說明                | 使用者或案例 | 引進的組建 |
+| 功能                 | 描述                | 使用者或案例 | 引進的組建 |
 |-------------------------|----------------------------|--------------|------------------|
 | [移動平臺模式](#moving-platform-mode) | 介紹移動平臺模式搶鮮版（若已設定），可讓您在遇到低動態動作的大型航海船隻上使用 HoloLens 2。 | 全部 | 20348.1411 |
 | [憑證管理員的 PFX 檔案支援](#pfx-file-support-for-certificate-manager) | 透過設定 UI 新增 PFX 憑證 | 使用者 | 20348.1405 |
@@ -203,7 +203,7 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 
 Windows insider 現在移至頻道。 **快速** 環形會成為 **開發通道**，因此 **緩慢** 的通道會變成 **Beta 通道**，而 **發行預覽** 通道將會成為 **發行預覽通道**。 對應如下所示：
 
-![WindowsInsider 頻道說明](images/WindowsInsiderChannels.png)
+![WindowsInsider 頻道說明。](images/WindowsInsiderChannels.png)
 
 如需詳細資訊，請參閱 Windows blog 上的[Windows 測試人員通道簡介](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)。
 然後，選取 **Windows 的主動式開發**、選擇是否要接收 **開發** 管道或 **Beta 通道** 組建，以及檢查方案條款。
