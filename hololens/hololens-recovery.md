@@ -7,7 +7,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/27/2020
+ms.date: 08/30/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9547545fee4b1e0c8bacf258fa9bea081dec2445
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
+ms.sourcegitcommit: c4fe077e9e19a3b0a9fad8defa4b51547c5ae3c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189710"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123261918"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重新開機、重設或復原 HoloLens 2
 
@@ -69,18 +69,18 @@ ms.locfileid: "123189710"
 
 1. 拔下類型 C 纜線，以中斷裝置與電源供應器或主機電腦的連線。
 
-2. 按住音量的  +  **電源** 按鈕15秒。 裝置會自動重新開機。
+1. 按住音量的  +  **電源** 按鈕15秒。 裝置會自動重新開機。
 
-4. 連線裝置到主機電腦。
+1. 連線裝置到主機電腦。
 
-
-5. 開啟裝置管理員 (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**) ]。 請確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
+1. 開啟裝置管理員 (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**) ]。 請確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
    ![HoloLens 2MicrosoftHoloLensRecovery device maanger 2。](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>清除重新刷新裝置
 
 在特殊情況下，您可能必須「清理」 HoloLens 2。 請注意，重新刷新不應該影響下列問題：
+
 - [顯示色彩一致性](hololens2-display.md)
 - 使用音效開機但沒有顯示輸出
 - [1-3-5-LED 模式](hololens2-setup.md#lights-to-indicate-problems)
@@ -92,7 +92,7 @@ ms.locfileid: "123189710"
 >[!WARNING]
 >如果您重新刷新您的裝置，將會清除您的所有個人資料、應用程式和設定，包括 TPM 重設資訊。
 
-根據預設，Advanced Recovery 附屬設定為下載最新的功能發行組建，請參閱這裡以閱讀我們的 [版本](hololens-release-notes.md#) 資訊，以瞭解最新的功能版本。 若要取得最新的 HoloLens 2 Full Flash Update (FFU) 套件以透過 Advanced Recovery 隨附重新刷新您的裝置，請[按一下這裡下載最新的每月 HoloLens 2 映射](https://aka.ms/hololens2download)。 此版本是最新正式推出的組建。
+根據預設，Advanced Recovery 附屬設定為下載最新的功能發行組建;若要瞭解最新的功能版本，請參閱[HoloLens 2 版本](hololens-release-notes.md)資訊。 若要取得最新的 HoloLens 2 Full Flash Update (FFU) 套件，以透過 Advanced Recovery 隨附重新刷新您的裝置，請下載最新的每月 HoloLens 2 映射： [https://aka.ms/hololens2download](https://aka.ms/hololens2download) 。 此版本是最新正式推出的組建。
 
 開始重新刷新程式之前，請確定已在 Windows 10 電腦上安裝並執行應用程式，並已準備好偵測裝置。 也請確定您的 HoloLens 是以最少40% 的費率計費。
 
@@ -101,16 +101,20 @@ ms.locfileid: "123189710"
 ### <a name="normal-procedure"></a>一般程式
 
 1. 當 HoloLens 裝置正在執行時，請將它連接到您先前開啟 Advanced Recovery 附屬應用程式的 Windows 10 電腦。
- 
+
    系統會自動偵測裝置，而且 Advanced Recovery 附屬應用程式 UI 將會啟動更新程式：
 
    ![HoloLens 2 clean 重新刷新初始畫面。](images/ARC2.png)
 
-3. 在 Advanced Recovery 附屬應用程式 UI 中選取 HoloLens 2 裝置，並遵循指示來完成重新刷新。
+1. 在 Advanced Recovery 附屬應用程式 UI 中選取 HoloLens 2 裝置，並遵循指示來完成重新刷新。
 
 ### <a name="manual-procedure"></a>手動程式
 
-如果 HoloLens 2 無法正確啟動，或如果 Advanced Recovery 附屬無法偵測到裝置，您可能需要讓裝置進入修復模式：
+如果有下列情況，您可能需要讓裝置進入修復模式：
+
+- HoloLens 2 未正確啟動
+- Advanced Recovery 附屬無法偵測到裝置
+- 您不再知道只有單一使用者的裝置密碼/PIN
 
 1. 拔下類型 C 纜線，以中斷裝置與電源供應器或主機電腦的連線。
 
@@ -132,18 +136,18 @@ ms.locfileid: "123189710"
 
 1. 嘗試快閃之前，請確定您的裝置已向40% 或更高的費用。
 
-2. 檢查您的裝置是否已解除鎖定。
+1. 檢查您的裝置是否已解除鎖定。
 
 1. 檢查您的裝置是否直接插入主機電腦，而不是中樞。
 
 1. 如果您的裝置未在通用序列匯流排驅動程式下顯示為 HoloLens/HoloLens 復原裝置，請檢查：
     1. 作為 Qualcomm HS-USB 裝置的 **埠**
-    1.   **其他裝置**（作為 QUSB_BULK 裝置）-您的主機電腦缺少偵測 HoloLens 所需的驅動程式。 以滑鼠右鍵按一下並選取 [更新驅動程式]，並在線上搜尋驅動程式，或[在 Windows Update 設定中檢查選用的更新](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 下載驅動程式之後，ARC 應該可以偵測到它。
- 
+    1. **其他裝置**（作為 QUSB_BULK 裝置）-您的主機電腦缺少偵測 HoloLens 所需的驅動程式。 以滑鼠右鍵按一下並選取 [更新驅動程式]，並在線上搜尋驅動程式，或[在 Windows Update 設定中檢查選用的更新](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 下載驅動程式之後，ARC 應該可以偵測到它。
+
 1. 如果 ARC 偵測不到您的裝置，請確定您可以透過電腦上的檔案總管連接到您的裝置。 如果您無法;
 
-    1.  您的裝置可能會有停用該連線的 USB 原則。 若是如此，請嘗試 [手動閃爍模式](hololens-recovery.md#manual-procedure)。
-    2.  如果沒有原則，請嘗試不同的 USB 纜線。
+    1. 您的裝置可能會有停用該連線的 USB 原則。 若是如此，請嘗試 [手動閃爍模式](hololens-recovery.md#manual-procedure)。
+    2. 如果沒有原則，請嘗試不同的 USB 纜線。
 
 1. 檢查您的裝置是否未顯示 [1-3-5 LED 模式](hololens2-setup.md#lights-to-indicate-problems)。
 
@@ -183,7 +187,7 @@ ms.locfileid: "123189710"
 > [!TIP]
 > 當您想要使用「高階復原」隨附于離線安裝 FFU 時，下載 flash 映射可能會很有用。 [**下載 HoloLens 2 的目前映射**](https://aka.ms/hololens2download)。
 
-
 其他資源：
+
 - [散發離線 App](/microsoft-store/distribute-offline-apps) 
 - [DISM 應用程式封裝 ( .appx 或 .appxbundle) 服務命令列選項](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
