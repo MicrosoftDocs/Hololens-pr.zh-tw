@@ -3,26 +3,33 @@ title: 與多位人共用您的 HoloLens
 description: 您可以將 HoloLens 設定為由多個 Azure Active Directory 帳戶或多個使用單一帳戶的使用者所共用。
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/16/2019
+ms.date: 9/3/2021
 ms.reviewer: ''
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 821ef2d17531226177e508b1428af82012c16406e9fbce3ed1a5617c767adfe8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e3acd2665e93e44bce2c5dad467c825dc768bfed
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663083"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428196"
 ---
 # <a name="share-your-hololens-with-multiple-people"></a>與多位人共用您的 HoloLens
 
-與許多人共用一個 HoloLens，或讓許多人共用一組 HoloLens 的裝置，是很常見的情況。  本文說明可共用裝置的不同方式。
+## <a name="overview"></a>概觀
+企業通常會投資許多共用 HoloLens 裝置。 根據您的個人需求，您如何使用 HoloLens 在整個面板中都有彈性。 以下是一些多使用者體驗的範例： 
+
+- 收費並有 Dynamics 365 Guides 的裝置，可讓您的員工開啟設定應用程式，以調整所需的 Wi-Fi，但已啟用頁面設定可見度原則，以限制可在設定應用程式中使用的頁面數量。
+- 適用于遠端協助的裝置，以及您的企業營運應用程式，會出租給其他公司。 這些裝置的 Kiosk 只包含您的應用程式和遠端協助。 WDAC 用來保留設定的應用程式，並從啟動 Microsoft Edge。 隨附于租借的是 USB-C 電池組，可讓裝置在多個班次之間保持完整的費用。
+- 您所有的裝置都會設定 Autopilot，並下載您所有的公司應用程式。 您已設定一些不同的 Kiosk 設定檔，以不同的 Azure AD 群組為目標。 每位使用者使用 FIDO2 金鑰登入 HoloLens，並登入自己的 Azure AD 帳戶，並以量身打造的體驗呈現。
+
+
 
 ## <a name="share-with-multiple-people-each-using-their-own-account"></a>使用自己的帳戶與多位人共用
 
@@ -40,7 +47,7 @@ ms.locfileid: "115663083"
 
 若要使用 HoloLens，每位使用者都遵循下列步驟：
 
-1. 如果另一位使用者已在使用該裝置，請執行下列其中一項動作：
+1. 如果有其他使用者使用裝置，請選擇下列其中一個選項：
    - 按下電源按鈕一次進入待命狀態，然後再按一次電源按鈕返回鎖定畫面
    - HoloLens 2 使用者可以從 [開始] 功能表中選取使用者磚，以將目前的使用者登出。
 

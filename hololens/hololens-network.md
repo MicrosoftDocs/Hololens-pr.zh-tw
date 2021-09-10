@@ -11,11 +11,11 @@ ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
 ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189098"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428831"
 ---
 # <a name="connect-hololens-to-a-network"></a>連線 HoloLens 網路
 

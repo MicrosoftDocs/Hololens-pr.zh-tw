@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2649e370e98747562591c031b8ae262674c831e071f4ef228557dda66d2dc768
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660263"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427426"
 ---
 # <a name="maintain---corporate-connected-guide"></a>維護-公司連接指南
 
@@ -61,7 +61,7 @@ LOB 應用程式的更新方式與新增至 Intune 的方式相同。 您可以�
 1. 您的支援人員。
 2. 您的 HoloLens 專家團隊
 3. [HoloLens 檔](/hololens/)  / [HoloLens 疑難排解](/hololens/hololens-troubleshooting)檔
-4. [連絡人支援](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
+4. [請連絡支援人員](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## <a name="device-management"></a>裝置管理
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879f89d84bbae5b4cc187bc8b1fca627036269145b1c2dd82787e3789fef259d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 941de296d59713c098718b16431fa793bd1b60e6
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660369"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427134"
 ---
 # <a name="maintain---cloud-connected-guide"></a>維護-雲端連接指南
 
@@ -38,7 +38,7 @@ ms.locfileid: "115660369"
 1. 您的支援人員。
 2. 您的 HoloLens 專家團隊
 3. [HoloLens 檔](/hololens/)  / [HoloLens 疑難排解](/hololens/hololens-troubleshooting)檔
-4. [連絡人支援](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
+4. [請連絡支援人員](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## <a name="development-plan"></a>開發計畫
 

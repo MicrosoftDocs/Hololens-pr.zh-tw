@@ -7,11 +7,11 @@ ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188979"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427162"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>參與 HoloLens 檔
 
@@ -199,7 +199,7 @@ Microsoft 員工：當您的投稿合併到預設分支（ _master_）時，您�
 
 基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用[Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>安裝程式
+### <a name="setup"></a>設定
 
 請依照下列步驟設定 Visual Studio Code，以使用此存放庫：
 

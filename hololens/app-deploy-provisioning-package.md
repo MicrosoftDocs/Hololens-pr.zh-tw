@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: f480d3cc8d549fa356e05df6ce15e9517f5b978a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "123610984"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427643"
 ---
 # <a name="provisioning-package"></a>布建套件
 

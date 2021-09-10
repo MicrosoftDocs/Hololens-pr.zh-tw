@@ -17,11 +17,11 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188843"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427221"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>管理適用于 HoloLens (第1代) 的自訂應用程式
 

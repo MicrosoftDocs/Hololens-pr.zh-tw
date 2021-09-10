@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
+  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115662657"
+  ms.lasthandoff: 09/10/2021
+  ms.locfileid: "124428137"
 title: 常見問題 HoloLens (第一代) 安全性問題
 summary: ''
 sections:
@@ -76,7 +76,7 @@ sections:
   - question: >
       裝置可以使用基礎結構作為用戶端嗎？
     answer: >
-      * Yes
+      * 是
   - question: >
       使用哪一種通訊協定？
     answer: >
@@ -100,11 +100,11 @@ sections:
   - question: >
       HoloLens 是否有安全開機功能？
     answer: >
-      * Yes
+      * 是
   - question: >
       是否有能力從裝置停用或中斷連線周邊支援？
     answer: >
-      * Yes
+      * 是
   - question: >
       是否有能力控制或停用裝置上的埠？
     answer: >
@@ -122,7 +122,7 @@ sections:
   - question: >
       Microsoft 是否包含任何後端或服務的存取權，讓 Microsoft 能夠連線到裝置以進行螢幕共用或遠端支援？
     answer: >
-      * No
+      * 否
   - question: >
       當產生可信任通訊的 PKI 憑證時，我們想要在裝置上產生憑證，讓我們知道它只會在該裝置上，對該裝置而言是唯一的，而且無法匯出或用來模擬裝置。 這在 HoloLens 上是如此嗎？ 如果沒有，可能會受到緩和措施？
     answer: >-

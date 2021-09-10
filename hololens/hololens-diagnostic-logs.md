@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 96fe9492da035747a22123ee1cd0c1481cd821a4f2e549b6414a21810ec268d6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665296"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427942"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>收集和使用 HoloLens 裝置的診斷資訊
 

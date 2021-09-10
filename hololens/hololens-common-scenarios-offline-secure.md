@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189115"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427024"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>常見案例–離線安全 HoloLens 2
 
@@ -60,21 +60,21 @@ Windows 10電腦設定
 
    此布建套件中設定的設定：
    
-   |     項目                                                |     設定                       |     Description                                                                                                                    |
+   |     項目                                                |     設定                       |     描述                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     帳戶/使用者                                    |     本機使用者名稱 & 密碼    |     針對這些離線裝置，裝置的所有使用者都必須設定並共用單一使用者名稱和密碼。          |
    |     第一個經驗/HoloLens/SkipCalibration       |     是                          |     僅在初始裝置設定期間略過校正                                                                             |
    |     第一個經驗/HoloLens/SkipTraining          |     是                          |     初始裝置設定期間略過裝置訓練                                                                              |
    |     第一個經驗/HoloLens/WiFi                  |     是                          |     初始裝置設定期間略過 Wi-Fi config                                                                                 |
-   |     原則/連線能力/AllowBluetooth                |     No                            |     停用藍牙                                                                                                             |
-   |     原則/經驗/AllowCortana                    |     No                            |     停用 Cortana (在停用麥克風之後消除潛在的問題)                                           |
-   |     原則/MixedReality/MicrophoneDisabled            |     Yes                           |     停用麥克風                                                                                                            |
+   |     原則/連線能力/AllowBluetooth                |     否                            |     停用藍牙                                                                                                             |
+   |     原則/經驗/AllowCortana                    |     否                            |     停用 Cortana (在停用麥克風之後消除潛在的問題)                                           |
+   |     原則/MixedReality/MicrophoneDisabled            |     是                           |     停用麥克風                                                                                                            |
    |     原則/隱私權/LetAppsAccessLocation              |     強制拒絕                    |     防止應用程式嘗試存取位置資料 (，以在停用位置追蹤之後消除潛在問題)     |
    |     原則/隱私權/LetAppsAccessMicrophone            |     強制拒絕                    |     防止應用程式嘗試存取麥克風 (來消除自麥克風停用後的潛在問題)            |
-   |     原則/安全性/AllowAddProvisioningPackage       |     No                            |     防止任何人新增可能嘗試覆寫已鎖定原則的布建套件。                         |
-   |     原則/安全性/AllowRemoveProvisioningPackage    |     No                            |     防止任何人移除此鎖定的布建套件。                                                           |
-   |     原則/系統/AllowLocation                       |     No                            |     防止裝置嘗試追蹤位置資料。                                                                        |
-   |     原則/WiFi/AllowWiFi                             |     No                            |     停用 Wi-Fi                                                                                                                 |
+   |     原則/安全性/AllowAddProvisioningPackage       |     否                            |     防止任何人新增可能嘗試覆寫已鎖定原則的布建套件。                         |
+   |     原則/安全性/AllowRemoveProvisioningPackage    |     否                            |     防止任何人移除此鎖定的布建套件。                                                           |
+   |     原則/系統/AllowLocation                       |     否                            |     防止裝置嘗試追蹤位置資料。                                                                        |
+   |     原則/WiFi/AllowWiFi                             |     否                            |     停用 Wi-Fi                                                                                                                 |
 
 1. 在 [執行時間設定] 下，選取 [**帳戶/使用者/使用者名稱： hololens/密碼**]。
 

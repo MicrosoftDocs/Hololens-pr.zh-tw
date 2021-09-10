@@ -14,11 +14,11 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190322"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428823"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>將雲端連線 HoloLens 2 部署至外部用戶端
 

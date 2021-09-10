@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: ylempidakis
-ms.openlocfilehash: 2304e7ec18eb531cce431fb93c7abf38f2c9a1cef30f0d6c6fcaac6c95281f8e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cdd2ab68905d5cc82b1c5ccc50640112e857f2f4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661786"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427985"
 ---
 # <a name="hololens-2-registration-support-for-autopilot"></a>HoloLens 2Autopilot 的註冊支援
 
@@ -30,7 +30,7 @@ ms.locfileid: "115661786"
 
 下表詳細說明將註冊要求提交給 Microsoft 支援服務 *之前* 需要收集的資訊。
 
-| 必要資訊 | Description | Autopilot 註冊  | 硬體雜湊要求 | Autopilot 取消註冊 |
+| 必要資訊 | 描述 | Autopilot 註冊  | 硬體雜湊要求 | Autopilot 取消註冊 |
 ------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
 |  Azure Active Directory租使用者識別碼    |    您 Azure Active Directory 租使用者識別碼是 (GUID) 的全域唯一識別碼，與您的組織名稱或網域不同。    若要尋找您的租使用者識別碼，請登入 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。    |     ✔️                         |                              |                         ✔️                        |
 |  Azure Active Directory功能變數名稱    |   您的最上層功能變數名稱;例如，contoso.com。    |     ✔️                         |                              |                         ✔️                        |

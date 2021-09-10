@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189472"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428780"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -186,8 +186,9 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 - 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 已修正檔案 [上傳和下載超時的裝置入口網站已知問題。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - 解決從 HoloLens 裝置報告合規性屬性的相關問題;可能需要重新開機，才能在 Insider build 上觸發正確的報告。  
-- 啟用[指派的存取 API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) ，讓應用程式現在可以判斷 HoloLens 是否以 Kiosk 模式執行，以供使用者登入 HoloLens。
+- 啟用[指派的存取 API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) ，讓應用程式現在可以判斷 HoloLens 是否以 Kiosk 模式執行，以供使用者登入 HoloLens。
 - 更新全新閃爍時所安裝的現成版本遠端協助。
+- 在 Insider 組建中，已停用2D 應用程式的遊戲台處理。 藉由移除它，應用程式現在可以自由地使用遊戲台 Api，並可存取整組控制項，並執行所需的任何動作。 開發人員應該使用遊戲台 Api 來使用遊戲台輸入。 以下是適用于[遊戲台類別 (Windows 的範例。遊戲：輸入) Windows UWP 應用程式](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build
 

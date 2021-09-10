@@ -11,12 +11,12 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: 1131c43ffc3a4e63e7dae09b6aebf04f2eded183888373c6d6b75bca8d3b872c
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665194"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427622"
 ---
 # <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
 

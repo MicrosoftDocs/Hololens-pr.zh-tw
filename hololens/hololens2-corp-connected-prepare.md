@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190203"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428130"
 ---
 # <a name="prepare---corporate-connected-guide"></a>準備-公司連接指南
 ## <a name="infrastructure-essentials"></a>基礎結構基本概念

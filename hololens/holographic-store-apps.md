@@ -3,7 +3,7 @@ title: 尋找、安裝和卸載應用程式
 description: Microsoft Store 是與 HoloLens 搭配使用的應用程式和遊戲來源。  深入瞭解尋找、安裝及卸載全像攝影應用程式。
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 10/27/2020
+ms.date: 9/7/2021
 manager: jarrettr
 keywords: hololens、store、uwp、應用程式、安裝
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 3442da500e7554d7f97db2178cbaceeecad143ac
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664762"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427620"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>從 Microsoft Store 尋找、安裝和卸載應用程式
 
@@ -38,6 +38,7 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 
 > [!NOTE]
 > HoloLens 裝置的系統需求是以應用程式組建的架構為基礎。 如果 HoloLens 的應用程式組建 (第1代) 尚未更新至存放區中較新的 UWP 以包含 ARM 架構套件，則不會提供給 HoloLens 2 裝置使用。 同樣地，如果 HoloLens 2 應用程式未包含 x86 架構套件，則 HoloLens (第一代) 裝置時，將無法使用該套件。 HoloLens 裝置架構：
+>
 > - x86 = HoloLens (第1代) 
 > - ARM = HoloLens 2
 
@@ -46,9 +47,12 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 
 | 應用程式        | 連結                                          |
 |------------|-----------------------------------------------|
-| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
-| Word Mobile       | https://office.live.com/start/Word.aspx       |
-| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
+| Excel Mobile      | [https://office.live.com/start/Excel.aspx](https://office.live.com/start/Excel.aspx)      |
+| Word Mobile       | [https://office.live.com/start/Word.aspx](https://office.live.com/start/Word.aspx)       |
+| PowerPoint Mobile | [https://office.live.com/start/PowerPoint.aspx](https://office.live.com/start/PowerPoint.aspx) |
+
+> [!NOTE]
+> HoloLens 上的 Azure AD 帳戶目前不支援 OneDrive 應用程式。 建議您下載 Microsoft OneDrive PWA 應用程式。 [請遵循下列步驟來下載應用程式。]
 
 ## <a name="install-apps"></a>安裝應用程式
 
@@ -63,21 +67,54 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 1. 若要開啟 [ [**開始**] 功能表](holographic-home.md)，請在 HoloLens 上執行 [開始手勢](/hololens/hololens2-basic-usage#start-gesture)或 [bloom](hololens1-basic-usage.md)手勢 (第1代) 。
 
 1. 選取 Microsoft Store 應用程式。 Store 應用程式開啟之後：
-   1. 使用搜尋列來尋找應用程式。 
+   1. 使用搜尋列來尋找應用程式。
    1. 從其中一個策劃類別中，選取專門針對 HoloLens 所建立的基本應用程式或應用程式。
    1. 在 Store 應用程式的右上方，選取 [ **...]** 按鈕，然後選取 [我的文件 **庫** ] 以查看任何先前購買的應用程式。
 
 1. 選取應用程式頁面上的 [ **取得** 或 **安裝** ] (可能需要購買) 。
 
+### <a name="install-microsoft-onedrive-pwa-app"></a>安裝 Microsoft OneDrive PWA 應用程式
+
+必要條件：使用者已將 HoloLens 2 裝置加入其工作租使用者。
+
+1. 開啟 [開始] 功能表並啟動 Edge 瀏覽器。
+
+    ![開始功能表](images/office-pwa-1.jpg)
+
+1. 在您的 HoloLens 移至 [https://onedrive.live.com/about/signin](https://onedrive.live.com/about/signin) 並輸入您的工作帳號憑證
+
+    ![工作登入](images/office-pwa-2.jpg)
+
+1. 當您成功登入 OneDrive 入口網站後，請等候30至60秒，PWA 下載] 按鈕顯示
+
+    ![PWA 安裝] 按鈕](images/office-pwa-3.jpg)
+
+1. 選取 PWA 的 [下載] 按鈕，然後安裝應用程式
+
+    ![安裝提示](images/office-pwa-4.jpg)
+
+1. 關閉 Edge 瀏覽器，然後從 [開始] 功能表中，選取 [**所有應用程式**] 按鈕，然後啟動標示為的 OneDrive PWA 應用程式 **Microsoft OneDrive**
+
+    ![所有應用程式顯示這兩個應用程式。](images/office-pwa-5.jpg)
+
+> [!NOTE]
+> "Microsoft OneDrive" 是 PWA 的應用程式，其中 "OneDrive" 是舊版 UWP。
+
+1. 然後，您將能夠看到您的 OneDrive 檔案。
+
+    ![OneDrive PWA](images/office-pwa-6.jpg)
+
+另請參閱：[啟用自動上傳至商務用 OneDrive](hololens-release-notes.md#onedrive-for-work-or-school-camera-roll-upload)
+
 ## <a name="update-apps"></a>更新應用程式
 
-若要更新從 Microsoft Store 安裝的應用程式，您可以從 Microsoft Store 應用程式更新應用程式。 針對商務用 Microsoft Store 安裝的應用程式，您也可以從商務用 Microsoft Store 更新這些應用程式。 
+若要更新從 Microsoft Store 安裝的應用程式，您可以從 Microsoft Store 應用程式更新應用程式。 針對商務用 Microsoft Store 安裝的應用程式，您也可以從商務用 Microsoft Store 更新這些應用程式。
 
 1. 若要開啟 [ [**開始**] 功能表](holographic-home.md)，請在 HoloLens 上執行 [開始手勢](/hololens/hololens2-basic-usage#start-gesture)或 [bloom](hololens1-basic-usage.md)手勢 (第1代) 。
 
 1. 選取商店應用程式。
 
-1. 查看 Store 應用程式的右上方。 
+1. 查看 Store 應用程式的右上方。
 
 1. 選取 [ **...]** 或 [查看更多] 按鈕。
 
@@ -87,8 +124,8 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 1. 選取 [ **下載和更新**]。
     1. 如果您的裝置先前已識別更新，可能會有向下箭號，以及代表暫止更新的數位。
 
-1. 選取 [ **取得更新**]。 您的裝置現在會搜尋更新，並將其設定為下載並安裝。 
- 
+1. 選取 [ **取得更新**]。 您的裝置現在會搜尋更新，並將其設定為下載並安裝。
+
    > [!div class="mx-imgBorder"]
    > ![取得更新的 Microsoft Store 應用程式螢幕擷取畫面。](images/store-update-2.png.jpg)
 
@@ -99,13 +136,13 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 
 ## <a name="uninstall-apps"></a>解除安裝應用程式
 
-有三種方式可以卸載應用程式。 您可以透過 Microsoft Store、[開始] 功能表或設定來卸載應用程式。 
+有三種方式可以卸載應用程式。 您可以透過 Microsoft Store、[開始] 功能表或設定來卸載應用程式。
 
 > [!WARNING]
 > 您不能卸載系統應用程式或 Microsoft Store 本身。
 
 > [!IMPORTANT]
-> 如果您的 HoloLens 2 有多位使用者，您必須以安裝應用程式的使用者身分登入，才能將其卸載。 
+> 如果您的 HoloLens 2 有多位使用者，您必須以安裝應用程式的使用者身分登入，才能將其卸載。
 
 ### <a name="uninstall-from-the-microsoft-store"></a>從 Microsoft Store 卸載
 
@@ -116,6 +153,7 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 在 [開始] 功能表或 [所有應用程式] 清單中，瀏覽至應用程式。 選取並按住直到功能表出現，然後選取 [解除安裝]。
 
 ### <a name="uninstall-from-settings"></a>從 [設定] 解除安裝
+
 在 [**開始**] 功能表上，選取 [**設定 > 應用程式]。** 從清單中尋找應用程式，選取該應用程式，然後按一下 [解除安裝]。
 
 如果您無法卸載應用程式，請使用意見反應中樞 [提出意見](/hololens/hololens-feedback) 反應。

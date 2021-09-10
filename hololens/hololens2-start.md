@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189761"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427118"
 ---
 # <a name="set-up-your-hololens-2"></a>設定您的 HoloLens 2
 
@@ -153,7 +153,7 @@ ms.locfileid: "123189761"
     
     恭喜！  安裝程式已完成，而且您已準備好使用 HoloLens！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 

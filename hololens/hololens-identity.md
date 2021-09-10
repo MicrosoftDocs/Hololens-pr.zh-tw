@@ -1,11 +1,11 @@
 ---
 title: 管理 HoloLens 的使用者身分識別和登入
-description: 瞭解如何管理 HoloLens 裝置的使用者身分識別、多使用者支援、安全性、企業驗證和登入。
+description: 瞭解如何管理使用者身分識別、多使用者支援、安全性、企業驗證，以及登入 HoloLens 裝置。
 keywords: HoloLens，使用者，帳戶，AAD，Azure AD，adfs，microsoft 帳戶，msa，認證，參考
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
-author: scooley
-ms.author: scooley
-ms.date: 10/6/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 8/13/2021
 ms.prod: hololens
 ms.custom:
 - CI 111456
@@ -14,25 +14,27 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: jarrettr
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: c2fd7c8ee82fbf70b9eaa2b5eee1d73e1235d8b5
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189540"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427902"
 ---
-# <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
+# <a name="manage-user-identity-and-login-for-hololens"></a>管理 HoloLens 的使用者身分識別和登入
 
 > [!NOTE]
 > 本文是 IT 專業人員和技術愛好者的技術參考。 如果您要尋找 HoloLens 設定指示，請參閱「[設定您的 HoloLens (第一代) ](hololens1-start.md)」或「[設定您的 HoloLens 2](hololens2-start.md)」。
 
-就像其他 Windows 裝置一樣，HoloLens 一律會在使用者內容下運作。 一律會有使用者身分識別。 HoloLens 處理身分識別的方式幾乎與其他 Windows 裝置一樣。 本文將深入探討 HoloLens 上的身分識別，並著重于 HoloLens 與其他 Windows 裝置有何不同。
+## <a name="lets-talk-about-setting-up-user-identity-for-hololens-2"></a>讓我們談談如何設定 HoloLens 2 的使用者身分識別
 
-HoloLens 支援數種類型的使用者身分識別。 您可以使用一或多個使用者帳戶來登入。 以下概述 HoloLens 的身分識別類型和驗證選項：
+就像其他 Windows 裝置一樣，HoloLens 一律會在使用者內容下運作。 一律會有使用者身分識別。 HoloLens 會以與 Windows 10 裝置幾乎相同的方式來處理身分識別。 在安裝期間登入會在儲存應用程式和資料的 HoloLens 上建立使用者設定檔。 相同的帳戶也提供應用程式的單一登入，例如 Edge 或 Dynamics 365 Remote Assist，方法是使用 Windows 的帳戶管理員 api。 
+
+HoloLens 支援數種類型的使用者身分識別。 您可以選擇這三種帳戶類型的其中一種，但強烈建議您 Azure AD，因為它最適合用來管理裝置。 只有 Azure AD 帳戶支援多個使用者。 
 
 | 身分識別類型 | 每一裝置的帳戶 | 驗證選項 |
 | --- | --- | --- |
@@ -80,13 +82,13 @@ HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用
 > [!NOTE]
 > **HoloLens (第1代)** 開始支援 Windows 10 [2018 年4月更新](/windows/mixed-reality/release-notes-april-2018)中的多個 Azure AD 使用者，作為 [Windows Holographic for Business](hololens-upgrade-enterprise.md)的一部分。
 
-### <a name="multiple-users-listed-on-sign-in-screen"></a>登入畫面上列出多個使用者
+### <a name="multiple-users-are-listed-on-sign-in-screen"></a>登入畫面上列出多個使用者
 
-先前的 [登入] 畫面只會顯示最近登入的使用者，以及「其他使用者」進入點。 如果有多位使用者登入裝置，就會收到客戶的意見反應。 他們仍然需要重新輸入使用者名稱等。
+先前，登入畫面只會顯示最近登入的使用者，以及「其他使用者」進入點。 如果有多位使用者登入裝置，就會收到客戶的意見反應。 他們仍然需要重新輸入使用者名稱等。
 
-在 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)中引進，當選取 [釘選輸入] 欄位右邊的 **其他使用者** 時，[登入] 畫面會顯示多個先前已登入裝置的使用者。 這可讓使用者選取其使用者設定檔，然後使用其 Windows Hello 認證進行登入。 您也可以透過 [新增 **帳戶** ] 按鈕，從 [其他使用者] 頁面將新的使用者新增至裝置。
+在 Windows 全像 [21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)中引進，當選取 [PIN 輸入] 欄位右邊的 **其他使用者** 時，登入畫面會顯示多個先前已登入裝置的使用者。 這可讓使用者選取其使用者設定檔，然後使用其 Windows Hello 認證進行登入。 您也可以透過 [新增 **帳戶**] 按鈕，從 [**其他使用者**] 頁面將新的使用者新增至裝置。
 
-在 [其他使用者] 功能表中，[其他使用者] 按鈕會顯示上次登入裝置的使用者。 選取此按鈕，返回此使用者的登入畫面。
+在 [ **其他使用者** ] 功能表中，[ **其他使用者** ] 按鈕會顯示上次登入裝置的使用者。 選取此按鈕以返回此使用者的登入畫面。
 
 ![登入畫面預設值。](./images/multiusers1.jpg)
 
@@ -108,7 +110,7 @@ HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用
 
 ## <a name="enterprise-and-other-authentication"></a>Enterprise 和其他驗證
 
-如果您的應用程式使用其他類型的驗證（例如 NTLM、基本或 Kerberos），您可以使用[Windows 認證 UI](/uwp/api/Windows.Security.Credentials.UI)來收集、處理和儲存使用者的認證。 收集這些認證的使用者體驗與其他雲端導向的帳戶中斷非常類似，並會在您的2D 應用程式上方顯示為子應用程式，或短暫暫停 Unity 應用程式以顯示 UI。
+如果您的應用程式使用其他類型的驗證（例如 NTLM、基本或 Kerberos），您可以使用[Windows 認證 UI](/uwp/api/Windows.Security.Credentials.UI)來收集、處理和儲存使用者的認證。 收集這些認證的使用者體驗與其他雲端導向的帳戶中斷類似，並顯示為您2D 應用程式頂端的子應用程式，或短暫暫停 Unity 應用程式以顯示 UI。
 
 ## <a name="deprecated-apis"></a>已被取代的 API
 
@@ -118,7 +120,7 @@ HoloLens 支援相同 Azure AD 租使用者中的多個使用者。 若要使用
 
 ### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Windows Hello 是否適用于 HoloLens (第1代) 的商務支援？
 
-支援使用 PIN 來登入) 的商務 (Windows Hello 支援 (第一代) 的 HoloLens。 若要允許 Windows Hello 在 HoloLens 上進行商務 PIN 登入：
+支援使用 PIN 來登入) 的商務 (Windows Hello 支援 (第一代) 的 HoloLens。 若要允許 Windows Hello HoloLens 上的商務 PIN 登入：
 
 1. HoloLens 裝置必須[由 MDM 管理](hololens-enroll-mdm.md)。
 1. 您必須啟用裝置的 Windows Hello 商務版。  ([請參閱 Microsoft Intune 的指示。](/intune/windows-hello)) 
@@ -150,7 +152,7 @@ HoloLens 2 提供許多不同的驗證選項，包括 FIDO2 安全性金鑰。
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>帳戶類型如何影響登入行為？
 
-如果套用登入原則，您需要隨時遵守原則。 如果沒有套用登入的原則，這些是每種帳戶類型的預設行為：
+如果您套用登入的原則，則一律遵守此原則。 如果沒有套用登入的原則，這些是每種帳戶類型的預設行為：
 
 - **Azure AD**：預設會要求驗證，而且可由 **設定** 設定為不再要求驗證。
 - **Microsoft 帳戶**：鎖定行為不同允許自動解除鎖定，但重新開機時仍需要登入驗證。

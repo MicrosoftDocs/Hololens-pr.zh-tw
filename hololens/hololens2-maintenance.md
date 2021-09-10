@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189438"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427277"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 清理常見問題
 
@@ -50,7 +50,7 @@ ms.locfileid: "123189438"
 
 ## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>是否可以使用任何鏡頭清理工具來清除 HoloLens 面板？
 
-不會。 您可以將鏡頭清除 abrasive 至面板上的 coatings。 若要清除面板，請遵循下列步驟：  
+否。 您可以將鏡頭清除 abrasive 至面板上的 coatings。 若要清除面板，請遵循下列步驟：  
 
 1. 使用乾燥不起毛的 microfiber 抹布來消除任何灰塵，以輕輕抹除面板。
 1. 使用醫療「70%」 isopropyl 的酒精來輕 moisten 抹布，然後輕輕抹除面板。
@@ -65,11 +65,11 @@ ms.locfileid: "123189438"
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>我可以使用喝酒來清除裝置嗎？
 
-是。 您可以使用 "70%" isopropyl 酒精和水的解決方案來清除裝置（包括面板）的硬表面。 使用混合的 isopropyl 酒精和水來輕 moisten 抹布，然後輕輕抹除裝置的表面
+可以。 您可以使用 "70%" isopropyl 酒精和水的解決方案來清除裝置（包括面板）的硬表面。 使用混合的 isopropyl 酒精和水來輕 moisten 抹布，然後輕輕抹除裝置的表面
 
 ## <a name="is-the-brow-pad-replaceable"></a>Brow pad 可以更換嗎？
 
-是。 Brow pad 以磁性連接裝置。 若要將它卸離，請從 headband 中輕輕地拉出它。 若要取代它，請將它貼回原位。
+可以。 Brow pad 以磁性連接裝置。 若要將它卸離，請從 headband 中輕輕地拉出它。 若要取代它，請將它貼回原位。
 
 ![移除或取代 brow pad。](images/hololens2-remove-browpad.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "123189438"
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>我可以使用 ultraviolet (UV) light 來淨化裝置嗎？
 
-使用 UVC LED 的 UVC irradiance，其運作方式為 0.5-0.6 mW/cm<sup>2</sup>的濃度層級，而不會發出臭氧，可用來淨化 HoloLens2。 請遵循製造商對處理和曝光時間的規格。
+使用 UVC LED 或已篩選的螢光燈 UVC 光源 UVC irradiance，其運作方式為 0.5-0.6 mW/cm2，而不會發出臭氧，可用來淨化 HoloLens 2。 請遵循製造商對處理和曝光時間的規格。
 
 > [!CAUTION]  
 > 高層級的 UV 和 UV B 風險可能會降低裝置的顯示品質，並損壞了面板的塗層。 對 UV 和 UV-B 放射的過度曝光，具有下列效果（依持續時間和曝光強度的順序）：
@@ -91,4 +91,4 @@ ms.locfileid: "123189438"
 
 ## <a name="is-the-rear-pad-replaceable"></a>可以更換後面板嗎？
 
-不會。
+不正確。

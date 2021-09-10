@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b6c2c6c10232fb8f1817dddabebaf207e51d35d7
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190305"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428307"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>具有 HoloLens 2 的 Trimble XR10
 
@@ -33,7 +33,7 @@ ms.locfileid: "123190305"
 
 查看更多關於 [TRIMBLE XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)的資訊。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 1. 立即開始與混合現實互動，並在您的 HoloLens 上流覽 Windows 10-查看 **提示** 應用程式，以取得實際操作教學課程進行手動互動。 使用開始手勢移至 [開始] 或 [移至開始]，然後選取 [提示]。
 1. 按一下下方以繼續閱讀有關 HoloLens 2 的資訊。

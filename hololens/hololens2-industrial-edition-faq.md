@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0ac7228e4af807d709d218942c50a9b110a419c1
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189489"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428892"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 產業版本常見問題
 
@@ -47,11 +47,11 @@ HoloLens 2 產業版已通過認證，可用於 UL Class I、除法 2-群組 A�
 
 ### <a name="does-the-hololens-2-industrial-edition-hold-an-atex-certification"></a>HoloLens 2 產業版本是否持有 ATEX 認證？
 
-不會。 HoloLens 2 產業版本並未包含 ATEX 認證。 HoloLens 2 產業版本保有 US/CAN 類別 I、除法 2-a a、B、C 和 D 認證。
+否。 HoloLens 2 產業版本並未包含 ATEX 認證。 HoloLens 2 產業版本保有 US/CAN 類別 I、除法 2-a a、B、C 和 D 認證。
 
 ### <a name="can-the-device-be-used-in-semiconductor-and-pharmaceutical-environments"></a>裝置是否可用於半導體和製藥環境？
 
-是。 HoloLens 2 產業版本是以這些環境的考慮所設計，並以清理房間和作業安全的認證為考慮，此 HoloLens 2 版本已準備好在這些環境中使用。
+可以。 HoloLens 2 產業版本是以這些環境的考慮所設計，並以清理房間和作業安全的認證為考慮，此 HoloLens 2 版本已準備好在這些環境中使用。
 
 ### <a name="what-is-the-hololens-2-industrial-edition-warranty"></a>什麼是 HoloLens 2 產業版本的擔保？
 

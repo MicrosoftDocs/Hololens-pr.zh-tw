@@ -1,5 +1,5 @@
 ---
-title: Windows Defender應用程式控制-WDAC
+title: Windows Defender 應用程式控制 (WDAC)
 description: 概述什麼是 Windows Defender 應用程式控制，以及如何使用它來管理 HoloLens 的混合現實裝置。
 ms.prod: hololens
 ms.sitesec: library
@@ -7,26 +7,28 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665551"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428650"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender應用程式控制-WDAC
 
-WDAC 可讓 IT 系統管理員設定其裝置，以封鎖在裝置上啟動應用程式。 這與裝置限制的方法不同，例如 Kiosk 模式，其中使用者會看到 UI 來隱藏裝置上的應用程式，但仍可啟動。 在執行 WDAC 的同時，應用程式仍會顯示在 [所有應用程式] 清單中，但 WDAC 會停止這些應用程式和進程，使其無法由裝置使用者啟動。
+## <a name="overview"></a>概觀
 
-可能指派一個以上的 WDAC 原則給裝置。 如果系統上設定了多個 WDAC 原則，則最嚴格的原則會生效。 
+WDAC 可讓您設定 HoloLens 來封鎖應用程式的啟動。 它與 Kiosk 模式不同，因為 UI 會隱藏應用程式，但仍可啟動它們。 您可以使用 WDAC 查看應用程式，但無法啟動應用程式。
 
 > [!NOTE]
-> 當使用者嘗試啟動由 WDAC 封鎖的應用程式時，HoloLens 不會收到有關無法啟動該應用程式的通知。
+> 當使用者嘗試啟動 HoloLens 上由 WDAC 封鎖的應用程式時，系統不會通知他們是否無法啟動應用程式。
+
+可能指派一個以上的 WDAC 原則給裝置。 如果系統上設定了多個 WDAC 原則，則最嚴格的原則會生效。 
 
 下列指南可讓使用者瞭解如何[使用 WDAC 和 Windows PowerShell，在 HoloLens 2 裝置上使用 Microsoft Intune 來允許或封鎖應用程式](/mem/intune/configuration/custom-profile-hololens)。
 
@@ -38,7 +40,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 如果您不知道封裝的完整名稱，您可能需要執行 ' Add-appxpackage-name \* YourBestGuess \* ' 數次，才能找到它。 然後，一旦您的名稱執行 ' $package 1 = Get-AppxPackage-name PackageName '
 
-例如，執行下列 Microsoft Edge 將會傳回一個以上的結果，但從該清單中，您可以識別出所需的完整名稱是 MicrosoftEdge。
+例如，執行下列 Microsoft Edge 程式碼將會傳回一個以上的結果，但從該清單中，您可以識別出所需的完整名稱是 MicrosoftEdge。
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -81,6 +83,5 @@ Get-AppxPackage -name *edge*
 1. 裝置入口網站連線之後，請流覽至 **Views** 然後再流覽至 [ **應用程式**]。 
 1. 在 [已安裝的應用程式] 面板中，使用下拉式清單來選取已安裝的應用程式。 
 1. 找出 PackageRelativeID。 
-1. 將應用程式字元複製到！之前，這些字元將會是您的 PackageFamilyName。
-
+1. 將應用程式字元複製到前面 `!` ，這些字元將會是您的 PackageFamilyName。
 

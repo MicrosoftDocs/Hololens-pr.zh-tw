@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 74f74645a3fc1282f48cb7ce0f6f722979c91b04
-ms.sourcegitcommit: 548550f309010fa95f674a7ff688166a31cf1963
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122336731"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427539"
 ---
 # <a name="hololens-2-privacy-and-data-protection"></a>HoloLens 2隱私權與資料保護
 

@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: ae3a1fcb3c9ab2ea5a1ad6d7703903c54671a1590a5732f1fbde489362d9b63d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c596eac214b0134d04a5b34acded69ff973be3b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662630"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428933"
 ---
 # <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>HoloLens (第1代) 配合及緩和常見問題
 

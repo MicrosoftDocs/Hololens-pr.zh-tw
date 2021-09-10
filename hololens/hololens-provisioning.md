@@ -17,11 +17,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188996"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427998"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>使用布建套件來設定 HoloLens
 
@@ -237,7 +237,7 @@ Windows 全像[20H2 版](hololens-release-notes.md#windows-holographic-version-2
 
 ![HoloLens 的一般執行時間設定。](images/icd-settings.png)
 
-| 設定 | Description |
+| 設定 | 描述 |
 | --- | --- |
 | **憑證** | 將憑證部署至 HoloLens。  |
 | **ConnectivityProfiles** | 將 Wi-Fi 設定檔部署至 HoloLens。   |

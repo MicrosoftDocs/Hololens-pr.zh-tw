@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658949"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428590"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>開始使用您的 HoloLens 2
 
@@ -42,7 +42,7 @@ ms.locfileid: "115658949"
 
 如有必要，請藉由開啟調整輪子來延長 headband，然後放寬接下來的額外負荷。
 
-![HoloLens 2 調整與調整](images/hololens2-fit.png)
+![HoloLens 2 調整和調整。](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>附加和卸離的額外負荷
 
@@ -52,7 +52,7 @@ ms.locfileid: "115658949"
 
 若要卸離額外負荷的背面，請按下每個連線索引標籤底下的按鈕，並輕輕提取。 若要重新連接，請將連線索引標籤推回到插槽中，直到他們按一下為止。
 
-![附加或移除 HoloLens 2 的 head 腕帶](images/hololens2-headstrap.png)
+![附加或移除 HoloLens 2 的標頭。](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>開啟 HoloLens 2
 

@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662931"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124426990"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>管理 HoloLens 的連接端點
 
@@ -53,7 +53,7 @@ HoloLens 針對擁有網路環境限制的客戶支援一組有限的離線體�
 | Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |
 |                                                     | ris-prod-atm.trafficmanager.net                                     |
 |                                                     | validation-v2.sls.trafficmanager.net                                |
-| Azure AD Multi-Factor Authentication                | https://secure.aadcdn.microsoftonline-p.com                         |
+| Azure AD 多重要素驗證                | https://secure.aadcdn.microsoftonline-p.com                         |
 | Intune 和 MDM 設定                       | activation-v2.sls.microsoft.com/*                                   |
 |                                                     | cdn.onenote.net                                                     |
 |                                                     | client.wns.windows.com                                              |
@@ -82,7 +82,7 @@ HoloLens 針對擁有網路環境限制的客戶支援一組有限的離線體�
 |                                                     | spo-ring.msedge.net                                                 |
 | 裝置驗證                               | login.live.com *                                                     |
 | 裝置中繼資料                                     | dmd.metaservices.microsoft.com                                      |
-| Location                                            | inference.location.live.net                                         |
+| 位置                                            | inference.location.live.net                                         |
 |                                                     | location-inference-westus.cloudapp.net                              |
 | 診斷資料                                     | v10.events.data.microsoft.com                                       |
 |                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |
@@ -149,7 +149,7 @@ HoloLens 針對擁有網路環境限制的客戶支援一組有限的離線體�
 
 
 
-## <a name="references"></a>參考資料
+## <a name="references"></a>參考
 
 > [!NOTE]
 > 如果您要部署 D365 遠端協助，您必須啟用針對 SharePoint Online 所列出的端點，並商務用 OneDrive [Office 365 url 和 IP 位址範圍](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)中。

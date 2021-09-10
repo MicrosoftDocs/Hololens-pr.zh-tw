@@ -13,11 +13,11 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189234"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428075"
 ---
 # <a name="common-deployment-scenarios"></a>常見部署案例
 
@@ -29,7 +29,7 @@ ms.locfileid: "123189234"
 
 您可能是想要在組織內採用 HoloLens 的商務決策者、IT 專業人員或創新團隊。 當您從概念證明到調整的部署建立時，我們的部署指南在您的 IT 基礎結構中有意義 HoloLens-無論大小或規模為何。 以下是最常見的部署案例：
 
-| 狀況 |使用方式 | 重點 |
+| 案例 |使用方式 | 重點 |
 |---------|---------|---------|
 | [案例 A：雲端連接的裝置](hololens2-cloud-connected-overview.md) | 當您第一次開始部署時，您可能會從小規模開始，並部署連線至雲端的單一裝置，以查看基本程式。 | 裝置將會連接到雲端服務和公用網際網路。 這最適合客戶使用案例、現場服務和概念證明。|
 | [案例 B：組織的網路](hololens2-corp-connected-overview.md) | 當您大規模部署到生產環境時，您可能需要與自己組織的網路整合。 | 裝置會連線到「公司」 wi-fi 網路。 這最適合內部使用者，或在公司環境內使用。|

@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/20/2021
-  ms.locfileid: "122610245"
+  ms.lasthandoff: 09/10/2021
+  ms.locfileid: "124427150"
 title: HoloLens 2開發版常見問題
 summary: ''
 sections:

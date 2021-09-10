@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190424"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428002"
 ---
 # <a name="page-settings-visibility"></a>頁面設定可見度
 
@@ -152,7 +152,7 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 電池 <sup>2</sup>           | `batterysaver`<br>|
 | 電池 <sup>2</sup>           | `batterysaver-settings`<br>|
 | 色彩             | `colors`<br>`personalization-colors` |
-| 全像投影<sup>2</sup>  |  `holograms`  |
+| 全像影像 <sup>2</sup>  |  `holograms`  |
 | 校正 <sup>2</sup> |  `calibration` |
 | 通知與動作  | `notifications`          |
 | 共用體驗 | `crossdevice` 
@@ -160,7 +160,7 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 音效 > 應用程式磁片區和裝置喜好設定 <sup>2</sup>           | `apps-volume`<br>|
 | 音效 > 管理音效裝置 <sup>2</sup>           | `sound-devices`<br>|
 | 儲存體            | `storagesense`           |
-| 儲存體 > 設定儲存空間感知器<sup>2</sup>           | `storagepolicies`<br>|
+| 儲存體 > 設定儲存空間感知器 <sup>2</sup>           | `storagepolicies`<br>|
 
 ### <a name="time--language"></a>Time & 語言
 | 設定頁面 | URI                                           |
@@ -169,7 +169,7 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 鍵盤 <sup>2</sup> | `keyboard`                  |
 | 語言 <sup>2</sup> | `language`                  |
 | 語言 <sup>2</sup> | `regionlanguage-languageoptions`                  |
-| Language      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
+| 語言      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
 | 區域        | `regionformatting`                  |
 
 ### <a name="update--security"></a>更新 & 安全性
@@ -179,7 +179,7 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 | 重設 & 復原 <sup>2</sup>      | `reset`         |
 | Windows 測試人員計畫               | `windowsinsider` <br>`windowsinsider-optin`          |
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
-| Windows更新-檢查是否有更新 | `windowsupdate-action`          |
+| Windows Update-檢查是否有更新 | `windowsupdate-action`          |
 
 
 - <sup>1</sup> -針對 Windows 全像21H1 版之前的版本，下列兩個 uri 實際上不會帶您前往 [ **Advanced options** ] 或 [ **options** ] 頁面;它們只會封鎖或顯示主 Windows Update 頁面。
@@ -189,4 +189,4 @@ HoloLens 裝置和 Windows 10 裝置在設定應用程式中有不同的頁面�
 - <sup>2</sup> -在 Windows 全像21H1 或更高版本中提供。
 
 
-如需 Windows 10 設定 uri 的完整清單，請流覽[啟動設定](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)檔。
+如需 Windows 10 設定 Uri 的完整清單，請流覽 [啟動設定](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) 檔。
