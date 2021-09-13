@@ -13,11 +13,11 @@ ms.reviewer: ''
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035814"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>針對執行和受管理的裝置進行疑難排解 
 
@@ -178,23 +178,23 @@ Wireshark 篩選器可協助篩選出感興趣的封包。
 
 ### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>我可以使用 System Center Configuration Manager (SCCM) 來管理 HoloLens 裝置嗎？
 
-否。 您必須使用 MDM 系統來管理 HoloLens 裝置。
+不會。 您必須使用 MDM 系統來管理 HoloLens 裝置。
 
 ### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>我可以使用 Active Directory Domain Services (AD DS) 來管理 HoloLens 使用者帳戶嗎？
 
-否。 您必須使用 Azure Active Directory (Azure AD) 來管理 HoloLens 裝置的使用者帳戶。
+不會。 您必須使用 Azure Active Directory (Azure AD) 來管理 HoloLens 裝置的使用者帳戶。
 
 ### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>HoloLens 是否能夠 (adc) 自動註冊，自動資料捕獲系統？
 
-否。
+不會。
 
 ### <a name="can-hololens-participate-in-integrated-windows-authentication"></a>可以 HoloLens 參與整合式 Windows 驗證嗎？
 
-不正確。
+不會。
 
 ### <a name="does-hololens-support-branding"></a>HoloLens 是否支援商標？
 
-否。 不過，您可以使用下列其中一種方法來解決此問題：
+不會。 不過，您可以使用下列其中一種方法來解決此問題：
 
 - 建立自訂應用程式，然後 [啟用 Kiosk 模式](hololens-kiosk.md)。 自訂應用程式可以有商標，也可以啟動其他應用程式 (例如遠端協助) 。  
 - 將 Azure AD 中的所有使用者設定檔圖片變更為您的公司標誌。 不過，這對所有案例而言可能都不理想。

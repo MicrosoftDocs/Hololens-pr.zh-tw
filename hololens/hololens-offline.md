@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124426990"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035861"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>管理 HoloLens 的連接端點
 
@@ -149,7 +149,7 @@ HoloLens 針對擁有網路環境限制的客戶支援一組有限的離線體�
 
 
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 > [!NOTE]
 > 如果您要部署 D365 遠端協助，您必須啟用針對 SharePoint Online 所列出的端點，並商務用 OneDrive [Office 365 url 和 IP 位址範圍](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)中。

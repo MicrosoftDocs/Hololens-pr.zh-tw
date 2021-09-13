@@ -14,11 +14,11 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c596eac214b0134d04a5b34acded69ff973be3b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032354"
 ---
 # <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>HoloLens (第1代) 配合及緩和常見問題
 

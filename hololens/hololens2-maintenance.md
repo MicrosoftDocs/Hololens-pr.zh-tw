@@ -16,11 +16,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427277"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032281"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 清理常見問題
 
@@ -50,7 +50,7 @@ ms.locfileid: "124427277"
 
 ## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>是否可以使用任何鏡頭清理工具來清除 HoloLens 面板？
 
-否。 您可以將鏡頭清除 abrasive 至面板上的 coatings。 若要清除面板，請遵循下列步驟：  
+不會。 您可以將鏡頭清除 abrasive 至面板上的 coatings。 若要清除面板，請遵循下列步驟：  
 
 1. 使用乾燥不起毛的 microfiber 抹布來消除任何灰塵，以輕輕抹除面板。
 1. 使用醫療「70%」 isopropyl 的酒精來輕 moisten 抹布，然後輕輕抹除面板。
@@ -65,11 +65,11 @@ ms.locfileid: "124427277"
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>我可以使用喝酒來清除裝置嗎？
 
-可以。 您可以使用 "70%" isopropyl 酒精和水的解決方案來清除裝置（包括面板）的硬表面。 使用混合的 isopropyl 酒精和水來輕 moisten 抹布，然後輕輕抹除裝置的表面
+是。 您可以使用 "70%" isopropyl 酒精和水的解決方案來清除裝置（包括面板）的硬表面。 使用混合的 isopropyl 酒精和水來輕 moisten 抹布，然後輕輕抹除裝置的表面
 
 ## <a name="is-the-brow-pad-replaceable"></a>Brow pad 可以更換嗎？
 
-可以。 Brow pad 以磁性連接裝置。 若要將它卸離，請從 headband 中輕輕地拉出它。 若要取代它，請將它貼回原位。
+是。 Brow pad 以磁性連接裝置。 若要將它卸離，請從 headband 中輕輕地拉出它。 若要取代它，請將它貼回原位。
 
 ![移除或取代 brow pad。](images/hololens2-remove-browpad.png)
 
@@ -91,4 +91,4 @@ ms.locfileid: "124427277"
 
 ## <a name="is-the-rear-pad-replaceable"></a>可以更換後面板嗎？
 
-不正確。
+不會。

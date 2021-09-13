@@ -14,11 +14,11 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032353"
 ---
 # <a name="install-localized-versions-of-hololens-1st-gen"></a>將當地語系化版本的 HoloLens 安裝 (第1代) 
 

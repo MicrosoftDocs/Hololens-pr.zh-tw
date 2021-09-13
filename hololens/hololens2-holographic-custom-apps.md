@@ -17,11 +17,11 @@ ms.custom:
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 057d70c221bbecd060fd5650874ee6a6940ffd18
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428950"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032289"
 ---
 # <a name="manage-custom-apps-for-hololens-2"></a>管理 HoloLens 2 的自訂應用程式
 

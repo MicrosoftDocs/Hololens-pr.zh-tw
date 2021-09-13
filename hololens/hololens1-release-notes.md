@@ -13,11 +13,11 @@ audience: ITPro
 appliesto:
 - HoloLens 1
 ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428350"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032345"
 ---
 # <a name="hololens-1st-gen-release-notes"></a>HoloLens 1 (gen) 版本資訊
 

@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032042"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>常見案例–離線安全 HoloLens 2
 
@@ -63,9 +63,9 @@ Windows 10電腦設定
    |     項目                                                |     設定                       |     描述                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     帳戶/使用者                                    |     本機使用者名稱 & 密碼    |     針對這些離線裝置，裝置的所有使用者都必須設定並共用單一使用者名稱和密碼。          |
-   |     第一個經驗/HoloLens/SkipCalibration       |     是                          |     僅在初始裝置設定期間略過校正                                                                             |
-   |     第一個經驗/HoloLens/SkipTraining          |     是                          |     初始裝置設定期間略過裝置訓練                                                                              |
-   |     第一個經驗/HoloLens/WiFi                  |     是                          |     初始裝置設定期間略過 Wi-Fi config                                                                                 |
+   |     第一個經驗/HoloLens/SkipCalibration       |     對                          |     僅在初始裝置設定期間略過校正                                                                             |
+   |     第一個經驗/HoloLens/SkipTraining          |     對                          |     初始裝置設定期間略過裝置訓練                                                                              |
+   |     第一個經驗/HoloLens/WiFi                  |     對                          |     初始裝置設定期間略過 Wi-Fi config                                                                                 |
    |     原則/連線能力/AllowBluetooth                |     否                            |     停用藍牙                                                                                                             |
    |     原則/經驗/AllowCortana                    |     否                            |     停用 Cortana (在停用麥克風之後消除潛在的問題)                                           |
    |     原則/MixedReality/MicrophoneDisabled            |     是                           |     停用麥克風                                                                                                            |

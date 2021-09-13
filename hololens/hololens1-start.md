@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032342"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>將您的 HoloLens 設定 (第1代) 
 
@@ -73,7 +73,7 @@ HoloLens (第1代) 會使用瞳孔 (IPD 或[interpupillary 距離](https://en.wi
 
 恭喜！ 安裝程式已完成，您就可以開始使用 HoloLens。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [開始使用 HoloLens (第1代) ](hololens1-basic-usage.md)

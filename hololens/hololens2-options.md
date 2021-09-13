@@ -15,11 +15,11 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428902"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035795"
 ---
 # <a name="compare-hololens-2-options"></a>比較 HoloLens 2 選項
 
@@ -41,7 +41,7 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 | **快速更換程式 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **商業使用權**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**保修**](hololens2-hardware.md#warranty-information)                                             |   1年   |             1年            |             2年            |                      2年                      |            1-年 <sup>3</sup>            |             1年             |
-| **裝置購買限制**                                |    無    |              無             |              無             |                       無                       |             無             |       每筆交易一個      |
+| **裝置購買限制**                                |    None    |              None             |              None             |                       None                       |             None             |       每筆交易一個      |
 
 - <sup>1</sup> -包含 $500 Azure 點數和3個月的 Unity Pro 和 Pixyz 外掛程式試用版。
 - <sup>2</sup> -在 Microsoft 收到瑕疵裝置之前，在夜間或加速傳送 (，可) 更快的可用選項來取得更換裝置。
@@ -66,7 +66,7 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 
 探索針對 HoloLens 混合現實裝置所建立的其他解決方案。
 
-| 解決方法 | 簡短描述                                                                                |
+| 解決方案 | 簡短描述                                                                                |
 |----------|---------------------------------------------------------------------------------------------------|
 | [適用于 HoloLens 的 Dynamics 365](https://www.microsoft.com//hololens/apps)          | 強化員工的能力，並將作業優化。                                                        |
 | [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | 讓技術人員能夠更有效率地共同作業，方法是從不同的位置合作。 |

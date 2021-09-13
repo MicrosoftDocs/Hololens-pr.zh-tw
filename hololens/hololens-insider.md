@@ -3,25 +3,25 @@ title: 適用於 Microsoft HoloLens 的 Insider Preview
 description: 瞭解如何開始使用 Insider build，並針對 HoloLens 的下一個主要作業系統更新，提供寶貴的意見反應。
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428780"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032261"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -189,6 +189,8 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 - 啟用[指派的存取 API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) ，讓應用程式現在可以判斷 HoloLens 是否以 Kiosk 模式執行，以供使用者登入 HoloLens。
 - 更新全新閃爍時所安裝的現成版本遠端協助。
 - 在 Insider 組建中，已停用2D 應用程式的遊戲台處理。 藉由移除它，應用程式現在可以自由地使用遊戲台 Api，並可存取整組控制項，並執行所需的任何動作。 開發人員應該使用遊戲台 Api 來使用遊戲台輸入。 以下是適用于[遊戲台類別 (Windows 的範例。遊戲：輸入) Windows UWP 應用程式](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- 修正了在使用者第一次登入之後，在使用 AAD 群組型 kiosk 設定的案例中，將會終止 OOBE 的問題。
+- 修正了顯示更新通知和裝置重新開機對話方塊提示的問題。
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build
 

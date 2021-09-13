@@ -15,11 +15,11 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: f39fc2c6c0aaf16f304f38216a424c3811eb439d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427340"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032385"
 ---
 # <a name="update-hololens-2"></a>更新 HoloLens 2
 

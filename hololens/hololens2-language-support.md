@@ -18,11 +18,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427766"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032282"
 ---
 # <a name="supported-languages-for-hololens-2"></a>HoloLens 2 支援的語言
 

@@ -13,11 +13,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428650"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032417"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender應用程式控制-WDAC
 

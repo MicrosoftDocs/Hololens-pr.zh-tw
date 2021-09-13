@@ -11,11 +11,11 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 全像框架、視野、fov、校正、空間、環境、操作說明、HoloLens、混合現實、混合現實耳機
 ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035787"
 ---
 # <a name="hololens-environment-considerations"></a>HoloLens 環境考慮
 

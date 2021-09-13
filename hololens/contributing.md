@@ -7,11 +7,11 @@ ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427162"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032040"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>參與 HoloLens 檔
 
@@ -81,9 +81,9 @@ HoloLens 檔會顯示在 docs.microsoft.com 平臺上，其使用具有 Markdig 
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>重新命名或刪除現有文章
 
-如果您的變更將重新命名或刪除現有的文章，請務必新增重新導向。 如此一來，任何人只要有現有文章的連結，就都能在正確的位置結束。 重新導向是由存放庫根目錄中的 .openpublishing.redirection.json 檔案來管理。
+如果您的變更將重新命名或刪除現有的文章，請務必新增重新導向。 如此一來，任何人只要有現有文章的連結，就都能在正確的位置結束。 重新導向是由存放庫根目錄中的 .openpublishing.publish.config.json. json 檔案來管理。
 
-若要將重新導向新增至 .openpublishing.redirection.js，請將專案新增至 `redirections` 陣列：
+若要將重新導向新增至 .openpublishing.publish.config.json，請將專案加入至 `redirections` 陣列：
 
 ```json
 {
