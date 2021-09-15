@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032038"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817271"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>收集和使用 HoloLens 裝置的診斷資訊
 
@@ -39,7 +39,7 @@ HoloLens 使用者和系統管理員可以從四種不同的方法中進行選�
 
 下表比較不同的收集方法。 方法名稱會連結至資料表後面各節中的詳細資訊。
 
-|方法 |必要條件 |資料地點 |資料存取和使用 |資料保留 |
+|方法 |先決條件 |資料地點 |資料存取和使用 |資料保留 |
 | --- | --- | --- | --- | --- |
 |[意見反應中樞](#feedback-hub) |網路和網際網路連接<br /><br />意見反應中樞應用程式<br /><br />將檔案上傳至 Microsoft 雲端的許可權 |Microsoft 雲端<br /><br />HoloLens 裝置 (選擇性)  |使用者要求協助、同意使用條款及上傳資料<br /><br />Microsoft 員工會看到資料，與使用條款一致 |雲端中的資料會保留在下一代隱私權 (NGP) 所定義的期間內。 然後會自動刪除資料。<br /><br />具有 **裝置擁有** 者或系統 **管理員** 許可權的使用者可以隨時刪除裝置上的資料。 |
 |[設定技術](#settings-troubleshooter) |設定 App |HoloLens 裝置<br /><br />連接的電腦 (選用)  |使用者會儲存資料，而且只有使用者會 (存取資料，除非使用者與其他使用者) 明確共用資料。 |資料會保留在裝置上，直到使用者刪除為止。 * |
@@ -57,7 +57,8 @@ HoloLens 使用者可以使用 Microsoft 意見反應中樞 desktop 應用程式
 
 >[!IMPORTANT]
 > 為了提供修正問題的最佳可能資料，強烈建議您將裝置遙測設定為 **選擇性**。 您可以在 (OOBE) 或使用 **設定** 應用程式的全新體驗期間設定此值。 若要使用設定來進行這項操作，請選取 [**開始] > 設定 > 的 [隱私權] > 應用程式診斷**。
-### <a name="prerequisites"></a>必要條件
+
+### <a name="prerequisites"></a>先決條件
 
 - 裝置已連線到網路。
 - 意見反應中樞的應用程式可在使用者的桌上型電腦上取得，而使用者可將檔案上傳至 Microsoft 雲端。
@@ -91,7 +92,8 @@ HoloLens 使用者可以使用裝置上的 **設定** 應用程式來進行問�
 ### <a name="os-update-troubleshooter"></a>作業系統更新疑難排解員
 組建 Windows 全像[21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)和更新版本：
 - 除了設定應用程式內先前的疑難排解工具之外，還新增了新的疑難排解員，新增了新的設定應用程式以進行 OS 更新。 流覽至 **設定-> 更新 & 安全性-> 疑難排解-> Windows Update** ，然後選取 [**啟動**]。 這可讓您在使用作業系統更新重現問題時收集追蹤，以協助您更妥善地針對 IT 或支援進行疑難排解。
-### <a name="prerequisites"></a>必要條件
+
+### <a name="prerequisites"></a>先決條件
 
 - **設定** 的應用程式會安裝在裝置上，並可供使用者使用。
 
@@ -108,15 +110,19 @@ HoloLens 使用者可以使用裝置上的 **設定** 應用程式來進行問�
 
 診斷資訊會保留在這些位置，直到使用者刪除為止。
 
+### <a name="view-diagnostic-report"></a>查看診斷報表
+
+若要在 HoloLens 2 上查看 MDM 診斷，請選取您的 WiFi 圖示，然後流覽至 **設定**  ->  **帳戶**  >  **存取公司或學校**，然後選取 [**匯出您的記錄管理** 檔]。 HoloLens 將記錄檔傳送至您的帳戶，並在桌上型電腦上顯示其位置。
+
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog CSP
 
-在行動裝置管理 (MDM) 環境中，IT 系統管理員可以使用 DiagnosticLog 設定[服務提供者 (CSP) ](/windows/client-management/mdm/diagnosticlog-csp)來設定已註冊 HoloLens 裝置上的診斷設定。 IT 系統管理員可以設定這些設定，從已註冊的裝置收集記錄。
+在行動裝置管理 (MDM) 環境中，IT 系統管理員可以使用[DiagnosticLog 設定服務提供者 (CSP) ](/windows/client-management/mdm/diagnosticlog-csp)來設定已註冊 HoloLens 裝置上的診斷設定。 IT 系統管理員可以設定這些設定，從已註冊的裝置收集記錄。
 
 查看更多：
 - [從 Windows 裝置收集診斷](/mem/intune/remote-actions/collect-diagnostics)
 - [Intune 公開預覽版-Windows 10 裝置診斷](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 - 裝置已連線到網路。
 - 裝置會在支援 DiagnosticLog CSP 的 MDM 環境中註冊。
@@ -153,13 +159,20 @@ Windows 全像[20H2 版之前的](hololens-release-notes.md#windows-holographic-
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 請遵循下列步驟來收集診斷：
+
 1.  使用 USB 纜線將裝置連線到您的電腦。
+
 2.  在電腦的檔案總管中，流覽至 [這部 **電腦 \<hololens-device> \Internal 儲存體**]。
+
 3.  如果未顯示 **內部儲存體** 資料夾，裝置會等待使用者登入。 只要按住電源按鈕10秒，即可登入或重新開機裝置。
+
 4.  按下並立即放開 **電源 + 音量** 按鈕。
+
 5.  等候一分鐘，讓裝置準備 zip 封存。  (一個名為 HololensDiagnostics 的暫存檔案，在裝置產生 zip 封存時可能會顯示出來。 請勿存取或儲存該檔案。 當程式完成時，zip 封存將會取代它。 ) 
+
 6.  重新整理 [檔案瀏覽器]，然後流覽至 **' \Documents '** 資料夾。
+
 7.  複製診斷 ZIP 檔案，並與 Microsoft 支援小組分享。
 
-> [!NOTE]
-> 某些診斷 ZIP 檔案可能包含 PII。
+    > [!NOTE]
+    > 某些診斷 ZIP 檔案可能包含 PII。
