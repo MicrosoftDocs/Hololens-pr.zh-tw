@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/8/2021
+ms.date: 9/16/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f27a469e76df1ccf29a2823b48f3640bdf414050
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 80b23e1cc851081179e6deee2e5fd13d374946f1
+ms.sourcegitcommit: f1c50b39430026fd5e3c92ac1a09f07b69733325
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032389"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127862471"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -31,6 +31,22 @@ ms.locfileid: "126032389"
 
 > [!IMPORTANT]
 > 由於[21H1 組建中已解決的已知問題會影響遠端協助使用者](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)，我們暫時暫停了 Windows 全像版本21H1 更新的供應專案。 我們也已將預設的 Advanced Recovery 附隨 (ARC) 組建變更為 Windows 全像[20H2 版–2021年6月更新](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)。 ARC 組建現在會繼續以21H1 組建為目標。
+
+## <a name="windows-holographic-version-21h1---september-2021-update"></a>Windows全像21H1 版-2021 年9月更新
+
+- 組建20348.1018
+
+更新中的增強功能和修正：
+
+- 修正以解決系統時間可能意外跳過的問題。
+
+## <a name="windows-holographic-version-20h2---september-2021-update"></a>Windows全像20H2 版-2021 年9月更新
+
+- 組建19041.1165
+
+更新中的增強功能和修正：
+
+- 修正以解決系統時間可能意外跳過的問題。
 
 ## <a name="windows-holographic-version-21h1---august-2021-update"></a>Windows全像21H1 版-2021 年8月更新
 
@@ -1074,7 +1090,7 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 這些新增的原則可讓系統管理員控制電源狀態，例如閒置的超時時間。 若要閱讀更多個別原則的詳細資訊，請按一下該原則的連結。
 
-|     原則檔連結                |     注意                                                                                                                                       |
+|     原則檔連結                |     備註                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 |     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
 |     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 設定設計工具中使用的範例值，例如`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |

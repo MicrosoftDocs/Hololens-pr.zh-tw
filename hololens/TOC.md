@@ -76,8 +76,6 @@
 ### [網路安全性](security-network-security.md)
 ### [安全性工程 ](security-engineering.md)
 ### [HoloLens 2隱私權與資料保護](hololens2-privacy.md)
-## 裝置管理
-### [使用 MDM 來管理 HoloLens 裝置](hololens-mdm-configure.md)
 ## 註冊裝置
 ### [在 MDM 中註冊 HoloLens](hololens-enroll-mdm.md)
 ### [適用於 HoloLens 2 的 Windows Autopilot](hololens2-autopilot.md) 
@@ -90,6 +88,7 @@
 ### [應用程式安裝程式](app-deploy-app-installer.md)
 ##  (Csp 的原則) 
 ### [設定 Csp 和裝置管理總覽](hololens-csp-policy-overview.md)
+### [使用 MDM 來管理 HoloLens 裝置](hololens-mdm-configure.md)
 ### [使用布建套件設定 HoloLens](hololens-provisioning.md)
 ### [常見的裝置限制](hololens-common-device-restrictions.md)
 ### [將 HoloLens 設定為 kiosk](hololens-kiosk.md)
