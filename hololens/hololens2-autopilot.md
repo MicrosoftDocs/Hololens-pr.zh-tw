@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: sekerawa
-ms.openlocfilehash: c71716778ebd536d3aecd2a34c9929c8b2f76d98
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035821"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833568"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -109,7 +109,7 @@ ms.locfileid: "126035821"
  - **轉銷商可以在您下訂單時，在合作夥伴中心中註冊裝置。**
 
    > [!NOTE]  
-   > 這是將裝置新增至 Autopilot 服務的建議路徑。 [深入了解](/mem/autopilot/partner-registration)   
+   > 這是將裝置新增至 Autopilot 服務的建議路徑。 [進一步瞭解](/mem/autopilot/partner-registration)。  
 
  - **您可以直接向 Microsoft [提交支援要求](hololens2-autopilot-registration-support.md) 。**
  - **取出硬體雜湊 (也稱為硬體識別碼) ，並以手動方式在記憶體管理中心註冊裝置**。
@@ -119,7 +119,7 @@ ms.locfileid: "126035821"
 您可以從裝置取出硬體雜湊。 裝置會在 OOBE 程式期間將其硬體雜湊記錄在 CSV 檔案中，或稍後當裝置擁有者啟動診斷記錄收集程式時， (下列程式) 中所述。 通常，裝置擁有者是第一個登入裝置的使用者。
 
 > [!WARNING]
-> 在20H2 之前的組建中，如果您已完成 OOBE 且遙測設定為 [必要]，則無法透過此方法收集 Autopilot 的硬體雜湊。 若要透過此方法收集您的硬體雜湊，請透過設定應用程式將遙測選項設定為 Full，然後選取 [隱私權-> 診斷]。
+> 在20H2 之前的組建中，如果您已完成 OOBE 且遙測設定為 [必要]，則無法透過此方法收集 Autopilot 的硬體雜湊。 若要透過此方法收集您的硬體雜湊，請透過設定應用程式將遙測選項設定為 Full，然後選取 [**隱私權**  >  **診斷**]。
 
 1. 啟動 HoloLens 2 裝置。
 
@@ -129,20 +129,21 @@ ms.locfileid: "126035821"
 
 1. 使用 USB 纜線將裝置連接到電腦。
 
-1. 在電腦上，開啟檔案總管]。 開啟這部 **電腦的 \\ \<*HoloLens device name*> \\ 內部儲存體 \\** 檔，並找出 AutopilotDiagnostics.zip 的檔案。  
+1. 在電腦上，開啟檔案總管]。 開啟 <b>此電腦 \\</b> < *HoloLens 裝置名稱* > <b> \\ 內部儲存體 \\</b>檔，然後找出 AutopilotDiagnostics.zip 的檔案。  
 
-> [!NOTE]  
-> .zip 的檔案可能無法立即使用。 如果檔案尚未就緒，您可能會在 [檔] 資料夾中看到 HoloLensDiagnostics。 若要更新檔案清單，請重新整理視窗。
+   > [!NOTE]  
+   > .zip 的檔案可能無法立即使用。 如果檔案尚未就緒，您可能會在 [檔] 資料夾中看到 HoloLensDiagnostics。 若要更新檔案清單，請重新整理視窗。
     
 1. 將 AutopilotDiagnostics.zip 檔案的內容解壓縮。
 
 1. 在解壓縮的檔案中，找出檔案名前置詞為 "DeviceHash" 的 CSV 檔案。 將該檔案複製到電腦上您稍後可以存取的磁片磁碟機。  
 
-> [!IMPORTANT]  
-> CSV 檔案中的資料應該使用下列標頭和行格式：
-> ```
-> Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
->```
+   > [!IMPORTANT]  
+   > CSV 檔案中的資料應該使用下列標頭和行格式：
+   >
+   > ```
+   > Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
+   >```
 
 #### <a name="register-device-through-mem"></a>透過記憶體註冊裝置
 

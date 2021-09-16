@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 校正、舒適、視覺效果、品質、ipd、HoloLens、Windows Mixed Reality、VR 耳機
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035773"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833551"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善視覺品質和緩和
 
@@ -38,7 +38,6 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 - 上次使用者使用裝置時，校正程式未成功
 - 使用者已刪除其校正設定檔
 - 裝置會關閉並重新開啟，且適用上述任何情況 
-
 
 ![調整為眼睛的校正提示。](./images/07-et-adjust-for-your-eyes.png)
 
@@ -87,7 +86,7 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 #### <a name="deferred-calibration-prompt"></a>延後校正提示
 
-使用自動眼睛位置時，會延後眼睛追蹤校正提示對話方塊，直到應用程式要求眼睛眼的資料為止。 這可確保當使用中的應用程式不需要注視時，不會提示使用者。 如果應用程式需要注視資料，而目前的使用者未經過校正，則會顯示一則校正提示。 這種行為可用來在適當的時間為體驗顯示眼睛追蹤校正提示。 基於下列原因，建議使用這個方法
+使用自動眼睛位置時，會延後眼睛追蹤校正提示對話方塊，直到應用程式要求眼睛眼的資料為止。 這可確保當使用中的應用程式不需要注視時，不會提示使用者。 如果應用程式需要注視資料，而目前的使用者未經過校正，則會顯示一則校正提示。 這種行為可以用來在適當的時間針對體驗顯示眼睛追蹤校正提示。 基於下列原因，建議使用這個方法：
 
 1.  [眼睛追蹤校正提示] 對話方塊會提供使用者有關為何需要眼睛追蹤的詳細資料。
 2.  讓使用者有辦法拒絕其眼睛。
@@ -96,7 +95,7 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 ### <a name="calibration-data-and-security"></a>校正資料和安全性
 
-校正資訊會儲存在本機裝置上，且不會與任何帳戶資訊相關聯。 沒有任何已使用裝置而不需要校正的記錄。 這表示新的使用者第一次使用裝置時，會收到提示以校正視覺效果，以及選擇不進行校正的使用者或校正不成功。
+校正資訊會儲存在本機裝置上，且不會與任何帳戶資訊相關聯。 沒有任何已使用裝置而不需要校正的記錄。 這表示新使用者第一次使用裝置時，系統會提示他們校正視覺效果，而使用者則會在先前選擇不進行校正的使用者或校正是否失敗。
 
 裝置可在本機儲存高達50的校正設定檔。 到達這個號碼之後，裝置會自動刪除最舊的未使用設定檔。
 
@@ -104,16 +103,23 @@ HoloLens 2 在下列情況下會提示使用者校正裝置：
 
 ### <a name="disable-calibration"></a>停用校正
 
-您也可以遵循下列步驟來停用校正提示：
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>HoloLens 2 組建20H2 和更新版本上的眼睛校正行為
+
+隨著 Windows 全像20H2 版的[自動眼睛位置支援](hololens-release-notes.md#auto-eye-position-support)，您不必停用校正。 只有當您使用已啟用眼睛追蹤的應用程式時，才會自動顯示校正提示。
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>在 HoloLens 2 舊版組建上停用眼睛校正
+
+您可以翻轉耳機上的設定開關來停用校正，但切換的狀態可能不容易判斷。 它已被移除並取代為 [自動眼睛位置支援](hololens-release-notes.md#auto-eye-position-support)，這會延遲校正，同時提供色彩校正和全息圖定位。
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>在 HoloLens (第1代) 上停用眼睛校正
+
+針對[HoloLens (第1代) 校正](#calibrating-your-hololens-1st-gen)，您可以遵循下列步驟來停用眼睛校正提示：
 
 1. 選取 **設定**  >  **系統**  >  **校正**。
 1. **當新的人員使用此 HoloLens 時，請關閉，自動要求執行眼睛校正**。
 
    > [!IMPORTANT]
    > 這種設定可能會對全像影像轉譯品質和緩和造成負面影響。  當您關閉這項設定時，與眼睛追蹤 (的功能（例如文字滾動）) 無法再于沉浸式應用程式中運作。
-
-> [!NOTE]
-> 從 Windows 全像20H2 版開始，已移除設定參數，並開始[自動眼睛位置支援](hololens-release-notes.md#auto-eye-position-support)。 只有當 uncalibrated 使用者正在使用支援追蹤的應用程式時，才會自動顯示校正提示。
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 眼睛追蹤技術
 

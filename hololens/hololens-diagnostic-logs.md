@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817271"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833517"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>收集和使用 HoloLens 裝置的診斷資訊
 
@@ -90,6 +90,7 @@ HoloLens 使用者可以使用裝置上的 **設定** 應用程式來進行問�
 > 如果裝置已設定 MDM 原則，使用者將無法覆寫該行為。
 
 ### <a name="os-update-troubleshooter"></a>作業系統更新疑難排解員
+
 組建 Windows 全像[21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)和更新版本：
 - 除了設定應用程式內先前的疑難排解工具之外，還新增了新的疑難排解員，新增了新的設定應用程式以進行 OS 更新。 流覽至 **設定-> 更新 & 安全性-> 疑難排解-> Windows Update** ，然後選取 [**啟動**]。 這可讓您在使用作業系統更新重現問題時收集追蹤，以協助您更妥善地針對 IT 或支援進行疑難排解。
 
@@ -138,6 +139,7 @@ IT 系統管理員會使用 DiagnosticLog CSP 來設定資料儲存、保留和�
 - 控制診斷資訊存取權的許可權。
 
 ## <a name="offline-diagnostics"></a>離線診斷
+
 在裝置無法透過意見反應中樞或設定疑難排解員收集診斷資訊的情況下，您可以手動收集診斷資訊。 其中一個必要的案例是裝置無法連線到 Wi-Fi，或您無法存取上述的其他方法。 診斷會從裝置收集損毀傾印和記錄，以協助 Microsoft 支援工程師找出問題。
 
 當裝置透過 USB 纜線將裝置連接到電腦之後，就會出現在檔案總管中。

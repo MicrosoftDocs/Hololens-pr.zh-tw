@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 09/10/2021
+ms.date: 09/14/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: e3b067987fb339bc070fcb64ed01c28dee21ec35
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032261"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833534"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -52,21 +52,33 @@ ms.locfileid: "126032261"
 
 ✔️如果您要設定單一 Azure AD 帳戶以自動登入，請設定 [這個新的 CSP。](#auto-login-policy-controlled-by-csp) <br>
 ✔️如果您想要將應用程式設定為在無法更新之後自動嘗試更新，請 [設定這個新的 CSP 以進行智慧型重試。](#smart-retry-for-app-updates) <br>
-✔️如果您想要更充分掌控 OS 更新，請參閱這些 [新啟用的更新原則。](#improved-update-restart-detection-and-notifications) <br>
-✔️如果您需要讓組織的應用程式透過 Microsoft Store 在公司商店上提供，但只想要允許存取您組織的應用程式，而不是完整的存放區，請[設定此原則。](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️如果您想知道可用的儲存空間、HoloLens 裝置的 SSID 或 BSSID，請參閱這些[報告 csp。](#csp-changes-for-reporting-hololens-details) <br>
+✔️如果您想要更充分掌控 OS 更新，請參閱這些 [新啟用的更新原則](#improved-update-restart-detection-and-notifications)。 <br>
+✔️如果您需要讓組織的應用程式透過 Microsoft Store 在公司商店上提供，但只想要允許存取您組織的應用程式，而不是完整的存放區，請[設定此原則](#use-only-private-store-apps-for-microsoft-store)。 <br>
+✔️如果您想知道可用的儲存空間、HoloLens 裝置的 SSID 或 BSSID，請參閱這些[報告 csp](#csp-changes-for-reporting-hololens-details)。 <br>
 ✔️如果您想要使用 WDAC 來封鎖應用程式或進程啟動，但也需要使用自己的 bushiness 應用程式行，您現在可以 [在 WDAC 原則中允許 LOB](#use-wdac-and-lob-apps)。
 
 ### <a name="moving-platform-mode"></a>移動平臺模式
 
 在測試人員 **組建 20348.1411** 中，我們已新增在 HoloLens 2 上追蹤低動態移動移動平臺的 Beta 支援。 在安裝組建並啟用移動平臺模式之後，您將能夠在先前無法存取的環境中使用您的 HoloLens 2，例如大型隨附和大型航海船隻。 目前，此功能的目標是要啟用這些特定的移動平臺。 雖然不會讓您嘗試在其他環境中使用此功能，但這項功能的重點是先新增對這些環境的支援。
 
-若要深入瞭解支援的內容以及如何啟用這項新功能，請 [造訪移動平臺頁面。](hololens2-moving-platform.md)
+若要深入瞭解支援的內容以及如何啟用這項新功能，請 [造訪移動平臺頁面](hololens2-moving-platform.md)。
+
+#### <a name="overview-to-try-out-moving-platform-mode"></a>瞭解如何試用移動平臺模式
+
+1. [啟用開發人員模式和裝置入口網站](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
+1. [透過裝置入口網站啟用移動平臺模式](hololens2-moving-platform.md#enabling-moving-platform-mode)。
+1. 將您的裝置帶到您的大型移動平臺，並觀察穩定的全像影像。
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>憑證管理員的 PFX 檔案支援
 
 在 Windows 測試人員組建20348.1405 中引進。 我們已新增對 [憑證管理員](certificate-manager.md) 的支援，現在使用 .pfx 憑證。 當使用者流覽至 **設定**  >  **更新 & 安全性**  >  **憑證**，然後選取 [**安裝憑證**] 時，UI 現在支援 .pfx 憑證檔案。
 使用者可以將 .pfx 憑證（具有私密金鑰）匯入使用者存放區或電腦存放區。
+
+#### <a name="overview-to-try-out-pfx-files-in-certificate-manager"></a>在憑證管理員中試用 PFX 檔案的總覽
+
+1. 準備您的 PFX 檔案。
+1. 透過 USB 纜線將檔案複製到您的裝置。
+1. 開啟設定應用程式，並流覽至[憑證管理員](certificate-manager.md)並套用憑證。
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在 HoloLens 上設定 View advanced 診斷報表
 
@@ -75,6 +87,12 @@ ms.locfileid: "126032261"
 現在可以使用 Edge 瀏覽器在裝置上查看 MDM 診斷。 若要更輕鬆地查看 MDM 診斷報表，請流覽至 [存取工作或學校] 頁面，然後選取 [ **view advanced 診斷報告**]。 這會產生並在新的邊緣視窗中開啟報表。
 
 ![在設定應用程式中查看 advanced 診斷報告。](./images/view-advanced-diagnostic-report.jpg)
+
+#### <a name="overview-to-try-out-the-advanced-diagnostic-report"></a>試用 advanced 診斷報告的總覽
+
+1. 開啟 [設定] 應用程式。
+1. 流覽至 [帳戶] 頁面，然後按一下 [新增] 連結，以 **匯出您的記錄管理**。
+1. 查看裝置設定的 advanced 資訊。
 
 ### <a name="offline-diagnostics-notifications"></a>離線診斷通知
 
@@ -91,9 +109,21 @@ ms.locfileid: "126032261"
 
 我們希望有這項較新的視聽意見反應，更容易收集診斷資料，並更快速地針對您的問題進行疑難排解。
 
+#### <a name="overview-to-try-out-the-diagnostics-notifications"></a>試用診斷通知的總覽
+
+1. 將裝置解除鎖定並磨損。
+1. 按下 **電源** 和 **音量** 按鈕組合，以收集 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。
+1. 查看快顯通知，並聆聽裝置啟動和完成收集記錄時的音訊提示。
+
 ### <a name="low-storage-log-collection-improvements"></a>低儲存體記錄收集改進
 
 在收集診斷記錄檔時，裝置似乎磁碟空間不足的情況，將會建立名為 **StorageDiagnostics.zip** 的額外報告。 低儲存體的閾值是由 Windows[儲存體的意義](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)自動決定。
+
+#### <a name="overview-to-try-out-the-low-storage-improvements"></a>瞭解如何試用低儲存體改進
+
+1. 填滿您裝置的儲存空間。
+1. 按下 **電源** 和 **音量** 按鈕組合，以收集 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。
+1. 請注意，儲存在您 HoloLens 的 [檔] 資料夾中的記錄集合中有新的檔案。
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 變更報告 HoloLens 詳細資料
 
@@ -151,6 +181,13 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 > - 某些事件（例如主要 OS 更新）可能會要求指定的使用者重新登入裝置，以繼續進行自動登入行為。
 > - 只有 MSA 和 AAD 使用者才支援自動登入。
 
+#### <a name="overview-to-try-auto-logon-csp"></a>試用自動登入 CSP 的總覽
+
+1. [使用自訂原則](/mem/intune/configuration/custom-settings-windows-10)，將新的 CSP 設定為所需的使用者：`./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. 透過布建 [套件](hololens-provisioning.md) 或 [MDM](hololens-mdm-configure.md)將 CSP 套用至裝置。
+1. 登入指定的帳號。
+1. 重新開機裝置，並觀察使用者是否已自動登入。
+
 ### <a name="improved-update-restart-detection-and-notifications"></a>改進更新重新開機偵測和通知
 
 在使用中的時數與安裝時間原則之間，可以避免在使用中 HoloLens 裝置時將其重新開機。 但是，如果不需要重新開機就能完成安裝必要的更新，它也會延遲採用更新。 我們現在已新增原則，以允許它強制執行期限和必要的重新開機，並確保及時完成更新的安裝。 使用者可以在啟動重新開機之前收到通知，而且可以根據 IT 原則延遲重新開機。
@@ -167,28 +204,56 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 - [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
+#### <a name="overview-to-try-new-update-notifications"></a>試用新的更新通知的總覽
+
+1. 透過布建 [套件](hololens-provisioning.md) 或 [MDM](hololens-mdm-configure.md) 設定其中一個新的更新 csp (查看上面的連結清單，然後挑選一個) 。
+1. 在排程的時間內使用裝置。
+1. 觀察使用者是否收到更新的通知，以及重新開機裝置的需求 \* 。
+
+\* 您的結果可能會根據使用的更新原則而有所不同。
+
 ### <a name="smart-retry-for-app-updates"></a>應用程式更新的智慧型重試
 
 現在已啟用 HoloLens 的新原則，可讓 IT 系統管理員設定週期性或一段時間，以重新開機因為應用程式正在使用中而更新失敗的應用程式，允許套用更新。 您可以根據一些不同的觸發程式來設定這些觸發程式，例如排程時間或登入。 若要深入瞭解如何使用此原則視圖 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
+
+#### <a name="overview-to-try-smart-retry-for-app-updates"></a>針對應用程式更新嘗試 Smart Retry 的總覽
+
+1. 設定新的智慧型重試功能。
+1. 在尚未收到您的應用程式且已正確設定為的裝置上，請在線上環境中登入。
+1. 使裝置無法下載應用程式，方法是將它關閉或中斷連線。
+1. 在觸發的時間內讓裝置開機並聯機到網際網路，以重試下載。
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>僅使用私人存放區應用程式進行 Microsoft Store
 
 已針對 HoloLens 啟用 RequirePrivateStoreOnly 原則。 此原則可讓 Microsoft Store 應用程式設定為只顯示為您的組織設定的私人存放區。 限制只能存取您所提供的應用程式。
 
-深入瞭解 [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+深入瞭解 [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)。
+
+#### <a name="overview-to-try-only-private-store-apps"></a>僅試用私人存放區應用程式的總覽
+
+1. 透過 [MDM](hololens-mdm-configure.md)設定裝置的新原則。
+1. 登入具有原則的裝置。
+1. 開啟 Microsoft Store 應用程式，並觀察您只能看到組織的應用程式。
 
 ### <a name="use-wdac-and-lob-apps"></a>使用 WDAC 和 LOB 應用程式
 
-您現在可以使用 WDAC 來封鎖應用程式或進程，使其無法啟動並繼續使用您自己的 bushiness 應用程式行。 您現在可以在 WDAC 原則中允許它們。 使用此原則時，需要在建立 WDAC 原則時于 PowerShell 中執行額外的程式程式碼。 [請參閱此處的步驟。](/mem/intune/configuration/custom-profile-hololens)
+您現在可以使用 WDAC 來封鎖應用程式或進程，使其無法啟動並繼續使用您自己的 bushiness 應用程式行。 您現在可以在 WDAC 原則中允許它們。 使用此原則時，需要在建立 WDAC 原則時于 PowerShell 中執行額外的程式程式碼。 請[參閱此處的步驟](/mem/intune/configuration/custom-profile-hololens)。
+
+#### <a name="overview-to-try-your-own-apps-while-using-wdac-to-block-others"></a>瞭解如何在使用 WDAC 來封鎖其他應用程式時試用您的應用程式
+
+1. 收集 LOB 應用程式的 Aumid，以及您想要封鎖的應用程式。
+1. 遵循新的步驟，[建立新的 WDAC 原則](/mem/intune/configuration/custom-profile-hololens)。
+1. [使用 MDM 將原則部署](hololens-mdm-configure.md) 至您的裝置。
+1. 登入裝置，並觀察您可以啟動您的應用程式，並封鎖其他人。
 
 ### <a name="fixes-and-improvements"></a>修正和改善
 
-- 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- 已修正檔案 [上傳和下載超時的裝置入口網站已知問題。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- 已修正未 [提示下載鎖定檔案的裝置入口網站已知問題](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)。
+- 已修正檔案 [上傳和下載超時的裝置入口網站已知問題](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)。
 - 解決從 HoloLens 裝置報告合規性屬性的相關問題;可能需要重新開機，才能在 Insider build 上觸發正確的報告。  
 - 啟用[指派的存取 API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) ，讓應用程式現在可以判斷 HoloLens 是否以 Kiosk 模式執行，以供使用者登入 HoloLens。
 - 更新全新閃爍時所安裝的現成版本遠端協助。
-- 在 Insider 組建中，已停用2D 應用程式的遊戲台處理。 藉由移除它，應用程式現在可以自由地使用遊戲台 Api，並可存取整組控制項，並執行所需的任何動作。 開發人員應該使用遊戲台 Api 來使用遊戲台輸入。 以下是適用于[遊戲台類別 (Windows 的範例。遊戲：輸入) Windows UWP 應用程式](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- 在 Insider 組建中，已停用2D 應用程式的遊戲台處理。 藉由移除它，應用程式現在可以自由地使用遊戲台 Api，並可存取整組控制項，並執行所需的任何動作。 開發人員應該使用遊戲台 Api 來使用遊戲台輸入。 以下是適用于[遊戲台類別 (Windows 的範例。遊戲：輸入) Windows UWP 應用程式](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)。
 - 修正了在使用者第一次登入之後，在使用 AAD 群組型 kiosk 設定的案例中，將會終止 OOBE 的問題。
 - 修正了顯示更新通知和裝置重新開機對話方塊提示的問題。
 
@@ -203,6 +268,9 @@ MDM 廠商的 syncml blob (範例) 查詢 NetworkIdentifiers
 > 您可能遇到的後端有錯誤，這會讓您回到進度。
 
 在 HoloLens 2 裝置上，移至 **設定**  >  **更新 & 安全性**  >  **Windows 測試人員計畫**，然後選取 [**開始** 使用]。 將您用來註冊的帳戶連結為 Windows 測試人員。
+
+> [!NOTE]
+> 若要在 Insider 組建中註冊您的裝置，您必須啟用選擇性的遙測。 如果您尚未這麼做，請開啟設定應用程式，並選取 [**隱私權**  ->  **診斷] & 意見** 反應，然後選取 [**選擇性診斷資料**]。
 
 Windows insider 現在移至頻道。 **快速** 環形會成為 **開發通道**，因此 **緩慢** 的通道會變成 **Beta 通道**，而 **發行預覽** 通道將會成為 **發行預覽通道**。 對應如下所示：
 
