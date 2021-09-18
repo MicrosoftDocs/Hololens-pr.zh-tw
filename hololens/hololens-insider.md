@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e3b067987fb339bc070fcb64ed01c28dee21ec35
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: bdfdcda8cc890691f6112e7798d402ca9e7f4c6d
+ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833534"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "127904305"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -65,7 +65,7 @@ ms.locfileid: "127833534"
 
 #### <a name="overview-to-try-out-moving-platform-mode"></a>瞭解如何試用移動平臺模式
 
-1. [啟用開發人員模式和裝置入口網站](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
+1. [啟用開發人員模式和裝置入口網站](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
 1. [透過裝置入口網站啟用移動平臺模式](hololens2-moving-platform.md#enabling-moving-platform-mode)。
 1. 將您的裝置帶到您的大型移動平臺，並觀察穩定的全像影像。
 

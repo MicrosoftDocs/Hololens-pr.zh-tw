@@ -4,22 +4,22 @@ description: 瞭解如何在行動裝置管理 (MDM) 註冊 HoloLens，以便更
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/06/2019
+ms.date: 9/15/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b6206f7121d1ba78908d96f71c5c809ec97b06d5
+ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032036"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "127904339"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中註冊 HoloLens
 
@@ -66,6 +66,12 @@ ms.locfileid: "126032036"
 
 如果您的裝置已從新增工作帳戶的 MSA 帳戶註冊，或從只在裝置管理中註冊的本機帳戶註冊，則您可以取消註冊該裝置。 開啟 [開始] 功能表，然後選取 [**應用程式**  ->  **存取工作或學校**  ->  *您帳戶*  ->  **中斷連線]** 按鈕設定。
 
-## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>確定未封鎖 Windows 裝置的 MDM 註冊
+## <a name="enrollment-troubleshooting"></a>註冊疑難排解
+
+### <a name="ensure-valid-license-is-assigned-to-the-user"></a>確定已將有效的授權指派給使用者
+
+請參閱[Microsoft Intune 中的 Windows 裝置註冊問題的疑難排解](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors)，尤其是在下列各節中，也就是[檢查裝置類型限制](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions)，並[將有效的授權指派給使用者。](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
+
+### <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>確定未封鎖 Windows 裝置的 MDM 註冊
 
 為了讓註冊成功，您必須確定您的 HoloLens 裝置可以註冊。 由於 HoloLens 被視為 Windows 裝置，因此不會有可能封鎖部署的註冊限制。 請[檢查這份限制清單](/mem/intune/enrollment/enrollment-restrictions-set)，並確定您可以註冊您的裝置。
