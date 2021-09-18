@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 4b8975d8eb362212eaf91966f4efa0bc22236327
+ms.sourcegitcommit: 3f21b692be2f1b7f9c382f2b735b4c10339d4a78
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032386"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127934063"
 ---
 # <a name="common-deployment-scenarios"></a>常見部署案例
 
@@ -25,7 +25,7 @@ ms.locfileid: "126032386"
 
 當您第一次嘗試時，瞭解如何部署新的裝置可能會很困難。 在這裡，我們將共用不同的方式來部署和管理組織內 Microsoft HoloLens 2 個裝置。
 
-您想要大規模部署方案。 我們想要讓您瞭解。 如果您是使用 D365 遠端協助、指南或您所建立的 Azure mixed reality 啟用服務的應用程式，我們將先討論部署裝置的步驟，進而達到目標混合現實案例的價值。
+您想要大規模部署方案。 我們想要讓您瞭解。 讓我們先討論部署裝置的步驟，也就是全像全像，以達成目標混合現實案例的價值。 無論您是使用 D365 遠端協助、指南或您建立的 Azure mixed reality 啟用服務的應用程式，我們的常見部署案例都將引導您進行旅程。
 
 您可能是想要在組織內採用 HoloLens 的商務決策者、IT 專業人員或創新團隊。 當您從概念證明到調整的部署建立時，我們的部署指南在您的 IT 基礎結構中有意義 HoloLens-無論大小或規模為何。 以下是最常見的部署案例：
 
