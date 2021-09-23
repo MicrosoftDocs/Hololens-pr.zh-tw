@@ -4,23 +4,23 @@ description: 瞭解如何使用商務用 Microsoft Store 將您的混合現實�
 keywords: 商務用 Microsoft Store，msfb，應用程式部署，存放區
 author: evmill
 ms.author: v-evmill
-ms.date: 6/22/2020
+ms.date: 9/22/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
+ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032193"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128306143"
 ---
 # <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
 
-商務用 Microsoft Store 主要是針對企業或組織中的 IT 決策者和系統管理員，提供彈性的方式來尋找、取得、管理及散發精選市場中的免費和付費應用程式，以 Windows 10 磁片區中的裝置。 
+[商務用 Microsoft Store](/microsoft-store/microsoft-store-for-business-overview)主要是針對企業或組織中的 IT 決策者和系統管理員，提供彈性的方式來尋找、取得、管理及散發精選市場中的免費和付費應用程式，以 Windows 10 磁片區中的裝置。 
 
 您可以在一份清查中管理 Microsoft Store apps 和私用企業營運應用程式，並視需要指派和重複使用授權。 您也可以為您的組織選擇最佳散發方法：直接將應用程式指派給個人和小組、將應用程式發佈至 Microsoft Store 中的私用頁面，或與管理解決方案連線以取得更多選項。
 
