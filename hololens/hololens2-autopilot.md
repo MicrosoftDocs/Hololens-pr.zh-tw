@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833568"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346769"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -26,7 +26,7 @@ ms.locfileid: "127833568"
 
 若要大規模部署，建議您 Windows Autopilot 開始使用。 它會被視為「低接觸」，這可大幅簡化 it 和使用者的 HoloLens 設定。 
 
-概括而言，IT 系統管理員通常會建立商務就緒設定，並在 MDM 入口網站上註冊 HoloLens 2 的裝置。 當 HoloLens 2 裝置使用全新體驗開機時 (OOBE) 並與網際網路連線，系統會自動下載並套用已註冊之 HoloLens 2 裝置的商務用設定，以在不需要使用者介入的情況下，將裝置設為商務就緒。
+概括而言，IT 系統管理員通常會建立商務就緒設定，並在 MDM 入口網站上註冊 HoloLens 2 的裝置。 當 HoloLens 2 裝置使用全新體驗開機時 (OOBE) 並與網際網路連線，系統會自動下載並套用已註冊之 HoloLens 2 裝置的商務用設定，以在不需要使用者介入的情況下讓裝置處於商務就緒狀態。
 
 如需詳細資訊，請參閱[Windows Autopilot 的總覽 |Microsoft Docs](/mem/autopilot/windows-autopilot)文章。
 
@@ -109,7 +109,7 @@ ms.locfileid: "127833568"
  - **轉銷商可以在您下訂單時，在合作夥伴中心中註冊裝置。**
 
    > [!NOTE]  
-   > 這是將裝置新增至 Autopilot 服務的建議路徑。 [進一步瞭解](/mem/autopilot/partner-registration)。  
+   > 這是將裝置新增至 Autopilot 服務的建議路徑。 [深入了解](/mem/autopilot/partner-registration)。  
 
  - **您可以直接向 Microsoft [提交支援要求](hololens2-autopilot-registration-support.md) 。**
  - **取出硬體雜湊 (也稱為硬體識別碼) ，並以手動方式在記憶體管理中心註冊裝置**。
@@ -244,7 +244,7 @@ ms.locfileid: "127833568"
 
 1. Autopilot 體驗需要網際網路存取。 使用下列其中一個選項來提供網際網路存取：
 
-    - 在 OOBE 中連線您的裝置到 Wi-Fi 網路，然後讓它自動偵測 Autopilot 體驗。 這是您在 Autopilot 經驗自行完成之前，必須與 OOBE 互動的唯一時間。 根據預設，HoloLens 2 會在偵測到網際網路之後等候10秒偵測 Autopilot。 如果在10秒內未偵測到任何 autopilot 設定檔，OOBE 將會顯示 EULA。 如果您遇到這種情況，請重新開機您的裝置，以進行其他嘗試以偵測 Autopilot。 另請注意，只有在裝置上設定 TenantLockdown 原則時，OOBE 才能無限期等待 Autopilot。
+    - 在 OOBE 中連線您的裝置到 Wi-Fi 網路，然後讓它自動偵測 Autopilot 體驗。 這是您在 Autopilot 經驗自行完成之前，必須與 OOBE 互動的唯一時間。
 
     - 使用「USB 到乙太網路」的乙太網路介面卡連線您的裝置，以進行有線網際網路連線，並讓 HoloLens 2 自動完成 Autopilot 體驗。
 
@@ -268,7 +268,7 @@ ms.locfileid: "127833568"
 
 1. 在 OOBE 結束時，您可以使用您的使用者名稱和密碼來登入裝置。
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>租使用者鎖定 CSP 和 Autopilot
 
@@ -318,7 +318,13 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 ![裝置上強制執行原則時的裝置上視圖。](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>& 限制的已知問題
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>即使已在 Intune 中指派 Autopilot 設定檔，為什麼看不到 Autopilot 體驗？
+
+根據預設，HoloLens 2 會在偵測到網際網路之後等候15秒偵測 Autopilot。 如果未在15秒內偵測到 autopilot 設定檔，這表示未正確探索 Autopilot，您將會看到 EULA 頁面。
+
+請重新開機您的裝置，然後再試一次。 如需詳細資訊，請參閱 [已知問題和限制](hololens2-autopilot.md#known-issues-and-limitations) 或 [疑難排解](hololens2-autopilot.md#troubleshooting)。
+
+## <a name="known-issues-and-limitations"></a>已知的問題及限制
 
 - 我們正在調查在記憶體中設定之以裝置內容為基礎之應用程式安裝的問題，並不適用于 HoloLens。 [深入瞭解裝置內容和使用者內容安裝。](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - 透過 Wi-fi 設定 Autopilot 時，可能會有一個實例，在第一次建立網際網路連線時，不會下載 Autopilot 設定檔。 在此情況下，會顯示使用者授權合約 (EULA) ，而且使用者可以選擇是否要繼續進行非 Autopilot 安裝體驗。 若要使用 Autopilot 重試設定，請讓裝置進入睡眠狀態，然後重新開機裝置，然後再試一次。
