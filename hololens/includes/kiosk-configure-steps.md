@@ -1,44 +1,44 @@
 ---
-ms.openlocfilehash: 7a7122790d3e0257c07cdd8bc8c7f658b3a0e279
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 3d6b36124cd50dcc9f420227cb7787f0d787c013
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859220"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129220891"
 ---
 # <a name="microsoft-intune-single-app-kiosk-template"></a>[Microsoft Intune 單一應用程式 kiosk 範本](#tab/uisak)
 
-## <a name="microsoft-intune-single-app-kiosk-template"></a>Microsoft Intune 單一應用程式 kiosk 範本
+### <a name="microsoft-intune-single-app-kiosk-template"></a>Microsoft Intune 單一應用程式 kiosk 範本
 
-1. 建立設定檔 <br> 
+1. 建立設定檔 <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. 選擇 kiosk 範本 <br> 
+2. 選擇 kiosk 範本 <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. 選擇單一應用程式或多個應用程式 kiosk，也選擇以 kiosk 模式為目標的使用者類型 <br> 
+3. 選擇單一應用程式或多個應用程式 kiosk，也選擇以 kiosk 模式為目標的使用者類型 <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-sa-3.png"/>
 </kbd>
 
 <br>
 
-4. 選擇要在 kiosk 模式中執行的應用程式 <br> 
+4. 選擇要在 kiosk 模式中執行的應用程式 <br>
 <kbd>
     <img alt="Choose the app" src="../images/kiosk-steps/kiosk-template-sa-4.png"/>
 </kbd>
 
 <br>
 
-5. 保留其餘的選項 <br> 
+5. 保留其餘的選項 <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -56,37 +56,37 @@ ms.locfileid: "122859220"
 
 # <a name="microsoft-intune-multi-app-kiosk-template"></a>[Microsoft Intune 多個應用程式 kiosk 範本](#tab/uimak)
 
-## <a name="microsoft-intune-multi-app-kiosk-template"></a>Microsoft Intune 多個應用程式 kiosk 範本
+### <a name="microsoft-intune-multi-app-kiosk-template"></a>Microsoft Intune 多個應用程式 kiosk 範本
 
-1. 建立設定檔 <br> 
+1. 建立設定檔 <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. 選擇 kiosk 範本 <br> 
+2. 選擇 kiosk 範本 <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. 選擇單一應用程式或多個應用程式 kiosk，也選擇以 kiosk 模式為目標的使用者類型 <br> 
+3. 選擇單一應用程式或多個應用程式 kiosk，也選擇以 kiosk 模式為目標的使用者類型 <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-mak-3.png"/>
 </kbd>
 
 <br>
 
-4. 選擇要在 kiosk 模式中執行的應用程式 ()  <br> 
+4. 選擇要在 kiosk 模式中執行的應用程式 ()  <br>
 <kbd>
     <img alt="Choose the app(s)" src="../images/kiosk-steps/kiosk-template-mak-4.png"/>
 </kbd>
 
 <br>
 
-5. 保留其餘的選項 <br> 
+5. 保留其餘的選項 <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -106,7 +106,7 @@ ms.locfileid: "122859220"
 
 # <a name="microsoft-intune-custom-template"></a>[Microsoft Intune 自訂範本](#tab/intunecustom)
 
-## <a name="microsoft-intune-custom-template"></a>Microsoft Intune 自訂範本
+### <a name="microsoft-intune-custom-template"></a>Microsoft Intune 自訂範本
 
 1. 為您想要的 kiosk 體驗建立 xml 設定。 請參閱這裡的 [範例](../hololens-kiosk-reference.md#kiosk-xml-code-samples) 以開始。
 
@@ -150,7 +150,7 @@ ms.locfileid: "122859220"
 
 # <a name="runtime-provisioning---multi-app"></a>[執行時間布建-多個應用程式](#tab/ppkgmak)
 
-## <a name="runtime-provisioning---multi-app"></a>執行時間布建-多個應用程式
+### <a name="runtime-provisioning---multi-app"></a>執行時間布建-多個應用程式
 
 1. 為您想要的 kiosk 體驗建立 xml 設定。 請參閱這裡的 [範例](../hololens-kiosk-reference.md#kiosk-xml-code-samples) 以開始。
 
@@ -216,7 +216,7 @@ ms.locfileid: "122859220"
 
 # <a name="runtime-provisioning---single-app"></a>[執行時間布建-單一應用程式](#tab/ppkgsak)
 
-## <a name="runtime-provisioning---single-app"></a>執行時間布建-單一應用程式
+### <a name="runtime-provisioning---single-app"></a>執行時間布建-單一應用程式
 
 1. 開啟[Windows 設定設計](https://www.microsoft.com/store/apps/9nblggh4tx22)工具]。
 

@@ -28,7 +28,7 @@
 #### [新增設定應用程式](hololens-new-settings.md)
 #### [新增 Microsoft Edge](hololens-new-edge.md)
 ### 管理應用程式
-#### [尋找、安裝和卸載應用程式](holographic-store-apps.md)
+#### [尋找、安裝及卸載 store 應用程式](holographic-store-apps.md)
 #### [管理 HoloLens 2 的自訂應用程式](hololens2-holographic-custom-apps.md)
 ### 全息圖和空間放置
 #### [改善視覺品質和緩和](hololens-calibration.md)

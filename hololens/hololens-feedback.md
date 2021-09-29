@@ -2,9 +2,9 @@
 title: 提供意見反應
 description: 使用意見反應中樞為 HoloLens 和 Windows Mixed Reality 開發人員建立可採取動作的意見反應。
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -12,17 +12,17 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: 意見反應、bug、問題、錯誤、疑難排解、協助
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 40619e6d891ddd56d26be227df11aae758f880ae
+ms.sourcegitcommit: 0b42c241c44c98e94dc9043bd5891d26776bc745
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032258"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129191204"
 ---
 # <a name="feedback-for-hololens"></a>HoloLens 的意見反應
 
@@ -30,11 +30,13 @@ ms.locfileid: "126032258"
 
 意見反應中樞是一種很好的方法，可向工程團隊提出 bug，並確保未來的更新健康，並更一致地釋放 bug。 不過，意見反應中樞不會提供回應。 如果您需要立即協助，請提出意見反應、記下您為意見反應提供的摘要，然後繼續進行 [HoloLens 支援](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)-使用意見反應中樞中的 [**共用**] 功能，共用 URL 的直接連結。 意見反應中樞每天取得許多資料-URL 可協助我們快速識別您的意見反應。
 
-> [!NOTE]  
->  
-> - 請確定您有意見反應中樞的最新版本。 若要這樣做，請選取 [**開始**  >  **Microsoft Store**]，然後選取省略號 (...) 。然後，選取 [**下載和更新**  >  **取得更新**]。  
->  
-> - 為了提供修正問題的最佳可能資料，強烈建議您將裝置遙測設定為 **選擇性**。 您可以在 (OOBE) 或使用設定應用程式的全新體驗期間設定此值。 若要使用設定來進行這項操作，請選取 [**開始**]  >  **設定**[  >  **隱私權**  >  **應用程式診斷**]  >  ****。
+> [!NOTE]
+> 請確定您有意見反應中樞的最新版本。 若要這樣做，請選取 [**開始**  >  **Microsoft Store**]，然後選取省略號 (...) 。然後，選取 [**下載和更新**  >  **取得更新**]。 深入瞭解 [如何更新商店應用程式](holographic-store-apps.md#update-apps)。
+
+> [!IMPORTANT]
+> 為了提供修正問題的最佳可能資料，強烈建議您將裝置遙測設定為 **選擇性**。 無法啟用此額外遙測資料可能會導致您的錯誤或意見反應 unactionable。
+>
+> 您可以在 (OOBE) 或使用設定應用程式的全新體驗期間設定此值。 若要使用設定來進行這項操作，請選取 [**開始**]  >  **設定**[  >  **隱私權** 診斷]，& 提供  >  **意見** 選擇  >  **診斷資料**  >  ****。
 
 ## <a name="use-the-feedback-hub"></a>使用意見反應中樞
 
