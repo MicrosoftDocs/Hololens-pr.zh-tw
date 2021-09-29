@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f646e70c61bda17fb315670e94a6fbada010e1d5
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035811"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163993"
 ---
 # <a name="about-hololens-2"></a>關於 HoloLens 2
 
@@ -48,7 +48,7 @@ Microsoft HoloLens 2 是非網路共用的全像電腦。  它會將 HoloLens (�
 
 ### <a name="power-supply-details"></a>電源供應器詳細資料
 
-裝置隨附的電源供應器和 USB 纜線是最受支援的收費機制。 電源供應器是18W 充電器。  其在2A 提供9V。
+裝置隨附的電源供應器和 USB 纜線是最受支援的收費機制。 電源供應器是18W 充電器。  它會在2A 提供9V。
 
 根據裝置執行的環境而定，充電率和速度可能會有所不同。
 
