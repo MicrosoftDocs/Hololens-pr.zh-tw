@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3442da500e7554d7f97db2178cbaceeecad143ac
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f7d4ddf41f02b083000c1e57f5140c38527826d7
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035781"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364412"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>從 Microsoft Store 尋找、安裝和卸載應用程式
 
@@ -97,8 +97,8 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 
     ![所有應用程式顯示這兩個應用程式。](images/office-pwa-5.jpg)
 
-> [!NOTE]
-> "Microsoft OneDrive" 是 PWA 的應用程式，其中 "OneDrive" 是舊版 UWP。
+    > [!NOTE]
+    > "Microsoft OneDrive" 是 PWA 的應用程式，其中 "OneDrive" 是舊版 UWP。
 
 1. 然後，您將能夠看到您的 OneDrive 檔案。
 
@@ -107,6 +107,8 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 另請參閱：[啟用自動上傳至商務用 OneDrive](hololens-release-notes.md#onedrive-for-work-or-school-camera-roll-upload)
 
 ## <a name="update-apps"></a>更新應用程式
+
+### <a name="manual-updates"></a>手動更新
 
 若要更新從 Microsoft Store 安裝的應用程式，您可以從 Microsoft Store 應用程式更新應用程式。 針對商務用 Microsoft Store 安裝的應用程式，您也可以從商務用 Microsoft Store 更新這些應用程式。
 
@@ -134,12 +136,32 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 >
 > 如果您想要更新已側載或部署的自訂應用程式，則必須使用與應用程式更新版相同的方法。 若要深入瞭解如何安裝和執行自訂應用程式，請閱讀自訂的全像攝影[應用程式](holographic-custom-apps.md)
 
+### <a name="automatic-app-updates"></a>自動應用程式更新
+
+自動更新會套用至 Microsoft Store 或商務用 Microsoft Store 的應用程式，而且只有在直接從存放區安裝時，才可以自動更新。 如果從 Intune 安裝，它可以與應用程式的最新可用版本的商務用 Microsoft Store 同步，從 MDM 推送更新。
+
+> [!NOTE]
+> 針對源自商務用 Microsoft Store 的應用程式，您必須登入存放區，並使用與裝置上所用的商務用 Microsoft Store 目錄相關聯的相同租使用者進行驗證。
+
+#### <a name="how-automatic-updates-work"></a>自動更新的運作方式
+
+自動應用程式更新排程為每日 (大約每24小時執行一次，) 受限於網路可用性。 請讓您的裝置保持作用中狀態或插入 AC 以接收更新。 即使應用程式更新是在每日使用中的每日使用量下載，它們仍會在要更新的應用程式不再使用時套用。
+
+> [!TIP]
+> 可能的話，請在裝置連線到公司網路時，將裝置向您收費。 如果可以同時下載並安裝更新，則較不可能會中斷使用中的裝置。
+
+#### <a name="how-it-administrators-can-control-automatic-updates"></a>IT 系統管理員如何控制自動更新
+
+IT 系統管理員可以透過 [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 原則控制自動更新應用程式。 此原則可讓他們完全啟用或停用自動應用程式更新，但不會控制何時進行更新。
+
+從 [21H2](hololens-release-notes.md#windows-holographic-version-21h1)開始，IT 系統管理員也可以使用 [ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) 原則來控制使用中的應用程式，但在先前的嘗試中無法更新的應用程式應該強制重新開機。
+
 ## <a name="uninstall-apps"></a>解除安裝應用程式
 
 有三種方式可以卸載應用程式。 您可以透過 Microsoft Store、[開始] 功能表或設定來卸載應用程式。
 
 > [!WARNING]
-> 您不能卸載系統應用程式或 Microsoft Store 本身。
+> 您無法將系統應用程式或 Microsoft Store 本身卸載。
 
 > [!IMPORTANT]
 > 如果您的 HoloLens 2 有多位使用者，您必須以安裝應用程式的使用者身分登入，才能將其卸載。

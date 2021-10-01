@@ -3,7 +3,7 @@ title: HoloLens裝置疑難排解
 description: 隨時掌握最新的解決方案，以 HoloLens 裝置問題和疑難排解技術。
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032382"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364625"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -30,6 +30,7 @@ ms.locfileid: "126032382"
 <a id="list"></a>
 
 **已知問題**
+- [每次電源達到18% 時，裝置會突然自動關機](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [遠端協助影片在20分鐘後凍結](#remote-assist-video-freezes-after-20-minutes)
 - [自動登入要求登入](#auto-login-asks-for-log-in)
 - [無法啟動 Microsoft Edge](#microsoft-edge-fails-to-launch)
@@ -59,6 +60,16 @@ ms.locfileid: "126032382"
 - [藍牙裝置未配對](#bluetooth-devices-arent-pairing)
 - [USB-C 麥克風無法運作](#usb-c-microphone-isnt-working)
 - [在設定中列為可用的裝置無法運作](#devices-listed-as-available-in-settings-dont-work)
+
+## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>每次電源達到18% 時，裝置會突然自動關機
+
+有已知的已知問題，當裝置達到18% 的電池時，即會意外關閉。 這是軟體問題，而不是硬體或電池問題，因此請不要將裝置交換。 如果您不確定您的問題是否符合此錯誤，請：
+
+1. 確定您的裝置上已啟用選擇性診斷 (s) 
+1. 重現問題
+1. 提交 [意見反應中樞](hololens-feedback.md) 問題
+1. 共用意見反應問題 URL
+1. [連絡客戶支援](https://aka.ms/hololenssupport)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>遠端協助影片在20分鐘後凍結
 
@@ -160,21 +171,23 @@ HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選
 這是影響的問題，它會影響屬於 Insider preview 組建的使用者、使用新的 insider preview 組建 reflashed 其 HoloLens 2，然後從 Insider 計畫取消註冊。 這是 **已知的問題**。
 
 這不會影響：
-- 未註冊 Windows 測試人員中的使用者 
+
+- 未註冊 Windows 測試人員中的使用者
 - 業內 人士：
     - 如果裝置已註冊，因為 Insider build 是 version 18362. x
     - 如果他們將 Insider 已簽署的19041建立並在測試人員計畫中保持註冊，
 
-解決辦法： 
-- 避免此問題 
+解決辦法：
+
+- 避免此問題
     - Flash 非 insider build。 其中一個一般的每月更新。
     - 掌握 Insider Preview
 - 重新刷新裝置
 
     1. 請在未連線的情況下完全關閉，以手動方式將[HoloLens 2 進入閃爍模式](hololens-recovery.md)。 然後按住音量，然後按一下 [電源] 按鈕。
-    
+
     1. 連線電腦並開啟 [Advanced Recovery]。
-    
+
     1. 將 HoloLens 2 快閃至預設組建。
 
 [返回清單](#list)
@@ -295,6 +308,7 @@ HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭
 ## <a name="hand-input-isnt-working"></a>手輸入無法運作
 
 為了確保 HoloLens 可以看到您的手，您需要將它們保留在手勢框架中。  Mixed Reality Home 提供的意見反應可讓您知道何時追蹤您的手。  不同 HoloLens 版本的意見反應不同：
+
 - 在 HoloLens (第1代) 上，注視游標會從點變更為環形
 - 在 HoloLens 2 上，當您的手接近某個平板電腦時，會出現 fingertip 游標，而且當平板不再出現時，會出現一張光線
 
@@ -328,6 +342,7 @@ HoloLens 模擬器的相關資訊位於我們的開發人員檔中。  深入瞭
 [返回清單](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C 麥克風無法運作
+
 請注意，某些 USB C 麥克風錯誤地將本身視為麥克風 *和* 說話者。 這是麥克風的問題，而不是 HoloLens。 將其中一個麥克風插入 HoloLens 時，可能會遺失音效。 幸運的是，有一個簡單的修正程式。  
 
 在 **設定**  ->  **系統**  ->  **音效** 中，將內建的喇叭 **(模擬功能音訊驅動程式)** 明確設定為 **預設裝置**。 HoloLens 應該記得這項設定，即使稍後移除並重新連線麥克風也是如此。
