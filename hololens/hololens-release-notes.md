@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f9d012540cf29b7ed7ffd4033681c58767d78db
-ms.sourcegitcommit: e8a4714c7b16720819c7aaebefb7cfd21fc29c56
+ms.openlocfilehash: 8ad76f1c0cc16101b10fb0576c1b3763caac450d
+ms.sourcegitcommit: db573910a0c81fdf6edaca8cb8ef3d0be5e25603
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127985647"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129432023"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -28,9 +28,6 @@ ms.locfileid: "127985647"
 
 > [!NOTE]
 > 最新的 Windows 11 公告著重于電腦版本的 Windows。 我們最近在2021年5月推出了 HoloLens 2 的[重大作業系統更新](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067)，我們正努力根據客戶對此秋季的意見反應，來處理即將推出的版本。
-
-> [!IMPORTANT]
-> 由於[21H1 組建中已解決的已知問題會影響遠端協助使用者](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)，我們暫時暫停了 Windows 全像版本21H1 更新的供應專案。 我們也已將預設的 Advanced Recovery 附隨 (ARC) 組建變更為 Windows 全像[20H2 版–2021年6月更新](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)。 ARC 組建現在會繼續以21H1 組建為目標。
 
 ## <a name="windows-holographic-version-21h1---september-2021-update"></a>Windows全像21H1 版-2021 年9月更新
 
