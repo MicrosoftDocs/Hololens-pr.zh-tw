@@ -1,24 +1,24 @@
 ---
 title: HoloLens裝置疑難排解
 description: 隨時掌握最新的解決方案，以 HoloLens 裝置問題和疑難排解技術。
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/7/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364625"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800533"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -31,6 +31,7 @@ ms.locfileid: "129364625"
 
 **已知問題**
 - [每次電源達到18% 時，裝置會突然自動關機](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [OneDriveUWP 應用程式不適用於 Azure AD 使用者](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [遠端協助影片在20分鐘後凍結](#remote-assist-video-freezes-after-20-minutes)
 - [自動登入要求登入](#auto-login-asks-for-log-in)
 - [無法啟動 Microsoft Edge](#microsoft-edge-fails-to-launch)
@@ -70,6 +71,23 @@ ms.locfileid: "129364625"
 1. 提交 [意見反應中樞](hololens-feedback.md) 問題
 1. 共用意見反應問題 URL
 1. [連絡客戶支援](https://aka.ms/hololenssupport)
+
+[返回清單](#list)
+
+## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDriveUWP 應用程式不適用於 Azure AD 使用者
+
+如果您使用 Azure AD 帳戶來使用 OneDrive For Business，則在登入您的收件匣 OneDrive 應用程式時可能會發生錯誤。 無法登入 OneDrive 應用程式，並不會影響相機應用程式所捕捉的影像和影片自動上傳。 您仍然可以從商務用 OneDrive 雲端存放裝置儲存和存取您的檔案。 OneDrive 和 HoloLens 小組正在處理此問題。
+
+### <a name="workarounds"></a>因應措施
+
+必要條件：客戶可以使用 Microsoft Edge 和裝置作業系統更新至 Windows 全像21H1 組建或更新版本。
+
+如果您遇到此問題，請嘗試下列其中一項：
+
+- 使用者可以從 Microsoft Edge 直接存取商務 OneDrive，並從他們的瀏覽器與網站的檔案互動。
+- 使用者可以從 Microsoft Edge 下載 OneDrive PWA 應用程式，將其安裝至 HoloLens。 這可讓使用者再次查看和管理裝置上的檔案。 閱讀並遵循這些[指示，在您的 HoloLens 上安裝 OneDrive PWA 應用程式。](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[返回清單](#list)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>遠端協助影片在20分鐘後凍結
 

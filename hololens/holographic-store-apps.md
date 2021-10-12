@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f7d4ddf41f02b083000c1e57f5140c38527826d7
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: 4705112ee41ce6de0598358b9c81775f261bb2fa
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364412"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800550"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>從 Microsoft Store 尋找、安裝和卸載應用程式
 
@@ -74,6 +74,9 @@ HoloLens 支援 Microsoft Store 中許多現有的應用程式，以及特別為
 1. 選取應用程式頁面上的 [ **取得** 或 **安裝** ] (可能需要購買) 。
 
 ### <a name="install-microsoft-onedrive-pwa-app"></a>安裝 Microsoft OneDrive PWA 應用程式
+
+> [!NOTE]
+> PWA 無法透過 Microsoft Intune/MDM 來管理或部署。
 
 必要條件：使用者已將 HoloLens 2 裝置加入其工作租使用者。
 
