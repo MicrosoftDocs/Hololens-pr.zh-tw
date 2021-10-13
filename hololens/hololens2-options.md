@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035795"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949015"
 ---
 # <a name="compare-hololens-2-options"></a>比較 HoloLens 2 選項
 
@@ -39,9 +39,10 @@ HoloLens 是 *由* 全像全像投影提供的混合現實裝置，並提供可�
 | **雜訊-取消音訊輸出**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **開發人員權利 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **快速更換程式 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **輸入保護分級 (IP50，灰塵受保護的)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **商業使用權**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**保修**](hololens2-hardware.md#warranty-information)                                             |   1年   |             1年            |             2年            |                      2年                      |            1-年 <sup>3</sup>            |             1年             |
-| **裝置購買限制**                                |    None    |              None             |              None             |                       None                       |             None             |       每筆交易一個      |
+| **裝置購買限制**                                |    無    |              無             |              無             |                       無                       |             無             |       每筆交易一個      |
 
 - <sup>1</sup> -包含 $500 Azure 點數和3個月的 Unity Pro 和 Pixyz 外掛程式試用版。
 - <sup>2</sup> -在 Microsoft 收到瑕疵裝置之前，在夜間或加速傳送 (，可) 更快的可用選項來取得更換裝置。
