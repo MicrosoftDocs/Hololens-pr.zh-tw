@@ -3,7 +3,7 @@ title: 收集和使用 HoloLens 裝置的診斷資訊
 description: 瞭解如何收集、使用及保留 HoloLens 裝置的診斷資訊。
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 10/15/2020
+ms.date: 9/12/2021
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 4f62a70430d78087157b3adcdf76af53183db708
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833517"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924412"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>收集和使用 HoloLens 裝置的診斷資訊
 
@@ -39,7 +39,7 @@ HoloLens 使用者和系統管理員可以從四種不同的方法中進行選�
 
 下表比較不同的收集方法。 方法名稱會連結至資料表後面各節中的詳細資訊。
 
-|方法 |先決條件 |資料地點 |資料存取和使用 |資料保留 |
+|方法 |必要條件 |資料地點 |資料存取和使用 |資料保留 |
 | --- | --- | --- | --- | --- |
 |[意見反應中樞](#feedback-hub) |網路和網際網路連接<br /><br />意見反應中樞應用程式<br /><br />將檔案上傳至 Microsoft 雲端的許可權 |Microsoft 雲端<br /><br />HoloLens 裝置 (選擇性)  |使用者要求協助、同意使用條款及上傳資料<br /><br />Microsoft 員工會看到資料，與使用條款一致 |雲端中的資料會保留在下一代隱私權 (NGP) 所定義的期間內。 然後會自動刪除資料。<br /><br />具有 **裝置擁有** 者或系統 **管理員** 許可權的使用者可以隨時刪除裝置上的資料。 |
 |[設定技術](#settings-troubleshooter) |設定 App |HoloLens 裝置<br /><br />連接的電腦 (選用)  |使用者會儲存資料，而且只有使用者會 (存取資料，除非使用者與其他使用者) 明確共用資料。 |資料會保留在裝置上，直到使用者刪除為止。 * |
@@ -58,7 +58,7 @@ HoloLens 使用者可以使用 Microsoft 意見反應中樞 desktop 應用程式
 >[!IMPORTANT]
 > 為了提供修正問題的最佳可能資料，強烈建議您將裝置遙測設定為 **選擇性**。 您可以在 (OOBE) 或使用 **設定** 應用程式的全新體驗期間設定此值。 若要使用設定來進行這項操作，請選取 [**開始] > 設定 > 的 [隱私權] > 應用程式診斷**。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 - 裝置已連線到網路。
 - 意見反應中樞的應用程式可在使用者的桌上型電腦上取得，而使用者可將檔案上傳至 Microsoft 雲端。
@@ -94,7 +94,7 @@ HoloLens 使用者可以使用裝置上的 **設定** 應用程式來進行問�
 組建 Windows 全像[21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)和更新版本：
 - 除了設定應用程式內先前的疑難排解工具之外，還新增了新的疑難排解員，新增了新的設定應用程式以進行 OS 更新。 流覽至 **設定-> 更新 & 安全性-> 疑難排解-> Windows Update** ，然後選取 [**啟動**]。 這可讓您在使用作業系統更新重現問題時收集追蹤，以協助您更妥善地針對 IT 或支援進行疑難排解。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 - **設定** 的應用程式會安裝在裝置上，並可供使用者使用。
 
@@ -123,7 +123,7 @@ HoloLens 使用者可以使用裝置上的 **設定** 應用程式來進行問�
 - [從 Windows 裝置收集診斷](/mem/intune/remote-actions/collect-diagnostics)
 - [Intune 公開預覽版-Windows 10 裝置診斷](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 - 裝置已連線到網路。
 - 裝置會在支援 DiagnosticLog CSP 的 MDM 環境中註冊。
@@ -176,5 +176,38 @@ Windows 全像[20H2 版之前的](hololens-release-notes.md#windows-holographic-
 
 7.  複製診斷 ZIP 檔案，並與 Microsoft 支援小組分享。
 
-    > [!NOTE]
-    > 某些診斷 ZIP 檔案可能包含 PII。
+> [!NOTE]
+> 某些診斷 ZIP 檔案可能包含 PII。
+
+### <a name="offline-diagnostics-notifications"></a>離線診斷通知
+
+- 在 Windows 全像[21H2 版](hololens-release-notes.md#windows-holographic-version-21h2)中引進。
+
+這是現有功能的更新，稱為 [離線診斷](hololens-diagnostic-logs.md#offline-diagnostics)。 之前，使用者已觸發診斷收集或已完成的明確指標。
+現在已新增 Windows 測試人員組建中，有兩種形式的視聽意見反應可進行離線診斷。 當收集開始和完成時，會顯示第一個快顯通知的通知。 這些會在使用者登入並具有視覺效果時顯示。
+
+![用於收集記錄的快顯通知。](./images/logcollection1.jpg)
+
+![記錄收集完成時的快顯通知。](./images/logcollection2.jpg)
+
+由於使用者通常會使用離線診斷做為無法存取顯示器、無法登入或仍在 OOBE 中的回溯記錄檔收集機制，因此當收集記錄時，也會有音訊提示播放。 除了快顯通知之外，還會播放這個音效。
+
+當您的裝置更新，且不需要啟用或管理時，會啟用這項新功能。 在無法顯示或聽到這項新意見反應的任何情況下，仍會產生離線診斷。
+
+我們希望有這項較新的視聽意見反應，更容易收集診斷資料，並更快速地針對您的問題進行疑難排解。
+
+### <a name="low-storage-log-collection-improvements"></a>低儲存體記錄收集改進
+
+- 在 Windows 全像[21H2 版](hololens-release-notes.md#windows-holographic-version-21h2)中引進。
+
+在收集診斷記錄檔時，裝置似乎磁碟空間不足的情況，將會建立名為 **StorageDiagnostics.zip** 的額外報告。 低儲存體的閾值是由 Windows[儲存體的意義](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)自動決定。
+
+## <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在 HoloLens 上設定 View advanced 診斷報表
+
+- 在 Windows 全像[21H2 版](hololens-release-notes.md#windows-holographic-version-21h2)中引進。
+
+針對受管理的裝置進行疑難排解時，確認套用了預期的原則設定是很重要的步驟。 先前在這項新功能中，必須在匯出透過 mdm 的裝置，或在匯出透過 **設定** 帳戶所收集的 MDM 診斷記錄之後，  ->    >  透過 **存取公司或學校** 的裝置，然後選取 [**匯出您的記錄管理** 檔]，然後在附近的電腦上查看。
+
+現在可以使用 Edge 瀏覽器在裝置上查看 MDM 診斷。 若要更輕鬆地查看 MDM 診斷報表，請流覽至 [存取工作或學校] 頁面，然後選取 [ **view advanced 診斷報告**]。 這會產生並在新的邊緣視窗中開啟報表。
+
+![在設定應用程式中查看 advanced 診斷報告。](./images/view-advanced-diagnostic-report.jpg)

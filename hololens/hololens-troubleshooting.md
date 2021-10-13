@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
-ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
+ms.openlocfilehash: afbbc1ab0e018f668381137849738ec7d274fe37
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "129800533"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924372"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -32,6 +32,7 @@ ms.locfileid: "129800533"
 **已知問題**
 - [每次電源達到18% 時，裝置會突然自動關機](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDriveUWP 應用程式不適用於 Azure AD 使用者](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [為什麼我在 Autopilot 期間看到顯示0x80180014？](#why-do-i-see-0x80180014-during-autopilot)
 - [遠端協助影片在20分鐘後凍結](#remote-assist-video-freezes-after-20-minutes)
 - [自動登入要求登入](#auto-login-asks-for-log-in)
 - [無法啟動 Microsoft Edge](#microsoft-edge-fails-to-launch)
@@ -88,6 +89,12 @@ ms.locfileid: "129800533"
 - 使用者可以從 Microsoft Edge 下載 OneDrive PWA 應用程式，將其安裝至 HoloLens。 這可讓使用者再次查看和管理裝置上的檔案。 閱讀並遵循這些[指示，在您的 HoloLens 上安裝 OneDrive PWA 應用程式。](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 [返回清單](#list)
+
+## <a name="why-do-i-see-0x80180014-during-autopilot"></a>為什麼我在 Autopilot 期間看到顯示0x80180014？
+
+這項錯誤通常是在裝置重設期間，以及重複使用 HoloLens 裝置已 Autopilot 至少一次的流程時發生。 若要解決此問題，請[從 Microsoft Intune 刪除裝置](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)，然後再次將其重設為完成 Autopilot 流程。
+
+如需詳細資訊，請參閱 [autopilot 頁面上的疑難排解步驟。](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>遠端協助影片在20分鐘後凍結
 
