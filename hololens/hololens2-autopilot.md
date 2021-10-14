@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: sekerawa
-ms.openlocfilehash: 46b57e44186b8944e58e68da66306bbe445b704a
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924450"
+ms.locfileid: "129964576"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -341,8 +341,12 @@ Autopilot 體驗會因為特定的錯誤而失敗。
 
 需要採取哪些步驟來解決此錯誤？
 
-1. 請依照 [Autopilot 裝置匯入和註冊](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) 的步驟進行疑難排解，以從 Intune 移除裝置。
-1. [重設/重新刷新 HoloLens](hololens-recovery.md)裝置，然後嘗試 Autopilot。
+1. 請依照 [Autopilot 裝置匯入和註冊](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) 的步驟進行疑難排解，以從 Intune 移除裝置。  (您的 Intune 系統管理員需要執行這項工作) 
+1. 完成步驟1之後，請重新開機裝置並登入。
+1. 流覽至 **設定**  ->  **更新 & 安全性**  ->  **重設 & 復原**，然後選取 [**開始** 使用]。
+    1. 如果步驟 2 & 3 發生問題，請參閱[重設/重新刷新 HoloLens](hololens-recovery.md)重設裝置的替代方案。
+
+AutoPilot 應該會成功註冊。
 
 ### <a name="troubleshooting"></a>疑難排解
 

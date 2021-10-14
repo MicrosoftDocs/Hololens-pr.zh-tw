@@ -3,7 +3,7 @@ title: HoloLens裝置疑難排解
 description: 隨時掌握最新的解決方案，以 HoloLens 裝置問題和疑難排解技術。
 author: evmill
 ms.author: v-evmill
-ms.date: 10/7/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: afbbc1ab0e018f668381137849738ec7d274fe37
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924372"
+ms.locfileid: "129964559"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -33,12 +33,14 @@ ms.locfileid: "129924372"
 - [每次電源達到18% 時，裝置會突然自動關機](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDriveUWP 應用程式不適用於 Azure AD 使用者](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [為什麼我在 Autopilot 期間看到顯示0x80180014？](#why-do-i-see-0x80180014-during-autopilot)
-- [遠端協助影片在20分鐘後凍結](#remote-assist-video-freezes-after-20-minutes)
+- [Microsoft Store 錯誤碼0x80131500](#microsoft-store-error-code-0x80131500)
+- [Microsoft Edge 無法啟動麥克風](#microsoft-edge-fails-to-start-the-microphone)
+- [已 **修正**-遠端協助影片在20分鐘後凍結](#remote-assist-video-freezes-after-20-minutes)
 - [自動登入要求登入](#auto-login-asks-for-log-in)
 - [無法啟動 Microsoft Edge](#microsoft-edge-fails-to-launch)
 - [鍵盤未切換至特殊字元](#keyboard-doesnt-switch-to-special-characters)
-- [下載鎖定的檔案不會顯示錯誤](#downloading-locked-files-doesnt-error)
-- [裝置入口網站檔案上傳/下載超時](#device-portal-file-uploaddownload-times-out)
+- [已 **修正**-下載鎖定的檔案不會顯示錯誤](#downloading-locked-files-doesnt-error)
+- [已 **修正**-裝置入口網站檔案上傳/下載超時](#device-portal-file-uploaddownload-times-out)
 - [在使用 Insider build 進行閃爍的裝置上，從 Insider preview 取消註冊後的藍色畫面](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive 不會自動上傳圖片](#onedrive-doesnt-automatically-upload-pictures)
 
@@ -95,6 +97,32 @@ ms.locfileid: "129924372"
 這項錯誤通常是在裝置重設期間，以及重複使用 HoloLens 裝置已 Autopilot 至少一次的流程時發生。 若要解決此問題，請[從 Microsoft Intune 刪除裝置](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)，然後再次將其重設為完成 Autopilot 流程。
 
 如需詳細資訊，請參閱 [autopilot 頁面上的疑難排解步驟。](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+
+## <a name="microsoft-store-error-code-0x80131500"></a>Microsoft Store 錯誤碼0x80131500
+
+某些使用者可能會遇到未如預期般運作的 Microsoft Store，並查看錯誤碼0x80131500。 這是在 HoloLens 上的 Microsoft Store 應用程式中無法使用 HoloLens 上設定的區域所造成的問題。 如果您遇到錯誤碼0x80131500，若要解決此問題，請：
+
+1. 將設定 > Time & Language > > Region 設定為下列其中一項：
+    - 美國、日本、中國、德國、加拿大、英國、愛爾蘭、法國、澳大利亞、紐西蘭。
+1. 重新開機 Store 應用程式。
+1. 若要讓整個裝置反映變更，裝置將需要重新開機。
+
+HoloLens 團隊正在努力新增更多區域的支援。
+
+請參閱此處以[瞭解購買 HoloLens 2 的國家/地區。](hololens2-purchase.md)
+
+## <a name="microsoft-edge-fails-to-start-the-microphone"></a>Microsoft Edge 無法啟動麥克風
+
+當使用者使用 Microsoft Edge 麥克風可能無法啟動，因此無法在 HoloLens 中與 Edge 互動。 此已知問題與 Microsoft Edge 應用程式的版本有關，請不要將您的裝置重新刷新到較早的版本，因為這樣將無法修正此問題。
+
+### <a name="who-is-affected"></a>神秘會受到影響嗎？
+
+Microsoft Edge 93、94或95版的使用者。
+您可以使用 Microsoft Store 應用程式來檢查您擁有的 Microsoft Edge 版本，然後選取 [查看更多] 按鈕（由 **...** ），然後選取 [**下載和更新**]。
+
+### <a name="work-around"></a>解決
+
+目前的修正程式是在96版中，可供已註冊 Microsoft Edge 測試人員的使用者使用。 這不同于註冊您的裝置做為 Windows 測試人員。 如需[如何註冊 Edge 測試人員計畫](hololens-new-edge.md#microsoft-edge-insider-channels)的詳細資訊，請參閱這些指示。
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>遠端協助影片在20分鐘後凍結
 
