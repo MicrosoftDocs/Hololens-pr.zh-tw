@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c45a9a05cc7911bc9866df5e4313bc27a205d333
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 3f5e5f3e38c24805935fc69dfacd5eac93ddd017
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924478"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034275"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 版本資訊
 
@@ -35,7 +35,9 @@ ms.locfileid: "129924478"
 
 Windows現已推出全像21H2 版，並為 HoloLens 2 使用者和 IT 專業人員帶來一組絕佳的新功能。 這一項關於改良的疑難排解和裝置報告、kiosk 模式和憑證檢視器中的一些已修正錯誤、擴充的管理性介面，以及增加的更新可靠性。 這項功能更新的新旗艦功能即將 HoloLens 是我們的移動平臺模式。 查看 HoloLens 2 的所有新絕佳功能！
 
-此最新版本是21H1 版本的每月更新，但這次我們會包含新功能。 主要組建編號會維持不變，Windows Update 將表示每月發行至版本 21H1 (組建 20348) 。 您可以在設定 > 有關畫面中查看組建編號，以確認您位於最新的可用組建 20348.1432 +。 若要更新為最新版本，請開啟設定應用程式，移至 [更新 & 安全性]，然後按一下 [檢查更新]。 如需有關如何管理 HoloLens 更新的詳細資訊，請造訪[管理 HoloLens 更新。](hololens-updates.md)
+此最新版本是21H1 版本的每月更新，但這次我們會包含新的功能，因為這會導致主要組建編號保持不變，且 Windows Update 將表示 21H1 (組建 20348) 的每月版本。 雖然我們將此版本稱為21H2，但 HoloLens 2 設定仍會顯示21H1。 為確保您已收到21H2，請確認版本號碼為20348.1432 或更高版本。 您可以在設定 > 有關畫面中查看組建編號，以確認您位於最新的可用組建 20348.1432 +。
+
+若要更新為最新版本，請開啟設定應用程式，移至 [更新 & 安全性]，然後按一下 [檢查更新]。 如需有關如何管理 HoloLens 更新的詳細資訊，請造訪[管理 HoloLens 更新。](hololens-updates.md)
 
 | 功能                 | 描述                | 使用者或案例 |
 |-------------------------|----------------------------|--------------|

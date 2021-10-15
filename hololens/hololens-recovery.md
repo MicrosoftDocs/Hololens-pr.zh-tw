@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035857"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034213"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重新開機、重設或復原 HoloLens 2
 
@@ -45,13 +45,19 @@ ms.locfileid: "126035857"
 
    ![HoloLens 2 屬性] 畫面會顯示電池變更層級。](images/ResetRecovery2.png)
 
-如果裝置無法開機至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置列舉。 然後遵循 [疑難排解指南](hololens-troubleshooting.md)。 如果裝置的狀態不符合疑難排解指南中所列的任何狀態，請執行 [硬重設](hololens-recovery.md#hard-reset-procedure) 程式，將裝置連接到電源供應器，而不是您的主機電腦。 請等候至少一小時讓裝置向您收費。
+如果裝置無法開機至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置列舉。 然後遵循 [疑難排解指南](hololens-troubleshooting.md)。 如果裝置的狀態不符合疑難排解指南中所列的任何狀態，請執行 [硬重設](hololens-recovery.md#hard-restart-procedure) 程式，將裝置連接到電源供應器，而不是您的主機電腦。 請等候至少一小時讓裝置向您收費。
 
-## <a name="reset-the-device"></a>重設裝置
+> [!NOTE]
+> 讓我們從定義詞彙開始。
+> 「重新開機」只是表示關閉並開啟裝置。
+> [重設] 表示透過設定 UI 將裝置還原成預設值，以重新安裝目前的映射。
+> 「重新刷新」表示裝置已連線到電腦，而新的映射 (選擇性地安裝不同的映射) 。
 
-在某些情況下，您可能必須手動重設裝置，而不需要使用軟體 UI。
+## <a name="restart-the-device"></a>重新開機裝置
 
-### <a name="standard-procedure"></a>標準程式
+在某些情況下，您可能必須手動重新開機裝置，而不需要使用軟體 UI。 這可協助您解決所遇到的問題，而不需要重設/重新刷新您的裝置。
+
+### <a name="standard-restart-procedure"></a>標準重新開機程式
 
 1. 拔下類型 C 纜線，以中斷裝置與電源供應器或主機電腦的連線。
 
@@ -63,7 +69,7 @@ ms.locfileid: "126035857"
 
    ![HoloLens 2MicrosoftHoloLensRecovery devive 管理員。](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>硬重設程式
+### <a name="hard-restart-procedure"></a>硬重新開機程式
 
 如果標準重設程式無法運作，請使用硬重設程式：
 
@@ -92,13 +98,13 @@ ms.locfileid: "126035857"
 >[!WARNING]
 >如果您重新刷新您的裝置，將會清除您的所有個人資料、應用程式和設定，包括 TPM 重設資訊。
 
-根據預設，Advanced Recovery 附屬設定為下載最新的功能發行組建;若要瞭解最新的功能版本，請參閱[HoloLens 2 版本](hololens-release-notes.md)資訊。 若要取得最新的 HoloLens 2 Full Flash Update (FFU) 套件，以透過 Advanced Recovery 隨附重新刷新您的裝置，請下載最新的每月 HoloLens 2 映射： [https://aka.ms/hololens2download](https://aka.ms/hololens2download) 。 此版本是最新正式推出的組建。
+根據預設，Advanced Recovery 附屬設定為下載最新的功能發行組建。 若要瞭解最新的功能版本，請參閱[HoloLens 2 版本](hololens-release-notes.md)資訊。 若要取得最新的 HoloLens 2 Full Flash Update (FFU) 套件，以透過 Advanced Recovery 隨附重新刷新您的裝置，請下載最新的每月 HoloLens 2 映射： [https://aka.ms/hololens2download](https://aka.ms/hololens2download) 。 此版本是最新正式推出的組建。
 
 開始重新刷新程式之前，請確定已在 Windows 10 電腦上安裝並執行應用程式，並已準備好偵測裝置。 也請確定您的 HoloLens 是以最少40% 的費率計費。
 
 ![HoloLens 2 清除重新刷新螢幕擷取畫面。](images/ARC1.png)
 
-### <a name="normal-procedure"></a>一般程式
+### <a name="normal-flashing-procedure"></a>正常閃爍程式
 
 1. 當 HoloLens 裝置正在執行時，請將它連接到您先前開啟 Advanced Recovery 附屬應用程式的 Windows 10 電腦。
 
@@ -108,7 +114,7 @@ ms.locfileid: "126035857"
 
 1. 在 Advanced Recovery 附屬應用程式 UI 中選取 HoloLens 2 裝置，並遵循指示來完成重新刷新。
 
-### <a name="manual-procedure"></a>手動程式
+### <a name="manual-flashing-mode-procedure"></a>手動閃爍模式程式
 
 如果有下列情況，您可能需要讓裝置進入修復模式：
 
@@ -146,7 +152,7 @@ ms.locfileid: "126035857"
 
 1. 如果 ARC 偵測不到您的裝置，請確定您可以透過電腦上的檔案總管連接到您的裝置。 如果您無法;
 
-    1. 您的裝置可能會有停用該連線的 USB 原則。 若是如此，請嘗試 [手動閃爍模式](hololens-recovery.md#manual-procedure)。
+    1. 您的裝置可能會有停用該連線的 USB 原則。 若是如此，請嘗試 [手動閃爍模式](hololens-recovery.md#manual-flashing-mode-procedure)。
     2. 如果沒有原則，請嘗試不同的 USB 纜線。
 
 1. 檢查您的裝置是否未顯示 [1-3-5 LED 模式](hololens2-setup.md#lights-to-indicate-problems)。

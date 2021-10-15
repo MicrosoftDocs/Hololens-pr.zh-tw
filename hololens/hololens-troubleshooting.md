@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964559"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034190"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -163,7 +163,7 @@ HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選
 解決方法：
 
 - 登入方法，例如 PIN、密碼、鳶尾花、Web 驗證或 FIDO2 金鑰。
-- 如果無法記住裝置 PIN，而且無法使用其他驗證方法，則使用者可以使用 [手動 reflashing 模式](hololens-recovery.md#manual-procedure)。
+- 如果無法記住裝置 PIN，而且無法使用其他驗證方法，則使用者可以使用 [手動 reflashing 模式](hololens-recovery.md#manual-flashing-mode-procedure)。
 
 [返回清單](#list)
 
@@ -262,7 +262,7 @@ HoloLens 2 裝置可設定為透過 **設定**  ->  **帳戶** 登  ->  **入選
 如果您的 HoloLens 將不會啟動：
 
 - 如果電源按鈕旁的 Led 沒有亮，或只有一個 LED 短暫閃爍，您可能需要向[HoloLens 收費。](hololens2-charging.md#charging-the-device)
-- 當您按下電源按鈕時，如果 Led 亮起，但看不到顯示器上的任何事物，請 [進行裝置的硬重設](hololens-recovery.md#hard-reset-procedure)。
+- 當您按下電源按鈕時，如果 Led 亮起，但看不到顯示器上的任何事物，請 [進行裝置的硬重設](hololens-recovery.md#hard-restart-procedure)。
 
 如果您的 HoloLens 變成凍結或沒有回應：
 
