@@ -108,7 +108,7 @@
 ## [顯示器](hololens2-display.md)
 ## [執行和受管理的裝置](hololens2-enterprise-troubleshooting.md#)
 ## [啟用診斷記錄](hololens-diagnostic-logs.md)
-## [重設 HoloLens 2](hololens-recovery.md)
+## [重新開機、重設或復原 HoloLens 2](hololens-recovery.md)
 
 # 資源
 ## [HoloLens 2 的購買位置](hololens2-purchase.md)
@@ -131,7 +131,7 @@
 #### [管理 HoloLens 的自訂應用程式](holographic-custom-apps.md)
 #### [將當地語系化版本的 HoloLens 安裝 (第1代) ](hololens1-install-localized.md)
 #### [解除鎖定 Windows Holographic for Business 功能](hololens1-upgrade-enterprise.md)
-#### [ (第1代) 重設 HoloLens](hololens1-recovery.md)
+#### [重新開機、重設或復原 HoloLens (第1代) ](hololens1-recovery.md)
 ### HoloLens (第1代) 安全性
 #### [常見問題 HoloLens (第一代) 安全性問題](hololens1-faq-security.yml)
 #### [HoloLens (第1代) BitLocker 加密](hololens1-encryption.md)

@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034258"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151683"
 ---
 # <a name="update-hololens-2"></a>更新 HoloLens 2
 
@@ -86,7 +86,11 @@ HoloLens 一次套用一個更新。  如果您的 HoloLens 的版本超過最�
     1. 檔案中的 [意見](hololens-feedback.md) 反應盡可能描述。 記下標題，或使用「共用」功能，讓您可以與支援人員分享您的 bug。
     1. 請聯絡 [支援](https://aka.ms/hlsupport)人員。 如果您的問題是因為回到先前的版本而需要解決的問題，他們可以提供 FFU 來讓您的裝置閃爍。
 
-1. 如果無法運作，請[使用 Advanced Recovery 隨附重新刷新您的 HoloLens 2](hololens-recovery.md#clean-reflash-the-device)。
+1. 或者，您也可以[使用 Advanced Recovery 隨附重新刷新 HoloLens 2](hololens-recovery.md#clean-reflash-the-device)。
+    1.  選擇您想要閃爍的版本： 
+        1.  您可以下載[最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
+        1.  您可以使用 ARC 主機的預設組建。
+        1.  您可以使用所提供的組建支援。
 
 > [!NOTE]
 > 回到較舊的版本會刪除您的個人檔案和設定。

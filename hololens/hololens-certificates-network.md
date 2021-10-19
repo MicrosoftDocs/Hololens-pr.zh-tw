@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035779"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151681"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>準備 HoloLens 2 的憑證和網路設定檔
 
@@ -27,7 +27,7 @@ ms.locfileid: "126035779"
 因為 HoloLens 2 的裝置通常會聯結至 Azure Active Directory (Azure AD) 並由 Intune 或其他 MDM 提供者管理，所以您必須使用簡單憑證註冊通訊協定 (SCEP) 或公開金鑰加密標準 (與 MDM 解決方案整合的憑證基礎結構來部署這類憑證。 
 
 >[!NOTE]
-> 如果您沒有 MDM 提供者，您仍然可以透過 [Windows 設定設計](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)工具中的布建 [套件](hololens-provisioning.md#steps-for-creating-provisioning-packages)或透過 [憑證管理員](certificate-manager.md)部署憑證，方法是前往 **設定 > 更新 & 安全性 > 憑證管理員**。
+> 如果您沒有 MDM 提供者，您仍然可以透過 [Windows 設定設計](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)工具中的布建 [套件](hololens-provisioning.md#create-the-provisioning-package)或透過 [憑證管理員](certificate-manager.md)部署憑證，方法是前往 **設定 > 更新 & 安全性 > 憑證管理員**。
 
 ## <a name="certificate-requirements"></a>憑證需求
 必須要有根憑證，才能透過 SCEP 或 PKCS 基礎結構來部署憑證。 您組織中的其他應用程式和服務可能也需要將根憑證部署到您的 HoloLens 2 裝置。 

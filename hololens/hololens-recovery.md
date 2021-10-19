@@ -1,13 +1,13 @@
 ---
-title: 重新開機、重設或復原 HoloLens
+title: 重新開機、重設或復原 HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: 如何使用 Advanced Recovery 將映射快閃以 HoloLens 2。
 keywords: how to、重新開機、重設、復原、硬重設、軟重設、電源週期、HoloLens、關機、arc、advanced recovery 輔助
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034213"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151639"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重新開機、重設或復原 HoloLens 2
 
@@ -45,7 +45,7 @@ ms.locfileid: "130034213"
 
    ![HoloLens 2 屬性] 畫面會顯示電池變更層級。](images/ResetRecovery2.png)
 
-如果裝置無法開機至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置列舉。 然後遵循 [疑難排解指南](hololens-troubleshooting.md)。 如果裝置的狀態不符合疑難排解指南中所列的任何狀態，請執行 [硬重設](hololens-recovery.md#hard-restart-procedure) 程式，將裝置連接到電源供應器，而不是您的主機電腦。 請等候至少一小時讓裝置向您收費。
+如果裝置無法開機至 [啟動] 功能表，請注意主機電腦上的 LED 外觀和裝置列舉。 然後遵循 [疑難排解指南](hololens-troubleshooting.md)。 如果裝置的狀態不符合疑難排解指南中所列的任何狀態，請在連接到電源供應器的裝置上執行 [硬重新開機](hololens-recovery.md#hard-restart-procedure) 程式，而不是在您的主機電腦上執行。 請等候至少一小時讓裝置向您收費。
 
 > [!NOTE]
 > 讓我們從定義詞彙開始。
@@ -67,11 +67,11 @@ ms.locfileid: "130034213"
 
 4. 連線裝置到主機電腦，然後開啟裝置管理員。 針對 Windows 10 (，請按下 **Windows** 鍵，然後按 **X** 鍵，然後選取 [**裝置管理員**]。 ) 確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
-   ![HoloLens 2MicrosoftHoloLensRecovery devive 管理員。](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery 裝置管理員。](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-restart-procedure"></a>硬重新開機程式
 
-如果標準重設程式無法運作，請使用硬重設程式：
+如果標準重設程式無法運作，請使用硬重新開機程式：
 
 1. 拔下類型 C 纜線，以中斷裝置與電源供應器或主機電腦的連線。
 
@@ -81,7 +81,15 @@ ms.locfileid: "130034213"
 
 1. 開啟裝置管理員 (Windows 10 按下 **Windows** 鍵，然後選取 [ **X** ] 鍵，然後選取 [**裝置管理員**) ]。 請確定裝置已正確列舉為 *Microsoft HoloLens* ，如下圖所示：
 
-   ![HoloLens 2MicrosoftHoloLensRecovery device maanger 2。](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2MicrosoftHoloLensRecovery 裝置管理員2。](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>重設裝置
+
+您可以直接從耳機重設您的裝置。 選取 **設定**，然後選取 [**更新 & 安全性 > 重設 & 復原] > 重設此裝置**。
+
+   ![HoloLens 耳機重設。](images/headset-reset-recovery.png)
+
+當您以這種方式重設時，將會移除所有的使用者帳戶，並清除所有資料。
 
 ## <a name="clean-reflash-the-device"></a>清除重新刷新裝置
 
