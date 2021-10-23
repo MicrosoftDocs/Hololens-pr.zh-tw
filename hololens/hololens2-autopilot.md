@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: sekerawa
-ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964576"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202908"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -320,12 +320,6 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 ![裝置上強制執行原則時的裝置上視圖。](images/hololens-autopilot-lockdown.png)
 
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>即使已在 Intune 中指派 Autopilot 設定檔，為什麼看不到 Autopilot 體驗？
-
-根據預設，HoloLens 2 會在偵測到網際網路之後等候15秒偵測 Autopilot。 如果未在15秒內偵測到 autopilot 設定檔，這表示未正確探索 Autopilot，您將會看到 EULA 頁面。
-
-請重新開機您的裝置，然後再試一次。 如需詳細資訊，請參閱 [已知問題和限制](hololens2-autopilot.md#known-issues-and-limitations) 或 [疑難排解](hololens2-autopilot.md#troubleshooting)。
-
 ## <a name="known-issues-and-limitations"></a>已知的問題及限制
 
 ### <a name="why-do-i-see-0x80180014-during-autopilot"></a>為什麼我在 Autopilot 期間看到顯示0x80180014？
@@ -355,6 +349,12 @@ AutoPilot 應該會成功註冊。
 - [WindowsAutopilot-已知問題](/mem/autopilot/known-issues)
 - [針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [WindowsAutopilot-原則衝突](/mem/autopilot/policy-conflicts)
+
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>即使已在 Intune 中指派 Autopilot 設定檔，為什麼看不到 Autopilot 體驗？
+
+根據預設，HoloLens 2 會在偵測到網際網路之後等候15秒偵測 Autopilot。 如果未在15秒內偵測到 autopilot 設定檔，這表示未正確探索 Autopilot，您將會看到 EULA 頁面。
+
+請重新開機您的裝置，然後再試一次。 如需詳細資訊，請參閱 [已知問題和限制](hololens2-autopilot.md#known-issues-and-limitations)。
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot 的意見反應與支援
 

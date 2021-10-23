@@ -14,12 +14,12 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f466abe45a1a9ad676f8dd6a94244473c084be7
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034173"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202874"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中註冊 HoloLens
 
@@ -52,7 +52,7 @@ ms.locfileid: "130034173"
 
 ## <a name="auto-enrollment-in-mdm"></a>在 MDM 中自動註冊
 
-如果您的組織有[Azure 進階版訂](https://azure.microsoft.com/overview/)用帳戶，則會使用 Azure Active Directory (Azure AD) ，以及接受 Azure AD 權杖進行驗證的 MDM 解決方案 (目前只有 Microsoft Intune 和 AirWatch) 支援，您的 IT 系統管理員可以設定Azure AD 在使用者以其 Azure AD 帳戶登入之後自動允許 MDM 註冊。 [了解如何設定 Azure AD 註冊。](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+如果您的組織有[Azure 進階版訂](https://azure.microsoft.com/overview/)用帳戶，則會使用 Azure Active Directory (Azure AD) ，以及接受 Azure AD 權杖進行驗證的 MDM 解決方案 (目前只有 Microsoft Intune 和 AirWatch) 支援，您的 IT 系統管理員可以設定Azure AD 在使用者以其 Azure AD 帳戶登入之後自動允許 MDM 註冊。 [瞭解如何設定 Azure AD 註冊](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)和[Azure active directory 與 MDM 整合](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)，以取得詳細的背景資訊。
 
 啟用自動註冊時，不需要額外的手動註冊。 當使用者使用 Azure AD 帳戶登入時，裝置會在完成初次執行體驗後在 MDM 註冊。
 
@@ -67,6 +67,14 @@ ms.locfileid: "130034173"
 如果您的裝置已從新增工作帳戶的 MSA 帳戶註冊，或從只在裝置管理中註冊的本機帳戶註冊，則您可以取消註冊該裝置。 開啟 [開始] 功能表，然後選取 [**應用程式**  ->  **存取工作或學校**  ->  *您帳戶*  ->  **中斷連線]** 按鈕設定。
 
 ## <a name="enrollment-troubleshooting"></a>註冊疑難排解
+
+### <a name="ensure-device-is-successfully-connected-to-internet-before-attempting-enrollment-post-oobe"></a>嘗試註冊之後，請確認裝置已成功連線到網際網路
+
+一旦使用者登入之後，請在裝置上流覽到任何網際網路對向網站，以確保網際網路連線。
+
+### <a name="ensure-that-azure-active-directory-aad-join-is-not-disabled-in-your-aad-tenant"></a>確定您的 AAD 租使用者中未停用 Azure Active Directory (AAD) 聯結
+
+如需 Azure 入口網站中可用選項的詳細資訊，請參閱 [設定您的裝置設定](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) 。
 
 ### <a name="ensure-valid-license-is-assigned-to-the-user"></a>確定已將有效的授權指派給使用者
 

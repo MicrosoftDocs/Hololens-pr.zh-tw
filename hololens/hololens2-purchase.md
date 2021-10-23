@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ee90e8aa89c4121053ff6319ec46f83f01a4a3f
-ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
+ms.openlocfilehash: a9f4609f39405b6815fe044cae124bc95365707c
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129949032"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202857"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 的購買位置
 
@@ -30,15 +30,23 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 
 | HoloLens 2版| 支援的市場 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 澳大利亞、奧地利、比利時、加拿大、中國、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、馬來西亞、荷蘭、紐西蘭、挪威、波蘭、葡萄牙、新加坡、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  |
-| 具有遠端協助的 HoloLens 2 | 澳大利亞、奧地利、比利時、加拿大、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、韓國、馬來西亞、荷蘭、紐西蘭、挪威、新加坡、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  <sup>1</sup> 
-| HoloLens 2工業版 *(啟動)* | 澳大利亞、奧地利、比利時、加拿大、中國、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、馬來西亞、荷蘭、紐西蘭、挪威、波蘭、葡萄牙、新加坡、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  |
+| HoloLens 2 | 澳大利亞、奧地利、比利時、加拿大、中國、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、馬來西亞、墨西哥、荷蘭、紐西蘭、挪威、波蘭、葡萄牙、新加坡、南非、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  |
+| 具有遠端協助的 HoloLens 2 | 澳大利亞、奧地利、比利時、加拿大、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、韓國、馬來西亞、墨西哥、荷蘭、紐西蘭、挪威、新加坡、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  <sup>1</sup> 
+| HoloLens 2工業版 *(啟動)* | 澳大利亞、奧地利、比利時、加拿大、中國、丹麥、芬蘭、法國、德國、香港、愛爾蘭、義大利、日本、馬來西亞、墨西哥、荷蘭、紐西蘭、挪威、波蘭、葡萄牙、新加坡、南非、南非、西班牙、瑞典、瑞士、臺灣、泰國、英國、US 和越南  |
 | HoloLens 2開發版 | 澳大利亞、加拿大、法國、德國、愛爾蘭、義大利、日本、紐西蘭、瑞士和 UK |
 
 &nbsp;&nbsp;&nbsp;<sup>1</sup> 這份清單是動態的，請回來查看更新
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>尋找授權的 HoloLens 2 轉銷商
 請參閱下表，以取得依區域 HoloLens 2 可用性和購買選項。
+
+### <a name="africa"></a>**非洲**
+
+| 國家/地區 | ADD | DMPs | HoloLens 2DMPs |
+|---------|-----|------|----------------|
+| **南非** | Tarsus 分佈 | Datacentrix | [Datacentrix-領先的混合式 IT 系統整合者和受控服務提供者](https://www.datacentrix.co.za/)|
+| || Nulitics 開發公司 Pty 有限公司。 | [NULITICS，增強的現實，開發，豐富的通訊服務](https://nulitics.com/#work-with-us)|
+| | | Crimson 線路網路 <br/>cc-t/a Crimson 線-求解 |[受控雲端和 IT 服務 \| 南非 \| Crimsonline](https://www.crimsonline.co.za)|
 
 ### <a name="apac"></a>**亞太**
 
@@ -64,6 +72,13 @@ HoloLens 2 是最熟悉的混合現實裝置，具有領先業界的解決方案
 | **台灣** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>小紅 Chien<br><seanchien@systex.com> | [購買 HoloLens 2-Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [購買 HoloLens 2 產業版本-Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **泰國** | 持續性解決方案 Co，公司。 | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [購買 HoloLens 2 的可持續解決方案，](https://hololensthai.com/) | [購買 HoloLens 2 產業版本-持續性解決方案共同的公司。](https://hololensthai.com/) |
 | **越南** | CÔNG TY TNHH HIVERLAB 越南 | Cincin Phung<br><cincin.phung@hiverlab.com> | [購買 HoloLens 2-CÔNG TY TNHH HIVERLAB 越南](https://www.hiverlab.com/vn) | [購買 HoloLens 2 產業版本-CÔNG TY TNHH HIVERLAB 越南](https://www.hiverlab.com/vn) |
+
+### <a name="south-america"></a>**南美洲**
+
+| 國家/地區 | 增加 | DMPs | HoloLens 2DMPs |
+|---------|-----|------|----------------|
+| **墨西哥** | Ingram 微 México、S.A. de 履歷 | Aevitas S.A. de 履歷 | [Aevitas S.A. de 履歷](http://aevitas.com.mx)|
+| | Commercializadora Intcomex，S.A. de 履歷| Equipos 的複合。 de Occte。 S.A. de 履歷 | [Productos \| EQUIPOS MCA s.a. de 履歷](https://equiposmca.com/productos/) |
 
 ### <a name="north-america"></a>**北美洲**
 
