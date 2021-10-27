@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、錯誤、疑難排解、修正、說明、支援、HoloLens、模擬器
-ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: deed0d14b2567ae0a1fb2cde8ad1fbe3dbb20bb3
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034190"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351760"
 ---
 # <a name="device-troubleshooting"></a>裝置疑難排解
 
@@ -30,7 +30,7 @@ ms.locfileid: "130034190"
 <a id="list"></a>
 
 **已知問題**
-- [每次電源達到18% 時，裝置會突然自動關機](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [測試人員修正-每次電源達到18% 時，裝置會突然自動關機](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDriveUWP 應用程式不適用於 Azure AD 使用者](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [為什麼我在 Autopilot 期間看到顯示0x80180014？](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store 錯誤碼0x80131500](#microsoft-store-error-code-0x80131500)
@@ -67,6 +67,9 @@ ms.locfileid: "130034190"
 
 ## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>每次電源達到18% 時，裝置會突然自動關機
 
+> [!NOTE]
+> Windows 的測試人員有提供此問題的修正[。](hololens-insider.md)
+
 有已知的已知問題，當裝置達到18% 的電池時，即會意外關閉。 這是軟體問題，而不是硬體或電池問題，因此請不要將裝置交換。 如果您不確定您的問題是否符合此錯誤，請：
 
 1. 確定您的裝置上已啟用選擇性診斷 (s) 
@@ -96,7 +99,7 @@ ms.locfileid: "130034190"
 
 這項錯誤通常是在裝置重設期間，以及重複使用 HoloLens 裝置已 Autopilot 至少一次的流程時發生。 若要解決此問題，請[從 Microsoft Intune 刪除裝置](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)，然後再次將其重設為完成 Autopilot 流程。
 
-如需詳細資訊，請參閱 [autopilot 頁面上的疑難排解步驟。](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+如需詳細資訊，請參閱 [autopilot 頁面上的疑難排解步驟。](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
 ## <a name="microsoft-store-error-code-0x80131500"></a>Microsoft Store 錯誤碼0x80131500
 

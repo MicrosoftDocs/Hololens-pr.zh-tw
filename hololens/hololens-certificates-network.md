@@ -10,15 +10,15 @@ ms.localizationpriority: high
 ms.date: 9/15/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: yannisle
+manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
-ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
+ms.openlocfilehash: cf9e14ffbda01bb1fd9e788385f7b85884d1dc8c
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151681"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351612"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>準備 HoloLens 2 的憑證和網路設定檔
 
@@ -45,13 +45,16 @@ ms.locfileid: "130151681"
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>部署憑證和 Wi-fi/VPN 設定檔
 若要部署憑證和設定檔，請遵循下列步驟：
+
 1.  為每個根憑證和中繼憑證建立設定檔 (請參閱 [建立受信任的憑證設定檔](/intune/protect/certificates-configure#create-trusted-certificate-profiles)。 ) 這些設定檔中的每個設定檔都必須有包含以 DD/MM/YYYY 格式表示的到期日的描述。 **不會部署沒有到期日的憑證設定檔。**
-1.  為每個 SCEP 或 PKCS 憑證建立設定檔 (請參閱 [建立 scep 憑證設定檔或建立 PKCS 憑證設定檔](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) 這些設定檔中的每個設定檔都必須有一個以 DD/MM/YYYY 格式包含到期日的描述。 **不會部署沒有到期日的憑證設定檔。**
+
+2.  為每個 SCEP 或 PKCS 憑證建立設定檔 (請參閱 [建立 scep 憑證設定檔或建立 PKCS 憑證設定檔](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) 這些設定檔中的每個設定檔都必須有一個以 DD/MM/YYYY 格式包含到期日的描述。 **不會部署沒有到期日的憑證設定檔。**
 
     > [!NOTE]
     > 由於 HoloLens 2 被視為多個共用的裝置，因此每部裝置有多個使用者，建議您在可能的情況下，部署裝置憑證，而不是使用者憑證以進行 Wi-Fi 驗證
 
 3.  為每個公司 Wi-Fi 網路建立設定檔 (參閱[Windows 10 和更新版本裝置) 的 wi-fi 設定](/intune/wi-fi-settings-windows)。 
+
     > [!NOTE]
     > 建議您盡可能將 Wi-Fi 設定檔 [指派](/mem/intune/configuration/device-profile-assign) 給裝置群組，而不是使用者群組。 
 
@@ -60,11 +63,19 @@ ms.locfileid: "130151681"
 
 4.  為每個公司 VPN 建立設定檔 (查看[Windows 10 和 Windows 全像裝置設定]，以使用 Intune) 新增 VPN](/intune/vpn-settings-windows-10)連線。
 
-## <a name="troubleshooting-certificates"></a>疑難排解憑證
+## <a name="troubleshooting"></a>疑難排解
 
-如果您需要驗證憑證是否已正確部署，請使用裝置上的 [憑證管理員](certificate-manager.md) 來確認您的憑證是否存在。  
+### <a name="issue---unable-to-connect-with-network-using-certificate-based-authentication"></a>問題-無法使用以憑證為基礎的驗證連接到網路 ###
 
->[!WARNING]
-> 雖然您可以在 [憑證管理員] 中查看 MDM 部署的憑證，但無法在 [憑證管理員] 中將其卸載。 您必須透過 MDM 將其卸載。
+**徵兆**
 
+裝置無法使用以憑證為基礎的驗證建立網路連接。
 
+**疑難排解步驟**
+
+1. 如果您需要驗證憑證是否已正確部署，請使用裝置上的 [憑證管理員](certificate-manager.md) 來確認您的憑證是否存在。  
+
+    >[!WARNING]
+    > 雖然您可以在 [憑證管理員] 中查看 MDM 部署的憑證，但無法在 [憑證管理員] 中將其卸載。 您必須透過 MDM 將其卸載。
+
+2. 僅適用于 Intune，如果使用簡單憑證註冊通訊協定 (SCEP) 來部署憑證，請確定可從裝置連線到網路裝置註冊服務 (NDES) 伺服器 URL。 如需安裝程式的相關資訊，[請參閱 Intune 中的 SCEP 憑證](/mem/intune/protect/certificates-profile-scep)。 如果使用 CNAME 來取代 NDES 伺服器的完整網域，請在裝置上的網頁瀏覽器中輸入該 URL，以確定正確地解析。

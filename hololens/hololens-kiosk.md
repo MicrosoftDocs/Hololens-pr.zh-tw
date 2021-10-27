@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: e8f269a3793a5e61eb3eb4b88084a5e4af375ffa
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032242"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351714"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>將 HoloLens 設定為 kiosk
 
@@ -48,8 +48,8 @@ Kiosk 模式是一項功能，您可以在使用者登入 HoloLens 時，控制 
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>設定 kiosk 模式之前的重要一般考慮
 
-1. 判斷在您的環境中登入 HoloLens 的使用者帳戶類型-HoloLens 支援 Azure Active Directory (AAD) 帳戶、Microsoft 帳戶 (MSA) 和本機帳戶。 此外，也支援暫時建立稱為「來賓/訪客」的帳戶， (僅適用于) 的 AAD 加入裝置。 深入瞭解如何[管理 HoloLens 的使用者身分識別和登入](hololens-identity.md)。
-2. 判斷 kiosk 模式體驗的目標–無論是每個人、單一使用者、特定使用者，或是屬於 AAD 群組 (s 的使用者) 等等。
+1. 判斷在您的環境中登入 HoloLens 的使用者帳戶種類-HoloLens 支援 Azure Active Directory (AAD) 帳戶、Microsoft 帳戶 (MSA) 和本機帳戶。 此外，也支援暫時建立稱為「來賓/訪客」的帳戶， (僅適用于 AAD 加入裝置) 。 深入瞭解如何[管理 HoloLens 的使用者身分識別和登入](hololens-identity.md)。
+2. 判斷 kiosk 模式體驗的目標–無論是每個人、單一使用者、特定使用者，或是屬於 AAD 群組 () s 的使用者等等。
 3. 若為多個應用程式 kiosk 模式，請判斷要在 [開始] 功能表上顯示的應用程式 () 。 針對每個應用程式，會需要其 [應用程式使用者模型識別碼 (AUMID) ](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) 。
 4. 判斷是否會透過執行時間布建套件或行動裝置管理 (MDM) 伺服器將 kiosk 模式套用至 HoloLens。
 
@@ -83,14 +83,14 @@ Kiosk 模式不應視為安全性方法，而是用來控制使用者登入的�
 | 每位登入的使用者都會取得 kiosk 體驗。 | [設定多個應用程式全域指派的存取設定檔](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全域指派的存取權需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |
 | 登入的特定使用者會取得 kiosk 體驗。  | [視需要設定單一或多個應用程式指派的存取設定檔 () 指定特定使用者的名稱。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [請參閱下列支援的選項。](#steps-in-configuring-kiosk-mode-for-hololens) | 針對單一應用程式 kiosk 模式，HoloLens 只支援本機使用者帳戶或 MSA 帳戶。 <br> 針對多個應用程式 kiosk 模式，HoloLens 只支援 MSA 帳戶或 AAD 帳戶。 |
 
-### <a name="for-users-who-sign-in-as-aad-account"></a>適用于以 AAD 帳戶登入的使用者
+### <a name="for-users-who-sign-in-as-aad-account"></a>以 AAD 帳戶登入的使用者
 
 | **所需的 kiosk 體驗** | **建議的 kiosk 設定** | **設定方式** | **備註** |
 | --- | --- | --- | --- |
 | 每位登入的使用者都會取得 kiosk 體驗。 | [設定多個應用程式全域指派的存取設定檔](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全域指派的存取權需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |
 | 每位登入的使用者都會取得 kiosk 體驗，但某些使用者除外。 | 藉[由排除必須是裝置擁有者)  (的特定使用者，來設定多個應用程式全域指派的存取設定檔](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners)。 | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全域指派的存取權需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |
-| 每個 AAD 使用者都會獲得該使用者專屬的個別 kiosk 體驗。 | [針對指定其 AAD 帳戶名稱的每個使用者，設定指派的存取設定。](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| 不同 AAD 群組中的使用者只會遇到其群組的 kiosk 模式。 | [為每個所需的 AAD 群組設定指派的存取設定。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | •當使用者登入，且 HoloLens 已與網際網路連線時，如果該使用者是已存在 kiosk 設定之 AAD 群組的成員，則使用者會收到該 aad 群組的 kiosk。 <br> •[當使用者登入時，如果沒有可用的網際網路，使用者將會遇到 HoloLens 失敗模式的行為。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> •如果需要使用使用者登入和以 AAD 群組為基礎的 kiosk 時無法保證網際網路可用性，請 [考慮使用 AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)。 <br> •若要在登入期間取得 AAD 群組的最佳體驗，建議使用 [AADGroupMembershipCacheValidityInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk) |
+| 每個 AAD 使用者都會獲得該使用者專屬的個別 kiosk 體驗。 | [為每位使用者設定指派的存取設定，並指定其 AAD 的帳戶名稱。](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
+| 不同 AAD 群組中的使用者只會遇到其群組的 kiosk 模式。 | [為每個所需的 AAD 群組設定指派的存取設定。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-多個應用程式](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | •當使用者登入，且 HoloLens 與網際網路連線時，如果該使用者是 kiosk 設定所在 AAD 群組的成員，則使用者會收到該 AAD 群組的 kiosk。 <br> •[當使用者登入時，如果沒有可用的網際網路，使用者將會遇到 HoloLens 失敗模式的行為。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> •當使用者登入和 AAD 群組型 kiosk 需要使用時，如果無法保證網際網路可用性，請[考慮使用 AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)。 <br> •若要在登入期間使用 AAD 群組的最佳體驗，建議使用[AADGroupMembershipCacheValidityInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk) |
 | 需要使用 HoloLens 以供暫時使用的使用者可取得 kiosk 體驗。 | [為訪客設定指派的存取設定](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune 自訂範本](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [執行時間布建-單一應用程式](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • HoloLens 在登入時自動建立暫時的使用者帳戶，並在暫時使用者登出時移除。 <br> •請考慮啟用 [訪客自動登入原則](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)。 |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>針對 HoloLens 設定 kiosk 模式的步驟
@@ -144,17 +144,19 @@ HoloLens (第1代) 裝置必須以作業系統組建和 os 版本進行升級。
 當您在套用 kiosk 模式時發生失敗時，會出現下列行為：
 
 - 在 Windows 全息版之前，20H2 版 HoloLens 將會顯示 [開始] 功能表中的所有應用程式。
-- Windows全像20H2 版-如果裝置具有 kiosk 設定，這是全域指派的存取權和 AAD 群組成員指派的存取組合，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [開始] 功能表中顯示 [沒有任何內容]。
+- Windows全像20H2 版-如果裝置具有 kiosk 設定，這是全域指派的存取和 AAD 群組成員指派存取的組合，則如果判斷 AAD 群組成員資格失敗，使用者會看到 [開始] 功能表中顯示 [沒有任何內容]。
 
     ![Kiosk 模式在失敗時的外觀影像。](images/hololens-kiosk-failure-behavior.png )
 
-- 從 Windows 全像[21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)，Kiosk 模式在顯示空的 [開始] 功能表之前，會先尋找全域指派的存取權。 如果有 AAD 群組 kiosk 模式期間發生失敗，則 kiosk 體驗將會回復為全域 kiosk 設定 (（如果有) 的話）。
+- 從 Windows 全像[21H1 版](hololens-release-notes.md#windows-holographic-version-21h1)，Kiosk 模式在顯示空的 [開始] 功能表之前，會先尋找全域指派的存取權。 如果在 AAD 群組 kiosk 模式期間發生失敗，則 kiosk 體驗將會回復為全域 kiosk 設定 (如果出現) 。
 
 **疑難排解步驟**
 
 - 請確認已正確指定應用程式的 AUMID，而且它不包含版本。 如需範例，請參閱[HoloLens aumid](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)的收件匣應用程式。
 - 確定應用程式已安裝在該使用者的裝置上。
-- 如果 kiosk 設定是以 AAD 群組為基礎，請確定當 AAD 使用者登入時，有網際網路連線。 如有需要，請設定 [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) 原則，如此一來，就不需要網際網路也可以運作。
+- 如果 kiosk 設定是以 AAD 群組為基礎，請在 AAD 使用者登入時確認有網際網路連線。 如有需要，請設定 [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) 原則，如此一來，就不需要網際網路也可以運作。
+
+如果使用 XML 來建立指派的存取設定 (透過執行時間布建或 Intune 自訂 OMA-URI URI) ，請在任何網頁瀏覽器或 XML 編輯器中開啟 XML，以確定 XML 的格式是否正確。 請參閱 [KIOSK XML 程式碼範例](hololens-kiosk-reference.md#kiosk-xml-code-samples) ，以取得格式正確且有效的範本。
 
 ### <a name="issue---building-a-package-with-kiosk-mode-failed"></a>問題-以 kiosk 模式建立套件失敗
 
@@ -185,13 +187,14 @@ HoloLens (第1代) 裝置必須以作業系統組建和 os 版本進行升級。
 1. 流覽至執行時間布建套件 Windows 設定設計工具專案所在的資料夾。
 1. 開啟 ICD. log，並確認在建立布建套件時，記錄檔中沒有任何錯誤。 某些錯誤未顯示在組建期間，但仍記錄于 ICD. log 中
 
-### <a name="issue--multiple-app-assigned-access-to-aad-group-does-not-work"></a>問題–已將多個應用程式指派給 AAD 群組的存取權無法運作
+### <a name="issue--multiple-app-assigned-access-to-aad-group-does-not-work"></a>問題– AAD 群組的多個應用程式指派存取權無法運作
 
 **徵兆**
 
-在 AAD 使用者登入時，裝置不會進入 kiosk 模式
+在 AAD 使用者登入時，裝置不會進入預期的 kiosk 模式。
 
 **疑難排解步驟**
 
-- 在 [指派的存取設定 XML] 中，確認已登入使用者為其成員的 AAD 群組 GUID，而不是 AAD 使用者的 GUID。
-- 確認在 Intune 入口網站中，AAD 使用者確實顯示為目標 AAD 群組的成員。
+- 在 [指派的存取設定 XML] 中，確認已登入使用者所屬的 AAD 組 guid，而不是 AAD 使用者的 guid。
+- 確認 AAD 使用者的 Intune 入口網站確實顯示為目標 AAD 群組的成員。
+- 僅適用于 Intune，請確認裝置顯示為符合規範。 如需詳細資訊，請參閱 [裝置合規性參考](/mem/intune/protect/device-compliance-get-started) 。

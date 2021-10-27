@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924360"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351635"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>適用於 Microsoft HoloLens 的 Insider Preview
 
@@ -29,7 +29,26 @@ ms.locfileid: "129924360"
 
 ## <a name="windows-insider-release-notes"></a>WindowsInsider 版本資訊
 
-我們很高興所有最近的內部人士功能都已公開！ 如果您想要閱讀相關資訊，請參閱[版本資訊頁面](hololens-release-notes.md)。
+HoloLens 的新功能和範圍為何？ 查看即將 HoloLens 的這些新更新！
+
+### <a name="colorblind-mode"></a>色盲模式
+
+在 Insider build 20348.1463 中新增
+
+色盲模式是很有用的功能，可讓 HoloLens 更容易存取。 您可以在 [設定應用程式] 的 [**設定**  ->  **輕鬆存取**  ->  **色彩篩選**] 下找到新的色盲模式。 有幾個新的篩選器可供使用。 以下是一些可用篩選準則的視覺效果範例。
+
+| 關閉 | 灰度 | Tritanopia |
+|-----|-----------|------------|
+| ![色彩篩選關閉](images/colorblind-off.png)   | ![色彩篩選灰階](images/colorblind-greyscale.png)         | ![色彩篩選 tritanopia](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>修正和改善
+
+- 修正 [每次電源達到18% 的已知問題時，裝置會突然自動關機](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)。
+- 改善在偵測向下方向時移動平臺模式的功能。
+- 修正更新對話方塊的相關問題。
+- 更新的收件匣 Microsoft Edge 瀏覽器版本。
+- 修正了在重新開機之後切換選擇性診斷資料不會保存 [遙測設定] 頁面中所選設定的問題。
+- 修正了當 QR 代碼在相對於裝置的45度角度旋轉時，無法辨識 QR 代碼的問題。
 
 ## <a name="start-receiving-insider-builds"></a>開始接收 Insider build
 

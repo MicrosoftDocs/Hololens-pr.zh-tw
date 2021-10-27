@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 自動駕駛儀
 manager: sekerawa
-ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
-ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
+ms.openlocfilehash: 5ca7ad762e0fdbe448788926e7a6492cb7f2523d
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130202908"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351697"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>適用於 HoloLens 2 的 Windows Autopilot
 
@@ -320,10 +320,12 @@ OOBE 會無限期等待 Autopilot 設定檔的下載，並會顯示下列對話�
 
 ![裝置上強制執行原則時的裝置上視圖。](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues-and-limitations"></a>已知的問題及限制
+## <a name="troubleshooting"></a>疑難排解
 
-### <a name="why-do-i-see-0x80180014-during-autopilot"></a>為什麼我在 Autopilot 期間看到顯示0x80180014？
+### <a name="issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot"></a>問題-在 Autopilot 期間，MDM 註冊會失敗，並出現錯誤顯示0x80180014 錯誤碼。
 
+ **徵兆**
+ 
 這是在裝置上的 Autopilot 程式期間所顯示的錯誤。 只有當 HoloLens 裝置完成下列動作時，才會顯示此問題：
 
 1. 已 Autopilot 至少一次。
@@ -333,7 +335,7 @@ Autopilot 體驗會因為特定的錯誤而失敗。
 
 ![HoloLensAutopilot 失敗錯誤碼](images/autopilot-0x80180014-failure.jpg)
 
-需要採取哪些步驟來解決此錯誤？
+**疑難排解步驟**
 
 1. 請依照 [Autopilot 裝置匯入和註冊](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) 的步驟進行疑難排解，以從 Intune 移除裝置。  (您的 Intune 系統管理員需要執行這項工作) 
 1. 完成步驟1之後，請重新開機裝置並登入。
@@ -342,19 +344,24 @@ Autopilot 體驗會因為特定的錯誤而失敗。
 
 AutoPilot 應該會成功註冊。
 
-### <a name="troubleshooting"></a>疑難排解
+### <a name="issue---autopilot-experience-did-not-start-even-though-the-autopilot-profile-is-assigned-in-intune"></a>即使已在 Intune 中指派 Autopilot 設定檔，Autopilot 經驗也無法啟動。
+
+**徵兆**
+
+根據預設，HoloLens 2 會在偵測到網際網路之後等候15秒偵測 Autopilot。 如果未在15秒內偵測到 autopilot 設定檔，這表示未正確探索 Autopilot，您將會看到 EULA 頁面。
+
+**疑難排解步驟**
+
+1. 首先，請確認 Autopilot 設定檔在 MDM 入口網站中顯示為「已指派」（例如 Intune）。 
+1. 請重新開機您的裝置，然後再試一次。 如需詳細資訊，請參閱 [已知問題和限制](hololens2-autopilot.md#troubleshooting)。
+
+### <a name="helpful-resources"></a>有用的資源
 
 下列文章可能是您瞭解詳細資訊和針對 Autopilot 問題進行疑難排解的實用資源，不過這些文章是以 Windows 10 Desktop 為基礎，而不是所有資訊都適用于 HoloLens：
 
 - [WindowsAutopilot-已知問題](/mem/autopilot/known-issues)
 - [針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [WindowsAutopilot-原則衝突](/mem/autopilot/policy-conflicts)
-
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>即使已在 Intune 中指派 Autopilot 設定檔，為什麼看不到 Autopilot 體驗？
-
-根據預設，HoloLens 2 會在偵測到網際網路之後等候15秒偵測 Autopilot。 如果未在15秒內偵測到 autopilot 設定檔，這表示未正確探索 Autopilot，您將會看到 EULA 頁面。
-
-請重新開機您的裝置，然後再試一次。 如需詳細資訊，請參閱 [已知問題和限制](hololens2-autopilot.md#known-issues-and-limitations)。
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot 的意見反應與支援
 
